@@ -1,0 +1,10 @@
+---
+title: Defund12.org
+timezone: America/New_York
+collections:
+  emails:
+    title: Email Templates
+    output: true
+url: http://defund12.org
+sass:
+  style: compressed
