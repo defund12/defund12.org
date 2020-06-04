@@ -28,8 +28,8 @@ body: |
 
   The MPD is a pillar of inequality in our city. Just last year, it was reported that most police stops involved Black people. I am concerned that the proposed increase/or the upcoming fiscal year will only serve to entrench this prejudice and worsen the disproportionate impact on Black DC residents. 	
 
-  The brutal, senseless, and violent murder of George Floyd at the hands of police officers derelict in their duties to protect and serve is deeply disturbing. We, as a nation, are in need of a drastic overhaul in policing. Systems of oppression must be undone, and reallocating much of the budget for the MPD to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved. I implore you to reconsider the upcoming budget. We are overdue for change. 	
-
-  Sincerely, 	
+  The brutal, senseless, and violent murder of George Floyd at the hands of police officers derelict in their duties to protect and serve is deeply disturbing. We, as a nation, are in need of a drastic overhaul in policing. Systems of oppression must be undone, and reallocating much of the budget for the MPD to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved. I implore you to reconsider the upcoming budget. We are overdue for change.
+  
+  Sincerely,
   [your name]
----
+
