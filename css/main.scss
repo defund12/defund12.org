@@ -54,23 +54,33 @@ $subtle: #ddd;
 $subtle_: #aaa;
 
 // Fonts
-body {font-family:'Source Code Pro', 'Helvetica', 'Arial', sans-serif; font-size:16px; 
-	line-height:1.2; font-weight:400; color:$text;}
+body {
+	font-family:'Source Code Pro', 'Helvetica', 'Arial', sans-serif; font-size:16px; 
+	line-height:1.2; font-weight:400; color:$text;
+	@include breakpoint(s) {font-size:14px;}
+}
 em {font-weight:400; font-style:italic;}
 b {font-weight:700;}
 h1 {
 	font-size:36px; line-height:1.2; 
-	@include breakpoint(xs) {font-size:30px;}
+	@include breakpoint(s) {font-size:30px;}
 }
 h2 {
 	font-size:24px; line-height:1.2; font-weight:400; margin-top:10px;
-	@include breakpoint(xs) {font-size:22px;}
+	@include breakpoint(s) {font-size:22px;}
 }
 a {
 	border-bottom:1px solid $subtle; 
 	&:hover {
 		border-bottom:1px solid $subtle_;
 	}
+}
+p {
+	&:before {
+		content:""; display:block; width:48px; border-bottom:1px solid $subtle; margin-bottom:20px;
+	}
+	line-height:1.4;
+	max-width:580px;
 }
 
 // Sections and Layout =========================================================
