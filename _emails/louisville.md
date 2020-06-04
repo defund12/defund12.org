@@ -1,6 +1,6 @@
 ---
 title: Louisville, KY
-permalink: "/lousiville-justice"
+permalink: "/lousiville"
 name: Letter to Mayor - Justice for Breonna Taylor
 state: KY
 city: Louisville
@@ -12,7 +12,7 @@ subject: I Want Justice  for the Murder of Breonna Taylor
 body: |
   Dear Mayor Fischer,
   
-  My name is [insert name]. I am a resident of [insert city & state] and I am emailing today to demand accountability for the racist and brutal murder of Breonna Taylor.
+  My name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD] and I am emailing today to demand accountability for the racist and brutal murder of Breonna Taylor.
   
   I demand that charges be pressed against all officers involved in this heinous crime and its coverup, especially John Mattingly, Brett Hankinson, and Myles Cosgrove. There have been no charges thus far and this is unacceptable.
   
@@ -21,6 +21,9 @@ body: |
   In addition, I demand that you start providing more support towards community efforts and organizations outside of the police forces in order to prevent police brutality and violence in the future.
   
   Sincerely,
-  [insert name]
+  [NAME]
+  [PHONE_NUMBER]
+  [EMAIL]
+  [ADDRESS]
 ---
 
