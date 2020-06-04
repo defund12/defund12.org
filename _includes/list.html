@@ -1,7 +1,7 @@
 <div class="content">
     <div class="container">
 		<h1 class="pagetitle">{{ site.title }}</h1>
-		<p>{{ site.subtitle }}</p>
+		<p class="divider">{{ site.subtitle }}</p>
 		<div id="emailLinks">
 		{% for email in site.emails %}
 			<li data-state="{{ email.state }}">
@@ -9,6 +9,6 @@
 			</li>
 		{% endfor %}
 		</div>
-		<p>{{ site.footer_text | markdownify }}</p>
+		<p class="divider footer">{{ site.footer_text | markdownify }}</p>
     </div>
 </div>
