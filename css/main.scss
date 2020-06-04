@@ -57,7 +57,6 @@ $subtle_: #aaa;
 body {
 	font-family:'Source Code Pro', 'Helvetica', 'Arial', sans-serif; font-size:16px; 
 	line-height:1.2; font-weight:400; color:$text;
-	@include breakpoint(s) {font-size:14px;}
 }
 em {font-weight:400; font-style:italic;}
 b {font-weight:700;}
