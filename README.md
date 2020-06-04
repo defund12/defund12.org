@@ -4,4 +4,5 @@ Defund12.org provides shareable links to email the government officials in your 
 
 To build the application:
 1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
-2. `cd defund12.org && jekyll serve`
+2. Clone and navigate to the repository
+3. `jekyll serve`
