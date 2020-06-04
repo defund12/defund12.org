@@ -15,6 +15,10 @@
             <div class="recipients">
                 <b>To:</b> {{ page.recipients | join: ',' }}
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
+			</div>
+			<div class="recipients">
+                <b>CC:</b> {{ page.cc | join: ',' }}
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ',' }}`)">🔗</span>
             </div>
             <div>
                 <b>Subject:</b> {{ page.subject }}
