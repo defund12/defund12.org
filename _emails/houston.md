@@ -2,8 +2,8 @@
 title: Houston, TX
 permalink: "/houston"
 name: Letter to Mayor and City Council
-state: OH
-city: Cleveland
+state:TX
+city: Houston
 layout: email
 recipients:
 - mayor@houstontx.gov
