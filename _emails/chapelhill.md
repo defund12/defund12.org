@@ -1,6 +1,7 @@
 ---
-title: Letter to Mayor and City Council
+title: Chapel Hill, NC
 permalink: "/chapelhill"
+name: Letter to Mayor and City Council
 state: NC
 city: Chapel Hill
 layout: email

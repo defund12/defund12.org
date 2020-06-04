@@ -6,7 +6,7 @@
 		<div id="emailLinks">
 		{% for email in site.emails %}
 			<li data-state="{{ email.state }}">
-				<a href="{{ email.permalink }}">{{ email.city }} - <i>{{ email.title }}</i></a>
+				<a href="{{ email.permalink }}">{{ email.city }} - <i>{{ email.name }}</i></a>
 			</li>
 		{% endfor %}
 		</div>

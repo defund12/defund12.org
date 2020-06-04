@@ -1,6 +1,7 @@
 ---
-title: Letter to Council Members
+title: Asheville, NC
 permalink: "/asheville"
+name: Letter to Council Members
 state: NC
 city: Asheville
 layout: email

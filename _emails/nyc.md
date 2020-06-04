@@ -1,6 +1,7 @@
 ---
-title: Letter to Council Members
+title: NYC
 permalink: "/nyc"
+name: Letter to Council Members
 state: NY
 city: New York
 layout: email
