@@ -28,13 +28,6 @@ defaults:
     type: emails
   values:
     layout: email
-    permalink:
-    name: Title of the letter (e.g. Letter to Council Members)
-    state: 
-    city:
-    recipients: ["email@address.com"],
-    subject:
-    body:
 permalink: pretty
 subtitle: Email government officials and council members to reallocate egregious police
   budgets towards education, social services, and dismantling racial inequality.
