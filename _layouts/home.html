@@ -1,6 +1,12 @@
 {% include header.html %}
 
-	<div class="content">
-	</div>
-	
+<div class="content">
+    <div class="container">
+        <h1 class="pagetitle">{{ page.title }}</h1>
+        {{ page.content | markdownify }} {% for email in site.emails %}
+        <li>{{ email.title }}</li>
+        {% endfor %}
+    </div>
+</div>
+
 {% include footer.html %}
