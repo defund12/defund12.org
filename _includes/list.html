@@ -1,0 +1,13 @@
+<div class="content">
+    <div class="container">
+        <h1 class="pagetitle">{{ site.title }}</h1>
+		{{ site.content | markdownify }}
+		<div id="emailLinks">
+		{% for email in site.emails %}
+			<li data-state="{{ email.state }}">
+				<a href="{{ email.permalink }}">{{ email.city }} - <i>{{ email.title }}</i></a>
+			</li>
+		{% endfor %}
+		</div>
+    </div>
+</div>

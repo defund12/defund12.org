@@ -1,5 +1,5 @@
 ---
-title: Emails to council members
+title: Defund12.org
 url: "/"
 layout: home
 ---

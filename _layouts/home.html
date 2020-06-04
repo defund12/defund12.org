@@ -1,22 +1,5 @@
 {% include header.html %}
 
-<div class="content">
-    <div class="container">
-        <h1 class="pagetitle">{{ page.title }}</h1>
-		{{ page.content | markdownify }}
-		<div id="emailLinks">
-		{% for email in site.emails %}
-			<li 
-				data-state="{{ email.state }}"
-				data-recipients="{{ email.recipients | join: ',' }}"
-				data-subject="{{ email.subject }}"
-				data-body="{{ email.body }}"
-			>
-				{{ email.title }}
-			</li>
-		{% endfor %}
-		</div>
-    </div>
-</div>
+{% include list.html %}
 
 {% include footer.html %}
