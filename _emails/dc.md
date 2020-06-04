@@ -6,6 +6,7 @@ state: D.C.
 city: Washington
 layout: email
 recipients:
+- eom@dc.gov
 - judiciary@dccouncil.us
 - callen@dccouncil.us
 - abonds@dccouncil.us
