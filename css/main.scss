@@ -91,6 +91,12 @@ p.divider {
 	a {color:blue;}
 	a:visited {color:$text;}
 }
+.emailPageHeader {}
+.emailContentSection {background:#eee;}
+.emailContent {
+	div {margin-top:20px; line-height:1.6;}
+	.recipients {overflow-wrap: break-word;}
+}
 .footer {margin-top:40px;}
 
 .copyToClipboard{

@@ -30,3 +30,7 @@ subtitle: Follow the links below to email government officials and council membe
 meta: Email government officials and council members to reallocate police budgets
   towards education, social services, and dismantling racial inequality.
 footer_text: Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)
+email_intro_text: |-
+  ## This page automatically opens a drafted email for you.
+
+  Didn't work correctly? You can copy and paste the recipients, subject and message individually below.
