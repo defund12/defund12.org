@@ -6,17 +6,17 @@ state: CO
 city: Boulder
 layout: email
 recipients:
-  - brocketta@bouldercolorado.gov
-  - friendr@bouldercolorado.gov
-  - josephj@bouldercolorado.gov
-  - naglem@bouldercolorado.gov
-  - swetlika@bouldercolorado.gov
-  - wallachm@bouldercolorado.gov
-  - youngm@bouldercolorado.gov
-  - WeaverS@bouldercolorado.gov
-  - yatesb@bouldercolorado.gov
-  - council@bouldercolorado.gov
-  - homeownership@bouldercolorado.gov
+- brocketta@bouldercolorado.gov
+- friendr@bouldercolorado.gov
+- josephj@bouldercolorado.gov
+- naglem@bouldercolorado.gov
+- swetlika@bouldercolorado.gov
+- wallachm@bouldercolorado.gov
+- youngm@bouldercolorado.gov
+- WeaverS@bouldercolorado.gov
+- yatesb@bouldercolorado.gov
+- council@bouldercolorado.gov
+- homeownership@bouldercolorado.gov
 subject: We demand a People's Budget
 body: |
   Dear Council Members of the City of Boulder,
@@ -32,3 +32,4 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
