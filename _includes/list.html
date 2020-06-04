@@ -6,7 +6,7 @@
             {% assign sorted_emails = site.emails | sort:"state" %} {% for email in sorted_emails %}
             <li data-state="{{ email.state }}">
                 <a href="{{ email.permalink }}">{{ email.city }} - <i>{{ email.name }}</i></a>
-                <span class="copyToClipboard" onclick="copyToClipboard(`{{ email.permalink }}`)">🔗</span>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ email.permalink }}`)">🔗</span>
             </li>
             {% endfor %}
         </div>
@@ -15,7 +15,16 @@
 </div>
 
 <script>
-    function copyToClipboard(permalink) {
+    var mostRecentSpanElement;
+
+    function copyToClipboard(spanElement, permalink) {
+        if (mostRecentSpanElement) {
+            mostRecentSpanElement.innerHTML = "🔗";
+        }
+
+        spanElement.innerHTML = "✅(copied)";
+        mostRecentSpanElement = spanElement;
+
         const element = document.createElement('textarea');
         element.value = 'https://defund12.org'.concat(permalink);
         document.body.appendChild(element);
