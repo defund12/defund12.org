@@ -1,6 +1,6 @@
 ---
 title: Portland, OR
-permalink: "/portland"
+permalink: "/portland-defund"
 name: Letter to the Mayor, Commissioners, and City Council
 state: OR
 city: Portland
