@@ -1,10 +1,9 @@
 ---
+title: ''
 name: Email request
 about: Add an email for your locale! (or supplement one that exists!)
-title: ''
 labels: ''
 assignees: ''
-
 ---
 
 We are currently handling a lot of requests - please include the following information with your request: 
