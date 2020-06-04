@@ -1,13 +1,23 @@
 ---
-title: Defund12.org
-subtitle: |
-  Follow the links below to email government officials and council members to reallocate egregious 
-  police budgets towards education, social services, and dismantling racial inequality.
-timezone: America/New_York
+title: defund12.org
+timezone: UTC
 collections:
-  emails:
-    title: Emails
+  posts:
+    title: Posts
     output: true
-url: http://defund12.org
-sass:
-  style: compressed
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
