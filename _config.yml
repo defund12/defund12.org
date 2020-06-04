@@ -2,6 +2,9 @@
 title: defund12.org
 timezone: UTC
 collections:
+  emails:
+    title: Posts
+    output: true
   posts:
     title: Posts
     output: true
