@@ -1,8 +1,11 @@
 ---
 title: Asheville
-url: "/nyc"
+permalink: "/asheville"
+state: NC
 layout: email
-recipients: toams7@gmail.com, teddywilson@google.com
+recipients:
+- toams7@gmail.com
+- teddywilson@google.com
 subject: test subject
 body: body
 ---

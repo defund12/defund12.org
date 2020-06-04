@@ -3,8 +3,8 @@
 <script type="text/javascript">
     const subject = encodeURIComponent("{{ page.subject }}".trim());
     const body = encodeURIComponent("{{ page.body }}".trim());
-    const recipients = "{{ page.recipients }}".trim();
-    location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
+	const recipients = "{{ page.recipients | join: ',' }}"
+	location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
 </script>
 
 {% include footer.html %}
