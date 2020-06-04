@@ -4,11 +4,18 @@
     <div class="container">
         <h1 class="pagetitle">{{ page.title }}</h1>
 		{{ page.content | markdownify }}
-		<ul id="emailLinks">
+		<div id="emailLinks">
 		{% for email in site.emails %}
-        	<li data-state="{{ email.state}}">{{ email.title }}</li>
+			<li 
+				data-state="{{ email.state }}"
+				data-recipients="{{ email.recipients | join: ',' }}"
+				data-subject="{{ email.subject }}"
+				data-body="{{ email.body }}"
+			>
+				{{ email.title }}
+			</li>
 		{% endfor %}
-		</ul>
+		</div>
     </div>
 </div>
 
