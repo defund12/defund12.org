@@ -11,7 +11,7 @@
 <div class="content emailContentSection">
 	<div class="container">
 		<div class="emailContent">
-			<div>
+			<div class="recipients">
 				<b>To:</b>
 				{{ page.recipients | join: ',' }}
 				<span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
