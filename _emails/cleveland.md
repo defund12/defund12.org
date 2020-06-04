@@ -25,9 +25,9 @@ recipients:
 - mzone@clevelandcitycouncil.org
 - bkazy@clevelandcitycouncil.org
 - cslife@clevelandcitycouncil.org
-subject: Defund the CPD
+subject: Redirect money from Cleveland Police Department’s budget
 body: |
-  Hello, I am [name] and I am a resident of [neighborhood/city].
+  Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY].
 
   The City of Cleveland needs to address the lack of investment in predominantly Black communities and the over-investment in their criminalization. Although the 2020 city budget was already approved in March, the City of Cleveland must reduce its Division of Police budget.
  
