@@ -4,7 +4,7 @@ timezone: UTC
 collections:
   emails:
     title: Emails
-    output: true
+    output: false
   posts:
     title: Posts
     output: true
