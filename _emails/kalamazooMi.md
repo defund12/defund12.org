@@ -1,6 +1,6 @@
 ---
 title: Kalamazoo, MI
-permalink: "/kalamazooMi"
+permalink: "/kalamazoo"
 name: Letter to City and State Representatives
 state: MI
 city: Kalamazoo
@@ -49,5 +49,6 @@ protection. Kalamazoo Public Safety takes up 48% of the entire general fund budg
 public services account for a paltry 8% and parks and recreation a depressing 4% of budget. 
 That is outrageous and needs to change. Kalamazoo needs dollars for services that actually 
 improve and lift up our community. Dollars for education, for food assistance, for housing, 
-for people. Not policing.\n\nSincerely,\n[your name]\n"
+for people. Not policing.\n\nSincerely,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 ---
+
