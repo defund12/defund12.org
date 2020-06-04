@@ -6,17 +6,17 @@ state: CA
 city: Los Angeles
 layout: email
 recipients:
-  - mayor.helpdesk@lacity.org
-  - councilmember.cedillo@lacity.org
-  - councilmember.Krekorian@lacity.org
-  - councilmember.blumenfield@lacity.org
-  - david.ryu@lacity.org
-  - paul.koretz@lacity.org
-  - councilmember.martinez@lacity.org
-  - councilmember.rodriguez@lacity.org
-  - councilmember.harris-dawson@lacity.org
-  - councilmember.price@lacity.org
-  - councilmember.wesson@lacity.org
+- mayor.helpdesk@lacity.org
+- councilmember.cedillo@lacity.org
+- councilmember.Krekorian@lacity.org
+- councilmember.blumenfield@lacity.org
+- david.ryu@lacity.org
+- paul.koretz@lacity.org
+- councilmember.martinez@lacity.org
+- councilmember.rodriguez@lacity.org
+- councilmember.harris-dawson@lacity.org
+- councilmember.price@lacity.org
+- councilmember.wesson@lacity.org
 subject: We demand a People's Budget
 body: |
   I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
@@ -38,3 +38,4 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
