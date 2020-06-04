@@ -6,7 +6,7 @@ city: Asheville
 layout: email
 recipients:
   - ashevillenccouncil@ashevillenc.gov
-subject: test subject
+subject: Redirect money away from Asheville Police Department’s budget
 body: |
   Dear Asheville City Councilmembers, 
 
