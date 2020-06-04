@@ -6,18 +6,18 @@ state: NC
 city: Charlotte
 layout: email
 recipients:
-  - mayor@charlottenc.gov,
-  - Marcus.jones@charlottenc.gov
-  - James.mitchell@charlottenc.gov,
-  - Braxton.winston@charlottenc.gov,
-  - dimple.ajmera@charlottenc.gov,
-  - larken.egleston@charlottenc.gov,
-  - Malcolm.graham@ci.charlotte.nc.us,
-  - Victoria.watlington@charlottenc.gov,
-  - Renee.johnson@charlottenc.gov,
-  - matt.newton@charlottenc.gov,
-  - Tariq.bokhari@charlottenc.gov,
-  - edriggs@charlottenc.gov
+- mayor@charlottenc.gov,
+- Marcus.jones@charlottenc.gov
+- James.mitchell@charlottenc.gov,
+- Braxton.winston@charlottenc.gov,
+- dimple.ajmera@charlottenc.gov,
+- larken.egleston@charlottenc.gov,
+- Malcolm.graham@ci.charlotte.nc.us,
+- Victoria.watlington@charlottenc.gov,
+- Renee.johnson@charlottenc.gov,
+- matt.newton@charlottenc.gov,
+- Tariq.bokhari@charlottenc.gov,
+- edriggs@charlottenc.gov
 subject: Defund CMPD and Eliminate "Crowd Control" Weapons
 body: |
   Dear City Council, Mayor Vi Lyles, and City Manager Marcus Jones,
@@ -43,3 +43,4 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
