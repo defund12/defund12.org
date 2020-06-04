@@ -13,23 +13,3 @@
         <p class="divider footer">{{ site.footer_text | markdownify }}</p>
     </div>
 </div>
-
-<script>
-    var mostRecentSpanElement;
-
-    function copyToClipboard(spanElement, permalink) {
-        if (mostRecentSpanElement) {
-            mostRecentSpanElement.innerHTML = "🔗";
-        }
-
-        spanElement.innerHTML = "✅(copied)";
-        mostRecentSpanElement = spanElement;
-
-        const element = document.createElement('textarea');
-        element.value = 'https://defund12.org'.concat(permalink);
-        document.body.appendChild(element);
-        element.select();
-        document.execCommand('copy');
-        document.body.removeChild(element);
-    }
-</script>

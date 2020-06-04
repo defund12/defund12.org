@@ -1,5 +1,36 @@
 {% include header.html %}
 
+<div class="content emailPageHeader">
+	<div class="container">
+		<div class="">
+			{{ site.email_intro_text | markdownify }}
+		</div>
+	</div>
+</div>
+
+<div class="content emailContentSection">
+	<div class="container">
+		<div class="emailContent">
+			<div>
+				<b>To:</b>
+				{{ page.recipients | join: ',' }}
+				<span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
+			</div>
+			<div>
+				<b>Subject:</b>
+				{{ page.subject }}
+				<span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.subject }}`)">🔗</span>
+			</div>
+			<div>
+				<b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+				<span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
+				<br />
+				{{ page.body | markdownify }}
+			</div>
+		</div>
+	</div>
+</div>
+
 {% include list.html %}
 
 <script type="text/javascript">

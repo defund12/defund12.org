@@ -30,6 +30,25 @@ function formatEmailList() {
 	}
 }
 
+var mostRecentSpanElement;
+function copyToClipboard(spanElement, copyText, isPermalink) {
+	if (mostRecentSpanElement) {
+		mostRecentSpanElement.innerHTML = "🔗";
+	}
+
+	spanElement.innerHTML = "✅(copied)";
+	mostRecentSpanElement = spanElement;
+
+	const element = document.createElement('textarea');
+	let copyValue = copyText;
+	if (isPermalink) copyValue = 'https://defund12.org'.concat(copyText)
+	element.value = copyValue;
+	document.body.appendChild(element);
+	element.select();
+	document.execCommand('copy');
+	document.body.removeChild(element);
+}
+
 $(document).ready(() => {
 	formatEmailList()
 })
