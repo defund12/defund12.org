@@ -1,47 +1,45 @@
 {% include header.html %}
 
 <div class="content emailPageHeader">
-	<div class="container">
-		<div class="">
-			<h2>{{ page.name }}</h2>
-			<b>{{ page.city }}, {{ page.state }}</b><br />
-			{{ site.email_intro_text | markdownify }}
-		</div>
-	</div>
+    <div class="container">
+        <div class="">
+            <h2>{{ page.name }}</h2>
+            <b>{{ page.city }}, {{ page.state }}</b><br /> {{ site.email_intro_text | markdownify }}
+        </div>
+    </div>
 </div>
 
 <div class="content emailContentSection">
-	<div class="container">
-		<div class="emailContent">
-			<div class="recipients">
-				<b>To:</b>
-				{{ page.recipients | join: ',' }}
-				<span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
-			</div>
-			<div>
-				<b>Subject:</b>
-				{{ page.subject }}
-				<span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.subject }}`)">🔗</span>
-			</div>
-			<div>
-				<b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
-				<span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
-				<br />
-				{{ page.body | markdownify }}
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="emailContent">
+            <div class="recipients">
+                <b>To:</b> {{ page.recipients | join: ',' }}
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
+            </div>
+            <div>
+                <b>Subject:</b> {{ page.subject }}
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.subject }}`)">🔗</span>
+            </div>
+            <div>
+                <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
+                <br /> {{ page.body | markdownify }}
+            </div>
+        </div>
+    </div>
 </div>
 
 {% include list.html %}
 
 <script type="text/javascript">
-	$(document).ready(() => {
-		const subject = encodeURIComponent(`{{ page.subject }}`.trim());
-		const body = encodeURIComponent(`{{ page.body }}`.trim());
-		const recipients = `{{ page.recipients | join: ',' }}`
-		location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
-	})
+    $(document).ready(() => {
+        const subject = encodeURIComponent(`{{ page.subject }}`.trim());
+        const body = encodeURIComponent(`{{ page.body }}`.trim());
+        const recipients = `{{ page.recipients | join: ',' }}`;
+        const cc = `{{ page.cc | join: ',' }}`;
+        const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+        location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+    })
 </script>
 
 {% include footer.html %}
