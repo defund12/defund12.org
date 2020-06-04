@@ -8,10 +8,10 @@ function formatEmailList() {
 		for (let item of items) {
 
 			// Setup click event
-			$(item).on('click', () => {
-				const { recipients, subject, body } = item.dataset;
-				location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
-			})
+			// $(item).on('click', () => {
+			// 	const { recipients, subject, body } = item.dataset;
+			// 	location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
+			// })
 
 			// Push into state lists
 			const { state } = item.dataset;

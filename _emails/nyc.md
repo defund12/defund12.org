@@ -1,8 +1,8 @@
 ---
-title: New York City Council Members
+title: Letter to Council Members
 permalink: "/nyc"
 state: NY
-city: NYC
+city: New York
 layout: email
 recipients:
   - mguerra@council.nyc.gov
