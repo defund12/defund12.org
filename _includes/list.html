@@ -1,8 +1,14 @@
 <div class="content">
     <div class="container">
-        <div id="emailLinks">
-            {% assign sorted_emails = site.emails | sort:"state" %} {% for email in sorted_emails %}
+        <div class="emailLinks">
+            {% assign sorted_emails = site.emails | where_exp: "email", "email.intl == nil" | sort:"state" %} {% for email in sorted_emails %}
             <li data-state="{{ email.state }}">
+                <a href="{{ email.permalink }}?browse">{{ email.city }} - <i>{{ email.name }}</i></a>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ email.permalink }}`, true)">🔗</span>
+            </li>
+            {% endfor %}
+            {% assign sorted_emails = site.emails | where_exp: "email", "email.intl == true" | sort:"state" %} {% for email in sorted_emails %}
+            <li data-state="{{ email.state }}" data-intl="{{ email.intl }}">
                 <a href="{{ email.permalink }}?browse">{{ email.city }} - <i>{{ email.name }}</i></a>
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ email.permalink }}`, true)">🔗</span>
             </li>

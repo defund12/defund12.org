@@ -1,10 +1,10 @@
 ---
-title: Toronto
-permalink: "/toronto"
-name: Letter to City Councillors
-state: CAN
+title: London
+permalink: "/london"
+name: Letter to City Officials (International Example)
+state: UK
 intl: true # international
-city: Toronto
+city: London
 layout: email
 recipients:
 - mayor_tory@toronto.ca
@@ -33,7 +33,7 @@ recipients:
 - councillor_lai@toronto.ca
 - councillor_ainslie@toronto.ca
 - councillor_mckelvie@toronto.ca
-subject: 2020 Toronto Police Budget - Call For Action/Defunding
+subject: 2020 Mississauga Police Budget - Call For Action/Defunding
 body: |
   I am a resident of [NEIGHBORHOOD/WARD].
 

@@ -1,5 +1,5 @@
 function formatEmailList() {
-  const list = $("#emailLinks");
+  const list = $(".emailLinks");
   if (list.length) {
     let content = $("<div></div>");
     const items = list.find("li");
@@ -19,7 +19,14 @@ function formatEmailList() {
       states[state].push(item);
     }
     for (let [name, items] of Object.entries(states)) {
-      let stateElement = $("<div class='state'></div>");
+      let stateElement
+      for (let item of items) {
+        if (item.dataset.intl) { // if international add class .intl (for spacing)
+          stateElement = $("<div class='state intl'></div>");
+        } else {
+          stateElement = $("<div class='state'></div>");
+        }
+      }
       stateElement.append(`<h2>${name}</h2>`);
       for (let item of items) stateElement.append(item);
       content.append(stateElement);
