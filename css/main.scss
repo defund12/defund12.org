@@ -116,6 +116,15 @@ header {
 		color: red;
 	}
 }
+.template-fill {
+	input {
+		border: 1px solid grey;
+		border-radius: 5px;
+		width: 100%;
+		padding: 10px 20px;
+		margin: 5px 0;
+	}
+}
 .footer {margin-top:40px;}
 
 .copyToClipboard{
