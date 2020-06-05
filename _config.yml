@@ -20,7 +20,7 @@ defaults:
       type: "emails"
     values:
       layout: "email"
-      name:
+      name: Title of letter (e.g. Letter to City Council)
       city:
       state:
 permalink: pretty
