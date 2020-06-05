@@ -4,6 +4,7 @@ permalink: "/fremont-ca"
 name: Letter to the Mayor, City Council, City Manager, and Police Chief
 city: Fremont
 state: CA
+layout: email
 recipients:
 - lmei@fremont.gov
 - councilmemberjones@fremont.gov
@@ -18,7 +19,7 @@ subject: Fremont Resident for Defunding the Fremont PD
 body: |-
   To Mayor Mei, the Fremont City Council, Fremont City Manager, and Fremont Police Chief
 
-  My name is \[YOUR NAME\], and I am a resident of Fremont. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+  My name is [YOUR NAME], and I am a resident of Fremont. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
   
   This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-blackness, and immediate reform in how black people are treated in America. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
 
@@ -34,13 +35,9 @@ body: |-
 
   Sincerely,
 
-  \[YOUR NAME\]
-
-  \[YOUR ADDRESS\]
-
-  \[YOUR EMAIL\]
-
-  \[YOUR PHONE NUMBER\]
-layout: email
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 ---
 
