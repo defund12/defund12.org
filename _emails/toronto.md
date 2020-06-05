@@ -3,7 +3,7 @@ title: Toronto
 permalink: "/toronto"
 name: Letter to the Mayor, City Council, MPPs, and TPS Board
 city: Toronto
-state: BC
+state: ON
 layout: email
 recipients:
 - mayor_tory@toronto.ca
