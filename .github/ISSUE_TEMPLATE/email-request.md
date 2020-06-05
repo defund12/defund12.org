@@ -1,10 +1,9 @@
 ---
+title: ''
 name: Email request
 about: Add an email for your locale! (or supplement one that exists!)
-title: ''
 labels: ''
 assignees: ''
-
 ---
 
 DUE TO HIGH VOLUME EMPTY ISSUES WILL BE IMMEDIATELY CLOSED. PLEASE PROVIDE ALL INFORMATION. THANK YOU!!!! :^)
