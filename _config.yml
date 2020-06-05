@@ -5,29 +5,14 @@ collections:
   emails:
     title: Emails
     output: true
+    city:
+      city: 
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-- scope:
-    path: ''
-    type: emails
-  values:
-    layout: email
 permalink: pretty
 subtitle: Email government officials and council members to reallocate egregious police
   budgets towards education, social services, and dismantling racial inequality.
