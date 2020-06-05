@@ -18,17 +18,19 @@ recipients:
 - District9@sanjoseca.gov
 - District10@sanjoseca.gov
 subject: Defund the Police Department
-body: |
-    "We demand reallocation of funding from SJPD to social and public programming that takes place in our communities, demand regulation ensure oversight board for public spending. It is an outrage that 44% of the city funding goes towards the Police Department. It has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.
-
-    We demand that the City Council defund the SJPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk San Jose residents during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
-
-    It is your duty to represent your constituents. I am urging you to completely revise the San Jose city budget for 2020-2021 fiscal year, and to fund #CareNotCops. Public opinion is with me.
-
-    Thank you for your time,
-
-    [YOUR NAME]
-    [YOUR ADDRESS] 
-    [YOUR EMAIL]
-    [YOUR PHONE NUMBER]"
+body: "\"We demand reallocation of funding from SJPD to social and public programming
+  that takes place in our communities, demand regulation ensure oversight board for
+  public spending. It is an outrage that 44% of the city funding goes towards the
+  Police Department. It has seen a rise in overtime pay which, more often than not,
+  is paid out to officers responsible for harassing the unhoused, and Black, Indigenous,
+  people of color.\n\nWe demand that the City Council defund the SJPD. We join the
+  calls of those across the country to #DefundThePolice. We demand a budget that adequately
+  and effectively meets the needs of at-risk San Jose residents during this trying
+  and uncertain time, when livelihoods are on the line. We demand a budget that supports
+  community wellbeing, rather than empowers the police forces that tear them apart.\n\nIt
+  is your duty to represent your constituents. I am urging you to completely revise
+  the San Jose city budget for 2020-2021 fiscal year, and to fund #CareNotCops. Public
+  opinion is with me.\n\nThank you for your time,\n\n[YOUR NAME]\n[YOUR ADDRESS] \n[YOUR
+  EMAIL]\n[YOUR PHONE NUMBER]\"\n"
 ---
+
