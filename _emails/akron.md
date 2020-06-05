@@ -2,7 +2,7 @@
 title: Akron, OH
 permalink: "/akron"
 name: Letter to Mayor and City Council
-state: NY
+state: OH
 city: Akron
 layout: email
 recipients:
@@ -33,5 +33,5 @@ body: |
   Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.
 
   Thank you,
-  [NAME]
+  [NAME]"
 ---
