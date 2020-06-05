@@ -19,11 +19,12 @@ function parseEmailBody(){
     let match_array = [...email.body.matchAll(regexp)]
 
     match_array.forEach(function(item){
-        if(item[1] in templating){
-            templating[item[1]].location.push(item.index)
+        let key_val = item[1].toLowerCase().replace(' ', '-')
+        if(key_val in templating){
+            templating[key_val].location.push(item.index)
         }
         else {
-            templating[item[1]] = {
+            templating[key_val] = {
                 location: [item.index],
                 repl_text: item[0]
             }
@@ -32,7 +33,7 @@ function parseEmailBody(){
 
     // wrap templated regions in spans
     for(key in templating){
-        $(`.body:contains('${key}')`).html(function(_, html){
+        $(`.body:contains('${templating[key].repl_text}')`).html(function(_, html){
             return html.replace(
                 `${templating[key].repl_text}`,
                 `<span class="template-region" data-templatekey="${key}">${templating[key].repl_text}</span>`
@@ -43,6 +44,22 @@ function parseEmailBody(){
 
 function renderTemplatingForm(){
     let html_hook = $('.template-fill')
+    for(key in templating){
+        let key_pretty = key.replace('-', ' ')
+        let entry_html = `
+            <div class="template-entry">
+                <label for="${key}">${key_pretty}</label>
+                <input type="text" name="${key}" id="${key}-input">
+            </div>
+        `
+        html_hook.append(entry_html)
+    }
+
+    $('.template-fill :input').each(function(){
+        $(this).on('input', function(){
+            $(`span[data-templatekey="${this.name}"]`).text($(this).val())
+        })
+    })
 
 }
 
