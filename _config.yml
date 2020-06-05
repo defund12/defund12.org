@@ -5,6 +5,8 @@ collections:
   emails:
     title: Emails
     output: true
+    city:
+      city: 
   posts:
     title: Posts
     output: true
