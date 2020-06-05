@@ -21,23 +21,7 @@ recipients:
 - karla.cisneros@houstontx.gov	
 - robert.gallegos@houstontx.gov	
 - edward.pollard@houstontx.gov
-- controllers@houstontx.gov
-- districta@houstontx.gov
-- districtb@houstontx.gov
-- districtc@houstontx.gov
-- districtd@houstontx.gov
-- districte@houstontx.gov
-- districtf@houstontx.gov
-- districtg@houstontx.gov
-- districth@houstontx.gov
-- districti@houstontx.gov
-- districtj@houstontx.gov
-- districtk@houstontx.gov
-- atlarge1@houstontx.gov
-- atlarge2@houstontx.gov
-- atlarge3@houstontx.gov
-- atlarge4@houstontx.gov
-- atlarge5@houstontx.gov
+
 subject: We Demand Divestment from Police and an Investment in Black Communities
 body: |
   Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].
