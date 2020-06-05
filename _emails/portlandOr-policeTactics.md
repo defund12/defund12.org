@@ -6,13 +6,20 @@ state: OR
 city: Portland
 layout: email
 recipients:
-- cityinfo@portlandoregon.gov
 - mayorwheeler@portlandoregon.gov
+- Amanda@portlandoregon.gov
+- chloe@portlandoregon.gov
 - joann@portlandoregon.gov
 - AuditorHullCaballero@portlandoregon.gov
+- ipr@portlandoregon.gov
+- Ombudsman@portlandoregon.gov
+- ppbpio@portlandoregon.gov
+- sonia.schmanski@portlandoregon.gov
+- Toni.Anderson@portlandoregon.gov
+- Andrew.Bryans@portlandoregon.gov
 subject: Disturbing Police Tactics
 body: |
-  Hello Mayor Wheeler, Commissioner Hardesty, and Auditor Hull Caballero,
+  Hello,
 
   I am a [YOUR CITY/DISTRICT] resident. I have been following the recent protests against police brutality, and I am increasingly disturbed by the use of force by police in this city. There are plenty of videos showing police attacking citizens over the past few days, usually unprovoked and without discretion. Tonight, there was no curfew in place and yet still police used violent force in the name of "dispersing crowds". The constitution is very clear about the peoples' First Amendment rights to peacefully assemble.
 
