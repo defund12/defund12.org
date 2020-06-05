@@ -3,6 +3,7 @@ title: Suffolk County
 permalink: "/suffolk"
 name: Letter to County Legislature
 state: NY
+country: United States
 city: Suffolk County
 layout: email
 recipients:

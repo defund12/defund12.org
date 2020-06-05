@@ -2,6 +2,7 @@
 title: Fort Wayne, IN
 permalink: "/fortwayne"
 name: Letter to City Council
+country: United States
 city: Fort Wayne
 layout: email
 state: IN

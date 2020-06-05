@@ -3,6 +3,7 @@ title: Louisville, KY
 permalink: "/louisville-justice"
 name: Letter to Mayor & Council - Justice for Breonna Taylor
 state: KY
+country: United States
 city: Louisville
 layout: email
 recipients:

@@ -3,6 +3,7 @@ title: Orlando, FL
 permalink: "/orlando"
 name: Letter to Council Members
 state: FL
+country: United States
 city: Orlando
 layout: email
 recipients:

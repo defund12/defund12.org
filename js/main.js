@@ -7,23 +7,37 @@ function formatEmailList() {
   const list = $('#emailLinks');
   const stateList = $('#selected_state');
   if (list.length) {
-    const content = $('<div></div>');
-    const items = list.find('li');
-    const locales = {};
-    for (const item of items) {
-      const {state} = item.dataset;
-      if (locales[state] === undefined) {
-        locales[state] = [];
-        const stateElement = $(`<option value="${state}">${state}</option>`);
-        stateList.append(stateElement);
+    let content = $("<div></div>");
+    const items = list.find("li");
+    const countries = {};
+    for (let item of items) {
+      // Setup click event
+      // $(item).on('click', () => {
+      // 	const { recipients, subject, body } = item.dataset;
+      // 	location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
+      // })
+
+      // Push into state lists
+      const { state, country } = item.dataset;
+      if (countries[country] === undefined) {
+        countries[country] = [];
       }
-      locales[state].push(item);
+      const currentCountry = countries[country];
+      if (currentCountry[state] === undefined) {
+        currentCountry[state] = [];
+      }
+      currentCountry[state].push(item);
     }
-    for (const [state, items] of Object.entries(locales)) {
-      const stateElement = $(`<div class='state' data-state="${state}"></div>`);
-      stateElement.append(`<h2>${state}</h2>`);
-      for (const item of items) stateElement.append(item);
-      content.append(stateElement);
+    for (let [countryCode, states] of Object.entries(countries)) {
+      let countryElement = $("<div class='country'></div>");
+      countryElement.append(`<h1>${countryCode}</h1>`);
+      for (let [name, items] of Object.entries(states)) {
+        let stateElement = $("<div class='state'></div>");
+        stateElement.append(`<h2>${name}</h2>`);
+        for (let item of items) stateElement.append(item);
+        countryElement.append(stateElement);
+      }
+      content.append(countryElement);
     }
     list.html(content);
 

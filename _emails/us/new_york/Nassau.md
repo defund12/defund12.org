@@ -2,6 +2,7 @@
 title: Nassau County
 permalink: "/Nassau"
 name: Letter to County Legislature
+country: United States
 city: Nassau County
 state: NY
 recipients:

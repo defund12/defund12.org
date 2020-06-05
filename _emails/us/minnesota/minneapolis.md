@@ -2,6 +2,7 @@
 title: Minneapolis, MN
 permalink: "/minneapolis"
 name: Letter to Mayor and City Council
+country: United States
 city: Minneapolis
 state: MN
 recipients:

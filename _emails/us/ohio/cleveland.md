@@ -3,6 +3,7 @@ title: Cleveland, OH
 permalink: "/cleveland"
 name: Letter to Mayor and City Council
 state: OH
+country: United States
 city: Cleveland
 layout: email
 recipients:
