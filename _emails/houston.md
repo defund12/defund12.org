@@ -7,20 +7,22 @@ city: Houston
 layout: email
 recipients:
 - mayor@houstontx.gov
-- Mike.Knox@houstontx.gov
-- david.robinson@houstontx.gov
-- michael.kubosh@houstontx.gov
-- letitia.plummer@houstontx.gov
-- sallie.alcorn@houstontx.gov
-- amy.peck@houstontx.gov
-- jerry.davis@houstontx.gov
-- abbie.kamin@houstontx.gov
-- dave.martin@houstontx.gov
-- tiffany.thomas@houstontx.gov
-- greg.travis@houstontx.gov
-- karla.cisneros@houstontx.gov
-- robert.gallegos@houstontx.gov
-- edward.pollard@houstontx.gov
+- districta@houstontx.gov
+- districtb@houstontx.gov
+- districtc@houstontx.gov
+- districtd@houstontx.gov
+- districte@houstontx.gov
+- districtf@houstontx.gov
+- districtg@houstontx.gov
+- districth@houstontx.gov
+- districti@houstontx.gov
+- districtj@houstontx.gov
+- districtk@houstontx.gov
+- atlarge1@houstontx.gov
+- atlarge2@houstontx.gov
+- atlarge3@houstontx.gov
+- atlarge4@houstontx.gov
+- atlarge5@houstontx.gov
 subject: We Demand Divestment from Police and an Investment in Black Communities
 body: "Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].\n\nWE ARE JOINING
   TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: \n\n1. Vote no on all increases
@@ -63,4 +65,3 @@ body: "Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].\n\nWE ARE JOI
   And we call for the end to police terror. \n\nSincerely,\nThe People of Houston,
   TX\n[NAME]\n[PHONE_NUMBER]\n[EMAIL]\n[ADDRESS]\n"
 ---
-
