@@ -31,7 +31,7 @@ function formatEmailList() {
 }
 
 var mostRecentSpanElement;
-function copyToClipboard(spanElement, copyText, isPermalink) {
+function copyToClipboard(spanElement, copyText) {
 	if (mostRecentSpanElement) {
 		mostRecentSpanElement.innerHTML = "🔗";
 	}
@@ -40,8 +40,7 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
 	mostRecentSpanElement = spanElement;
 
 	const element = document.createElement('textarea');
-	let copyValue = copyText;
-	if (isPermalink) copyValue = 'https://defund12.org'.concat(copyText)
+	let copyValue = 'https://defund12.org'.concat(copyText)
 	element.value = copyValue;
 	document.body.appendChild(element);
 	element.select();
