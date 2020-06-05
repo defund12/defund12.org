@@ -45,7 +45,10 @@
             <div class="body">
                 <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `${email.body}`)">🔗</span>
-                <br /> {{ page.body | markdownify }}
+                <br />
+                <div class="email-contents">
+                    {{ page.body | markdownify }}
+                </div>
             </div>
         </div>
     </div>

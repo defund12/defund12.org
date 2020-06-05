@@ -33,7 +33,7 @@ function parseEmailBody(){
 
     // wrap templated regions in spans
     for(key in templating){
-        $('.body').html(function(_, html){
+        $('.email-contents').html(function(_, html){
             let reg_search_str = templating[key].repl_text.replace('[', '\\[').replace(']', '\\]')
             return html.replace(
                 new RegExp(reg_search_str, 'g'),
