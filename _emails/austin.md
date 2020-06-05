@@ -1,43 +1,23 @@
 ---
-title: Houston, TX
-permalink: "/houston"
+title: Austin, TX
+permalink: "/austin"
 name: Letter to Mayor and City Council
 state: TX
-city: Houston
+city: Austin
 layout: email
 recipients:
-- mayor@houstontx.gov
-- Mike.Knox@houstontx.gov	
-- david.robinson@houstontx.gov	
-- michael.kubosh@houstontx.gov	
-- letitia.plummer@houstontx.gov	
-- sallie.alcorn@houstontx.gov	
-- amy.peck@houstontx.gov	
-- jerry.davis@houstontx.gov	
-- abbie.kamin@houstontx.gov	
-- dave.martin@houstontx.gov	
-- tiffany.thomas@houstontx.gov	
-- greg.travis@houstontx.gov	
-- karla.cisneros@houstontx.gov	
-- robert.gallegos@houstontx.gov	
-- edward.pollard@houstontx.gov
-- controllers@houstontx.gov
-- districta@houstontx.gov
-- districtb@houstontx.gov
-- districtc@houstontx.gov
-- districtd@houstontx.gov
-- districte@houstontx.gov
-- districtf@houstontx.gov
-- districtg@houstontx.gov
-- districth@houstontx.gov
-- districti@houstontx.gov
-- districtj@houstontx.gov
-- districtk@houstontx.gov
-- atlarge1@houstontx.gov
-- atlarge2@houstontx.gov
-- atlarge3@houstontx.gov
-- atlarge4@houstontx.gov
-- atlarge5@houstontx.gov
+- steve.adler@austintexas.gov
+- Ryan.Sitton@rrc.texas.gov
+- Natasha.Madison@austintexas.gov
+- Delia.Garza@austintexas.gov
+- Sabino.Renteria@austintexas.gov
+- Greg.Casar@austintexas.gov
+- Ann.Kitchen@austinteas.gov
+- jimmy.flannigan@austintexas.gov
+- Leslie.Pool@austintexas.gov
+- Paige.Ellis@austintexas.gov
+- Kathie.Tovo@austintexas.gov
+- Alison.Alter@austintexas.gov
 subject: We Demand Divestment from Police and an Investment in Black Communities
 body: |
   Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].
@@ -63,7 +43,7 @@ body: |
   We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror. 
   
   Sincerely,
-  The People of Houston, TX
+  The People of Austin, TX
   [NAME]
   [PHONE_NUMBER]
   [EMAIL]

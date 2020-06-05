@@ -1,48 +1,32 @@
 ---
-title: Houston, TX
-permalink: "/houston"
+title: Dallas, TX
+permalink: "/dallas"
 name: Letter to Mayor and City Council
 state: TX
-city: Houston
+city: Dallas
 layout: email
 recipients:
-- mayor@houstontx.gov
-- Mike.Knox@houstontx.gov	
-- david.robinson@houstontx.gov	
-- michael.kubosh@houstontx.gov	
-- letitia.plummer@houstontx.gov	
-- sallie.alcorn@houstontx.gov	
-- amy.peck@houstontx.gov	
-- jerry.davis@houstontx.gov	
-- abbie.kamin@houstontx.gov	
-- dave.martin@houstontx.gov	
-- tiffany.thomas@houstontx.gov	
-- greg.travis@houstontx.gov	
-- karla.cisneros@houstontx.gov	
-- robert.gallegos@houstontx.gov	
-- edward.pollard@houstontx.gov
-- controllers@houstontx.gov
-- districta@houstontx.gov
-- districtb@houstontx.gov
-- districtc@houstontx.gov
-- districtd@houstontx.gov
-- districte@houstontx.gov
-- districtf@houstontx.gov
-- districtg@houstontx.gov
-- districth@houstontx.gov
-- districti@houstontx.gov
-- districtj@houstontx.gov
-- districtk@houstontx.gov
-- atlarge1@houstontx.gov
-- atlarge2@houstontx.gov
-- atlarge3@houstontx.gov
-- atlarge4@houstontx.gov
-- atlarge5@houstontx.gov
+- eric.johnson@dallascityhall.com
+- Ryan.Sitton@rrc.texas.gov
+- Chad.West@dallascityhall.com
+- adam.medrano@dallascityhall.com
+- casey.thomas@dallascityhall.com
+- carolyn.kingarnold@dallascityhall.com
+- jaime.resendez@dallascityhall.com
+- omar.Narvaez@dallascityhall.com
+- Adam.Bazaldua@dallascityhall.com
+- Tennell.Atkins@dallascityhall.com
+- Paula.Blackmon@dallascityhall.com
+- adam.mcgough@dallascityhall.com
+- lee.kleinman@dallascityhall.com
+- cara.mendelsohn@dallascityhall.com
+- david.blewett@dallascityhall.com
+- jennifer.gates@dallascityhall.com
 subject: We Demand Divestment from Police and an Investment in Black Communities
 body: |
   Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].
   
-  WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
+  WE ARE JOINING TOGETHER TO DEMAND THAT <b>YOU</b>, MY LOCAL OFFICIALS, WILL: 
   
   1. Vote no on all increases to police budgets 
   2. Vote yes to decrease police spending and budgets 
@@ -63,7 +47,7 @@ body: |
   We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror. 
   
   Sincerely,
-  The People of Houston, TX
+  The People of Dallas, TX
   [NAME]
   [PHONE_NUMBER]
   [EMAIL]
