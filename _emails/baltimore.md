@@ -21,7 +21,7 @@ recipients:
 - Robert.Stokes@baltimorecity.gov
 - Shannon.Sneed@baltimorecity.gov
 - MaryPat.Clarke@baltimorecity.gov
-subject: I Oppose Budget Ordinace BL2020-286
+subject: Commit to reallocate for social equity
 body: |
   "To whom it may concern,
 
