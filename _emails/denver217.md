@@ -51,7 +51,7 @@ subject: We Demand a People's Budget
 body: |-
   Hello,
 
-  I am a resident of Denver. I am writing to demand that the Denver and Colorado adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+  I am a resident of Denver. I am writing to demand that Denver and Colorado adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
 
   We will no longer accept empty gestures and suggestions of “reform.” This includes the statewide Senate Bill 217, being referred to as the “police accountability” bill. This bill does not do enough to address our systemic policing problems in our state and Denver. The bill will increase police budgets by $1.4 million, and will most likely increase spending on police departments even more in the future.
 
