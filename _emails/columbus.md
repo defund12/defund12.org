@@ -28,7 +28,6 @@ recipients:
 - mjbrown@columbus.gov
 - sghardin@columbus.gov
 - radorans@columbus.gov
-- cityauditor@columbus.gov
 - zmklein@columbus.gov
 subject: We Demand Divestment from Police and an Investment in Black Communities
 body: | 
