@@ -12,26 +12,24 @@ collections:
     title: Uploads
     output: true
 defaults:
-  - scope:
-      path: ""
-      type: emails
-    values:
-      layout: email
-      name: Title of letter (e.g. Letter to City Council)
-      city: City
-      state: State intials
-      recipients:
-        - email@address.com
-      cc:
-        - email@address.com
-      subject: Email subject (mention defunding police dept.)
-      body: Email message (remember to include placeholders for name)
+- scope:
+    path: ''
+    type: emails
+  values:
+    layout: email
+    name: Title of letter (e.g. Letter to City Council)
+    city: City
+    state: State intials
+    recipients:
+    - email@address.com
+    cc:
+    - email@address.com
+    subject: Email subject (mention defunding police dept.)
+    body: Email message (remember to include placeholders for name)
 permalink: pretty
-subtitle:
-  "Email government officials and council members to reallocate egregious police
-  budgets towards education, social services, and dismantling racial inequality."
-meta:
-  Email government officials and council members to reallocate police budgets
+subtitle: Email government officials and council members to reallocate egregious police
+  budgets towards education, social services, and dismantling racial inequality.
+meta: Email government officials and council members to reallocate police budgets
   towards education, social services, and dismantling racial inequality.
 footer_text: Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)
 email_intro_text: |-
