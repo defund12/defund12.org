@@ -5,34 +5,12 @@ collections:
   emails:
     title: Emails
     output: true
-    subject: d
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-- scope:
-    path: ''
-    type: emails
-  values:
-    layout: email
 permalink: pretty
-subtitle: Email government officials and council members to reallocate egregious police
+subtitle:
+  Email government officials and council members to reallocate egregious police
   budgets towards education, social services, and dismantling racial inequality.
-meta: Email government officials and council members to reallocate police budgets
+meta:
+  Email government officials and council members to reallocate police budgets
   towards education, social services, and dismantling racial inequality.
 footer_text: Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)
 email_intro_text: |-
