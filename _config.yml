@@ -17,13 +17,12 @@ defaults:
     type: emails
   values:
     layout: email
+    permalink: "/desired-path"
     name: Title of letter (e.g. Letter to City Council)
     city: City
     state: State intials
     recipients:
-    - email@address.com
-    cc:
-    - email@address.com
+    - 
     subject: Email subject (mention defunding police dept.)
     body: Email message (remember to include placeholders for name)
 permalink: pretty
