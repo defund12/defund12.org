@@ -17,6 +17,7 @@ defaults:
     type: emails
   values:
     layout: email
+    permalink: "/desired-path"
     name: Title of letter (e.g. Letter to City Council)
     city: City
     state: State intials
