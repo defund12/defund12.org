@@ -33,9 +33,10 @@ function parseEmailBody(){
 
     // wrap templated regions in spans
     for(key in templating){
-        $(`.body:contains('${templating[key].repl_text}')`).html(function(_, html){
+        $('.body').html(function(_, html){
+            let reg_search_str = templating[key].repl_text.replace('[', '\\[').replace(']', '\\]')
             return html.replace(
-                `${templating[key].repl_text}`,
+                new RegExp(reg_search_str, 'g'),
                 `<span class="template-region" data-templatekey="${key}">${templating[key].repl_text}</span>`
                 )
         })
