@@ -14,15 +14,14 @@ collections:
     title: Uploads
     output: true
 defaults:
-  -
-    scope:
-      path: ""
-      type: "emails"
-    values:
-      layout: "email"
-      name: Title of letter (e.g. Letter to City Council)
-      city:
-      state:
+- scope:
+    path: ''
+    type: emails
+  values:
+    layout: email
+    name: Title of letter (e.g. Letter to City Council)
+    city: 
+    state: 
 permalink: pretty
 subtitle: Email government officials and council members to reallocate egregious police
   budgets towards education, social services, and dismantling racial inequality.
