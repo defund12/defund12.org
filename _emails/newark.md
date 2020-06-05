@@ -16,7 +16,7 @@ recipients:
 - mciverl@ci.newark.nj.us
 - quintanal@ci.newark.nj.us
 - crumpm@ci.newark.nj.us
-subject: Newark Demands Equity: Police Budget and Reform
+subject: "Newark Demands Equity: Police Budget and Reform"
 body: |-
   My name is [YOUR NAME] and I am a resident of Newark. I urge you to redirect money away from the NPD and into social service programs that will benefit public health and our own communities. We also need to ban chokeholds, strangleholds, shooting at moving vehicles, and require police officers to practice de-escalation and comprehensive reporting (8cantwait.org).
 
