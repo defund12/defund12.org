@@ -79,16 +79,18 @@ function selectCountry(event) {
         if ($(this).data('country') === event.target.value) {
             $(this).removeAttr('hidden');
         } else {
-            $(this).attr('hidden', true)
+            $(this).attr('hidden', true);
         }
     });
-    $(`#emailLinks .country[data-country!="${event.target.value}"]`).attr('hidden', true)
-    $(`#emailLinks .country[data-country="${event.target.value}"]`).removeAttr('hidden')
+    $(`#emailLinks .country[data-country!="${event.target.value}"]`).attr('hidden', true);
+    $(`#emailLinks .country[data-country="${event.target.value}"]`).removeAttr('hidden');
+    $(`#emailLinks .state`).removeAttr('hidden');
+    $("#selected_state").val("Region");
 }
 
 function selectState(event) {
-    $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true)
-    $(`#emailLinks .state[data-state="${event.target.value}"]`).removeAttr('hidden')
+    $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true);
+    $(`#emailLinks .state[data-state="${event.target.value}"]`).removeAttr('hidden');
 }
 
 /**
