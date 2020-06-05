@@ -23,12 +23,12 @@ recipients:
 - DavidLaGrand@house.mi.gov
 subject: Proposal for People's Budget of Grand Rapids
 body: |
-    "I am asking you to call an emergency council meeting and challenge the mayor’s proposed budget in favor of The People’s Budget before the budget is adopted on July 1st. I know that public services are set to be cut by $22M by FY2021 besides in business redevelopment and a proposed cut to a community engagement effort within the Grand Rapids Police Department. I think that this is unacceptable, and ask that funds be redirected away from the Grand Rapids Police Department and into public services such as housing, education, and healthcare access, and to consider direct financial relief to citizens, not just businesses, impacted by COVID-19. This funding must be allocated in a way that provides the most relief to those in our community that are the most marginalized and victimized by the structural racism and inequity that Grand Rapids is built upon, and that the Grand Rapids Police Department and your City Commission is complicit in enforcing. Public tensions are rising and public opinion is dwindling in regard to the City’s inappropriate response to the murder of George Floyd and militarized, over-policed response to subsequent protests of police brutality and racism.
+  "I am asking you to call an emergency council meeting and challenge the mayor’s proposed budget in favor of The People’s Budget before the budget is adopted on July 1st. I know that public services are set to be cut by $22M by FY2021 besides in business redevelopment and a proposed cut to a community engagement effort within the Grand Rapids Police Department. I think that this is unacceptable, and ask that funds be redirected away from the Grand Rapids Police Department and into public services such as housing, education, and healthcare access, and to consider direct financial relief to citizens, not just businesses, impacted by COVID-19. This funding must be allocated in a way that provides the most relief to those in our community that are the most marginalized and victimized by the structural racism and inequity that Grand Rapids is built upon, and that the Grand Rapids Police Department and your City Commission is complicit in enforcing. Public tensions are rising and public opinion is dwindling in regard to the City’s inappropriate response to the murder of George Floyd and militarized, over-policed response to subsequent protests of police brutality and racism.
 
-    Thank you for your time,
-    [YOUR NAME]
-    [YOUR ADDRESS]
-    [YOUR EMAIL]
-    [YOUR PHONE NUMBER]"
+  Thank you for your time,
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]"
 ---
 
