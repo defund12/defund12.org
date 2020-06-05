@@ -32,7 +32,7 @@ function formatEmailList() {
       let countryElement = $("<div class='country'></div>");
       countryElement.append(`<h1>${countryCode}</h1>`);
       for (let [name, items] of Object.entries(states)) {
-        let stateElement = $("<div class='state'></div>");
+          let stateElement = $(`<div class='state' data-state="${name}"></div>`);
         stateElement.append(`<h2>${name}</h2>`);
         for (let item of items) stateElement.append(item);
         countryElement.append(stateElement);
@@ -74,6 +74,23 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
   document.body.removeChild(element);
 }
 
+function selectCountry(event) {
+    $("#selected_state option").each(function () {
+        if ($(this).data('country') === event.target.value) {
+            $(this).removeAttr('hidden');
+        } else {
+            $(this).attr('hidden', true)
+        }
+    });
+    $(`#emailLinks .country[data-country!="${event.target.value}"]`).attr('hidden', true)
+    $(`#emailLinks .country[data-country="${event.target.value}"]`).removeAttr('hidden')
+}
+
+function selectState(event) {
+    $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true)
+    $(`#emailLinks .state[data-state="${event.target.value}"]`).removeAttr('hidden')
+}
+
 /**
  * Called when the user selects a state from the dropdown menu
  * @param  {Event} event The DOM on change event object
@@ -110,5 +127,6 @@ const getParams = function(url) {
 };
 
 $(document).ready(() => {
+  window.appState = {};
   formatEmailList();
 });

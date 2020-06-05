@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -68,5 +68,13 @@
             </a>
             <p class="divider">{{ site.subtitle }}</p>
             <p aria-label="12 = Police"><i>"12" = </i>🚓</p>
+            <div id="filters">
+                <select id="selected_country" onchange="selectCountry(event)">
+                    <option selected>Country</option>
+                </select>
+                <select id="selected_state" onchange="selectState(event)">
+                    <option selected>Region</option>
+                </select>
+            </div>
         </div>
     </header>
