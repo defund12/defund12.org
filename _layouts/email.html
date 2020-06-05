@@ -1,5 +1,19 @@
 {% include header.html %}
 
+<script>
+    // data content
+    const email = {
+        recipients: `{{ page.recipients | join: ',' }}`.split(','),
+        subject: `{{ page.subject }}`,
+        body: `{{ page.body }}`
+    }
+
+    {% if page.cc %}
+        email.cc = `{{ page.cc | join: ',' }}`.split(',')
+    {% endif %}
+
+</script>
+
 <div class="content emailPageHeader">
     <div class="container">
 		<h2>{{ page.name }}</h2>
@@ -9,7 +23,8 @@
 			<a onclick="openEmail()">Send email</a>
 			<a onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
 		</div>
-		<p>{{ site.bad_mailto_message }}</p>
+        <p>{{ site.bad_mailto_message }}</p>
+        <div class="template-fill"></div>
     </div>
 </div>
 
@@ -17,20 +32,20 @@
     <div class="container">
         <div class="emailContent">
             <div class="recipients">
-                <b>To:</b> {{ page.recipients | join: ',' }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
+                <b>To:</b> <div id="recipients-list"></div>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `${email.recipients.join(',')}`)">🔗</span>
 			</div>
 			{% if page.cc %}
-			<div class="recipients">
+			<div class="cc">
                 <b>CC:</b> {{ page.cc | join: ',' }}
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ',' }}`)">🔗</span>
 			</div>
 			{% endif %}
-            <div class="recipients">
+            <div class="subject">
                 <b>Subject:</b> {{ page.subject }}
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.subject }}`)">🔗</span>
 			</div>
-            <div>
+            <div class="body">
                 <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
                 <br /> {{ page.body | markdownify }}
@@ -41,25 +56,13 @@
 
 {% include list.html %}
 
+<script src="/js/email.js"></script>
 <script type="text/javascript">
-	function openEmail () {
-		const subject = encodeURIComponent(`{{ page.subject }}`.trim());
-        const body = encodeURIComponent(`{{ page.body }}`.trim());
-        const recipients = `{{ page.recipients | join: ',' }}`;
-        const cc = `{{ page.cc | join: ',' }}`;
-        const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
-        location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
-	}
     $(document).ready(() => {
-		const params = getParams(window.location.href)
-		if (params.browse !== undefined) {
-			$("#autoopen").hide()
-			// Automatically updates the URL so if folks try to share, it will auto-open
-			window.history.replaceState({}, document.title, `${window.location.origin}{{ page.permalink }}`)
-		} else {
-			openEmail()
-		}
+        renderEmail()
+        renderTemplatingForm()
     })
+    
 </script>
 
 {% include footer.html %}
