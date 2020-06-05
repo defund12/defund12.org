@@ -2,9 +2,8 @@
 title: Oakland, CA
 permalink: "/oakland"
 name: Letter to Mayor, Council Members, and Elected Officials
-state: CA
 city: Oakland
-layout: email
+state: CA
 recipients:
 - atlarge@oaklandca.gov
 - officeofthemayor@oaklandnet.com
@@ -33,9 +32,8 @@ body: "\"To Mayor Schaaf, the Oakland City Council and Oakland and Alameda Count
   in our city. Instead, we see wasteful and harmful actions of our police.\n\nI call
   on you to slash the OPD budget and instead use those extraordinary resources towards
   solving homelessness, which is felt most by our Black neighbors and veterans. We
-  implore you to give every member of our community experiencing homelessness a place
-  to call home and the treatment they need.\n\nWe can be a beacon for other cities
-  to follow if only we have the courage to change.\n\nSincerely,\n\n[YOUR NAME] \n[YOUR
-  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\"\n"
+  can be a beacon for other cities to follow if only we have the courage to change.\n\nSincerely,\n\n[YOUR
+  NAME] \n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\"\n"
+layout: email
 ---
 
