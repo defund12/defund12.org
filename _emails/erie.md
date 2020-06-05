@@ -1,6 +1,6 @@
 ---
 title: Erie, PA
-permalink: "/erie_pa"
+permalink: "/erie"
 name: Letter to the City Council, Mayor's Office, and Other City Officials
 city: Erie
 state: PA
