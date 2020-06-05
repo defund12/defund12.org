@@ -1,5 +1,5 @@
 ---
-title: Minneapolis, MN	title: Minneapolis
+title: Minneapolis, MN
 permalink: "/minneapolis"	
 name: Letter to Mayor and City Council	
 state: MN	
