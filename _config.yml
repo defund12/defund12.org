@@ -17,6 +17,7 @@ defaults:
       type: emails
     values:
       layout: email
+      permalink: /desired-path
       name: Title of letter (e.g. Letter to City Council)
       city: City
       state: State intials
@@ -24,7 +25,6 @@ defaults:
         -
       subject: Email subject (mention defunding police dept.)
       body: Email message (remember to include placeholders for name)
-      permalink: /desired-path
 permalink: pretty
 subtitle:
   Email government officials and council members to reallocate egregious police
