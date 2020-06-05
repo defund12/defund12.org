@@ -2,9 +2,8 @@
 title: Broome County, NY
 permalink: "/broome"
 name: Letter to County Legislators
-state: NY
 city: Broome County
-layout: email
+state: NY
 recipients:
 - stephen.flagg@broomecounty.us
 - scott.baker@broomecounty.us
@@ -22,15 +21,18 @@ recipients:
 - mary.kaminsky@broomecounty.us
 - mark.whalen@broomecounty.us
 subject: Commit to Reallocation for Social Equity
-body: |
-  "Dear Broome County Legislature,
+body: |2+
 
-  Hi, my name is [NAME] and I am a resident of [TOWN]. I am asking you to reallocate money away from the Broome County PD. Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. As such, I demand a meaningful reallocation of PD funds towards healthcare and social programs.
+  Dear Broome County Legislature,
+
+  My name is [NAME] and I am a resident of [TOWN]. I am asking you to reallocate money away from the Broome County PD. Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. As such, I demand a meaningful reallocation of police department funds towards healthcare and social programs.
 
   Sincerely,
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
-  [YOUR PHONE NUMBER]"
+  [YOUR PHONE NUMBER]
+
+layout: email
 ---
 
