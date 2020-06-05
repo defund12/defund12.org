@@ -21,7 +21,6 @@ recipients:
 - khirschmann@manchesternh.gov
 - jrwaa2@aol.com
 - doneil@manchesternh.gov
-
 subject: Reduce the Manchester Police Department Budget
 body: |
   Hello,
