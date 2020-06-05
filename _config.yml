@@ -5,10 +5,6 @@ collections:
   emails:
     title: Emails
     output: true
-    recipients:
-    - 
-    cc:
-    - 
   posts:
     title: Posts
     output: true
