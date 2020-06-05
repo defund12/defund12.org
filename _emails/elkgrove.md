@@ -14,7 +14,7 @@ subject: Elk Grove demands a People's Budget
 body: |
   "To whom it may concern,
 
-  I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+  I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community well-being and redirects funding away from the police.
 
   We are in the midst of widespread upheaval over the systemic violence of policing. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
 

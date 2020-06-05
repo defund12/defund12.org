@@ -13,7 +13,7 @@ body: |-
 
   My name is [YOUR NAME]. I am a resident of Boston in [YOUR COUNTY] county and I am writing today to demand that Mayor Walsh take specific measures to reduce funding for police in the city of Boston. We are calling on the Mayor to take a serious look at the number of funds being designated towards criminalization and surveillance. The Mayor has a responsibility to address the city’s lack of investment in predominantly Black and Brown community as he considers this funding.
 
-  The city of Boston will spent over $414,306,878 on the Police Department this year, as you well know. By contrast, fair housing and equity receives only $318,366. This is an abomination. Budgets for Immigrant services, disability services, and youth and family services also pale in comparison to this excessive budget.
+  The city of Boston will spend over $414,306,878 on the Police Department this year, as you well know. By contrast, fair housing and equity receives only $318,366. This is an abomination. Budgets for Immigrant services, disability services, and youth and family services also pale in comparison to this excessive budget.
 
   With the overall police budget, the City Council has the power to cut line items in the City budget. The police budget and overtime budget should be cut, with funds reinvested in Black and POC communities including $15 million this year for youth jobs. The Mayor must show strength in his role as a leader of the Council and take a stand for defunding the BPD.
 
