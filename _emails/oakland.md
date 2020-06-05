@@ -20,7 +20,7 @@ recipients:
 - bjohnson@oaklandca.gov
 - askrcd-da@acgov.org
 subject: Oakland Resident for Defunding the OPD
-body: "\"To Mayor Scaaf, the Oakland City Council and Oakland and Alameda County Elected
+body: "\"To Mayor Schaaf, the Oakland City Council and Oakland and Alameda County Elected
   Officials\n\nMy name is [YOUR NAME], and I am a resident of Oakland. This past week,
   our nation has been gripped by protests calling for rapid and meaningful change
   with regard to police behavior, an end to racism and anti-Blackness, and immediate
