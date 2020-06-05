@@ -1,16 +1,20 @@
 var templating = {}
 
 function openSystemEmailClient(){
-	const subject = encodeURIComponent(`{{ page.subject }}`.trim());
-	const body = encodeURIComponent(`{{ page.body }}`.trim());
-	const recipients = `{{ page.recipients | join: ',' }}`;
+	const subject = encodeURIComponent(email.subject.trim());
+	const body = encodeURIComponent($('.email-contents').text().trim());
+	const recipients = email.recipients.join(',');
 	const cc = `{{ page.cc | join: ',' }}`;
 	const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
-	location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
 }
 
 function openWebGmailClient(){
-
+    const subject = encodeURIComponent(email.subject.trim());
+	const body = encodeURIComponent($('.email-contents').text().trim());
+	const recipients = email.recipients.join(',');
+    let gmail_url = `https://mail.google.com/mail?view=cm&fs=1&to=${recipients}&su=${subject}&body=${body}`
+    location.href = gmail_url
 }
 
 function parseEmailBody(){

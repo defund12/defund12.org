@@ -20,7 +20,7 @@
 		<b>{{ page.city }}, {{ page.state }}</b><br /> {{ site.email_intro_text | markdownify }}
 		<p id="autoopen">{{ site.auto_open_message }}</p>
 		<div class='buttons'>
-			<a onclick="openEmail()">Send email</a>
+			<a id='send-system-email'>Send email</a>
 			<a onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
 		</div>
         <p>{{ site.bad_mailto_message }}</p>
@@ -47,7 +47,7 @@
 			</div>
             <div class="body">
                 <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `${email.body}`)">🔗</span>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `${$('.email-contents').text()}`)">🔗</span>
                 <br />
                 <div class="email-contents">
                     {{ page.body | markdownify }}
@@ -63,6 +63,9 @@
 <script type="text/javascript">
     $(document).ready(() => {
         renderEmail()
+        $('#send-system-email').click(function(){
+            openSystemEmailClient()
+        })
     })
     
 </script>
