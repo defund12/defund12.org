@@ -26,7 +26,7 @@ body: |-
 
   While we've been spending astonishing amounts of money on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, I see the wasteful and harmful actions of our police.
 
-  I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Fremont residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the Fremont PD budget and instead meaningfully** **reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+  I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Fremont residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the Fremont PD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
 
   As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
 
