@@ -11,7 +11,7 @@ recipients:
 - Delia.Garza@austintexas.gov
 - Sabino.Renteria@austintexas.gov
 - Greg.Casar@austintexas.gov
-- Ann.Kitchen@austinteas.gov
+- Ann.Kitchen@austintexas.gov
 - jimmy.flannigan@austintexas.gov
 - Leslie.Pool@austintexas.gov
 - Paige.Ellis@austintexas.gov
