@@ -15,11 +15,17 @@
             <div class="recipients">
                 <b>To:</b> {{ page.recipients | join: ',' }}
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
-            </div>
-            <div>
+			</div>
+			{% if page.cc %}
+			<div class="recipients">
+                <b>CC:</b> {{ page.cc | join: ',' }}
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ',' }}`)">🔗</span>
+			</div>
+			{% endif %}
+            <div class="recipients">
                 <b>Subject:</b> {{ page.subject }}
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.subject }}`)">🔗</span>
-            </div>
+			</div>
             <div>
                 <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
