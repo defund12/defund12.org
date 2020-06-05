@@ -49,6 +49,6 @@ body: "Hello, \n\nI am a constituent living in Kalamazoo County and I am writing
   public services account for a paltry 8% and parks and recreation a depressing 4% of budget. 
   That is outrageous and needs to change. Kalamazoo needs dollars for services that actually 
   improve and lift up our community. Dollars for education, for food assistance, for housing, 
-  for people. Not policing.\n\nSincerely,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
+  for people. Not policing.\n\nSincerely,\n\n[YOUR NAME]\n\n[YOUR ADDRESS]\n\n[YOUR EMAIL]\n\n[YOUR PHONE NUMBER]"
 ---
 
