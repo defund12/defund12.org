@@ -1,6 +1,6 @@
 ---
 title: Pittsburgh, Pennsylvania
-permalink: "pittsburgh"
+permalink: pittsburgh
 name: Letter to Council Members and Chiefs/Assistant Chiefs of Staff
 state: PA
 city: Pittsburgh
