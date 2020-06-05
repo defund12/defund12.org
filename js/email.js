@@ -68,10 +68,10 @@ function renderTemplatingForm(){
 }
 
 function activateTemplatingAccordion(){
-    let html_hook = $('.template-fill-tab')
+    let html_hook = $('.template-tab-click-zone')
     html_hook.click(function(){
         $('.tab-caret').toggleClass('active')
-        $(this).children('.template-fill').toggleClass('active')
+        $('.template-fill').toggleClass('active')
     })
 }
 

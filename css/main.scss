@@ -122,10 +122,11 @@ header {
 	}
 }
 .template-fill-tab {
-	cursor: pointer;
 	border: 1px solid grey;
 	padding: 10px;
-
+}
+.template-tab-click-zone {
+	cursor: pointer;
 }
 .template-fill {
 	display: none;
