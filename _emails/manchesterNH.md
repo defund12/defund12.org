@@ -7,6 +7,21 @@ city: Manchester
 layout: email
 recipients:
 - mayor@manchesternh.gov
+- kcavanaugh@manchesternh.gov
+- wstewart@manchesternh.gov
+- long55@comcast.net
+- jroy2@manchesternh.gov
+- asapienza@manchesternh.gov
+- elizabethannmoreau@gmail.com
+- rterrio@manchesternh.gov
+- mporter@manchesternh.gov
+- bshaw@manchesternh.gov
+- bbarry@manchesternh.gov
+- ngamache@manchesternh.gov
+- khirschmann@manchesternh.gov
+- jrwaa2@aol.com
+- doneil@manchesternh.gov
+
 subject: Reduce the Manchester Police Department Budget
 body: |
   Hello,
