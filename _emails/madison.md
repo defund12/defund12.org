@@ -26,7 +26,6 @@ recipients:
 - district18@cityofmadison.com
 - district19@cityofmadison.com
 - district20@cityofmadison.com
-- allalders@cityofmadison.com
 subject: Reallocation of Funds from MPD to Social Service Programs
 body: |
     "Dear Madison Council Members and Alderpersons,
