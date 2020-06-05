@@ -1,37 +1,49 @@
 ---
-title: San Francisco, CA
+title: San Francisco, California
 permalink: "/sanfrancisco"
-name: Letter to Mayor and Board of Supervisors
-state: CA
+name: Letter to the Mayor, Board of Supervisors, and Elected Officers
 city: San Francisco
-layout: email
+state: CA
 recipients:
 - MayorLondonBreed@sfgov.org
-- Matt.Haney@sfgov.org
-- MandelmanStaff@sfgov.org
-- Gordon.Mar@sfgov.org
-- Aaron.Peskin@sfgov.org
-- Dean.Preston@sfgov.org
-- Sandra.Fewer@sfgov.org
-- Hillary.Ronen@sfgov.org
-- Ahsha.Safai@sfgov.org
+- Board.of.Supervisors@sfgov.org
+- sandra.fewer@sfgov.org
 - Catherine.Stefani@sfgov.org
-- Shamann.Walton@sfgov.org
+- Aaron.Peskin@sfgov.org
+- marstaff@sfgov.org
+- prestonstaff@sfgov.org
 - Norman.Yee@sfgov.org
-subject: San Francisco demands a People's Budget
-body: |
-    "I am a resident of [YOUR DISTRICT]. I am writing to demand that the Board of Supervisors adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+- mandelmanstaff@sfgov.org
+- ronenstaff@sfgov.org
+- waltonstaff@sfgov.org
+- Ahsha.Safai@sfgov.org
+- Carmen.Chu@sfgov.org
+- cityattorney@sfcityatty.org
+- districtattorney@sfgov.org
+- sfso.complaints@sfgov.org
+- jose.cisneros@sfgov.org
+- manohar.raju@sfgov.org
+subject: San Francisco Resident for Defunding the SFPD
+body: |-
+  To Mayor Breed, the San Francisco Board of Supervisors, and San Francisco Elected Officers
 
-    We are in the midst of widespread upheaval over the systemic violence of policing. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+  My name is \[YOUR NAME\], and I am a resident of San Francisco. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-blackness, and immediate reform in how black people are treated in America. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
 
-    Support for communities in need is necessary now, more than ever. We demand that the Board of Supervisors defund the SFPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk San Francisco residents during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+  SFPD has been a waste of our resources. Last year, the SFPD budget was $611,701,869, the majority of which comes from the San Francisco general fund. While we've been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
 
-    As the Board of Supervisors, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SF budget for the 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.
+  I call on you to slash the SFPD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our black neighbors and veterans. We implore you to give every member of our community experiencing homelessness a place to call home and the treatment they need.
 
-    Thank you for your time,
+  We can be a beacon for other cities to follow if only we have the courage to change.
 
-    [YOUR NAME]
-    [YOUR ADDRESS]
-    [YOUR EMAIL]
-    [YOUR PHONE NUMBER]"
+  Sincerely,
+
+  \[YOUR NAME\]
+
+  \[YOUR ADDRESS\]
+
+  \[YOUR EMAIL\]
+
+  \[YOUR PHONE NUMBER\]
+layout: email
 ---
+
