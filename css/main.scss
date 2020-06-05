@@ -109,8 +109,11 @@ header {
 		margin: 3px;
 		padding: 4px;
 	}
-	#recipients-list{
+	#recipients-list, #cc-list{
 		line-height: 30px;
+	}
+	.template-region {
+		color: red;
 	}
 }
 .footer {margin-top:40px;}

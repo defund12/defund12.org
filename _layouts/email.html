@@ -34,17 +34,17 @@
 			</div>
 			{% if page.cc %}
 			<div class="cc">
-                <b>CC:</b> {{ page.cc | join: ',' }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ',' }}`)">🔗</span>
+                <b>CC:</b> <div id="cc-list"></div>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `${email.cc.join(',')}`)">🔗</span>
 			</div>
 			{% endif %}
             <div class="subject">
                 <b>Subject:</b> {{ page.subject }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.subject }}`)">🔗</span>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `${email.subject}`)">🔗</span>
 			</div>
             <div class="body">
                 <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `${email.body}`)">🔗</span>
                 <br /> {{ page.body | markdownify }}
             </div>
         </div>
