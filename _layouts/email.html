@@ -24,7 +24,10 @@
 			<a onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
 		</div>
         <p>{{ site.bad_mailto_message }}</p>
-        <div class="template-fill"></div>
+        <div class="template-fill-tab">
+            <p><span class="tab-caret"> > </span> Fill using template form</p>
+            <div class="template-fill"></div>
+        </div>
     </div>
 </div>
 
@@ -64,14 +67,14 @@
     $(document).ready(() => {
         renderEmail()
         const params = getParams(window.location.href)
-        
-        if (params.browse !== undefined) {
-			$("#autoopen").hide()
-			// Automatically updates the URL so if folks try to share, it will auto-open
-			window.history.replaceState({}, document.title, `${window.location.origin}{{ page.permalink }}`)
-		} else {
-			openSystemEmailClient()
-        }
+
+        // if (params.browse !== undefined) {
+		// 	$("#autoopen").hide()
+		// 	// Automatically updates the URL so if folks try to share, it will auto-open
+		// 	window.history.replaceState({}, document.title, `${window.location.origin}{{ page.permalink }}`)
+		// } else {
+		// 	openSystemEmailClient()
+        // }
         
         $('#send-system-email').click(function(){
             openSystemEmailClient()

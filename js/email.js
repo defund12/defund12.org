@@ -65,7 +65,14 @@ function renderTemplatingForm(){
             $(`span[data-templatekey="${this.name}"]`).text($(this).val())
         })
     })
+}
 
+function activateTemplatingAccordion(){
+    let html_hook = $('.template-fill-tab')
+    html_hook.click(function(){
+        $('.tab-caret').toggleClass('active')
+        $(this).children('.template-fill').toggleClass('active')
+    })
 }
 
 function renderRecipientsList(){
@@ -85,5 +92,6 @@ function renderRecipientsList(){
 function renderEmail(){
     renderRecipientsList()
     parseEmailBody()
+    activateTemplatingAccordion()
     renderTemplatingForm()
 }

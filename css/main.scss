@@ -121,13 +121,29 @@ header {
 		color: red;
 	}
 }
+.template-fill-tab {
+	cursor: pointer;
+	border: 1px solid grey;
+	padding: 10px;
+
+}
 .template-fill {
+	display: none;
 	input {
 		border: 1px solid grey;
 		border-radius: 5px;
 		width: 100%;
 		padding: 10px 20px;
 		margin: 5px 0;
+	}
+	&.active {
+		display: inline-block;
+	}
+}
+.tab-caret {
+	display: inline-block;
+	&.active {
+		transform: rotate(90deg);
 	}
 }
 .footer {margin-top:40px;}
