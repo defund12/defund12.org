@@ -1,13 +1,12 @@
 ---
 title: Dallas, TX
 permalink: "/dallas"
-name: Letter to Mayor and City Council
+name: Letter to Eric Johnson and City Council
 state: TX
 city: Dallas
 layout: email
 recipients:
 - eric.johnson@dallascityhall.com
-- Ryan.Sitton@rrc.texas.gov
 - Chad.West@dallascityhall.com
 - adam.medrano@dallascityhall.com
 - casey.thomas@dallascityhall.com

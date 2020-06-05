@@ -1,13 +1,12 @@
 ---
 title: Austin, TX
 permalink: "/austin"
-name: Letter to Mayor and City Council
+name: Letter to Steve Adler and City Council
 state: TX
 city: Austin
 layout: email
 recipients:
 - steve.adler@austintexas.gov
-- Ryan.Sitton@rrc.texas.gov
 - Natasha.Madison@austintexas.gov
 - Delia.Garza@austintexas.gov
 - Sabino.Renteria@austintexas.gov

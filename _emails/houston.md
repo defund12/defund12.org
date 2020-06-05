@@ -1,7 +1,7 @@
 ---
 title: Houston, TX
 permalink: "/houston"
-name: Letter to Mayor and City Council
+name: Letter to Sylvester Turner and City Council
 state: TX
 city: Houston
 layout: email
