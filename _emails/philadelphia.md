@@ -47,20 +47,20 @@ recipients:
 - Alison.Stohr@phila.gov
 - James.kenney@phila.gov
 - brian.abernathy@phila.gov
-subject: Commit to reallocate for social equity / Defund the PPD 
-body: "Dear Philadelphia City Council, \n\nMy name is [NAME], and I am a resident of
-[District/Neighborhood]. Mayor Kenney’s proposed Philadelphia budget for fiscal
-year 2021 has proposed a $14 million increase for the Philadelphia police
-department during a time of economic strife and while other essential social
-budgets that support the community are being slashed. For example, budgets for
-library, homeless services, Parks and Recreation, and public health (during the
-global COVID-19 pandemic!) are all being cut and the city is eliminating its
-budget for arts and culture entirely. \n\nI urge you to advocate for an ethical
-reallocation of funds: away from PPD, and towards social services and education
-programs. \n\nI am emailing to ask city officials to please reject any proposed
-budget that increases taxpayer spending on police while cutting funding for
-important social and community projects. I am asking that city officials lobby
-the same amount of attention and effort towards finding sustainable, long term
-change. \n\nBlack Lives Matter. \nSincerely, \n[YOUR NAME]\n[YOUR
-ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\n"
+subject: Commit to reallocate for social equity / Defund the PPD
+body: "Dear Philadelphia City Council, \n\nMy name is [NAME], and I am a resident
+  of [District/Neighborhood]. Mayor Kenney’s proposed Philadelphia budget for fiscal
+  year 2021 has proposed a $14 million increase for the Philadelphia police department
+  during a time of economic strife and while other essential social budgets that support
+  the community are being slashed. For example, budgets for library, homeless services,
+  Parks and Recreation, and public health (during the global COVID-19 pandemic!) are
+  all being cut and the city is eliminating its budget for arts and culture entirely.
+  \n\nI urge you to advocate for an ethical reallocation of funds: away from PPD,
+  and towards social services and education programs. \n\nI am emailing to ask city
+  officials to please reject any proposed budget that increases taxpayer spending
+  on police while cutting funding for important social and community projects. I am
+  asking that city officials lobby the same amount of attention and effort towards
+  finding sustainable, long term change. \n\nBlack Lives Matter. \nSincerely, \n[YOUR
+  NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\n"
 ---
+
