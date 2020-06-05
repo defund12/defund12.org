@@ -5,6 +5,7 @@ collections:
   emails:
     title: Emails
     output: true
+    subject: d
   posts:
     title: Posts
     output: true
