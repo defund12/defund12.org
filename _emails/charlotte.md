@@ -1,10 +1,9 @@
 ---
-title: Charlotte, North Carolina
+title: Charlotte, NC
 permalink: "/charlotte"
 name: Letter to Council Members, Mayor, and City Manager
-state: NC
 city: Charlotte
-layout: email
+state: NC
 recipients:
 - mayor@charlottenc.gov
 - Marcus.jones@charlottenc.gov
@@ -18,29 +17,23 @@ recipients:
 - matt.newton@charlottenc.gov
 - Tariq.bokhari@charlottenc.gov
 - edriggs@charlottenc.gov
-subject: Defund CMPD and Eliminate "Crowd Control" Weapons
-body: |
-  Dear City Council, Mayor Vi Lyles, and City Manager Marcus Jones,
+subject: Commit to reallocate for social equity / Defund the CMPD
+body: |-
+  Dear Mayor Lyles, City Manager Jones, and Charlotte City Council,
 
-  My name is [YOUR]. [Insert a little bit about what you do, who you are, and how long you’ve lived in Charlotte]. I’m writing to demand for a reduction of the Charlotte Mecklenburg Police Department’s $290.2 million budget allocation, with no additional funding of over $4 million allocated to CMPD in the 2021 budget. I am also writing to demand that the city of Charlotte abolishes CMPD’s usage of chemical weapons and rubber bullets.
+  My name is \[YOUR NAME\] and I am a resident of \[district/neighborhood\]. I write to express my concern that status quo funding of the CMPD is wholly inappropriate at a time when Charlotte residents ravaged by the economic impacts of the COVID-19 pandemic are in urgent need—not of further policing and criminalization, but of meaningful reprioritization towards their social wellbeing.
 
-  In the context of nationwide protests against racist police brutality, CMPD has relentlessly stalked, manipulated, cornered, kettled, teargassed, pepper balled, and attacked the community it claims to serve. They have assaulted peaceful protesters, medics, children, and reporters with reckless abandon. On June 2, officers trapped a crowd of peaceful protesters in a parking garage with tear gas, pepper balls, and flash-bangs. A viral video of this incident has sparked outrage in North Carolina and beyond. As the Charlotte Observer wrote in its coverage of the attack, one protester stated that it felt as though their face “was melting off.” These chemical weapons, which are supposedly “non-lethal,” often result in violent injuries. Other cities have seen victims lose their eyes to rubber bullets and suffer horrific respiratory attacks from being pepper sprayed or teargassed. The usage of airborne chemical agents is particularly cruel and dangerous when considering the fact that coronavirus already weakens the respiratory and immune systems.
+  Specifically, Black Charlotteans have not only experienced disproportionate deaths from COVID-19, but have long been policed and incarcerated at rates far above their share of the population. The CMPD uses lethal force against Black residents over 3 times as often as white residents. Longstanding police tactics, as exemplified most recently by the violent repression of peaceful protests uptown, have been wrought against the interests of our city’s wellbeing. As such, a CMPD that siphons over 40% of the city’s general fund is unacceptable.
 
-  Attempts to reform the Charlotte Mecklenburg Police Department have been woefully inadequate in reducing racial disparities in policing. Between 2013 and 2019 CMPD has killed Black people at 3.1 times the rate of white people -- higher than the already shameful national average. In spite of these troubling statistics and the national outcry against the murders of Keith Lamont Scott, Danquirs Franklin, and many others, CMPD continues to drag its feet on even the most basic reforms: bans on chokeholds or strangleholds, banning shooting at moving vehicles, requirements to exhaust all other means before shooting, requiring other officers to intervene if they see an officer using excessive force, and extensive reporting requirements. Its community review board serves only an advisory role, and as a result, a whole lot of community input is summarily ignored.
+  Decades of scholarship show that education and social programs are much more effective at promoting safer communities than policing, and yet the city’s answer to every perceived problem has the continued expansion of the CMPD.
 
-  The truth of the matter is that pouring 40% of our city’s budget into a bloated, militant, and punitive police force will not stop crime in our city. It will only serve to encourage broken-windows policing, criminalize Black Charlotteans and waste tax dollars. If we want to stop crime, we have to fund the measures that will prevent it: education, arts, parks, social services, services for homeless and impoverished people, and healthcare.
+  I implore you to advocate for the revision of the 2021 budget, for a meaningful reduction in the proposed $290,200,000 allocated for policing from the general fund, and a reallocation of these funds towards housing, education, and targeted support for marginalized communities.
 
-  Teargassing protesters and trying to spin it a week before a budget vote is not how you build trust in a city already marred by racist police violence. If anything, this reflects an outrageous disregard for our community’s safety and well-being, and the outright danger CMPD presents to the most vulnerable Charlotteans. CMPD’s platitudes, kneeling, and “community outreach” don’t fool us. It is past time to retire the use of chemical weapons and pull back funding of CMPD.
-
-  Cities across America are reevaluating their racist policing systems, and we hope that Charlotte can be at the forefront of this movement. We will not be considered a leader for the New South if we do not interrogate racism in every way that it exists in Charlotte.
-
-  Please do your part and implement these measures.
-
-  Best wishes,
-
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
+  Thank you for your attention,
+  \[YOUR NAME\]
+  \[YOUR ADDRESS\]
+  \[YOUR EMAIL\]
+  \[YOUR PHONE NUMBER\]
+layout: email
 ---
 

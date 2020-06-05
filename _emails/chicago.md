@@ -1,10 +1,9 @@
 ---
-title: Chicago
+title: Chicago, IL
 permalink: "/chicago"
 name: Letter to Council Members
-state: IL
 city: Chicago
-layout: email
+state: IL
 recipients:
 - ward01@cityofchicago.org
 - ward02@cityofchicago.org
@@ -31,7 +30,7 @@ recipients:
 - ward23@cityofchicago.org
 - ward24@cityofchicago.org
 - ward26@cityofchicago.org
-- ward27chicago@gmail.com
+- ward27@cityofchicago.org
 - ward28@cityofchicago.org
 - ward29@cityofchicago.org
 - ward30@cityofchicago.org
@@ -79,5 +78,6 @@ body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. 
   you to please listen to the needs of your constituents and take immediate action
   to address their concerns. \n\nThank you, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
   PHONE NUMBER]\n"
+layout: email
 ---
 
