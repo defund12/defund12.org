@@ -102,6 +102,16 @@ header {
 .emailContent {
 	div {margin-top:20px;}
 	.recipients {overflow-wrap: break-word;}
+	.recipient {
+		border-radius: 10px;
+		background-color: white;
+		border: solid 1px grey;
+		margin: 3px;
+		padding: 4px;
+	}
+	#recipients-list{
+		line-height: 30px;
+	}
 }
 .footer {margin-top:40px;}
 
