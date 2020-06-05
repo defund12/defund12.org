@@ -1,7 +1,7 @@
 ---
 title: Grand Rapids, MI
 permalink: "/grandrapids"
-name: 'Mayor, Comptroller, and Ward Commissioners: Defund the Police'
+name: Letter to the Mayor, Comptroller, and Ward Commissioners
 city: Grand Rapids
 state: MI
 recipients:
