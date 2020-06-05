@@ -22,7 +22,7 @@ body: |-
   
   This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-blackness, and immediate reform in how black people are treated in America. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
 
-  Fremont PD has been a waste of our resources. Last year, the Fremont PD budget was $93,307,000, almost all of which comes from the Fremont general fund. This means Fremont PD costed us taxpayers almost 3 times as much as was spent on public street, facilities, and park maintenance, and human services combined. Fremont's projected 2020-21 budget appears to be heading in an extraordinarily similar direction.
+  Fremont PD has been a waste of our resources. Last year, the Fremont PD budget was $93,307,000, almost all of which comes from the Fremont general fund. This means Fremont PD cost us taxpayers almost 3 times as much as was spent on public street, facilities, and park maintenance, and human services combined. Fremont's projected 2020-21 budget appears to be heading in an extraordinarily similar direction.
   
   While we've been spending astonishing amounts of money on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, I see the wasteful and harmful actions of our police.
 
