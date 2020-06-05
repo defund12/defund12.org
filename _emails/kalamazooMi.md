@@ -1,4 +1,4 @@
----
+ï»¿---
 title: Kalamazoo, MI
 permalink: "/kalamazoo"
 name: Letter to City and State Representatives
@@ -28,16 +28,16 @@ recipients:
 subject: Regarding the funding of KDPS
 body: "Hello, \n\nI am a constituent living in Kalamazoo County and I am writing to you 
 regarding recent police excessive force at the protests against police brutality 
-as well as Kalamazoo Department of Public Safety’s place in our budgets.
-The police’s behavior at the peaceful protests in early June were been aggressive, 
-unnecessary, and intentionally provocative. It’s clear from all footage that the only 
+as well as Kalamazoo Department of Public Safety's place in our budgets.
+The police's behavior at the peaceful protests in early June were been aggressive, 
+unnecessary, and intentionally provocative. It's clear from all footage that the only 
 people in danger were the protesters, surprised by police cruisers speeding towards them, 
 the National Guard boxing them in, and tear gas, a tactic not allowed in war but evidently 
-perfectly fine for a medium size city’s oversized police. \n\nThis kind of behavior is a 
+perfectly fine for a medium size city's oversized police. \n\nThis kind of behavior is a 
 long standing pattern with KDPS, a police force with multiple questionable in custody deaths, 
 excessive force accusations, a documented habit of pulling over predominantly black drivers 
 and enough unnecessary lethal equipment to outfit a small army. The time for hiding behind 
-canned apologies, promises of diversity training and “community policing” is over. It’s time 
+canned apologies, promises of diversity training and \"community policing\" is over. It's time 
 to reduce police spending and reallocate those funds to programs that have real tangible benefits, 
 especially to communities harmed by decades of over-policing and discrimination. \n\nKalamazoo Public 
 School officials have been sounding the alarm that due to COVID-19 tax shortfalls, they could be
