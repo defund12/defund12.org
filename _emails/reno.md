@@ -1,6 +1,6 @@
 ---
 title: Reno, NV
-permalink: "/raleigh"
+permalink: "/reno"
 name: Reno Residents for Defunding RPD
 state: NV
 city: Reno
