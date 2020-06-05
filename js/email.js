@@ -3,8 +3,8 @@ var templating = {}
 function openSystemEmailClient(){
 	const subject = encodeURIComponent(email.subject.trim());
 	const body = encodeURIComponent($('.email-contents').text().trim());
-	const recipients = email.recipients.join(',');
-	const cc = `{{ page.cc | join: ',' }}`;
+    const recipients = email.recipients.join(',');
+    const cc = ('cc' in email) ? email.cc.join(',') : ''
 	const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
     location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
 }
