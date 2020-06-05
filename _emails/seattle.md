@@ -16,7 +16,8 @@ recipients:
 - andrew.lewis@seattle.gov
 - teresa.mosqueda@seattle.gov
 - lorena.gonzalez@seattle.gov
-subject: DEFUND SPD and reallocate egregious police budgets towards education, social services, and dismantling racial inequality
+subject: DEFUND SPD and reallocate egregious police budgets towards education, social
+  services, and dismantling racial inequality
 body: |-
   I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
 
@@ -43,3 +44,4 @@ body: |-
   \[YOUR PHONE NUMBER\]
 layout: email
 ---
+
