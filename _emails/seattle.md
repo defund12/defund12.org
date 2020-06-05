@@ -2,6 +2,7 @@
 title: Seattle, Washington
 permalink: "/seattle"
 name: Letter to the Mayor, Board of Supervisors, and Elected Officers
+country: United States
 city: Seattle
 state: WA
 recipients:

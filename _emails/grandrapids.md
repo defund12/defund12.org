@@ -2,6 +2,7 @@
 title: Grand Rapids, MI
 permalink: "/grandrapids"
 name: Letter to Mayor, Comptroller, and Ward Commissioners
+country: United States
 city: Grand Rapids
 state: MI
 recipients:

@@ -3,6 +3,7 @@ title: Salt Lake City, UT
 permalink: "/saltlakecity"
 name: Letter to Council Members and Mayor
 state: UT
+country: United States
 city: Salt Lake City
 layout: email
 recipients:

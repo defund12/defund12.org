@@ -2,6 +2,7 @@
 title: Broome County, NY
 permalink: "/broome"
 name: Letter to County Legislators
+country: United States
 state: NY
 city: Broome County
 layout: email

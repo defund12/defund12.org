@@ -3,6 +3,7 @@ title: Reno, NV
 permalink: "/reno"
 name: Reno Residents for Defunding RPD
 state: NV
+country: United States
 city: Reno
 layout: email
 recipients:

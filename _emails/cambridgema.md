@@ -2,6 +2,7 @@
 title: Cambridge, Massachusetts
 permalink: "/cambridgema"
 name: Letter to the Mayor, City Councilors, and the City Manager
+country: United States
 state: MA
 city: Cambridge, Massachusetts
 layout: email

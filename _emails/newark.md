@@ -3,6 +3,7 @@ title: Newark, NJ
 permalink: "/newark"
 name: Letter to Mayor Baraka and City Councilors
 state: NJ
+country: United States
 city: Newark
 layout: email
 recipients:

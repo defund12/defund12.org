@@ -3,6 +3,7 @@ title: Philadelphia, PA
 permalink: "/philadelphia"
 name: Letter to Mayor and Council Members
 state: PA
+country: United States
 city: Philadelphia
 layout: email
 recipients:

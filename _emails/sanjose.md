@@ -3,6 +3,7 @@ title: San Jose, CA
 permalink: "/sanjose"
 name: Letter to Mayor and Council Members
 state: CA
+country: United States
 city: San Jose
 layout: email
 recipients:

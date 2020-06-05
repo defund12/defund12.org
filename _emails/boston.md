@@ -2,6 +2,7 @@
 title: Boston, MA
 permalink: "/boston"
 name: Letter to the Mayor
+country: United States
 state: MA
 city: Boston
 layout: email

@@ -3,6 +3,7 @@ title: Portland, OR
 permalink: "/portland-defund"
 name: Letter to the Mayor, Commissioners, and City Council on Defunding PPB
 state: OR
+country: United States
 city: Portland
 layout: email
 recipients:

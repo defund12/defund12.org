@@ -3,6 +3,7 @@ title: Kalamazoo, MI
 permalink: "/kalamazoo"
 name: Letter to City and State Representatives
 state: MI
+country: United States
 city: Kalamazoo
 layout: email
 recipients:

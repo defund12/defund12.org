@@ -2,6 +2,7 @@
 title: Buffalo, NY
 permalink: "/buffalo"
 name: Letter to the Buffalo Common Council and Office of Mayor Byron Brown
+country: United States
 state: NY
 city: Buffalo
 layout: email

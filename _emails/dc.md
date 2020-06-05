@@ -3,6 +3,7 @@ title: Washington, D.C.
 permalink: "/dc"
 name: Letter to Council Members
 state: DC
+country: United States
 city: Washington
 layout: email
 recipients:

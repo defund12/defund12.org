@@ -3,7 +3,7 @@ function formatEmailList() {
   if (list.length) {
     let content = $("<div></div>");
     const items = list.find("li");
-    const states = {};
+    const countries = {};
     for (let item of items) {
       // Setup click event
       // $(item).on('click', () => {
@@ -12,17 +12,26 @@ function formatEmailList() {
       // })
 
       // Push into state lists
-      const { state } = item.dataset;
-      if (states[state] === undefined) {
-        states[state] = [];
+      const { state, country } = item.dataset;
+      if (countries[country] === undefined) {
+        countries[country] = [];
       }
-      states[state].push(item);
+      const currentCountry = countries[country];
+      if (currentCountry[state] === undefined) {
+        currentCountry[state] = [];
+      }
+      currentCountry[state].push(item);
     }
-    for (let [name, items] of Object.entries(states)) {
-      let stateElement = $("<div class='state'></div>");
-      stateElement.append(`<h2>${name}</h2>`);
-      for (let item of items) stateElement.append(item);
-      content.append(stateElement);
+    for (let [countryCode, states] of Object.entries(countries)) {
+      let countryElement = $("<div class='country'></div>");
+      countryElement.append(`<h1>${countryCode}</h1>`);
+      for (let [name, items] of Object.entries(states)) {
+        let stateElement = $("<div class='state'></div>");
+        stateElement.append(`<h2>${name}</h2>`);
+        for (let item of items) stateElement.append(item);
+        countryElement.append(stateElement);
+      }
+      content.append(countryElement);
     }
     list.html(content);
   }

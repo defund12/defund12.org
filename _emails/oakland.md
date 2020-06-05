@@ -3,6 +3,7 @@ title: Oakland, CA
 permalink: "/oakland"
 name: Letter to Mayor, Council Members, and Elected Officials
 state: CA
+country: United States
 city: Oakland
 layout: email
 recipients:

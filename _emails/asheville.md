@@ -2,6 +2,7 @@
 title: Asheville, NC
 permalink: "/asheville"
 name: Letter to Council Members
+country: United States
 state: NC
 city: Asheville
 layout: email
