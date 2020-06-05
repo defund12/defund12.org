@@ -1,7 +1,7 @@
 ---
 title: Milwaukee, WI
 date: 2020-06-05 18:18:00 Z
-permalink: milwaukee
+permalink: "/milwaukee"
 name: Letter to Council Members
 city: Milwaukee
 state: WI
