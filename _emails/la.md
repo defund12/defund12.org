@@ -17,7 +17,6 @@ recipients:
 - councilmember.price@lacity.org
 - councilmember.wesson@lacity.org
 - councilmember.bonin@lacity.org
-- councilmember.englander@lacity.org
 - councilmember.ofarrell@lacity.org
 - councilmember.huizar@lacity.org
 - councilmember.buscaino@lacity.org
