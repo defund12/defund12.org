@@ -2,13 +2,11 @@
 title: Nassau County
 permalink: "/Nassau"
 name: Letter to County Legislature
-state: NY
 city: Nassau County
-layout: email
+state: NY
 recipients:
 - rnicolello@nassaucountyny.gov
 - hkopel@nassaucountyny.gov
-- denise.ford@nassaucountyny.gov
 - kabrahams@nassaucountyny.gov
 - csolages@nassaucountyny.gov
 - vmuscarella@nassaucountyny.gov
@@ -25,5 +23,6 @@ body: "Dear Nassau County Legislature, \n\nHi, my name is [NAME] and I am a resi
   such, I demand a meaningful reallocation of PD funds towards healthcare and social
   programs. \n\nSincerely, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE
   NUMBER]\n"
+layout: email
 ---
 
