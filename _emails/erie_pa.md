@@ -21,7 +21,7 @@ recipients:
 - Mkeys@erie.pa.us
 - Kschaaf@erie.pa.us
 - Mwitherspoon@erie.pa.us
-subject: Defund the Minneapolis Police Department
+subject: Reallocate Funding From the Erie Police Department
 body: |-
 Dear Erie Mayor's Office, City Council Members, and Other City Officials,
 
