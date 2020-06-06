@@ -2,7 +2,7 @@
 title: ''
 name: Email request
 about: Add an email for your locale! (or supplement one that exists!)
-labels: bug
+labels: 'new-request'
 assignees: ''
 ---
 
