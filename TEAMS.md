@@ -1,9 +1,5 @@
 # Defund12.org Team Organization
 
-NOTE: All work that people are doing to further defund12.org is important and helpful. However in order to keep things moving efficently, we have defined teams and responsibilities so that We can move forward together in an efficent manner.
-
-The teams and responsibilities/definitions are closely related to how issue(email) creation, review, and site additions happen
-
 ## 1. User that submits issue
 
 Anyone that would like to add an email for their locale. They create issue in adherence to [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).

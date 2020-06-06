@@ -9,6 +9,7 @@ We are dealing with a high volume of requests, but we are doing our best to stay
 ## Development
 
 To build the application:
+
 1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
 2. Clone and navigate to the repository
 3. `bundle exec jekyll serve`
@@ -16,6 +17,12 @@ To build the application:
 ## Contributions guidelines
 
 Contributions to the repository are greatly welcomed.
+
+### Team Organization
+
+The teams and responsibilities/definitions are closely related to how issue(email) creation, review, and site additions happen. Please review team definitions on the [teams readme](TEAMS.md).
+
+NOTE: All work that people are doing to further defund12.org is important and helpful. However in order to keep things moving efficently, we have defined teams and responsibilities so that we can move forward together in an efficent manner.
 
 ### Email templates
 
