@@ -17,7 +17,7 @@ A person on the triage team is the first to review newly created issues. Look ov
     - CC addresses
     - Body text
   - If not, **close issue** and reply with the contents of the [email request template](https://github.com/teddywilson/defund12.org/blob/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)
-  - If yes, tag as ready to review. Add tag `[ready-for-review]` and remove all previous tags
+  - If yes, tag as ready to review. Add tag `[content-ready-for-review]` and remove all previous tags
 
 ## 3. Review, Editing, and Approval Team [Needs people!]
 
