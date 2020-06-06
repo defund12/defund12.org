@@ -101,6 +101,10 @@ header {
 	.buttons {
 		margin-top:20px;
 		a {display:inline-block; margin-right:12px; color:blue; cursor:pointer;}
+
+		.weblinks {
+			a {display:inline-block; margin-right:0px; color:blue; cursor:pointer;}
+		}
 	}
 }
 .emailContentSection {background:#f5f5f5;}
