@@ -1,6 +1,6 @@
 ---
-title: Montgomery County, MD
-permalink: "/montgomery_county_md"
+title: Montgomery County
+permalink: "/montgomery_county"
 name: Letter to the County Executive and Council
 state: MD
 city: Montgomery County
