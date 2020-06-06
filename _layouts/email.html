@@ -6,8 +6,12 @@
 		<b>{{ page.city }}, {{ page.state }}</b><br /> {{ site.email_intro_text | markdownify }}
 		<p id="autoopen">{{ site.auto_open_message }}</p>
 		<div class='buttons'>
-			<a href="javascript:void(0);" onclick="openEmail()">Send email</a>
-			<a href="javascript:void(0);" onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
+      <a href="javascript:void(0);" onclick="openEmail('gmail')">Send email</a>
+      <a href="javascript:void(0);" onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a></br>
+			Send via webmail (
+        <a href="javascript:void(0);" onclick="openEmail('gmail')">gmail</a>
+        <a href="javascript:void(0);" onclick="openEmail('yahoo')">yahoo mail</a>
+      )
 		</div>
 		<p>{{ site.bad_mailto_message }}</p>
     </div>
@@ -42,13 +46,20 @@
 {% include list.html %}
 
 <script type="text/javascript">
-	function openEmail () {
+	function openEmail(client) {
 		const subject = encodeURIComponent(`{{ page.subject }}`.trim());
-        const body = encodeURIComponent(`{{ page.body }}`.trim());
-        const recipients = `{{ page.recipients | join: ',' }}`;
-        const cc = `{{ page.cc | join: ',' }}`;
-        const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
-        location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+    const body = encodeURIComponent(`{{ page.body }}`.trim());
+    const recipients = `{{ page.recipients | join: ',' }}`;
+    const cc = `{{ page.cc | join: ',' }}`;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+
+    if (client === 'mailto') {
+      location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+    } else if (client === 'gmail') {
+      location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipients}&${ccText}su=${subject}&body=${body}`;
+    } else if (client === 'yahoo') {
+      location.href = `https://compose.mail.yahoo.com/?to=${recipients}&${ccText}subj=${subject}&body=${body}`;
+    }
 	}
     $(document).ready(() => {
 		const params = getParams(window.location.href)
@@ -57,7 +68,7 @@
 			// Automatically updates the URL so if folks try to share, it will auto-open
 			window.history.replaceState({}, document.title, `${window.location.origin}{{ page.permalink }}`)
 		} else {
-			openEmail()
+			openEmail('mailto')
 		}
     })
 </script>
