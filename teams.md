@@ -10,7 +10,7 @@ Anyone that would like to add an email for their locale. They create issue in ad
 
 ## 2. Triage Team [Needs people!]
 
-A person on the triage team is the first to review newly created issues.
+A person on the triage team is the first to review newly created issues. Look over all issues that have the tag `[new-request]`
 
 **Responsibilities**
 
@@ -20,8 +20,8 @@ A person on the triage team is the first to review newly created issues.
     - Recipients
     - CC addresses
     - Body text
-  - Does body text adhere to style guide?
-    - Tag as ready to review. Add tag `[READY FOR REVIEW & APPROVAL]` and remove all previous tags
+  - If not, **close issue** and reply with the contents of the [email request template](https://github.com/teddywilson/defund12.org/blob/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)
+  - If yes, tag as ready to review. Add tag `[ready-for-review]` and remove all previous tags
 
 ## 3. Review, Editing, and Approval Team [Needs people!]
 
@@ -34,7 +34,7 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
   - Does it have locale specific info?
   - Is the core statement in regards to defunding local police departments
   - Add tag `[READY FOR PR]` and remove all otehr tags
-- Even though the issue is _good enough_ and you added the `[REEADY FOR PR]`, do you still think the email template needs work or editing?
+- Even though the issue is _good enough_ and you added the `[READY FOR PR]`, do you still think the email template needs work or editing?
   - Add tag `[EMAIL STILL NEEDS WORK]` and leave comment on what the outstanding tasks are .
 
 ## 4. Email Addition Development team
