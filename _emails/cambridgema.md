@@ -1,8 +1,8 @@
 ---
 title: Cambridge, Massachusetts
-permalink: "/cambridgema"
+permalink: "/cambridge"
 name: Letter to the Mayor, City Councilors, and the City Manager
-city: Cambridge, Massachusetts
+city: Cambridge
 state: MA
 recipients:
 - council@cambridgema.gov
