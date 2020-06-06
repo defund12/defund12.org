@@ -13,7 +13,7 @@
 Sample language: “I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.”
 Avoid using police framing of community problems, i.e. “crime.” Instead of summarizing social programs as being more effective than policing at “reducing crime,” say that they are more effective at “promoting community safety.”
 
-#### 🌟 Shining Star Examples 🌟
+####🌟 Shining Star Examples 🌟
 https://defund12.org/oakland \
 https://defund12.org/santabarbara
 
