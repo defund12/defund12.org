@@ -33,9 +33,9 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
 - Is it _good enough_?
   - Does it have locale specific info?
   - Is the core statement in regards to defunding local police departments
-  - Add tag `[READY FOR PR]` and remove all otehr tags
-- Even though the issue is _good enough_ and you added the `[READY FOR PR]`, do you still think the email template needs work or editing?
-  - Add tag `[EMAIL STILL NEEDS WORK]` and leave comment on what the outstanding tasks are .
+  - Add tag `[ready-for-pr]` and remove all otehr tags
+- Even though the issue is _good enough_ and you added the `[ready-for-pr]`, do you still think the email template needs work or editing?
+  - Add tag `[email-needs-work]` and leave comment on what the outstanding tasks are.
 
 ## 4. Email Addition Development Team
 
