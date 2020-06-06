@@ -6,10 +6,29 @@
     <!-- META Information -->
     <title>{{ site.title }}</title>
     <meta charset="utf-8">
-    <meta name="description" content="{{ site.meta }}>"></meta>
+    <meta name="description" content="{{ site.meta }}"></meta>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" type="image/svg+xml" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}favicon.svg">
 
+    <!-- Schema protocol -->
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="description" content="{{ site.meta }}">
+    <meta itemprop="image" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}images/defund12.org.png">
+      
+    <!-- Facebook Open Graph protocol -->
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.meta }}" />
+    <meta property="og:image" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}images/defund12.org.png">
+    
+    <!-- Twitter card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:image" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}images/defund12.org.png">
+    <meta name="twitter:description" content="{{ site.meta }}">
+    
     <!-- CSS Includes -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
@@ -47,6 +66,6 @@
                 <h1 class="pagetitle">{{ site.title }}</h1>
             </a>
             <p class="divider">{{ site.subtitle }}</p>
-            <p><i>"12" = </i>🚓</p>
+            <p aria-label="12 = Police"><i>"12" = </i>🚓</p>
         </div>
     </header>

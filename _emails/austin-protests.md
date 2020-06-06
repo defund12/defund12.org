@@ -11,7 +11,7 @@ recipients:
 - Delia.Garza@austintexas.gov
 - Sabino.Renteria@austintexas.gov
 - Greg.Casar@austintexas.gov
-- Ann.Kitchen@austinteas.gov
+- Ann.Kitchen@austintexas.gov
 - jimmy.flannigan@austintexas.gov
 - Leslie.Pool@austintexas.gov
 - Paige.Ellis@austintexas.gov
@@ -33,7 +33,7 @@ body: "Dear City Council Members, \n\nMy name is [NAME], and I am a resident of 
   to APD and to implement immediate reform. There is no reason that over ⅓ of Austin’s
   budget should be allocated to the police. In the middle of a pandemic and a recession,
   we should be using our city's budget to fund affordable housing and public health
-  rather than a violence police department that is, quite frankly, upholding policies
+  rather than a violent police department that is, quite frankly, upholding policies
   and practices that allow white supremacy to take Black lives every single day. Thank
   you for your work to serve our city.\n\nSincerely,\nThe People of Austin, TX\n[NAME]\n[PHONE_NUMBER]\n[EMAIL]\n[ADDRESS]\n"
 ---

@@ -21,6 +21,7 @@ recipients:
 - Curtis.Jones.Jr@phila.gov
 - Samantha.Williams@Phila.gov
 - bobby@bobbyhenon.com
+- Bobby.Henon@Phila.gov
 - Lauren.Atwell@phila.gov
 - Katherine.Gilmore.Richardson@phila.gov
 - Shawn.Baldwin@Phila.gov
