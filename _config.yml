@@ -1,6 +1,7 @@
 ---
 title: Defund12.org
 timezone: UTC
+exclude: ["src/","build/","node_modules/","package.json","package-lock.json","tsconfig.json","webpack.config.js"]
 collections:
   emails:
     title: Emails
