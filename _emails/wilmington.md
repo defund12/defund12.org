@@ -1,7 +1,7 @@
 ---
 title: Wilmington
 permalink: "/wilmington"
-name: Letter to County Legislature
+name: Letter to City & State Officials
 state: DE
 city: Wilmington
 layout: email
