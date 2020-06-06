@@ -4,6 +4,7 @@ permalink: "/baltimore_senators"
 name: Letter to State Senators and Delegates
 city: Baltimore
 state: MD
+layout: email
 recipients:
 - antonio.hayes@senate.state.md.us
 - jill.carter@senate.state.md.us
