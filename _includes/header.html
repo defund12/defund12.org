@@ -58,13 +58,13 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="container">
-            <a href="/">
-                <h1 aria-label="Defund Twelve .org" class="pagetitle">{{ site.title }}</h1>
-            </a>
-            <p class="divider">{{ site.subtitle }}</p>
-            <p aria-label="12 = Police"><i>"12" = </i>🚓</p>
-        </div>
-    </header>
+    <div id="react-container" data-title="{{ site.title }}" data-subtitle="{{ site.subtitle }}" data-footer_text="{{ site.footer_text }}">
+        <header>
+            <div class="container">
+                <a href="/">
+                    <h1 aria-label="Defund Twelve .org"  class="pagetitle">{{ site.title }}</h1>
+                </a>
+                <p class="divider">{{ site.subtitle }}</p>
+                <p aria-label="12 = Police"><i>"12" = </i>🚓</p>
+            </div>
+        </header>

@@ -51,7 +51,7 @@ export class EmailList extends React.Component<EmailListProps, EmailListState> {
 
     render() {
         return (
-            <div>
+            <div id="emailLinks">
                 <EmailListFilter key={UUIDv1()}
                     placeholder="Country"
                     for="selectedCountryId"
