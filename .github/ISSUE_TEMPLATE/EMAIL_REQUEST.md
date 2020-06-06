@@ -1,7 +1,7 @@
 ---
 title: ''
-name: Email request
-about: Add/edit an email for your city
+name: "Add or edit an email for your city"
+about: "Update defund12.org with a message for your community."
 labels: new-request
 assignees: ''
 ---
