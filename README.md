@@ -14,6 +14,12 @@ To build the application:
 2. Clone and navigate to the repository
 3. `bundle exec jekyll serve`
 
+### Running with Docker locally
+
+1. [Install Docker](https://docs.docker.com/get-docker/)
+2. Start docker locally
+3. In directory run, `docker-compose up`
+
 ## Contributions guidelines
 
 Contributions to the repository are greatly welcomed.
