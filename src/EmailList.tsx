@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { EmailListItemProps, EmailListItem } from './EmailListItem';
 import { v1 as UUIDv1 } from 'uuid';
 import { EmailListFilter } from './EmailListFilter';
 import { CountryProps, Country } from './Country';
@@ -7,7 +6,9 @@ import { CountryProps, Country } from './Country';
 
 interface EmailListProps {
     countries: Array<CountryProps>;
+    /** A tuple with [countryId, countryName]. */
     countryOptions: [number, string][];
+    /** A tuple with [regionId, countryId, regionName]. */
     regionOptions: [number, number, string][];
 }
 
@@ -16,6 +17,9 @@ export interface EmailListState {
     selectedRegionId?: number | null;
 }
 
+/**
+ * The main container for email links. Overlays on the list layout.
+ */
 export class EmailList extends React.Component<EmailListProps, EmailListState> {
 
     constructor(props: any) {
