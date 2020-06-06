@@ -16,8 +16,8 @@ recipients:
 - ccrear@lasvegasnevada.gov
 - mfiore@lasvegasnevada.gov
 subject: Demand for Redistribution of Funds Allocated To LVMPD
-body: |
-    "I am a resident of Las Vegas. I am writing to demand that Mayor Carolyn Goodman and City Council to do everything in their power to adopt a budget that prioritizes our community well being and redirects funding away from the police in the next budget evaluation period.
+body: |-
+    I am a resident of Las Vegas. I am writing to demand that Mayor Carolyn Goodman and City Council to do everything in their power to adopt a budget that prioritizes our community well being and redirects funding away from the police in the next budget evaluation period.
 
     We have seen mounting evidence that police departments are racist and ineffective institutions that put citizens at risk of injury and death, yet the police budget accounts for 13% of our general fund.
 
@@ -32,5 +32,5 @@ body: |
     [YOUR NAME]
     [YOUR ADDRESS]
     [YOUR EMAIL]
-    [YOUR PHONE NUMBER]"
+    [YOUR PHONE NUMBER]
 ---
