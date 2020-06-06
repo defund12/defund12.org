@@ -1,7 +1,7 @@
 ---
 title: Columbia, Missouri
 permalink: "/columbiamo"
-name: Letter to County Legislature
+name: Letter to City Council & Mayor
 city: Columbia
 state: MO
 recipients:
