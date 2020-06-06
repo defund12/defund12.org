@@ -27,7 +27,7 @@ body: |-
 
 	I demand immediate reduction of the police force budget, cancellation of cadet classes, demilitarization of our forces, and reallocation of funds from police to community-led health and safety strategies. We should redirect police funding to efforts that are actually proven to reduce crime, such as affordable housing, shelters, and mental health services. Redwood City should support community wellbeing, rather than empowering the police forces that tear our community apart. Police reforms, such as de-escalation training, was not enough to save Kyle Hart and is not enough to protect our community.
 
-	It is your duty to represent your constituents. I am urging you to revise the Redwood City recommended operating budget for FY 2020-21, and to increase funds to non-punitive community efforts. We can be a beacon for other cities to follow if only we have the courage to change.
+	It is your duty to represent your constituents. I am urging you to revise the Redwood City recommended operating budget for FY 2020-21, and to increase funds to non-punitive community efforts. 
 
 	Thank you for your time,
 
