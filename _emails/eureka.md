@@ -9,7 +9,8 @@ recipients:
 - sseaman@ci.eureka.ca.gov
 - lcastellano@ci.eureka.ca.gov
 - hmessner@ci.eureka.ca.gov
-- kbergel@ci.eureka.ca.gov, aallison@ci.eureka.ca.gov
+- kbergel@ci.eureka.ca.gov
+- aallison@ci.eureka.ca.gov
 - narroyo@ci.eureka.ca.gov
 - cityclerk@ci.eureka.ca.gov
 subject: Commit to reallocate for social equity
