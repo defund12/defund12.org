@@ -2,9 +2,8 @@
 title: Salt Lake City, UT
 permalink: "/saltlakecity"
 name: Letter to Council Members and Mayor
-state: UT
 city: Salt Lake City
-layout: email
+state: UT
 recipients:
 - mayor@slc.gov
 - james.rogers@slcgov.com
@@ -18,7 +17,7 @@ subject: We demand a People's Budget
 body: |
   I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
 
-  We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the LAPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+  We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
 
   Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLPD, despite the fact that crime has fallen considerably during the past few months. The SLPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.
 
@@ -32,5 +31,6 @@ body: |
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
