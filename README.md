@@ -18,8 +18,10 @@ To build the application:
 Contributions to the repository are greatly welcomed.
 
 ### Email templates
-* Please do not copy and paste emails from other locales. We are looking to crowdsource locale-specific data, voices, and perspectives. Think quality over quantity. If we wanted to implement a generic email template for any locale, we would have done it by now.
-* In the email signature, please include [NAME], [EMAIL], [PHONE], [ADDRESS]. This information is super important, and avoids emails being filtered out by congress/council members!
-* If possible, limit a PR to one email template. This make it easier to process the history of what's entering the codebase, and takes some strain off the reviewer.
 
-Thank you so much!
+Please review our email template style guide [here](EMAIL_TEMPLATE_STYLE_GUIDE.md).
+
+NOTE: If possible, limit a PR to one email template. This make it easier to process the history of what's entering the codebase, and takes some strain off the reviewer.
+
+Thank you so much,
+defund12.org team
