@@ -2,8 +2,9 @@
 title: Oakland, CA
 permalink: "/oakland"
 name: Letter to Mayor, Council Members, and Elected Officials
-city: Oakland
+country: United States
 state: CA
+city: Oakland
 recipients:
 - atlarge@oaklandca.gov
 - officeofthemayor@oaklandnet.com

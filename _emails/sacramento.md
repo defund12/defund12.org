@@ -3,6 +3,7 @@ title: Sacramento, CA
 permalink: "/sacramento"
 name: Letter to Mayor, City Manager, and City Council
 state: CA
+country: United States
 city: Sacramento
 layout: email
 recipients:

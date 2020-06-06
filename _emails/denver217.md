@@ -2,6 +2,7 @@
 title: Denver, CO
 permalink: "/denver217"
 name: Letter to Council Members and State Representatives (Senate Bill 217)
+country: United States
 city: Denver
 state: CO
 recipients:

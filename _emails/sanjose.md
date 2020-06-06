@@ -2,8 +2,9 @@
 title: San Jose, CA
 permalink: "/sanjose"
 name: Letter to Mayor and Council Members
-city: San Jose
+country: United States
 state: CA
+city: San Jose
 recipients:
 - mayoremail@sanjoseca.gov
 - District1@sanjoseca.gov

@@ -2,6 +2,7 @@
 title: Boulder, Colorado
 permalink: "/boulder"
 name: Letter to Council Members
+country: United States
 state: CO
 city: Boulder
 layout: email

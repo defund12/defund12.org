@@ -3,6 +3,7 @@ title: Pittsburgh, Pennsylvania
 permalink: pittsburgh
 name: Letter to Council Members and Chiefs/Assistant Chiefs of Staff
 state: PA
+country: United States
 city: Pittsburgh
 layout: email
 recipients:

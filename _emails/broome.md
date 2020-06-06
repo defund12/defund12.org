@@ -2,8 +2,9 @@
 title: Broome County, NY
 permalink: "/broome"
 name: Letter to County Legislators
-city: Broome County
+country: United States
 state: NY
+city: Broome County
 recipients:
 - stephen.flagg@broomecounty.us
 - scott.baker@broomecounty.us

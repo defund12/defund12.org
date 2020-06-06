@@ -2,6 +2,7 @@
 title: Baltimore, MD
 permalink: "/baltimore"
 name: Letter to Mayor and City Council
+country: United States
 city: Baltimore
 state: MD
 recipients:

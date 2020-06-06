@@ -2,6 +2,7 @@
 title: Bloomington, IN
 permalink: "/bloomington"
 name: Letter to Council Members
+country: United States
 state: IN
 city: Bloomington
 layout: email

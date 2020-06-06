@@ -2,6 +2,7 @@
 title: Elk Grove, CA
 permalink: "/elkgrove"
 name: Letter to Mayor and City Council
+country: United States
 city: Elk Grove
 state: CA
 recipients:

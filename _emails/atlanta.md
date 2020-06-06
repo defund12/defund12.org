@@ -2,6 +2,7 @@
 title: Atlanta, GA
 permalink: "/atlanta"
 name: Letter to Atlanta Financial Division
+country: United States
 state: GA
 city: Atlanta
 layout: email

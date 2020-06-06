@@ -1,9 +1,11 @@
 function formatEmailList() {
-  const list = $("#emailLinks");
+    const list = $("#emailLinks");
+    const countryList = $("#selected_country");
+    const stateList = $("#selected_state");
   if (list.length) {
     let content = $("<div></div>");
     const items = list.find("li");
-    const states = {};
+    const countries = {};
     for (let item of items) {
       // Setup click event
       // $(item).on('click', () => {
@@ -12,17 +14,30 @@ function formatEmailList() {
       // })
 
       // Push into state lists
-      const { state } = item.dataset;
-      if (states[state] === undefined) {
-        states[state] = [];
+      const { state, country } = item.dataset;
+      if (countries[country] === undefined) {
+          countries[country] = [];
+          const countryElement = $(`<option value="${country}">${country}</option>`);
+          countryList.append(countryElement);
       }
-      states[state].push(item);
+      const currentCountry = countries[country];
+      if (currentCountry[state] === undefined) {
+          currentCountry[state] = [];
+          const stateElement = $(`<option hidden data-country="${country}" value="${state}">${state}</option>`);
+          stateList.append(stateElement);
+      }
+      currentCountry[state].push(item);
     }
-    for (let [name, items] of Object.entries(states)) {
-      let stateElement = $("<div class='state'></div>");
-      stateElement.append(`<h2>${name}</h2>`);
-      for (let item of items) stateElement.append(item);
-      content.append(stateElement);
+    for (let [countryCode, states] of Object.entries(countries)) {
+      let countryElement = $(`<div class='country' data-country="${countryCode}"></div>`);
+      countryElement.append(`<h1>${countryCode}</h1>`);
+      for (let [name, items] of Object.entries(states)) {
+        let stateElement = $(`<div class='state' data-country="${countryCode}" data-state="${name}"></div>`);
+        stateElement.append(`<h2>${name}</h2>`);
+        for (let item of items) stateElement.append(item);
+        countryElement.append(stateElement);
+      }
+      content.append(countryElement);
     }
     list.html(content);
   }
@@ -49,6 +64,25 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
   document.body.removeChild(element);
 }
 
+function selectCountry(event) {
+    $("#selected_state option").each(function () {
+        if ($(this).data('country') === event.target.value) {
+            $(this).removeAttr('hidden');
+        } else {
+            $(this).attr('hidden', true);
+        }
+    });
+    $(`#emailLinks .country[data-country!="${event.target.value}"]`).attr('hidden', true);
+    $(`#emailLinks .country[data-country="${event.target.value}"]`).removeAttr('hidden');
+    $(`#emailLinks .state`).removeAttr('hidden');
+    $("#selected_state").val("Region");
+}
+
+function selectState(event) {
+    $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true);
+    $(`#emailLinks .state[data-state="${event.target.value}"]`).removeAttr('hidden');
+}
+
 /**
  * Get the URL parameters
  * source: https://css-tricks.com/snippets/javascript/get-url-variables/
@@ -69,5 +103,6 @@ var getParams = function (url) {
 };
 
 $(document).ready(() => {
+  window.appState = {};
   formatEmailList();
 });
