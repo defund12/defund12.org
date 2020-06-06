@@ -2,7 +2,7 @@
 
 ## 1. User that submits issue
 
-Anyone that would like to add an email for their locale. They create issue in adherence to [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Anyone that would like to add an email for their locale. They create issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
 ## 2. Triage Team [Needs people!]
 
