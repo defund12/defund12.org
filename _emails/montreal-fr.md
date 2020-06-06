@@ -68,15 +68,15 @@ recipients:
 subject: Budget 2020 du SPVM — Appel d’action — Désinvestir maintenant !
 body: "Cher.e conseiller.e de la Ville de Montréal,
 
-Je vous écris aujourd’hui pour exprimer mon indignation concernant le budget opérationnel du Service de police de la Ville de Montréal (SPVM), qui s’élève à un montant de 665 300 000 $ (Budget 2020). Ceci est presque 11 % du budget annuel de la Ville de Montréal. La taille du budget policier de notre ville est répréhensible, particulièrement lorsqu’on considère notre infrastructure qui s’écroule et la contamination de notre eau potable.
+Je vous écris aujourd’hui pour exprimer mon indignation concernant le budget opérationnel du Service de police de la Ville de Montréal (SPVM), qui s’élève à un montant de 665 300 000 $ (Budget 2020 [1]). Ceci est presque 11 % du budget annuel de la Ville de Montréal. La taille du budget policier de notre ville est répréhensible, particulièrement lorsqu’on considère notre infrastructure qui s’écroule [2] et la contamination de notre eau potable [3].
 
 Le but du SPVM est de protéger la population montréalaise et de maintenir la paix et la sécurité. Or, notre ville devient dangereuse à travers le financement du profil racial et de l’utilisation de la force excessive. Comme tous les départements policiers en Amérique du Nord, le SPVM a tué systématiquement des personnes noires innocentes non-armées à travers les années. Il est impératif que l’administration de Montréal s’assure que cela n’arrive plus.
 
-Anthony Griffin (1987), Preslie Leslie (1990), Osmond Fletcher (1991), Marcellus François (1991), Trevor Kelly (1993), Anas Bennis (2004), Fredy Villanueva (2008), Mario Hamel (2011), Patrick Limoges (2011), Alain Magloire (2013), René Gallant (2015), Bony Jean-Pierre (2016), Pierre Coriolan (2017) et Nicholas Gibbs (2018) ne sont que quelques noms de personnes tuées aux mains du SPVM au cours des 30 dernières années (source: « Another Black Life » par Robyn Maynard).
+Anthony Griffin (1987), Preslie Leslie (1990), Osmond Fletcher (1991), Marcellus François (1991), Trevor Kelly (1993), Anas Bennis (2004), Fredy Villanueva (2008), Mario Hamel (2011), Patrick Limoges (2011), Alain Magloire (2013), René Gallant (2015), Bony Jean-Pierre (2016), Pierre Coriolan (2017) et Nicholas Gibbs (2018) ne sont que quelques noms de personnes tuées aux mains du SPVM au cours des 30 dernières années (source: « Another Black Life » par Robyn Maynard [4]).
 
 J’invite les conseillers de la ville de Montréal à initier un désinvestissement de la structure fondamentalement violente qu’est le SPVM. Je vous demande, comme conseiller élu, de vous engager à faire les choses suivantes:
 
-- De ne plus voter pour une augmentation du budget du SPVM. Ceci inclut le financement pour les caméras portatives pour les policiers, une initiative dont les résultats ne sont pas à la mesure des attentes et qui revient à légitimer une organisation fondamentalement corrompue ;
+- De ne plus voter pour une augmentation du budget du SPVM. Ceci inclut le financement pour les caméras portatives pour les policiers, une initiative dont les résultats ne sont pas à la mesure des attentes [5] et qui revient à légitimer une organisation fondamentalement corrompue ;
 
 - De proposer et de mettre en application une coupure budgétaire du SPVM de 300 millions de dollars au minimum, ce qui représente le déficit prévu par la crise COVID-19;
 
@@ -84,7 +84,7 @@ J’invite les conseillers de la ville de Montréal à initier un désinvestisse
 
 La violence policière récurrente en Amérique du Nord en ce moment nous rappelle que le temps d’agir est arrivé. À Montréal, nous avons besoin d’une administration qui entreprend une réforme fondamentalement des polices et des prisons, qui vise à anéantir la violence policière et carcérale qui cible les populations les plus marginalisées. Une présence policière augmentée ne nous protège pas. Au contraire, cette présence menace les vies des communautés les plus vulnérables, comme les communautés noires, les communautés autochtones, les communautés LGBTQ2S+, les sans-abris, les travailleurs dans l’industrie du sexe, les personnes handicapées, et les personnes qui vivent dans la pauvreté.
 
-En effet, nous avons besoin d’une administration qui initie des changements visant l'abolition éventuelle de la police ; la police a été créée pour cibler les communautés marginalisées. Par conséquent, nous devons choisir une transition vers l’abolition. Au lieu d’investir plus dans la police, notre ville doit donner la priorité aux solutions alternatives, telle que l’éducation ; une amélioration des services de santé mentale ; des initiatives pour le logement abordable ; la sécurité de revenu ; des dispositifs de réduction des méfaits ; la réadaptation accessible ; l’aide mutuelle ; le travail social ; les services de résolution de conflit ; la justice transformatrice ; et d’autres systèmes communautaires indispensables.
+En effet, nous avons besoin d’une administration qui initie des changements visant l'abolition éventuelle de la police ; la police a été créée pour cibler les communautés marginalisées. Par conséquent, nous devons choisir une transition vers l’abolition [6]. Au lieu d’investir plus dans la police, notre ville doit donner la priorité aux solutions alternatives, telle que l’éducation ; une amélioration des services de santé mentale ; des initiatives pour le logement abordable ; la sécurité de revenu ; des dispositifs de réduction des méfaits ; la réadaptation accessible ; l’aide mutuelle ; le travail social ; les services de résolution de conflit ; la justice transformatrice ; et d’autres systèmes communautaires indispensables.
 
 Nous vous avons élu à votre poste municipal pour représenter nos intérêts. Votre incapacité à agir contre la brutalité policière et les pratiques racistes du SPVM sont un échec pour la collectivité concernée. Si vous n’êtes capables que de faire des promesses en l’air, je vous demanderais alors de démissionner à votre poste et faire place à un véritable leadership.
 
@@ -95,6 +95,18 @@ Sincèrement,
 [NOM] 
 [COURRIEL]
 [NUMÉRO DE TÉLÉPHONE]
-[ADDRESSE]"
+[ADDRESSE]
+
+[1] https://ville.montreal.qc.ca/pls/portal/docs/page/service_fin_fr/media/documents/budget_2020_pti_2020_2022_fr.pdf
+
+[2] https://journalmetro.com/actualites/montreal/1525376/des-infrastructures-de-leau-vieillissantes-a-montreal/
+
+[3] https://www.ledevoir.com/politique/montreal/565966/la-carte-du-devoir
+
+[4] https://robynmaynard.com/another-black-life-taken-by-the-montreal-police-collateral-damage-in-a-racist-war-on-drugs/
+
+[5] https://www.ledevoir.com/societe/471214/des-cameras-portatives-pour-filmer-les-interventions-policieres
+
+[6] https://www.theguardian.com/commentisfree/2020/may/31/the-answer-to-police-violence-is-not-reform-its-defunding-heres-why"
 ---
 
