@@ -26,7 +26,7 @@ body: |-
 
   I call on you to meaningfully restrict the RPD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our Black neighbors and veterans. Social programs and education generally have been shown to be much more effective at promoting safety and social equity than policing and incarceration.
 
-  We can be a beacon for other cities to follow if only we have the courage to change.
+  We can be a beacon for other cities to follow if only we have the courage to change. Can I count on you to consider an alternative budget that puts a focus on social service programs?
 
   Sincerely,
 
