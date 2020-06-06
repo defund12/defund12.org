@@ -9,7 +9,6 @@ recipients:
 - CE@westchestergov.com
 - kjenkins@westchestergov.com
 - lcs5@westchestergov.com
-- dept-of-finance@westchestergov.com
 - Covill@westchesterlegislators.com
 - boykin@westchesterlegislators.com
 - awilliams@westchesterlegislators.com
