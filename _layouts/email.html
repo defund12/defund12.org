@@ -6,8 +6,8 @@
 		<b>{{ page.city }}, {{ page.state }}</b><br /> {{ site.email_intro_text | markdownify }}
 		<p id="autoopen">{{ site.auto_open_message }}</p>
 		<div class='buttons'>
-			<a onclick="openEmail()">Open email</a>
-			<a onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
+			<a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+			<a href="javascript:void(0);" onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
 		</div>
 		<p>{{ site.bad_mailto_message }}</p>
     </div>

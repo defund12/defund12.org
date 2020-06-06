@@ -8,6 +8,8 @@ layout: email
 recipients:
 - andrea.campbell@boston.gov
 - ccc.ps@boston.gov
+- city.council@boston.gov
+- ccc.wm@boston.gov
 subject: Reduce the Boston Police Department budget
 body: "Dear City Councilors,\n\nThe City of Boston must reduce the Boston Police Department
   budget. The City Council needs to address a lack of investment in predominantly
