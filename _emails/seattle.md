@@ -44,10 +44,10 @@ body: "Dear Seattle City Leadership, \n\nMy name is [YOUR NAME] and I am a resid
   during this trying and uncertain time, when livelihoods are on the line. We demand
   a budget that supports community wellbeing, rather than empowers the police forces
   that tear them apart.\n\nAlthough City Council has avoided voting or revising Mayor
-  Durkan's draconian (fine?) budget proposal, the document is back in your hands.
-  It is your duty to represent your constituents. I am urging you to completely revise
-  the Seattle budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need
-  to adopt a People’s Budget. Public opinion is with me.\n\nThank you for your time,\n\n[YOUR
+  Durkan's draconian budget proposal, the document is back in your hands. It is your
+  duty to represent your constituents. I am urging you to completely revise the Seattle
+  budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a
+  People’s Budget. Public opinion is with me.\n\nThank you for your time,\n\n[YOUR
   NAME]\n\n[YOUR ADDRESS]\n\n[YOUR EMAIL]\n\n[YOUR PHONE NUMBER]"
 layout: email
 ---
