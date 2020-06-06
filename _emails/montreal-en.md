@@ -1,7 +1,7 @@
 ---
 title: Montreal, QC
 permalink: "/montreal-en"
-name: 2020 SPVM Budget — Call For Action — DEFUND NOW (English)
+name: Letter to Mayor and City Council (English)
 state: QC
 city: Montreal
 layout: email

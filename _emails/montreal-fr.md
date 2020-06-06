@@ -1,7 +1,7 @@
 ---
 title: Montreal, QC
 permalink: "/montreal-fr"
-name: Budget 2020 du SPVM — Appel d’action — Désinvestir maintenant ! (Fr)
+name: Lettre adressée au mairesse et aux membres du conseil (Français)
 state: QC
 city: Montreal
 layout: email
