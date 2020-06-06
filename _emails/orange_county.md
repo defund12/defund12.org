@@ -27,7 +27,7 @@ body: |-
 
   Santa Ana Police is the 8th most violent department in the U.S., and Anaheim is the 9th. This is not what Orange County, CA stands for. From 2003-2016, Anaheim Police Department killed 33 people during the process of arrest, and nearly 40% of them were unarmed. Since 2014, the rate of arrest-related deaths caused by Anaheim PD exceeds that of LAPD, NYPD, and San Fran PD and is 74% higher than average for police in California.
 
-  How can it be that agents funded for "public protection" are responsible for 17% of all homicides in the city (2003-2016)? In the years 2009 and 2016, 36% of all homicides were in the hands of Anaheim officers. Frankly, this is unacceptable. It is inhumane and impossible to ignore as an issue anymore. Defunding the police and finding greater
+  How can it be that agents funded for "public protection" are responsible for 17% of all homicides in the city (2003-2016)? In the years 2009 and 2016, 36% of all homicides were in the hands of Anaheim officers. Frankly, this is unacceptable. It is inhumane and impossible to ignore as an issue anymore.
 
   Rather, we need a radical increase for funding towards community services and healthcare. We need youth programs, increased mental health services, neighborhood infrastructures, childcare, and community outreach for those who need these services most. We need more funds for rehabilitation and the re-entry process for formerly incarcerated individuals, and help increase employment and education rates. We need to build a society that does not need the level of policing.
 
