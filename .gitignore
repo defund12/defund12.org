@@ -1,5 +1,8 @@
 **/.DS_Store
-.jekyll-cache
 _site
-node_modules/
 settings.json
+.*/*
+node_modules/*
+build/*
+main.bundle.js
+main.bundle.js.map
