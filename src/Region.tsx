@@ -9,6 +9,9 @@ export interface RegionProps {
     templates: Array<EmailListItemProps>
 }
 
+/**
+ * A list of links for a given region.
+ */
 export class Region extends React.Component<RegionProps, EmailListState> {
     constructor(props: RegionProps) {
         super(props);

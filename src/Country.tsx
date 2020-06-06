@@ -10,6 +10,9 @@ export interface CountryProps {
     regions: Array<RegionProps>
 }
 
+/**
+ * A list of regions for a given country.
+ */
 export class Country extends React.Component<CountryProps, EmailListState> {
     constructor(props: CountryProps) {
         super(props);
