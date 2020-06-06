@@ -1,6 +1,6 @@
 ---
-title: Orange County, CA
-permalink: "/orange_county_ca"
+title: Orange County
+permalink: "/orange_county"
 name: Letter to the Board of Supervisors of Orange County
 city: Orange County
 state: CA
