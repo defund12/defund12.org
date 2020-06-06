@@ -21,18 +21,16 @@ recipients:
 - mary.kaminsky@broomecounty.us
 - mark.whalen@broomecounty.us
 subject: Commit to Reallocation for Social Equity
-body: |2+
-
+body: |-
   Dear Broome County Legislature,
 
-  My name is [NAME] and I am a resident of [TOWN]. I am asking you to reallocate money away from the Broome County PD. Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. As such, I demand a meaningful reallocation of police department funds towards healthcare and social programs.
+  My name is \[YOUR NAME\] and I am a resident of \[YOUR NEIGHBORHOOD/DISTRICT\]. I am asking the County Legislature to begin meaningfully defunding the Broome County Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Broome County residents. Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. As such, I demand a meaningful reallocation of police department funds towards healthcare and social programs.
 
   Sincerely,
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
-
+  \[YOUR NAME\]
+  \[YOUR ADDRESS\]
+  \[YOUR EMAIL\]
+  \[YOUR PHONE NUMBER\]
 layout: email
 ---
 

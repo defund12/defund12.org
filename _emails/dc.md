@@ -2,9 +2,8 @@
 title: Washington, D.C.
 permalink: "/dc"
 name: Letter to Council Members
-state: DC
 city: Washington
-layout: email
+state: DC
 recipients:
 - eom@dc.gov
 - judiciary@dccouncil.us
@@ -30,7 +29,7 @@ body: "To the DC council in charge of the allocation of funds to the Metropolita
   it has come to my attention that there will be a council meeting in June that will
   discuss the budget for the Metropolitan Police Department. \t\n\nThe MPD is a pillar
   of inequality in our city. Just last year, it was reported that most police stops
-  involved Black people. I am concerned that the proposed increase/or the upcoming
+  involved Black people. I am concerned that the proposed increase for the upcoming
   fiscal year will only serve to entrench this prejudice and worsen the disproportionate
   impact on Black DC residents. \t\n\nThe brutal, senseless, and violent murder of
   George Floyd at the hands of police officers derelict in their duties to protect
@@ -40,5 +39,6 @@ body: "To the DC council in charge of the allocation of funds to the Metropolita
   rehabilitation, public health, and community-oriented initiatives is a goal that
   must be achieved. I implore you to reconsider the upcoming budget. We are overdue
   for change.\n\nSincerely,\n[your name]\n"
+layout: email
 ---
 

@@ -2,9 +2,8 @@
 title: Ann Arbor, MI
 permalink: "/annarbor"
 name: Letter to Mayor and City Council
-state: MI
 city: Ann Arbor
-layout: email
+state: MI
 recipients:
 - ctaylor@a2gov.org
 - ABannister@a2gov.org
@@ -21,17 +20,18 @@ subject: Defund Ann Arbor Police Department
 body: |-
   Mayor Taylor and City Council members,
 
-  Given the history of policing and the most recent murders of Black people, the Community must have a chance to make their case to redistribute the Ann Arbor budget to prioritize services that help strengthen our communities especially during a pandemic, not more police to tear them apart.
+  My name is \[YOUR NAME\] and I am a resident of \[NEIGHBORHOOD/BOROUGH/CITY\]. Given the history of policing and the most recent murders of Black people, I am asking you to redirect money away from the Ann Arbor PD in the 2021 budget and instead to prioritize services that help strengthen our communities.
 
-  We want a budget that reflects our priorities and needs. Historically, the city government has spent almost 30% of its funding on police. We want that funding redistributed to services that actually help Ann Arbor folks, including affordable housing, more mental health services, and rent suspension and forgiveness for those who are currently unemployed.
+  I want a budget that reflects our community's priorities and needs. In 2020, the City of Ann Harbor's FY Budget showed 42% of funding allocated to policing  while only 16% was allocated to community services and only 6% to public services. We want that funding redistributed to services that actually help the people of Ann Arbor, including affordable housing, more mental health services, and rent suspension and forgiveness for those who are currently unemployed. Beyond policing our community, these services are proven to be more effective in improving community safety and wellness. I demand a budget that supports community wellbeing, rather than gives power to police forces that tear them apart.
 
   Please consider your role in enriching and empowering our communities, especially during a time of racial injustice, wide-spread illness, and economic vulnerability.
 
   Thank you,
 
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
+  \[YOUR NAME\]
+  \[YOUR ADDRESS\]
+  \[YOUR EMAIL\]
+  \[YOUR PHONE NUMBER\]
+layout: email
 ---
 

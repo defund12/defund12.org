@@ -12,6 +12,7 @@ recipients:
 - vmuscarella@nassaucountyny.gov
 - adrucker@nassaucountyny.gov
 - rmwalker@nassaucountyny.gov
+- dford@nassaucountyny.gov
 subject: Commit to reallocate for social equity
 body: "Dear Nassau County Legislature, \n\nHi, my name is [NAME] and I am a resident
   of [TOWN]. I am asking you to reallocate money away from the Nassau County PD, which
