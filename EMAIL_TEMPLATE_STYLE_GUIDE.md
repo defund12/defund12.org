@@ -14,7 +14,7 @@ Sample language: “I urge you to advocate for a meaningful reallocation of the 
 Avoid using police framing of community problems, i.e. “crime.” Instead of summarizing social programs as being more effective than policing at “reducing crime,” say that they are more effective at “promoting community safety.”
 
 🌟 Shining Star Examples 🌟\
-https://defund12.org/oakland\
+https://defund12.org/oakland \
 https://defund12.org/santabarbara
 
 NOTE: We are doing our best to keep submitted content as-is, though some submissions may undergo minor editing/cleanups to fix typos, grammatical errors, and content that violates our style guide. If the published content does not accurately reflect your original intent/voice, please let us know and open an issue/PR.
