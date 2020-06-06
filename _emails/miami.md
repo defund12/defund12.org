@@ -5,7 +5,6 @@ name: Letter to Council Members
 city: Miami
 state: FL
 recipients:
-- 
 - adiazdelaportilla@miamigov.com
 - krussell@miamigov.com
 - jcarollo@miamigov.com
