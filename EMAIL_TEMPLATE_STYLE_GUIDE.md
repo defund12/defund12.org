@@ -12,3 +12,5 @@
 6. The core message should be defunding the police. If an email widely pulls in other issues or hones in on something very specific (e.g., funding being reallocated to a single, specific category rather than a more general array of social services), try to generalize. People using this tool can customize their emails to be more specific should they choose.
 Sample language: “I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.”
 Avoid using police framing of community problems, i.e. “crime.” Instead of summarizing social programs as being more effective than policing at “reducing crime,” say that they are more effective at “promoting community safety.”
+
+NOTE: We are doing our best to keep submitted content as-is, though some submissions may undergo minor editing/cleanups to fix typos, grammatical errors, and content that violates our style guide. If the published content does not accurately reflect your original intent/voice, please let us know and open an issue/PR.
