@@ -1,4 +1,4 @@
-import { EmailList } from '../build/EmailList';
+import { App } from '../build/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -67,5 +67,7 @@ $(emailLinks.children).each((link, item) => {
     region.templates.push(linkProps);
 });
 
-const props = { countries: [...countries], countryOptions, regionOptions };
-ReactDOM.render(React.createElement(EmailList, props), emailLinks);
+const appContainer = document.getElementById('react-container');
+const { title, subtitle, footer_text } = appContainer.dataset;
+const props = { title, subtitle, footerText: footer_text, countries: [...countries], countryOptions, regionOptions };
+ReactDOM.render(React.createElement(App, props), appContainer)
