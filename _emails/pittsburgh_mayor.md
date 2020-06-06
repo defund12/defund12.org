@@ -6,7 +6,7 @@ city: Pittsburgh
 state: PA
 recipients:
 - bill.peduto@pittsburghpa.gov
-subject: 
+subject: Reallocation of 2020 Budget into Community Support
 body: |-    
     Dear Mayor Peduto,
 
