@@ -1,41 +1,39 @@
 ---
 title: Oakland, CA
-permalink: "/oakland"
+permalink: "/defundopd"
 name: Letter to Mayor, Council Members, and Elected Officials
 city: Oakland
 state: CA
 recipients:
-- atlarge@oaklandca.gov
 - officeofthemayor@oaklandnet.com
 - dkalb@oaklandca.gov
 - nfbas@oaklandca.gov
-- LMcElhaney@oaklandca.gov
+- lmcelhaney@oaklandca.gov
 - district4@oaklandca.gov
-- Ngallo@oaklandca.gov
-- District6@oaklandca.gov
+- ngallo@oaklandca.gov
+- district6@oaklandca.gov
 - lreid@oaklandnet.com
-- ebernstein@oaklandcityattorney.org
-- abenson@oaklandca.gov
-- bjohnson@oaklandca.gov
-- askrcd-da@acgov.org
-subject: Oakland Resident for Defunding the OPD
+- atlarge@oaklandca.gov
+subject: Defund OPD.  Invest in Community.
 body: |-
-  To Mayor Schaaf, the Oakland City Council and Oakland and Alameda County Elected Officials:
+  Dear Mayor Schaaf and City Council Members,
 
-  My name is \[YOUR NAME\], and I am a resident of Oakland. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+  OPD takes an enormous share of the city’s general fund, and that percentage has risen exponentially for the last two decades, taking away desperately needed resources from essential city programs and services. OPD has overspent its authorized overtime budget by 100% -- tens of millions of dollars -- in recent years, as individual cops bring home annual compensation upwards of $400k. The investment in policing has not made us safer -- OPD remains an embarrassment to the city and a lethal threat to Oakland’s Black and Brown communities, while increased police spending shows no correlation to decreasing crime levels over the past 20 years. With Oakland's current finances in dire jeopardy, it is clear that we must defund the police.
 
-  OPD has been a waste of our resources. Last year, the OPD budget was approximately half of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
+  As Oakland residents, we therefore demand that you take immediate action to ensure the following:
 
-  I call on you to slash the OPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+    1. Reduce OPD’s allocation from the General Fund by 50% (roughly $150 Million)
+    2. Disallow unauthorized overtime by OPD
+    3. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+    4. Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
 
-  We can be a beacon for other cities to follow if only we have the courage to change.
 
-  Sincerely,
+  Oakland can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund OPD. 
+
+  Thank you,
 
   \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+
 layout: email
 ---
 
