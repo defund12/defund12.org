@@ -1,6 +1,6 @@
 ---
 title: Fort Collins, CO
-permalink: "/fortcollins"
+permalink: "/fort-collins"
 name: Letter to Mayor, City Manager, and City Council
 city: Fort Collins
 state: CO
