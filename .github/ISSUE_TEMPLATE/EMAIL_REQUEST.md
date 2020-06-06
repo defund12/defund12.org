@@ -6,7 +6,7 @@ labels: new-request
 assignees: ''
 ---
 
-DUE TO HIGH VOLUME EMPTY ISSUES WILL BE IMMEDIATELY CLOSED. PLEASE PROVIDE ALL INFORMATION. THANK YOU!!!! :^)
+DUE TO HIGH VOLUME EMPTY ISSUES, OR ISSUES MISSING THE FOLLOWING INFORMATION WILL BE IMMEDIATELY CLOSED. THANK YOU!
 
 * A subject message for the email
 * A list of emails (at least one) for the government officials you’d like to receive the message
