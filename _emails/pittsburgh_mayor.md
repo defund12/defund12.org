@@ -4,6 +4,7 @@ permalink: "/pittsburgh_mayor"
 name: Letter to the Mayor
 city: Pittsburgh
 state: PA
+layout: email
 recipients:
 - bill.peduto@pittsburghpa.gov
 subject: Reallocation of 2020 Budget into Community Support
