@@ -92,6 +92,9 @@ Thank you for taking the time to think critically about this issue.
 
 Yours sincerely,
 
-[NAME]"
+[NAME] 
+[EMAIL]
+[PHONE]
+[ADDRESS]"
 ---
 

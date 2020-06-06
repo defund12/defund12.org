@@ -92,6 +92,9 @@ Merci de prendre le temps de penser de façon critique aux questions présentée
 
 Sincèrement,
 
-[NOM]"
+[NOM] 
+[COURRIEL]
+[NUMÉRO DE TÉLÉPHONE]
+[ADDRESSE]"
 ---
 
