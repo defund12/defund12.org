@@ -1,7 +1,7 @@
 ---
 title: Memphis, TN
 permalink: "/memphis"
-name: Letter to City Councilors 
+name: Letter to City Councilors
 state: TN
 city: Memphis
 layout: email
@@ -20,20 +20,12 @@ recipients:
 - Rhonda.Logan@memphistn.gov
 - Patrice.Robinson@memphistn.gov
 subject: We Demand Divestment from Police and an Investment in Our Communities
-body: |
-  Hello,
-
-  My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Memphis PD and into the following social services: 
-  * Community Development
-  * COVID Relief
-  * Education, Parks & Recreation
-  
-  I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources the citizens can benefit from.
-
-  Thank you for your time,
-
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
+body: "Hello,\n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking
+  to redirect money away from the Memphis PD and into the following social services:
+  \n* Community Development\n* COVID Relief\n* Education, Parks & Recreation\n\nI
+  request that an emergency meeting be called before the fiscal year goes into effect
+  in order to deny the mayor’s proposed budget and reallocate these funds to resources
+  the citizens can benefit from.\n\nThank you for your time,\n\n[YOUR NAME]\n[YOUR
+  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\n"
 ---
+
