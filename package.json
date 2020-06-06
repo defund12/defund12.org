@@ -6,8 +6,8 @@
   "scripts": {
     "babel": "babel --presets es2019 js/index.js -o build/main.bundle.js",
     "webpack": "webpack",
-    "build-dev": "tsc -w | npm run webpack --watch",
-    "start-dev": "npm run build-dev | jekyll serve",
+    "webpack-watch": "webpack --watch",
+    "start-dev": "concurrently --kill-others \"tsc -w\" \"npm run webpack-watch\" \"jekyll serve\"",
     "build": "tsc && npm run webpack",
     "start": "npm run build && jekyll serve"
   },
@@ -28,10 +28,12 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
     "jekyll": "^3.0.0-beta1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "requirejs": "^2.3.6",
+    "typescript": "^3.9.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
