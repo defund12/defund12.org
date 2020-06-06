@@ -37,7 +37,7 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
 - Even though the issue is _good enough_ and you added the `[READY FOR PR]`, do you still think the email template needs work or editing?
   - Add tag `[EMAIL STILL NEEDS WORK]` and leave comment on what the outstanding tasks are .
 
-## 4. Email Addition Development team
+## 4. Email Addition Development Team
 
 This team will pick up issues that have the `[Ready for PR]` tag. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
 
