@@ -25,9 +25,7 @@ body: "I am a resident of [YOUR CITY/DISTRICT]. \n\nIn early May, Mayor Ted Whee
   controversy over the last year with collusion with prominent white nationalist groups,
   shootings of Black people and people perceived to be in mental health crisis, data
   uncovered on their racist gang enforcement traffic stops, and the fact that a shameful
-  52% of people arrested are houseless.\n\nAdditionally and critically, Wheeler's
-  budget ELIMINATES $1.8 million to fund the police body camera program. More money
-  for policing but less money for police accountability is completely unacceptable.\n\nI
+  52% of people arrested are houseless.\n\nI
   oppose any increases to the PPB budget. Over the course of last year, PPB increased
   their budget from the approved $227 million to $233 million - an increase that is
   easier for policing to achieve than most other departments. We anticipate that PPB
@@ -50,13 +48,13 @@ body: "I am a resident of [YOUR CITY/DISTRICT]. \n\nIn early May, Mayor Ted Whee
   Wheeler's proposal represents a slight decrease from the PPB proposal, the PPB is
   a department whose reach into Portland communities needs to be curtailed through
   reducing the budget, not by increasing it.\n\nMore money for policing but less money
-  for police accountability is completely unacceptable at this moment in history.
+  for communities is completely unacceptable at this moment in history.
   The city, the state, and country are all watching. And so am I. I call on the Mayor,
   the Commissioners, and all other City Council Members to use their powers to continue
-  to reduce the budget and pledge to increase Police accountability and transparency.
+  to reduce the budget and pledge to defund the Portland police department.
   I promise that you will lose my support and my vote if you aren't willing to make
-  a public and vocal stand to help defund the PPB and increase their accountability
-  and transparency.\n\nThank you for your time,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
+  a public and vocal stand to help defund the PPB.
+  \n\nThank you for your time,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
   EMAIL]\n [YOUR PHONE NUMBER]"
 ---
 
