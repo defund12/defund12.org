@@ -12,26 +12,29 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
-    path: ''
-    type: emails
-  values:
-    layout: email
-    permalink: "/desired-path"
-    name: Title of letter (e.g. Letter to City Council)
-    city: City
-    state: State intials
-    recipients:
-    - 
-    subject: Email subject (mention defunding police dept.)
-    body: Email message (remember to include placeholders for name)
+  - scope:
+      path: ""
+      type: emails
+    values:
+      layout: email
+      permalink: "/desired-path"
+      name: Title of letter (e.g. Letter to City Council)
+      city: City
+      state: State intials
+      recipients:
+        -
+      subject: Email subject (mention defunding police dept.)
+      body: Email message (remember to include placeholders for name)
 permalink: pretty
-subtitle: Email government officials and council members to reallocate egregious police
+subtitle:
+  Email government officials and council members to reallocate egregious police
   budgets towards education, social services, and dismantling racial inequality via
   this crowd-sourced tool.
-meta: Email government officials and council members to reallocate police budgets
+meta:
+  Email government officials and council members to reallocate police budgets
   towards education, social services, and dismantling racial inequality.
-footer_text: Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)
+footer_text: "Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)\n\nHave the emails of your city government officials and a drafted template ready."
 auto_open_message: This page automatically opens a drafted email for you.
-bad_mailto_message: Email link not working correctly? You can copy and paste the recipients,
+bad_mailto_message:
+  Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
