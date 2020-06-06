@@ -23,5 +23,5 @@ Please review our email template style guide [here](EMAIL_TEMPLATE_STYLE_GUIDE.m
 
 NOTE: If possible, limit a PR to one email template. This make it easier to process the history of what's entering the codebase, and takes some strain off the reviewer.
 
-Thank you so much,\n
+Thank you so much,\
 defund12.org team
