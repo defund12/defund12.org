@@ -2,8 +2,18 @@
 
 declare function copyToClipboard(element: any, link: any, t: any): any;
 
-export class EmailListItem extends React.Component<{ state: string, city: string, name: string, permalink: string }> {
-	constructor(props: any) {
+export interface EmailListItemProps {
+	country: string,
+	state: string,
+	city: string,
+	name: string,
+	permalink: string,
+	countryId?: number,
+	regionId?: number
+};
+
+export class EmailListItem extends React.Component<EmailListItemProps> {
+	constructor(props: EmailListItemProps) {
 		super(props);
 	}
 

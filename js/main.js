@@ -1,49 +1,48 @@
 /* eslint no-unused-vars: "warn"*/
+//function formatEmailList() {
+//    const list = $("#emailLinks");
+//    const countryList = $("#selected_country");
+//    const stateList = $("#selected_state");
+//  if (list.length) {
+//    let content = $("<div></div>");
+//    const items = list.find("li");
+//    const countries = {};
+//    for (let item of items) {
+//      // Setup click event
+//      // $(item).on('click', () => {
+//      // 	const { recipients, subject, body } = item.dataset;
+//      // 	location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
+//      // })
 
-/**
- * Formats the main list of emails
- */
-function formatEmailList() {
-  const list = $('#emailLinks');
-  const stateList = $('#selected_state');
-  if (list.length) {
-    let content = $("<div></div>");
-    const items = list.find("li");
-    const countries = {};
-    for (let item of items) {
-      // Setup click event
-      // $(item).on('click', () => {
-      // 	const { recipients, subject, body } = item.dataset;
-      // 	location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
-      // })
-
-      // Push into state lists
-      const { state, country } = item.dataset;
-      if (countries[country] === undefined) {
-        countries[country] = [];
-      }
-      const currentCountry = countries[country];
-      if (currentCountry[state] === undefined) {
-        currentCountry[state] = [];
-      }
-      currentCountry[state].push(item);
-    }
-    for (let [countryCode, states] of Object.entries(countries)) {
-      let countryElement = $("<div class='country'></div>");
-      countryElement.append(`<h1>${countryCode}</h1>`);
-      for (let [name, items] of Object.entries(states)) {
-          let stateElement = $(`<div class='state' data-state="${name}"></div>`);
-        stateElement.append(`<h2>${name}</h2>`);
-        for (let item of items) stateElement.append(item);
-        countryElement.append(stateElement);
-      }
-      content.append(countryElement);
-    }
-    list.html(content);
-
-    stateList.selectBox();
-  }
-}
+//      // Push into state lists
+//      const { state, country } = item.dataset;
+//      if (countries[country] === undefined) {
+//          countries[country] = [];
+//          const countryElement = $(`<option value="${country}">${country}</option>`);
+//          countryList.append(countryElement);
+//      }
+//      const currentCountry = countries[country];
+//      if (currentCountry[state] === undefined) {
+//          currentCountry[state] = [];
+//          const stateElement = $(`<option hidden data-country="${country}" value="${state}">${state}</option>`);
+//          stateList.append(stateElement);
+//      }
+//      currentCountry[state].push(item);
+//    }
+//    for (let [countryCode, states] of Object.entries(countries)) {
+//      let countryElement = $(`<div class='country' data-country="${countryCode}"></div>`);
+//      countryElement.append(`<h1>${countryCode}</h1>`);
+//      for (let [name, items] of Object.entries(states)) {
+//        let stateElement = $(`<div class='state' data-country="${countryCode}" data-state="${name}"></div>`);
+//        stateElement.append(`<h2>${name}</h2>`);
+//        for (let item of items) stateElement.append(item);
+//        countryElement.append(stateElement);
+//      }
+//      content.append(countryElement);
+//    }
+//    list.html(content);
+//  }
+//}
 
 // Most recent span element used in copyToClipboard
 let mostRecentSpanElement;
@@ -127,8 +126,3 @@ const getParams = function(url) {
   }
   return params;
 };
-
-$(document).ready(() => {
-  window.appState = {};
-  formatEmailList();
-});
