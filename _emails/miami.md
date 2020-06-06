@@ -25,17 +25,11 @@ body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. 
   to dedicate 40% of the City’s operating budget (approximately $4 million per day)
   towards policing while thousands of citizens are homeless and many more lack access
   to essential services, including clean running water and necessary mental health
-  resources. \n\nI also urge the City Council to enact legislation that holds police
-  accountable and to overturn policies that allow police to engage in unlawful behavior
-  with impunity. As set forth by Black Lives Matter of Miami, I ask that Homan Square
-  be immediately closed (a site where extrajudicial police interrogations are known
-  to occur), that an elected Civilian Police Accountability Council be established
-  with real reform powers, and that abusive cops be fired and criminally charged.
-  Ending the unfair and secretive internal MPD grievance review process would be a
-  good first step in achieving this goal. \n\nPeople are marching in the streets because
-  they know that these actions will result in a healthier, more just society. I implore
-  you to please listen to the needs of your constituents and take immediate action
-  to address their concerns. \n\nThank you, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
+  resources. Your budget is not a moral document, rather, let's spend taxpayer money that
+  speaks to our values. \n\nPeople are marching in the streets because they know that these actions 
+  will result in a healthier, more just society. I am asking that city officials lobby the 
+  same amount of attention and effort towards finding sustainable, longterm change.
+  \n\nThank you, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
   PHONE NUMBER]\n"
 layout: email
 ---
