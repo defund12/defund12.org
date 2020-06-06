@@ -4,8 +4,6 @@ import { EmailListItem } from '../build/EmailListItem';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const pageTitle = document.getElementsByClassName('pagetitle');
-ReactDOM.render(React.createElement(Defund12App, { title: pageTitle[0].innerText }), pageTitle[0]);
 const emailLinks = document.getElementById('emailLinks');
 ReactDOM.render(React.createElement(EmailList, null, $(emailLinks.children).map((link, item) => {
     const { state, city, permalink, name } = item.dataset;
