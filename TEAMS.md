@@ -47,3 +47,5 @@ This team will pick up issues that have the `[ready-for-pr]` tag. Issues should 
 ## Join the conversation
 
 If you'd like to help out, please join our discord [here](https://discord.gg/YMxndzd) and say hello. We'd love your help!
+
+We have created channels in the discord channel that correspond to each team. These will be used for team specific communication and organization. Whichever team, you'd like to join, please join the discord sub topic and say hello.
