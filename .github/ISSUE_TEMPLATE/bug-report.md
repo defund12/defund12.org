@@ -1,3 +1,11 @@
+---
+title: ''
+name: Bug report
+about: ''
+labels: ''
+assignees: ''
+---
+
 # Found a problem with the site?
 
 Please provide the following information (if possible):
