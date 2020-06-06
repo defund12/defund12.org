@@ -12,11 +12,21 @@
     
     <link rel="icon" type="image/svg+xml" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}favicon.svg">
 
-    <!-- Open Graph protocol -->
+    <!-- Schema protocol -->
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="description" content="{{ site.meta }}">
+      
+    <!-- Facebook Open Graph protocol -->
     <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:description" content="{{ site.meta }}" />
 
+    
+    <!-- Twitter card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.meta }}">
+    
     <!-- CSS Includes -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
