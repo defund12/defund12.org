@@ -2,7 +2,7 @@
 title: ''
 name: Bug report
 about: Form for reporting a bug with defund12.org
-labels: 'bug'
+labels: bug
 assignees: ''
 ---
 
