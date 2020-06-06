@@ -39,14 +39,14 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
 
 ## 4. Email Addition Development Team
 
-This team will pick up issues that have the `[Ready for PR]` tag. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
+This team will pick up issues that have the `[ready-for-pr]` tag. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
 
 **Responsibilities**
 
 - Assign issue to yourself so no other developer begins working on it
 - Create a PR for the email issue
 - Ensure the email markdown is correct and properly linted.
-- Once done, add tag `[READY FOR CODE REVIEW]` and remove all other tags
+- Once PR is up, someone will review and merge!
 
 ## Join the conversation
 
