@@ -11,7 +11,7 @@
             {% for state in sorted_states %}
                 {% assign sorted_emails = state.items | sort:"city" %}
                 {% for email in sorted_emails %}
-            <li data-state="{{ email.state }}">
+            <li class="emailLinkItem" data-state="{{ email.state }}" data-city="{{ email.city }}" data-permalink="{{ email.permalink }}" data-name="{{ email.name }}">
                 <a href="{{ email.permalink }}?browse">{{ email.city }} - <i>{{ email.name }}</i></a>
                 <span tab-index="0" role="button" aria-label="copy to clipboard" class="copyToClipboard" onclick="copyToClipboard(this, `{{ email.permalink }}`, true)">🔗</span>
             </li>
