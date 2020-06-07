@@ -1,10 +1,10 @@
 function formatEmailList() {
-  const list = $("#emailLinks");
+  const list = $('#emailLinks');
   if (list.length) {
-    let content = $("<div></div>");
-    const items = list.find("li");
+    const content = $('<div></div>');
+    const items = list.find('li');
     const states = {};
-    for (let item of items) {
+    for (const item of items) {
       // Setup click event
       // $(item).on('click', () => {
       // 	const { recipients, subject, body } = item.dataset;
@@ -12,40 +12,40 @@ function formatEmailList() {
       // })
 
       // Push into state lists
-      const { state } = item.dataset;
+      const {state} = item.dataset;
       if (states[state] === undefined) {
         states[state] = [];
       }
       states[state].push(item);
     }
-    for (let [name, items] of Object.entries(states)) {
-      let stateElement = $("<div class='state'></div>");
+    for (const [name, items] of Object.entries(states)) {
+      const stateElement = $('<div class=\'state\'></div>');
       stateElement.append(`<h2>${name}</h2>`);
-      for (let item of items) stateElement.append(item);
+      for (const item of items) stateElement.append(item);
       content.append(stateElement);
     }
     list.html(content);
   }
 }
 
-var mostRecentSpanElement;
+let mostRecentSpanElement;
 function copyToClipboard(spanElement, copyText, isPermalink) {
   if (mostRecentSpanElement) {
-    mostRecentSpanElement.innerHTML = "🔗";
+    mostRecentSpanElement.innerHTML = '🔗';
   }
 
-  spanElement.innerHTML = "✅(copied)";
+  spanElement.innerHTML = '✅(copied)';
   mostRecentSpanElement = spanElement;
 
-  const element = document.createElement("textarea");
+  const element = document.createElement('textarea');
   let copyValue = copyText;
   if (isPermalink) {
-    copyValue = "https://defund12.org".concat(copyText);
+    copyValue = 'https://defund12.org'.concat(copyText);
   }
   element.value = copyValue;
   document.body.appendChild(element);
   element.select();
-  document.execCommand("copy");
+  document.execCommand('copy');
   document.body.removeChild(element);
 }
 
@@ -55,17 +55,17 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
  * @param  {String} url The URL
  * @return {Object}     The URL parameters
  */
-var getParams = function (url) {
-	var params = {};
-	var parser = document.createElement('a');
-	parser.href = url;
-	var query = parser.search.substring(1);
-	var vars = query.split('&');
-	for (var i = 0; i < vars.length; i++) {
-		var pair = vars[i].split('=');
-		params[pair[0]] = decodeURIComponent(pair[1]);
-	}
-	return params;
+const getParams = function(url) {
+  const params = {};
+  const parser = document.createElement('a');
+  parser.href = url;
+  const query = parser.search.substring(1);
+  const vars = query.split('&');
+  for (let i = 0; i < vars.length; i++) {
+    const pair = vars[i].split('=');
+    params[pair[0]] = decodeURIComponent(pair[1]);
+  }
+  return params;
 };
 
 $(document).ready(() => {
