@@ -21,6 +21,8 @@ function formatEmailList() {
       content.append(stateElement);
     }
     list.html(content);
+
+    stateList.selectBox();
   }
 }
 
