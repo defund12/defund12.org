@@ -20,7 +20,7 @@ subject: Reject the mayor's FY 2021 budget
 body: |-
   Dear Councilor, 
 
-  My name is (NAME) and I live in the city of Northampton, MA. I’m writing to ask that City Council reject Mayor David Narkewicz’s proposal to expand police funding of nearly $200,000. In the budget, this proposed expansion is justified as necessary to mitigate the COVID-19 crisis and enforce “compliance with social distancing” (Narkewicz 2020). This despite the fact that experts across the country have urged against utilizing policing as a mechanism to respond to social and health problems (Gangi 2020). 
+  My name is [NAME] and I live in the city of Northampton, MA. I’m writing to ask that City Council reject Mayor David Narkewicz’s proposal to expand police funding of nearly $200,000. In the budget, this proposed expansion is justified as necessary to mitigate the COVID-19 crisis and enforce “compliance with social distancing” (Narkewicz 2020). This despite the fact that experts across the country have urged against utilizing policing as a mechanism to respond to social and health problems (Gangi 2020). 
 
   Increased policing only compounds public health crises and the terror of this pandemic, particularly for Black, Indigenous, and Brown People of Color who are disproportionately affected both by the current economic and health emergency and by police brutality. 
 
