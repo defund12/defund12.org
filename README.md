@@ -14,6 +14,20 @@ To build the application:
 2. Clone and navigate to the repository
 3. `bundle exec jekyll serve`
 
+### Running with Docker locally
+
+1. [Install Docker](https://docs.docker.com/get-docker/)
+2. Start docker locally
+3. In directory run, `docker-compose up`
+
+### Running eslint
+
+1. Install [Node JS](https://nodejs.org/en/download/)
+2. Install [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+3. `yarn install`
+4. To run eslint and automatically fix issues:
+   `./node_modules/.bin/eslint --fix .`
+
 ## Contributions guidelines
 
 Contributions to the repository are greatly welcomed.
