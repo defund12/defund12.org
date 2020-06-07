@@ -22,7 +22,7 @@ defaults:
     city: City
     state: State intials
     recipients:
-    - 
+    -
     subject: Email subject (mention defunding police dept.)
     body: Email message (remember to include placeholders for name)
 permalink: pretty
@@ -35,6 +35,7 @@ footer_text: |-
   Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)
 
   Have the emails of your city government officials and a drafted template ready.
+default_subject_line: "[*** INSERT UNIQUE SUBJECT LINE***]"
 auto_open_message: This page automatically opens a drafted email for you.
 bad_mailto_message: Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
