@@ -1,9 +1,12 @@
 ---
 title: Cambridge, Massachusetts
 permalink: "/cambridge"
+redirect_from:
+- "/cambridgema"
 name: Letter to the Mayor, City Councilors, and the City Manager
 city: Cambridge
 state: MA
+layout: email
 recipients:
 - council@cambridgema.gov
 - citymanager@cambridgema.gov
@@ -25,12 +28,8 @@ body: |
   Thank you,
 
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
-layout: email
 ---
 
