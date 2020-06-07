@@ -23,7 +23,8 @@ body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. 
   to dedicate 130.4 million dollars of the City’s operating budget (the budget's highest expenditure)
   towards policing while thousands of citizens are homeless and many more lack access
   to essential services, including clean running water and necessary mental health
-  resources. \n\nI also urge the City Council to enact legislation that holds police
+  resources. The divestment of police department funding can translate to contributions toward budget 
+  shortfalls impacted by COVID-19 and/or services for the homeless, youth development, and workforce development --- all of which crucial to commanities of color.\n\nI also urge the City Council to enact legislation that holds police
   accountable and to overturn policies that allow police to engage in unlawful behavior
   with impunity. \n\nPeople are marching in the streets because
   they know that these actions will result in a healthier, more just society. I implore
