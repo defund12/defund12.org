@@ -44,6 +44,10 @@ This team will pick up issues that have the `[ready-for-pr]` tag. Issues should 
 - Ensure the email markdown is correct and properly linted.
 - Once PR is up, someone will review and merge!
 
+**Conventions to follow**
+
+- Please use the following file name convention: `[state]-[city].md`
+
 ## Join the conversation
 
 If you'd like to help out, please join our discord [here](https://discord.gg/YMxndzd) and say hello. We'd love your help!
