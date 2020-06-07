@@ -25,7 +25,9 @@ body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. 
   to dedicate 40% of the City’s operating budget (approximately $4 million per day)
   towards policing while thousands of citizens are homeless and many more lack access
   to essential services, including clean running water and necessary mental health
-  resources. Your budget is not a moral document, rather, let's spend taxpayer money that
+  resources. The divestment of police department funding can translate to contributions toward budget 
+  shortfalls impacted by COVID-19 and/or services for the homeless, youth development, and workforce development --- all of which crucial to commanities of color.
+  Your budget is not a moral document, rather, let's spend taxpayer money that
   speaks to our values. \n\nPeople are marching in the streets because they know that these actions 
   will result in a healthier, more just society. I am asking that city officials lobby the 
   same amount of attention and effort towards finding sustainable, longterm change.
