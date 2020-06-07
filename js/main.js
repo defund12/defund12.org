@@ -1,3 +1,8 @@
+/* eslint no-unused-vars: "warn"*/
+
+/**
+ * Formats the main list of emails
+ */
 function formatEmailList() {
   const list = $("#emailLinks");
   const stateList = $("#selected_state");
@@ -26,24 +31,32 @@ function formatEmailList() {
   }
 }
 
-var mostRecentSpanElement;
+// Most recent span element used in copyToClipboard
+let mostRecentSpanElement;
+
+/**
+ * Copys text to clipboard
+ * @param {DOMElement} spanElement Span element with copy to clipboard icon
+ * @param {Text} copyText Text to copy
+ * @param {Boolean} isPermalink True if the copied text is a permalink
+ */
 function copyToClipboard(spanElement, copyText, isPermalink) {
   if (mostRecentSpanElement) {
-    mostRecentSpanElement.innerHTML = "🔗";
+    mostRecentSpanElement.innerHTML = '🔗';
   }
 
-  spanElement.innerHTML = "✅(copied)";
+  spanElement.innerHTML = '✅(copied)';
   mostRecentSpanElement = spanElement;
 
-  const element = document.createElement("textarea");
+  const element = document.createElement('textarea');
   let copyValue = copyText;
   if (isPermalink) {
-    copyValue = "https://defund12.org".concat(copyText);
+    copyValue = 'https://defund12.org'.concat(copyText);
   }
   element.value = copyValue;
   document.body.appendChild(element);
   element.select();
-  document.execCommand("copy");
+  document.execCommand('copy');
   document.body.removeChild(element);
 }
 
@@ -63,17 +76,17 @@ function selectState(event) {
  * @param  {String} url The URL
  * @return {Object}     The URL parameters
  */
-var getParams = function (url) {
-	var params = {};
-	var parser = document.createElement('a');
-	parser.href = url;
-	var query = parser.search.substring(1);
-	var vars = query.split('&');
-	for (var i = 0; i < vars.length; i++) {
-		var pair = vars[i].split('=');
-		params[pair[0]] = decodeURIComponent(pair[1]);
-	}
-	return params;
+const getParams = function(url) {
+  const params = {};
+  const parser = document.createElement('a');
+  parser.href = url;
+  const query = parser.search.substring(1);
+  const vars = query.split('&');
+  for (let i = 0; i < vars.length; i++) {
+    const pair = vars[i].split('=');
+    params[pair[0]] = decodeURIComponent(pair[1]);
+  }
+  return params;
 };
 
 $(document).ready(() => {
