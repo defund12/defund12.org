@@ -11,13 +11,13 @@
 5. Remove hashtags
 6. We are amplifying calls to defund the police, not reform them. The core message should be a direct statement to defund the police. Specific demands for reforms (e.g., policing tactics and training) will be removed.
 7. Make the email specific to your city/county. Some suggestions:
-    a. Can you include dollar amounts or percentages of how much of the budget goes to the police?
-    b. Can you write about a specific recent event in your city that highlights the flaws of your police department?
-    c. Are there specific local police programs and operations you believe should end?
-    d. Are there community programs, initiatives, or infrastructure that have been underfunded?
-    e. Can you reference or include information from local activist groups that are already engaged in this work?
-    f. Can you include information from any local surveys or reports on what kinds of services residents are looking for?
-    g. Can you include information about local economic issues (e.g., existing budget shortfalls, inequities in economic security or outcomes)?
+    - Can you include dollar amounts or percentages of how much of the budget goes to the police?
+    - Can you write about a specific recent event in your city that highlights the flaws of your police department?
+    - Are there specific local police programs and operations you believe should end?
+    - Are there community programs, initiatives, or infrastructure that have been underfunded?
+    - Can you reference or include information from local activist groups that are already engaged in this work?
+    - Can you include information from any local surveys or reports on what kinds of services residents are looking for?
+    - Can you include information about local economic issues (e.g., existing budget shortfalls, inequities in economic security or outcomes)?
 8. If an email widely pulls in other issues or hones in on something very specific (e.g., funding being reallocated to a single, specific category rather than a more general array of social services), try to generalize. People using this tool can customize their emails to be more specific should they choose.
     - Sample language: “I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.”
 9. Avoid using police framing of community problems, i.e. “crime.” Instead of summarizing social programs as being more effective than policing at “reducing crime,” say that they are more effective at “promoting community safety.”
