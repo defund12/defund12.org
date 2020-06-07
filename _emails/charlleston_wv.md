@@ -1,6 +1,6 @@
 ---
 title: Charleston, WV
-permalink: "/charleston_wv"
+permalink: "/charleston-wv"
 name: Letter to Mayor and City Council
 city: Charleston
 state: WV
