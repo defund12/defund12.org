@@ -18,7 +18,7 @@ subject: Defund OPD.  Invest in Community.
 body: |-
   Dear Mayor Schaaf and City Council Members,
 
-  My name is \[YOUR NAME\] and I am an Oakland resident writing to urge you to defund OPD. 
+  My name is [YOUR NAME] and I am an Oakland resident writing to urge you to defund OPD. 
 
   OPD takes an enormous share of the city’s general fund, and that percentage has risen exponentially for the last two decades, taking away desperately needed resources from essential city programs and services. OPD has overspent its authorized overtime budget by 100% -- tens of millions of dollars -- in recent years, as individual cops bring home annual compensation upwards of $400k. The investment in policing has not made us safer -- OPD remains an embarrassment to the city and a lethal threat to Oakland’s Black and Brown communities, while increased police spending shows no correlation to decreasing crime levels over the past 20 years. With Oakland's current finances in dire jeopardy, it is clear that we must defund the police.
 
@@ -33,7 +33,7 @@ body: |-
 
   Thank you,
 
-  \[YOUR NAME\]
+  [YOUR NAME]
 
 layout: email
 ---
