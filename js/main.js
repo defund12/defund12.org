@@ -1,26 +1,22 @@
 function formatEmailList() {
   const list = $("#emailLinks");
+  const stateList = $("#selected_state");
   if (list.length) {
     let content = $("<div></div>");
     const items = list.find("li");
-    const states = {};
+    const locales = {};
     for (let item of items) {
-      // Setup click event
-      // $(item).on('click', () => {
-      // 	const { recipients, subject, body } = item.dataset;
-      // 	location.href = `mailto:${recipients}?subject=${subject}&body=${body}`;
-      // })
-
-      // Push into state lists
       const { state } = item.dataset;
-      if (states[state] === undefined) {
-        states[state] = [];
+      if (locales[state] === undefined) {
+        locales[state] = [];
+        const stateElement = $(`<option value="${state}">${state}</option>`);
+        stateList.append(stateElement);
       }
-      states[state].push(item);
+      locales[state].push(item);
     }
-    for (let [name, items] of Object.entries(states)) {
-      let stateElement = $("<div class='state'></div>");
-      stateElement.append(`<h2>${name}</h2>`);
+    for (let [state, items] of Object.entries(locales)) {
+      let stateElement = $(`<div class='state' data-state="${state}"></div>`);
+      stateElement.append(`<h2>${state}</h2>`);
       for (let item of items) stateElement.append(item);
       content.append(stateElement);
     }
@@ -47,6 +43,16 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
   element.select();
   document.execCommand("copy");
   document.body.removeChild(element);
+}
+
+function selectState(event) {
+    const matchingStates = $(`#emailLinks .state[data-state="${event.target.value}"]`);
+    if (matchingStates.length === 0) {
+        $(`#emailLinks .state`).removeAttr('hidden');
+    } else {
+        $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true);
+        matchingStates.removeAttr('hidden');
+    }
 }
 
 /**
