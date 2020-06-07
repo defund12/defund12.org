@@ -1,6 +1,6 @@
 ---
 title: Oakland, CA
-permalink: "/defundopd"
+permalink: "/oakland"
 name: Letter to Mayor, Council Members, and Elected Officials
 city: Oakland
 state: CA
