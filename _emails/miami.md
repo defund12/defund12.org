@@ -22,7 +22,7 @@ body: |-
 
   I demand that the City of Miami’s elected officials meaningfully defund the Miami Police Department. I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Miamians during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
 
-  To really “fight crime,” we don’t need more police officers. Crime usually happens when someone has been unable to meet their basic needs through other means. What we need are more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
+  What we need are more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
 
   Miami deserves better. We deserve better. This city needs you to help create a space in which more mental health service providers, social workers, victim/survivor advocates, educators, religious leaders, neighbors, and friends — all of the people who really make up our community — can look out for one another.
 
