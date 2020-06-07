@@ -31,12 +31,12 @@ body: |-
 
 	Thank you for your time,
 
-	\[YOUR NAME\]
+	[YOUR NAME]
 
-	\[YOUR ADDRESS\]
+	[YOUR ADDRESS]
 
-	\[YOUR EMAIL\]
+	[YOUR EMAIL]
 	
-	\[YOUR PHONE NUMBER\]
+	[YOUR PHONE NUMBER]
 layout: email
 ---
