@@ -1,6 +1,7 @@
 ---
 title: Great Falls, MT
 date: 2020-06-07 19:24:00 Z
+permalink: "/greatfalls"
 name: Letter to City Commission
 city: Great Falls
 state: MT
