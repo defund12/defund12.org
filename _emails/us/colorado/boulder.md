@@ -23,7 +23,7 @@ body: |
 
   My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am writing to you regarding the harassment of Zayd Atkinson, a resident of Boulder and a student at Naropa University, by the Boulder Police Department. Instead of funding the harassment of Boulder residents of color, the city should fund affordable housing.
 
-  Several council members have based their campaigns on a platform that supports affordable housing for the residents of Boulder, yet no laws have changed regarding the number of unrelated people who can live together in a house. The budget for the Boulder Police Department is $37,000,000 while the budget for Housing and Human Services is less than $5,000,000. I strongly suggest that the Boulder Police Department be defunded immediately and that the money go towards creating affordable housing within city limits.
+  Based on the 2020 budget that you approved in October 2019, the Boulder Police Department received $38,629,082, which represents a ~8% increase since 2018. Meanwhile, the budget for Housing and Human Services for 2020 is $21,655,671, representing a staggering **28%** reduction in budget since 2018. Most of those cuts come from a reduction in funding to "Community Investment" for Housing. That's untenable, especially from a city that prides itself in promoting equity. I strongly suggest that the Boulder Police Department be defunded immediately and that the money go towards creating and maintaining affordable housing within city limits. I would also like to see policy enacted around increasing limits on unrelated residents within a home.
 
   Thank you for your time,
 
