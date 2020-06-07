@@ -1,5 +1,5 @@
 ---
-title: Glendale
+title: Glendale, CA
 permalink: "/glendale"
 name: Letter to Mayor and City Council
 state: CA
