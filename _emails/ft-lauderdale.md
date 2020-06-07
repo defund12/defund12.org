@@ -1,6 +1,6 @@
 ---
 title: Fort Lauderdale, FL
-permalink: "/fortlauderdale"
+permalink: "/fort-lauderdale"
 name: Letter to Council Members
 city: Fort Lauderdale
 state: FL
