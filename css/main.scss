@@ -56,8 +56,17 @@ $pad_: 20px; // tablet and mobile
   --link: blue;
   --bg: #fff;
   --bg_: #f5f5f5;
+  
+  @media (prefers-color-scheme: dark) {
+    --text: #ddd;
+    --text_subtle: #666;
+    --subtle: #252525;
+    --subtle_: #555;
+    --link: #3C81F9;
+    --bg: #111;
+    --bg_: #181818;
+  }
 }
-
 
 // Fonts
 body {
