@@ -133,3 +133,19 @@ header {
         opacity: 1.0;
     }
 }
+
+.selectBox-options li {
+	color: #000;
+}
+
+.selectBox.selectBox-dropdown {
+	height: 25px;
+	border-radius: 0;
+	.selectBox-label {
+		padding: 0px 8px;
+	}
+	.selectBox-arrow {
+		background-image: url('../images/jQuery-selectBox-arrow.gif');
+		border: 0;
+	}
+}

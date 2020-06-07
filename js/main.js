@@ -4,25 +4,30 @@
  * Formats the main list of emails
  */
 function formatEmailList() {
-  const list = $('#emailLinks');
+  const list = $("#emailLinks");
+  const stateList = $("#selected_state");
   if (list.length) {
-    const content = $('<div></div>');
-    const items = list.find('li');
-    const states = {};
-    for (const item of items) {
-      const {state} = item.dataset;
-      if (states[state] === undefined) {
-        states[state] = [];
+    let content = $("<div></div>");
+    const items = list.find("li");
+    const locales = {};
+    for (let item of items) {
+      const { state } = item.dataset;
+      if (locales[state] === undefined) {
+        locales[state] = [];
+        const stateElement = $(`<option value="${state}">${state}</option>`);
+        stateList.append(stateElement);
       }
-      states[state].push(item);
+      locales[state].push(item);
     }
-    for (const [name, items] of Object.entries(states)) {
-      const stateElement = $('<div class=\'state\'></div>');
-      stateElement.append(`<h2>${name}</h2>`);
-      for (const item of items) stateElement.append(item);
+    for (let [state, items] of Object.entries(locales)) {
+      let stateElement = $(`<div class='state' data-state="${state}"></div>`);
+      stateElement.append(`<h2>${state}</h2>`);
+      for (let item of items) stateElement.append(item);
       content.append(stateElement);
     }
     list.html(content);
+
+    stateList.selectBox();
   }
 }
 
@@ -53,6 +58,16 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
   element.select();
   document.execCommand('copy');
   document.body.removeChild(element);
+}
+
+function selectState(event) {
+    const matchingStates = $(`#emailLinks .state[data-state="${event.target.value}"]`);
+    if (matchingStates.length === 0) {
+        $(`#emailLinks .state`).removeAttr('hidden');
+    } else {
+        $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true);
+        matchingStates.removeAttr('hidden');
+    }
 }
 
 /**
