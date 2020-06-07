@@ -25,7 +25,7 @@ body: |-
 
   If this is truly representative of the council's thoughts on how funds should be allocated, I am ashamed to call Ripon my home, and I am ashamed to call you my elected officials.
 
-  Crime is not random. Crime usually happens when someone has been unable to meet their basic needs through other means. So, to really “fight crime,” we don’t need more police officers - we need more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
+  Transitioning funding away from [POLICE DEPT] and into community programming such as educational opportunities, arts programs, community centers, healthcare, and mental health resources will strengthen our communities and make them safer for everyone. When every person has the resources they need to be healthy and safe, our community can thrive. This is a long transition process but change starts with reallocating this funding!
 
   We can be a beacon for other cities to follow if only we have the courage to change.
 
