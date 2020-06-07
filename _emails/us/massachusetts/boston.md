@@ -2,13 +2,13 @@
 title: Boston, MA
 permalink: "/boston"
 redirect_from:
-  - "/cambridgema"
+- "/cambridgema"
 name: Letter to the Mayor
 state: MA
 city: Boston
 layout: email
 recipients:
-  - MAYOR@boston.gov
+- MAYOR@boston.gov
 subject: Reduce funding for BPD
 body: |-
   Hello,
@@ -31,3 +31,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
