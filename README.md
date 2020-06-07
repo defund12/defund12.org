@@ -25,7 +25,8 @@ To build the application:
 1. Install [Node JS](https://nodejs.org/en/download/)
 2. Install [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
 3. `yarn install`
-4. To run eslint and automatically fix issues `./node_modules/.bin/eslint --fix .`
+4. To run eslint and automatically fix issues:
+   `./node_modules/.bin/eslint --fix .`
 
 ## Contributions guidelines
 
