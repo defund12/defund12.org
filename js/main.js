@@ -60,12 +60,18 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
   document.body.removeChild(element);
 }
 
+/**
+ * Called when the user selects a state from the dropdown menu
+ * @param  {Event} event The DOM on change event object
+ */
 function selectState(event) {
-  const matchingStates = $(`#emailLinks .state[data-state="${event.target.value}"]`);
+  const matchingStates = $(
+      `#emailLinks .state[data-state="${event.target.value}"]`);
   if (matchingStates.length === 0) {
     $(`#emailLinks .state`).removeAttr('hidden');
   } else {
-    $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true);
+    $(`#emailLinks .state[data-state!="${event.target.value}"]`)
+        .attr('hidden', true);
     matchingStates.removeAttr('hidden');
   }
 }
