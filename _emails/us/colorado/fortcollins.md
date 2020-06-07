@@ -17,7 +17,8 @@ recipients:
 - gsawyer@fcgov.com
 - datteberry@fcgov.com
 - business@fcgov.com
-subject: [INSERT UNIQUE SUBJECT LINE]
+subject:
+- INSERT UNIQUE SUBJECT LINE
 body: |-
   To Mayor Troxell, the Fort Collins City Council, City Manager, and other city officials:
 
