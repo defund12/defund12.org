@@ -26,7 +26,8 @@ recipients:
 - jea.street@newcastlede.gov
 - david.tackett@newcastlede.gov
 - james.bell@newcastlede.gov
-subject: [INSERT UNIQUE SUBJECT LINE]
+subject:
+- INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Council Members of the City of Wilmington,
 
