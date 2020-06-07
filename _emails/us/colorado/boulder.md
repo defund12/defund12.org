@@ -17,7 +17,8 @@ recipients:
 - yatesb@bouldercolorado.gov
 - council@bouldercolorado.gov
 - homeownership@bouldercolorado.gov
-subject: [INSERT UNIQUE SUBJECT LINE]
+subject:
+- INSERT UNIQUE SUBJECT LINE
 body: |
   Dear Council Members of the City of Boulder,
 
