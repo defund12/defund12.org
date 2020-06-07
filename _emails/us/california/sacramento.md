@@ -2,9 +2,8 @@
 title: Sacramento, CA
 permalink: "/sacramento"
 name: Letter to Mayor, City Manager, and City Council
-state: CA
 city: Sacramento
-layout: email
+state: CA
 recipients:
 - MayorSteinberg@cityofsacramento.org
 - aashby@cityofsacramento.org
@@ -58,7 +57,7 @@ body: |
 
   Call an emergency joint meeting of the City Council and County Board of Supervisors to address the response by law enforcement to the George Floyd protests. The police are responding to protesters with needless violence—their rubber bullets are causing destruction to bodies and businesses. Hold the Sacramento Police Department and the Sheriff’s Department accountable. Make them come up with a plan to end police-initiated violence specifically regarding the protests and into the future.
 
-  Please call budget meetings to begin the process of reducing spending on police and sheriff by 30% and to develop funding reduction strategies for the following 4 years. The Sacramento Police Department propagates inequality in our city. Many Black and  Brown Sacramento residents have stories of police harassment, and the police are most violent when it comes to our most vulnerable populations: trans folks and the homeless. Systems of oppression must be undone, and reallocating much of the budget for the Sacramento Police Department to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved. None of the CARES federal stimulus funds should not be spent on any law enforcement function. It should go towards providing housing and public health initiatives.
+  Please call budget meetings to begin the process of reducing spending on police and sheriff by 30% and to develop funding reduction strategies for the following 4 years. The Sacramento Police Department propagates inequality in our city. Many Black and  Brown Sacramento residents have stories of police harassment, and the police are most violent when it comes to our most vulnerable populations: trans folks and the homeless. Systems of oppression must be undone, and reallocating much of the budget for the Sacramento Police Department to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved. None of the CARES federal stimulus funds should be spent on any law enforcement function. It should go towards providing housing and public health initiatives.
 
   Moving forward, please refuse political contributions from law enforcement unions. You are supposed to work for the people of Sacramento. We can not achieve the the drastic overhaul in policing while your hands are in their pockets.
 
@@ -76,5 +75,6 @@ body: |
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]"
+layout: email
 ---
 
