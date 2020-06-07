@@ -25,12 +25,7 @@ body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. 
   to essential services, including clean running water and necessary mental health
   resources. \n\nI also urge the City Council to enact legislation that holds police
   accountable and to overturn policies that allow police to engage in unlawful behavior
-  with impunity. As set forth by Black Lives Matter of Fort Lauderdale, I ask that Homan Square
-  be immediately closed (a site where extrajudicial police interrogations are known
-  to occur), that an elected Civilian Police Accountability Council be established
-  with real reform powers, and that abusive cops be fired and criminally charged.
-  Ending the unfair and secretive internal FLPD grievance review process would be a
-  good first step in achieving this goal. \n\nPeople are marching in the streets because
+  with impunity. \n\nPeople are marching in the streets because
   they know that these actions will result in a healthier, more just society. I implore
   you to please listen to the needs of your constituents and take immediate action
   to address their concerns. \n\nThank you, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
