@@ -4,7 +4,6 @@ permalink: "/albuquerque"
 name: Letter to Mayor Tim Keller and City Council
 city: Albuquerque
 state: NM
-layout: email
 recipients:
 - mayorkeller@cabq.gov
 - lansena@cabq.gov
@@ -19,18 +18,18 @@ recipients:
 subject: Reduce the Albuquerque Police Department Budget and Invest in Our Community
 body: "\nHello,\n\nMy name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD], and
   I am emailing today to demand an overhaul to our Albuquerque Police Department budget
-  in light of the Black Lives Matter protests being demonstrated across the US, but
-  specifically our city.\n\nWE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS,
-  WILL: \n\n1. Vote no on all increases to police budgets \n2. Vote yes to decrease
-  police spending and budgets \n3. Vote yes to increase spending on healthcare, education,
-  housing, and community programs that keep us safe.\n\nThe militarized tactics that
-  police departments are using against citizens is unacceptable and unwarranted. We
-  have seen mounting evidence that police departments are racist and ineffective institutions
+  in light of the Black Lives Matter protests across the US, but specifically in Albuquerque.
+  \n\nWE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: \n\n1.
+  Vote no on all increases to police budgets; \n2. Vote yes to decrease police spending
+  and budgets; \n3. Vote yes to increase spending on healthcare, education, housing,
+  and community programs that keep us safe.\n\nThe militarized tactics that police
+  departments are using against citizens is unacceptable and unwarranted. We have
+  seen mounting evidence that police departments are racist and ineffective institutions
   that put citizens at risk of injury and death, yet the approved 2020 FY budget allocated
   64% of our Public Safety fund to the Albuquerque Police Department. To ensure your
   dedication to our city and citizens, I demand that you defund the Albuquerque Police
   Department and start providing more support and funding towards our community efforts
-  and organizations that serve our predominantly Latinx and Black communities, as
+  and organizations that serve our predominantly Black and Latinx communities, as
   these are the communities that are being targeted the most. By doing so, I believe
   this will prevent further police brutality and violence in the future.\n\nThe Albuquerque
   Police Department states on the cabq.gov website that “(they) help provide a safe
@@ -48,5 +47,6 @@ body: "\nHello,\n\nMy name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD], an
   to support a vibrant Black and Latinx future. The possibilities are endless.\n\nWe
   join in solidarity with the freedom fighters in Minneapolis, Louisville, and across
   the United States. And we call for the end to police  terror.\n\nSincerely,\n[NAME]\n[PHONE_NUMBER]\n[EMAIL]\n[ADDRESS]\n"
+layout: email
 ---
 
