@@ -23,7 +23,7 @@
 9. Avoid using police framing of community problems, i.e. “crime.” Instead of summarizing social programs as being more effective than policing at “reducing crime,” say that they are more effective at “promoting community safety.”
 
 #### Tips
-To determine what emails to include, generally in the U.S., the Mayor and City Council determine the budget for the following year. However we recommend looking up the budget process for your local government. (source: [National League of Cities](https://www.nlc.org/public-budgets))
+To determine what emails to include, in the U.S., typically the Mayor and City Council determine the budget for the following year (source: [National League of Cities](https://www.nlc.org/public-budgets)). However we recommend looking up the budget process for your local government. 
 
 #### 🌟 Shining Star Examples 🌟
 https://defund12.org/oakland \
