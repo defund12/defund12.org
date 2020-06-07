@@ -22,7 +22,7 @@ defaults:
     city: City
     state: State intials
     recipients:
-    - 
+    -
     subject: Email subject (mention defunding police dept.)
     body: Email message (remember to include placeholders for name)
 permalink: pretty
@@ -41,4 +41,7 @@ bad_mailto_message: Email link not working correctly? You can copy and paste the
   subject and message individually below.
 url: https://defund12.org
 plugins:
-- jekyll-sitemap
+  - jekyll-sitemap
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from  
