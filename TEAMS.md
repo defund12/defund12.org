@@ -4,7 +4,7 @@
 
 Anyone that would like to add an email for their locale. They create issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
-## 2. Triage Team [Needs people!]
+## 2. Triage Team
 
 A person on the triage team is the first to review newly created issues. Look over all issues that have the tag `[new-request]`
 
@@ -43,6 +43,10 @@ This team will pick up issues that have the `[ready-for-pr]` tag. Issues should 
 - Create a PR for the email issue
 - Ensure the email markdown is correct and properly linted.
 - Once PR is up, someone will review and merge!
+
+**Conventions to follow**
+
+- Please use the following file name convention: `[state]-[city].md`
 
 ## Join the conversation
 
