@@ -1,5 +1,5 @@
 ---
-title: Portland, OR
+title: Portland, Oregon - PPB
 permalink: "/portland-defund"
 name: Letter to the Mayor, Commissioners, and City Council on Defunding PPB
 state: OR

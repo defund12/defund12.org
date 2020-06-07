@@ -48,15 +48,31 @@ $pad_: 20px; // tablet and mobile
 
 // Colors, Fonts, Frills =======================================================
 
-$text: #222;
-$text_subtle: #999;
-$subtle: #ddd;
-$subtle_: #aaa;
+:root {
+  --text: #222;
+  --text_subtle: #999;
+  --subtle: #ddd;
+  --subtle_: #aaa;
+  --link: blue;
+  --bg: #fff;
+  --bg_: #f5f5f5;
+  
+  @media (prefers-color-scheme: dark) {
+    --text: #ddd;
+    --text_subtle: #666;
+    --subtle: #252525;
+    --subtle_: #555;
+    --link: #3C81F9;
+    --bg: #111;
+    --bg_: #181818;
+  }
+}
 
 // Fonts
 body {
+  background-color:var(--bg);
 	font-family:'Source Code Pro', 'Helvetica', 'Arial', sans-serif; font-size:16px;
-	line-height:1.6; font-weight:400; color:$text;
+	line-height:1.6; font-weight:400; color:var(--text);
 }
 em {font-weight:400; font-style:italic;}
 b {font-weight:700;}
@@ -69,14 +85,14 @@ h2 {
 	@include breakpoint(s) {font-size:22px;}
 }
 a {
-	border-bottom:1px solid $subtle;
+	border-bottom:1px solid var(--subtle);
 	&:hover {
-		border-bottom:1px solid $subtle_;
+		border-bottom:1px solid var(--subtle_);
 	}
 }
 p.divider {
 	&:before {
-		content:""; display:block; width:48px; border-bottom:1px solid $subtle; margin-bottom:20px;
+		content:""; display:block; width:48px; border-bottom:1px solid var(--subtle); margin-bottom:20px;
 	}
 	line-height:1.6;
 	max-width:580px;
@@ -94,16 +110,16 @@ header {
 #emailLinks {
 	.state {margin-top:8px;}
 	h2 {margin-bottom:8px;}
-	a {color:blue;}
-	a:visited {color:$text;}
+	a {color:var(--link);}
+	a:visited {color:var(--text);}
 }
 .emailPageHeader {
 	.buttons {
 		margin-top:20px;
-		a {display:inline-block; margin-right:12px; color:blue; cursor:pointer;}
+		a {display:inline-block; margin-right:12px; color:var(--link); cursor:pointer;}
 	}
 }
-.emailContentSection {background:#f5f5f5;}
+.emailContentSection {background:var(--bg_);}
 .emailContent {
 	div {margin-top:20px;}
 	.recipients {overflow-wrap: break-word;}
@@ -116,4 +132,20 @@ header {
     &:hover {
         opacity: 1.0;
     }
+}
+
+.selectBox-options li {
+	color: #000;
+}
+
+.selectBox.selectBox-dropdown {
+	height: 25px;
+	border-radius: 0;
+	.selectBox-label {
+		padding: 0px 8px;
+	}
+	.selectBox-arrow {
+		background-image: url('../images/jQuery-selectBox-arrow.gif');
+		border: 0;
+	}
 }
