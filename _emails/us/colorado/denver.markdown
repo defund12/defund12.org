@@ -6,22 +6,22 @@ name: Letter to City Council
 city: Denver
 state: CO
 recipients:
-  - Governorpolis@state.co.us
-  - districtone@denvergov.org
-  - kevin.flynn@denvergov.org
-  - Jamie.Torres@denvergov.org
-  - kendra.black@denvergov.org
-  - DenverCouncil5@denvergov.org
-  - paul.kashmann@denvergov.org
-  - jolon.clark@denvergov.org
-  - christopher.herndon@denvergov.org
-  - Lisa.Calderon@denvergov.org
-  - chris.hinds@denvergov.org
-  - stacie.gilmore@denvergov.org
-  - kniechatlarge@denvergov.org
-  - ortegaatlarge@denvergov.org
-  - DPDRecruiting@Denvergov.org
-  - dsdinfo@denvergov.org
+- Governorpolis@state.co.us
+- districtone@denvergov.org
+- kevin.flynn@denvergov.org
+- Jamie.Torres@denvergov.org
+- kendra.black@denvergov.org
+- DenverCouncil5@denvergov.org
+- paul.kashmann@denvergov.org
+- jolon.clark@denvergov.org
+- christopher.herndon@denvergov.org
+- Lisa.Calderon@denvergov.org
+- chris.hinds@denvergov.org
+- stacie.gilmore@denvergov.org
+- kniechatlarge@denvergov.org
+- ortegaatlarge@denvergov.org
+- DPDRecruiting@Denvergov.org
+- dsdinfo@denvergov.org
 subject: Defund Denver PD
 body: |-
   Dear Denver City Council,
@@ -39,3 +39,4 @@ body: |-
   \[YOUR EMAIL\]
   \[YOUR PHONE NUMBER\]
 ---
+
