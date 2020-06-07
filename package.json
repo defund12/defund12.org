@@ -1,7 +1,12 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "mocha": "^7.2.0"
+  },
   "devDependencies": {
     "eslint": "^7.2.0",
     "eslint-config-google": "^0.14.0"
+  },
+  "scripts": {
+    "test": "scripts/test.sh"
   }
 }
