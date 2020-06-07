@@ -2,6 +2,8 @@
 title: Denver, CO
 date: 2020-06-05 17:00:00 Z
 permalink: "/denver"
+redirect_from:
+- "/denver217"
 name: Letter to City Council
 city: Denver
 state: CO
