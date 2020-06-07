@@ -49,13 +49,13 @@ body: |
   Please keep my interests in mind as you continue to discuss these matters and work toward justice in our community.
 
   Sincerely,
-  
+
   [YOUR NAME]
-  
+
   [YOUR ADDRESS]
-  
+
   [YOUR EMAIL]
-  
+
   [YOUR PHONE NUMBER]
 ---
 
