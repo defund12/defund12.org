@@ -1,6 +1,7 @@
 ---
 title: Helena, MT
 date: 2020-06-07 19:32:00 Z
+permalink: "/helena"
 name: Letter to City Commission
 city: Helena
 state: MT
