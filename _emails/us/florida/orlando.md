@@ -13,7 +13,8 @@ recipients:
 - regina.hill@orlando.gov
 - patty.sheehan@orlando.gov
 - bakari.burns@orlando.gov
-subject: [INSERT UNIQUE SUBJECT LINE]
+subject:
+- INSERT UNIQUE SUBJECT LINE
 body: |
   Dear Orlando City Council Members,
 
