@@ -38,6 +38,6 @@ footer_text: |-
 auto_open_message: This page automatically opens a drafted email for you.
 bad_mailto_message: Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
-url: "https://defund12.org" # the base hostname & protocol for your site
+url: https://defund12.org
 plugins:
-  - jekyll-sitemap
+- jekyll-sitemap

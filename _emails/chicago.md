@@ -68,11 +68,10 @@ body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. 
   to essential services, including clean running water and necessary mental health
   resources. \n\nI also urge the City Council to enact legislation that holds police
   accountable and to overturn policies that allow police to engage in unlawful behavior
-  with impunity. \n\nPeople are marching in the streets because
-  they know that these actions will result in a healthier, more just society. I implore
-  you to please listen to the needs of your constituents and take immediate action
-  to address their concerns. \n\nThank you, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
-  PHONE NUMBER]\n"
+  with impunity. \n\nPeople are marching in the streets because they know that these
+  actions will result in a healthier, more just society. I implore you to please listen
+  to the needs of your constituents and take immediate action to address their concerns.
+  \n\nThank you, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\n"
 layout: email
 ---
 
