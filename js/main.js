@@ -4,14 +4,14 @@
  * Formats the main list of emails
  */
 function formatEmailList() {
-  const list = $("#emailLinks");
-  const stateList = $("#selected_state");
+  const list = $('#emailLinks');
+  const stateList = $('#selected_state');
   if (list.length) {
-    let content = $("<div></div>");
-    const items = list.find("li");
+    const content = $('<div></div>');
+    const items = list.find('li');
     const locales = {};
-    for (let item of items) {
-      const { state } = item.dataset;
+    for (const item of items) {
+      const {state} = item.dataset;
       if (locales[state] === undefined) {
         locales[state] = [];
         const stateElement = $(`<option value="${state}">${state}</option>`);
@@ -19,10 +19,10 @@ function formatEmailList() {
       }
       locales[state].push(item);
     }
-    for (let [state, items] of Object.entries(locales)) {
-      let stateElement = $(`<div class='state' data-state="${state}"></div>`);
+    for (const [state, items] of Object.entries(locales)) {
+      const stateElement = $(`<div class='state' data-state="${state}"></div>`);
       stateElement.append(`<h2>${state}</h2>`);
-      for (let item of items) stateElement.append(item);
+      for (const item of items) stateElement.append(item);
       content.append(stateElement);
     }
     list.html(content);
@@ -60,14 +60,20 @@ function copyToClipboard(spanElement, copyText, isPermalink) {
   document.body.removeChild(element);
 }
 
+/**
+ * Called when the user selects a state from the dropdown menu
+ * @param  {Event} event The DOM on change event object
+ */
 function selectState(event) {
-    const matchingStates = $(`#emailLinks .state[data-state="${event.target.value}"]`);
-    if (matchingStates.length === 0) {
-        $(`#emailLinks .state`).removeAttr('hidden');
-    } else {
-        $(`#emailLinks .state[data-state!="${event.target.value}"]`).attr('hidden', true);
-        matchingStates.removeAttr('hidden');
-    }
+  const matchingStates = $(
+      `#emailLinks .state[data-state="${event.target.value}"]`);
+  if (matchingStates.length === 0) {
+    $(`#emailLinks .state`).removeAttr('hidden');
+  } else {
+    $(`#emailLinks .state[data-state!="${event.target.value}"]`)
+        .attr('hidden', true);
+    matchingStates.removeAttr('hidden');
+  }
 }
 
 /**

@@ -27,8 +27,7 @@
             </div>
             {% endif %}
             <div class="recipients">
-                <b>Subject:</b> {{ page.subject }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.subject }}`)">🔗</span>
+                <b>Subject:</b> {{ site.default_subject_line }}
             </div>
             <div>
                 <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
@@ -43,7 +42,7 @@
 
 <script type="text/javascript">
     function openEmail() {
-        const subject = encodeURIComponent(`{{ page.subject }}`.trim());
+        const subject = encodeURIComponent(`{{ site.default_subject_line }}`.trim());
         const body = encodeURIComponent(`{{ page.body }}`.trim());
         const recipients = `{{ page.recipients | join: ',' }}`;
         const cc = `{{ page.cc | join: ',' }}`;
