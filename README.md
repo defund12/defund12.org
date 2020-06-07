@@ -12,7 +12,7 @@ To build the application:
 
 1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
 2. Install [Node JS](https://nodejs.org/en/download/)
-3. Install [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+3. Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
 4. Clone and navigate to the repository
 5. `bundle exec jekyll serve`
 
