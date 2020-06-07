@@ -1,21 +1,21 @@
 ---
 title: ''
-name: Email request
-about: Add an email for your locale! (or supplement one that exists!)
+name: Add or edit an email for your city
+about: Update defund12.org with a message for your community.
 labels: new-request
 assignees: ''
 ---
 
-DUE TO HIGH VOLUME EMPTY ISSUES, OR ISSUES MISSING THE FOLLOWING INFORMATION WILL BE IMMEDIATELY CLOSED. THANK YOU!
+<!--
+Hi, thanks for your interest in adding your city to the website. Emails on defund12.org are all written by community members. To add your city, you **must** provide:
 
-* A subject message for the email
-* A list of emails (at least one) for the government officials you’d like to receive the message
-* A detailed message concerning the budgeting decisions that are at stake in your community 
+- Subject line for the email
+- Email addresses (at least one) of the government officials you’d like to receive the message
+- Detailed message concerning the budgeting decisions at stake in your community
 
-Please read more about our email style guidelines [here](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md#email-template-style-guide).
+**_Until you provide this content, we cannot post your city._**
 
-If this information is copied from an external source *please* provide a link to the original source.
+Follow our [email style guidelines](https://github.com/defund12/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md) for quicker acceptance. Remember that messages must be city-specific and focused on defunding the police. If your message is copied from an external source, please provide a link to the original source.
 
-See our current links for examples at https://defund12.org.
-
-Thank you!!
+Your request will be **closed** until you reply with the necessary content. Thank you!
+-->

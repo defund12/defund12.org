@@ -4,7 +4,7 @@
 
 Anyone that would like to add an email for their locale. They create issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
-## 2. Triage Team [Needs people!]
+## 2. Triage Team
 
 A person on the triage team is the first to review newly created issues. Look over all issues that have the tag `[new-request]`
 
@@ -17,7 +17,7 @@ A person on the triage team is the first to review newly created issues. Look ov
     - CC addresses
     - Body text
   - If not, **close issue** and reply with the contents of the [email request template](https://github.com/teddywilson/defund12.org/blob/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)
-  - If yes, tag as ready to review. Add tag `[ready-for-review]` and remove all previous tags
+  - If yes, tag as ready to review. Add tag `[content-ready-for-review]` and remove all previous tags
 
 ## 3. Review, Editing, and Approval Team [Needs people!]
 
@@ -44,6 +44,12 @@ This team will pick up issues that have the `[ready-for-pr]` tag. Issues should 
 - Ensure the email markdown is correct and properly linted.
 - Once PR is up, someone will review and merge!
 
+**Conventions to follow**
+
+- Please use the following file name convention: `[state]-[city].md`
+
 ## Join the conversation
 
 If you'd like to help out, please join our discord [here](https://discord.gg/YMxndzd) and say hello. We'd love your help!
+
+We have created channels in the discord channel that correspond to each team. These will be used for team specific communication and organization. Whichever team, you'd like to join, please join the discord sub topic and say hello.
