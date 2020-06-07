@@ -16,6 +16,7 @@ recipients:
 - RRobinson@cityofberkeley.info
 - ldroste@cityofberkeley.info
 - auditor@cityofberkeley.info
+- policycommittee@cityofberkeley.info
 subject: Berkeley Resident for Defunding BPD
 body: |-
     Dear Mayor Arreguin and Berkeley City Council Members,
