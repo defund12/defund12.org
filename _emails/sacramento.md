@@ -24,7 +24,7 @@ recipients:
 - IArgueta@cityofsacramento.org
 - MCThomas@cityofsacramento.org
 - jescobar@cityofsacramento.org
-- hcoy@cityofsacramento.org;
+- hcoy@cityofsacramento.org
 - Cabrera@cityofsacramento.org
 - hadkisson@cityofsacramento.org
 - dmrogers@cityofsacramento.org
@@ -43,7 +43,7 @@ recipients:
 - NevesM@sacda.org
 - SupervisorSerna@Saccounty.net
 - SupervisorKennedy@saccounty.net
-- susanpeters@sacc​​ounty.net
+- susanpeters@saccounty.net
 - SupervisorFrost@saccounty.net
 - nottolid@saccounty.net
 - sheriff@sacsheriff.com
