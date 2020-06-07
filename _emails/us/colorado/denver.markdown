@@ -38,5 +38,7 @@ body: |-
   \[YOUR ADDRESS\]
   \[YOUR EMAIL\]
   \[YOUR PHONE NUMBER\]
+redirects:
+- "/denver217"
 ---
 
