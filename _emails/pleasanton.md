@@ -13,7 +13,6 @@ recipients:
 - jtesta@cityofpleasantonca.gov
 - citycouncil@cityofpleasantonca.gov
 - bdolan@cityofpleasantonca.gov
-- nelsonfialho@cityofpleasantonca.gov
 subject: A Letter to Demand Divestment from Police and an Investment in Pleasanton's Communities of Color
 body: |-
     To whom it may concern,
