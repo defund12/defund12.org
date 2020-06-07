@@ -1,10 +1,9 @@
 ---
 title: Pittsburgh, Pennsylvania
-permalink: pittsburgh
+permalink: "/pittsburgh"
 name: Letter to Council Members and Chiefs/Assistant Chiefs of Staff
-state: PA
 city: Pittsburgh
-layout: email
+state: PA
 recipients:
 - theresa.kail-smith@pittsburghpa.gov
 - brosha.tkacheva@pittsburghpa.gov
@@ -18,7 +17,6 @@ recipients:
 - blake.plavchak@pittsburghpa.gov
 - Kim.Salinetro@pittsburghpa.gov,
 - sally.stadelman@pittsburghpa.gov
-subject: 
 body: |
   Hello,
 
@@ -42,5 +40,6 @@ body: |
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
