@@ -30,10 +30,10 @@ body: |-
   People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
 
   Thank you for your time,
-  \[NAME\]
-  \[ADDRESS\]
-  \[EMAIL\]
-  \[PHONE NUMBER\]
+  [NAME]
+  [ADDRESS]
+  [EMAIL]
+  [PHONE NUMBER]
 layout: email
 ---
 
