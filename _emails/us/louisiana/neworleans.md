@@ -1,7 +1,7 @@
 ---
 title: New Orleans, LA
 permalink: "/nola"
-name: Letter to Mayor and City Council
+name: Letter to Mayor, City Council and Police Chief
 city: New Orelans
 state: LA
 layout: email
@@ -14,16 +14,17 @@ recipients:
 - kristin.palmer@nola.gov
 - jcbrossett@nola.gov
 - cyndi.nguyen@nola.gov
+- nopchief@nola.gov
 subject: [INSERT UNIQUE SUBJECT LINE]
 body: |-
   Dear Mayor Cantrell and City Council Members,
 
-  My name is [YOUR NAME] and I am a New Orleans resident writing to urge you to defund the New Orleans Police Department.
+  My name is [YOUR NAME]. I am a New Orleans resident writing to urge you to defund the New Orleans Police Department.
 
-  The NOPD takes an enormous share of the city’s budget, and that percentage has risen exponentially over the last two decades, taking away desperately needed resources from essential community programs and services. As a member of the community, I am opposed to the high incarceration rates seen in New Orleans. The investment in policing has not made our Black and Brown communities any safer. NOPD remains an embarrassment to this city and a lethal threat to what makes us New Orleans. Meanwhile, police spending has increased. With New Orleans’ budget already under stress, it is clear that we must defund the police.
+  I am contacting you to demand a significant reduction to the $194 million that is currently allocated to public safety in the upcoming fiscal budget of 2021 and for a formal review of the New Orleans Police Department Union Contract from an independent party that has no affiliation with NOPD. The police funds make up roughly 20% of the budget, while other important public services do not receive even half as much funding. By reducing police funding and reducing incarceration rates, those funds can be reallocated to housing, education or sanitation, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.
 
   As New Orleans residents, we therefore demand that you take immediate action towards the following ends:
-  * Reduce NOPD’s allocation from the General Fund by 50% (roughly $100 Million)
+  * Reduce NOPD’s allocation from the General Fund
   * Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence
   * Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
   * New Orleans can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund NOPD.
