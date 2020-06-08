@@ -24,7 +24,7 @@ body: |-
 
   My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].
 
-  I am writing to ask that you provide no new funding for the Portland Police Department. I am also asking that you halt all funding that has already been approved.
+  I am writing to ask that you provide no new funding for the Portland Police Department (PPD). I am also asking that you halt all funding that has already been approved.
 
   According to documents on the city website, PPD received an overall increase of 5.3% in the budget plan for 2020. I ask you to refuse to increase the budget for PPD in the year 2021 and defuse all unspent funds into organizations throughout the city that are for essential human services, which PPD has proven not to be.
 
