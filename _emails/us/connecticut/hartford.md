@@ -26,7 +26,7 @@ body: |-
 
   Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities–starting with cutting the least transparent and most harmful parts of the Hartford Police Department budget.
 
-  Racist police violence doesn’t just happen in other cities–it happens here in Hartford too. We see it in the disproportionate imprisonment of black people, and in the racialized inequality that is prevalent in Hartford. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy:\ COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
+  Racist police violence doesn’t just happen in other cities–it happens here in Hartford too. We see it in the disproportionate imprisonment of Black people, and in the racialized inequality that is prevalent in Hartford. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy:\ COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
 
   Thank you,
   [YOUR NAME]
