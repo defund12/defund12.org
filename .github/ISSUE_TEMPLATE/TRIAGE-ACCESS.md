@@ -3,7 +3,7 @@ title: ''
 name: User permissions
 about: Request triage permissions as a collaborator on the defund12.org team.
 labels: admin-attention
-assignees: '@bingbongle @shortcircuit3'
+assignees: "@bingbongle @shortcircuit3"
 ---
 
 # Triage access
