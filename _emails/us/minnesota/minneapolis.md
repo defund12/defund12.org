@@ -23,7 +23,7 @@ body: "Dear Mayor Frey and City Council Members,\n\nMy name is \\[YOUR NAME\\]. 
   residents during the pandemic and well past it; and we need a budget that supports
   communities and supports their well-being. \n\nI am urging you and the Minneapolis
   City Council to adopt a budget that defunds the police and funds non-violent, community-led,
-  health and safety strategies.\n\nSincerely,\\\n\\[YOUR NAME\\]\n\\[YOUR ADDRESS\\]\n\\[YOUR
+  health and safety strategies.\n\nSincerely,\n\n\\[YOUR NAME\\]\n\\[YOUR ADDRESS\\]\n\\[YOUR
   EMAIL\\]\n\\[YOUR PHONE NUMBER\\]"
 cc:
 - kevin.reich@minneapolismn.gov
