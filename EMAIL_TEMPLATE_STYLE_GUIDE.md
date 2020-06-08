@@ -34,6 +34,7 @@ https://defund12.org/santabarbara
 [Black Visions Collective and Reclaim the Block](https://secure.everyaction.com/eR7GA7oz70GL8doBq19LrA2) \
 [Philly We Rise](http://phillywerise.com/defundpolice/) \
 [Unite Oregon](https://www.uniteoregon.org/defund_ppb_special_units)
+[8toAbolition](https://www.8toabolition.com/)
 
 NOTE: We are doing our best to keep submitted content as-is, though some submissions may undergo minor editing/cleanups to fix typos, grammatical errors, and content that violates our style guide. If the published content does not accurately reflect your original intent/voice, please let us know and open an issue/PR.
 
