@@ -23,6 +23,13 @@ recipients:
 - sfso.complaints@sfgov.org
 - jose.cisneros@sfgov.org
 - manohar.raju@sfgov.org
+- MarkSanchez@sfusd.edu
+- GabrielaLopez@sfusd.edu
+- AlisonMCollins@sfusd.edu
+- StevonCook@sfusd.edu
+- JennyLam@sfusd.edu
+- FaauugaMoliga@sfusd.edu
+- RachelNorton@sfusd.edu
 subject: San Francisco Resident for Defunding the SFPD
 body: |-
   To Mayor Breed, the San Francisco Board of Supervisors, and San Francisco Elected Officers
