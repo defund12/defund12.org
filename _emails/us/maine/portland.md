@@ -28,11 +28,11 @@ body: |-
 
   According to documents on the city website, PPD received an overall increase of 5.3% in the budget plan for 2020. I ask you to refuse to increase the budget for PPD in the year 2021 and defuse all unspent funds into organizations throughout the city that are for essential human services, which PPD has proven not to be.
 
-  With the economic impact that COVID-19 has had on Maine’s economy, difficult and thoughtful decisions will be required when it comes to the budget for Portland in 2021. Mainers are experiencing homelessness, illness, unemployment, loss of income, and police brutality in record numbers. The people that have burdened the brunt of this are People of Color, Indigenous peoples, the poor, and the working class.
+  With the economic impact that COVID-19 has had on Portland’s economy, difficult and thoughtful decisions will be required when it comes to the budget for Portland in 2021. Residents of Portland are experiencing homelessness, illness, unemployment, loss of income, and police brutality in record numbers. The people that have burdened the brunt of this are People of Color, Indigenous peoples, the poor, and the working class.
 
-  Data shows that Black people are three times more likely to be arrested than whites in Portland. In addition to that Black, Indigenous, and other People of Color in Maine are disproportionately subject to policing, arrests, and incarcerations. This proves that SYSTEMATIC RACISM IS PRESENT HERE IN MAINE AND IS PERPETUATED BY THE PORTLAND POLICE DEPARTMENT. Defunding the police will be the first step towards improving the quality of living for People of Color that are Mainers. It will divert funds from going to an institutionally racist association and allow those funds to be diverted to human services that need them badly.
+  Data shows that Black people are three times more likely to be arrested than whites in Portland. In addition to that Black, Indigenous, and other People of Color in Portland are disproportionately subject to policing, arrests, and incarcerations. This proves that SYSTEMATIC RACISM IS PRESENT HERE IN PORTLAND AND IS PERPETUATED BY THE PORTLAND POLICE DEPARTMENT. Defunding the police will be the first step towards improving the quality of living for People of Color that are residents of Portland. It will divert funds from going to an institutionally racist association and allow those funds to be diverted to human services that need them badly.
 
-  Please do the right thing. Prioritize the health and safety of Maine residents.
+  Please do the right thing. Prioritize the health and safety of Portland residents.
 
   REFUSE TO FUND THE PORTLAND POLICE DEPARTMENT.
 
@@ -43,4 +43,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-
