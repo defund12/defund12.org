@@ -1,7 +1,7 @@
 ---
 title:
 permalink: "/jerseycity"
-name: Letter to Mayor
+name: Letter to Mayor and City Council
 city: Jersey City
 state: NJ
 recipients:
