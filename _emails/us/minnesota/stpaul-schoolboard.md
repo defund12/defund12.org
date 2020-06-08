@@ -13,8 +13,8 @@ recipients:
 - Jessica.kopp@spps.org
 - joe.gothard@spps.org
 subject: SPPS Must Terminate Relations with Police Department
-body: "Dear Dr. Joe Gothard, Marny Xiong, and Saint Paul Public Schools Board Members,\n\nMy
-  name is [YOUR NAME], and I am a resident of [YOUR CITY, STATE]. I stand in solidarity
+body: "Dear Dr. Joe Gothard and Saint Paul Public Schools Board Members,\n\nMy name
+  is [YOUR NAME], and I am a resident of [YOUR CITY, STATE]. I stand in solidarity
   with protesters across the country who are out in the streets in response to the
   horrific murders of George Floyd, a Black man, by the Minneapolis police, and are
   appalled by the recent murders of Breonna Taylor, Ahmaud Arbery, Tony McDade and
