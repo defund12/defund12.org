@@ -2,11 +2,11 @@
 title: Asheville, NC
 permalink: "/asheville"
 name: Letter to Council Members
-state: NC
 city: Asheville
-layout: email
+state: NC
 recipients:
 - ashevillenccouncil@ashevillenc.gov
+- AshevilleCityCouncilJune92020@PublicInput.com
 subject: Redirect money away from Asheville Police Department’s budget
 body: "Dear Asheville City Councilmembers, \n\nMy name is [x] and I’m a resident of
   Asheville. I am writing about Asheville Mayor Esther Manheimer’s fiscal year 2021
@@ -24,5 +24,6 @@ body: "Dear Asheville City Councilmembers, \n\nMy name is [x] and I’m a reside
   be served when the police are reformed, and this will not be possible until we defund
   them. \n\nCan I count on you to consider an alternative budget that puts a focus
   on social service programs? \n\nThank you,\n\n[x]\n"
+layout: email
 ---
 

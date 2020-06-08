@@ -1,6 +1,8 @@
 ---
 title: Boston, MA
 permalink: "/boston"
+redirect_from:
+- "/cambridgema"
 name: Letter to the Mayor
 state: MA
 city: Boston

@@ -17,19 +17,27 @@ recipients:
 - yatesb@bouldercolorado.gov
 - council@bouldercolorado.gov
 - homeownership@bouldercolorado.gov
-subject: We demand a People's Budget
-body: |
-  Dear Council Members of the City of Boulder,
-
-  My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am writing to you regarding the harassment of Zayd Atkinson, a resident of Boulder and a student at Naropa University, by the Boulder Police Department. Instead of funding the harassment of Boulder residents of color, the city should fund affordable housing.
-
-  Several council members have based their campaigns on a platform that supports affordable housing for the residents of Boulder, yet no laws have changed regarding the number of unrelated people who can live together in a house. The budget for the Boulder Police Department is $37,000,000 while the budget for Housing and Human Services is less than $5,000,000. I strongly suggest that the Boulder Police Department be defunded immediately and that the money go towards creating affordable housing within city limits.
-
-  Thank you for your time,
-
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
+subject:
+- INSERT UNIQUE SUBJECT LINE
+body: "Dear Council Members of the City of Boulder,\n\nMy name is [NAME] and I am
+  a resident of [NEIGHBORHOOD]. I am writing to urge you to defund the Boulder Police
+  Department.\n\nBased on the 2020 budget that you approved in October 2019, the Boulder
+  Police Department received $38,629,082, which represents an ~8% increase since 2018.
+  Meanwhile, the budget for Housing and Human Services for 2020 is $21,655,671, representing
+  a staggering 28% reduction in budget since 2018. Most of those cuts come from a
+  reduction in funding to \"Community Investment\" for Housing. That's untenable,
+  especially coming from a city that prides itself in promoting equity and being on
+  the progressive edge of history. \n\nIn light of these statistics, and in the wake
+  of the Minneapolis City Council pledging to completely reimagine policing in their
+  city, I strongly support the Boulder Police Department being defunded immediately,
+  and that the money go towards creating affordable housing within city limits. I
+  also want you to consider pledging that money to other community programs that invest
+  in restorative justice, mental health, and our youth. Finally, I would like to see
+  policy enacted around increasing limits on unrelated residents within a home.\n\nI
+  also want to surface the harassment of Zayd Atkinson, a resident of Boulder and
+  a student at Naropa University, by the Boulder Police Department. Instead of funding
+  the harassment of Boulder residents of color, the city should fund affordable housing
+  and other community programs.\n\nThank you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
+  EMAIL]\n[YOUR PHONE NUMBER]\n"
 ---
 

@@ -2,7 +2,7 @@
     <div class="container">
         <div id="filters">
             <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
-                <option selected>State</option>
+                <option selected>Choose state</option>
             </select>
         </div>
         <div id="emailLinks">
@@ -19,5 +19,6 @@
             {% endfor %}
         </div>
         <p class="divider footer">{{ site.footer_text | markdownify }}</p>
+        <p class="divider footer">{{ site.contact_email_footer | markdownify }}</p>
     </div>
 </div>
