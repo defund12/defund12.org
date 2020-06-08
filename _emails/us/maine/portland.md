@@ -22,7 +22,7 @@ subject: Portland Resident for Defunding of MAP
 body: |-
   Civil Servants,
 
-  My name is [INSERT NAME], and I am a citizen of Portland, Maine. I am a taxpayer and a voter.
+  My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].
 
   I am writing to ask that you provide no new funding for the Maine Association of Police (MAP). I am also asking that you halt all funding that has already been approved.
 
@@ -36,7 +36,7 @@ body: |-
 
   REFUSE TO FUND THE MAINE ASSOCIATION OF POLICE.
 
-  A concerned citizen,
+  Thank you,
 
   [YOUR NAME]
   [YOUR ADDRESS]
