@@ -29,8 +29,8 @@ body: |-
   As it stands, our city is facing massive revenue shortfalls due to conditions created by the COVID-19 Pandemic. Rather than see a further reduction to public services and layoffs of essential public workers, I request that the mayor and city council first and foremost consider significantly defunding the police department. Since 2018, the Police Department has seen a budget increase of just under 5 million dollars, as listed in the 2020 budget information. This money can be spent in other ways that are proven to be more effective in improving community safety and wellness.
 
   Thank you for your time,
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 ---
