@@ -46,7 +46,7 @@ body: "To the Buffalo Common Council and Office of Mayor Byron Brown,\n\nMy name
   at a tailgate party and was found guilty of falsifying records. Pito Rivera. Devin
   Ford. Troy Hodge. Marcus Neal. Shaun Porter was brutally beaten while an inmate
   in handcuffs while officers Joshua Craig and Anthony D'Agostino watched and laughed.
-  Shaun was given a $300,000 settlement by you, the Common Council. Four black teenagers
+  Shaun was given a $300,000 settlement by you, the Common Council. Four Black teenagers
   were assaulted by Gregory Kwaiatkowski and called \"savage dogs.\" Kwaiatowski also
   choked David N. Mack in 2006. Kwaiatkowski was sentenced to four months in prison
   in 2018 for pleading guilty in December 2016 to a civil rights violation dating
