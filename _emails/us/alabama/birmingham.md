@@ -1,7 +1,7 @@
 ---
 title: Birmingham, AL
 permalink: "/birmingham"
-name: Letter to Council Members and Chairman of Madison County
+name: Letter to Council Members
 city: Birmingham
 state: AL
 recipients:
