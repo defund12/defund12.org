@@ -24,7 +24,7 @@ subject: DC Resident for Defunding the Metropolitan Police Department
 body: |-
   To the DC council in charge of the allocation of funds to the Metropolitan Police Department and its respective members,
 
-  My name is \[YOUR NAME\], and I am a resident of Washington, D.C. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-blackness, and immediate reform in how black people are treated in America. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that there will be a council meeting in June that will discuss the budget for the Metropolitan Police Department.
+  My name is [YOUR NAME], and I am a resident of Washington, D.C. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-blackness, and immediate reform in how black people are treated in America. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that there will be a council meeting in June that will discuss the budget for the Metropolitan Police Department.
 
   I am emailing today to ask the Committee on the Judiciary and Public Safety to vote against the Mayor’s proposed budget increase for the Metropolitan Police Department (MPD). I am calling attention to the fact that this increase is occurring as the budgets for the Office of Neighborhood Safety and Engagement and the Office of Victim Services and Justice Grants are being reduced.
 
@@ -41,9 +41,9 @@ body: |-
   The current status-quo cannot be maintained, and I urge you to listen to community leaders and members of the DC chapter of Black Lives Matter as well as Stop Police Terror Project DC and defund the Metropolitan Police Department. The resources are in desperate need elsewhere. Do not abandon the people you were elected to serve.
 
   Thank you,
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 layout: email
 ---
