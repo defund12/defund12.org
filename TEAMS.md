@@ -8,7 +8,7 @@ Anyone who would like to add an email for their locale creates issue in adherenc
 
 A person on the triage team is the first to review newly created issues. Look over all issues that have the tag `[new-request]`
 
-**Responsibilities**
+### Responsibilities
 
 - Check if issue has all required data
   - Does it meet basic data requirements?
@@ -23,7 +23,7 @@ A person on the triage team is the first to review newly created issues. Look ov
 
 Ensure the email roughly adheres to [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
-**Responsibilities**
+### Responsibilities
 
 - If body content is not salvageable, **close issue**.
 - Is it _good enough_?
@@ -37,14 +37,14 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
 
 This team will pick up issues that have the `[ready-for-pr]` tag. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
 
-**Responsibilities**
+### Responsibilities
 
 - Assign issue to yourself so no other developer begins working on it
 - Create a PR for the email issue
 - Ensure the email markdown is correct and properly linted.
 - Once PR is up, someone will review and merge!
 
-**Conventions to follow**
+### Conventions to follow
 
 - Please use the following file name convention: `[state]-[city].md`
 
