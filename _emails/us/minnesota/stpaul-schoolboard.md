@@ -2,9 +2,8 @@
 title: St. Paul, MN
 permalink: "/stpaul-schoolboard"
 name: Letter to Public School Board
-state: MN
 city: St. Paul
-layout: email
+state: MN
 recipients:
 - Jeanelle.Foster@spps.org
 - Zuki.Ellis@spps.org
@@ -13,7 +12,6 @@ recipients:
 - Chauntyll.Allen@spps.org
 - Jessica.kopp@spps.org
 - joe.gothard@spps.org
-- Marny.Xiong@spps.org
 subject: SPPS Must Terminate Relations with Police Department
 body: "Dear Dr. Joe Gothard, Marny Xiong, and Saint Paul Public Schools Board Members,\n\nMy
   name is [YOUR NAME], and I am a resident of [YOUR CITY, STATE]. I stand in solidarity
@@ -47,5 +45,6 @@ body: "Dear Dr. Joe Gothard, Marny Xiong, and Saint Paul Public Schools Board Me
   social exclusion. The current protests reflect concerned members of society taking
   direct, collective action to demand an end to the abuse and violence directed against
   Black people. \n\nSincerely,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR PHONE NUMBER]\n"
+layout: email
 ---
 
