@@ -11,7 +11,7 @@
 5. Remove hashtags
 6. We are amplifying calls to defund the police, not reform them. The core message should be a direct statement to defund the police. Specific demands for reforms (e.g., policing tactics and training) will be removed.
 7. Make the email specific to your city/county. Please include sources for this information. Some suggestions:
-    - Can you include dollar amounts or percentages of how much of the budget goes to the police in comparison to other community programs, initiatives, or infrastructure? 
+    - Can you include dollar amounts or percentages of how much of the budget goes to the police, in comparison to other community programs, initiatives, or infrastructure? 
     - Can you write about a specific recent event in your city that highlights the flaws of your police department?
     - Can you include information about local economic issues (e.g., existing budget shortfalls, inequities in economic security or outcomes)?
 8. If an email widely pulls in other issues or hones in on something very specific (e.g., funding being reallocated to a single, specific category rather than a more general array of social services), try to generalize. People using this tool can customize their emails to be more specific should they choose.
