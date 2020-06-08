@@ -1,6 +1,7 @@
 ---
 title: Tulsa, OK
 date: 2020-06-08 14:29:00 Z
+permalink: "/tulsa"
 name: Letter to City Council and County Commission
 city: Tulsa
 state: OK
