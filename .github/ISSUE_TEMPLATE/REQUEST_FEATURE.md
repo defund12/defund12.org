@@ -1,9 +1,9 @@
 ---
-title: ""
-name: "🛠 Site functionality request"
-about: "Have an idea for a new site feature/functionality?"
+title: ''
+name: "\U0001F6E0 Site functionality request"
+about: Have an idea for a new site feature/functionality?
 labels: feature
-assignees: ""
+assignees: ''
 ---
 
 # Feature request

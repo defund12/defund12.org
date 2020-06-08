@@ -1,9 +1,9 @@
 ---
-title: ""
-name: "🐛 Report a bug"
-about: "Found a problem with the site?"
+title: ''
+name: "\U0001F41B Report a bug"
+about: Found a problem with the site?
 labels: bug
-assignees: ""
+assignees: ''
 ---
 
 # Bug report
