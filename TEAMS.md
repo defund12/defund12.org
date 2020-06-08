@@ -2,7 +2,7 @@
 
 ## 1. User that submits issue
 
-Anyone that would like to add an email for their locale. They create issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Anyone who would like to add an email for their locale creates issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
 ## 2. Triage Team
 
@@ -29,7 +29,7 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
 - Is it _good enough_?
   - Does it have locale specific info?
   - Is the core statement in regards to defunding local police departments
-  - Add tag `[ready-for-pr]` and remove all otehr tags
+  - Add tag `[ready-for-pr]` and remove all other tags
 - Even though the issue is _good enough_ and you added the `[ready-for-pr]`, do you still think the email template needs work or editing?
   - Add tag `[email-needs-work]` and leave comment on what the outstanding tasks are.
 
@@ -50,6 +50,6 @@ This team will pick up issues that have the `[ready-for-pr]` tag. Issues should 
 
 ## Join the conversation
 
-If you'd like to help out, please join our discord [here](https://discord.gg/YMxndzd) and say hello. We'd love your help!
+If you'd like to help out, please join our Discord [here](https://discord.gg/YMxndzd) and say hello. We'd love your help!
 
-We have created channels in the discord channel that correspond to each team. These will be used for team specific communication and organization. Whichever team, you'd like to join, please join the discord sub topic and say hello.
+We have created channels in the Discord channel that correspond to each team. These will be used for team specific communication and organization. Whichever team you'd like to join, please join the Discord appropriate channel and say hello.
