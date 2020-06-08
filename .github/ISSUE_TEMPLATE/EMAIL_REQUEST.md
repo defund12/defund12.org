@@ -1,21 +1,33 @@
 ---
-title: ''
-name: Add or edit an email for your city
+title: 'Add email for [CITY, STATE]'
+name: Add an email for your city.
 about: Update defund12.org with a message for your community.
 labels: new-request
 assignees: ''
 ---
 
-<!--
-Hi, thanks for your interest in adding your city to the website. Emails on defund12.org are all written by community members. To add your city, you **must** provide:
+# Welcome!
 
-- Subject line for the email
-- Email addresses (at least one) of the government officials you’d like to receive the message
-- Detailed message concerning the budgeting decisions at stake in your community
+Thanks for your interest in adding a letter to represent your city. Due to the high volume of requests, the moderators need emails to follow some guidelines so that we can review them effectively. If you don't follow the below guidelines, your letter may not be added! Some submissions may undergo minor editing/cleanups. If the published content does not accurately reflect your original intent/voice, please open another request.
 
-**_Until you provide this content, we cannot post your city._**
+## Template Requirements
 
-Follow our [email style guidelines](https://github.com/defund12/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md) for quicker acceptance. Remember that messages must be city-specific and focused on defunding the police. If your message is copied from an external source, please provide a link to the original source.
+- Email addresses of the government officials you’d like to receive the message. Typically the city council and mayor decide the city budget, so all of them are a great start.
+- Firm, actionable, focused message.
 
-Your request will be **closed** until you reply with the necessary content. Thank you!
--->
+## Content
+
+- We are amplifying calls to defund the police, not reform them. Demands for reforms (e.g., policing tactics and training) will be removed.
+- Make the email specific to your city/county. Some ideas:
+    - How much of the budget (in $ or %) goes to the police, in comparison to other programs?
+    - Recent events or issues in your city that highlight the flaws of your police department?
+- Avoid the police narrative of "crime": Speak in terms of “promoting community safety” rather than “reducing crime.”
+
+## Format and Style
+
+- Avoid referring to the email sender as a "citizen" or "voter". Not all senders may be citizens or voters.
+- Use first-person (e.g., “I demand…” not “We demand…”).
+
+## 🌟 Shining Star Examples 🌟
+- https://defund12.org/oakland
+- https://defund12.org/santabarbara
