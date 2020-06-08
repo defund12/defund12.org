@@ -8,8 +8,18 @@ assignees: ''
 
 # Bug report
 
-Found a problem with the site? Please provide the following information (if possible):
+Found a problem with the site? Please provide the following information 
 
-- How to reproduce to the issue
-- Browser/mail client/OS (if relevant)
-- [Optiona] Proposed solution/idea
+Steps to reproduce:
+
+Expected behavior:
+
+Current behavior:
+
+Detailed description:
+
+ - System info:
+	 - Browser
+	 - OS
+
+[Optional] Proposed solution:
