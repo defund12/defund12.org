@@ -36,7 +36,7 @@ footer_text: |-
 
   Have the emails of your city government officials and a drafted template ready.
 contact_email_footer: "[contact@defund12.org](mailto:contact@defund12.org)"
-default_subject_line: "[*** INSERT UNIQUE SUBJECT LINE***]"
+default_subject_line: "[*** INSERT UNIQUE SUBJECT LINE ***]"
 auto_open_message: This page automatically opens a drafted email for you.
 bad_mailto_message: Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
