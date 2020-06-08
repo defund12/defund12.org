@@ -1,12 +1,38 @@
 ---
 title: St. Louis, MO
 permalink: "/stlouis"
-name: Letter to the Mayor and President of the Board of Aldermen
+name: Letter to the Mayor and Board of Aldermen
 city: St. Louis
 state: MO
 recipients:
 - krewsonl@stlouis-mo.gov
-- reedl@stlouis-mo.gov
+- reedl@stlouis-mo.go
+- tyuss@stlouis-mo.gov
+- middlebrookl@stlouis-mo.gov
+- bosleyb@stlouis-mo.gov
+- hubbardt@stlouis-mo.gov
+- ingrassiac@stlouis-mo.gov
+- coatarj@stlouis-mo.gov
+- ricea@stlouis-mo.gov
+- guentherd@stlouis-mo.gov
+- vollmerj@stlouis-mo.gov
+- martins@stlouis-mo.gov
+- murphyb@stlouis-mo.gov
+- howardc@stlouis-mo.gov
+- greenm@stlouis-mo.gov
+- oldenburgt@stlouis-mo.gov
+- roddyj@stlouis-mo.gov
+- toddj@stlouis-mo.gov
+- davisma@stlouis-mo.gov
+- spencerc@stlouis-mo.gov
+- collinsmuhammadj@stlouis-mo.gov
+- boydj@stlouis-mo.gov
+- vacarroj@stlouis-mo.gov
+- narayanb@stlouis-mo.gov
+- cohns@stlouis-mo.gov
+- clark-hubbards@stlouis-mo.gov
+- boydp@stlouis-mo.gov
+- navarroh@stlouis-mo.gov
 subject: Invest in our community and defund the St. Louis Metro Police Dept.
 body: |-
   Dear Mayor Krewson and President Reed,
