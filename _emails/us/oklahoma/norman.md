@@ -1,7 +1,7 @@
 ---
 title: Norman, OK
 permalink: "/norman"
-name: Letter to Mayor, and City Council
+name: Letter to Mayor and City Council
 city: Norman
 state: OK
 recipients:
