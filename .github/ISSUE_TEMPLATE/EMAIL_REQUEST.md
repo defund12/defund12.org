@@ -15,7 +15,7 @@ Hi, thanks for your interest in adding your city to the website. Emails on defun
 
 **_Until you provide this content, we cannot post your city._**
 
-Follow our [email style guidelines](https://github.com/defund12/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md) for quicker acceptance. If the email style guide isn't followed, your issue will be closed.
+Follow our [email style guidelines](https://github.com/defund12/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md) for quicker acceptance. If the email style guide isn't followed, your issue will be closed. We have a friendly robot that will delete any requests that do not at least include one instance of [NAME] or [YOUR NAME] in your letter!
 
 Remember that messages must be city-specific and focused on defunding the police. If your message is copied from an external source, please provide a link to the original source.
 
