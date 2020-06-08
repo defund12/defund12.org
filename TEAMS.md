@@ -10,6 +10,11 @@ A person on the triage team is the first to review newly created issues. Look ov
 
 ### Responsibilities
 
+#### Check for duplicates
+- Check if the issue is a duplicate of an existing request or existing template. In the Issues tab, search for the requested locale with `is:open is:closed [LOCALE]` to see if an open request or merged template already exists.
+![](https://user-images.githubusercontent.com/221550/84061909-bb3bde80-a98c-11ea-8cc1-07bdb315abaf.gif)
+- If the request is a duplicate, add the <kbd>duplicate</kbd> tag and close the issue with a link to the earlier request
+
 #### Check for completion
 - Check if issue has all required data
   - Does it meet basic data requirements?
