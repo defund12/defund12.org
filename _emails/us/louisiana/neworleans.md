@@ -15,7 +15,8 @@ recipients:
 - jcbrossett@nola.gov
 - cyndi.nguyen@nola.gov
 - nopchief@nola.gov
-subject: [INSERT UNIQUE SUBJECT LINE]
+subject:
+- INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Cantrell and City Council Members,
 
