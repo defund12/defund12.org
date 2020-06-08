@@ -43,7 +43,6 @@ body: |
   [YOUR EMAIL]
 
   [YOUR PHONE NUMBER]
-
 layout: email
 ---
 
