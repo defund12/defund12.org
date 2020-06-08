@@ -2,7 +2,7 @@
 title: ''
 name: Feature request
 about: Want to add a new feature to the site?
-labels: feature, pending 
+labels: feature
 assignees: ''
 ---
 
