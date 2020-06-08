@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Please add *INSERT CITY HERE*'
 name: Add or edit an email for your city
 about: Update defund12.org with a message for your community.
 labels: new-request, pending
