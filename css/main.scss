@@ -2,24 +2,85 @@
 ---
 
 // SASS mixins =================================================================
-@mixin box-shadow($shadow) {-moz-box-shadow: $shadow; -webkit-box-shadow: $shadow; box-shadow: $shadow;}
-@mixin border-radius($radius) {-moz-border-radius: $radius; -webkit-border-radius: $radius; border-radius: $radius; background-clip: padding-box;}
-@mixin transition($transition) {-webkit-transition: $transition; -moz-transition: $transition; -o-transition: $transition; transition: $transition;}
-@mixin box-sizing($type) {-webkit-box-sizing: $type; -moz-box-sizing: $type; box-sizing: $type;}
-@mixin animate($animation, $speed) {-webkit-animation-duration:$speed; animation-duration:$speed;
-    -webkit-animation-fill-mode:both; animation-fill-mode:both;
-	-webkit-animation-name:$animation; animation-name:$animation;}
+@mixin box-shadow($shadow) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+@mixin animate($animation, $speed) {
+  -webkit-animation-duration: $speed;
+  animation-duration: $speed;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: $animation;
+  animation-name: $animation;
+}
 
 // Resets and Universal Classes ================================================
-html, body {margin:0px; padding:0px; width:100%; overflow-x: hidden !important;}
-h1, h2, h3, h4, h5, h6 {margin:0px;}
-img {max-width:100%; border:0px;}
-a {text-decoration:none; color:inherit;}
-#preload {display:none;}
-div, input, textarea {box-sizing:border-box;}
-input, textarea {border:0px; font-family:inherit; -webkit-appearance: none;}
-input:focus, textarea:focus {outline:none;}
-.clear {clear:both;}
+html {
+  overflow-y: scroll;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+  border: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#preload {
+  display: none;
+}
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+input,
+textarea {
+  border: 0px;
+  font-family: inherit;
+  -webkit-appearance: none;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.clear {
+  clear: both;
+}
 
 // Responsive Layout Scheme ====================================================
 
@@ -29,21 +90,33 @@ $pad_: 20px; // tablet and mobile
 
 // breakpoint: reponsive adaptation mixin
 @mixin breakpoint($point) {
-	// mobile
-    @if $point == s {
-        @media screen and (max-width: 760px)  {@content;}
+  // mobile
+  @if $point == s {
+    @media screen and (max-width: 760px) {
+      @content;
     }
-	// small mobile
-    @else if $point == xs {
-        @media screen and (max-width:440px) {@content;}
+  }
+  // small mobile
+  @else if $point == xs {
+    @media screen and (max-width: 440px) {
+      @content;
     }
+  }
 }
 
 // Container
-.container {position:relative; margin:0px auto;
-	width:720px; margin:0px auto;
-	@include breakpoint(s) {width:auto; margin:0px $pad;}
-	@include breakpoint(xs) {margin:0px $pad_;}
+.container {
+  position: relative;
+  margin: 0px auto;
+  width: 720px;
+  margin: 0px auto;
+  @include breakpoint(s) {
+    width: auto;
+    margin: 0px $pad;
+  }
+  @include breakpoint(xs) {
+    margin: 0px $pad_;
+  }
 }
 
 // Colors, Fonts, Frills =======================================================
@@ -56,107 +129,158 @@ $pad_: 20px; // tablet and mobile
   --link: blue;
   --bg: #fff;
   --bg_: #f5f5f5;
-  --bg__: #fff; 
-  
+  --bg__: #fff;
+
   @media (prefers-color-scheme: dark) {
     --text: #ddd;
     --text_subtle: #666;
     --subtle: #353535;
     --subtle_: #555;
-    --link: #3C81F9;
-    --bg:   #111;
-    --bg_:  #181818;
-    --bg__: #222222; 
+    --link: #3c81f9;
+    --bg: #111;
+    --bg_: #181818;
+    --bg__: #222222;
   }
 }
 
 // Fonts
 body {
-  background-color:var(--bg);
-	font-family:'Source Code Pro', 'Helvetica', 'Arial', sans-serif; font-size:16px;
-	line-height:1.6; font-weight:400; color:var(--text);
+  background-color: var(--bg);
+  font-family: "Source Code Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text);
 }
-em {font-weight:400; font-style:italic;}
-b {font-weight:700;}
+em {
+  font-weight: 400;
+  font-style: italic;
+}
+b {
+  font-weight: 700;
+}
 h1 {
-	font-size:36px; line-height:1.2;
-	@include breakpoint(s) {font-size:30px;}
+  font-size: 36px;
+  line-height: 1.2;
+  @include breakpoint(s) {
+    font-size: 30px;
+  }
 }
 h2 {
-	font-size:24px; line-height:1.2; font-weight:400; margin-top:10px;
-	@include breakpoint(s) {font-size:22px;}
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 10px;
+  @include breakpoint(s) {
+    font-size: 22px;
+  }
 }
 a {
-	border-bottom:1px solid var(--subtle);
-	&:hover {
-		border-color: var(--subtle_);
-	}
+  border-bottom: 1px solid var(--subtle);
+  &:hover {
+    border-color: var(--subtle_);
+  }
   &:focus {
     outline: none;
-		border-bottom:1px solid var(--text_subtle);
+    border-bottom: 1px solid var(--text_subtle);
   }
 }
 p.divider {
-	&:before {
-		content:""; display:block; width:48px; border-bottom:1px solid var(--subtle); margin-bottom:20px;
-	}
-	line-height:1.6;
-	max-width:580px;
+  &:before {
+    content: "";
+    display: block;
+    width: 48px;
+    border-bottom: 1px solid var(--subtle);
+    margin-bottom: 20px;
+  }
+  line-height: 1.6;
+  max-width: 580px;
 }
 
 // Sections and Layout =========================================================
 
 header {
-	.pagetitle {padding-top:30px;}
-	p {margin-bottom:0px;}
+  .pagetitle {
+    padding-top: 30px;
+  }
+  p {
+    margin-bottom: 0px;
+  }
 }
 
-.content {padding:30px 0px;}
+.content {
+  padding: 30px 0px;
+}
 
 #emailLinks {
-	.state {margin-top:8px;}
-	h2 {margin-bottom:8px;}
-	a {color:var(--link);}
-	a:visited {color:var(--text);}
-  li {list-style-position: inside; text-indent: -1em; margin-left: 1em}
+  .state {
+    margin-top: 8px;
+  }
+  h2 {
+    margin-bottom: 8px;
+  }
+  a {
+    color: var(--link);
+  }
+  a:visited {
+    color: var(--text);
+  }
+  li {
+    list-style-position: inside;
+    text-indent: -1em;
+    margin-left: 1em;
+  }
 }
 .emailPageHeader {
-	.buttons {
-		margin-top:20px;
-		a {display:inline-block; margin-right:12px; color:var(--link); cursor:pointer;}
-	}
-}
-.emailContentSection {background-color:var(--bg_);}
-.emailContent {
-	div {margin-top:20px;}
-	.recipients {overflow-wrap: break-word;}
-}
-.footer {margin-top:40px;}
-
-.copyToClipboard{
-    cursor: pointer;
-    opacity: 0.7;
-    &:hover {
-        opacity: 1.0;
+  .buttons {
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      margin-right: 12px;
+      color: var(--link);
+      cursor: pointer;
     }
+  }
+}
+.emailContentSection {
+  background-color: var(--bg_);
+}
+.emailContent {
+  div {
+    margin-top: 20px;
+  }
+  .recipients {
+    overflow-wrap: break-word;
+  }
+}
+.footer {
+  margin-top: 40px;
+}
+
+.copyToClipboard {
+  cursor: pointer;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 // jQuery Select Box =========================================================
 
 .selectBox-options li {
-	color: --var(text);
+  color: --var(text);
 }
 
 .selectBox.selectBox-dropdown {
-	height: 25px;
-	border-radius: 0;
-	.selectBox-label {
-		padding: 0px 8px;
-	}
-	.selectBox-arrow {
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z' fill='%23777'%3E%3C/path%3E%3C/svg%3E");
-		border: 0;
-	}
+  height: 25px;
+  border-radius: 0;
+  .selectBox-label {
+    padding: 0px 8px;
+  }
+  .selectBox-arrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z' fill='%23777'%3E%3C/path%3E%3C/svg%3E");
+    border: 0;
+  }
 }
 
 /* Dropdown control */
@@ -214,7 +338,8 @@ header {
   right: 0;
   width: 23px;
   height: 100%;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z' fill='%23777'%3E%3C/path%3E%3C/svg%3E") 50% center no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M4.427 6.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 6H4.604a.25.25 0 00-.177.427z' fill='%23777'%3E%3C/path%3E%3C/svg%3E")
+    50% center no-repeat;
   border-left: 0px;
 }
 
@@ -256,14 +381,14 @@ header {
   margin: 0;
 }
 
-.selectBox-options.selectBox-options-top{
+.selectBox-options.selectBox-options-top {
   border-bottom: none;
-	margin-top: 1px;
+  margin-top: 1px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.selectBox-options.selectBox-options-bottom{
-	border-top: none;
+.selectBox-options.selectBox-options-bottom {
+  border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -294,7 +419,7 @@ header {
   background: var(--subtle);
   font-weight: bold;
   line-height: 1.5;
-  padding: 0 .3em;
+  padding: 0 0.3em;
   white-space: nowrap;
 }
 
@@ -304,7 +429,7 @@ header {
 }
 
 .selectBox-dropdown.selectBox-disabled .selectBox-arrow {
-  opacity: .5;
+  opacity: 0.5;
   filter: alpha(opacity=50);
   border-color: var(--subtle);
 }
