@@ -1,22 +1,16 @@
 # Comment that will be sent if an issue is judged to be closed.
-comment: "This issue is closed because it does not meet our issue template. Please read and follow it when submitting a new request."
+comment: "This issue is closed because it does not meet our issue template. Please follow the initial template that appears when you open a new issue. Your submission should at a minimum include at least the words 'NAME' if submitting an email request, 'Description' for a bug, or 'Feature' for a feature request."
 issueConfigs:
 # There can be several configs for different kind of issues.
 - content:
 # bug report
-  - "Steps to reproduce:"
-  - "Expected behavior:"
-  - "Current behavior:"
-  - "Steps to reproduce"
-  - "Detailed Description"
+  - "Description"
 - content:
 # email add request 
-  - "defund"
-  - "I am a resident of"
-  - "YOUR NAME"
-  - "YOUR EMAIL"
-  - "YOUR PHONE NUMBER"
-  - "YOUR ADDRESS"
+  - "NAME"
+- content:
+# feature 
+  - "Feature"
 # The issue is judged to be legal if it includes all keywords from any of these two configs.
 # Or it will be closed by the app
 
@@ -34,5 +28,3 @@ caseInsensitive: true
 #exception:
 #  - "username1"
 #  - "username2"
-
-

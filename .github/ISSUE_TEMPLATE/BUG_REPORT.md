@@ -6,9 +6,10 @@ labels: bug
 assignees: ''
 ---
 
+<!--Do not delete the lines in this template, or else your issue may be closed automatically!-->
 # Bug report
 
-Found a problem with the site? Please provide the following information 
+Found a problem with the site? Please provide the following information. 
 
 Steps to reproduce:
 
