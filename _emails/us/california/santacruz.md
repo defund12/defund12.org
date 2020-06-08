@@ -23,7 +23,7 @@ body: |-
 
   I call on you to slash the SCPD budget and instead use those extraordinary resources to help our homeless community members and solve the affordability crisis. I implore you to give every member of our community experiencing homelessness a place to call home and the treatment they need before needlessly spending money on a police force that seeks order through force.
 
-  Santa Cruz has long been a leader on progressive issues. We can be a leader here, as well, if our you and our other city officials have the courage to step up.
+  Santa Cruz has long been a leader on progressive issues. We can be a leader here, as well, if you and our other city officials have the courage to step up.
 
   Sincerely,
 
