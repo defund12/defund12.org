@@ -62,7 +62,7 @@
             return false;
         }
 
-        var control    = $('<a class="selectBox" />')
+        var control    = $('<a role="button" class="selectBox" />')
             , inline   = select.attr('multiple') || parseInt(select.attr('size')) > 1
             , settings = options || {}
             , tabIndex = parseInt(select.prop('tabindex')) || 0
@@ -72,6 +72,8 @@
             .width(select.outerWidth())
             .addClass(select.attr('class'))
             .attr('title', select.attr('title') || '')
+            .attr('aria-label', select.attr('aria-label'))
+            .attr('aria-labelledby', select.attr('aria-labelledby'))
             .attr('tabindex', tabIndex)
             .css('display', 'inline-block')
             .bind('focus.selectBox', function () {
@@ -82,14 +84,14 @@
                     return;
                 }
                 control.addClass('selectBox-active');
-                select.trigger('focus');
+                select.selectBox('options').trigger('focus');
             })
             .bind('blur.selectBox', function () {
                 if (!control.hasClass('selectBox-active')) {
                     return;
                 }
                 control.removeClass('selectBox-active');
-                select.trigger('blur');
+                select.selectBox('options').trigger('blur');
             });
 
         if (!$(window).data('selectBox-bindings')) {
@@ -105,7 +107,7 @@
 
         // Focus on control when label is clicked
         select.bind('click.selectBox', function (event) {
-            control.focus();
+            control.selectBox('options').focus();
             event.preventDefault();
         });
 
@@ -113,14 +115,19 @@
         if (inline) {
             // Inline controls
             options = this.getOptions('inline');
-
+            options.bind('keydown.selectBox', function (event) {
+                self.handleKeyDown(event);
+            })
+                .bind('keypress.selectBox', function (event) {
+                    self.handleKeyPress(event);
+                })
             control
                 .append(options)
                 .data('selectBox-options', options).addClass('selectBox-inline selectBox-menuShowing')
                 .bind('keydown.selectBox', function (event) {
                     self.handleKeyDown(event);
                 })
-                .bind('keypress.selectBox',function (event) {
+                .bind('keypress.selectBox', function (event) {
                     self.handleKeyPress(event);
                 })
                 .bind('mousedown.selectBox',function (event) {
@@ -131,7 +138,7 @@
                         event.preventDefault();
                     }
                     if (!control.hasClass('selectBox-focus')) {
-                        control.focus();
+                        select.selectBox('options').focus();
                     }
                 })
                 .insertAfter(select);
@@ -164,7 +171,12 @@
             label.attr('class', this.getLabelClass()).html(this.getLabelHtml());
             options = this.getOptions('dropdown');
             options.appendTo('BODY');
-
+            options.bind('keydown.selectBox', function (event) {
+                self.handleKeyDown(event);
+            })
+                .bind('keypress.selectBox', function (event) {
+                    self.handleKeyPress(event);
+                })
             control
                 .data('selectBox-options', options)
                 .addClass('selectBox-dropdown')
@@ -258,7 +270,7 @@
 
         switch (type) {
             case 'inline':
-                options = $('<ul class="selectBox-options" />');
+                options = $('<ul role="listbox" class="selectBox-options" />');
                 options = _getOptions(select, options);
                 options
                     .find('A')
@@ -274,7 +286,7 @@
                         }
                         event.preventDefault(); // Prevent options from being "dragged"
                         if (!select.selectBox('control').hasClass('selectBox-active')) {
-                            select.selectBox('control').focus();
+                            select.selectBox('options').focus();
                         }
                     })
                     .bind('mouseup.selectBox', function (event) {
@@ -288,7 +300,7 @@
                 this.disableSelection(options);
                 return options;
             case 'dropdown':
-                options = $('<ul class="selectBox-dropdown-menu selectBox-options" />');
+                options = $('<ul role="listbox" class="selectBox-dropdown-menu selectBox-options" />');
                 options = _getOptions(select, options);
 
                 options
@@ -459,6 +471,8 @@
 
         this.hideMenus();
 
+        select.attr('aria-expanded', 'true');
+
         // Get top and bottom width of selectBox
         var borderBottomWidth = parseInt(control.css('borderBottomWidth')) || 0;
         var borderTopWidth = parseInt(control.css('borderTopWidth')) || 0;
@@ -554,6 +568,7 @@
                 self.hideMenus();
             }
         });
+        options.focus();
     };
 
     /**
@@ -572,6 +587,7 @@
                 , settings = select.data('selectBox-settings')
                 , posTop = options.data('posTop');
 
+            select.removeAttr('aria-expanded');
             if (select.triggerHandler('beforeclose')) {
                 return false;
             }
@@ -608,7 +624,8 @@
             options.css('max-height','');
             //Remove Top or Bottom class based on position
             options.removeClass('selectBox-options-'+(posTop?'top':'bottom'));
-            options.data('posTop' , false);
+            options.data('posTop', false);
+            options.blur();
         });
     };
 
@@ -623,8 +640,10 @@
         var select = $(this.selectElement);
         li         = $(li);
 
+
         var control    = select.data('selectBox-control')
-            , settings = select.data('selectBox-settings');
+            , settings = select.data('selectBox-settings')
+            , options = control.data('selectBox-options');
 
         if (control.hasClass('selectBox-disabled')) {
             return false;
@@ -663,6 +682,10 @@
         } else {
             li.siblings().removeClass('selectBox-selected');
             li.addClass('selectBox-selected');
+            const selectedId = li.attr('id')
+            options.attr('aria-activedescendant', selectedId);
+            li.attr('aria-selected', 'true');
+            li.siblings().removeAttr('aria-selected');
         }
 
         if (control.hasClass('selectBox-dropdown')) {
@@ -772,7 +795,7 @@
         var select = $(this.selectElement)
             , control        = select.data('selectBox-control')
             , options      = control.data('selectBox-options')
-            , settings     = select.data('selectBox-settings')
+            , settings = select.data('selectBox-settings')
             , totalOptions = 0, i = 0;
 
         if (control.hasClass('selectBox-disabled')) {
@@ -1016,7 +1039,7 @@
      * @param {jQuery} options
      */
     SelectBox.prototype.generateOptions = function (self, options) {
-        var li = $('<li />'), a = $('<a />');
+        var li = $('<li role="option" />'), a = $('<a />');
         li.addClass(self.attr('class'));
         li.data(self.data());
         if (self.data('icon')) {
@@ -1024,6 +1047,7 @@
         } else {
             a.attr('rel', self.val()).text(self.text());
         }
+        a.attr('id', `option-${self.val()}-anchor`);
         li.append(a);
         if (self.attr('disabled')) {
             li.addClass('selectBox-disabled');
@@ -1031,6 +1055,8 @@
         if (self.attr('selected')) {
             li.addClass('selectBox-selected');
         }
+        li.attr('id', `option-${self.val()}`);
+        li.attr('aria-labelledby', a.attr('id'))
         options.append(li);
     };
 

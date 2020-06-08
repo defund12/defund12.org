@@ -5,7 +5,7 @@ name: Letter to Council Members and Mayor
 city: Salt Lake City
 state: UT
 recipients:
-- mayor@slc.gov
+- mayor@slcgov.com
 - james.rogers@slcgov.com
 - andrew.johnston@slcgov.com
 - chris.wharton@slcgov.com
