@@ -1,4 +1,4 @@
-name: Lint
+name: CI
 
 on: [push]
 
@@ -11,3 +11,12 @@ jobs:
 
       - name: js-unit-tests
         run: yarn test
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        uses: loxq/jekyll-build-action@master
