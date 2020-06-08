@@ -11,14 +11,26 @@ We are dealing with a high volume of requests, but we are doing our best to stay
 To build the application:
 
 1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
-2. Clone and navigate to the repository
-3. `bundle exec jekyll serve`
+2. Install [Node JS](https://nodejs.org/en/download/)
+3. Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
+4. Clone and navigate to the repository
+5. `bundle exec jekyll serve`
 
 ### Running with Docker locally
 
 1. [Install Docker](https://docs.docker.com/get-docker/)
 2. Start docker locally
 3. In directory run, `docker-compose up`
+
+### Running eslint
+
+1. `yarn install`
+2. To run eslint and automatically fix issues:
+   `./node_modules/.bin/eslint --fix .`
+
+### Running tests
+
+1. `yarn install` && `yarn test`
 
 ## Contributions guidelines
 
