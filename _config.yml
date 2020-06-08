@@ -22,7 +22,7 @@ defaults:
     city: City
     state: State intials
     recipients:
-    - 
+    -
     subject: Email subject (mention defunding police dept.)
     body: Email message (remember to include placeholders for name)
 permalink: pretty
@@ -32,7 +32,7 @@ subtitle: Email government officials and council members to reallocate egregious
 meta: Email government officials and council members to reallocate police budgets
   towards education, social services, and dismantling racial inequality.
 footer_text: |-
-  Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)
+  Want to add your city? [Open a request.](https://github.com/defund12/defund12.org/issues/new?assignees=&labels=new-request&template=EMAIL_REQUEST.md&title=Add%20email%20for%20[CITY,%20STATE])
 
   Have the emails of your city government officials and a drafted template ready.
 contact_email_footer: "[contact@defund12.org](mailto:contact@defund12.org)"
