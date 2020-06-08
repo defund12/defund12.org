@@ -18,10 +18,10 @@ recipients:
 subject: 'Newark Demands Equity: Police Budget and Reform'
 body: "Hello, \n\nMy name is [YOUR NAME] and I am a resident of Newark. I urge you
   to redirect money away from the NPD and into social service programs that will benefit
-  public health and our own communities. We also need to ban chokeholds, strangleholds,
-  shooting at moving vehicles, and require police officers to practice de-escalation
-  and comprehensive reporting (8cantwait.org).\n\nNewark's 2019 Municipal Budget shows
-  that $154,625,090 was spent on the Division of Police. This is by far the largest
+  public health and our own communities. Police reforms have not solved police violence: the Minneapolis
+  Police Department had already implemented many reforms, and George Floyd was still murdered.
+  I urge that you take radical steps to defund the police and move towards the goal of reimagining
+  public safety without a police department, per 8 to Abolition (8toabolition.com).\n\nNewark's 2019 Municipal Budget shows that $154,625,090 was spent on the Division of Police. This is by far the largest
   fraction of the city's budget, which is over double the second largest allocation
   of funds (Division of Fire's $72,354,451). It's an egregious statistic compared
   to $9,407,451 spent on the entire Department of Health and Community Wellness, $3,504,842
@@ -41,4 +41,3 @@ body: "Hello, \n\nMy name is [YOUR NAME] and I am a resident of Newark. I urge y
   ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE]\n\nPoverty source: https://www.welfareinfo.org/poverty-rate/new-jersey/newark#:~:text=The%20poverty%20rate%20in%20Newark%20is%2028.3%25.,line%20in%20the%20last%20year"
 layout: email
 ---
-
