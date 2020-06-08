@@ -10,13 +10,12 @@ A person on the triage team is the first to review newly created issues. Look ov
 
 ### Responsibilities
 
+#### Check for completion
 - Check if issue has all required data
   - Does it meet basic data requirements?
-    - Subject line
-    - Recipients
-    - CC addresses
+    - Recipients (CC addresses)
     - Body text
-  - If not, **close issue** and reply with the contents of the [email request template](https://github.com/teddywilson/defund12.org/blob/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)
+  - If not, **close issue** and reply with the contents of the [email request template](https://raw.githubusercontent.com/defund12/defund12.org/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)<br>(copy the text between the `<!--` and `-->` characters)
   - If yes, tag as ready to review. Add tag <kbd>content-ready-for-review</kbd> and remove all previous tags
 
 ## 3. Review, Editing, and Approval Team [Needs people!]
