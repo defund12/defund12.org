@@ -24,7 +24,7 @@ subject: Reallocate Funding From the Erie Police Department
 body: |-
   Dear Erie Mayor's Office, City Council Members and other City Officials,
 
-  My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. Nearly a quarter of Erie's overall budget goes into funding for the Erie Bureau of Police. This is unacceptable. I urge you towards a reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.
+  My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. More than a third of Erie's overall budget goes to funding the Erie PD. This is unacceptable. I urge you towards a reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.
 
   Sincerely,
   [YOUR NAME]
