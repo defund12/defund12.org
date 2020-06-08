@@ -6,7 +6,7 @@ Anyone who would like to add an email for their locale creates issue in adherenc
 
 ## 2. Triage Team
 
-A person on the triage team is the first to review newly created issues. Look over all issues that have the tag `[new-request]`
+A person on the triage team is the first to review newly created issues. Look over all issues that have the tag <kbd>new-request</kbd>
 
 ### Responsibilities
 
@@ -17,7 +17,7 @@ A person on the triage team is the first to review newly created issues. Look ov
     - CC addresses
     - Body text
   - If not, **close issue** and reply with the contents of the [email request template](https://github.com/teddywilson/defund12.org/blob/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)
-  - If yes, tag as ready to review. Add tag `[content-ready-for-review]` and remove all previous tags
+  - If yes, tag as ready to review. Add tag <kbd>content-ready-for-review</kbd> and remove all previous tags
 
 ## 3. Review, Editing, and Approval Team [Needs people!]
 
@@ -29,13 +29,13 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
 - Is it _good enough_?
   - Does it have locale specific info?
   - Is the core statement in regards to defunding local police departments
-  - Add tag `[ready-for-pr]` and remove all other tags
-- Even though the issue is _good enough_ and you added the `[ready-for-pr]`, do you still think the email template needs work or editing?
-  - Add tag `[email-needs-work]` and leave comment on what the outstanding tasks are.
+  - Add tag <kbd>ready-for-pr</kbd> and remove all other tags
+- Even though the issue is _good enough_ and you added the <kbd>ready-for-pr</kbd>, do you still think the email template needs work or editing?
+  - Add tag <kbd>email-needs-work</kbd> and leave comment on what the outstanding tasks are.
 
 ## 4. Email Addition Development Team
 
-This team will pick up issues that have the `[ready-for-pr]` tag. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
+This team will pick up issues that have the <kbd>ready-for-pr</kbd> tag. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
 
 ### Responsibilities
 
