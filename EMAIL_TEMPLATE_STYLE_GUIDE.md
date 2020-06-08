@@ -18,6 +18,7 @@
     - Sample language: “I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.”
 9. Avoid using police framing of community problems, i.e. “crime.” Instead of summarizing social programs as being more effective than policing at “reducing crime,” say that they are more effective at “promoting community safety.”
 10. When referring to racial or ethnic identities, capitalize the identifying word, e.g., "Black Americans", "Latinx residents", "White people".
+11. Avoid referring to the email sender as a "citizen" or "voter". Not all senders may be citizens or voters.
 
 #### Tips
 To determine what emails to include, in the U.S., typically the Mayor and City Council determine the budget for the following year (source: [National League of Cities](https://www.nlc.org/public-budgets)). However we recommend looking up the budget process for your local government. 
