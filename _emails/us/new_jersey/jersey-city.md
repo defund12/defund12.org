@@ -1,5 +1,5 @@
 ---
-title:
+title: Jersey City
 permalink: "/jerseycity"
 name: Letter to Mayor and City Council
 city: Jersey City
@@ -16,7 +16,7 @@ recipients:
 - YSaleh@jcnj.org
 - JSolomon@jcnj.org
 - JDRobinson@jcnj.org
-subject:
+subject: 
 body: |-
   Dear Mayor Fulop and Jersey City Council Members:
 
@@ -36,3 +36,4 @@ body: |-
   [YOUR EMAIL]
 layout: email
 ---
+
