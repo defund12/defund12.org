@@ -1,6 +1,6 @@
 ---
 title: "Hollister, CA"
-permalink: /"hollister"
+permalink: "/hollister"
 name: "Letter to City Council and Mayor Velazquez"
 city: "Hollister"
 state: "CA"
