@@ -19,11 +19,11 @@ body: |-
 
   My name is [YOUR NAME] and I am a San Leandro (resident or business owner) writing to urge you to defund SLPD.
 
-  SLPD takes an enormous share of the city’s general fund, and that percentage has risen exponentially for the last two decades, taking away desperately needed resources from essential city programs and services. The City of San Leandro transferred $20 million to the SLPD headquarter fund in 2018-2019; money that could be used much more beneficially if inserted directly into the community. The investment in policing has not made us safer – SLPD remains an embarrassment to the city and a lethal threat to San Leandro’s Black and Brown communities, while increased police spending shows no correlation to decreasing crime levels. With current finances so tight, it is clear that we must defund the police.
+  SLPD takes an enormous share of the city’s general fund, and that percentage has risen exponentially for the last two decades, taking away desperately needed resources from essential city programs and services. The City of San Leandro transferred $20 million to the SLPD headquarter fund in 2018-2019; that money could be used much more beneficially if inserted directly into the community. The investment in policing has not made us safer – SLPD remains an embarrassment to the city and a lethal threat to San Leandro’s Black and Brown communities, while increased police spending shows no correlation to decreasing crime levels. With current finances so tight, it is clear that we must defund the police.
 
   As a San Leandro resident, I therefore demand that you take immediate action to ensure the following:
 
-  - Reduce SLPD’s allocation from the General Fund by 50%
+  - Reduce SLPD’s allocation from the General Fund by at least 50%
   - Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
   - Reallocate money from SLPD into housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
 
