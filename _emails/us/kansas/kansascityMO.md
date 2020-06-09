@@ -22,7 +22,7 @@ subject: Defund the Kansas City Police Department
 body: |
   Dear Mayor Lucas and City Council,
 
-  My name is [NAME] and I am a resident of Kansas City’s [YOUR DISTRICT]. I am writing to ask you to reallocate funds away from the KCPD and toward public resources such as healthcare services, housing, and education.
+  My name is [NAME] and I am a resident of Kansas City. I am writing to ask you to reallocate funds away from the KCPD and toward public resources such as healthcare services, housing, and education. I commend Mayor Lucas for de-escalating the protests in our city by removing the unnecessary and militarized police presence. Let that serve as a picture of how our city ought to operate as a whole.
 
   The city’s recently approved FY2020-21 budget promises ~$270 million to police alone, which is ~$50 million more than the entire budget for Neighborhoods, Housing, and Healthy Communities in this fiscal year. This year’s policing budget brings a $10.7 million increase from the previous year’s budget, an increase enabling ten new police officer positions as well as wage increases and pensions for existing officers.
 
