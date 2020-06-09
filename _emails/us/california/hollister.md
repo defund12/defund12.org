@@ -5,6 +5,7 @@ name: "Letter to City Council and Mayor Velazquez"
 city: "Hollister"
 state: "CA"
 layout: "email"
+recipients:
 - "mayor@hollister.ca.gov"
 - "coh.dist1@hollister.ca.gov"
 - "coh.dist2@hollister.ca.gov"
