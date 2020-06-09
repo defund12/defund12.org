@@ -8,7 +8,7 @@ layout: email
 recipients:
 - citycouncil@dalycity.org
 - citymanager@dalycity.org
-subject: Daly City Resident for Defunding the DCPD
+subject: [INSERT UNIQUE SUBJECT LINE] 
 body: |-
   To our Daly City elected and appointed officials,
 
