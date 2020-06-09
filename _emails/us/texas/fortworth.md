@@ -15,7 +15,7 @@ recipients:
 - dennis.shingleton@fortworthtexas.gov
 - kelly.allengray@fortworthtexas.gov
 - ann.zadeh@fortworthtexas.gov
-subject: We Demand Divestment from Police and an Investment in Black Communities
+subject: [INSERT UNIQUE SUBJECT LINE] 
 body: |-
   Hello,
 
@@ -27,7 +27,7 @@ body: |-
 
   * Vote yes to decrease police spending and budgets
 
-  Vote yes to increase spending on Health care, education and community programs that keep us safe.
+  * Vote yes to increase spending on Health care, education and community programs that keep us safe.
 
   The militarized tactics that our Police Department have used against its citizens in response to peaceful protesting is unacceptable and unwarranted. To ensure your dedication to our city and citizens, I demand that you defund the Fort Worth Police Department and start providing more support and funding towards our community efforts and organizations that serve our predominantly Latinx and Black communities, as these are the communities that are being targeted the most. By doing so, I believe this will prevent further police brutality and violence in the future.
 
