@@ -20,7 +20,7 @@ recipients:
 - ward12@cityofclarksville.com
 subject:
 body: |-
-  Dear Mayor Pitts:
+  Dear Mayor Pitts and Clarksville City Council Members:
 
   My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/WARD]. The unjust deaths of George Floyd, Breonna Taylor, and others undeniably call for justice. I am emailing today to demand action.
 
