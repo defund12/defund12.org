@@ -1,6 +1,6 @@
 ---
 title: Newark, DE
-permalink: "/newark_de"
+permalink: "/newark-de"
 name: Letter to Mayor and Council
 state: DE
 city: Newark
