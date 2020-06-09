@@ -1,6 +1,6 @@
 ---
 title: Little Rock, AR
-permalink: "/lacrosse"
+permalink: "/littlerock"
 name: Letter to the Board of Directors
 state: AR
 city: Little Rock
@@ -10,7 +10,7 @@ recipients:
 subject: [INSERT UNIQUE SUBJECT LINE]
 body: |-
   Dear Little Rock Board of Directors,
-  
+
   My name is [YOUR NAME] and I’m a resident of Little Rock. I am writing about Little Rock Mayor Frank Scott Jr.’s fiscal year 2021 budget proposal.
 
   I am writing to demand that the budget vote be delayed so that Board may find ways to redirect money away from Little Rock Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from LRPD, and towards sectors that facilitate the dismantling of racial and class inequality.
