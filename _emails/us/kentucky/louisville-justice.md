@@ -45,11 +45,11 @@ body: "Dear Mayor Fischer,\n\nMy name is [NAME]. I am a resident of [CITY/NEIGHB
   face consequences for this murder in order to provide her family with justice and
   prevent further cops from committing brutal acts of violence against our communities.\n\nWE
   DEMAND THE FOLLOWING OF OUR CITY:\n\n1. Mayor and City Council address the use of
-  force by LMPD.\n\n2. Fire, criminally charge, and revoke the pensions of the officers that murdered
-  Breonna. Ensure the newly requested
-  special prosecutor, State AG Daniel Cameron, seeks full transparency and accountability.\n\n3.
-  Provide all necessary information to a local, independent civilian community police
-  accountability council.\n\n4. Create policy for transparent investigation
-  process due to law enforcement misconduct. \n\n5. Eliminate No Knock Warrants.\n\nSincerely,\n[NAME]\n[PHONE_NUMBER]\n[EMAIL]\n[ADDRESS]\n"
+  force by LMPD.\n\n2. Fire, criminally charge, and revoke the pensions of the officers
+  that murdered Breonna. Ensure the newly requested special prosecutor, State AG Daniel
+  Cameron, seeks full transparency and accountability.\n\n3. Provide all necessary
+  information to a local, independent civilian community police accountability council.\n\n4.
+  Create policy for transparent investigation process due to law enforcement misconduct.
+  \n\n5. Eliminate No Knock Warrants.\n\nSincerely,\n[NAME]\n[PHONE_NUMBER]\n[EMAIL]\n[ADDRESS]\n"
 ---
 
