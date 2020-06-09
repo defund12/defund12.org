@@ -5,7 +5,7 @@ import yaml
 
 ROOT_DIR = '/email_markdown_files/us'
 
-WHITELISTED_KEYS = [
+ALLOWLISTED_KEYS = [
   'title',
   'permalink',
   'name',
@@ -18,14 +18,14 @@ WHITELISTED_KEYS = [
 ]
 
 
-def validate_document_has_whitelisted_keys(doc, filepath):
-  for whitelisted_key in WHITELISTED_KEYS:
-    if whitelisted_key not in doc:
-      print('whitelisted key %s not found in file %s' % (whitelisted_key, filepath))
+def validate_document_has_allowlisted_keys(doc, filepath):
+  for allowlisted_key in ALLOWLISTED_KEYS:
+    if allowlisted_key not in doc:
+      print('allowlisted_key key %s not found in file %s' % (allowlisted_key, filepath))
       sys.exit(1)
 
-def test_files_contain_whitelisted_keys():
-  print('test_files_contain_whitelisted_keys()')
+def test_files_contain_allowlisted_keys():
+  print('test_files_contain_allowlisted_keys()')
   for subdir, dirs, files in os.walk(ROOT_DIR):
     for file in files:
       if file.endswith('.md'):
@@ -35,12 +35,12 @@ def test_files_contain_whitelisted_keys():
           for doc in docs:
             if doc is None:
                 continue
-            validate_document_has_whitelisted_keys(doc, filepath)
+            validate_document_has_allowlisted_keys(doc, filepath)
 
 def main():
   print('Running markdown file tests...')
 
-  test_files_contain_whitelisted_keys()
+  test_files_contain_allowlisted_keys()
 
   print('All tests pass!')
   sys.exit(0)
