@@ -26,4 +26,4 @@ jobs:
       - name: Test
         uses: docker://docker
         with:
-          args: docker run markdown-tests:latest
+          args: docker run -v /home/runner/work/defund12.org/defund12.org/_emails:/email_markdown_files markdown-tests:latest
