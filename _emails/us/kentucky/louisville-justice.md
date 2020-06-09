@@ -34,22 +34,22 @@ recipients:
 - madonna.flood@louisvilleky.gov
 - david.yates@louisvilleky.gov
 - brent.ackerson@louisvilleky.gov
-subject: I Want Justice  for the Murder of Breonna Taylor
+subject: I Want Justice for the Murder of Breonna Taylor
 body: "Dear Mayor Fischer,\n\nMy name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD]
   and I am emailing today to demand accountability for the racist and brutal murder
-  of Breonna Taylor.\n\nI demand that charges be pressed against all officers involved
-  in this heinous crime and its coverup, especially John Mattingly, Brett Hankinson,
+  of Breonna Taylor.\n\nI demand that charges be filed against all officers involved
+  in this heinous act and its coverup, especially John Mattingly, Brett Hankinson,
   and Myles Cosgrove. There have been no charges thus far and this is unacceptable.\n\nBreonna
   Taylor would be alive today if it was not for the gross abuse of power and negligence
   exhibited by the Louisville Metro Police Department; all officers involved must
   face consequences for this murder in order to provide her family with justice and
   prevent further cops from committing brutal acts of violence against our communities.\n\nWE
   DEMAND THE FOLLOWING OF OUR CITY:\n\n1. Mayor and City Council address the use of
-  force by LMPD.\n\n2. Fire and revoke the pensions of the officers that murdered
-  Breonna. Arrest, charge, and convict them for this crime. Ensure the newly requested
+  force by LMPD.\n\n2. Fire, criminally charge, and revoke the pensions of the officers that murdered
+  Breonna. Ensure the newly requested
   special prosecutor, State AG Daniel Cameron, seeks full transparency and accountability.\n\n3.
   Provide all necessary information to a local, independent civilian community police
-  accountability council #CPAC.\n\n4. Create policy for transparent investigation
+  accountability council.\n\n4. Create policy for transparent investigation
   process due to law enforcement misconduct. \n\n5. Eliminate No Knock Warrants.\n\nSincerely,\n[NAME]\n[PHONE_NUMBER]\n[EMAIL]\n[ADDRESS]\n"
 ---
 
