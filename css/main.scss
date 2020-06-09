@@ -11,6 +11,7 @@
 	-webkit-animation-name:$animation; animation-name:$animation;}
 
 // Resets and Universal Classes ================================================
+html { overflow-y: scroll }
 html, body {margin:0px; padding:0px; width:100%; overflow-x: hidden !important;}
 h1, h2, h3, h4, h5, h6 {margin:0px;}
 img {max-width:100%; border:0px;}
@@ -118,6 +119,7 @@ header {
 	h2 {margin-bottom:8px;}
 	a {color:var(--link);}
 	a:visited {color:var(--text);}
+  li {list-style-position: inside; text-indent: -1em; margin-left: 1em}
 }
 .emailPageHeader {
 	.buttons {

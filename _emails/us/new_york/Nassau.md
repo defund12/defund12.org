@@ -16,7 +16,7 @@ recipients:
 subject: Commit to reallocate for social equity
 body: "Dear Nassau County Legislature, \n\nHi, my name is [NAME] and I am a resident
   of [TOWN]. I am asking you to reallocate money away from the Nassau County PD, which
-  disproportionately targets black residents. From traffic stops, to arrests, to the
+  disproportionately targets Black residents. From traffic stops, to arrests, to the
   use of lethal force, Nassau PD targets nonwhite residents at a rate far exceeding
   their share of the population. Much scholarship shows that a living wage, access
   to health services and treatment, educational opportunity, and stable housing are

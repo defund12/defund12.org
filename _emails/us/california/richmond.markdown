@@ -20,7 +20,7 @@ subject: Richmond Resident for Defunding the RPD
 body: |-
   To Mayor Butt, the Richmond Board of Supervisors, and Richmond Elected Officers,
 
-  My name is \[YOUR NAME\], and I am a resident of Richmond. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+  My name is [YOUR NAME], and I am a resident of Richmond. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
 
   RPD has been a waste of our resources. Last year, the RPD budget was $74,990,406, the majority of which comes from the Richmond general fund. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
 
@@ -30,9 +30,9 @@ body: |-
 
   Sincerely,
 
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 ---
 

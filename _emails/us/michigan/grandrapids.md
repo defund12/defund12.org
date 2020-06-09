@@ -4,6 +4,7 @@ permalink: "/grandrapids"
 name: Letter to the Mayor, Comptroller, and Ward Commissioners
 city: Grand Rapids
 state: MI
+layout: email
 recipients:
 - mayor@grcity.us
 - comptroller@grcity.us

@@ -22,7 +22,7 @@ subject:
 body: |-
   To Mayor Troxell, the Fort Collins City Council, City Manager, and other city officials:
 
-  My name is \[YOUR NAME\], and I am a resident of Fort Collins. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Although Fort Collins is not at the forefront of these protests, it is not exempt from the racism and violence of the police system.
+  My name is [YOUR NAME], and I am a resident of Fort Collins. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Although Fort Collins is not at the forefront of these protests, it is not exempt from the racism and violence of the police system.
 
   Fort Collins, Colorado also has a history of police violence against community members in addition to gentrification that has pushed communities farther away from central Fort Collins to floodplains and railroad tracks. Natasha Patnode was beaten by Fort Collins Police Officer Todd Hopkins in 2018. This ended up in an excessive-use-of-force settlement. In 2017, Michaella Surat, a former CSU student, was subjected to excessive force by officer Randall Klamser, as well as having her constitutional rights violated by unreasonable search and seizure.
 
@@ -32,9 +32,9 @@ body: |-
 
   Sincerely,
 
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 ---
 

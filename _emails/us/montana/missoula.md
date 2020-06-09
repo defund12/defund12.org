@@ -4,13 +4,14 @@ date: 2020-06-07 19:40:00 Z
 permalink: "/missoula"
 name: Letter to City Council
 city: Missoula
+layout: email
 state: MT
 recipients:
 - 'council@ci.missoula.mt.us '
 subject: Missoula demands a budget for justice
-body: "To the Missoula City Council,\n\nMy name is \\[YOUR NAME\\] and I am a resident
-  of \\[YOUR WARD\\]. I am writing to demand that the City Council adopts a budget
-  that prioritizes community well-being and redirects funding away from the police.\n\nMany
+body: "To the Missoula City Council,\n\nMy name is [YOUR NAME] and I am a resident
+  of [YOUR WARD]. I am writing to demand that the City Council adopts a budget that
+  prioritizes community well-being and redirects funding away from the police.\n\nMany
   Montanans may be tempted to think the unique nature of such a vast, yet sparsely-populated
   state minimizes the likelihood of police brutality in our small city communities.
   However, as reported by the Billings Gazette last year, Montana ranked ninth in
@@ -35,7 +36,7 @@ body: "To the Missoula City Council,\n\nMy name is \\[YOUR NAME\\] and I am a re
   to completely revise the budget for the 2020-2021 fiscal year, and to fund the social
   programs proven to be more effective than policing at promoting community safety
   and equity. Have the courage to be a leader of the change this city, state, and
-  country desperately needs.\n\nThank you for your time,\n\\[YOUR NAME\\] \n\\[YOUR
-  ADDRESS\\] \n\\[YOUR EMAIL\\] \n\\[YOUR PHONE NUMBER\\]"
+  country desperately needs.\n\nThank you for your time,\n[YOUR NAME] \n[YOUR ADDRESS]
+  \n[YOUR EMAIL] \n[YOUR PHONE NUMBER]"
 ---
 

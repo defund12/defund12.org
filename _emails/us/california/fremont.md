@@ -18,7 +18,7 @@ subject: Fremont Resident for Defunding the Fremont PD
 body: |-
   To Mayor Mei, the Fremont City Council, Fremont City Manager, and Fremont Police Chief:
 
-  My name is \[YOUR NAME\], and I am a resident of Fremont. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+  My name is [YOUR NAME], and I am a resident of Fremont. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
 
   This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
 
@@ -34,10 +34,10 @@ body: |-
 
   Sincerely,
 
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 layout: email
 ---
 

@@ -4,6 +4,8 @@ permalink: "/pittsburgh"
 name: Letter to Council Members and Chiefs/Assistant Chiefs of Staff
 city: Pittsburgh
 state: PA
+layout: email
+subject: Defund Pitssburgh PD
 recipients:
 - theresa.kail-smith@pittsburghpa.gov
 - brosha.tkacheva@pittsburghpa.gov
@@ -40,6 +42,5 @@ body: |
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: email
 ---
 

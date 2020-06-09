@@ -3,6 +3,7 @@ title: Fort Wayne, IN
 permalink: "/fortwayne"
 name: Letter to City Council
 city: Fort Wayne
+layout: email
 state: IN
 recipients:
 - citycouncil@cityoffortwayne.org

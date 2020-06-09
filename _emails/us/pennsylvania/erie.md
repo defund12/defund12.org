@@ -4,7 +4,6 @@ permalink: "/erie"
 name: Letter to the City Council, Mayor's Office, and Other City Officials
 city: Erie
 state: PA
-layout: email
 recipients:
 - RLamis@erie.pa.us
 - PLichtenwalter@erie.pa.us
@@ -23,14 +22,15 @@ recipients:
 - Mwitherspoon@erie.pa.us
 subject: Reallocate Funding From the Erie Police Department
 body: |-
-  Dear Erie Mayor's Office, City Council Members, and Other City Officials,
+  Dear Erie Mayor's Office, City Council Members and other City Officials,
 
-  My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. Nearly a quarter of Erie's overall budget goes into funding for the Erie Beureau of Police, this is unacceptable. I urge you towards an ethical and equal reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.
+  My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. More than a third of Erie's overall budget goes to funding the Erie PD. This is unacceptable. I urge you towards a reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.
 
   Sincerely,
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
