@@ -17,7 +17,7 @@ recipients:
 - deborah.figgs-sanders@stpete.org
 - lisa.wheeler-bowman@stpete.org
 - amy.foster@stpete.org
-subject: [*** INSERT UNIQUE SUBJECT LINE***]
+subject: Defund the SPD
 body: |-
   Dear St. Petersburg City Council and Mayor Rick Kriseman,
 
