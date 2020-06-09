@@ -9,8 +9,8 @@ recipients:
 - council@billingsmt.gov
 subject: Billings demands a budget for justice and social equity
 body: "To the Billings City Council,\n\nMy name is [YOUR NAME] and I am a resident
-  of [YOUR WARD]. I am writing to demand that the City Council adopts a budget
-  that prioritizes community well-being and redirects funding away from the police.\n\nMany
+  of [YOUR WARD]. I am writing to demand that the City Council adopts a budget that
+  prioritizes community well-being and redirects funding away from the police.\n\nMany
   Montanans may be tempted to think the unique nature of such a vast, yet sparsely-populated
   state minimizes the likelihood of police brutality in our small city communities.
   However, as reported by the Billings Gazette last year, Montana ranked ninth in
@@ -35,6 +35,7 @@ body: "To the Billings City Council,\n\nMy name is [YOUR NAME] and I am a reside
   I am urging you to completely revise the budget for the 2020-2021 fiscal year, and
   to fund the social programs proven to be more effective than policing at promoting
   community safety and equity. Have the courage to be a leader of the change this
-  city, state, and country desperately needs.\n\nThank you for your time,\n[YOUR
-  NAME] \n[YOUR ADDRESS] \n[YOUR EMAIL] \n[YOUR PHONE NUMBER]"
+  city, state, and country desperately needs.\n\nThank you for your time,\n[YOUR NAME]
+  \n[YOUR ADDRESS] \n[YOUR EMAIL] \n[YOUR PHONE NUMBER]"
 ---
+

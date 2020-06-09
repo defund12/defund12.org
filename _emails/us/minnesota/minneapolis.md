@@ -7,9 +7,9 @@ state: MN
 recipients:
 - jacob.frey@minneapolismn.gov
 subject: Defund the Minneapolis Police Department
-body: "Dear Mayor Frey and City Council Members,\n\nMy name is [YOUR NAME]. I
-  am a resident of [YOUR CITY, STATE] and I am emailing today to demand the defunding
-  of the Minneapolis Police Department and the funding of new, community-led and integrated
+body: "Dear Mayor Frey and City Council Members,\n\nMy name is [YOUR NAME]. I am a
+  resident of [YOUR CITY, STATE] and I am emailing today to demand the defunding of
+  the Minneapolis Police Department and the funding of new, community-led and integrated
   health and safety strategies.\n\nWe are in the midst of widespread upheaval over
   the systemic, racist violence which has been, to this point, overseen by the Minneapolis
   City Council. George Floyd was murdered during this oversight. Beloved Minneapolis

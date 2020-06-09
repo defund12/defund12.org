@@ -22,12 +22,12 @@ recipients:
 - Shannon.Sneed@baltimorecity.gov
 - MaryPat.Clarke@baltimorecity.gov
 subject: Commit to reallocate for social equity
-body: "\"To whom it may concern,\n\nMy name is [YOUR NAME], and I am a Baltimore
-  resident. In the midst of this pandemic and public outcry against police brutality,
-  it feels especially inappropriate to propose an increase to the BPD budget to $545
-  million. I urge you to ethically reallocate this increase, as well as a meaningful
-  portion of the remaining BPD budget, towards social services and education. Investment
-  in programs such as the Affordable Housing Trust Fund, Baltimore Children and Youth
+body: "\"To whom it may concern,\n\nMy name is [YOUR NAME], and I am a Baltimore resident.
+  In the midst of this pandemic and public outcry against police brutality, it feels
+  especially inappropriate to propose an increase to the BPD budget to $545 million.
+  I urge you to ethically reallocate this increase, as well as a meaningful portion
+  of the remaining BPD budget, towards social services and education. Investment in
+  programs such as the Affordable Housing Trust Fund, Baltimore Children and Youth
   Fund, Safe Streets Baltimore, the Office of Employment and Development, or the Department
   of Health, shows our commitment to communities and the vision that all Baltimore
   residents deserve to thrive. Historically, the city government has spent far more

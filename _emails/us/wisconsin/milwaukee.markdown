@@ -41,7 +41,7 @@ body: "Dear Milwaukee Council Members,\n\nMy name is [YOUR NAME] and I am a resi
   actions will result in a healthier, more just society. I implore you to please listen
   to the needs of your constituents and take immediate action to address their concerns.\n\nCan
   I count on you to consider an alternative budget that puts a focus on social service
-  programs?\n\nThank you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
-  PHONE NUMBER]"
+  programs?\n\nThank you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE
+  NUMBER]"
 ---
 

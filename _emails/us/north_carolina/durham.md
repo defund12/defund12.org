@@ -13,14 +13,14 @@ recipients:
 - Jillian.Johnson@durhamnc.gov
 - charlie.reece@durhamnc.gov
 subject: Defund the Durham Police & Reallocate Funds
-body: "Dear Mayor Schewel & City Council Members:\n\nMy name is [YOUR NAME]. I
-  am a resident of Durham. I am writing to object to the allocation of over $70M to
-  the Durham Police Department in the 2020-2021 city budget. It is indefensible to
-  increase the police budget when city workers are experiencing layoffs and denial
-  of wage increases, and thousands of our community members face unemployment and
-  housing/food insecurity in the midst of the COVID-19 pandemic.\n\nThe police cannot
-  protect us from these challenges. In fact, more often than not, when police are
-  dispensed, rather than more qualified medical, psychiatric, and social work professionals,
+body: "Dear Mayor Schewel & City Council Members:\n\nMy name is [YOUR NAME]. I am
+  a resident of Durham. I am writing to object to the allocation of over $70M to the
+  Durham Police Department in the 2020-2021 city budget. It is indefensible to increase
+  the police budget when city workers are experiencing layoffs and denial of wage
+  increases, and thousands of our community members face unemployment and housing/food
+  insecurity in the midst of the COVID-19 pandemic.\n\nThe police cannot protect us
+  from these challenges. In fact, more often than not, when police are dispensed,
+  rather than more qualified medical, psychiatric, and social work professionals,
   the effect is to bring violence where none previously existed. Moreover, to paraphrase
   an existing council member, it is not cities with the most police, but the most
   resources, that are the safest.  To that end, I make a two-fold request to the council:\n\nReallocate

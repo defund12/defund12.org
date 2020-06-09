@@ -21,8 +21,8 @@ recipients:
 - rpeters@tulsacounty.org
 subject: Reallocate for Justice
 body: "Dear Tulsa City Council and County Commissioners,\n\nMy name is [YOUR NAME]
-  and I am a resident of [NEIGHBORHOOD/WARD].  The City of Tulsa must do better
-  by its residents. I am urging you to divest from the criminalization of our community
+  and I am a resident of [NEIGHBORHOOD/WARD].  The City of Tulsa must do better by
+  its residents. I am urging you to divest from the criminalization of our community
   and reduce police spending in the budget for the 2021 fiscal year. The Tulsa City
   Council will review and discuss the Mayor’s proposed budget and must approve a budget
   for the upcoming fiscal year at least seven days prior to June 30, the end of the
