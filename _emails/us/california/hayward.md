@@ -14,9 +14,9 @@ recipients:
 - Mark.Salinas@hayward-ca.gov
 - aisha.wahab@hayward-ca.gov
 - askrcd-da@acgov.org
-- Toney.Chaplin@hayward-ca.cov
-- Maria.Hurtado@hayward-ca.cov
-- Dustin.Claussen@hayward-ca.cov
+- Toney.Chaplin@hayward-ca.gov
+- Maria.Hurtado@hayward-ca.gov
+- Dustin.Claussen@hayward-ca.gov
 subject: Hayward Resident for Defunding the HPD
 body: |
   To Mayor Halliday, the Hayward City Council and Alameda County Elected Officials,
@@ -34,4 +34,3 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-
