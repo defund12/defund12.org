@@ -31,7 +31,7 @@ subject:
 body: |-
   Dear Santa Monica City Managers and Council Members:
 
-  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand the allocation of resources to prioritize the safety and well-being of the city, and away from policing.
+  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand the reallocation of resources to prioritize the safety and well-being of the city, and away from policing.
 
   In the fiscal year of 2019-2020, Santa Monica's Police Departments' allocated budget has escalated to a total of $97 million. Their budget has increased by 5.7% ($5 million) since the fiscal year of 2018-2019. This funding is in sharp contrast to the decrease of 19.1% ($2 million) spent towards affordable housing and economic development, and the meager increase of 3.1% ($1 million) in community and cultural services.
 
