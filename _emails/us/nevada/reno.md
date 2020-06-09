@@ -27,10 +27,10 @@ body: |-
   Our community is in pain along with the nation. We desperately need a reevaluation of our city's priorities.
 
   Thank you for your time,
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 layout: email
 ---
 

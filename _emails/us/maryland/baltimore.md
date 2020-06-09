@@ -22,7 +22,7 @@ recipients:
 - Shannon.Sneed@baltimorecity.gov
 - MaryPat.Clarke@baltimorecity.gov
 subject: Commit to reallocate for social equity
-body: "\"To whom it may concern,\n\nMy name is \\[YOUR NAME\\], and I am a Baltimore
+body: "\"To whom it may concern,\n\nMy name is [YOUR NAME], and I am a Baltimore
   resident. In the midst of this pandemic and public outcry against police brutality,
   it feels especially inappropriate to propose an increase to the BPD budget to $545
   million. I urge you to ethically reallocate this increase, as well as a meaningful
@@ -40,7 +40,7 @@ body: "\"To whom it may concern,\n\nMy name is \\[YOUR NAME\\], and I am a Balti
   net, and racial and economic justice. I am writing to insist that the upcoming BBMR
   budget hearings for FY 2021 reflect the voices and needs of Baltimore’s citizens.
   I am asking that city officials give intense care, attention and effort towards
-  sustainable, long-term change.\n\nThank you,\n\\[YOUR NAME\\]\n\\[YOUR ADDRESS\\]\n\\[YOUR
-  EMAIL\\]\n\\[YOUR PHONE NUMBER\\]\""
+  sustainable, long-term change.\n\nThank you,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
+  EMAIL]\n[YOUR PHONE NUMBER]\""
 ---
 

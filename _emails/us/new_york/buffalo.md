@@ -17,7 +17,7 @@ recipients:
 - rwyatt@city-buffalo.com
 subject: Buffalo Police Department Budget Reform and Action Plan
 body: "To the Buffalo Common Council and Office of Mayor Byron Brown,\n\nMy name is
-  \\[YOUR NAME\\] and I am a resident of \\[YOUR NEIGHBORHOOD\\]. I am imploring you
+  [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am imploring you
   to meaningfully restrict the Buffalo Police Department's $121.9 million dollar budget
   immediately. On June 5, Buffalo Police officers pushed a non-violent 75 year old
   man to the ground while he was exercising his first amendment rights. In case you
@@ -40,8 +40,8 @@ body: "To the Buffalo Common Council and Office of Mayor Byron Brown,\n\nMy name
   for economic growth, and programs that fight hunger and housing are proven to be
   more effective than police presence in improving community safety and wellness.
   \n\nHow will you show up for a city in desperate need of help? Spending $121.9 million
-  dollars on the Buffalo Police is not the solution.\n\nSincerely,\n\\[YOUR NAME\\]\n\\[YOUR
-  ADDRESS\\]\n\\[YOUR EMAIL\\]\n\\[YOUR PHONE NUMBER\\]\n\nPS: Their names are Quentin
+  dollars on the Buffalo Police is not the solution.\n\nSincerely,\n[YOUR NAME]\n[YOUR
+  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\n\nPS: Their names are Quentin
   Suttles. Wilson Morales. A former Erie County Sheriff's Deputy assaulted someone
   at a tailgate party and was found guilty of falsifying records. Pito Rivera. Devin
   Ford. Troy Hodge. Marcus Neal. Shaun Porter was brutally beaten while an inmate

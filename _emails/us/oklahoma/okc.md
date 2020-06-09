@@ -16,8 +16,8 @@ recipients:
 - ward7@okc.gov
 - ward8@okc.gov
 subject: Defund the Oklahoma City Police Department
-body: "Dear Oklahoma City Mayor, City Council, and Manager, \n\nMy name is \\[YOUR
-  NAME\\] and I am a resident of \\[NEIGHBORHOOD/WARD\\]. The City of Oklahoma City
+body: "Dear Oklahoma City Mayor, City Council, and Manager, \n\nMy name is [YOUR
+  NAME] and I am a resident of [NEIGHBORHOOD/WARD]. The City of Oklahoma City
   must do better by its residents. I am urging you to divest from the criminalization
   of our communities and reduce police spending in the budget for the 2021 fiscal
   year. In May, City Manager Freeman formally proposed deep spending cuts due to the
@@ -38,7 +38,7 @@ body: "Dear Oklahoma City Mayor, City Council, and Manager, \n\nMy name is \\[YO
   It is time for OKC, its leaders, and residents to create a more equitable city for
   all of us. Have the moral clarity to create a budget focused on communities instead
   of investing in a racist and destructive institution. Defund the Oklahoma City Police
-  Department.\n\nThank you,\n\\[NAME\\]\n\\[ADDRESS\\]\n\\[EMAIL\\]\n\\[PHONE NUMBER\\]"
+  Department.\n\nThank you,\n[NAME]\n[ADDRESS]\n[EMAIL]\n[PHONE NUMBER]"
 layout: email
 ---
 
