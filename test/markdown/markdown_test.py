@@ -38,26 +38,55 @@ def validate_document_has_allowlisted_keys(doc, filepath):
     if allowlisted_key not in doc:
       fail('allowlisted_key key %s not found in file %s' % (allowlisted_key, filepath))
 
-def test_files_contain_allowlisted_keys():
+def get_markdown_files():
+  markdown_files = []
   for subdir, dirs, files in os.walk(ROOT_DIR):
     for file in files:
       if file.endswith('.md'):
-        filepath = os.path.join(subdir, file)
-        with open(filepath, 'r') as stream:
-          docs = yaml.load_all(stream)
-          for doc in docs:
-            if doc is None:
-                continue
-            validate_document_has_allowlisted_keys(doc, filepath)
+        markdown_files.append(os.path.join(subdir, file))
+  return markdown_files      
+
+def test_files_contain_allowlisted_keys():
+  for filepath in get_markdown_files():
+    with open(filepath, 'r') as stream:
+      docs = yaml.load_all(stream)
+      for doc in docs:
+        if doc is None:
+            continue
+        validate_document_has_allowlisted_keys(doc, filepath)
+
+def test_files_contain_allowlisted_keys():
+  for filepath in get_markdown_files():
+    with open(filepath, 'r') as stream:
+      docs = yaml.load_all(stream)
+      for doc in filter(None, docs):
+        validate_document_has_allowlisted_keys(doc, filepath)
+
+def test_files_contain_unique_permalinks():
+  permalinks = []
+  filepaths = []
+  for filepath in get_markdown_files():
+    with open(filepath, 'r') as stream:
+      docs = yaml.load_all(stream)
+      for doc in filter(None, docs):
+        permalink = doc['permalink']
+        if permalink in permalinks:
+          index = permalinks.index(permalink)
+          fail('permalink %s in file %s already exists in file %s' % (permalink, filepath, filepaths[index]))
+        permalinks.append(permalink)
+        filepaths.append(filepath)
 
 def main():
   print('Running markdown file tests...')
 
   test_files_exist()
-  success('test_files_exist()')
+  success('test_files_exist')
 
   test_files_contain_allowlisted_keys()
-  success('test_files_contain_allowlisted_keys()')
+  success('test_files_contain_allowlisted_keys')
+
+  test_files_contain_unique_permalinks()
+  success('test_files_contain_unique_permalinks')
 
   print('All tests pass!')
   sys.exit(0)
