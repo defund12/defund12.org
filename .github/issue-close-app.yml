@@ -1,5 +1,8 @@
-# Comment that will be sent if an issue is judged to be closed.
-comment: "This issue is closed because it does not meet our issue template. Please follow the initial template that appears when you open a new issue. Your submission should at a minimum include at least the words 'NAME' if submitting an email request, 'Description' for a bug, or 'Feature' for a feature request."
+# Config for a bot that automatically closes issues if they do not conform to some simple rules
+# More documentation: https://probot.github.io/apps/close-issue/
+
+# Comment to be left on auto-closed issues
+comment: "This issue is closed because it does not meet our issue template. Please follow the initial template that appears when you open a new issue. Your submission should at a minimum include at least the words 'NAME' if submitting an email request, 'Description' for a bug, 'Feature' for a feature request, or 'Triage' for a triage access request"
 issueConfigs:
 # There can be several configs for different kind of issues.
 - content:
@@ -11,7 +14,10 @@ issueConfigs:
 - content:
 # feature 
   - "Feature"
-# The issue is judged to be legal if it includes all keywords from any of these two configs.
+- content:
+# triage 
+  - "Triage"
+# The issue is judged to be legal if it includes all keywords from any of these configs.
 # Or it will be closed by the app
 
 # Optional configuration:
