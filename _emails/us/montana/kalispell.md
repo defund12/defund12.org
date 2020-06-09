@@ -5,6 +5,7 @@ permalink: "/kalispell"
 name: Letter to City Council
 city: Kalispell
 state: MT
+layout: email
 recipients:
 - 'citycouncil@kalispell.com '
 subject: Kalispell demands a budget for justice
@@ -27,4 +28,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

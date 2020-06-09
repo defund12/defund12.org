@@ -4,6 +4,7 @@ permalink: "/santabarbara"
 name: Letter to City Council
 city: Santa Barbara
 state: CA
+layout: email
 recipients:
 - MHarmon@santabarbaraca.gov
 - KSneddon@santabarbaraca.gov
@@ -30,4 +31,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

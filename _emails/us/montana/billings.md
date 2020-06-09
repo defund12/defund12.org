@@ -4,6 +4,7 @@ date: 2020-06-07 19:07:00 Z
 permalink: "/billings"
 name: Letter to City Council
 city: Billings
+layout: email
 state: MT
 recipients:
 - council@billingsmt.gov
@@ -38,4 +39,3 @@ body: "To the Billings City Council,\n\nMy name is [YOUR NAME] and I am a reside
   city, state, and country desperately needs.\n\nThank you for your time,\n[YOUR NAME]
   \n[YOUR ADDRESS] \n[YOUR EMAIL] \n[YOUR PHONE NUMBER]"
 ---
-

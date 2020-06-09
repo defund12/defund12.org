@@ -4,6 +4,7 @@ permalink: "/elkgrove"
 name: Letter to Mayor and City Council
 city: Elk Grove
 state: CA
+layout: email
 recipients:
 - stevely@elkgrovecity.org
 - sdetrick@elkgrovecity.org
@@ -29,4 +30,3 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]"
 ---
-

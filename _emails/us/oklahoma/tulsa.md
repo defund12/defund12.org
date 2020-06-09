@@ -5,6 +5,7 @@ permalink: "/tulsa"
 name: Letter to City Council and County Commission
 city: Tulsa
 state: OK
+layout: email
 recipients:
 - mayor@cityoftulsa.org
 - dist1@tulsacouncil.org
@@ -44,4 +45,3 @@ body: "Dear Mayor Bynum, Tulsa City Council, and County Board of Commissioners,\
   institution. Defund the Tulsa Police Department.\n\nThank you, \n[NAME] \n[ADDRESS]\n[EMAIL]\n[PHONE
   NUMBER]"
 ---
-

@@ -5,6 +5,7 @@ permalink: "/longbeach"
 name: Letter to City Council
 city: Long Beach
 state: CA
+layout: email
 recipients:
 - Mayor@longbeach.gov
 - District1@longbeach.gov
@@ -32,4 +33,3 @@ body: |-
   [PHONE NUMBER]
   [EMAIL]
 ---
-
