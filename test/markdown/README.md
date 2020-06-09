@@ -5,8 +5,8 @@
 
 ## Run it
 ```
-cd $(git rev-parse --show-toplevel) 
+cd $(git rev-parse --show-toplevel)
 docker run \
   -v "$PWD/_emails:/email_markdown_files" \
-  -it integration-test
+  -it markdown-tests
 ```
