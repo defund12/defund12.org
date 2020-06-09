@@ -15,7 +15,7 @@ recipients:
 - orlando.gudes@tampagov.net
 - guido.maniscalco@tampagov.net
 - luis.viera@tampagov.net
-subject: [*** INSERT UNIQUE SUBJECT LINE***]
+subject: Defund Tampa PD
 body: |-
   Dear Mayor Jane Castor & Tampa City Council,
 
