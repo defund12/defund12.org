@@ -28,15 +28,19 @@ body: |-
 
   The time has come to defund the police.
 
-  The proposed Huntington Beach budget for 2020/2021 allocated 22.9% of funds to the police, while only 4.4% of funds are set to be allocated towards community services. Rather, we need a radical increase for funding towards community services and healthcare. We need youth programs, increased mental health services, neighborhood infrastructures, childcare, and community outreach for those who need these services most. We need to address our city’s rapidly growing homelessness crisis. We need to improve our local parks and beaches. We need more funds for rehabilitation and the re-entry process for formerly incarcerated individuals, and help increase employment and education rates. We need to build a society that does not respond unilaterally to social challenges through police intimidation. Money cut from police budgets can be reinvested in services that can tangible improve HB residents’ lives.
+  The proposed Huntington Beach budget for 2020/2021 allocated 22.9% of funds to the police, while only 4.4% of funds are set to be allocated towards community services. Rather, we need a radical increase for funding towards community services and healthcare. We need youth programs, increased mental health services, neighborhood infrastructures, childcare, and community outreach for those who need these services most. We need to address our city’s rapidly growing homelessness crisis. We need to improve our local parks and beaches. We need more funds for rehabilitation and the re-entry process for formerly incarcerated individuals, and help increase employment and education rates. We need to build a society that does not respond unilaterally to social challenges through police intimidation. Money cut from police budgets can be reinvested in services that can tangibly improve HB residents’ lives.
 
   We are not asking for your empty words, we want accountability. We do not want a single tax dollar going to fund white supremacy in our community, to fund violence against our residents, or to result in the eventual death of a member of the community at the hands of the HBPD.
 
-  We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror.
+  We join in solidarity with the freedom fighters in Minneapolis, Louisville, across the United States and the world. And we call for the end to police terror.
 
   Sincerely,
+
   [YOUR NAME]
+
   [YOUR ADDRESS]
+
   [YOUR EMAIL]
+
   [YOUR PHONE NUMBER]
 ---
