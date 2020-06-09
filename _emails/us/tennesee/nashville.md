@@ -4,6 +4,7 @@ permalink: "/nashville"
 name: Letter to Mayor and Metropolitan Council
 city: Nashville
 state: TN
+layout: email
 recipients:
 - john.cooper@nashville.gov
 - jim.shulman@nashville.gov
@@ -65,4 +66,3 @@ body: |-
     [YOUR EMAIL]
     [YOUR PHONE NUMBER]"
 ---
-

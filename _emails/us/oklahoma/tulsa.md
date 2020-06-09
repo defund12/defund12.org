@@ -5,6 +5,7 @@ permalink: "/tulsa"
 name: Letter to City Council and County Commission
 city: Tulsa
 state: OK
+layout: email
 recipients:
 - mayor@cityoftulsa.org
 - dist1@tulsacouncil.org
@@ -43,4 +44,3 @@ body: "Dear Tulsa City Council and County Commissioners,\n\nMy name is \\[YOUR N
   instead of investing in a racist and destructive institution. Defund the Tulsa Police
   Department.\n\nThank you, \n\\[NAME\\] \n\\[ADDRESS\\]\n\\[EMAIL\\]\n\\[PHONE NUMBER\\]"
 ---
-

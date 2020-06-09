@@ -4,6 +4,7 @@ date: 2020-06-07 19:32:00 Z
 permalink: "/helena"
 name: Letter to City Commission
 city: Helena
+layout: email
 state: MT
 recipients:
 - 'mayorandcommission@helenamt.gov '
@@ -27,4 +28,3 @@ body: |-
   \[YOUR EMAIL\]
   \[YOUR PHONE NUMBER\]
 ---
-

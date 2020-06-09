@@ -3,6 +3,7 @@ title: Baltimore, MD
 permalink: "/baltimore"
 name: Letter to Mayor and City Council
 city: Baltimore
+layout: email
 state: MD
 recipients:
 - mayor@baltimorecity.gov
@@ -43,4 +44,3 @@ body: "\"To whom it may concern,\n\nMy name is \\[YOUR NAME\\], and I am a Balti
   sustainable, long-term change.\n\nThank you,\n\\[YOUR NAME\\]\n\\[YOUR ADDRESS\\]\n\\[YOUR
   EMAIL\\]\n\\[YOUR PHONE NUMBER\\]\""
 ---
-

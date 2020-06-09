@@ -4,6 +4,7 @@ date: 2020-06-07 19:24:00 Z
 permalink: "/greatfalls"
 name: Letter to City Commission
 city: Great Falls
+layout: email
 state: MT
 recipients:
 - bkelly@greatfallsmt.net
@@ -31,4 +32,3 @@ body: |-
   \[YOUR EMAIL\]
   \[YOUR PHONE NUMBER\]
 ---
-

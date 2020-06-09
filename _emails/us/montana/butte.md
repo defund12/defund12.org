@@ -4,6 +4,7 @@ date: 2020-06-07 19:17:00 Z
 permalink: "/butte"
 name: Letter to Butte Council of Commissioners
 city: Butte
+layout: email
 state: MT
 recipients:
 - 'commissioners@bsb.mt.gov '
@@ -27,4 +28,3 @@ body: |-
   \[YOUR EMAIL\]
   \[YOUR PHONE NUMBER\]
 ---
-

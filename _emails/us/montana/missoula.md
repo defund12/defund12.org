@@ -4,6 +4,7 @@ date: 2020-06-07 19:40:00 Z
 permalink: "/missoula"
 name: Letter to City Council
 city: Missoula
+layout: email
 state: MT
 recipients:
 - 'council@ci.missoula.mt.us '
@@ -38,4 +39,3 @@ body: "To the Missoula City Council,\n\nMy name is \\[YOUR NAME\\] and I am a re
   country desperately needs.\n\nThank you for your time,\n\\[YOUR NAME\\] \n\\[YOUR
   ADDRESS\\] \n\\[YOUR EMAIL\\] \n\\[YOUR PHONE NUMBER\\]"
 ---
-
