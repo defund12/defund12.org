@@ -1,5 +1,5 @@
 ---
-title: Manchester, New Hampshire
+title: Irving, Texas
 permalink: "/irving"
 name: Letter to the City Council and Mayor Stopfer
 state: TX
