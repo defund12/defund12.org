@@ -1,7 +1,7 @@
 ---
 title: State College, Pennsylvania
 permalink: "/statecollegepa"
-name: Letter to Council Members and Chiefs/Assistant Chiefs of Staff
+name: Letter to Council Members and The Mayor
 city: State College
 state: PA
 recipients:
