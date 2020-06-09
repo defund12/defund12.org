@@ -86,7 +86,7 @@ def main():
   success('test_files_contain_allowlisted_keys')
 
   test_files_contain_unique_permalinks()
-  success ('test_files_contain_unique_permalinks')
+  success('test_files_contain_unique_permalinks')
 
   print('All tests pass!')
   sys.exit(0)
