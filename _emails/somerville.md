@@ -12,7 +12,7 @@ subject: Demanding support for defunding the police in Somerville
 body: |-
   Dear Mayor Curtatone and Somerville City Councilors,
 
-  My name is \[YOUR NAME\], and I am a resident of \[CITY\]. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Our city has been deeply engaged in much of this action. Accordingly, it has come to my attention that the city plans to adopt a number of the reform proposals created by Campaign Zero. I ask that you reconsider these attempts to reform and instead pivot your attention to defunding the police for fiscal year 2021.
+  My name is [YOUR NAME], and I am a resident of [CITY]. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Our city has been deeply engaged in much of this action. Accordingly, it has come to my attention that the city plans to adopt a number of the reform proposals created by Campaign Zero. I ask that you reconsider these attempts to reform and instead pivot your attention to defunding the police for fiscal year 2021.
 
   SPD has been a waste of our resources. In fiscal year 2020, the SPD budget was approximately 18% of the total—less only than schools. The city of Somerville will spend over $17,044,021 on the Police Department this year, as you well know. By contrast, Health and Human Services receives only $3,064,691 and Culture & Recreation receives only $4.5 million (1.8% of the budget). Additionally, within the $21 million of grants received in 2018, $749,867 was allocated to the police system, while only $120,610 was allocated to the Arts Council and a mere $503,187 was allocated to Sustainability & Environment.
 
@@ -24,10 +24,10 @@ body: |-
 
   Sincerely,
 
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 layout: email
 ---
 
