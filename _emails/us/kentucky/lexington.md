@@ -6,25 +6,25 @@ state: KY
 city: Lexington
 layout: email
 recipients:
-  - skay@lexingtonky.gov
-  - cellinger@lexingtonky.gov
-  - rmoloney@lexingtonky.gov
-  - jbrown2@lexingtonky.gov
-  - jmccurn@lexingtonky.gov
-  - mswanson@lexingtonky.gov
-  - susanl@lexingtonky.gov
-  - bfarmer@lexingtonky.gov
-  - aevans@lexingtonky.gov
-  - pworley@lexingtonky.gov
-  - fbrown@lexingtonky.gov
-  - jmossotti@lexingtonky.gov
-  - abledsoe@lexingtonky.gov,
-  - reynolds@lexingtonky.gov
-  - kplomin@lexingtonky.gov
-  - CouncilCoreStaff@lexingtonky.gov
-  - mayor@lexingtonky.gov
-  - karmstrong@lexingtonky.gov
-subject: "URGENT: Reallocate Funding for the LPD"
+- skay@lexingtonky.gov
+- cellinger@lexingtonky.gov
+- rmoloney@lexingtonky.gov
+- jbrown2@lexingtonky.gov
+- jmccurn@lexingtonky.gov
+- mswanson@lexingtonky.gov
+- susanl@lexingtonky.gov
+- bfarmer@lexingtonky.gov
+- aevans@lexingtonky.gov
+- pworley@lexingtonky.gov
+- fbrown@lexingtonky.gov
+- jmossotti@lexingtonky.gov
+- abledsoe@lexingtonky.gov,
+- reynolds@lexingtonky.gov
+- kplomin@lexingtonky.gov
+- CouncilCoreStaff@lexingtonky.gov
+- mayor@lexingtonky.gov
+- karmstrong@lexingtonky.gov
+subject: 'URGENT: Reallocate Funding for the LPD'
 body: |-
   Hello,
   My name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY/STATE].
@@ -40,3 +40,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

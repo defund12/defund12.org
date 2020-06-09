@@ -6,13 +6,13 @@ city: Arlington
 state: MA
 layout: email
 recipients:
-  - JCurro@town.arlington.ma.us
-  - DMahon@town.arlington.ma.us
-  - JLeone@town.arlington.ma.us
-  - achapdelaine@town.arlington.ma.us
-  - SDeCourcey@town.arlington.ma.us
-  - DDunn@town.arlington.ma.us
-  - JHurd@town.arlington.ma.us
+- JCurro@town.arlington.ma.us
+- DMahon@town.arlington.ma.us
+- JLeone@town.arlington.ma.us
+- achapdelaine@town.arlington.ma.us
+- SDeCourcey@town.arlington.ma.us
+- DDunn@town.arlington.ma.us
+- JHurd@town.arlington.ma.us
 subject: Arlington Resident for Defunding the APD
 body: |-
   Dear Town Meeting Manager Chapdelaine, Select Board Members Mahon, Curro, Dunn, Hurd, DeCourcey, and Town Moderator Leone,
@@ -36,3 +36,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
