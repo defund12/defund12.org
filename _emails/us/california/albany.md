@@ -1,7 +1,8 @@
 ---
 title: Albany, CA
 permalink: "/albany"
-name: Letter to the Mayor, City Council, City Attorney, and the Social & Economic Justice Commission
+name: Letter to the Mayor, City Council, City Attorney, and the Social & Economic
+  Justice Commission
 state: CA
 city: Albany
 layout: email
@@ -32,3 +33,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
