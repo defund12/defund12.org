@@ -4,7 +4,6 @@ permalink: "/nola"
 name: Letter to Mayor, City Council and Police Chief
 city: New Orelans
 state: LA
-layout: email
 recipients:
 - mayor@nola.gov
 - jarwilliams@nola.gov
@@ -14,7 +13,7 @@ recipients:
 - kristin.palmer@nola.gov
 - jcbrossett@nola.gov
 - cyndi.nguyen@nola.gov
-- nopchief@nola.gov
+- nopdchief@nola.gov
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Cantrell and City Council Members,
@@ -34,5 +33,6 @@ body: |-
   [YOUR EMAIL]
   [YOUR ADDRESS]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
