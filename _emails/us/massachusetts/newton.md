@@ -24,7 +24,7 @@ recipients:
 - abowman@newtonma.gov
 - rwgrossman@newtonma.gov
 - dkalis@newtonma.gov
-subject: Defund Newton Police Department
+subject: [INSERT UNIQUE SUBJECT LINE]
 body: |-
   Dear Mayor Fuller and City Council Members,
 
