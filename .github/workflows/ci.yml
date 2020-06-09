@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 on: [push]
 
 jobs:
@@ -27,3 +27,12 @@ jobs:
         uses: docker://docker
         with:
           args: docker run -v /home/runner/work/defund12.org/defund12.org/_emails:/email_markdown_files markdown-tests:latest
+  build-and-deploy:
+    needs: [js-lint, js-tests, py-markdown-tests]
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@2.0.1
+        env:
+          JEKYLL_PAT: ${{ secrets.DEFUND12_GITHUB_TOKEN }}
