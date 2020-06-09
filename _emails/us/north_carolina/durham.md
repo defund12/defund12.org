@@ -13,7 +13,7 @@ recipients:
 - Jillian.Johnson@durhamnc.gov
 - charlie.reece@durhamnc.gov
 subject: Defund the Durham Police & Reallocate Funds
-body: "Dear Mayor Schewel & City Council Members:\n\nMy name is \\[YOUR NAME\\]. I
+body: "Dear Mayor Schewel & City Council Members:\n\nMy name is [YOUR NAME]. I
   am a resident of Durham. I am writing to object to the allocation of over $70M to
   the Durham Police Department in the 2020-2021 city budget. It is indefensible to
   increase the police budget when city workers are experiencing layoffs and denial
@@ -41,8 +41,8 @@ body: "Dear Mayor Schewel & City Council Members:\n\nMy name is \\[YOUR NAME\\].
   none existed before. Almost all the current litany of Black men and women dead from
   police violence were non-violent, unarmed people, for whom armed police became the
   site of death and brutality. \n\nCan I count on you to consider an alternative budget
-  that puts a focus on social service programs?\n\nThank you,\n\\[YOUR NAME\\]\n\\[YOUR
-  ADDRESS\\]\n\\[YOUR EMAIL\\]\n\\[YOUR PHONE NUMBER\\]"
+  that puts a focus on social service programs?\n\nThank you,\n[YOUR NAME]\n[YOUR
+  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 layout: email
 ---
 

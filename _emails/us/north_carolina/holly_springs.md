@@ -39,8 +39,8 @@ body: "Dear Mayor Sears and Town Council,\n\nMy name is [NAME] and I am a reside
   need to create a space in which more mental health service providers, social       workers,
   victim/survivor advocates, religious leaders, neighbors, and friends - all of the
   people who really make up our       community - can look out for one another. Mayor
-  Sears, will you look out for me, and will you look out for us?\n\nThank you,\n\n\\[YOUR
-  NAME\\]\n\\[YOUR ADDRESS\\]\n\\[YOUR EMAIL\\]\n\\[YOUR PHONE NUMBER\\]"
+  Sears, will you look out for me, and will you look out for us?\n\nThank you,\n\n[YOUR
+  NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 layout: email
 ---
 

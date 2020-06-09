@@ -20,8 +20,8 @@ recipients:
 - kfothergill@tulsacounty.org
 - rpeters@tulsacounty.org
 subject: Reallocate for Justice
-body: "Dear Tulsa City Council and County Commissioners,\n\nMy name is \\[YOUR NAME\\]
-  and I am a resident of \\[NEIGHBORHOOD/WARD\\].  The City of Tulsa must do better
+body: "Dear Tulsa City Council and County Commissioners,\n\nMy name is [YOUR NAME]
+  and I am a resident of [NEIGHBORHOOD/WARD].  The City of Tulsa must do better
   by its residents. I am urging you to divest from the criminalization of our community
   and reduce police spending in the budget for the 2021 fiscal year. The Tulsa City
   Council will review and discuss the Mayor’s proposed budget and must approve a budget
@@ -41,6 +41,6 @@ body: "Dear Tulsa City Council and County Commissioners,\n\nMy name is \\[YOUR N
   It is time for Tulsa, its leaders, and residents to create a more equitable city
   for ALL of us. Have the moral clarity to create a budget focused on communities
   instead of investing in a racist and destructive institution. Defund the Tulsa Police
-  Department.\n\nThank you, \n\\[NAME\\] \n\\[ADDRESS\\]\n\\[EMAIL\\]\n\\[PHONE NUMBER\\]"
+  Department.\n\nThank you, \n[NAME] \n[ADDRESS]\n[EMAIL]\n[PHONE NUMBER]"
 ---
 

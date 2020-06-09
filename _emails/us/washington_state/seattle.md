@@ -20,7 +20,7 @@ subject: Commit to Reallocation for Social Equity
 body: |-
   Dear Seattle City Leadership,
 
-  My name is \[YOUR NAME\] and I am a resident of \[YOUR DISTRICT\]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+  My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
 
   We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SPD’s well documented history of murdering Black people. I will no longer accept empty gestures and suggestions of “reform.” I am  demanding that my voice be heard now, and that real change be made to the way this city allocates its resources.
 
@@ -34,10 +34,10 @@ body: |-
 
   Thank you for your time,
 
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 layout: email
 ---
 

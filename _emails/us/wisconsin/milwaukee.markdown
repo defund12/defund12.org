@@ -21,8 +21,8 @@ recipients:
 - Marina@milwaukee.gov
 - russell.stamper@milwaukee.gov
 subject: Defund MPD, Reallocate for Social Equity
-body: "Dear Milwaukee Council Members,\n\nMy name is \\[YOUR NAME\\] and I am a resident
-  of \\[NEIGHBORHOOD/CITY\\].\n\nI am extremely concerned with the City of Milwaukee’s
+body: "Dear Milwaukee Council Members,\n\nMy name is [YOUR NAME] and I am a resident
+  of [NEIGHBORHOOD/CITY].\n\nI am extremely concerned with the City of Milwaukee’s
   inordinate investment in the Milwaukee Police Department (MPD) at the expense of
   critical youth, education, and health services.\n\nI am asking that the Milwaukee
   Common Council make a more overt and visible commitment to racial justice. I ask
@@ -41,7 +41,7 @@ body: "Dear Milwaukee Council Members,\n\nMy name is \\[YOUR NAME\\] and I am a 
   actions will result in a healthier, more just society. I implore you to please listen
   to the needs of your constituents and take immediate action to address their concerns.\n\nCan
   I count on you to consider an alternative budget that puts a focus on social service
-  programs?\n\nThank you,\n\n\\[YOUR NAME\\]\n\\[YOUR ADDRESS\\]\n\\[YOUR EMAIL\\]\n\\[YOUR
-  PHONE NUMBER\\]"
+  programs?\n\nThank you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
+  PHONE NUMBER]"
 ---
 
