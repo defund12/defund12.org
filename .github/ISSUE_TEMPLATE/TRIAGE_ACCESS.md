@@ -3,7 +3,7 @@ title: Triage access for [USERNAME]
 name: "\U0001F510 User permissions request"
 about: Request triage permissions as a collaborator on the defund12.org team.
 labels: admin-attention
-assignees: "@bingbongle @shortcircuit3"
+assignees: ""
 ---
 
 # Triage access
