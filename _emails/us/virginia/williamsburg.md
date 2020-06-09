@@ -42,6 +42,9 @@ body: "To Mayor Freiling, Vice Mayor Pons, City Manager Trivette, and Williamsbu
   solidarity with the freedom fighters in Minneapolis, Louisville, Williamsburg, and across 
   the United States. Can I count on you to join us and reallocate funds away from WPD to 
   prioritize social programs going forward?  \n\nSincerely,  \n\n[YOUR NAME]\n[YOUR ADDRESS]
-  \n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
+  \n[YOUR EMAIL]\n[YOUR PHONE NUMBER]  \n\nReferences:  \nWPD End of Year Report 2019 - 
+  https://www.williamsburgva.gov/home/showdocument?id=21801  \nColonial Williamsburg 
+  Foundation - http://slaveryandremembrance.org/partners/partner/?id=P0000  \nSlavery at 
+  W&M - https://www.wm.edu/sites/enslavedmemorial/slavery-at-wm/index.php"
 ---
 
