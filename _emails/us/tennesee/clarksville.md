@@ -1,7 +1,7 @@
 ---
 title: Clarksville
 permalink: "/clarksville"
-name: Letter to Mayor
+name: Letter to Mayor and Elected Officials
 city: Clarksville
 state: TN
 recipients:
