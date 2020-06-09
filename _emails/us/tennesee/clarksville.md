@@ -18,7 +18,7 @@ recipients:
 - ward10@cityofclarksville.com
 - ward11@cityofclarksville.com
 - ward12@cityofclarksville.com
-subject:
+subject: 
 body: |-
   Dear Mayor Pitts and Clarksville City Council Members:
 
@@ -40,3 +40,4 @@ body: |-
   [YOUR EMAIL]
 layout: email
 ---
+
