@@ -1,7 +1,10 @@
 import io
+import numpy as np
 import os
 import sys
 import yaml
+
+from pathlib import Path
 
 ROOT_DIR = '/email_markdown_files/us'
 
@@ -17,15 +20,25 @@ ALLOWLISTED_KEYS = [
   'body'
 ]
 
+def success(test_name):
+  print('✅' + ' ' + test_name)
+
+def fail(error_message):
+  print('❌' + ' ' + error_message)
+  sys.exit(1)
+
+def test_files_exist():
+  files = [file for file in Path(ROOT_DIR).rglob('*.md')] 
+  _, counts = np.unique([file.parent for file in files ], return_counts=True)
+  if counts.sum() == 0:
+    fail('test received no files at at path %s' % ROOT_DIR)
 
 def validate_document_has_allowlisted_keys(doc, filepath):
   for allowlisted_key in ALLOWLISTED_KEYS:
     if allowlisted_key not in doc:
-      print('allowlisted_key key %s not found in file %s' % (allowlisted_key, filepath))
-      sys.exit(1)
+      fail('allowlisted_key key %s not found in file %s' % (allowlisted_key, filepath))
 
 def test_files_contain_allowlisted_keys():
-  print('test_files_contain_allowlisted_keys()')
   for subdir, dirs, files in os.walk(ROOT_DIR):
     for file in files:
       if file.endswith('.md'):
@@ -40,7 +53,11 @@ def test_files_contain_allowlisted_keys():
 def main():
   print('Running markdown file tests...')
 
+  test_files_exist()
+  success('test_files_exist()')
+
   test_files_contain_allowlisted_keys()
+  success('test_files_contain_allowlisted_keys()')
 
   print('All tests pass!')
   sys.exit(0)
