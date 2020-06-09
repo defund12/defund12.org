@@ -20,6 +20,8 @@ recipients:
 - ward12@cityofclarksville.com
 subject:
 body: |-
+  Dear Mayor Pitts:
+
   My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/WARD]. The unjust deaths of George Floyd, Breonna Taylor, and others undeniably call for justice. I am emailing today to demand action.
 
   If you stand and, as Leaf Chronicle Photo captions, “listen to protesters in the middle of Wilma Rudolph Boulevard on Saturday,” we demand that you recognize and condemn the murder of George Floyd, who did not simply “die in police custody.” Failing to acknowledge his death as a murder only serves to minimize the responsibility that should be assumed by the police.
