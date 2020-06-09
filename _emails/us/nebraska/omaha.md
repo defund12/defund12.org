@@ -25,7 +25,7 @@ body: |
 
   In 2019, OPD’s portion of the budget was at 38% while Public Works, Parks, and Libraries made up just 5.7%, 5.5%, and 3.3% of the budget respectively. The underfunding of schools, infrastructure, parks, and libraries is causing much of Omaha’s suffering. The aforementioned underfunding of public services paired with the overfunding of the police shows me as your constituent that you are merely putting Band-Aids over bullet holes.
 
-  As Omaha residents, I therefore demand that you take immediate action to do the following:
+  As an Omaha resident, I therefore demand that you take immediate action to do the following:
 
       Reduce Omaha’s allocation from the General Fund by 50% (roughly $80 million)
       Disallow unauthorized overtime by OPD
