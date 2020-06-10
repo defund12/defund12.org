@@ -10,6 +10,7 @@ jobs:
   js-lint:
     runs-on: ubuntu-latest
     steps:
+      - run: echo ${{ github.event.head_commit.messasge }}
       - uses: actions/checkout@v2
       - uses: stefanoeb/eslint-action@1.0.2
       - name: Deploy failed
