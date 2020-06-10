@@ -9,7 +9,8 @@ recipients:
 - council@cityofrc.us
 - city.clerk@cityofrc.us
 - james.frost@cityofrc.us
-subject: [*** INSERT YOUR OWN SUBJECT LINE***]
+subject:
+- INSERT YOUR OWN SUBJECT LINE
 body: |-
   Dear Rancho Cucamonga City Officials,
 
