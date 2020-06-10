@@ -1,59 +1,48 @@
-# Defund12.org Team Organization
+# Contributing to defund12.org
 
-## 1. User that submits issue
+Do you want to help with the project? Awesome! We can definitely use it. This project started off as the work of a single person but has exploded in several days to encompass a distributed team of volunteers all around the country (and maybe world?). We are still trying to figure out the best processes, it's a bit hectic!
 
-Anyone who would like to add an email for their locale creates issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+First off, read below to check out the possible ways in which you could help. Then, once you have a rough idea of how we operate, please join our [Discord server](https://discord.gg/YMxndzd) and say hello! There is a separate channel for each team.
 
-## 2. Triage Team
+For all tasks you will need a GitHub account. If you ever need permissions for something (e.g. to adjust labels on issues), submit a [permissions request](https://github.com/defund12/defund12.org/issues/new?assignees=&labels=admin-attention&template=TRIAGE_ACCESS.md&title=Triage+access+for+%5BUSERNAME%5D).
 
-A person on the triage team is the first to review newly created issues. Look over all issues with <kbd>new-request</kbd> label.
+## 1. Writing team (non-technical)
 
-### Responsibilities
+If there is no email yet for your city, it would be awesome if you wrote one!
 
-#### Check for duplicates
-- Check if the issue is a duplicate of an existing request or existing template. In the Issues tab, search for the requested locale with `is:open is:closed [LOCALE]` to see if an open request or merged template already exists.
-![](https://user-images.githubusercontent.com/221550/84061909-bb3bde80-a98c-11ea-8cc1-07bdb315abaf.gif)
-- If the request is a duplicate, add the <kbd>duplicate</kbd> label and close the issue with a link to the earlier request
+- Read the [email style guidelines](/docs/email_style.md).
+- Go to the list of current [Issues](https://github.com/defund12/defund12.org/issues)
+- Click on `New issue`, and then select the `Add an email for your city` option.
+- Write your email, following the style guide. Include the email addresses of your representatives. Click `Submit new issue`.
+- You can bookmark the URL of the created issue so you can check back and comment as volunteers review, format, and publish your email. You should also receive email updates.
 
-#### Check for completion
-- Check if issue has all required data
-  - Does it meet basic data requirements?
-    - Recipients (CC addresses)
-    - Body text
-  - If not, **close issue** and reply with the contents of the [email request template](https://raw.githubusercontent.com/defund12/defund12.org/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)<br>(copy the text between the `<!--` and `-->` characters)
-  - If yes, add <kbd>content-ready-for-review</kbd> label and remove all other labels
+## 2. Triage Team (non-technical)
 
-## 3. Review, Editing, and Approval Team [Needs people!]
+A person on the triage team is the first to review newly created issues. They filter out any spam and kick off the review process for emails.
 
-Ensure the email roughly adheres to [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+- Find the oldest issue with the <kbd>new-request</kbd> label.
+- Read the [email style guidelines](/docs/email_style.md).
+- Is it possible to salvage the email so that it follows the guidelines? Or is it totally unintelligible, or missing key info? If not salvageable, **close issue** and reply with the contents of the [email request template](https://raw.githubusercontent.com/defund12/defund12.org/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)<br>(copy the text between the `<!--` and `-->` characters)
+- Check if the issue is a duplicate of an existing request or existing template. Watch [this demo](https://user-images.githubusercontent.com/221550/84061909-bb3bde80-a98c-11ea-8cc1-07bdb315abaf.gif) to see how. If the request is a duplicate, add the <kbd>duplicate</kbd> label and close the issue with a link to the earlier request.
+- Once it looks ready for review, add the <kbd>content-ready-for-review</kbd> label and remove the <kbd>new-request</kbd> label.
 
-### Responsibilities
+## 3. Review team (non-technical)
 
-- If body content is not salvageable, **close issue**.
-- Is it _good enough_?
-  - Does it have locale specific info?
-  - Is the core statement in regards to defunding local police departments
-  - Add <kbd>ready-for-pr</kbd> label and remove all other labels
-- Even though the issue is _good enough_ and you added the <kbd>ready-for-pr</kbd> label, do you still think the email template needs work or editing?
-  - Add <kbd>email-needs-work</kbd> label and leave comment on what the outstanding tasks are.
+This is where we need the most help. When emails are first written, they need to be fact-checked and lightly edited for typos.
 
-## 4. Email Addition Development Team
+- Find the oldest email that need review. Those will be in [issues](https://github.com/defund12/defund12.org/issues?q=is%3Aissue+is%3Aopen+label%3Anew-request) that have the `new-request` label.
+- Try to make the email follow the [email style guidelines](/docs/email_style.md), trying to not change the author's intent or voice. Post the edited email as a new comment, and please write a summary of the things you changed.
+- If you want a second opinion, leave a comment, and another reviewer should find the issue and can offer their thoughts. Or if it really requires discussion, ask on Discord.
+- When you are satisfied with the email, add the <kbd>ready-for-pr</kbd> label and remove the <kbd>new-request</kbd> label. Someone on the Formatting Team will come and add the email to the website.
 
-This team will pick up issues that have the <kbd>ready-for-pr</kbd> label. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
+## 4. Formatting team (semi-technical)
 
-### Responsibilities
+This team takes emails that have been reviewed by the Review Team, formats them into code, and then submits a Pull Request (PR) to add the email to the website. It is semi-technical, requiring a basic understanding of GitHub, markdown, YAML, and coding style.
 
-- Assign issue to yourself so no other developer begins working on it
-- Create a PR for the email issue
-- Ensure the email markdown is correct and properly linted.
-- Once PR is up, someone will review and merge!
+- Find the oldest [issue](https://github.com/defund12/defund12.org/issues?q=is%3Aissue+is%3Aopen+label%3Aready-for-pr) with the <kbd>ready-for-pr</kbd> label. Claim the issue in a comment or assign it to yourself so no one else begins working on it.
+- Create a new `country/state/city.md` file in the `/_emails` directory. Ensure it follows the [formatting guidelines](/_emails/README.md).
+- Submit a PR against the `master` branch of defund12.org. Only add or modify one email per PR. This make it easier to process the history of what's entering the codebase, and takes some strain off the reviewer.
 
-### Conventions to follow
+## 5. Other (non-technical to technical)
 
-- Please refer to the emails [README](_emails/README.md) with more information about email template conventions.
-
-## Join the conversation
-
-If you'd like to help out, please join our Discord [here](https://discord.gg/YMxndzd) and say hello. We'd love your help!
-
-We have created channels in the Discord channel that correspond to each team. These will be used for team specific communication and organization. Whichever team you'd like to join, please join the Discord appropriate channel and say hello.
+There are plenty of other things that we could use your help with. This could be reviewing already submitted emails to ensure they are quality, writing code for the website, mentoring other volunteers, doing social media outreach, or something else. Introduce yourself on the [#general channel of our Discord](https://discord.gg/epwskWD) and we can find you something!
