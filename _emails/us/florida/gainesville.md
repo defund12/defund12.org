@@ -23,7 +23,7 @@ recipients:
 subject: Defund the Gainesville PD
 body: |-
   Hello,
-  
+
   My name is [NAME], and I am an Alachua County resident.
 
   I DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL:
@@ -31,7 +31,7 @@ body: |-
   - Vote no on all increases to police budgets.
   - Vote yes to decrease police spending and budgets.
   - Vote yes to increase spending on health care, education and community programs that keep us safe.
-  
+
   In 2020, the City of Gainesville has allocated $42.25 million dollars to the police department, and $59.66 million to law enforcement in general. Housing and Urban Planning-- something residents everywhere but especially on the East side need-- was allocated 6.06 million.
 
   People of color in American, specifically Black people, already know that the police don’t keep neighborhoods and communities safe. Police presence leads to police brutality, which is why we are demanding a defunding of police and a reallocation of resources towards community investment. Black people like Tony McDade (Tallahassee), Trayvon Martin (Orlando), and Jamee Johnson (Jacksonville) cannot keep dying at the hands of police and white actors emboldened by the state.
@@ -50,3 +50,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
