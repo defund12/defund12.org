@@ -30,5 +30,11 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+phonenumbers:
+  - {name: "City Hall", phone: "805-963-0611" }
+phonescript: |-
+  Dear Santa Barbara City Council,
+
+  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am calling to demand that the Santa Barbara City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.  In 2019, the City of Santa Barbara allocated 42 million dollars to our police system, an inordinate 32% of our total budget. This is compared to just $13 million allocated towards community development (9.2% of the budget). Within the community development budget, $1.05 million was projected to be spent on human services  (0.07% of the city's budget), with even less appropriated for housing development (0.04%).
 ---
 

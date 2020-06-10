@@ -8,6 +8,9 @@
         <div class='buttons'>
             <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
             <a href="javascript:void(0);" onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
+            {% if page.phonenumbers %}
+            <a href="#call">Call</a>
+            {% endif %}
         </div>
         <p>{{ site.bad_mailto_message }}</p>
     </div>
@@ -37,6 +40,31 @@
         </div>
     </div>
 </div>
+
+{% if page.phonenumbers %}
+<div id="call" class="content">
+    <div class="container">
+        <h2>Call Your Elected Officials</h2>
+        <b>{{ page.city }}, {{ page.state }}</b><br />
+        {{ site.call_representatives_message | markdownify }}
+    </div>
+</div>
+
+<div class="content emailContentSection">
+    <div class="container">
+        <div class="recipients">
+            {% for phonenumber in page.phonenumbers %}
+                <b>{{ phonenumber.name }}</b>: <a href="tel:{{ phonenumber.phone }}">{{ phonenumber.phone }}</a><br />
+            {% endfor %}
+        </div>
+        <br/>
+        <div>
+            <b>Call Script:</b>
+            {{ page.phonescript | markdownify }}
+        </div>
+    </div>
+</div>
+{% endif %}
 
 {% include list.html %}
 
