@@ -1,5 +1,5 @@
 ---
-title: Omaha, Nebrasks
+title: Omaha, Nebraska
 date: 2020-06-07 19:17:00 Z
 permalink: "/omaha"
 name: Letter to the Mayor and City Council
@@ -15,7 +15,6 @@ recipients:
 - Aimee.Melton@cityofomaha.org
 - carrie.murphy@cityofomaha.org
 - hotline@cityofomaha.org
-subject: 
 body: |
   Dear Mayor Jean Stothert and Members of City Council,
 
@@ -42,5 +41,6 @@ body: |
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
