@@ -8,9 +8,10 @@ import yaml
 
 from pathlib import Path
 
-ROOT_DIR = '/email_markdown_files/us'
-if os.environ.get('DEFUND12_EMAILS') is not None:
-  ROOT_DIR = os.environ.get('DEFUND12_EMAILS')
+ROOT_DIR = os.environ.get('DEFUND12_EMAIL_DIR')
+if ROOT_DIR is None:
+  print('$DEFUND12_EMAIL_DIR is not set')
+  sys.exit(1)
 
 ALLOWLISTED_KEYS = [
   'title',
