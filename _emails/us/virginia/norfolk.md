@@ -1,20 +1,20 @@
 ---
-title: "Norfolk, Virginia"
+title: Norfolk, Virginia
 permalink: "/norfolk"
-name: "Letter to the City Council and Mayor Alexander"
-state: "VA"
-city: "Norfolk"
-layout: "email"
+name: Letter to the City Council and Mayor Alexander
+state: VA
+city: Norfolk
+layout: email
 recipients:
-- "mayor@norfolk.gov"
-- "martin.thomas@norfolk.gov"
-- "courtney.doyle@norfolk.gov"
-- "mamie.johnson@norfolk.gov"
-- "paul.riddick@norfolk.gov"
-- "thomas.smigiel@norfolk.gov"
-- "andria.mcclellan@norfolk.gov"
-- "angelia.williams@norfolk.gov"
-subject: "xxx UNIQUE SUBJECT LINE xxx"
+- mayor@norfolk.gov
+- martin.thomas@norfolk.gov
+- courtney.doyle@norfolk.gov
+- mamie.johnson@norfolk.gov
+- paul.riddick@norfolk.gov
+- thomas.smigiel@norfolk.gov
+- andria.mcclellan@norfolk.gov
+- angelia.williams@norfolk.gov
+subject: xxx UNIQUE SUBJECT LINE xxx
 body: |-
   Dear Mayor Alexander and City Council Members,
 
