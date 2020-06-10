@@ -1,13 +1,46 @@
-name: CI
-
-on: [push]
+name: CI/CD
+on:
+  push:
+  pull_request:
 
 jobs:
-  eslint:
+  js-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: stefanoeb/eslint-action@1.0.2
-
-      - name: js-unit-tests
+  js-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: yarn install
+      - name: Test
         run: yarn test
+  py-markdown-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        uses: docker://docker
+        with:
+          args: docker build ./test/markdown/ --tag=markdown-tests:latest
+      - name: Test
+        uses: docker://docker
+        with:
+          args: docker run -v /home/runner/work/defund12.org/defund12.org/_emails:/email_markdown_files markdown-tests:latest
+  build-and-deploy:
+    needs: [js-lint, js-tests, py-markdown-tests]
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: helaili/jekyll-action@2.0.1
+        env:
+          JEKYLL_PAT: ${{ secrets.DEFUND12_GITHUB_TOKEN }}

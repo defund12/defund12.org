@@ -19,7 +19,7 @@ recipients:
 - policycommittee@cityofberkeley.info
 subject: Berkeley Resident for Defunding BPD
 body: |-
-  Dear Mayor Arreguin and Berkeley City Council Members,
+  Dear Mayor Arreguín and Berkeley City Council Members,
 
   My name is [NAME HERE] and I am a Berkeley resident from district [YOUR DISTRICT]. BPD takes an enormous share of the city’s general fund, and that percentage has risen exponentially for the last two decades, taking away desperately needed resources from essential city programs and services. 38% of our city’s budget goes towards the police department, while only 10% goes towards health, housing, and community service.
 
