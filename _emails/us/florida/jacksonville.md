@@ -42,17 +42,17 @@ body: |-
   JSO has been a waste of our resources. Last year, the JSO budget was $478,386,277. This means JSO was our single largest expense; more costly than all other city departments combined!
 
   JSO holds responsibility over community issues that they are fundamentally unable to address. We have seen mounting evidence that police departments are ineffective institutions that marginalize minority communities and put citizens at risk of injury and death. Our city needs EMTs, social workers, and other social service providers to respond to the majority of current police business, including health and wellness checks, domestic/sexual violence situations, and basic documentation around break-ins, vandalism, and wrecks. Usually, when police are dispensed, rather than qualified medical, psychiatric, and social workers, the effect is to bring violence where none previously existed. Jacksonville’s needs must be addressed by the provision of care, not the threat of violence.
-  
+
   JSO offers “unlimited overtime pay for all” through Operation Safe and Sound, which oftentimes is paid out to officers responsible for harassing minorities.
-  
+
   We don’t need a militarized police force. Divest from offensive weapons. Offensive weapons are known to escalate violence. If you want to promote community safety, dedicate yourselves fully to ending poverty– don’t give the police force another $478 million+ to spend on riot gear, grenades, and weapons to use against your own city.
-  
+
   We must take a hard look at the ways that the current system in place fails to serve–and actively harms–our community, and come together to reimagine the role of policing.
-  
+
   Do not forget our communities of color who are disproportionate targets of police violence. Our police department is, quite frankly, upholding policies and practices that allow white supremacy to take Black lives every single day.
-  
+
   As the City Council, it is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
-  
+
   Mayor Curry, can I count on you to pass an alternative budget that puts a focus on social service programs?
 
   Sincerely,
@@ -62,3 +62,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
