@@ -42,6 +42,6 @@ cc:
 expiration_date: <YYYY-MM-DD>
 organization: <organization>  
 redirect_from:
-- "/nyc_expired_link"  
+- "/<redirect_link_address>"  
 ---
 ```
