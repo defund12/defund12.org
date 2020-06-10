@@ -39,9 +39,14 @@ def test_files_exist():
     fail('test received no files at at path %s' % ROOT_DIR)
 
 def validate_document_has_allowlisted_keys(doc, filepath):
+  keys_not_found = []
   for allowlisted_key in ALLOWLISTED_KEYS:
     if allowlisted_key not in doc:
-      fail('allowlisted_key key %s not found in file %s' % (allowlisted_key, filepath))
+      keys_not_found.append(allowlisted_key)
+      
+  if keys_not_found:
+    prefixed_keys_not_found = ["🔑 ~> " + key for key in keys_not_found] 
+    fail('in file %s keys not found:\n%s' % (filepath, "\n".join(prefixed_keys_not_found)))
 
 def get_markdown_files():
   markdown_files = []
@@ -54,7 +59,7 @@ def get_markdown_files():
 def test_files_contain_allowlisted_keys():
   for filepath in get_markdown_files():
     with open(filepath, 'r') as stream:
-      docs = yaml.load_all(stream)
+      docs = yaml.safe_load_all(stream)
       for doc in docs:
         if doc is None:
             continue
@@ -63,7 +68,7 @@ def test_files_contain_allowlisted_keys():
 def test_files_contain_allowlisted_keys():
   for filepath in get_markdown_files():
     with open(filepath, 'r') as stream:
-      docs = yaml.load_all(stream)
+      docs = yaml.safe_load_all(stream)
       for doc in filter(None, docs):
         validate_document_has_allowlisted_keys(doc, filepath)
 
@@ -72,7 +77,7 @@ def test_files_contain_unique_permalinks():
   filepaths = []
   for filepath in get_markdown_files():
     with open(filepath, 'r') as stream:
-      docs = yaml.load_all(stream)
+      docs = yaml.safe_load_all(stream)
       for doc in filter(None, docs):
         permalink = doc['permalink']
         if permalink in permalinks:
@@ -82,7 +87,7 @@ def test_files_contain_unique_permalinks():
         filepaths.append(filepath)
 
 def main():
-  print('Running markdown file tests...')
+  print('🔨 Running markdown file tests...')
 
   test_files_exist()
   success('test_files_exist')
@@ -93,7 +98,7 @@ def main():
   test_files_contain_unique_permalinks()
   success('test_files_contain_unique_permalinks')
 
-  print('All tests pass!')
+  print('😇 All tests pass!')
   sys.exit(0)
 
 if __name__ == "__main__":
