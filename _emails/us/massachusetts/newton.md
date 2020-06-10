@@ -24,6 +24,14 @@ recipients:
 - abowman@newtonma.gov
 - rwgrossman@newtonma.gov
 - dkalis@newtonma.gov
+- msgreenberg@newtonma.gov
+- enorton@newtonma.gov
+- jmalakie@newtonma.gov
+- cmarkiewicz@newtonma.gov
+- bhumphrey@newtonma.go
+- bnoel@newtonma.gov
+- lbaker@newtonma.gov
+- hryan@newtonma.
 subject:
 - INSERT UNIQUE SUBJECT LINE
 body: |-
