@@ -15,7 +15,7 @@ recipients:
 - ajarrett@northamptonma.gov
 - mlabargeward6@aol.com
 - rmaiore@northamptonma.gov
-- lkrutzler@northmaioamptonma.gov
+- lkrutzler@northamptonma.gov
 subject: Reject the mayor's FY 2021 budget
 body: "Dear Councilor, \n\nMy name is [NAME] and I live in the city of Northampton,
   MA. I’m writing to ask that City Council reject Mayor David Narkewicz’s proposal
