@@ -4,7 +4,6 @@ permalink: "/coloradosprings"
 name: Letter to Mayor and City Council
 city: Colorado Springs
 state: CO
-layout: email
 recipients:
 - jsuthers@springsgov.com
 - allCouncil@springsgov.com
@@ -17,7 +16,7 @@ recipients:
 - Bill.murray@coloradosprings.gov
 - Tom.strand@coloradosprings.gov
 - Wayne.williams@coloradosprings.gov
-subject: Colorado Springs Resident for Defunding BPD
+subject: Colorado Springs Resident for Defunding the Police
 body: |-
   Dear Mayor Suthers and Colorado Springs City Council Members,
 
@@ -33,10 +32,10 @@ body: |-
 
   I urge you to act today.
   Sincerely,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 

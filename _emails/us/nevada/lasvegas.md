@@ -2,9 +2,8 @@
 title: Las Vegas, NV
 permalink: "/lasvegas"
 name: Letter to Mayor and Council Members
-state: NV
 city: Las Vegas
-layout: email
+state: NV
 recipients:
 - cgoodman@lasvegasnevada.gov
 - officeofthemayor@lasvegasnevada.gov
@@ -21,17 +20,17 @@ body: |-
 
   We have seen mounting evidence that police departments are racist and ineffective institutions that put citizens at risk of injury and death, yet the police budget accounts for 13% of our general fund.
 
-  I ask that you redirect the majority of the $174M allotted for crime prevention towards community programs that provide citizens with basic human needs like affordable healthcare and housing. With nearly 35% of our residents currently unemployed, we need funding to address the needs of people hurting from the effects of COVID 19, people experiencing homelessness, and the marginalized communities in our city.
+  I ask that you redirect the majority of the $174M allotted for crime prevention towards community programs that provide citizens with basic human needs like affordable healthcare, housing, and education. With nearly 35% of our residents currently unemployed, we need funding to address the needs of people hurting from the effects of COVID 19, people experiencing homelessness, and the marginalized communities in our city.
 
-  I also STRONGLY URGE the City Council to enact legislation instituting a community elected Civilian Police Accountability Council with the following powers; ability to review and change disciplinary actions, review all violent interactions, and impose discipline including firing.
+  Social programs and education have been shown to be far more effective than policing at promoting community safety and equity.
 
-  Our community is in pain along with the nation. We desperately need to change what our community prioritizes.
+  Our community is in pain along with the nation. We desperately need a reevaluation of the role of police in our city.
 
   Thank you for your time,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
