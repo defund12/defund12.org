@@ -27,7 +27,7 @@ recipients:
 - luke.clippinger@house.state.md.us
 - robbyn.lewis@house.state.md.us
 - brooke.lierman@house.state.md.us
-subject: Support Local Control of the Baltimore Police Department
+subject: Support Local Control and Defunding of the Baltimore Police Department
 body: |-
   To whom it may concern,
 
