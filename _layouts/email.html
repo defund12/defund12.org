@@ -2,6 +2,9 @@
 
 <div class="content emailPageHeader">
     <div class="container">
+        {% if page.phonenumbers %}
+        <h3><a href="#call">↓ Make a Phone Call ↓</a></h3><br>
+        {% endif %}
         <h2>{{ page.name }}</h2>
         <b>{{ page.city }}, {{ page.state }}</b><br /> {{ site.email_intro_text | markdownify }}
         <p id="autoopen">{{ site.auto_open_message }}</p>
@@ -46,7 +49,7 @@
     <div class="container">
         <h2>Call Your Elected Officials</h2>
         <b>{{ page.city }}, {{ page.state }}</b><br />
-        {{ site.call_representatives_message | markdownify }}
+        {{ site.call_reps_message | markdownify }}
     </div>
 </div>
 
