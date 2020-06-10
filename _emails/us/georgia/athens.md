@@ -39,5 +39,4 @@ body: |-
     [YOUR EMAIL]
     [YOUR ADDRESS]
     [YOUR PHONE NUMBER]
-
 ---
