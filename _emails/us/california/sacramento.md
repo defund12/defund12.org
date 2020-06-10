@@ -59,9 +59,9 @@ body: |
 
   Please call budget meetings to begin the process of reducing spending on police and sheriff by 30% and to develop funding reduction strategies for the following 4 years. The Sacramento Police Department propagates inequality in our city. Many Black and  Brown Sacramento residents have stories of police harassment, and the police are most violent when it comes to our most vulnerable populations: trans folks and the homeless. Systems of oppression must be undone, and reallocating much of the budget for the Sacramento Police Department to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved. None of the CARES federal stimulus funds should be spent on any law enforcement function. It should go towards providing housing and public health initiatives.
 
-  Moving forward, please refuse political contributions from law enforcement unions. You are supposed to work for the people of Sacramento. We can not achieve the the drastic overhaul in policing while your hands are in their pockets.
+  Moving forward, please refuse political contributions from law enforcement unions. You are supposed to work for the people of Sacramento. We can not achieve the drastic overhaul in policing while your hands are in their pockets.
 
-  Lastly, please come together to elect a new District Attorney and Sheriff who are committed to racial justice, to ending mass incarceration and to stopping the killing of Black People. The current leaders have failed Black and Brown communities many times in the past and it's time for a change.
+  Lastly, please come together to elect a new District Attorney and Sheriff who are committed to racial justice, to ending mass incarceration and to stopping the killing of Black People. The current leaders have failed Black and Brown communities many times in the past, and it's time for a change.
 
   We are in the midst of widespread upheaval over the systemic violence of policing. I will no longer accept empty gestures and suggestions of “reform.” I am demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
 
