@@ -1,6 +1,6 @@
 ---
-title: Omaha, Nebrasks
-date: 2020-06-07 19:17:00 Z
+title: Omaha, Nebraska
+layout: email
 permalink: "/omaha"
 name: Letter to the Mayor and City Council
 city: Omaha
