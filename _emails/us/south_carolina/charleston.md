@@ -6,19 +6,19 @@ city: Charleston
 state: SC
 layout: email
 recipients:
-  - tecklenburgj@charleston-sc.gov
-  - delcioppom@charleston-sc.gov
-  - shealyk@charleston-sc.gov
-  - jasonsakrandistrict3@gmail.com
-  - mitchellro@charleston-sc.gov
-  - bradyk@charleston-sc.gov
-  - gregoriewd@charleston-sc.gov
-  - waringp@charleston-sc.gov
-  - mike@seekingslaw.com
-  - peter@charlestoncitycouncil9.org
-  - griffinh@charleston-sc.gov
-  - appelr@charleston-sc.gov
-  - jacksonc@charleston-sc.gov
+- tecklenburgj@charleston-sc.gov
+- delcioppom@charleston-sc.gov
+- shealyk@charleston-sc.gov
+- jasonsakrandistrict3@gmail.com
+- mitchellro@charleston-sc.gov
+- bradyk@charleston-sc.gov
+- gregoriewd@charleston-sc.gov
+- waringp@charleston-sc.gov
+- mike@seekingslaw.com
+- peter@charlestoncitycouncil9.org
+- griffinh@charleston-sc.gov
+- appelr@charleston-sc.gov
+- jacksonc@charleston-sc.gov
 subject: INSERT UNIQUE SUBJECT LINE
 body: |
   Dear Mayor Tecklenburg and Charleston City Council Members,
@@ -39,3 +39,4 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

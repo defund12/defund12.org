@@ -6,17 +6,16 @@ city: Williamsburg
 state: VA
 layout: email
 recipients:
-  - pfreiling@williamsburgva.gov
-  - dpons@williamsburgva.gov
-  - bramsey@williamsburgva.gov
-  - bzhang@williamsburgva.gov
-  - tmaslin@williamsburgva.gov
-  - atrivette@williamsburgva.gov
-  - cshelton@williamsburgva.gov
-  - council@williamsburgva.gov
+- pfreiling@williamsburgva.gov
+- dpons@williamsburgva.gov
+- bramsey@williamsburgva.gov
+- bzhang@williamsburgva.gov
+- tmaslin@williamsburgva.gov
+- atrivette@williamsburgva.gov
+- cshelton@williamsburgva.gov
+- council@williamsburgva.gov
 subject: INSERT UNIQUE SUBJECT LINE
-body:
-  "To Mayor Freiling, Vice Mayor Pons, City Manager Trivette, and Williamsburg
+body: "To Mayor Freiling, Vice Mayor Pons, City Manager Trivette, and Williamsburg
   City Council Members,  \n\nMy name is [YOUR NAME], and I am a resident of Williamsburg,
   VA. Since the end of May, our nation has been gripped by resolute protesters calling
   for meaningful and lasting change with regard to police behavior, and an end to
@@ -48,3 +47,4 @@ body:
   \ \nColonial Williamsburg Foundation - http://slaveryandremembrance.org/partners/partner/?id=P0000
   \ \nSlavery at W&M - https://www.wm.edu/sites/enslavedmemorial/slavery-at-wm/index.php"
 ---
+

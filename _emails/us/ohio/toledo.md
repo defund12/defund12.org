@@ -6,25 +6,24 @@ state: OH
 city: Toledo
 layout: email
 recipients:
-  - Wade.Kapszukiewicz@toledo.oh.gov
-  - Tyrone.Riley@toledo.oh.gov
-  - Yvonne.Harper@toledo.oh.gov
-  - Matt.Cherry@toledo.oh.gov
-  - Theresa.Gadus@toledo.oh.gov
-  - Sam.Melden@toledo.oh.gov
-  - Chris.Delaney@toledo.oh.gov
-  - Cecelia.Adams@toledo.oh.gov
-  - Gary.Johnson@toledo.oh.gov
-  - Nick.Komives@toledo.oh.gov
-  - Rob.Ludeman@toledo.oh.gov
-  - Katie.Moline@toledo.oh.gov
-  - Larry.Sykes@toledo.oh.gov
-  - Catherine.Crosby@toledo.oh.gov
-  - Karen.Poore@toledo.oh.gov
-  - Abby.Arnold@toledo.oh.gov
+- Wade.Kapszukiewicz@toledo.oh.gov
+- Tyrone.Riley@toledo.oh.gov
+- Yvonne.Harper@toledo.oh.gov
+- Matt.Cherry@toledo.oh.gov
+- Theresa.Gadus@toledo.oh.gov
+- Sam.Melden@toledo.oh.gov
+- Chris.Delaney@toledo.oh.gov
+- Cecelia.Adams@toledo.oh.gov
+- Gary.Johnson@toledo.oh.gov
+- Nick.Komives@toledo.oh.gov
+- Rob.Ludeman@toledo.oh.gov
+- Katie.Moline@toledo.oh.gov
+- Larry.Sykes@toledo.oh.gov
+- Catherine.Crosby@toledo.oh.gov
+- Karen.Poore@toledo.oh.gov
+- Abby.Arnold@toledo.oh.gov
 subject: Defund Toledo PD
-body:
-  "Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. \n\nThe City
+body: "Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. \n\nThe City
   of Toledo must do better by all of its residents. The current city budget affords
   the criminalization of Black communities while offering very little investment in
   them. In order for Toledo to be a more equitable city, I call on our leaders to
@@ -42,3 +41,4 @@ body:
   clarity to create a budget focused on building communities and creating positive
   change instead of investing in a racist and destructive institution. \n\nThank you,\n\n[NAME]"
 ---
+

@@ -6,24 +6,24 @@ state: MA
 city: Newton
 layout: email
 recipients:
-  - rfuller@newtonma.gov
-  - citycouncil@newtonma.gov
-  - acicconejr@newtonma.gov
-  - salbright@newtonma.gov
-  - akelley@newtonma.gov
-  - jkrintzman@newtonma.gov
-  - dcrossley@newtonma.gov
-  - vdanberg@newtonma.gov
-  - mlaredo@newtonma.gov
-  - rlipof@newtonma.gov
-  - aleary@newtonma.gov
-  - jauchincloss@newtonma.gov
-  - pwright@newtonma.gov
-  - lgentile@newtonma.gov
-  - adowns@newtonma.gov
-  - abowman@newtonma.gov
-  - rwgrossman@newtonma.gov
-  - dkalis@newtonma.gov
+- rfuller@newtonma.gov
+- citycouncil@newtonma.gov
+- acicconejr@newtonma.gov
+- salbright@newtonma.gov
+- akelley@newtonma.gov
+- jkrintzman@newtonma.gov
+- dcrossley@newtonma.gov
+- vdanberg@newtonma.gov
+- mlaredo@newtonma.gov
+- rlipof@newtonma.gov
+- aleary@newtonma.gov
+- jauchincloss@newtonma.gov
+- pwright@newtonma.gov
+- lgentile@newtonma.gov
+- adowns@newtonma.gov
+- abowman@newtonma.gov
+- rwgrossman@newtonma.gov
+- dkalis@newtonma.gov
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Fuller and City Council Members,
@@ -38,3 +38,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

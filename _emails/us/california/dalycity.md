@@ -6,8 +6,8 @@ state: CA
 city: Daly City
 layout: email
 recipients:
-  - citycouncil@dalycity.org
-  - citymanager@dalycity.org
+- citycouncil@dalycity.org
+- citymanager@dalycity.org
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   To our Daly City elected and appointed officials,
@@ -27,3 +27,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

@@ -1,22 +1,20 @@
 ---
 title: Union City, California
 permalink: "/unioncity"
-name:
-  Letter to Mayor Dutra, the Union City Council, Union City Manager, and Union
+name: Letter to Mayor Dutra, the Union City Council, Union City Manager, and Union
   City Police Chief
 city: Union City
 state: CA
 recipients:
-  - carold@unioncity.org
-  - emilyd@unioncity.org
-  - jaimep@unioncity.org
-  - patg@unioncity.org
-  - garys@unioncity.org
-  - joanm@unioncity.org
-  - jaredr@unioncity.org
+- carold@unioncity.org
+- emilyd@unioncity.org
+- jaimep@unioncity.org
+- patg@unioncity.org
+- garys@unioncity.org
+- joanm@unioncity.org
+- jaredr@unioncity.org
 subject: INSERT UNIQUE SUBJECT LINE
-body:
-  "To Mayor Dutra, the Union City Council, Union City Manager, and Union City
+body: "To Mayor Dutra, the Union City Council, Union City Manager, and Union City
   Police Chief,\n\nMy name is [YOUR NAME], and I am a resident of Union City. I am
   writing to demand that the City Council adopts a budget that prioritizes community
   wellbeing and redirects funding away from the police.  \n\nThis past week, we have
@@ -43,3 +41,4 @@ body:
   EMAIL]\t\n[YOUR PHONE NUMBER]"
 layout: email
 ---
+

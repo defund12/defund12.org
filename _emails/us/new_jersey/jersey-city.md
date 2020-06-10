@@ -5,17 +5,17 @@ name: Letter to Mayor and City Council
 city: Jersey City
 state: NJ
 recipients:
-  - info@stevenfulop.com
-  - Fulops@jcnj.org
-  - jwatterman@jcnj.org
-  - RLavarro@jcnj.org
-  - DRivera@jcnj.org
-  - DRidley@jcnj.org
-  - MPrinz-Arey@jcnj.org
-  - RBoggiano@jcnj.org
-  - YSaleh@jcnj.org
-  - JSolomon@jcnj.org
-  - JDRobinson@jcnj.org
+- info@stevenfulop.com
+- Fulops@jcnj.org
+- jwatterman@jcnj.org
+- RLavarro@jcnj.org
+- DRivera@jcnj.org
+- DRidley@jcnj.org
+- MPrinz-Arey@jcnj.org
+- RBoggiano@jcnj.org
+- YSaleh@jcnj.org
+- JSolomon@jcnj.org
+- JDRobinson@jcnj.org
 subject: Defund Jersey City PD
 body: |-
   Dear Mayor Fulop and Jersey City Council Members:
@@ -36,3 +36,4 @@ body: |-
   [YOUR EMAIL]
 layout: email
 ---
+

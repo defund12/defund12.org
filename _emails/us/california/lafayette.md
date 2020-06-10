@@ -6,11 +6,11 @@ state: LA
 city: Lafayette
 layout: email
 recipients:
-  - manderson@lovelafayette.org
-  - scandell@lovelafayette.org
-  - sbliss@lovelafayette.org
-  - CBurks@lovelafayette.org
-  - tgerringer@lovelafayette.org
+- manderson@lovelafayette.org
+- scandell@lovelafayette.org
+- sbliss@lovelafayette.org
+- CBurks@lovelafayette.org
+- tgerringer@lovelafayette.org
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   To Mayor Anderson and Lafayette City Council Members,
@@ -33,3 +33,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

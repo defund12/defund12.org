@@ -6,20 +6,20 @@ state: WI
 city: La Crosse
 layout: email
 recipients:
-  - kabatt@cityoflacrosse.org
-  - gaulm@cityoflacrosse.org
-  - happeld@cityoflacrosse.org
-  - richmonda@cityoflacrosse.org
-  - neumeisters@cityoflacrosse.org
-  - janssenb@cityoflactosse.org
-  - sleznikowl@cityoflacrosse.org
-  - weaverj@cityoflactosse.org
-  - kahlowc@cityoflacrosse.org
-  - padeskyg@cityoflacrosse.org
-  - olsonje@cityoflacrosse.org
-  - ostremp@cityoflacrosse.org
-  - medingerp@cityoflacrosse.org
-  - christiansr@cityoflacrosse.org
+- kabatt@cityoflacrosse.org
+- gaulm@cityoflacrosse.org
+- happeld@cityoflacrosse.org
+- richmonda@cityoflacrosse.org
+- neumeisters@cityoflacrosse.org
+- janssenb@cityoflactosse.org
+- sleznikowl@cityoflacrosse.org
+- weaverj@cityoflactosse.org
+- kahlowc@cityoflacrosse.org
+- padeskyg@cityoflacrosse.org
+- olsonje@cityoflacrosse.org
+- ostremp@cityoflacrosse.org
+- medingerp@cityoflacrosse.org
+- christiansr@cityoflacrosse.org
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor and City Council Members,
@@ -34,3 +34,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

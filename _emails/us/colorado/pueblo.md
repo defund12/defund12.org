@@ -6,16 +6,16 @@ city: Pueblo
 state: CO
 layout: email
 recipients:
-  - mayor@pueblo.us
-  - cityadmin@pueblo.us
-  - bobschilling68@gmail.com
-  - latencio@pueblo.us
-  - ebrown@pueblo.us
-  - raguilera@pueblo.us
-  - maliff@pueblo.us
-  - dflores@pueblo.us
-  - lovepueblo@yahoo.com
-  - policedept@pueblo.us
+- mayor@pueblo.us
+- cityadmin@pueblo.us
+- bobschilling68@gmail.com
+- latencio@pueblo.us
+- ebrown@pueblo.us
+- raguilera@pueblo.us
+- maliff@pueblo.us
+- dflores@pueblo.us
+- lovepueblo@yahoo.com
+- policedept@pueblo.us
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Gradisar and City Council Members,
@@ -35,3 +35,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

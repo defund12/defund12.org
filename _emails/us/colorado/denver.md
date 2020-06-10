@@ -2,31 +2,30 @@
 title: Denver, CO
 permalink: "/denver"
 redirect_from:
-  - "/denver217"
+- "/denver217"
 name: Letter to City Council
 city: Denver
 state: CO
 layout: email
 recipients:
-  - Governorpolis@state.co.us
-  - districtone@denvergov.org
-  - kevin.flynn@denvergov.org
-  - Jamie.Torres@denvergov.org
-  - kendra.black@denvergov.org
-  - DenverCouncil5@denvergov.org
-  - paul.kashmann@denvergov.org
-  - jolon.clark@denvergov.org
-  - christopher.herndon@denvergov.org
-  - Lisa.Calderon@denvergov.org
-  - chris.hinds@denvergov.org
-  - stacie.gilmore@denvergov.org
-  - kniechatlarge@denvergov.org
-  - ortegaatlarge@denvergov.org
-  - DPDRecruiting@Denvergov.org
-  - dsdinfo@denvergov.org
+- Governorpolis@state.co.us
+- districtone@denvergov.org
+- kevin.flynn@denvergov.org
+- Jamie.Torres@denvergov.org
+- kendra.black@denvergov.org
+- DenverCouncil5@denvergov.org
+- paul.kashmann@denvergov.org
+- jolon.clark@denvergov.org
+- christopher.herndon@denvergov.org
+- Lisa.Calderon@denvergov.org
+- chris.hinds@denvergov.org
+- stacie.gilmore@denvergov.org
+- kniechatlarge@denvergov.org
+- ortegaatlarge@denvergov.org
+- DPDRecruiting@Denvergov.org
+- dsdinfo@denvergov.org
 subject: INSERT UNIQUE SUBJECT LINE
-body:
-  "Dear Denver City Council,\n\nMy name is [YOUR NAME] and I am a resident of
+body: "Dear Denver City Council,\n\nMy name is [YOUR NAME] and I am a resident of
   [NEIGHBORHOOD/BOROUGH/CITY]. \n\nI am writing to demand a reallocation of funding
   from the Denver Police Department to social and public programming for our communities.
   With record unemployment and a seemingly intractable pattern of abuse and unequal
@@ -43,3 +42,4 @@ body:
   a city than policing.\n\nThank you for your time,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
   EMAIL]\n[YOUR PHONE NUMBER]"
 ---
+

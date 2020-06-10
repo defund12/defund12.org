@@ -6,17 +6,17 @@ city: Fort Collins
 state: CO
 layout: email
 recipients:
-  - wtroxell@fcgov.com
-  - kstephens@fcgov.com
-  - sgutowsky@fcgov.com
-  - jpignataro@fcgov.com
-  - ksummers@fcgov.com
-  - rcunniff@fcgov.com
-  - egorgol@fcgov.com
-  - dkennedy@fcgov.com
-  - gsawyer@fcgov.com
-  - datteberry@fcgov.com
-  - business@fcgov.com
+- wtroxell@fcgov.com
+- kstephens@fcgov.com
+- sgutowsky@fcgov.com
+- jpignataro@fcgov.com
+- ksummers@fcgov.com
+- rcunniff@fcgov.com
+- egorgol@fcgov.com
+- dkennedy@fcgov.com
+- gsawyer@fcgov.com
+- datteberry@fcgov.com
+- business@fcgov.com
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   To Mayor Troxell, the Fort Collins City Council, City Manager, and other city officials:
@@ -36,3 +36,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

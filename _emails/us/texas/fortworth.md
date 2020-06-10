@@ -6,15 +6,15 @@ state: TX
 city: Fort Worth
 layout: email
 recipients:
-  - betsy.price@fortworthtexas.gov
-  - carlos.flores@fortworthtexas.gov
-  - brian.byrd@fortworthtexas.gov
-  - cary.moon@fortworthtexas.gov
-  - gyna.bivens@fortworthtexas.gov
-  - jungus.jordan@fortworthtexas.gov
-  - dennis.shingleton@fortworthtexas.gov
-  - kelly.allengray@fortworthtexas.gov
-  - ann.zadeh@fortworthtexas.gov
+- betsy.price@fortworthtexas.gov
+- carlos.flores@fortworthtexas.gov
+- brian.byrd@fortworthtexas.gov
+- cary.moon@fortworthtexas.gov
+- gyna.bivens@fortworthtexas.gov
+- jungus.jordan@fortworthtexas.gov
+- dennis.shingleton@fortworthtexas.gov
+- kelly.allengray@fortworthtexas.gov
+- ann.zadeh@fortworthtexas.gov
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Hello,
@@ -46,3 +46,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
