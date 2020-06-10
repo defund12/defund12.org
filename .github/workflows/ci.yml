@@ -1,6 +1,9 @@
 name: CI/CD
 on:
   push:
+    branches:
+      - master
+      - gh-pages
   pull_request:
 
 jobs:
@@ -44,3 +47,9 @@ jobs:
       - uses: helaili/jekyll-action@2.0.1
         env:
           JEKYLL_PAT: ${{ secrets.DEFUND12_GITHUB_TOKEN }}
+      - name: Slack Notification
+        uses: pullreminders/slack-action@v1.0.9
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
+        with:
+          args: '{\"channel\":\"C0153GJV1GV\",\"text\":\"Deployed https://github.com/defund12/defund12.org/commit/${{ github.sha }}. See https://github.com/defund12/defund12.org/deployments for more details.\"}'
