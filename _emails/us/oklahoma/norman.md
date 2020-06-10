@@ -5,16 +5,16 @@ name: Letter to Mayor and City Council
 city: Norman
 state: OK
 recipients:
-- mayor@NormanOK.gov
-- ward1@NormanOK.gov
-- ward2@NormanOK.gov
-- ward3@NormanOK.gov
-- ward4@NormanOK.gov
-- ward5@NormanOK.gov
-- ward6@NormanOK.gov
-- ward7@NormanOK.gov
-- ward8@NormanOK.gov
-subject: 
+  - mayor@NormanOK.gov
+  - ward1@NormanOK.gov
+  - ward2@NormanOK.gov
+  - ward3@NormanOK.gov
+  - ward4@NormanOK.gov
+  - ward5@NormanOK.gov
+  - ward6@NormanOK.gov
+  - ward7@NormanOK.gov
+  - ward8@NormanOK.gov
+subject: Defund Norman PD
 body: |
   Dear Mayor Clark and Norman City Council,
 
@@ -33,4 +33,3 @@ body: |
   [YOUR PHONE NUMBER]
 layout: email
 ---
-

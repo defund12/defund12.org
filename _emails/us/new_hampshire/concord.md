@@ -6,24 +6,23 @@ state: NH
 city: Concord
 layout: email
 recipients:
-- jpbouley@comcast.net
-- brenttoddconcord@gmail.com
-- pierce4council@comcast.net
-- JKretovic@concordnh.gov
-- mhatfield@concordnh.gov
-- rwerner@concordnh.gov
-- LKenison@concordnh.gov
-- knyhan@concordnh.gov
-- gmatson@concordnh.gov
-- cwbouchard@concordnh.gov
-- zricehawkins@concordnh.gov
-- nfennessy@concordnh.gov
-- agradysexton@concordnh.gov
-- fkeach@concordnh.gov
-- chamby@comcast.net
-- finance@concordnh.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - jpbouley@comcast.net
+  - brenttoddconcord@gmail.com
+  - pierce4council@comcast.net
+  - JKretovic@concordnh.gov
+  - mhatfield@concordnh.gov
+  - rwerner@concordnh.gov
+  - LKenison@concordnh.gov
+  - knyhan@concordnh.gov
+  - gmatson@concordnh.gov
+  - cwbouchard@concordnh.gov
+  - zricehawkins@concordnh.gov
+  - nfennessy@concordnh.gov
+  - agradysexton@concordnh.gov
+  - fkeach@concordnh.gov
+  - chamby@comcast.net
+  - finance@concordnh.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Concord Government Officials,
 
@@ -41,4 +40,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

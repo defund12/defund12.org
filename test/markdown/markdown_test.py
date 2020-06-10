@@ -13,24 +13,31 @@ if ROOT_DIR is None:
   print('$DEFUND12_EMAIL_DIR is not set')
   sys.exit(1)
 
-ALLOWLISTED_KEYS = [
-  'title',
-  'permalink',
-  'name',
-  'state',
-  'city',
-  'layout',
-  'recipients',
-  'subject',
-  'body'
-]
+ALLOWLISTED_KEYS_REQUIRED = {
+  'title': str,
+  'permalink': str,
+  'name': str,
+  'state': str,
+  'city': str,
+  'layout': str,
+  'recipients': list,
+  'subject': str,
+  'body': str
+}
+
+ALLOWLISTED_KEYS_OPTIONAL = {
+  'cc': list,
+  'expiration_date': str,
+  'organization': str,
+  'redirection_from': list
+}
 
 def success(test_name):
   print('✅' + ' ' + test_name)
 
 def fail(error_message):
   print('❌' + ' ' + error_message)
-  sys.exit(1)
+  #sys.exit(1)
 
 def test_files_exist():
   files = [file for file in Path(ROOT_DIR).rglob('*.md')] 
@@ -39,14 +46,28 @@ def test_files_exist():
     fail('test received no files at at path %s' % ROOT_DIR)
 
 def validate_document_has_allowlisted_keys(doc, filepath):
-  keys_not_found = []
-  for allowlisted_key in ALLOWLISTED_KEYS:
-    if allowlisted_key not in doc:
-      keys_not_found.append(allowlisted_key)
+  required_keys_not_found = []
+  invalid_types = []
+
+  for key in ALLOWLISTED_KEYS_REQUIRED:
+    if key not in doc:
+      required_keys_not_found.append(key)
+    elif not isinstance(doc[key], ALLOWLISTED_KEYS_REQUIRED[key]):
+      fail('in file %s required key %s has invalid type %s should be %s' % (
+        filepath, key, type(doc[key]), ALLOWLISTED_KEYS_REQUIRED[key]))
       
-  if keys_not_found:
-    prefixed_keys_not_found = ["🔑 ~> " + key for key in keys_not_found] 
-    fail('in file %s keys not found:\n%s' % (filepath, "\n".join(prefixed_keys_not_found)))
+  if required_keys_not_found:
+    prefixed_required_keys_not_found = ["🔑 ~> " + key for key in required_keys_not_found] 
+    fail('in file %s required keys not found:\n%s' % (
+      filepath, "\n".join(prefixed_required_keys_not_found)))
+
+  for key in ALLOWLISTED_KEYS_OPTIONAL:
+    if key not in doc:
+      continue
+    elif not isinstance(doc[key], ALLOWLISTED_KEYS_OPTIONAL[key]):
+      fail('in file %s optional key %s has invalid type %s should be %s' % (
+        filepath, key, type(doc[key], ALLOWLISTED_KEYS_OPTIONAL[key])))
+
 
 def get_markdown_files():
   markdown_files = []
@@ -82,7 +103,8 @@ def test_files_contain_unique_permalinks():
         permalink = doc['permalink']
         if permalink in permalinks:
           index = permalinks.index(permalink)
-          fail('permalink %s in file %s already exists in file %s' % (permalink, filepath, filepaths[index]))
+          fail('permalink %s in file %s already exists in file %s' % (
+            permalink, filepath, filepaths[index]))
         permalinks.append(permalink)
         filepaths.append(filepath)
 

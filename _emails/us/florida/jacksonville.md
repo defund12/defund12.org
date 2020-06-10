@@ -6,28 +6,28 @@ city: Jacksonville
 state: FL
 layout: email
 recipients:
-- MayorLennyCurry@coj.net
-- JoyceMorgan@coj.net
-- Ferraro@coj.net
-- ABowman@coj.net
-- SWilson@coj.net
-- LCumber@coj.net
-- MBoylan@coj.net
-- RGaffney@coj.net
-- JPittman@coj.net
-- GarrettD@coj.net
-- BPJackson@coj.net
-- DBecton@coj.net
-- RandyWhite@coj.net
-- RDiamond@coj.net
-- RDeFoor@coj.net
-- TFreeman@coj.net
-- GerrieF@coj.net
-- RSalem@coj.net
-- THazouri@coj.net
-- MCarlucci@coj.net
-- SNewby@coj.net
-subject: 
+  - MayorLennyCurry@coj.net
+  - JoyceMorgan@coj.net
+  - Ferraro@coj.net
+  - ABowman@coj.net
+  - SWilson@coj.net
+  - LCumber@coj.net
+  - MBoylan@coj.net
+  - RGaffney@coj.net
+  - JPittman@coj.net
+  - GarrettD@coj.net
+  - BPJackson@coj.net
+  - DBecton@coj.net
+  - RandyWhite@coj.net
+  - RDiamond@coj.net
+  - RDeFoor@coj.net
+  - TFreeman@coj.net
+  - GerrieF@coj.net
+  - RSalem@coj.net
+  - THazouri@coj.net
+  - MCarlucci@coj.net
+  - SNewby@coj.net
+subject: Defund Jacksonville PD
 body: |-
   Dear Mayor and City Council,
 
@@ -62,4 +62,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

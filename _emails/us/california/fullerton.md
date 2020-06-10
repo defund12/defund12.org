@@ -5,13 +5,13 @@ name: Letter to City Council
 city: Fullerton
 state: CA
 recipients:
-- jenniferf@cityoffullerton.com
-- jflory@cityoffullerton.com
-- jesuss@cityoffullerton.com
-- bwwhitaker@live.com
-- ahmadz@cityoffullerton.com
-- evaa@cityoffullerton.com
-subject: 
+  - jenniferf@cityoffullerton.com
+  - jflory@cityoffullerton.com
+  - jesuss@cityoffullerton.com
+  - bwwhitaker@live.com
+  - ahmadz@cityoffullerton.com
+  - evaa@cityoffullerton.com
+subject: Defund Fullterton PD
 body: |
   Dear Fullerton City Council Members,
 
@@ -30,4 +30,3 @@ body: |
   [YOUR PHONE NUMBER]
 layout: email
 ---
-
