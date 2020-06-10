@@ -48,7 +48,7 @@ NOTE: All work that people are doing to further defund12.org is important and he
 
 ### Email templates
 
-Please review our email template style guide [here](EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Please review our [email template style guide](/docs/email_style.md).
 
 NOTE: If possible, limit a PR to one email template. This make it easier to process the history of what's entering the codebase, and takes some strain off the reviewer.
 
