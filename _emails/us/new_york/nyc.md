@@ -3,7 +3,6 @@ title: NYC
 permalink: "/nyc"
 name: Letter to Council Members
 state: NY
-country: United States
 city: New York
 layout: email
 recipients:

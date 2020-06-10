@@ -3,7 +3,6 @@ title: St. Paul, MN
 permalink: "/stpaul"
 name: Letter to Mayor and City Council
 state: MN
-country: United States
 city: St. Paul
 layout: email
 recipients:

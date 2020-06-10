@@ -3,7 +3,6 @@ title: Manchester, New Hampshire
 permalink: "/manchesternh"
 name: Letter to the Mayor
 state: NH
-country: United States
 city: Manchester
 layout: email
 recipients:

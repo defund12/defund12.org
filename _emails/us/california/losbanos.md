@@ -3,7 +3,6 @@ title: Los Banos, California
 permalink: "/losbanos"
 name: Letter to The Mayor and Council Members
 state: CA
-country: United States
 city: Los Banos
 layout: email
 recipients:

@@ -3,7 +3,6 @@ title: San Diego, CA
 permalink: "/sandiego"
 name: Letter to Mayor and Council Members
 state: CA
-country: United States
 city: San Diego
 layout: email
 recipients:

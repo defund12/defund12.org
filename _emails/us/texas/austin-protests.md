@@ -2,7 +2,6 @@
 title: Austin, TX
 permalink: "/austin-protests"
 name: To Mayor & City Council - Condemning Excessive Force
-country: United States
 state: TX
 city: Austin
 layout: email

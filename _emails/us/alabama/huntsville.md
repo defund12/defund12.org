@@ -2,7 +2,6 @@
 title: Huntsville, AL
 permalink: "/huntsville"
 name: Letter to Council Members and Chairman of Madison County
-country: United States
 city: Huntsville
 state: AL
 recipients:

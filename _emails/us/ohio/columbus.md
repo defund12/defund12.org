@@ -3,7 +3,6 @@ title: Columbus, OH
 permalink: "/columbus"
 name: Letter to Andrew Ginther and City Council
 state: OH
-country: United States
 city: Columbus
 layout: email
 recipients:

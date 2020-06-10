@@ -3,7 +3,6 @@ title: Portland, Oregon - Police
 permalink: "/portland-police"
 name: Letter to the Mayor, Commissioner, and City Auditor on Police Tactics
 state: OR
-country: United States
 city: Portland
 layout: email
 recipients:

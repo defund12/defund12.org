@@ -1,8 +1,7 @@
 ﻿import * as React from 'react';
 
 export interface EmailListItemProps {
-	country: string,
-	state: string,
+		state: string,
 	city: string,
 	name: string,
 	permalink: string,

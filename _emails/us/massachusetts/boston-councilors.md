@@ -2,7 +2,6 @@
 title: Boston, MA
 permalink: "/boston-councilors"
 name: Letter to City Councilors
-country: United States
 state: MA
 city: Boston
 layout: email

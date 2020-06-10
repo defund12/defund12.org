@@ -2,7 +2,6 @@
 title: San Francisco, California
 permalink: "/sanfrancisco"
 name: Letter to the Mayor, Board of Supervisors, and Elected Officers
-country: United States
 city: San Francisco
 state: CA
 recipients:

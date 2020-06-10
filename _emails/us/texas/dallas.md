@@ -3,7 +3,6 @@ title: Dallas, TX
 permalink: "/dallas"
 name: Letter to Eric Johnson and City Council
 state: TX
-country: United States
 city: Dallas
 layout: email
 recipients:

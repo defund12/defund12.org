@@ -2,7 +2,6 @@
 title: Chicago, IL
 permalink: "/chicago"
 name: Letter to Council Members
-country: United States
 city: Chicago
 state: IL
 layout: email

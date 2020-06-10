@@ -3,7 +3,6 @@ title: Raleigh, NC
 permalink: "/raleigh"
 name: Letter to Mayor and City Council
 state: NC
-country: United States
 city: Raleigh
 layout: email
 recipients:

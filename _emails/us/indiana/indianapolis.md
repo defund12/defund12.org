@@ -3,7 +3,6 @@ title: Indianapolis, Indiana
 permalink: "/indianapolis"
 name: Letter to City Councilors
 state: IN
-country: United States
 city: Indianapolis
 layout: email
 recipients:

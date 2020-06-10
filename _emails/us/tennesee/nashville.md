@@ -2,7 +2,6 @@
 title: Nashville, TN
 permalink: "/nashville"
 name: Letter to Mayor and Metropolitan Council
-country: United States
 city: Nashville
 state: TN
 layout: email

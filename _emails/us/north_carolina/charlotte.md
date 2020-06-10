@@ -2,7 +2,6 @@
 title: Charlotte, NC
 permalink: "/charlotte"
 name: Letter to Council Members, Mayor, and City Manager
-country: United States
 city: Charlotte
 state: NC
 recipients:

@@ -2,7 +2,6 @@
 title: Los Angeles, California
 permalink: "/la"
 name: Letter to Council Members
-country: United States
 city: Los Angeles
 state: CA
 recipients:

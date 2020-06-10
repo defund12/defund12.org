@@ -2,7 +2,6 @@
 title: Fremont, California
 permalink: "/fremont-ca"
 name: Letter to the Mayor, City Council, City Manager, and Police Chief
-country: United States
 city: Fremont
 state: CA
 recipients:

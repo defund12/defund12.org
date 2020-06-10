@@ -2,7 +2,6 @@
 title: Austin, TX
 permalink: "/austin"
 name: Letter to Steve Adler and City Council
-country: United States
 state: TX
 city: Austin
 layout: email

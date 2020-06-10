@@ -3,7 +3,6 @@ title: Louisville, KY
 permalink: "/louisville"
 name: Letter to Mayor & Council - Demand Defunding
 state: KY
-country: United States
 city: Louisville
 layout: email
 recipients:

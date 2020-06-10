@@ -2,7 +2,6 @@
 title: Chapel Hill, NC
 permalink: "/chapelhill"
 name: Letter to Mayor and City Council
-country: United States
 state: NC
 city: Chapel Hill
 layout: email

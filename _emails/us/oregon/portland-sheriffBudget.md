@@ -2,7 +2,6 @@
 title: Portland, Oregon - Sheriff
 permalink: "/portland-sheriff"
 name: Letter to Multnomah County Commissioners
-country: United States
 state: OR
 city: Portland
 layout: email
