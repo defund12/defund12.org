@@ -19,6 +19,7 @@ recipients:
 - blake.plavchak@pittsburghpa.gov
 - Kim.Salinetro@pittsburghpa.gov,
 - sally.stadelman@pittsburghpa.gov
+- brosha.tkacheva@pittsburghpa.gov
 body: |
   Hello,
 
@@ -34,7 +35,7 @@ body: |
 
   The Neighborhood and Community Development fund was only allocated $7,502,080 for 2020. That is ~6.8% of the 2020 Capital Budget. This is not enough. I demand you take action to re-allocate money away from the Pittsburgh Police and back into community development that includes affordable housing and reparations for Black citizens. Both the state and the Pittsburgh Police owe the Black community a great debt.
 
-  It is clear that Pittsburgh Police funds are not being appropriately used to maintain safety and freedom on the streets of Pittsburgh. This is not only obvious by the City Budget, it is obvious by how Pittsburghers are treated by the police. Black Pittsburghers are disproportionately subject to this violence. Antwon Rose was shot dead in our city by a police officer and we will always remember. Elijah Brewer was shot dead in our city by a police officer and we will always remember.
+  It is clear that Pittsburgh Police funds are not being appropriately used to maintain safety and freedom on the streets of Pittsburgh. This is not only obvious by the City Budget, it is obvious by how Pittsburghers are treated by the police. Black Pittsburghers are disproportionately subject to this violence. Antwon Rose was shot dead in our region by a police officer and we will always remember. Elijah Brewer was shot dead in our city by a police officer and we will always remember.
 
   Sincerely,
 

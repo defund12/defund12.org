@@ -2,7 +2,7 @@
 title: New Orleans, LA
 permalink: "/nola"
 name: Letter to Mayor, City Council and Police Chief
-city: New Orelans
+city: New Orleans
 state: LA
 recipients:
 - mayor@nola.gov

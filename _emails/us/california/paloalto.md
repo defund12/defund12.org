@@ -25,7 +25,7 @@ body: |-
 
   We could be spending this money on resources that better serve the community, like affordable housing, mental health resources, and the library system just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.
 
-  I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Palo Alto residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the PAPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+  I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of impacted Palo Alto residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the PAPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
 
   As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
 
