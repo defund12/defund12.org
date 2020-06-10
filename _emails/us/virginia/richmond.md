@@ -25,14 +25,14 @@ body: "My name is [YOUR NAME], and I am a resident of Richmond. This past week, 
   has been a waste of our resources. Last year, the RPD’s total general fund was $95,403,743
   while Housing and Community Development’s was $3,296,705. While we’ve been spending
   extraordinary amounts on policing, we have not seen improvements to safety, homelessness,
-  mental health, or affordability in our city. Instead, we see wasteful and harmful actions of
-  our police.\n\nI call on you to meaningfully restrict the RPD budget and instead
-  use those extraordinary resources towards solving homelessness, which is felt most
-  by our Black neighbors and veterans. Social programs and education generally have
-  been shown to be much more effective at promoting safety and social equity than
-  policing and incarceration.\n\nWe can be a beacon for other cities to follow if
-  only we have the courage to change. Can I count on you to consider an alternative
-  budget that puts a focus on social service programs?\n\nSincerely,  \n\n[YOUR NAME]\n[YOUR
-  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
+  mental health, or affordability in our city. Instead, we see wasteful and harmful
+  actions of our police.\n\nI call on you to meaningfully restrict the RPD budget
+  and instead use those extraordinary resources towards solving homelessness, which
+  is felt most by our Black neighbors and veterans. Social programs and education
+  generally have been shown to be much more effective at promoting safety and social
+  equity than policing and incarceration.\n\nWe can be a beacon for other cities to
+  follow if only we have the courage to change. Can I count on you to consider an
+  alternative budget that puts a focus on social service programs?\n\nSincerely,  \n\n[YOUR
+  NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 ---
 
