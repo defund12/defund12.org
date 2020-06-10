@@ -1,17 +1,17 @@
 ---
-title: "Lawrence, Kansas"
+title: Lawrence, Kansas
 permalink: "/lawrence"
-name: "Letter to the Mayor, City Commissioners, and City Manager"
-state: "KS"
-city: "Lawrence"
-layout: "email"
+name: Letter to the Mayor, City Commissioners, and City Manager
+state: KS
+city: Lawrence
+layout: email
 recipients:
-- "jananda@lawrenceks.org"
-- "craigowens@lawrenceks.org"
-- "bfinkeldei@lawrenceks.org"
-- "cshipley@lawrenceks.org"
-- "sboley@lawrenceks.org"
-- "llarsen@lawrenceks.org"
+- jananda@lawrenceks.org
+- craigowens@lawrenceks.org
+- bfinkeldei@lawrenceks.org
+- cshipley@lawrenceks.org
+- sboley@lawrenceks.org
+- llarsen@lawrenceks.org
 subject: "[INSERT UNIQUE SUBJECT]"
 body: |-
   Dear Mayor Ananda, Lawrence City Commissioners, and City Manager Craig Owens,
