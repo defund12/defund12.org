@@ -2,6 +2,9 @@
 
 [Defund12.org](https://defund12.org/) provides shareable links to email the government officials in your community and demand action towards defunding police departments in favor of education, social services, and efforts towards the dismantling of racial inequality.
 
+Spread the word!
+📷 [Instagram](https://www.instagram.com/defund12)
+
 ## Join the conversation
 
 Want to write an email for your city or help in some other way? Awesome! Check out our [Contributing Guide](CONTRIBUTING.md).
