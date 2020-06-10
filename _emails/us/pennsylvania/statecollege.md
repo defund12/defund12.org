@@ -5,15 +5,15 @@ name: Letter to Council Members and Mayor
 city: State College
 state: PA
 recipients:
-  - mayor@statecollegepa.us
-  - boro@statecollegepa.us
-  - jbarlow@statecollegepa.us
-  - dbehring@statecollegepa.us
-  - jengeman@statecollegepa.us
-  - pmarshall@statecollegepa.us
-  - tlafer@statecollegepa.us
-  - emyers@statecollegepa.us
-  - dmurphy@statecollegepa.us
+- mayor@statecollegepa.us
+- boro@statecollegepa.us
+- jbarlow@statecollegepa.us
+- dbehring@statecollegepa.us
+- jengeman@statecollegepa.us
+- pmarshall@statecollegepa.us
+- tlafer@statecollegepa.us
+- emyers@statecollegepa.us
+- dmurphy@statecollegepa.us
 body: |
   Dear Mayor and Borough Council,
 
@@ -33,3 +33,4 @@ body: |
   [YOUR PHONE NUMBER]
 layout: email
 ---
+
