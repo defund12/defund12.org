@@ -20,7 +20,8 @@ recipients:
 - jhanson@burlingtonvt.gov
 - fpaulino@burlingtonvt.gov
 - jshannon@burlingtonvt.gov
-subject: [INSERT UNIQUE SUBJECT LINE]
+subject:
+- INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Weinberger and City Council members,
 
@@ -36,3 +37,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
