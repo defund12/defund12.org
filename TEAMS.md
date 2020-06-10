@@ -50,7 +50,7 @@ This team will pick up issues that have the <kbd>ready-for-pr</kbd> label. Issue
 
 ### Conventions to follow
 
-- Please refer to the emails [README](_emails/README.me) with more information about email template conventions.
+- Please refer to the emails [README](_emails/README.md) with more information about email template conventions.
 
 ## Join the conversation
 
