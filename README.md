@@ -4,7 +4,7 @@
 
 ## Join the conversation
 
-We are dealing with a high volume of requests, but we are doing our best to stay up to date with our community on Discord. Join the conversation [here](https://discord.gg/YMxndzd).
+Want to write an email for your city or help in some other way? Awesome! Check out our [Contributing Guide](CONTRIBUTING.md).
 
 ## Development
 
@@ -35,22 +35,6 @@ To build the application:
 
 #### Markdown Tests
 [/test/markdown/README.md](./test/markdown/README.md)
-
-## Contributions guidelines
-
-Contributions to the repository are greatly welcomed.
-
-### Team Organization
-
-The teams and responsibilities/definitions are closely related to how issue(email) creation, review, and site additions happen. Please review team definitions on the [contributing readme](CONTRIBUTING.md).
-
-NOTE: All work that people are doing to further defund12.org is important and helpful. However in order to keep things moving efficently, we have defined teams and responsibilities so that we can move forward together in an efficent manner.
-
-### Email templates
-
-Please review our [email template style guide](/docs/email_style.md).
-
-NOTE: If possible, limit a PR to one email template. This make it easier to process the history of what's entering the codebase, and takes some strain off the reviewer.
 
 Thank you so much,\
 defund12.org team
