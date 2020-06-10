@@ -7,6 +7,13 @@ state: "CA"
 layout: "email"
 recipients:
 - "Publiccomment@anaheim.net"
+- "hsidhu@anaheim.net"
+- "sfaessel@anaheim.net"
+- "dbarnes@anaheim.net"
+- "jbrandman@anaheim.net"
+- "jmoreno@anaheim.net"
+- "lkring@anaheim.net"
+- "toneil@anaheim.net"
 subject: "[Add Unique Subject Line Here!]"
 body: |-
     To the Anaheim City Council:
