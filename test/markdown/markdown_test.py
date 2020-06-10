@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 import io
 import numpy as np
 import os
@@ -6,7 +8,10 @@ import yaml
 
 from pathlib import Path
 
-ROOT_DIR = '/email_markdown_files/us'
+ROOT_DIR = os.environ.get('DEFUND12_EMAIL_DIR')
+if ROOT_DIR is None:
+  print('$DEFUND12_EMAIL_DIR is not set')
+  sys.exit(1)
 
 ALLOWLISTED_KEYS = [
   'title',
