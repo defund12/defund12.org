@@ -30,7 +30,11 @@ To build the application:
 
 ### Running tests
 
+#### Js Tests
 1. `yarn install` && `yarn test`
+
+#### Markdown Tests
+[/test/markdown/README.md](./test/markdown/README.md)
 
 ## Contributions guidelines
 
