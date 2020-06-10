@@ -5,28 +5,27 @@ name: Letter to City & State Officials
 city: Wilmington
 state: DE
 recipients:
-- mspurzycki@WilmingtonDE.gov
-- jcarney@state.de.us
-- MMeyer@nccde.org
-- jtogden@WilmingtonDE.gov
-- dsophrin@WilmingtonDE.gov
-- mgjopson@WilmingtonDE.gov
-- alance@WilmingtonDE.gov
-- karen.hartley-nagle@newcastlede.gov
-- kenneth.woods@newcastlede.gov
-- dee.durham@newcastlede.gov
-- janet.kilpatrick@newcastlede.gov
-- penrose.hollins@newcastlede.gov
-- elisa.diller@newcastlede.gov
-- david.carter@newcastlede.gov
-- george.smiley@newcastlede.gov
-- john.cartier@newcastlede.gov
-- timothy.sheldon@newcastlede.gov
-- jea.street@newcastlede.gov
-- david.tackett@newcastlede.gov
-- james.bell@newcastlede.gov
-subject:
-- Defund Wilmington Police Department
+  - mspurzycki@WilmingtonDE.gov
+  - jcarney@state.de.us
+  - MMeyer@nccde.org
+  - jtogden@WilmingtonDE.gov
+  - dsophrin@WilmingtonDE.gov
+  - mgjopson@WilmingtonDE.gov
+  - alance@WilmingtonDE.gov
+  - karen.hartley-nagle@newcastlede.gov
+  - kenneth.woods@newcastlede.gov
+  - dee.durham@newcastlede.gov
+  - janet.kilpatrick@newcastlede.gov
+  - penrose.hollins@newcastlede.gov
+  - elisa.diller@newcastlede.gov
+  - david.carter@newcastlede.gov
+  - george.smiley@newcastlede.gov
+  - john.cartier@newcastlede.gov
+  - timothy.sheldon@newcastlede.gov
+  - jea.street@newcastlede.gov
+  - david.tackett@newcastlede.gov
+  - james.bell@newcastlede.gov
+subject: Defund Wilmington Police Department
 body: |-
   Dear Council Members of the City of Wilmington,
 
@@ -46,4 +45,3 @@ body: |-
   [YOUR PHONE NUMBER]
 layout: email
 ---
-

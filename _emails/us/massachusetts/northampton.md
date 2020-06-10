@@ -6,19 +6,18 @@ state: MA
 city: Northampton
 layout: email
 recipients:
-- glsciarra@northamptonma.gov
-- bdwight@comcast.net
-- mquinlanjr@northamptonma.gov
-- kfoster@northamptonma.gov
-- jimnashcitycouncil@gmail.com
-- jthorpe@northamptonma.gov
-- ajarrett@northamptonma.gov
-- mlabargeward6@aol.com
-- rmaiore@northamptonma.gov
-- lkrutzler@northamptonma.gov
-- mayor@northamptonma.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - glsciarra@northamptonma.gov
+  - bdwight@comcast.net
+  - mquinlanjr@northamptonma.gov
+  - kfoster@northamptonma.gov
+  - jimnashcitycouncil@gmail.com
+  - jthorpe@northamptonma.gov
+  - ajarrett@northamptonma.gov
+  - mlabargeward6@aol.com
+  - rmaiore@northamptonma.gov
+  - lkrutzler@northamptonma.gov
+  - mayor@northamptonma.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Narkiewicz and City Councilors,
 
@@ -59,4 +58,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

@@ -6,15 +6,14 @@ state: FL
 city: Orlando
 layout: email
 recipients:
-- buddy.dyer@orlando.gov
-- tony.ortiz@orlando.gov
-- jim.gray@orlando.gov
-- robert.stuart@orlando.gov
-- regina.hill@orlando.gov
-- patty.sheehan@orlando.gov
-- bakari.burns@orlando.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - buddy.dyer@orlando.gov
+  - tony.ortiz@orlando.gov
+  - jim.gray@orlando.gov
+  - robert.stuart@orlando.gov
+  - regina.hill@orlando.gov
+  - patty.sheehan@orlando.gov
+  - bakari.burns@orlando.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |
   Dear Orlando City Council Members,
 
@@ -33,4 +32,3 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

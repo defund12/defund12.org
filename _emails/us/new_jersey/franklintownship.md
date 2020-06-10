@@ -6,20 +6,19 @@ state: NJ
 city: Franklin Township, Somerset County
 layout: email
 recipients:
-- Mayor.Kramer@franklinnj.gov
-- Councilman.Onyejiaka@franklinnj.gov
-- Councilman.Ram@franklinnj.gov
-- Councilwoman.Francois@franklinnj.gov
-- Councilwoman.Pruitt@franklinnj.gov
-- Councilman.Chase@franklinnj.gov
-- Councilman.Galtieri@franklinnj.gov
-- Councilman.Wright@franklinnj.gov
-- Councilman.Vassanella@franklinnj.gov
-- lrainone@njrcmlaw.com
-- annmarie.mccarthy@franklinnj.gov
-- Robert.Vornlocker@franklinnj.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - Mayor.Kramer@franklinnj.gov
+  - Councilman.Onyejiaka@franklinnj.gov
+  - Councilman.Ram@franklinnj.gov
+  - Councilwoman.Francois@franklinnj.gov
+  - Councilwoman.Pruitt@franklinnj.gov
+  - Councilman.Chase@franklinnj.gov
+  - Councilman.Galtieri@franklinnj.gov
+  - Councilman.Wright@franklinnj.gov
+  - Councilman.Vassanella@franklinnj.gov
+  - lrainone@njrcmlaw.com
+  - annmarie.mccarthy@franklinnj.gov
+  - Robert.Vornlocker@franklinnj.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Kramer and Councilmembers:
 
@@ -35,4 +34,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

@@ -5,29 +5,29 @@ name: Letter to City Managers and Council Members
 city: Santa Monica
 state: CA
 recipients:
-- info@santamonica.gov
-- rick.cole@smgov.net
-- manager@smgov.net
-- Katie.Lichtig@smgov.net
-- Anuj.Gupta@smgov.net
-- Christopher.J.Smith@smgov.net
-- debbie.lee@smgov.net
-- Erin.Taylor@smgov.net
-- Constance.Farrell@smgov.net
-- russ.maloney@smgov.net
-- Tim.Dodd@smgov.net
-- Lindsay.Barker@smgov.net
-- julie.rusk@smgov.net
-- alisa.orduna@smgov.net
-- council@smgov.net
-- gleam.davis@smgov.net
-- terry.oday@smgov.net
-- anamaria.jara@smgov.net
-- kevin.mckeown@smgov.net
-- sue.himmelrich@smgov.net
-- greg.morena@smgov.net
-- ted.winterer@smgov.net
-subject: 
+  - info@santamonica.gov
+  - rick.cole@smgov.net
+  - manager@smgov.net
+  - Katie.Lichtig@smgov.net
+  - Anuj.Gupta@smgov.net
+  - Christopher.J.Smith@smgov.net
+  - debbie.lee@smgov.net
+  - Erin.Taylor@smgov.net
+  - Constance.Farrell@smgov.net
+  - russ.maloney@smgov.net
+  - Tim.Dodd@smgov.net
+  - Lindsay.Barker@smgov.net
+  - julie.rusk@smgov.net
+  - alisa.orduna@smgov.net
+  - council@smgov.net
+  - gleam.davis@smgov.net
+  - terry.oday@smgov.net
+  - anamaria.jara@smgov.net
+  - kevin.mckeown@smgov.net
+  - sue.himmelrich@smgov.net
+  - greg.morena@smgov.net
+  - ted.winterer@smgov.net
+subject: Defund Santa Monica PD
 body: |-
   Dear Santa Monica City Managers and Council Members:
 
@@ -49,4 +49,3 @@ body: |-
   [YOUR EMAIL]
 layout: email
 ---
-

@@ -6,19 +6,18 @@ state: OH
 city: Cincinnati
 layout: email
 recipients:
-- mayor.cranley@cincinnati-oh.gov
-- CityCouncil@cincinnati-oh.gov
-- christopher.smitherman@cincinnati-oh.gov
-- chris.seelbach@cincinnati-oh.gov
-- greg.landsman@cincinnati-oh.gov
-- jan-michele.kearney@cincinnati-oh.gov
-- david.mann@cincinnati-oh.gov
-- jeff.pastor@cincinnati-oh.gov
-- pg.sittenfeld@cincinnati-oh.gov
-- betsy.sundermann@cincinnati-oh.gov
-- wendell.young@cincinnati-oh.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - mayor.cranley@cincinnati-oh.gov
+  - CityCouncil@cincinnati-oh.gov
+  - christopher.smitherman@cincinnati-oh.gov
+  - chris.seelbach@cincinnati-oh.gov
+  - greg.landsman@cincinnati-oh.gov
+  - jan-michele.kearney@cincinnati-oh.gov
+  - david.mann@cincinnati-oh.gov
+  - jeff.pastor@cincinnati-oh.gov
+  - pg.sittenfeld@cincinnati-oh.gov
+  - betsy.sundermann@cincinnati-oh.gov
+  - wendell.young@cincinnati-oh.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Cranley and Cincinnati City Council,
 
@@ -64,4 +63,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-
