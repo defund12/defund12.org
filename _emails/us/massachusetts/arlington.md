@@ -1,6 +1,6 @@
 ---
 title: Arlington, MA
-permalink: "/arlington"
+permalink: "/arlington-ma"
 name: Letter to Board Members and Town Moderator
 city: Arlington
 state: MA
