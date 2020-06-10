@@ -13,7 +13,7 @@ jobs:
       - run: echo ${{ github.event.head_commit.messasge }}
       - run: echo ${{ github.event_name }}
       - run: echo ${{ github.event_path }}
-      - run: echo "$GITHUB_CONTEXT"
+      - run: echo ${GITHUB_CONTEXT}
       - uses: actions/checkout@v2
       - uses: stefanoeb/eslint-action@1.0.2
       - name: Deploy failed
@@ -22,7 +22,7 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
         with:
-          args: '{\"channel\":\"C0153GJV1GV\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
+          args: '{\"channel\":\"C014Q9PLEMC\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
   js-tests:
     runs-on: ubuntu-latest
     steps:
@@ -37,7 +37,7 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
         with:
-          args: '{\"channel\":\"C0153GJV1GV\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
+          args: '{\"channel\":\"C014Q9PLEMC\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
   py-markdown-tests:
     runs-on: ubuntu-latest
     steps:
@@ -56,7 +56,7 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
         with:
-          args: '{\"channel\":\"C0153GJV1GV\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
+          args: '{\"channel\":\"C014Q9PLEMC\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
   build-and-deploy:
     needs: [js-lint, js-tests, py-markdown-tests]
     if: github.ref == 'refs/heads/master'
@@ -85,4 +85,4 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
         with:
-          args: '{\"channel\":\"C0153GJV1GV\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
+          args: '{\"channel\":\"C014Q9PLEMC\",\"text\":\":warning: Failed to deploy latest commit on `master` https://github.com/defund12/defund12.org/commit/${{ github.sha }} due to issues with `${{ github.job }}` job\"}'
