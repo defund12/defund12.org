@@ -21,7 +21,7 @@ body: "To the Buffalo Common Council and Office of Mayor Byron Brown,\n\nMy name
   restrict the Buffalo Police Department's $121.9 million dollar budget immediately.
   On June 5, Buffalo Police officers pushed a non-violent 75 year old man to the ground
   while he was exercising his first amendment rights. In case you have not seen the
-  footage, it is linked below.\n\nI am calling for these officers to be charged and
+  footage, it is linked below.\n\nI am calling for these officers to be
   removed from service, effective immediately. I am calling for Mayor Brown and the
   Buffalo Common Council to have an emergency meeting regarding this matter. I am
   asking that an action plan for sustainable, long-term change is created and upheld.\n\nRecreational

@@ -25,8 +25,7 @@ body: "My name is [YOUR NAME], and I am a resident of Richmond. This past week, 
   has been a waste of our resources. Last year, the RPD’s total general fund was $95,403,743
   while Housing and Community Development’s was $3,296,705. While we’ve been spending
   extraordinary amounts on policing, we have not seen improvements to safety, homelessness,
-  mental health, or affordability in our city. For example, the Housing & Community
-  Development budget for 2019 was Instead, we see wasteful and harmful actions of
+  mental health, or affordability in our city. Instead, we see wasteful and harmful actions of
   our police.\n\nI call on you to meaningfully restrict the RPD budget and instead
   use those extraordinary resources towards solving homelessness, which is felt most
   by our Black neighbors and veterans. Social programs and education generally have
