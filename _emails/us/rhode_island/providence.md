@@ -4,7 +4,6 @@ permalink: "/providence"
 name: Letter to Governor, Mayor, and City Council
 city: Providence
 state: RI
-layout: email
 recipients:
 - governor@governor.ri.gov
 - Mayor@providenceri.gov
@@ -26,7 +25,7 @@ subject: Defund the Police Department
 body: |
   Hello,
 
-  My name is [NAME] and I am a resident of Providence. I am writing to demand that Governor Raimondo, Mayor Elorza, and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe, and that they perpetuate the oppression of residents who are people of color, undocumented, mentally ill, disabled, and LGBTQ.
+  My name is [NAME] and I am a resident of Providence. I am writing to demand that Governor Raimondo, Mayor Elorza, and the members of the City Council do everything in their power to adopt a budget that redirects funds from the Police Department towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe, and that they perpetuate the oppression of residents who are people of color, undocumented, mentally ill, disabled, and LGBTQ.
 
   While Providence has received a $700,000 grant to formulate a Behavioral Health Response Team, that amount is a mere drop in the bucket of the nearly $90 million budgeted for Police in 2021. The current budget proposal has allocated $154,450 on guns and ammunition, $1,461,620 for 50 new police recruits, not to mention $963,626 that is allocated for uniforms and "wearing apparel,” presumably including more of the riot gear that is currently being used to suppress peaceful protests. Imagine how much those dollars could accomplish when used to fund low-income and public housing, education, resources for formerly incarcerated individuals, and public transportation, as Direct Action for Rights and Equality has demanded.
 
@@ -37,5 +36,6 @@ body: |
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 

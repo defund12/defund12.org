@@ -24,8 +24,7 @@ recipients:
 - ortegaatlarge@denvergov.org
 - DPDRecruiting@Denvergov.org
 - dsdinfo@denvergov.org
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: "Dear Denver City Council,\n\nMy name is [YOUR NAME] and I am a resident of
   [NEIGHBORHOOD/BOROUGH/CITY]. \n\nI am writing to demand a reallocation of funding
   from the Denver Police Department to social and public programming for our communities.
