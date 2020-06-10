@@ -16,11 +16,11 @@ recipients:
 - VMendez@miamigov.com
 subject: Miami Demands a People's Budget
 body: |-
-  My name is [NAME], I am a resident of Miami. I am writing to demand that the City of Miami adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police. I will not be content with “reform;” I am demanding that real change be made to the way this city allocates its resources.
+  My name is [NAME], I am a resident of Miami. I am writing to demand that the City of Miami adopt a budget that prioritizes community wellbeing and redirects funding away from the police. I will not be content with “reform;” I am demanding that real change be made to the way this city allocates its resources.
 
   The 2019-2020 FY Budget allocated $265,621,000 for the operating budget of the police, amounting to 32.8% of the total operating budget for all City departments. That number is 30 times the amount allocated to the Neighborhood Enhancement Team, 109 times the amount allocated to Housing and Community Development, 522 times the amount allocated to Equal Opportunity and Diversity Programs, 10 times the amount allocated for Resilience and Public Works, 44 times the amount allocated to Human Services, 319 times the amount allocated to Resilience and Sustainability.
 
-  I demand that the City of Miami’s elected officials meaningfully defund the Miami Police Department. I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Miamians during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+  I demand that the City of Miami’s elected officials meaningfully defund the Miami Police Department. I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of impacted Miamians during this trying and uncertain time. I demand a budget that supports community wellbeing, rather than empowering the police forces that tear them apart.
 
   What we need are more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
 
