@@ -39,11 +39,12 @@ body: |-
 
     The funding provided by the passing of Item 7 could have been diverted into taking care of our community, such as providing funds for housing, education, healthcare, parks and recreation, or any other department that does not shoot its citizens. After hearing the pleas and the experiences that plague Austin’s Black community, you still chose to vote in favor of a system that is systematically racist. As recommended by the Austin Justice Coalition, please consider cutting the following programs that overtly perpetuates racial profiling and a culture of violence:
 
-    Funding for new officers and the new cadet class,
-    Weapons used against protesters,
-    The Fusion Center,
-    Surveillance,
-    Driver License readers, and the AISD police force.
+    - Funding for new officers and the new cadet class
+    - Weapons used against protesters
+    - The Fusion Center
+    - Surveillance
+    - Driver License readers, and the AISD police force
+    
     Lastly, please reconsider "8 Can't Wait" before you vote on June 11. Under "8 Can't Wait," the reforms would increase the funding, tools, and technologies for the police. Moreover, the reforms proposed by "8 Can't Wait" are futile due to the lack of police accountability. If you do more research on the campaign, you will find that many cities already have these reforms in place, including Austin, and yet police brutality is still a rampant human rights issue. For example, most of these reforms were already in place in Minneapolis, the city where George Floyd was murdered by police. Reform is not enough. "8 Can't Wait" lacks foresight and is a band-aid solution. The police department needs to be abolished.
     A better world is possible. A better Austin is possible. Will you help us get there?
 
