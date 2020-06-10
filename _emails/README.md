@@ -26,7 +26,7 @@ Example template:
 ---
 title: <city, state_initials>
 layout: email
-permalink: "/<template_address>"
+permalink: "/<link_address>"
 name: <name>
 city: <city>
 state: <state_initials>
