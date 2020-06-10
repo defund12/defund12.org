@@ -50,7 +50,7 @@ This team will pick up issues that have the <kbd>ready-for-pr</kbd> label. Issue
 
 ### Conventions to follow
 
-- Please use the following file name convention: `[state]-[city].md`
+- Please refer to the emails [README](_emails/README.me) with more information about email template conventions.
 
 ## Join the conversation
 
