@@ -37,7 +37,7 @@ def success(test_name):
 
 def fail(error_message):
   print('❌' + ' ' + error_message)
-  #sys.exit(1)
+  sys.exit(1)
 
 def test_files_exist():
   files = [file for file in Path(ROOT_DIR).rglob('*.md')] 
