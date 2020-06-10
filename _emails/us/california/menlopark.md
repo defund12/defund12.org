@@ -4,7 +4,6 @@ permalink: "/menlopark"
 name: Letter to City Council
 city: Menlo Park
 state: CA
-layout: email
 recipients:
 - CTTaylor@menlopark.org
 - DCombs@menlopark.org
@@ -30,6 +29,7 @@ body: "Dear Menlo Park City Council,\n\nMy name is [YOUR NAME] and I am a reside
   has shown that police “reform” is not enough. We must take a hard look at the ways
   that the current system in place fails to serve–and in fact actively harms–our community,
   and come together to reimagine the role of police in our city.\n\nThank you for
-  your time, \n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
+  your time, \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
+layout: email
 ---
 
