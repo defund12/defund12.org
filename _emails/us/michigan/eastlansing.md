@@ -11,9 +11,8 @@ recipients:
 - lbabcock@cityofeastlansing.com
 - jgregg@cityofeastlansing.com
 - mmeadows@cityofeastlansing.com
-subject: [***INSERT UNIQUE SUBJECT LINE***]
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
-  Message (Don't forget to replace the [x]'s with your information!)
   Hello,
 
   My name is [YOUR NAME] and I am a resident of East Lansing. I am writing to demand that funding is reallocated from the ELPD to social and public programs in our community. It is an outrage that 32% of city funding goes towards the Police Department while public works and cultural investment is less than 10% of the city budget. The ELPD has seen a number of high profile abuse and violence claims recently and the budget should reflect that poor performance.
