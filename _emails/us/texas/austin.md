@@ -7,16 +7,15 @@ city: Austin
 layout: email
 recipients:
 - steve.adler@austintexas.gov
-- Natasha.Madison@austintexas.gov
-- Delia.Garza@austintexas.gov
-- Sabino.Renteria@austintexas.gov
-- Greg.Casar@austintexas.gov
-- Ann.Kitchen@austintexas.gov
-- jimmy.flannigan@austintexas.gov
-- Leslie.Pool@austintexas.gov
-- Paige.Ellis@austintexas.gov
-- Kathie.Tovo@austintexas.gov
-- Alison.Alter@austintexas.gov
+- district2@austintexas.gov
+- district1@austintexas.gov
+- sabino.renteria@austintexas.gov
+- district4@austintexas.gov
+- district5@austintexas.gov
+- district8@austintexas.gov
+- district6@austintexas.gov
+- kathie.tovo@austintexas.gov
+- district10@austintexas.gov
 subject: We Demand Divestment from Police and an Investment in Black Communities
 body: "Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].\n\nWE ARE JOINING
   TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: \n\n1. Vote no on all increases

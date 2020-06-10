@@ -4,7 +4,6 @@ permalink: "/greensboro"
 name: Letter to Mayor and City Council
 city: Greensboro
 state: NC
-layout: email
 recipients:
 - nancy.vaughan@greensboro-nc.gov
 - yvonne.johnson@greensboro-nc.gov
@@ -31,13 +30,10 @@ body: |-
   Can I count on you to consider an alternative budget that puts a focus on social service programs?
 
   Thank you,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
+layout: email
 ---
 

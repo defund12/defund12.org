@@ -18,7 +18,7 @@ recipients:
 - ward10@cityofclarksville.com
 - ward11@cityofclarksville.com
 - ward12@cityofclarksville.com
-subject: 
+subject: Defund Clarksville PD
 body: |-
   Dear Mayor Pitts and Clarksville City Council Members:
 
