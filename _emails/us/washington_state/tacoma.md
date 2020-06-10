@@ -14,6 +14,7 @@ recipients:
 - lillian.hunter@cityoftacoma.org
 - conor.mccarthy@cityoftacoma.org
 - kristina.walker@cityoftacoma.org
+- keith.blocker@cityoftacoma.org
 subject: We Demand Justice for Manuel Ellis and Reallocation of TPD Funds
 body: |-
   Dear Mayor Woodards and Tacoma City Council,
