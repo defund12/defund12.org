@@ -27,16 +27,17 @@ recipients:
 - HoodJ@co.rockland.ny.us
 subject: Defund Rockland County Sheriff's Office
 body: |-
-    To County Executive Ed Day, DA Tom Walsh, and Rockland County legislature,
+  To County Executive Ed Day, DA Tom Walsh, and Rockland County legislature,
 
-    My name is [YOUR NAME] and I am a resident of [YOUR TOWN/DISTRICT] in Rockland County. I am writing to demand that County Executive Day and the Rockland County legislature adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police. This week, the country has been gripped by protests demanding reconsideration of the role of police in America and an end to racism and anti-Blackness. Moving funds away from the sheriff’s office and police department is a crucial way to combat these issues at the county level.
+  My name is [YOUR NAME] and I am a resident of [YOUR TOWN/DISTRICT] in Rockland County. I am writing to demand that County Executive Day and the Rockland County legislature adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police. This week, the country has been gripped by protests demanding reconsideration of the role of police in America and an end to racism and anti-Blackness. Moving funds away from the sheriff’s office and police department is a crucial way to combat these issues at the county level.
 
-    The current 2020 budget passed by County Executive Ed Day appropriates 73 million dollars to the Sheriff, which is the second highest amount by department. I demand that the County Legislature and County Executive begin to meaningfully defund the Sheriff and redirect funds to community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that supports community wellbeing, instead of one that empowers police forces to tear communities apart.
+  The current 2020 budget passed by County Executive Ed Day appropriates 73 million dollars to the Sheriff, which is the second highest amount by department. I demand that the County Legislature and County Executive begin to meaningfully defund the Sheriff and redirect funds to community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that supports community wellbeing, instead of one that empowers police forces to tear communities apart.
 
-    Sincerely,
+  Sincerely,
 
-    [YOUR NAME]
-    [YOUR ADDRESS]
-    [YOUR EMAIL]
-    [YOUR PHONE NUMBER]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 ---
+
