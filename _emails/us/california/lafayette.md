@@ -11,7 +11,8 @@ recipients:
 - sbliss@lovelafayette.org
 - CBurks@lovelafayette.org
 - tgerringer@lovelafayette.org
-subject: [INSERT UNIQUE SUBJECT LINE]
+subject:
+- INSERT UNIQUE SUBJECT LINE
 body: |-
   To Mayor Anderson and Lafayette City Council Members,
 
@@ -33,3 +34,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
