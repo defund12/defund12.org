@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "babel": "babel --presets es2019 js/index.js -o build/main.bundle.js",
-    "webpack": "webpack",
-    "webpack-watch": "webpack --watch",
-    "start-dev": "concurrently --kill-others \"tsc -w\" \"npm run webpack-watch\" \"jekyll serve\"",
-    "build": "tsc && npm run webpack",
-    "start": "npm run build && jekyll serve",
+    "start-dev": "concurrently --kill-others \"tsc -w\" \"webpack --watch\" \"bundle exec jekyll serve\"",
+    "build": "tsc && webpack",
+    "start": "npm run build && bundle exec jekyll serve",
     "test": "jest"
   },
   "repository": {
@@ -24,6 +22,7 @@
   "homepage": "https://github.com/Ceshion/defund12.org#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@types/jquery": "^3.3.38",
     "@babel/polyfill": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "@types/react": "^16.9.35",

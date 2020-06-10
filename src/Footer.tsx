@@ -19,9 +19,9 @@ export class Footer extends React.Component<FooterProps> {
     parseFooterText(footerText: string): [string, string, string] {
         const captures = footerTextRegex.exec(footerText);
         if (captures != null && captures.groups !== undefined) {
-            const text = captures?.groups['text'];
-            const linkText = captures?.groups['linkText'];
-            const href = captures?.groups['href'];
+            const text = captures.groups['text'];
+            const linkText = captures.groups['linkText'];
+            const href = captures.groups['href'];
             return [text, linkText, href];
         };
         throw new Error('Could not parse footer.');

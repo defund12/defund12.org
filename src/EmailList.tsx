@@ -3,7 +3,6 @@ import { v1 as UUIDv1 } from 'uuid';
 import { EmailListFilter } from './EmailListFilter';
 import { CountryProps, Country } from './Country';
 
-
 interface EmailListProps {
     countries: Array<CountryProps>;
     /** A tuple with [countryId, countryName]. */
@@ -51,20 +50,18 @@ export class EmailList extends React.Component<EmailListProps, EmailListState> {
 
     render() {
         return (
-            <div id="emailLinks">
-                <EmailListFilter key={UUIDv1()}
-                    placeholder="Country"
-                    for="selectedCountryId"
-                    value={this.state.selectedCountryId}
-                    onFilterChange={this.updateCountrySelect.bind(this)}
-                    itemSource={this.props.countryOptions} />
-                <EmailListFilter key={UUIDv1()}
-                    placeholder="Region"
-                    for="selectedRegionId"
-                    value={this.state.selectedRegionId}
-                    onFilterChange={this.updateRegionSelect.bind(this)}
-                    itemSource={this.props.regionOptions.filter(regionOption => this.state.selectedCountryId == null || this.state.selectedCountryId == regionOption[1]).map(regionOption => [regionOption[0], regionOption[2]])} />
-                {this.renderCountries(this.props.countries)}
+            <div id="container">
+                <div id="filters">
+                    <EmailListFilter key={UUIDv1()}
+                        placeholder="Region"
+                        for="selectedRegionId"
+                        value={this.state.selectedRegionId}
+                        onFilterChange={this.updateRegionSelect.bind(this)}
+                        itemSource={this.props.regionOptions.filter(regionOption => this.state.selectedCountryId == null || this.state.selectedCountryId == regionOption[1]).map(regionOption => [regionOption[0], regionOption[2]])} />
+                </div>
+                <div id="emailLinks">
+                    {this.renderCountries(this.props.countries)}
+                </div>
             </div>);
     }
 }

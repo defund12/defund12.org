@@ -19,8 +19,10 @@ interface EmailListFilterProps {
  * A filter select that writes state back using {@link: EmailListFilterProps.onFilterChange}.
  */
 export class EmailListFilter extends React.Component<EmailListFilterProps> {
+    selectRef: React.RefObject<HTMLSelectElement>;
     constructor(props: EmailListFilterProps) {
         super(props);
+        this.selectRef = React.createRef();
     }
 
     renderOptions() {
@@ -33,9 +35,16 @@ export class EmailListFilter extends React.Component<EmailListFilterProps> {
         this.props.onFilterChange(stateUpdate);
     }
 
+    componentDidMount() {
+        const select = this.selectRef.current;
+        if (select != null) {
+            ($(select) as any).selectBox();
+        }
+    }
+
     render() {
         return (
-            <select defaultValue={this.props.value?.toString()} onChange={this.changeFilter.bind(this)}>
+            <select ref={this.selectRef} defaultValue={(this.props.value ? this.props.value.toString() : undefined)} onChange={this.changeFilter.bind(this)}>
                 <option hidden key={UUIDv1()} value="null">{this.props.placeholder}</option>
                 {this.renderOptions()}
             </select>
