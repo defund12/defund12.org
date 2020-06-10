@@ -42,7 +42,7 @@ Contributions to the repository are greatly welcomed.
 
 ### Team Organization
 
-The teams and responsibilities/definitions are closely related to how issue(email) creation, review, and site additions happen. Please review team definitions on the [teams readme](TEAMS.md).
+The teams and responsibilities/definitions are closely related to how issue(email) creation, review, and site additions happen. Please review team definitions on the [contributing readme](CONTRIBUTING.md).
 
 NOTE: All work that people are doing to further defund12.org is important and helpful. However in order to keep things moving efficently, we have defined teams and responsibilities so that we can move forward together in an efficent manner.
 
