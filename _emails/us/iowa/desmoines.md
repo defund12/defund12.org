@@ -17,7 +17,7 @@ subject: Des Moines City Resident for Defunding the Police
 body: |-
   Dear Des Moines City Officials,
 
-  My name is [YOUR NAME], and I am a resident of [YOUR DISTRICT]. I am writing to insist that the City Council adopt a budget for the people--one that prioritizes community wellbeing and redirects funding away from the police.
+  My name is [YOUR NAME], and I am a resident of [YOUR DISTRICT]. I am writing to insist that the City Council adopts a budget for the people--one that prioritizes community wellbeing and redirects funding away from the police.
 
   I am asking that the Des Moines City Council make a more overt and visible commitment to racial justice. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from DMPD, and towards sectors that facilitate the dismantling of racial and class inequality.
 
