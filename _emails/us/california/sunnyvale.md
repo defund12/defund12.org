@@ -11,7 +11,7 @@ recipients:
 - dave.cortese@bos.sccgov.org
 - supervisor.ellenberg@bos.sccgov.org
 - supervisor.simitian@bos.sccgov.org
-subject: \[*** INSERT UNIQUE SUBJECT LINE***]
+subject: [*** INSERT UNIQUE SUBJECT LINE***]
 body: |-
     Hello,
 
