@@ -35,25 +35,30 @@ ALLOWLISTED_KEYS_OPTIONAL = {
 
 
 def success(test_name):
+  """Prints success result for a test name"""
   print('✅' + ' ' + test_name)
 
 
 def fail(error_message):
+  """Fails test runner with a given error message"""
   print('❌' + ' ' + error_message)
   sys.exit(1)
 
 
 def run_test(test):
+  """Executes a test and prints out a success message if it passes"""
   test()
   success(test.__name__)  
 
 
 def run_tests(tests):
+  """Executes an array of tests"""
   for test in tests:
     run_test(test)
 
 
 def get_markdown_files():
+  """Fetches all markdown files recursively in the ${ROOT_DIR}"""
   markdown_files = []
   for subdir, dirs, files in os.walk(ROOT_DIR):
     for file in files:
@@ -63,6 +68,7 @@ def get_markdown_files():
 
 
 def test_files_exist():
+  """Tests that at least one markdown file exists in ${ROOT_DIR}"""
   files = [file for file in Path(ROOT_DIR).rglob('*.md')] 
   _, counts = np.unique([file.parent for file in files ], return_counts=True)
   if counts.sum() == 0:
@@ -70,6 +76,7 @@ def test_files_exist():
 
 
 def test_file_names_are_valid():
+  """"Tests that all markdown files have valid filenames""""
   for filepath in get_markdown_files():
     filename = os.path.basename(filepath).rsplit( ".", 1)[0]
     if not re.match("^[a-z_]*$", filename):
@@ -77,6 +84,7 @@ def test_file_names_are_valid():
 
 
 def test_layout_is_email():
+  """Tests that all 'layout' attributes are set to 'email'"""
   for filepath in get_markdown_files():
     with open(filepath, 'r') as stream:
       docs = yaml.safe_load_all(stream)
@@ -88,6 +96,7 @@ def test_layout_is_email():
 
 
 def validate_document_has_allowlisted_keys(doc, filepath):
+  """Validates that a document contains all of the necessary keys and correct corresponding types"""
   required_keys_not_found = []
   invalid_types = []
 
@@ -112,6 +121,7 @@ def validate_document_has_allowlisted_keys(doc, filepath):
 
 
 def test_files_contain_allowlisted_keys():
+  """Tests that all markdown files contain required keys and corresponding types"""
   for filepath in get_markdown_files():
     with open(filepath, 'r') as stream:
       docs = yaml.safe_load_all(stream)
@@ -120,6 +130,7 @@ def test_files_contain_allowlisted_keys():
 
 
 def test_files_contain_unique_permalinks():
+  """Tests that all permalink attributes are unique across the whole test directory"""
   permalinks = []
   filepaths = []
   for filepath in get_markdown_files():
@@ -135,7 +146,27 @@ def test_files_contain_unique_permalinks():
         filepaths.append(filepath)
 
 
+def test_files_contain_unique_redirects():
+  """Tests that all redirect_from attributes are unique across the whole test directory"""
+  redirects = []
+  filepaths = []
+  for filepath in get_markdown_files():
+    with open(filepath, 'r') as stream:
+      docs = yaml.safe_load_all(stream)
+      for doc in filter(None, docs):
+        if 'redirect_from' not in doc:
+          continue
+        doc_redirects = doc['redirect_from']
+        for redirect in doc_redirects:
+          if redirect in redirects:
+            index = redirects.index(redirect)
+            fail('redirect %s in file %s already exists in file %s' % (
+              redirect, filepath, filepaths[index]))
+          redirects.append(redirect)
+          filepaths.append(filepath)    
+
 def test_permalinks_are_valid():
+  """Tests that all permalinks are of the proper format"""
   for filepath in get_markdown_files():
     with open(filepath, 'r') as stream:
       docs = yaml.safe_load_all(stream)
@@ -158,6 +189,7 @@ def main():
     test_layout_is_email,
     test_files_contain_allowlisted_keys,
     test_files_contain_unique_permalinks,
+    test_files_contain_unique_redirects,
     test_permalinks_are_valid
   ])
 
