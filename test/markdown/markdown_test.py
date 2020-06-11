@@ -22,7 +22,6 @@ ALLOWLISTED_KEYS_REQUIRED = {
   'city': str,
   'layout': str,
   'recipients': list,
-  'subject': str,
   'body': str
 }
 
@@ -30,7 +29,8 @@ ALLOWLISTED_KEYS_OPTIONAL = {
   'cc': list,
   'expiration_date': str,
   'organization': str,
-  'redirection_from': list
+  'redirection_from': list,
+  'subject': str,
 }
 
 def success(test_name):
