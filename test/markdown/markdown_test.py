@@ -30,7 +30,7 @@ ALLOWLISTED_KEYS_OPTIONAL = {
   'expiration_date': str,
   'organization': str,
   'redirection_from': list,
-  'subject': str,
+  'subject': str
 }
 
 def success(test_name):
