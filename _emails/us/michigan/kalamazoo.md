@@ -6,10 +6,12 @@ city: Kalamazoo
 state: MI
 recipients:
 - mayor@kalamazoocity.org
+- griffinp@kalamazoocity.org
 - knotte@kalamazoocity.org
 - urbanj@kalamazoocity.org
 - hessj@kalamazoocity.org
 - praedelc@kalamazoocity.org
+- cunninghame@kalamazoocity.org
 - cokcitymanager@kalamazoocity.org
 - Stephanie.Moore@kalcounty.com
 - Zachary.Bauer@Kalcounty.com
@@ -24,7 +26,6 @@ recipients:
 - Meredith.Place@kalcounty.com
 - SenSMcCann@senate.michigan.gov
 - jonhoadley@house.mi.gov
-subject: Regarding the funding of KDPS
 body: |-
   Dear Kalamazoo City and County officials,
 

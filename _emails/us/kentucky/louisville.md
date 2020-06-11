@@ -34,7 +34,6 @@ recipients:
 - madonna.flood@louisvilleky.gov
 - david.yates@louisvilleky.gov
 - brent.ackerson@louisvilleky.gov
-subject: Reallocate Funding for the LMPD
 body: |
   Hello,
 

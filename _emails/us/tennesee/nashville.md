@@ -48,7 +48,6 @@ recipients:
 - Antoinette.Lee@nashville.gov
 - angie.henderson@nashville.gov
 - dave.rosenberg@nashville.gov
-subject: I Oppose Budget Ordinace BL2020-286
 body: |-
   Hello,
 

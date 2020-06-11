@@ -13,7 +13,6 @@ recipients:
 - SDeCourcey@town.arlington.ma.us
 - DDunn@town.arlington.ma.us
 - JHurd@town.arlington.ma.us
-subject: Arlington Resident for Defunding the APD
 body: |-
   Dear Town Meeting Manager Chapdelaine, Select Board Members Mahon, Curro, Dunn, Hurd, DeCourcey, and Town Moderator Leone,
 

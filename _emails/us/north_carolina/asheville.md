@@ -7,7 +7,6 @@ state: NC
 recipients:
 - ashevillenccouncil@ashevillenc.gov
 - AshevilleCityCouncilJune92020@PublicInput.com
-subject: Redirect money away from Asheville Police Department’s budget
 body: "Dear Asheville City Councilmembers, \n\nMy name is [x] and I’m a resident of
   Asheville. I am writing about Asheville Mayor Esther Manheimer’s fiscal year 2021
   budget proposal.\n\nI am asking that the Asheville City Council make a more overt
