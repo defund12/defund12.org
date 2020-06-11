@@ -1,16 +1,16 @@
 ---
-title: "Walnut Creek, CA"
+title: Walnut Creek, CA
 permalink: "/walnut-creek"
-name: "Letter to Mayor Haskew and City Council"
-city: "Walnut Creek"
-state: "CA"
-layout: "email"
+name: Letter to Mayor Haskew and City Council
+city: Walnut Creek
+state: CA
+layout: email
 recipients:
-  - "justin@justinwedel.com"
-  - "kwilk@walnut-creek.org"
-  - "cindy@cindysilva.org"
-  - "francois@walnut-creek.org"
-  - "mayor@walnut-creek.org"
+- justin@justinwedel.com
+- kwilk@walnut-creek.org
+- cindy@cindysilva.org
+- francois@walnut-creek.org
+- mayor@walnut-creek.org
 subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Haskew and City Council Members,
@@ -35,3 +35,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
