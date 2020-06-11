@@ -7,16 +7,16 @@ city: Richmond
 state: CA
 layout: email
 recipients:
-  - TOM.BUTT@intres.com
-  - Belinda_Brown@ci.richmond.ca.us
-  - natbates@comcast.net
-  - eduardo_martinez@ci.richmond.ca.us
-  - trina_jackson@ci.richmond.ca.us
-  - jael_myrick@ci.richmond.ca.us
-  - ben_choi@ci.richmond.ca.us
-  - melvin_willis@ci.richmond.ca.us
-  - demnlus_johnson@ci.richmond.ca.us
-  - CPRC@ci.richmond.ca.us
+- TOM.BUTT@intres.com
+- Belinda_Brown@ci.richmond.ca.us
+- natbates@comcast.net
+- eduardo_martinez@ci.richmond.ca.us
+- trina_jackson@ci.richmond.ca.us
+- jael_myrick@ci.richmond.ca.us
+- ben_choi@ci.richmond.ca.us
+- melvin_willis@ci.richmond.ca.us
+- demnlus_johnson@ci.richmond.ca.us
+- CPRC@ci.richmond.ca.us
 subject: Richmond Resident for Defunding the RPD
 body: |-
   To Mayor Butt, the Richmond Board of Supervisors, and Richmond Elected Officers,
@@ -36,3 +36,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
