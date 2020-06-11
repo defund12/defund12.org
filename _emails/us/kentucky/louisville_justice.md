@@ -34,7 +34,6 @@ recipients:
 - madonna.flood@louisvilleky.gov
 - david.yates@louisvilleky.gov
 - brent.ackerson@louisvilleky.gov
-subject: I Want Justice for the Murder of Breonna Taylor
 body: "Dear Mayor Fischer,\n\nMy name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD]
   and I am emailing today to demand accountability for the racist and brutal murder
   of Breonna Taylor.\n\nI demand that charges be filed against all officers involved

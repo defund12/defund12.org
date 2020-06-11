@@ -13,7 +13,6 @@ recipients:
 - lsanchez@cityofboise.org
 - pbageant@cityofboise.org
 - jhallyburton@cityofboise.org
-subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear Mayor McLean and Boise City Council Members,
 

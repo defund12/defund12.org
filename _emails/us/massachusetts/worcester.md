@@ -12,7 +12,6 @@ recipients:
 - KingK@worcesterma.gov
 - RosenG@worcesterma.gov
 - ToomeyK@worcesterma.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Joseph M. Petty and Members of the Worcester City Council,
 

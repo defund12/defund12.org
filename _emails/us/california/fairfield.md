@@ -10,7 +10,6 @@ recipients:
 - cct707@aol.com
 - cmoy@fairfield.ca.gov
 - rvaccaro@fairfield.ca.gov
-subject: Divest from Police and Invest in Community
 body: |-
   Mayor Price and City Council members,
 

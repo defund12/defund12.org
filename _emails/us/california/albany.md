@@ -15,7 +15,6 @@ recipients:
 - pmaass@albanyca.org
 - msubramanian@albanyca.org
 - SEJC@albanyca.org
-subject: Albany Resident for Defunding the Albany Police
 body: |-
   To Mayor Pilch, the Albany City Council, City Attorney, and the Social and Economic Justice Commission:
 

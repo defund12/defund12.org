@@ -12,7 +12,6 @@ recipients:
 - aallison@ci.eureka.ca.gov
 - narroyo@ci.eureka.ca.gov
 - cityclerk@ci.eureka.ca.gov
-subject: Commit to reallocate for social equity
 body: |-
   To the Eureka City Council,
 

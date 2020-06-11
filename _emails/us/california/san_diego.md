@@ -16,7 +16,6 @@ recipients:
 - scottsherman@sandiego.gov
 - vivianmoreno@sandiego.gov
 - georgettegomez@sandiego.gov
-subject: San Diego demands a People's Budget
 body: |
   "I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
 

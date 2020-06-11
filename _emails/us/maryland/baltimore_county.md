@@ -14,7 +14,6 @@ recipients:
 - council6@baltimorecountymd.gov
 - council7@baltimorecountymd.gov
 - johnnyo@baltimorecountymd.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Baltimore County Executive Johnny Olszewski Jr. and Baltimore County Council Members ,
 

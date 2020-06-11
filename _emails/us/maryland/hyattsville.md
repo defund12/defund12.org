@@ -17,7 +17,6 @@ recipients:
 - ehaba@hyattsville.org
 - ewolf@hyattsville.org
 - jsolomon@hyattsville.org
-subject: "[Add Unique Subject Line Here!]"
 body: "Dear Mayor Hollingsworth and members of the Hyattsville City Council,\n\nMy
   name is [X] and I'm a Hyattsville resident living in Ward [X]. I am writing to demand
   that in the upcoming fiscal year the city of Hyattsville eliminate funding for the

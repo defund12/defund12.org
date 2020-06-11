@@ -14,7 +14,6 @@ recipients:
 - greg.tanaka@cityofpaloalto.org
 - citymgr@cityofpaloalto.org
 - pd@cityofpaloalto.org
-subject: Palo Alto Resident for Defunding the PAPD
 body: |-
   Hi all,
 

@@ -13,7 +13,6 @@ recipients:
 - spope@greenbeltmd.gov
 - eputens@greenbeltmd.gov
 - rroberts@greenbeltmd.gov
-subject: Equitably Defunding the Police
 body: |-
   Dear Greenbelt City Council,
 

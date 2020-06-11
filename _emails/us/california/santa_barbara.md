@@ -13,7 +13,6 @@ recipients:
 - efriedman@santabarbaraca.gov
 - AlGutierrez@santabarbaraca.gov
 - cmurillo@santabarbaraca.gov
-subject: A budget for the community well-being of Santa Barbara
 body: |-
   Dear Santa Barbara City Council,
 

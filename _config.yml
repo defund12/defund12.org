@@ -27,10 +27,10 @@ defaults:
     body: Email message (remember to include placeholders for name)
 permalink: pretty
 subtitle: Email government officials and council members to reallocate egregious police
-  budgets towards education, social services, and dismantling racial inequality via
+  budgets towards education, social services, and dismantling racial injustice via
   this crowd-sourced tool.
 meta: Email government officials and council members to reallocate police budgets
-  towards education, social services, and dismantling racial inequality.
+  towards education, social services, and dismantling racial injustice.
 footer_text: |-
   Want to add your city? [Open a request.](https://github.com/teddywilson/defund12.org/issues)
 

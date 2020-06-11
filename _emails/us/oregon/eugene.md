@@ -9,7 +9,6 @@ recipients:
 - ceepdcommission@ci.eugene.or.us
 - eugene.budget.committee@ci.eugene.or.us
 - MayorCouncilandCityManager@eugene-or.gov
-subject: Defund Eugene PD
 body: |-
   Dear Mayor Lucy Vinis, Commissioners, Budget Committee, and City Council,
 

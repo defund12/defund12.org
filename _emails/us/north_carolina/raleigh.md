@@ -15,7 +15,6 @@ cc:
 - corey.branch@raleighnc.gov
 - saige.martin@raleighnc.gov
 - david.knight@raleighnc.gov
-subject: Decrease funding for police in the proposed budget
 body: |
   Dear Mayor Baldwin,
 

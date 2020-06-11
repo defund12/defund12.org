@@ -17,7 +17,6 @@ recipients:
 - matt.newton@charlottenc.gov
 - Tariq.bokhari@charlottenc.gov
 - edriggs@charlottenc.gov
-subject: Commit to reallocate for social equity / Defund the CMPD
 body: |-
   Dear Mayor Lyles, City Manager Jones, and Charlotte City Council,
 

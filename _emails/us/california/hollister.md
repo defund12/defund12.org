@@ -12,7 +12,6 @@ recipients:
 - coh.dist3@hollister.ca.gov
 - coh.dist4@hollister.ca.gov
 - coh.treasurer@hollister.ca.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Velazquez and Hollister City Council,
 

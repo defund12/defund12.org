@@ -25,7 +25,6 @@ recipients:
 - rleftwich@townoftruckee.com
 - truckee@townoftruckee.com
 - blee@townoftruckee.com
-subject: "[***INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   To Whom It May Concern:
 

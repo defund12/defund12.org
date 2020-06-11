@@ -21,7 +21,6 @@ recipients:
 - Ward13@providenceri.gov
 - Ward14@providenceri.gov
 - Ward15@providenceri.gov
-subject: Defund the Police Department
 body: |
   Hello,
 

@@ -8,7 +8,6 @@ recipients:
 - cityclerk@somervillema.gov
 - citycouncil@somervillema.gov
 - mayor@somervillema.gov
-subject: Demanding support for defunding the police in Somerville
 body: |-
   Dear Mayor Curtatone and Somerville City Councilors,
 

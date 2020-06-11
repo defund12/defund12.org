@@ -12,7 +12,6 @@ recipients:
 - cchristianson@slocity.org
 - apease@slocity.org
 - estewart@slocity.org
-subject: Budget for the Well-Being of San Luis Obispo
 body: |-
   Dear Mayor Harmon and San Luis Obispo City Council,
 
