@@ -5,15 +5,14 @@ name: Letter to Mayor and City Council
 city: New Brunswick
 state: NJ
 recipients:
-- smith@cityofnewbrunswick.org
-- gfleming@cityofnewbrunswick.or
-- kegan@cityofnewbrunswick.org
-- janderson@cityofnewbrunswick.org
-- rescobar@cityofnewbrunswick.org
-- ssicoraludwig@cityofnewbrunswick.org
-- kjones11@cityofnewbrunswick.org
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - smith@cityofnewbrunswick.org
+  - gfleming@cityofnewbrunswick.or
+  - kegan@cityofnewbrunswick.org
+  - janderson@cityofnewbrunswick.org
+  - rescobar@cityofnewbrunswick.org
+  - ssicoraludwig@cityofnewbrunswick.org
+  - kjones11@cityofnewbrunswick.org
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Cahill and Council Members:
 
