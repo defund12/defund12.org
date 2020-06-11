@@ -101,7 +101,7 @@ a {
 }
 p.divider {
 	&:before {
-		content:""; display:block; width:48px; border-bottom:1px solid var(--subtle); margin-bottom:20px;
+		content:""; display:block; width:48px; border-bottom:1px solid var(--link_subtle); margin-bottom:20px;
 	}
 	line-height:1.6;
 	max-width:580px;
