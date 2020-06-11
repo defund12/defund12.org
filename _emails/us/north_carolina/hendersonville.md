@@ -11,8 +11,6 @@ recipients:
 - jmiller@hvlnc.gov
 - jhensley@hvlnc.gov
 - lsimpson@hvlnc.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
 body: |-
   Hello Mayor Volk and Members of the City Council,
 
