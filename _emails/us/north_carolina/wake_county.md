@@ -16,7 +16,7 @@ body: |-
 
   In order to really promote community safety, more law enforcement officers and more detention officers is not the answer - it is more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
 
-  I believe we don’t need a militarized police force. Wake County needs to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Mayor Baldwin, will you look out for me, and will you look out for us?
+  I believe we don’t need a militarized police force. Wake County needs to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Greg Ford and Commissioners, will you look out for me, and will you look out for us?
 
   Thank you,
 
@@ -25,4 +25,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-
