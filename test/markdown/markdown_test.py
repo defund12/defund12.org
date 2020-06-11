@@ -66,7 +66,7 @@ def validate_document_has_allowlisted_keys(doc, filepath):
       continue
     elif not isinstance(doc[key], ALLOWLISTED_KEYS_OPTIONAL[key]):
       fail('in file %s optional key %s has invalid type %s should be %s' % (
-        filepath, key, type(doc[key], ALLOWLISTED_KEYS_OPTIONAL[key])))
+        filepath, key, type(doc[key]), ALLOWLISTED_KEYS_OPTIONAL[key]))
 
 
 def get_markdown_files():

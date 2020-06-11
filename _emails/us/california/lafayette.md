@@ -1,10 +1,9 @@
 ---
-title: Lafayette, LA
+title: Lafayette, CA
 permalink: "/lafayette"
 name: Letter to the Mayor and City Council
-state: LA
 city: Lafayette
-layout: email
+state: CA
 recipients:
 - manderson@lovelafayette.org
 - scandell@lovelafayette.org
@@ -32,5 +31,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
