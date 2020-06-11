@@ -1,6 +1,6 @@
 ---
 title: "Washington County, OR"
-permalink: "/washington_county"
+permalink: "/washington-county"
 name: "Letter to County Commissioners"
 city: "Washington County"
 state: "OR"
