@@ -20,7 +20,16 @@ When adding templates, please ensure you are using UTF-8 encoding. Please do not
 | organization    | no       | String | Name of the organization that curated the email template (if it exists)             |
 | redirect_from   | no       | Array  | Links that should redirect to the permalink above                                   |
 
-Example template:
+## File naming conventions
+
+Please use spaces when creating new markdown files and directories. For example:
+
+```
+_emails/us/california/san_francisco.md
+_emails/us/new_york/hudson_valley.md
+```
+
+## Example template
 
 ```
 ---
