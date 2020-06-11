@@ -5,20 +5,20 @@ name: Letter to Mayor and Elected Officials
 city: Clarksville
 state: TN
 recipients:
-- joe.pitts@cityofclarksville.com
-- ward1@cityofclarksville.com
-- ward2@cityofclarksville.com
-- ward3@cityofclarksville.com
-- ward4@cityofclarksville.com
-- ward5@cityofclarksville.com
-- ward6@cityofclarksville.com
-- ward7@cityofclarksville.com
-- ward8@cityofclarksville.com
-- ward9@cityofclarksville.com
-- ward10@cityofclarksville.com
-- ward11@cityofclarksville.com
-- ward12@cityofclarksville.com
-subject: Defund Clarksville PD
+  - joe.pitts@cityofclarksville.com
+  - ward1@cityofclarksville.com
+  - ward2@cityofclarksville.com
+  - ward3@cityofclarksville.com
+  - ward4@cityofclarksville.com
+  - ward5@cityofclarksville.com
+  - ward6@cityofclarksville.com
+  - ward7@cityofclarksville.com
+  - ward8@cityofclarksville.com
+  - ward9@cityofclarksville.com
+  - ward10@cityofclarksville.com
+  - ward11@cityofclarksville.com
+  - ward12@cityofclarksville.com
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Pitts and Clarksville City Council Members:
 
@@ -40,4 +40,3 @@ body: |-
   [YOUR EMAIL]
 layout: email
 ---
-
