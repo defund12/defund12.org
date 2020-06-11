@@ -1,19 +1,21 @@
 ---
 title: Tuscon, AZ
-permalink: "/tuscon"
+permalink: "/tucson"
+redirect_from:
+  - "/tuscon"
 name: Letter to Mayor, Council, and City Manager
 state: AZ
 city: Tucson
 layout: email
 recipients:
-- Ward1@tucsonaz.gov
-- Ward2@tucsonaz.gov
-- Ward3@tucsonaz.gov
-- Ward4@tucsonaz.gov
-- Ward5@tucsonaz.gov
-- Ward6@tucsonaz.gov
-- citymanager@tucsonaz.gov
-- Mayor.Romero@tucsonaz.gov
+  - Ward1@tucsonaz.gov
+  - Ward2@tucsonaz.gov
+  - Ward3@tucsonaz.gov
+  - Ward4@tucsonaz.gov
+  - Ward5@tucsonaz.gov
+  - Ward6@tucsonaz.gov
+  - citymanager@tucsonaz.gov
+  - Mayor.Romero@tucsonaz.gov
 subject: Defund the Tucson Police Department
 body: |-
   Hello,
@@ -40,4 +42,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-
