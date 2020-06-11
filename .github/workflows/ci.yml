@@ -90,18 +90,31 @@ jobs:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: "2.6"
       - uses: actions/checkout@v2
-      - name: Set commit message
-        run: echo ::set-env name=COMMIT_MSG::$(git log --format=%s -n 1)
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: helaili/jekyll-action@2.0.3
+      - run: gem install bundler -v 2.1.4
+      - run: bundle config path vendor/bundle
+      - run: bundle install --jobs 4 --retry 3
+      - run: mkdir public
+      - run: bundle exec jekyll build --destination ./public
         env:
-          JEKYLL_PAT: ${{ secrets.DEFUND12_GITHUB_TOKEN }}
+          JEKYLL_ENV: production
+      - name: Deploy (push to gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          enable_jekyll: true
+      - name: Set COMMIT_MSG
+        run: echo ::set-env name=COMMIT_MSG::$(git log --format=%s -n 1)
       - name: Notify deploy succeeded (#deploys)
         if: success()
         uses: pullreminders/slack-action@v1.0.9
