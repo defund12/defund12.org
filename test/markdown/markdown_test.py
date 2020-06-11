@@ -3,6 +3,7 @@
 import io
 import numpy as np
 import os
+import re
 import sys
 import yaml
 
@@ -108,11 +109,20 @@ def test_files_contain_unique_permalinks():
         permalinks.append(permalink)
         filepaths.append(filepath)
 
+def test_file_names_are_valid():
+  for filepath in get_markdown_files():
+    filename = os.path.basename(filepath).rsplit( ".", 1)[0]
+    if not re.match("^[a-z_]*$", filename):
+      fail('filename %s must only contain lowercase and underscore characters' % filepath)
+
 def main():
   print('🔨 Running markdown file tests...')
 
   test_files_exist()
   success('test_files_exist')
+
+  test_file_names_are_valid()
+  success('test_file_names_are_valid')
 
   test_files_contain_allowlisted_keys()
   success('test_files_contain_allowlisted_keys')
