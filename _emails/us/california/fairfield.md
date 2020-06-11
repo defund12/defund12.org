@@ -23,13 +23,9 @@ body: |-
   As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
 
   Thank you for your time,
-
   \[YOUR NAME\]
-
   \[ADDRESS\]
-
   \[EMAIL\]
-
   \[PHONE NUMBER\]
 layout: email
 ---

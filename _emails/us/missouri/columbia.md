@@ -23,8 +23,8 @@ body: "Hi, my name is [NAME] and I am a resident of Columbia's [YOUR COUNCIL WAR
   and foremost consider significantly defunding the police department. In the FY21
   budget, there was an increase to both police personnel and corrections spending.
   This money can be spent in other ways that are proven to be more effective in improving
-  community safety and wellness. \n\nThank you for your time, \n\n[YOUR NAME] \n\n[YOUR
-  ADDRESS] \n\n[YOUR EMAIL] \n\n[YOUR PHONE NUMBER]"
+  community safety and wellness. \n\nThank you for your time, \n\n[YOUR NAME]\n[YOUR
+  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 layout: email
 ---
 

@@ -34,6 +34,9 @@ body: |-
   The Scotts Valley City Council has a responsibility as our governing body to uphold its end of the social contract that promises the equal protection of its citizens’ rights. Without re-evaluating our systems, which are built upon bias and institutionalized discrimination, many citizens will be left disproportionately behind. Now is the time to join numerous other cities in defunding the police to seek peace through equality and equity. Enormous changes need to be made concerning the role of police in our community and the greater United States; the clearest path towards that is how we spend our money.
 
   Sincerely,
-  [Your Name] [Your Address] [Your Email] [Your Phone Number]
+  [Your Name]
+  [Your Address]
+  [Your Email]
+  [Your Phone Number]
 ---
 

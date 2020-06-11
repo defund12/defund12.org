@@ -29,13 +29,9 @@ body: |-
   The City of Eugene has already shown willingness to invest in change by funding programs like CAHOOTS. As a community, we should continue to build on these ideals and continue to invest in evidence-based alternatives to police that directly advocate for our citizens and work to replace policing with other systems of public safety. This starts with divesting funding from the EPD in FY-2021.
 
   Thank you for your time,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 ---
 

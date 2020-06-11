@@ -24,11 +24,8 @@ body: |
 
   Sincerely,
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 layout: email
 ---

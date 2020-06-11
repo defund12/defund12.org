@@ -34,6 +34,6 @@ body: "Dear City Councilors,\n\nMy name is [YOUR NAME] and I'm a resident of [YO
   the community instead-starting with housing, transportation, education, community
   centers, and community-led organizations and projects.\n\nCan I count on you to
   consider an alternative budget that puts a focus on social services programs?\n\nThank
-  you,\n\n[YOUR NAME] \n\n[YOUR ADDRESS]\n\n[YOUR EMAIL]\n\n[YOUR PHONE NUMBER]"
+  you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 ---
 

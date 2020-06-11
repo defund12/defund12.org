@@ -30,13 +30,9 @@ body: |-
   The safest communities don’t have more police—they have more resources.
 
   Sincerely,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 ---
 

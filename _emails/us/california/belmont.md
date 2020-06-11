@@ -30,13 +30,9 @@ body: |-
   We can be a beacon for other cities to follow, if only we have the courage to change.
 
   Sincerely,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 ---
 

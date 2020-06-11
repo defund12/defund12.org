@@ -30,13 +30,9 @@ body: |-
   I request that an emergency meeting be called before the fiscal year goes into effect in order to reallocate these funds to resources that community members can benefit from.
 
   Thank you for your time,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 ---
 

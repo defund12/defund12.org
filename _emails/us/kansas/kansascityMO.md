@@ -35,13 +35,9 @@ body: |
   Kansas City can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police department.
 
   Thank you for your time,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 layout: email
 ---

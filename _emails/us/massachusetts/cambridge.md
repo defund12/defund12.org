@@ -23,13 +23,9 @@ body: |
   Racist police violence doesn’t just happen in other cities--it happens here in Cambridge too. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
 
   Thank you,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 layout: email
 ---

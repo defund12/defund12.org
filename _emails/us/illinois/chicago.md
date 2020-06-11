@@ -73,7 +73,7 @@ body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. 
   with impunity. \n\nPeople are marching in the streets because they know that these
   actions will result in a healthier, more just society. I implore you to please listen
   to the needs of your constituents and take immediate action to address their concerns.
-  \n\nThank you, \n\n[YOUR NAME]\n\n[YOUR ADDRESS]\n\n[YOUR EMAIL]\n\n[YOUR PHONE
+  \n\nThank you, \n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE
   NUMBER]\n"
 ---
 

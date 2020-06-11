@@ -30,13 +30,9 @@ body: |
   Cranston may be a small city in a tiny state, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to our community, not cops.
 
   Thank you,
-
   [YOUR NAME]
-
   [ADDRESS]
-
   [PHONE NUMBER]
-
   [EMAIL ADDRESS]
 ---
 

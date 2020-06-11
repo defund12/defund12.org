@@ -26,7 +26,7 @@ recipients:
 - Bobby.Henon@phila.gov
 - Curtis.Jones@phila.gov
 subject: Philadelphia demands a People's Budget
-body: "\"To whom it may concern: \n\nMy name is [INSERT NAME], and I am a resident
+body: "To whom it may concern: \n\nMy name is [INSERT NAME], and I am a resident
   of the [DISTRICT NUMBER] district. I am emailing to demand the restructuring of
   the Philadelphia city budget in a way that prioritizes social services for communities
   and drastically minimizes spending on police. \n\nWe are in the midst of widespread
@@ -41,6 +41,6 @@ body: "\"To whom it may concern: \n\nMy name is [INSERT NAME], and I am a reside
   communities. I ask that the mayor, city managing director, and city council members
   prove their love and dedication to the people of this city and reallocate funds
   to directly benefit those in need.\n\nThank you for your time, \n[YOUR NAME]\n[YOUR
-  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\"\n"
+  ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\n"
 ---
 

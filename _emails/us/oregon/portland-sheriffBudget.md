@@ -49,13 +49,9 @@ body: |
   Action now to invest in long-term, and life sustaining resources will serve to insulate our communities from the effects of this pandemic in the future. We know that meeting the basic needs of our communities is the only way to ensure their health and safety.
 
   Thank you,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 ---
 

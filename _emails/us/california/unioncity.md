@@ -37,8 +37,8 @@ body: "To Mayor Dutra, the Union City Council, Union City Manager, and Union Cit
   Brown brought up valuable points about hearing one another in order to spark change.
   I ask that as our representatives, you hear us and spark this very important and
   needed change in our City. I am urging you to revise the budget for the 2020-2021
-  fiscal year to defund the police.  \n\nSincerely,  \n[YOUR NAME]\t\n[YOUR ADDRESS]\t\n[YOUR
-  EMAIL]\t\n[YOUR PHONE NUMBER]"
+  fiscal year to defund the police.  \n\nSincerely,  \n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
+  EMAIL]\n[YOUR PHONE NUMBER]"
 layout: email
 ---
 

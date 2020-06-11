@@ -28,13 +28,9 @@ body: |-
   History has shown that police "reform" is not enough. I believe the City Council must take a hard look at the ways that the current system in place fails to serve, and in fact actively harms, our community. We must come together to reimagine the role of police in our city. I believe that a new city, safe and beautiful, can be created for all people of St. Petersburg who call this place their home. Through listening and learning from the communicated demands, needs, and desires of the Black community, St. Petersburg can be a sustainable and safe city for today and tomorrow.
 
   Thank you for your time,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 ---
 

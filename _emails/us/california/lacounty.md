@@ -28,13 +28,9 @@ body: |
   I implore you to take steps to defund a militarized force of organized state violence with a WELL-DOCUMENTED HISTORY of brutality and state-sanctioned extrajudicial murder. I DEMAND that you defund the LA County Sheriff’s Office. It is imperative to note that the sheriff’s department and LA county police do not keep ALL of us safe. They have historically targeted Black people, people of color, and queer people within our own communities. This is both systemic on a nationwide scale and VERY SPECIFIC TO THE LA COUNTY SHERIFF’S DEPARTMENT. Again, I demand that you defund this department.
 
   Sincerely,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 ---
 

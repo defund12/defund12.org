@@ -27,12 +27,12 @@ body: |-
 
   As a San Leandro resident, I demand that you take immediate action to ensure the following:
 
-  Reduce SLPD’s allocation from the General Fund by 50% ($21,000,242.5‬0)
-  Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
-  Reallocate the now available $21,000,242.5‬0 from SLPD into 2020-2021 budgets for Human Services, Community Development, and Public Works with focus and priority on housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
-  San Leandro cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund SLPD.
-  Thank you,
+  - Reduce SLPD’s allocation from the General Fund by 50% ($21,000,242.5‬0)
+  - Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+  - Reallocate the now available $21,000,242.5‬0 from SLPD into 2020-2021 budgets for Human Services, Community Development, and Public Works with focus and priority on housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+  - San Leandro cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund SLPD.
 
+  Thank you,
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]

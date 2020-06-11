@@ -37,6 +37,6 @@ body: "Hello, \n\nMy name is [INSERT NAME] and I live in [YOUR NEIGHBORHOOD]. I 
   Public tensions are rising and public opinion is dwindling in regard to the City’s
   inappropriate response to the murder of George Floyd and militarized, over-policed
   response to subsequent protests of police brutality and racism.\n\nThank you for
-  your time,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]\"\n"
+  your time,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 ---
 
