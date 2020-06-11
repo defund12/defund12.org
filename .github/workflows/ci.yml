@@ -10,11 +10,18 @@ jobs:
   js-lint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: GITHUB CONTEXT
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - uses: actions/checkout@v2
+      - name: get commit message
+        run: |
+          echo ::set-env name=commitmsg::$(git log --format=%B -n 1 ${{ github.event.after }})
+      - name: show commit message
+        run: echo $commitmsg
+      - name: show commit message
+        run: echo ${{ env.commitmsg }}
       - uses: stefanoeb/eslint-action@1.0.2
       - name: Deploy failed
         if: ${{ failure() && github.ref == 'refs/heads/master' }}
