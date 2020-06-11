@@ -15,8 +15,7 @@ recipients:
 - dennis.shingleton@fortworthtexas.gov
 - kelly.allengray@fortworthtexas.gov
 - ann.zadeh@fortworthtexas.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Hello,
 

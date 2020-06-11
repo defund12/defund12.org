@@ -17,20 +17,20 @@
     <div class="container">
         <div class="emailContent">
             <div class="recipients">
-                <b>To:</b> {{ page.recipients | join: ',' }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
+                <b>To:</b> <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ', ' }}`)">🔗</span>
+                {{ page.recipients | join: ', ' }}
             </div>
             {% if page.cc %}
             <div class="recipients">
-                <b>CC:</b> {{ page.cc | join: ',' }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ',' }}`)">🔗</span>
+                <b>CC:</b> <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ', ' }}`)">🔗</span>
+                {{ page.cc | join: ', ' }}
             </div>
             {% endif %}
             <div class="recipients">
                 <b>Subject:</b> {{ site.default_subject_line }}
             </div>
             <div>
-                <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+                <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
                 <br /> {{ page.body | markdownify }}
             </div>
@@ -42,8 +42,13 @@
 
 <script type="text/javascript">
     function openEmail() {
+        const isAndroid = /(android)/i.test(navigator.userAgent);
         const subject = encodeURIComponent(`{{ site.default_subject_line }}`.trim());
-        const body = encodeURIComponent(`{{ page.body }}`.trim());
+        const body = encodeURIComponent(
+            isAndroid ?
+                `{{ page.body | newline_to_br }}`.trim() :
+                `{{ page.body }}`.trim()
+        );
         const recipients = `{{ page.recipients | join: ',' }}`;
         const cc = `{{ page.cc | join: ',' }}`;
         const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;

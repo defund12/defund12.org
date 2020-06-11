@@ -13,8 +13,7 @@ recipients:
 - hamilton4newark@gmail.com
 - lawhornfornewark@gmail.com
 - stu.markham@gmail.com
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Honorable Mayor Clifton and City Council Members,
 
