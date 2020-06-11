@@ -165,6 +165,7 @@ def test_files_contain_unique_redirects():
           redirects.append(redirect)
           filepaths.append(filepath)    
 
+
 def test_permalinks_are_valid():
   """Tests that all permalinks are of the proper format"""
   for filepath in get_markdown_files():
