@@ -21,7 +21,6 @@ recipients:
 - bharris@cityoflancasterpa.com
 - scampbell@cityoflancaster.com
 - jeking@cityoflancasterpa.com
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Mayor Sorace and City Council Members,
 
