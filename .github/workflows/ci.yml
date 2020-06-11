@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: stefanoeb/eslint-action@1.0.2
+      - name: Build
+        run: yarn install --frozen-lockfile
+      - name: Lint
+        run: yarn lint
       - name: Notify deploy failed
         if: ${{ failure() && github.ref == 'refs/heads/master' }}
         uses: pullreminders/slack-action@v1.0.9
@@ -24,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: yarn install
+        run: yarn install --frozen-lockfile
       - name: Test
         run: yarn test
       - name: Notify deploy failed
