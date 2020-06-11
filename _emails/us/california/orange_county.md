@@ -2,19 +2,19 @@
 title: Orange County, CA
 permalink: "/orange-county"
 redirect_from:
-  - "/orange_county"
+- "/orange_county"
 name: Letter to the Board of Supervisors of Orange County
 city: Orange County
 state: CA
 layout: email
 recipients:
-  - Lisa.Bartlett@ocgov.com
-  - Michelle.Steel@ocgov.com
-  - Andrew.Do@ocgov.com
-  - Fourth.District@ocgov.com
-  - Donald.Wagner@ocgov.com
-  - media@da.ocgov.com
-  - Media@da.ocgov.com
+- Lisa.Bartlett@ocgov.com
+- Michelle.Steel@ocgov.com
+- Andrew.Do@ocgov.com
+- Fourth.District@ocgov.com
+- Donald.Wagner@ocgov.com
+- media@da.ocgov.com
+- Media@da.ocgov.com
 body: |-
   To my government representatives,
 
@@ -43,3 +43,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+

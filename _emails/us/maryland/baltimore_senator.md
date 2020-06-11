@@ -2,33 +2,33 @@
 title: Baltimore, MD
 permalink: "/baltimore-senators"
 redirect_from:
-  - "/baltimore_senators"
+- "/baltimore_senators"
 name: Letter to State Senators and Delegates
 city: Baltimore
 state: MD
 recipients:
-  - antonio.hayes@senate.state.md.us
-  - jill.carter@senate.state.md.us
-  - mary.washington@senate.state.md.us
-  - cory.mccray@senate.state.md.us
-  - bill.ferguson@senate.state.md.us
-  - charles.sydnor@senate.state.md.us
-  - frank.conaway@house.state.md.us
-  - nick.mosby@house.state.md.us
-  - melissa.wells@house.state.md.us
-  - dalya.attar@house.state.md.us
-  - tony.bridges@house.state.md.us
-  - samuel.rosenberg@house.state.md.us
-  - curt.anderson@house.state.md.us
-  - regina.boyce@house.state.md.us
-  - maggie.mcintosh@house.state.md.us
-  - keith.haynes@house.state.md.us
-  - chanel.branch@house.state.md.us
-  - talmadge.branch@house.state.md.us
-  - stephanie.smith@house.state.md.us
-  - luke.clippinger@house.state.md.us
-  - robbyn.lewis@house.state.md.us
-  - brooke.lierman@house.state.md.us
+- antonio.hayes@senate.state.md.us
+- jill.carter@senate.state.md.us
+- mary.washington@senate.state.md.us
+- cory.mccray@senate.state.md.us
+- bill.ferguson@senate.state.md.us
+- charles.sydnor@senate.state.md.us
+- frank.conaway@house.state.md.us
+- nick.mosby@house.state.md.us
+- melissa.wells@house.state.md.us
+- dalya.attar@house.state.md.us
+- tony.bridges@house.state.md.us
+- samuel.rosenberg@house.state.md.us
+- curt.anderson@house.state.md.us
+- regina.boyce@house.state.md.us
+- maggie.mcintosh@house.state.md.us
+- keith.haynes@house.state.md.us
+- chanel.branch@house.state.md.us
+- talmadge.branch@house.state.md.us
+- stephanie.smith@house.state.md.us
+- luke.clippinger@house.state.md.us
+- robbyn.lewis@house.state.md.us
+- brooke.lierman@house.state.md.us
 body: |-
   To whom it may concern,
 
@@ -46,3 +46,4 @@ body: |-
   [DATE]
 layout: email
 ---
+

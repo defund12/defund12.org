@@ -2,21 +2,21 @@
 title: Montgomery County, MD
 permalink: "/montgomery-county"
 redirect_from:
-  - "/montgomery_county"
+- "/montgomery_county"
 name: Letter to the County Executive and Council
 city: Montgomery County
 state: MD
 recipients:
-  - marc.elrich@montgomerycountymd.gov
-  - councilmember.Katz@montgomerycountymd.gov
-  - councilmember.Hucker@montgomerycountymd.gov
-  - councilmember.albornoz@montgomerycountymd.gov
-  - councilmember.Friedson@montgomerycountymd.gov
-  - councilmember.Glass@montgomerycountymd.gov
-  - councilmember.jawando@montgomerycountymd.gov
-  - councilmember.Navarro@montgomerycountymd.gov
-  - councilmember.Rice@montgomerycountymd.gov
-  - councilmember.Riemer@montgomerycountymd.gov
+- marc.elrich@montgomerycountymd.gov
+- councilmember.Katz@montgomerycountymd.gov
+- councilmember.Hucker@montgomerycountymd.gov
+- councilmember.albornoz@montgomerycountymd.gov
+- councilmember.Friedson@montgomerycountymd.gov
+- councilmember.Glass@montgomerycountymd.gov
+- councilmember.jawando@montgomerycountymd.gov
+- councilmember.Navarro@montgomerycountymd.gov
+- councilmember.Rice@montgomerycountymd.gov
+- councilmember.Riemer@montgomerycountymd.gov
 body: |-
   Dear Montgomery County Officials,
 
@@ -40,3 +40,4 @@ body: |-
   [YOUR PHONE NUMBER]
 layout: email
 ---
+

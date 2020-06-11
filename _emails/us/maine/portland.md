@@ -2,25 +2,24 @@
 title: Portland, ME
 permalink: "/portland-me"
 redirect_from:
-  - "/portland_me"
+- "/portland_me"
 name: Letter to Mayor and City Council
 city: Portland
 state: ME
 recipients:
-  - ksnyder@portlandmaine.gov
-  - bsr@portlandmaine.gov
-  - sthibodeau@portlandmaine.gov
-  - tchong@portlandmaine.gov
-  - jcosta@portlandmaine.gov
-  - kcook@portlandmaine.gov
-  - pali@portlandmaine.gov
-  - jduson@portlandmaine.gov
-  - nmm@portlandmaine.gov
-  - fclark@portlandmaine.org
-  - Richard.Farnsworth@legislature.maine.gov
-  - pali@portlandmaine.org
-body:
-  "Civil Servants,\n\nMy name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].\n\nI
+- ksnyder@portlandmaine.gov
+- bsr@portlandmaine.gov
+- sthibodeau@portlandmaine.gov
+- tchong@portlandmaine.gov
+- jcosta@portlandmaine.gov
+- kcook@portlandmaine.gov
+- pali@portlandmaine.gov
+- jduson@portlandmaine.gov
+- nmm@portlandmaine.gov
+- fclark@portlandmaine.org
+- Richard.Farnsworth@legislature.maine.gov
+- pali@portlandmaine.org
+body: "Civil Servants,\n\nMy name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].\n\nI
   am writing to ask that you provide no new funding for the Portland Police Department
   (PPD) and that you halt all funding that has already been approved in order to begin
   defunding the police immediately.\n\nAccording to the City Manager's Recommended
@@ -44,3 +43,4 @@ body:
   you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
 layout: email
 ---
+
