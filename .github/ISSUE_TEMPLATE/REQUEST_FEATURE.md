@@ -22,6 +22,6 @@ If you find your feature request already exists, use the Github’s “reactions
 
 ### Feature request guidelines
 * What is the use case for the suggested feature?
-* Does the feature fit the scope and goals of defund12.org?
-* Provide as much detail and context as possible regarding how the feature will be used. Being specific helps us envision the feature and make it a reality.
+* Does the feature fit the scope and goals of defund12.org? We are focused on making it as easy as possible to contact local elected officials about police defunding.
+* Provide as much detail and context as possible about how the feature will be used. Being specific helps us envision the feature and make it a reality.
 * Can you lead the development of the feature?
