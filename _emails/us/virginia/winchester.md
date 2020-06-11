@@ -1,10 +1,10 @@
 ---
-title: "Winchester, VA"
+title: Winchester, VA
 permalink: "/winchester"
-name: "Letter to Mayor and City Council"
-city: "Winchester"
-state: "VA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Winchester
+state: VA
+layout: email
 recipients:
 - david.smith@winchesterva.gov
 - evan.clark@winchesterva.gov
@@ -33,3 +33,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
