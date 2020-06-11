@@ -18,7 +18,6 @@ recipients:
 - andy.herod@accgov.com
 - ovita.thornton@accgov.com
 - mike.hamby@accgov.com
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Athens-Clarke County Unified Government,
 

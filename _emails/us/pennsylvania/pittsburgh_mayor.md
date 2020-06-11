@@ -7,7 +7,6 @@ state: PA
 layout: email
 recipients:
 - bill.peduto@pittsburghpa.gov
-subject: Reallocation of 2020 Budget into Community Support
 body: "Dear Mayor Peduto,\n\nMy name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]\n\nFrom
   reports of protesters being attacked around the city to the killing of Antwon Rose
   in East Pittsburgh - the police have shown that they are not doing their jobs to

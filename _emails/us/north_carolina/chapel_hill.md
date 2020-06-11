@@ -7,7 +7,6 @@ city: Chapel Hill
 layout: email
 recipients:
 - mayorandcouncil@townofchapelhill.org
-subject: Please decrease Chapel Hill Police Department’s budget
 body: |
   Dear Mayor Hemminger and Council members,
 

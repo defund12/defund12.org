@@ -16,7 +16,6 @@ recipients:
 - aryan@townofchapelhill.org
 - kstegman@townofchapelhill.org
 - mayorandcouncil@townofchapelhill.org
-subject: Please Redistribute Away From and Defund Chapel Hill Police
 body: "Dear Mayor Pam and Chapel Hill Town Council,\n\nI am asking you all to actively
   defund the police, to clarify how much Town Council plans to defund the police in
   advance of the Public Hearing on June 10, and provide evidence of how the initiatives

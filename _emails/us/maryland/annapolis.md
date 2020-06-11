@@ -14,7 +14,6 @@ recipients:
 - aldgay@annapolis.gov
 - aldsavidge@annapolis.gov
 - aldarnett@annapolis.gov
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear City Council Members and Mayor Buckley,
 

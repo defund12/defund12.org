@@ -23,7 +23,6 @@ recipients:
 - Tom.Donnelly@suffolkcountyny.gov
 - Sarah.Anker@suffolkcountyny.gov
 - Leslie.Kennedy@suffolkcountyny.gov
-subject: Commit to reallocate for social equity
 body: "Dear Suffolk County Legislature, \n\nHi, my name is [NAME] and I am a resident
   of [TOWN]. I am asking you to reallocate money away from the Suffolk County PD,
   which disproportionately targets Black residents. From traffic stops, to arrests,

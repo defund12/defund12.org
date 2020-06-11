@@ -21,7 +21,6 @@ recipients:
 - councilmember.ofarrell@lacity.org
 - councilmember.huizar@lacity.org
 - councilmember.buscaino@lacity.org
-subject: We demand a People's Budget
 body: |
   I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
 

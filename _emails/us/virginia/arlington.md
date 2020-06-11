@@ -10,7 +10,6 @@ recipients:
 - mdeferranti@arlingtonva.us
 - kcristol@arlingtonva.us
 - cdorsey@arlingtonva.us
-subject: Arlington Resident for Defunding of Arlington PD
 body: |
   My name is [YOUR NAME], and I am a resident of Arlington, VA. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our county recently withdrew police presence from DC, and is re-evaluating our mutual aid obligations to the city, but that is not enough.
 

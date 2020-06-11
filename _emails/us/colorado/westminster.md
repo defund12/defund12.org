@@ -18,7 +18,6 @@ recipients:
 - LDorr@cityofwestminster.us
 - CLindsey@cityofwestminster.us
 - JLHall@cityofwestminster.us
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Westminster City Council and Executive Leadership,
 

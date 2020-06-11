@@ -20,7 +20,6 @@ recipients:
 - dbrace@knoxvilletn.gov
 - egill@knoxvilletn.gov
 - swelch@knoxvilletn.gov
-subject: Defund the Knoxville Police Department
 body: |-
   Hello Knoxville Elected Officials,
 

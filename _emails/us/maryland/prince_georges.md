@@ -18,7 +18,6 @@ recipients:
 - CouncilDistrict6@co.pg.md.us
 - CouncilDistrict8@co.pg.md.us
 - CouncilDistrict9@co.pg.md.us
-subject: "[***INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear County Executive Alsobrooks and County Council,
 

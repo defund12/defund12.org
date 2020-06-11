@@ -48,7 +48,6 @@ recipients:
 - Alison.Stohr@phila.gov
 - James.kenney@phila.gov
 - brian.abernathy@phila.gov
-subject: Commit to reallocate for social equity / Defund the PPD
 body: "Dear Philadelphia City Council, \n\nMy name is [NAME], and I am a resident
   of [District/Neighborhood]. Mayor Kenney’s proposed Philadelphia budget for fiscal
   year 2021 has proposed a $14 million increase for the Philadelphia police department

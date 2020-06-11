@@ -14,7 +14,6 @@ recipients:
 - thomas.smigiel@norfolk.gov
 - andria.mcclellan@norfolk.gov
 - angelia.williams@norfolk.gov
-subject: xxx UNIQUE SUBJECT LINE xxx
 body: |-
   Dear Mayor Alexander and City Council Members,
 

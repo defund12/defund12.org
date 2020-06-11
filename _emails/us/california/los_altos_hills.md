@@ -12,7 +12,6 @@ recipients:
 - rspreen@losaltoshills.ca.gov
 - gtyson@losaltoshills.ca.gov
 - ccahill@losaltoshills.ca.gov
-subject: Los Altos Hills Resident for Defunding the Police Force
 body: |-
   To Mayor Wu, the Los Altos Hills City Council Members, and the Los Altos Hills City Manager.
 

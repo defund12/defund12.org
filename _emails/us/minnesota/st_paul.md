@@ -16,7 +16,6 @@ cc:
 - ward5@ci.stpaul.mn.us
 - ward6@ci.stpaul.mn.us
 - ward7@ci.stpaul.mn.us
-subject: Defund St. Paul Police Department
 body: "Dear Mayor Carter and St. Paul City Council,\n\nMy name is [YOUR NAME], and
   I am a resident of [YOUR CITY, STATE]. I stand in solidarity with protesters across
   the country who are out in the streets in response to the horrific murders of George

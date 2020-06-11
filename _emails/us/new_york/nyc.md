@@ -53,7 +53,6 @@ recipients:
 - DROSE@Council.nyc.gov
 - SMatteo@council.nyc.gov
 - borelli@council.nyc.gov
-subject: Commit to Vote No on the Mayor's Budget / Defund the NYPD
 body: "Dear New York City Council Members, \n\nMy name is [YOUR NAME] and I am a resident
   of [BOROUGH]. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for
   the Fiscal Year 2021, especially to education and youth programs, while refusing

@@ -30,7 +30,6 @@ recipients:
 - JennyLam@sfusd.edu
 - FaauugaMoliga@sfusd.edu
 - RachelNorton@sfusd.edu
-subject: San Francisco Resident for Defunding the SFPD
 body: |-
   To Mayor Breed, the San Francisco Board of Supervisors, and San Francisco Elected Officers
 

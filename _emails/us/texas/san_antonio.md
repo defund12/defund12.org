@@ -6,7 +6,6 @@ city: San Antonio
 state: TX
 recipients:
 - ron.nirenberg@sanantonio.gov
-subject: Decrease Funding for SAPD in the 2021 Budget
 body: |-
   Dear Mayor Nirenberg:
 

@@ -7,7 +7,6 @@ state: CA
 recipients:
 - Mayor@bakersfieldcity.us
 - City_Council@bakersfieldcity.us
-subject: Defund the Bakersfield Police Department
 body: "Dear Mayor and City Council,\n\nMy name is [YOUR NAME], I am a resident of
   [YOUR WARD/NEIGHBORHOOD]. We demand reallocation of funding from BPD to social and
   public programming that takes place in our communities. It is an outrage that nearly

@@ -12,7 +12,6 @@ recipients:
 - cheitmann@cityofventura.ca.gov
 - enasarenko@cityofventura.ca.gov
 - cweir@cityofventura.ca.gov
-subject: Ventura Resident for Defunding the VPD
 body: |-
   Dear Mayor LaVere and City Councilmembers,
 
