@@ -11,7 +11,6 @@ recipients:
 - shaun.mcgrath@hollyspringsnc.us
 - peter.villadsen@Hollyspringsnc.us
 - aaron.wolff@hollyspringsnc.us
-subject: Decrease funding for the Holly Springs police department
 body: "Dear Mayor Sears and Town Council,\n\nMy name is [NAME] and I am a resident
   of Holly Springs. I urge you to amend the proposed budget for 2021. I would like
   to redirect money away from Holly Springs Police Department and into social service

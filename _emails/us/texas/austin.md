@@ -16,7 +16,6 @@ recipients:
 - district6@austintexas.gov
 - kathie.tovo@austintexas.gov
 - district10@austintexas.gov
-subject: We Demand Divestment from Police and an Investment in Black Communities
 body: "Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].\n\nWE ARE JOINING
   TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: \n\n1. Vote no on all increases
   to police budgets \n2. Vote yes to decrease police spending and budgets \n3. Vote

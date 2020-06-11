@@ -14,7 +14,6 @@ recipients:
 - John.Gale@hartford.gov
 - wildaliz.bermudez@hartford.gov
 - Joshua.Michtom@hartford.gov
-subject: Reduce the Hartford Police Department’s Budget
 body: |-
   Dear City Councilors,
 

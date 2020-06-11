@@ -12,7 +12,6 @@ recipients:
 - Will.culver@huntsvilleAL.gov
 - strongalabama@att.net
 - Contact@HuntsvilleAL.gov
-subject: Defund Huntsville PD
 body: "Hi, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am writing to
   demand that the Huntsville City Council adopt a city budget that prioritizes community
   wellbeing, and redirects funding away from the police.\n\nThe proposed budget for

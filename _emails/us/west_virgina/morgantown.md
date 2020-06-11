@@ -14,7 +14,6 @@ recipients:
 - rdulaney@morgantownwv.gov
 - dharshbarger@morgantownwv.gov
 - bwendell@morgantownwv.gov
-subject: Please Commit More Resources to our Community & Rethink Policing
 body: |-
   My name is [YOUR NAME], and I’m a resident of Morgantown, West Virginia. I am writing about the Morgantown fiscal year 2021 budget and call for you to review city policies surrounding police.
 

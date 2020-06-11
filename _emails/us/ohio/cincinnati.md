@@ -17,7 +17,6 @@ recipients:
 - pg.sittenfeld@cincinnati-oh.gov
 - betsy.sundermann@cincinnati-oh.gov
 - wendell.young@cincinnati-oh.gov
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Cranley and Cincinnati City Council,
 

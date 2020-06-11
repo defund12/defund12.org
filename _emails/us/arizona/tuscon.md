@@ -14,7 +14,6 @@ recipients:
 - Ward6@tucsonaz.gov
 - citymanager@tucsonaz.gov
 - Mayor.Romero@tucsonaz.gov
-subject: Defund the Tucson Police Department
 body: |-
   Hello,
 

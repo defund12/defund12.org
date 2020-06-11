@@ -20,7 +20,6 @@ recipients:
 - ssallee@tulsacounty.org
 - kfothergill@tulsacounty.org
 - rpeters@tulsacounty.org
-subject: Reallocate for Justice
 body: "Dear Mayor Bynum, Tulsa City Council, and County Board of Commissioners,\n\nMy
   name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/WARD].  The City of Tulsa
   must do better by its residents. I am urging you to divest from the criminalization

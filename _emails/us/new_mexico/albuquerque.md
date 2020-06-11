@@ -15,7 +15,6 @@ recipients:
 - dgibson@cabq.gov
 - trudyjones@cabq.gov
 - dharris@cabq.gov
-subject: Reduce the Albuquerque Police Department Budget and Invest in Our Community
 body: "\nHello,\n\nMy name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD], and
   I am emailing today to demand an overhaul to our Albuquerque Police Department budget
   in light of the Black Lives Matter protests across the US, but specifically in Albuquerque.

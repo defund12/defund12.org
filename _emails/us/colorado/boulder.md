@@ -17,7 +17,6 @@ recipients:
 - yatesb@bouldercolorado.gov
 - council@bouldercolorado.gov
 - homeownership@bouldercolorado.gov
-subject: INSERT UNIQUE SUBJECT LINE
 body: "Dear Council Members of the City of Boulder,\n\nMy name is [NAME] and I am
   a resident of [NEIGHBORHOOD]. I am writing to urge you to defund the Boulder Police
   Department.\n\nBased on the 2020 budget that you approved in October 2019, the Boulder

@@ -2,19 +2,17 @@
 title: Eugene, Oregon
 permalink: "/eugene"
 name: Letter to the Mayor, Commissioners, Budget Committee, and City Council
-state: OR
 city: Eugene
-layout: email
+state: OR
 recipients:
 - lvinis@eugene-or.gov
 - ceepdcommission@ci.eugene.or.us
 - eugene.budget.committee@ci.eugene.or.us
 - MayorCouncilandCityManager@eugene-or.gov
-subject: Defund Eugene PD
 body: |-
   Dear Mayor Lucy Vinis, Commissioners, Budget Committee, and City Council,
 
-  My name is [YOUR NAME] and I am a resident of [CITY/DISTRICT]. It is my understanding that you will be reviewing the proposed 2021 City Budget on June 22th, 2020. I urge you to oppose the increase in funding from $61.35 mil in FY-2020 to $67.97 mil in FY-2021 for the Eugene Police Department (EPD) and instead, decrease it.
+  My name is [YOUR NAME] and I am a resident of [CITY/DISTRICT]. It is my understanding that you will be reviewing the proposed 2021 City Budget on June 22nd, 2020. I urge you to oppose the increase in funding from $61.35 mil in FY-2020 to $67.97 mil in FY-2021 for the Eugene Police Department (EPD) and instead, meaningfully restrict it.
 
   Policing plays a strong role in enforcing racism and social control of communities of color through disempowerment, displacement, and repression. Black people and communities of color have been disproportionately targeted and brutalized by the police throughout American history.
 
@@ -29,13 +27,10 @@ body: |-
   The City of Eugene has already shown willingness to invest in change by funding programs like CAHOOTS. As a community, we should continue to build on these ideals and continue to invest in evidence-based alternatives to police that directly advocate for our citizens and work to replace policing with other systems of public safety. This starts with divesting funding from the EPD in FY-2021.
 
   Thank you for your time,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
+layout: email
 ---
 

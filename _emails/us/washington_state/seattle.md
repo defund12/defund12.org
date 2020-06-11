@@ -16,7 +16,6 @@ recipients:
 - andrew.lewis@seattle.gov
 - teresa.mosqueda@seattle.gov
 - lorena.gonzalez@seattle.gov
-subject: Commit to Reallocation for Social Equity
 body: |-
   Dear Seattle City Leadership,
 

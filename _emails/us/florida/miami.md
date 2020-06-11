@@ -14,7 +14,6 @@ recipients:
 - anoriega@miamigov.com
 - clerks@miamigov.com
 - VMendez@miamigov.com
-subject: Miami Demands a People's Budget
 body: |-
   My name is [NAME], I am a resident of Miami. I am writing to demand that the City of Miami adopt a budget that prioritizes community wellbeing and redirects funding away from the police. I will not be content with “reform;” I am demanding that real change be made to the way this city allocates its resources.
 

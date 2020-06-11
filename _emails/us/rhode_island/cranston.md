@@ -17,7 +17,6 @@ recipients:
 - brady4cranston@gmail.com
 - chrispaplauskas@gmail.com
 - mike@favilaw.com
-subject: Defund Cranston Police
 body: |
   Dear Mayor Fung and Cranston City Council,
 

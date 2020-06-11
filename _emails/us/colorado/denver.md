@@ -24,14 +24,14 @@ recipients:
 - ortegaatlarge@denvergov.org
 - DPDRecruiting@Denvergov.org
 - dsdinfo@denvergov.org
-subject: INSERT UNIQUE SUBJECT LINE
 body: "Dear Denver City Council,\n\nMy name is [YOUR NAME] and I am a resident of
   [NEIGHBORHOOD/BOROUGH/CITY]. \n\nI am writing to demand a reallocation of funding
   from the Denver Police Department to social and public programming for our communities.
   With record unemployment and a seemingly intractable pattern of abuse and unequal
   treatment by police, our city needs a budget that adequately and effectively meets
-  the needs of at-risk Denver residents.\n\nFor FY2020, over $500,000,000 was allocated
-  for policing (40% of the budget) while only $7.7m was allocated for safety net programs.
+  the needs of at-risk Denver residents.\n\nFor FY2020, over $405,000,000 was allocated
+  for policing (29% of the general fund budget) while less than $217m was allocated
+  for health, housing stability, economic development, and parks and recreation combined.
   In a June 6th interview, Mayor Hancock said that there is no plan to address this
   inequality. This is unacceptable, and I demand that the city council remedy this
   gross display of priorities. You must support a budget that supports social equity

@@ -10,7 +10,6 @@ recipients:
 - Mark.Jinks@alexandriava.gov
 - Morgan.Routt@alexandriava.gov
 - CityCouncil@alexandriava.gov
-subject: Defund Alexandria PD & Sheriff's Office
 body: |
   Dear Members of the City Council and the Office of Management and Budget,
 
@@ -24,11 +23,8 @@ body: |
 
   Sincerely,
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
 layout: email
 ---
