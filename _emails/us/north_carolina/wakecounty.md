@@ -7,6 +7,8 @@ city: Wake County
 layout: email
 recipients:
   - commissioners@wakegov.com
+cc:
+  - denise.hogan@wakegov.com
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Wake County Commissioners,
@@ -23,5 +25,4 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-cc: denise.hogan@wakegov.com
 ---
