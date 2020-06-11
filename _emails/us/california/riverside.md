@@ -2,8 +2,8 @@
 title: "Riverside, CA"
 permalink: "/riverside"
 name: "Letter to Riverside Mayor and City Council"
-city: "Phoenix"
-state: "AZ"
+city: "Riverside"
+state: "CA"
 layout: email
 recipients:
 - EEdwards@riversideca.gov
@@ -30,4 +30,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-
