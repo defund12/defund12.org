@@ -1,16 +1,16 @@
 ---
-title: "El Cerrito, California"
+title: El Cerrito, California
 permalink: "/elcerrito"
-name: "Letter to the Mayor, Mayor Pro Tem, and City Council"
-state: "CA"
-city: "El Cerrito"
-layout: "email"
+name: Letter to the Mayor, Mayor Pro Tem, and City Council
+state: CA
+city: El Cerrito
+layout: email
 recipients:
-- "glyman@ci.el-cerrito.ca.us"
-- "pfadelli@ci.el-cerrito.ca.us"
-- "jabelson@ci.el-cerrito.ca.us"
-- "gquinto@ci.el-cerrito.ca.us"
-- "rpardueokimoto@ci.el-cerrito.ca.us"
+- glyman@ci.el-cerrito.ca.us
+- pfadelli@ci.el-cerrito.ca.us
+- jabelson@ci.el-cerrito.ca.us
+- gquinto@ci.el-cerrito.ca.us
+- rpardueokimoto@ci.el-cerrito.ca.us
 subject: "[INSERT UNIQUE SUBJECT]"
 body: |-
   Dear Mayor Lyman, Mayor Pro Tem Fadelli, and El Cerrito Council Members:
