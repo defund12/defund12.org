@@ -35,7 +35,6 @@ recipients:
 - massarond@detroitmi.gov
 - hammerk@detroitmi.gov
 - stoudemiret@detroitmi.gov
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Honorable Detroit City Council Members,
 
