@@ -1,19 +1,22 @@
 ---
 title: Nassau County
-permalink: "/Nassau"
+permalink: "/nassau"
+redirect_from:
+  - "/Nassau"
 name: Letter to County Legislature
 city: Nassau County
 state: NY
 recipients:
-- rnicolello@nassaucountyny.gov
-- hkopel@nassaucountyny.gov
-- kabrahams@nassaucountyny.gov
-- csolages@nassaucountyny.gov
-- vmuscarella@nassaucountyny.gov
-- adrucker@nassaucountyny.gov
-- rmwalker@nassaucountyny.gov
-- dford@nassaucountyny.gov
-body: "Dear Nassau County Legislature, \n\nHi, my name is [NAME] and I am a resident
+  - rnicolello@nassaucountyny.gov
+  - hkopel@nassaucountyny.gov
+  - kabrahams@nassaucountyny.gov
+  - csolages@nassaucountyny.gov
+  - vmuscarella@nassaucountyny.gov
+  - adrucker@nassaucountyny.gov
+  - rmwalker@nassaucountyny.gov
+  - dford@nassaucountyny.gov
+body:
+  "Dear Nassau County Legislature, \n\nHi, my name is [NAME] and I am a resident
   of [TOWN]. I am asking you to reallocate money away from the Nassau County PD, which
   disproportionately targets Black residents. From traffic stops, to arrests, to the
   use of lethal force, Nassau PD targets nonwhite residents at a rate far exceeding
@@ -25,4 +28,3 @@ body: "Dear Nassau County Legislature, \n\nHi, my name is [NAME] and I am a resi
   NUMBER]\n"
 layout: email
 ---
-
