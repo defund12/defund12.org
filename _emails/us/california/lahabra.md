@@ -1,14 +1,14 @@
 ---
-title: "La Habra, CA"
+title: La Habra, CA
 permalink: "/lahabra"
-name: "Letter to Mayor Beamish and City Council"
-city: "La Habra"
-state: "CA"
-layout: "email"
+name: Letter to Mayor Beamish and City Council
+city: La Habra
+state: CA
+layout: email
 recipients:
-  - "rferrier@lahabraca.gov"
-  - "bhurt@lahabraca.gov"
-  - "cc@lahabraca.gov"
+- rferrier@lahabraca.gov
+- bhurt@lahabraca.gov
+- cc@lahabraca.gov
 subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Tom Beamish and La Habra City Council members,
@@ -33,3 +33,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
