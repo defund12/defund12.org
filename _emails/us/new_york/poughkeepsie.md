@@ -24,7 +24,7 @@ subject:
 body: |-
   To Poughkeepsie Town Officials:
 
-  My name is [Insert Name] and I am a resident of [Neighborhood/City].
+  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD].
 
   Given the historic, social, and political origins of police and policing, in conjunction with the recent nationwide protests reflecting the antiBlack deaths of George Floyd, Breonna Taylor, and Tony McDade I am contacting you because I am demanding you to redirect money away from the Poughkeepsie Police Department and prioritize collective services that will help improve the socio-economic conditions of Poughkeepsie's predominately Black communities.
 
