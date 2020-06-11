@@ -5,23 +5,25 @@ permalink: "/milwaukee"
 name: Letter to Council Members
 city: Milwaukee
 state: WI
+layout: email
 recipients:
-- Cavalier.Johnson2@milwaukee.gov
-- ahamil@milwaukee.gov
-- nkovac@milwaukee.gov
-- rjbauma@milwaukee.gov
-- ald05@milwaukee.gov
-- mcoggs@milwaukee.gov
-- Khalif.Rainey@milwaukee.gov
-- Chantia.Lewis@milwaukee.gov
-- mmurph@milwaukee.gov
-- mark.borkowski@milwaukee.gov
-- JoseG.Perez@milwaukee.gov
-- scott.spiker@milwaukee.gov
-- Marina@milwaukee.gov
-- russell.stamper@milwaukee.gov
+  - Cavalier.Johnson2@milwaukee.gov
+  - ahamil@milwaukee.gov
+  - nkovac@milwaukee.gov
+  - rjbauma@milwaukee.gov
+  - ald05@milwaukee.gov
+  - mcoggs@milwaukee.gov
+  - Khalif.Rainey@milwaukee.gov
+  - Chantia.Lewis@milwaukee.gov
+  - mmurph@milwaukee.gov
+  - mark.borkowski@milwaukee.gov
+  - JoseG.Perez@milwaukee.gov
+  - scott.spiker@milwaukee.gov
+  - Marina@milwaukee.gov
+  - russell.stamper@milwaukee.gov
 subject: Defund MPD, Reallocate for Social Equity
-body: "Dear Milwaukee Council Members,\n\nMy name is [YOUR NAME] and I am a resident
+body:
+  "Dear Milwaukee Council Members,\n\nMy name is [YOUR NAME] and I am a resident
   of [NEIGHBORHOOD/CITY].\n\nI am extremely concerned with the City of Milwaukee’s
   inordinate investment in the Milwaukee Police Department (MPD) at the expense of
   critical youth, education, and health services.\n\nI am asking that the Milwaukee
@@ -44,4 +46,3 @@ body: "Dear Milwaukee Council Members,\n\nMy name is [YOUR NAME] and I am a resi
   programs?\n\nThank you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE
   NUMBER]"
 ---
-
