@@ -1,20 +1,20 @@
 ---
-title: "Palm Beach County, Florida"
+title: Palm Beach County, Florida
 permalink: "/palmbeachcounty"
-name: "Letter to the Board of County Commissioners, OFMB Director, and County Administrator"
-state: "FL"
-city: "Palm Beach County"
-layout: "email"
+name: Letter to the Board of County Commissioners, OFMB Director, and County Administrator
+state: FL
+city: Palm Beach County
+layout: email
 recipients:
-- "DKerner@pbcgov.org"
-- "RWeinroth@pbcgov.org"
-- "HValeche@pbcgov.org"
-- "gweiss@pbcgov.org"
-- "MBerger@pbcgov.org"
-- "MMcKinlay@pbcgov.org"
-- "MBernard@pbcgov.org"
-- "OFMB@pbcgov.org"
-- "public@co.palm-beach.fl.us"
+- DKerner@pbcgov.org
+- RWeinroth@pbcgov.org
+- HValeche@pbcgov.org
+- gweiss@pbcgov.org
+- MBerger@pbcgov.org
+- MMcKinlay@pbcgov.org
+- MBernard@pbcgov.org
+- OFMB@pbcgov.org
+- public@co.palm-beach.fl.us
 subject: "[INSERT UNIQUE SUBJECT]"
 body: |-
   To the Board of Palm Beach County Commissioners, OFMB Director Brown, and County Administrator Baker,
