@@ -6,11 +6,11 @@ city: Emeryville
 state: CA
 layout: email
 recipients:
-  - crpatz@emeryville.org
-  - dmartinez@emeryville.org
-  - jbauters@emeryville.org
-  - sdonahue@emeryville.org
-  - amedina@emeryville.org
+- crpatz@emeryville.org
+- dmartinez@emeryville.org
+- jbauters@emeryville.org
+- sdonahue@emeryville.org
+- amedina@emeryville.org
 subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear Emeryville Mayor and City Council Members:
@@ -32,3 +32,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
