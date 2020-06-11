@@ -7,6 +7,32 @@ on:
   pull_request:
 
 jobs:
+  test-jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: "2.6"
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - run: gem install bundler
+      - run: bundle config path vendor/bundle
+      - run: bundle install --jobs 4 --retry 3
+      - run: mkdir public
+      - run: bundle exec jekyll build --destination ./public
+        env:
+          JEKYLL_ENV: production
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages-test
+          enable_jekyll: true
   js-lint:
     runs-on: ubuntu-latest
     steps:
