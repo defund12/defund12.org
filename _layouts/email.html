@@ -17,13 +17,13 @@
     <div class="container">
         <div class="emailContent">
             <div class="recipients">
-                <b>To:</b> {{ page.recipients | join: ',' }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ',' }}`)">🔗</span>
+                <b>To:</b> {{ page.recipients | join: ', ' }}
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.recipients | join: ', ' }}`)">🔗</span>
             </div>
             {% if page.cc %}
             <div class="recipients">
-                <b>CC:</b> {{ page.cc | join: ',' }}
-                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ',' }}`)">🔗</span>
+                <b>CC:</b> {{ page.cc | join: ', ' }}
+                <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ', ' }}`)">🔗</span>
             </div>
             {% endif %}
             <div class="recipients">
