@@ -6,11 +6,11 @@ city: San Gabriel
 state: CA
 layout: email
 recipients:
-  - dmenchaca@sgch.org
-  - cliao@sgch.org
-  - tonydingforsangabriel@gmail.com
-  - jharrington@sgch.org
-  - jpu@sgch.org
+- dmenchaca@sgch.org
+- cliao@sgch.org
+- tonydingforsangabriel@gmail.com
+- jharrington@sgch.org
+- jpu@sgch.org
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear San Gabriel Mayor and City Council,
@@ -31,3 +31,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
