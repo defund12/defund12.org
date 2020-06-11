@@ -13,7 +13,6 @@ recipients:
 - DCastellanos@westcovina.org
 - Lloyd.Johnson@westcovina.org
 - city_clerk@westcovina.org
-subject: "[***INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear Mayor Tony Wu and West Covina City Councilmembers,
 

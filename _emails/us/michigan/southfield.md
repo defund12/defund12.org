@@ -15,7 +15,6 @@ recipients:
 - mmandelbaum@cityofsouthfield.com
 - ltaylor@cityofsouthfield.com
 - ilowenberg@cityofsouthfield.com
-subject: Southfield Resident for Defunding of SPD
 body: |-
   To Mayor Siver and Southfield City Council,
 

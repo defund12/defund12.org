@@ -25,7 +25,6 @@ recipients:
 - jea.street@newcastlede.gov
 - david.tackett@newcastlede.gov
 - james.bell@newcastlede.gov
-subject: Defund Wilmington Police Department
 body: |-
   Dear Wilmington City and County officials,
 

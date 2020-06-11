@@ -12,7 +12,6 @@ recipients:
 - orobinson@greatfallsmt.net
 - rtryon@greatfallsmt.net
 - thouck@greatfallsmt.net
-subject: Great Falls demands a budget for justice
 body: |-
   Dear Great Falls City Commissioners,
 

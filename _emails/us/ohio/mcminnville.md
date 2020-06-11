@@ -12,7 +12,6 @@ recipients:
 - zack.geary@mcminnvilleoregon.gov
 - Remy.Drabkin@mcminnvilleoregon.gov
 - Adam.Garvin@mcminnvilleoregon.gov
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Hill and McMinnville City Council members,
 

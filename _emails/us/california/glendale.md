@@ -10,7 +10,6 @@ recipients:
 - anajarian@glendaleca.gov
 - AKassakhian@Glendaleca.gov
 - dbrotman@glendaleca.gov
-subject: Commit to reallocate for social equity
 body: "Dear Glendale Mayor and City Council, \n\nMy name is [YOUR NAME] and I am a
   resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the City Council
   adopt a budget that prioritizes community wellbeing and redirects funding away from

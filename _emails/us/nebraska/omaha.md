@@ -15,7 +15,6 @@ recipients:
 - Aimee.Melton@cityofomaha.org
 - carrie.murphy@cityofomaha.org
 - hotline@cityofomaha.org
-subject: Defund OPD
 body: |
   Dear Mayor Jean Stothert and Members of City Council,
 

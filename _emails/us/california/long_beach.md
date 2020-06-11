@@ -17,7 +17,6 @@ recipients:
 - District7@longbeach.gov
 - District8@longbeach.gov
 - District9@longbeach.gov
-subject: Defund Long Beach Police
 body: |-
   Dear Long Beach Mayor and City Council,
 

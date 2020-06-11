@@ -13,7 +13,6 @@ recipients:
 - bzoslocki@modestogov.com
 - jkenoyer@modestogov.com
 - dridenour@modestogov.com
-subject: Divest from Police and Invest in Community
 body: |-
   Mayor Brandvold and City Council members,
 

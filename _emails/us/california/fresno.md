@@ -15,7 +15,6 @@ recipients:
 - nelson.esparza@fresno.gov
 - wilma.quan@fresno.gov
 - yvonne.spence@fresno.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Hello City Council Member,
 

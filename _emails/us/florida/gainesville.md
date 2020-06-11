@@ -20,7 +20,6 @@ recipients:
 - rhutchinson@alachuacounty.us
 - kcornell@alachuacounty.us
 - cschestnut@alachuacounty.us
-subject: Defund the Gainesville PD
 body: |-
   Hello,
 

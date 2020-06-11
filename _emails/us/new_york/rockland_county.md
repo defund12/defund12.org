@@ -25,7 +25,6 @@ recipients:
 - JobsonD@co.rockland.ny.us
 - GrantM@co.rockland.ny.us
 - HoodJ@co.rockland.ny.us
-subject: Defund Rockland County Sheriff's Office
 body: |-
   To County Executive Ed Day, DA Tom Walsh, and Rockland County legislature,
 

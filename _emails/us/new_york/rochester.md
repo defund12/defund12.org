@@ -17,7 +17,6 @@ recipients:
 - Jose.Peo@cityofrochester.gov
 - info@cityofrochester.gov
 - Lovely@MayorLovelyWarren.com
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: "To the Rochester City Council and Mayor Lovely Warren,\n\nMy name is [YOUR
   NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am imploring you to meaningfully
   restrict the Rochester Police Department’s $95.87 million dollar budget immediately.

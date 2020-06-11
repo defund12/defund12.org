@@ -18,7 +18,6 @@ recipients:
 - angela.pearson@kcmo.org
 - katrina.foster@kcmo.org
 - fred.wickham@kcmo.org
-subject: Defund the Kansas City Police Department
 body: |
   Dear Mayor Lucas and City Council,
 

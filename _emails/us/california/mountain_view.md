@@ -15,7 +15,6 @@ recipients:
 - city.mgr@mountainview.gov
 - kimbra.mccarthy@mountainview.gov
 - citycouncil@mountainview.gov
-subject: Mountain View Resident for Defunding the MVPD
 body: |-
   To Mayor Abe-Koga, Mountain View City Council Members, and the Mountain View City Manager,
 

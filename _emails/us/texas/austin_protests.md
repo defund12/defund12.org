@@ -17,7 +17,6 @@ recipients:
 - Paige.Ellis@austintexas.gov
 - Kathie.Tovo@austintexas.gov
 - Alison.Alter@austintexas.gov
-subject: We Demand Divestment from Police and an Investment in Black Communities
 body: "Dear City Council Members, \n\nMy name is [NAME], and I am a resident of Austin,
   Texas. I am outraged at the excessive use of force that APD used against protesters
   this weekend. Using police brutality against people peacefully protesting police

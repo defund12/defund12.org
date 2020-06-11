@@ -8,7 +8,6 @@ recipients:
 - kullac@co.yamhill.or.us
 - starrettm@co.yamhill.or.us
 - olsonr@co.yamhill.or.us
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Yamhill County Commissioners Kulla, Starrett, and Olson,
 

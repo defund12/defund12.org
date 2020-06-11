@@ -15,7 +15,6 @@ recipients:
 - nancy.hoffmann@greensboro-nc.gov
 - tammi.thurm@greensboro-nc.gov
 - David.parrish@greensboro-nc.gov
-subject: Defund the Greensboro Police & Reallocate Funds
 body: |-
   Dear Mayor Vaughan & City Council Members,
 

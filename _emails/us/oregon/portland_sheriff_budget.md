@@ -13,7 +13,6 @@ recipients:
 - district3@multco.us
 - district4@multco.us
 - boardclerk@multco.us
-subject: Sheriff Department Budget Requests
 body: |
   Hello Multnomah County commissioners,
 
