@@ -5,17 +5,16 @@ name: Letter to City Council and Mayor
 city: Annapolis
 state: MD
 recipients:
-- mayorbuckley@annapolis.gov
-- aldtierney@annapolis.gov
-- aldpaone@annapolis.gov
-- aldpindellcharles@annapolis.gov
-- aldfinlayson@annapolis.gov
-- aldrodriguez@annapolis.gov
-- aldgay@annapolis.gov
-- aldsavidge@annapolis.gov
-- aldarnett@annapolis.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - mayorbuckley@annapolis.gov
+  - aldtierney@annapolis.gov
+  - aldpaone@annapolis.gov
+  - aldpindellcharles@annapolis.gov
+  - aldfinlayson@annapolis.gov
+  - aldrodriguez@annapolis.gov
+  - aldgay@annapolis.gov
+  - aldsavidge@annapolis.gov
+  - aldarnett@annapolis.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear City Council Members and Mayor Buckley,
 
