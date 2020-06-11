@@ -30,5 +30,7 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+phonenumbers:
+  - { name: "City Hall", phone: "805-963-0611" }
 ---
 

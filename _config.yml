@@ -22,11 +22,18 @@ defaults:
     city: City
     state: State intials
     recipients:
-    - 
+    -
     subject: Email subject (mention defunding police dept.)
     body: Email message (remember to include placeholders for name)
+    phonescript: |-
+      My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT].
+      I am calling to demand that [YOUR CITY] adopts a budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+      [Research shows](https://populardemocracy.org/news/publications/freedom-thrive-reimagining-safety-security-our-communities) that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons.
+
+      (Refer to the above email script for further details relating to your city.)
 permalink: pretty
-subtitle: Email government officials and council members to reallocate egregious police
+subtitle: Call and email government officials and council members to reallocate egregious police
   budgets towards education, social services, and dismantling racial inequality via
   this crowd-sourced tool.
 meta: Email government officials and council members to reallocate police budgets
@@ -38,6 +45,8 @@ footer_text: |-
 contact_email_footer: "[contact@defund12.org](mailto:contact@defund12.org)"
 default_subject_line: "[*** INSERT UNIQUE SUBJECT LINE ***]"
 auto_open_message: This page automatically opens a drafted email for you.
+call_reps_message: Calling your elected officials can be the best way to get their attention.
+  Call them now at the numbers below. Use the provided script, and add your personal story if you wish.
 bad_mailto_message: Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
 url: https://defund12.org
