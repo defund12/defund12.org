@@ -18,6 +18,8 @@ jobs:
   test-jekyll:
     runs-on: ubuntu-latest
     steps:
+      - name: Set IS_MASTER
+        run: echo ::set-env name=IS_MASTER::${{ github.ref == 'refs/heads/master' }}
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
         with:
@@ -44,13 +46,15 @@ jobs:
   js-lint:
     runs-on: ubuntu-latest
     steps:
+      - name: Set IS_MASTER
+        run: echo ::set-env name=IS_MASTER::${{ github.ref == 'refs/heads/master' }}
       - uses: actions/checkout@v2
       - name: Build
         run: yarn install --frozen-lockfile
       - name: Lint
         run: yarn lint
       - name: Notify deploy failed
-        if: ${{ failure() && github.ref == 'refs/heads/master' }}
+        if: failure() && env.IS_MASTER == true
         uses: pullreminders/slack-action@v1.0.9
         env:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
@@ -59,13 +63,15 @@ jobs:
   js-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Set IS_MASTER
+        run: echo ::set-env name=IS_MASTER::${{ github.ref == 'refs/heads/master' }}
       - uses: actions/checkout@v2
       - name: Build
         run: yarn install --frozen-lockfile
       - name: Test
         run: yarn test
       - name: Notify deploy failed
-        if: ${{ failure() && github.ref == 'refs/heads/master' }}
+        if: failure() && env.IS_MASTER == true
         uses: pullreminders/slack-action@v1.0.9
         env:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
@@ -74,6 +80,8 @@ jobs:
   py-markdown-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Set IS_MASTER
+        run: echo ::set-env name=IS_MASTER::${{ github.ref == 'refs/heads/master' }}
       - uses: actions/checkout@v2
       - name: Build
         uses: docker://docker
@@ -84,7 +92,7 @@ jobs:
         with:
           args: docker run -v /home/runner/work/defund12.org/defund12.org/_emails:/email_markdown_files markdown-tests:latest
       - name: Notify deploy failed
-        if: ${{ failure() && github.ref == 'refs/heads/master' }}
+        if: failure() && env.IS_MASTER == true
         uses: pullreminders/slack-action@v1.0.9
         env:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
@@ -96,7 +104,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set commit message
+      - name: Set COMMIT_MSG
         run: echo ::set-env name=COMMIT_MSG::$(git log --format=%s -n 1)
       - uses: actions/cache@v2
         with:
