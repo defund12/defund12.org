@@ -16,7 +16,6 @@ recipients:
 - peter.spadafore@lansingmi.gov
 - patricia.spitzley@lansingmi.gov
 - carol.wood@lansingmi.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Mayor Schor and Lansing City Council members:
 

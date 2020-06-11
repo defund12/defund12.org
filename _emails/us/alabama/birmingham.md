@@ -29,7 +29,6 @@ recipients:
 - wardine.alexander@birminghamal.gov
 - steven.hoyt@birminghamal.gov
 - john.hilliard@birminghamal.gov
-subject: Decrease Funding for Birmingham Police
 body: |
   Dear Birmingham City Council, staff, and Executive departments,
 

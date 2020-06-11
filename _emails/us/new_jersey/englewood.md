@@ -12,7 +12,6 @@ recipients:
 - mcohen@cityofenglewood.org
 - kglynn@cityofenglewood.org
 - whamer@cityofenglewood.org
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Hello,
 

@@ -20,7 +20,6 @@ recipients:
 - Mkeys@erie.pa.us
 - Kschaaf@erie.pa.us
 - Mwitherspoon@erie.pa.us
-subject: Reallocate Funding From the Erie Police Department
 body: |-
   Dear Erie Mayor's Office, City Council Members and other City Officials,
 

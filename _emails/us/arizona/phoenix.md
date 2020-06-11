@@ -15,7 +15,6 @@ recipients:
 - council.district.6@phoenix.gov
 - council.district.7@phoenix.gov
 - council.district.8@phoenix.gov
-subject: Reallocate police funds for social equity
 body: "Dear Phoenix Mayor and Council members,\n\nMy name is [NAME] and I live in
   [DISTRICT OR CITY]. I am writing to you as a constituent who is disturbed by the
   injustices and brutality carried out by police forces across the country, and particularly

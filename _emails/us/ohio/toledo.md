@@ -2,9 +2,8 @@
 title: Toledo, OH
 permalink: "/toledo"
 name: Letter to Mayor and City Council
-state: OH
 city: Toledo
-layout: email
+state: OH
 recipients:
 - Wade.Kapszukiewicz@toledo.oh.gov
 - Tyrone.Riley@toledo.oh.gov
@@ -22,12 +21,11 @@ recipients:
 - Catherine.Crosby@toledo.oh.gov
 - Karen.Poore@toledo.oh.gov
 - Abby.Arnold@toledo.oh.gov
-subject: Defund Toledo PD
 body: "Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. \n\nThe City
-  of Toledo must do better by all of its residents. The current city budget affords
-  the criminalization of Black communities while offering very little investment in
-  them. In order for Toledo to be a more equitable city, I call on our leaders to
-  reduce police spending for the 2021 fiscal year. \n\nIn the 2020 budget for “basic
+  of Toledo must do better by all of its residents. The current city budget facilitates
+  the criminalization of Black communities while offering very little direct investment
+  in them. In order for Toledo to be a more equitable city, I call on our leaders
+  to reduce police spending for the 2021 fiscal year. \n\nIn the 2020 budget for “basic
   services,” the police department receives $91,859,538 of $251,227,767 - more than
   a third of the budget. In the past three years alone, police spending has increased
   by $10 million. Consider what that $10 million could accomplish in three years if
@@ -39,6 +37,8 @@ body: "Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. \n\nThe C
   a more equitable city for all of us and correct what decades of neglect and destructive
   policing have done to underserved Black communities. I urge you to have the moral
   clarity to create a budget focused on building communities and creating positive
-  change instead of investing in a racist and destructive institution. \n\nThank you,\n\n[NAME]"
+  change instead of investing in a racist and destructive institution. \n\nThank you,\n[YOUR
+  NAME]\n[YOUR ADDRESS]\n[YOUR PHONE]\n[YOUR EMAIL]"
+layout: email
 ---
 

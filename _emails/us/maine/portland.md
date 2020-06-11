@@ -17,7 +17,6 @@ recipients:
 - fclark@portlandmaine.org
 - Richard.Farnsworth@legislature.maine.gov
 - pali@portlandmaine.org
-subject: Portland Resident for Defunding of PPD
 body: "Civil Servants,\n\nMy name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].\n\nI
   am writing to ask that you provide no new funding for the Portland Police Department
   (PPD) and that you halt all funding that has already been approved in order to begin

@@ -13,7 +13,6 @@ recipients:
 - MGriffiths@TorranceCA.Gov
 - SKalani@TorranceCA.gov
 - AMattucci@TorranceCA.gov
-subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear Mayor Furey and Torrance City Council Members,
 
