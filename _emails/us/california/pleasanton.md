@@ -11,8 +11,7 @@ recipients:
 - jpentin@cityofpleasantonca.gov
 - jtesta@cityofpleasantonca.gov
 - citycouncil@cityofpleasantonca.gov
-- bdolan@cityofpleasantonca.gov
-  Communities of Color
+- bdolan@cityofpleasantonca.gov Communities of Color
 body: |-
   To whom it may concern,
 
