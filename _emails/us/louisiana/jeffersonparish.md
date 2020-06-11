@@ -6,18 +6,18 @@ city: Jefferson Parish
 state: LA
 layout: email
 recipients:
-  - jpbudget@jeffparish.net
-  - sheriff@jpso.com
-  - PIO2@jpso.com
-  - RickyTemplet@jeffparish.net
-  - BLawson@jeffparish.net
-  - ScottWalker@jeffparish.net
-  - BPGrenrood@jeffparish.net
-  - JenniferVanVrancken@JeffParish.net
-  - byronlee@jeffparish.net
-  - marionedwards@jeffparish.net
-  - DeanoBonano@jeffparish.net
-  - dimpastato@jeffparish.net
+- jpbudget@jeffparish.net
+- sheriff@jpso.com
+- PIO2@jpso.com
+- RickyTemplet@jeffparish.net
+- BLawson@jeffparish.net
+- ScottWalker@jeffparish.net
+- BPGrenrood@jeffparish.net
+- JenniferVanVrancken@JeffParish.net
+- byronlee@jeffparish.net
+- marionedwards@jeffparish.net
+- DeanoBonano@jeffparish.net
+- dimpastato@jeffparish.net
 subject: INSERT UNIQUE SUBJECT LINE
 body: |
   Hello,
@@ -40,3 +40,4 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
