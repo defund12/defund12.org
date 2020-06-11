@@ -23,7 +23,7 @@ recipients:
 - webmaster@cityofmerced.org
 - CarriganS@cityofmerced.org
 - DietzS@cityofmerced.org
-subject: "[NSERT UNIQUE SUBJECT LINE]"
+subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   To the Merced City Council,
 
