@@ -10,10 +10,10 @@ jobs:
   js-lint:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ github.event.head_commit.messasge }}
-      - run: echo ${{ github.event_name }}
-      - run: echo ${{ github.event_path }}
-      - run: echo ${GITHUB_CONTEXT}
+      - name: GITHUB CONTEXT
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - uses: actions/checkout@v2
       - uses: stefanoeb/eslint-action@1.0.2
       - name: Deploy failed
