@@ -6,14 +6,13 @@ state: NJ
 city: Englewood
 layout: email
 recipients:
-- mayorwildes@cityofenglewood.org
-- ccobb@cityofenglewood.org
-- cwrosenberg@cityofenglewood.org
-- mcohen@cityofenglewood.org
-- kglynn@cityofenglewood.org
-- whamer@cityofenglewood.org
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - mayorwildes@cityofenglewood.org
+  - ccobb@cityofenglewood.org
+  - cwrosenberg@cityofenglewood.org
+  - mcohen@cityofenglewood.org
+  - kglynn@cityofenglewood.org
+  - whamer@cityofenglewood.org
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Hello,
 
