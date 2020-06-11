@@ -1,19 +1,19 @@
 ---
-title: "Santa Fe, NM"
+title: Santa Fe, NM
 permalink: "/santafe"
-name: "Letter to City Council"
-city: "Santa Fe"
-state: "NM"
+name: Letter to City Council
+city: Santa Fe
+state: NM
 recipients:
-- "mayor@santafenm.gov"
-- "rdvillarreal@santafenm.gov"
-- "silindell@santafenm.gov"
-- "mjgarcia@santafenm.gov"
-- "cromero-wirth@santafenm.gov"
-- "cmrivera@santafenm.gov"
-- "rrabeyta@santafenm.gov"
-- "jcsanchez@santafenm.gov"
-- "jvcoppler@santafenm.gov"
+- mayor@santafenm.gov
+- rdvillarreal@santafenm.gov
+- silindell@santafenm.gov
+- mjgarcia@santafenm.gov
+- cromero-wirth@santafenm.gov
+- cmrivera@santafenm.gov
+- rrabeyta@santafenm.gov
+- jcsanchez@santafenm.gov
+- jvcoppler@santafenm.gov
 subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear City Council Members & Leaders,
@@ -34,6 +34,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
