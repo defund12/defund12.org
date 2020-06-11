@@ -22,7 +22,7 @@ defaults:
     city: City
     state: State intials
     recipients:
-    -
+    - 
     subject: Email subject (mention defunding police dept.)
     body: Email message (remember to include placeholders for name)
 permalink: pretty
