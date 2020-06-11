@@ -90,7 +90,7 @@ h2 {
 	@include breakpoint(s) {font-size:22px;}
 }
 a {
-	border-bottom:1px solid var(--subtle);
+	border-bottom:1px solid var(--link_subtle);
 	&:hover {
 		border-color: var(--subtle_);
 	}
