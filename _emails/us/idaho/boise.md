@@ -6,13 +6,13 @@ city: Boise
 state: ID
 layout: email
 recipients:
-  - mayormclean@cityofboise.org
-  - tjthomson@cityofboise.org
-  - elaineclegg@cityofboise.org
-  - holliwoodings@cityofboise.org
-  - lisasanchez@cityofboise.org
-  - patrickbageant@cityofboise.org
-  - jimmyhallyburton@cityofboise.org
+- mayormclean@cityofboise.org
+- tjthomson@cityofboise.org
+- elaineclegg@cityofboise.org
+- holliwoodings@cityofboise.org
+- lisasanchez@cityofboise.org
+- patrickbageant@cityofboise.org
+- jimmyhallyburton@cityofboise.org
 subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear Mayor McLean and Boise City Council Members,
@@ -40,3 +40,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
