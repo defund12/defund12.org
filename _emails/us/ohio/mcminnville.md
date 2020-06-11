@@ -5,15 +5,14 @@ name: Letter to Mayor and City Council
 city: McMinnville
 state: OH
 recipients:
-- scott.hill@mcminnvilleoregon.gov
-- sal.peralta@mcminnvilleoregon.gov
-- wendy.stassens@mcminnvilleoregon.gov
-- kellie.menke@mcminnvilleoregon.gov
-- zack.geary@mcminnvilleoregon.gov
-- Remy.Drabkin@mcminnvilleoregon.gov
-- Adam.Garvin@mcminnvilleoregon.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - scott.hill@mcminnvilleoregon.gov
+  - sal.peralta@mcminnvilleoregon.gov
+  - wendy.stassens@mcminnvilleoregon.gov
+  - kellie.menke@mcminnvilleoregon.gov
+  - zack.geary@mcminnvilleoregon.gov
+  - Remy.Drabkin@mcminnvilleoregon.gov
+  - Adam.Garvin@mcminnvilleoregon.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Hill and McMinnville City Council members,
 
