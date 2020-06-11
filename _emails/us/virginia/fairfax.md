@@ -14,7 +14,7 @@ recipients:
 - IPAPoliceAuditor@fairfaxcounty.gov
 - LeeDist@fairfaxcounty.gov
 - mtvernon@fairfaxcounty.gov
-- providence@fairfaxcounty.gov
+- provdist@fairfaxcounty.gov
 - springfield@fairfaxcounty.gov
 - sully@fairfaxcounty.gov
 subject: "[INSERT UNIQUE SUBJECT LINE]"
@@ -31,4 +31,3 @@ body: |-
   \[YOUR PHONE NUMBER\]
 layout: email
 ---
-
