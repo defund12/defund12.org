@@ -4,7 +4,6 @@ permalink: "/chico"
 name: Letter to City Council
 city: Chico
 state: CA
-layout: email
 recipients:
 - ann.schwab@chicoca.gov
 - Alex.brown@chicoca.gov
@@ -25,9 +24,7 @@ body: |-
 
   As a result of these events, I ask that the city council review their 2020-2021 budget. Instead of allocating 48.8% ($27 million dollars) of funds towards the Police Force, and only 2% (1.1 million dollars) towards developing our community, I ask you to reallocate funds from the police department to other areas that desperately need it. These areas include community development, mental health treatment, affordable housing, funding for domestic violence shelters, and investing in the Black and Indigenous communities. Homelessness is a public health and safety issue, and a reallocation of funds to mental health and addiction services instead of police organizations would greatly reduce the risk of homelessness in Chico. This is just one example of a marginalized group in Chico that would benefit from defunding Chico Police Department.
 
-  Unfortunately, there are no racial demographics in regard to arrest rates or homelessness that are easily accessible to the public. These statistics would make it much easier for the public and for community leaders, including Chico City Council, to see whether there are a disproportionate amount of arrests of Black, Indigenous, Latino, and other marginalized racial groups. It would also help the city of Chico to see whether the proportion of Black people and people of color face homelessness at higher rates. I demand that these numbers be made available to the public or otherwise counted in order to better serve BIPOC communities in Chico. Representation of these groups in Chico’s statistics for any public survey are of utmost importance. If there is no representation, there is no visibility, and if there is no visibility, then individuals belonging to the most marginalized groups will be underserved.
-
-  Research shows that a living wage, access to health services and treatment including mental health services, educational opportunity, and stable housing are far more successful at promoting safe and equitable communities than punitive systems like police or prisons. In the journal of Sociology of Race and Ethnicity, Phillip McHarris (PhD candidate at Yale focusing on race) argues that we must work towards a reality in which healthcare workers and emergency response teams handle substance abuse, domestic violence, homelessness, or mental health cases. Policies to “improve the police” are not enough, as there’s no evidence that implicit bias training or community relations initiatives help with reducing the abuses of policing (Sources: The Nation, The Atlantic). We need to reimagine public safety to prioritize alternatives to conflict rather than defaulting to violence.
+  Research shows that a living wage, access to health services and treatment including mental health services, educational opportunity, and stable housing are far more successful at promoting safe and equitable communities than punitive systems like police or prisons. In the journal of Sociology of Race and Ethnicity, Phillip McHarris (Yale University) argues that we must work towards a reality in which healthcare workers and emergency response teams handle substance abuse, domestic violence, homelessness, or mental health cases. Policies to “improve the police” are not enough, as there’s no evidence that implicit bias training or community relations initiatives help with reducing the abuses of policing (Sources: The Nation, The Atlantic). We need to reimagine public safety to prioritize alternatives to conflict rather than defaulting to violence.
 
   I demand immediate reduction of the police force budget, cancellation of cadet classes, demilitarization of our forces, and reallocation of funds from police to community-led health and safety strategies. We should redirect police funding to efforts that are actually proven to reduce crime, such as affordable housing, shelters, and mental health services.
 
@@ -38,10 +35,10 @@ body: |-
   Thank you for all you do for the City of Chico, and for your consideration.
 
   Sincerely,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
