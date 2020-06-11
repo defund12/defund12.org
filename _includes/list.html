@@ -18,7 +18,9 @@
                 {% endfor %}
             {% endfor %}
         </div>
-        <p class="divider footer">{{ site.footer_text | markdownify }}</p>
-        <p class="divider footer">{{ site.contact_email_footer | markdownify }}</p>
+        <div id="desktopFooter">
+            <p class="divider footer">{{ site.footer_text | markdownify }}</p>
+            <p class="divider footer">{{ site.contact_email_footer | markdownify }}</p>
+        </div>
     </div>
 </div>
