@@ -6,12 +6,12 @@ city: Pasco
 state: WA
 layout: email
 recipients:
-- barajascouncil@pasco-wa.gov 
-- alvaradocouncil@pasco-wa.gov 
-- martinezcouncil@pasco-wa.gov 
-- serranocouncil@pasco-wa.gov 
-- milnecouncil@pasco-wa.gov 
-- maloneycouncil@pasco-wa.gov 
+- barajascouncil@pasco-wa.gov
+- alvaradocouncil@pasco-wa.gov
+- martinezcouncil@pasco-wa.gov
+- serranocouncil@pasco-wa.gov
+- milnecouncil@pasco-wa.gov
+- maloneycouncil@pasco-wa.gov
 - roachcouncil@pasco-wa.gov
 subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
@@ -30,6 +30,7 @@ body: |-
     I am urging you to completely revise the Pasco budget for the 2020-2021 fiscal year. You need to adopt a People’s Budget. Public opinion is with me.
 
     Thank you for your time,
+
     [YOUR NAME]
     [YOUR ADDRESS]
     [YOUR EMAIL]
