@@ -26,5 +26,8 @@ body: |-
   I am urging you to keep these things in mind for the budget for the 2020-2021 fiscal year and to invest in the people, not the police.
   
   Thank you for your time,
-  [YOUR NAME] [YOUR ADDRESS] [YOUR EMAIL] [YOUR PHONE NUMBER]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 ---
