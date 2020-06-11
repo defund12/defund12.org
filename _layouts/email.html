@@ -32,7 +32,8 @@
             <div>
                 <b>Message</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
                 <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
-                <br /> {{ page.body | markdownify }}
+                <br /><br />
+                {{ page.body | escape | newline_to_br }}
             </div>
         </div>
     </div>
