@@ -1,10 +1,9 @@
 ---
-title: Williamsburg, Virginia
+title: Williamsburg, VA
 permalink: "/williamsburg"
 name: Letter to Mayor, Vice Mayor, City Manager, and Williamsburg City Council Members
 city: Williamsburg
 state: VA
-layout: email
 recipients:
 - pfreiling@williamsburgva.gov
 - dpons@williamsburgva.gov
@@ -45,5 +44,6 @@ body: "To Mayor Freiling, Vice Mayor Pons, City Manager Trivette, and Williamsbu
   \ \nWPD End of Year Report 2019 - https://www.williamsburgva.gov/home/showdocument?id=21801
   \ \nColonial Williamsburg Foundation - http://slaveryandremembrance.org/partners/partner/?id=P0000
   \ \nSlavery at W&M - https://www.wm.edu/sites/enslavedmemorial/slavery-at-wm/index.php"
+layout: email
 ---
 
