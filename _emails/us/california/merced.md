@@ -1,10 +1,10 @@
 ---
-title: "Merced, CA"
+title: Merced, CA
 permalink: "/merced"
-name: "Letter to Mayor and City Council"
-city: "Merced"
-state: "CA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Merced
+state: CA
+layout: email
 recipients:
 - Mayor@Cityofmerced.org
 - MurphyM@Cityofmerced.org
@@ -47,3 +47,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
