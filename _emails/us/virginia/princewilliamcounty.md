@@ -6,14 +6,14 @@ state: VA
 city: Prince William County
 layout: email
 recipients:
-  - awheeler@pwcgov.org
-  - vsangry@pwcgov.org
-  - jlawson@pwcgov.org
-  - yvega@pwcgov.org
-  - gainesville@pwcgov.org
-  - kboddye@pwcgov.org
-  - abailey@pwcgov.org
-  - mfranklin@pwcgov.org
+- awheeler@pwcgov.org
+- vsangry@pwcgov.org
+- jlawson@pwcgov.org
+- yvega@pwcgov.org
+- gainesville@pwcgov.org
+- kboddye@pwcgov.org
+- abailey@pwcgov.org
+- mfranklin@pwcgov.org
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   To Chairman Ann B. Wheeler and the Prince William County Board of Supervisors,
@@ -32,3 +32,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
