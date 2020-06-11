@@ -11,7 +11,6 @@ recipients:
 - jabelson@ci.el-cerrito.ca.us
 - gquinto@ci.el-cerrito.ca.us
 - rpardueokimoto@ci.el-cerrito.ca.us
-subject: "[INSERT UNIQUE SUBJECT]"
 body: |-
   Dear Mayor Lyman, Mayor Pro Tem Fadelli, and El Cerrito Council Members:
 

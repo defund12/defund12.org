@@ -15,7 +15,6 @@ recipients:
 - jgolombek@city-buffalo.com
 - cscanlon@city-buffalo.com
 - rwyatt@city-buffalo.com
-subject: Buffalo Police Department Budget Reform and Action Plan
 body: "To the Buffalo Common Council and Office of Mayor Byron Brown,\n\nMy name is
   [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am imploring you to meaningfully
   restrict the Buffalo Police Department's $121.9 million dollar budget immediately.

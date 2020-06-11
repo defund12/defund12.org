@@ -22,7 +22,6 @@ recipients:
 - fkeach@concordnh.gov
 - chamby@comcast.net
 - finance@concordnh.gov
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Concord Government Officials,
 

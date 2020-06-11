@@ -16,7 +16,6 @@ recipients:
 - swashington@lincoln.ne.gov
 - rchristensen@lincoln.ne.gov
 - bshobe@lincoln.ne.gov
-subject: "[Add Unique Subject Line Here!]"
 body: "Dear Mayor Gaylor Bairdand Members of City Council,\n\nMy name is [YOUR NAME]
   and I am a resident of [NEIGHBORHOOD/CITY]. I write this letter to urge you to begin
   defunding and demilitarizing the Lincoln Police Department. LPD’s budget has increased

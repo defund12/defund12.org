@@ -22,7 +22,6 @@ recipients:
 - Joel.Edwards@bentoncountyar.gov
 - mike.mckenzie77@gmail.com
 - kmoore16342@gmail.com
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Members of the Finance Committee,
 

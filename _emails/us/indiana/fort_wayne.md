@@ -16,7 +16,6 @@ recipients:
 - michelle.chambers@cityoffortwayne.org
 - glynnhines@aol.com
 - freistrofferatlarge@gmail.com
-subject: Decrease Police Funding in the 2021 Budget
 body: |
   "Dear City Councilors,
 

@@ -16,7 +16,6 @@ recipients:
 - YSaleh@jcnj.org
 - JSolomon@jcnj.org
 - JDRobinson@jcnj.org
-subject: Defund Jersey City PD
 body: |-
   Dear Mayor Fulop and Jersey City Council Members:
 

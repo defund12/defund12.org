@@ -11,7 +11,6 @@ recipients:
 - dave.cortese@bos.sccgov.org
 - supervisor.ellenberg@bos.sccgov.org
 - supervisor.simitian@bos.sccgov.org
-subject: "[ENTER UNIQUE SUBJECT LINE HERE]"
 body: |-
   To Mayor Gillmor and the Santa Clara County Board of Supervisors,
 

@@ -13,7 +13,6 @@ recipients:
 - garys@unioncity.org
 - joanm@unioncity.org
 - jaredr@unioncity.org
-subject: INSERT UNIQUE SUBJECT LINE
 body: "To Mayor Dutra, the Union City Council, Union City Manager, and Union City
   Police Chief,\n\nMy name is [YOUR NAME], and I am a resident of Union City. I am
   writing to demand that the City Council adopts a budget that prioritizes community

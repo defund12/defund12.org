@@ -11,7 +11,6 @@ recipients:
 - rich.garbarino@ssf.net
 - mark.addiego@ssf.net
 - karyl.matsumoto@ssf.net
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Garbarino and South San Francisco City Council,
 

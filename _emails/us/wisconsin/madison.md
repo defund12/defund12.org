@@ -25,7 +25,6 @@ recipients:
 - district18@cityofmadison.com
 - district19@cityofmadison.com
 - district20@cityofmadison.com
-subject: Reallocation of Funds from MPD to Social Service Programs
 body: "Dear Madison Council Members and Alderpersons,\n\nMy name is [YOUR NAME] and
   I am a resident of [NEIGHBORHOOD/CITY].\n\nI am extremely concerned with the City
   of Madison's inordinate investment in the Madison Police Department (MPD) at the

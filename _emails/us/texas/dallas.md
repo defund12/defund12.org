@@ -21,7 +21,6 @@ recipients:
 - cara.mendelsohn@dallascityhall.com
 - david.blewett@dallascityhall.com
 - jennifer.gates@dallascityhall.com
-subject: We Demand Divestment from Police and an Investment in Black Communities
 body: "\nHello,\n\nMy name is [NAME]. I am a resident of Dallas, Texas and I am emailing
   today to demand a complete overhaul on our Dallas Police Department in light of
   the Black Lives Matter protests being demonstrated across the US, but specifically
