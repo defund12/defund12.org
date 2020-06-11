@@ -16,7 +16,6 @@ recipients:
 - dflores@pueblo.us
 - lovepueblo@yahoo.com
 - policedept@pueblo.us
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Gradisar and City Council Members,
 

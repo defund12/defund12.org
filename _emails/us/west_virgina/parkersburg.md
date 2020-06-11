@@ -8,7 +8,6 @@ layout: email
 recipients:
 - connie.shaffer@parkersburgwv.gov
 - rickie.yeager@parkersburgwv.gov
-subject: Please Commit More Resources to our Community & Rethink Policing
 body: |-
   My name is [YOUR NAME], and I’m a resident of Parkersburg, West Virginia. I am writing about the Parkersburg fiscal year 2021 budget and call for you to review city policies surrounding police.
 

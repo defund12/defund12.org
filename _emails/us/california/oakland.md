@@ -14,7 +14,6 @@ recipients:
 - district6@oaklandca.gov
 - lreid@oaklandnet.com
 - atlarge@oaklandca.gov
-subject: Defund OPD.  Invest in Community.
 body: "Dear Mayor Schaaf and City Council Members,\n\nMy name is [YOUR NAME] and I
   am an Oakland resident writing to urge you to defund OPD. \n\nOPD takes an enormous
   share of the city’s general fund, and that percentage has risen exponentially for

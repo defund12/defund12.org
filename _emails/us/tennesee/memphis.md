@@ -18,7 +18,6 @@ recipients:
 - frank.colvettjr@memphistn.gov
 - Rhonda.Logan@memphistn.gov
 - Patrice.Robinson@memphistn.gov
-subject: We Demand Divestment from Police and an Investment in Our Communities
 body: "Dear Memphis City Councilors,\n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD].
   I am asking to redirect money away from the Memphis PD and into the following social
   services and community needs: \n* Community Development and Job Creation;\n* COVID

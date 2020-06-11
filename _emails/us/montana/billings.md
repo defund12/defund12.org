@@ -8,7 +8,6 @@ layout: email
 state: MT
 recipients:
 - council@billingsmt.gov
-subject: Billings demands a budget for justice and social equity
 body: "To the Billings City Council,\n\nMy name is [YOUR NAME] and I am a resident
   of [YOUR WARD]. I am writing to demand that the City Council adopts a budget that
   prioritizes community well-being and redirects funding away from the police.\n\nMany

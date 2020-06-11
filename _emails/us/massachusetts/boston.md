@@ -9,7 +9,6 @@ city: Boston
 layout: email
 recipients:
 - MAYOR@boston.gov
-subject: Reduce funding for BPD
 body: |-
   Hello,
 

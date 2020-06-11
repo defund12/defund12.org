@@ -14,7 +14,6 @@ recipients:
 - district5@ci.salinas.ca.us
 - district6@ci.salinas.ca.us
 - district3@ci.salinas.ca.us
-subject: "[Add Unique Subject Line Here!]"
 body: "Dear Mayor Gunter and Salinas City Councilmembers,\n\nI am writing to you as
   a resident of Salinas, asking that you budget for our community. As the nation mourns
   the loss of not only George Floyd, but the deaths of countless people of color at

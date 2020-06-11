@@ -14,7 +14,6 @@ recipients:
 - conor.mccarthy@cityoftacoma.org
 - kristina.walker@cityoftacoma.org
 - keith.blocker@cityoftacoma.org
-subject: We Demand Justice for Manuel Ellis and Reallocation of TPD Funds
 body: "Dear Mayor Woodards and Tacoma City Council,\n\nMy name is [YOUR NAME] and
   I am a resident of [CITY,STATE]. I am writing to demand justice for Manuel Ellis,
   an innocent Black man who was murdered by Tacoma police officers on March 3, and

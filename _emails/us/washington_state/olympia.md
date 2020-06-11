@@ -14,7 +14,6 @@ recipients:
 - dmadrone@ci.olympia.wa.us
 - rrollins@ci.olympia.wa.us
 - jcooper@ci.olympia.wa.us
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Mayor Selby and City Council members,
 

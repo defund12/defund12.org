@@ -12,7 +12,6 @@ recipients:
 - ward4@CoMo.gov
 - ward5@CoMo.gov
 - ward1@CoMo.gov
-subject: Defund the Columbia Police Department
 body: "Hi, my name is [NAME] and I am a resident of Columbia's [YOUR COUNCIL WARD].
   I am asking you to redirect money away from the Columbia PD and into the public
   services such as housing, education, and healthcare access, and to consider direct
