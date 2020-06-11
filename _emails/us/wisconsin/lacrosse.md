@@ -20,7 +20,6 @@ recipients:
 - ostremp@cityoflacrosse.org
 - medingerp@cityoflacrosse.org
 - christiansr@cityoflacrosse.org
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor and City Council Members,
 

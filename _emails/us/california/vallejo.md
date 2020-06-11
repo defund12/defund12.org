@@ -16,7 +16,6 @@ recipients:
 - Rozzana.Verder-Aliga@cityofvallejo.net
 - ehannigan@solanocounty.com
 - mebrown@solanocounty.com
-subject: Vallejo Resident for Defunding the VPD
 body: |-
   To City Manager Greg Nyhoff, the Vallejo City Council and Oakland, and Solano County Elected Officials,
 

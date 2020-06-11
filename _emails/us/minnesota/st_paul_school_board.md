@@ -12,7 +12,6 @@ recipients:
 - Chauntyll.Allen@spps.org
 - Jessica.kopp@spps.org
 - joe.gothard@spps.org
-subject: SPPS Must Terminate Relations with Police Department
 body: "Dear Dr. Joe Gothard and Saint Paul Public Schools Board Members,\n\nMy name
   is [YOUR NAME], and I am a resident of [YOUR CITY, STATE]. I stand in solidarity
   with protesters across the country who are out in the streets in response to the

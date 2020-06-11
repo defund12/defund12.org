@@ -15,7 +15,6 @@ recipients:
 - NPalumbo@Savannahga.gov
 - EShabazz@Savannahga.gov
 - KPurtee@Savannahga.gov
-subject: Defund the Savannah Police Department
 body: "Hello,\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I am
   asking to redirect money away from the Savannah PD and into the following social
   services:\n* Community Development\n* COVID Relief\n* Education\n* Parks & Recreation\n*

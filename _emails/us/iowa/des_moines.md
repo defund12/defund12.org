@@ -13,7 +13,6 @@ recipients:
 - joegatto@dmgov.org
 - joshmandelbaum@dmgov.org
 - connieboesen@dmgov.org
-subject: Des Moines City Resident for Defunding the Police
 body: |-
   Dear Des Moines City Officials,
 

@@ -22,7 +22,6 @@ recipients:
 - inclusion@grcity.us
 - RachelHood@house.mi.gov
 - DavidLaGrand@house.mi.gov
-subject: Proposal for People's Budget of Grand Rapids
 body: "Hello, \n\nMy name is [INSERT NAME] and I live in [YOUR NEIGHBORHOOD]. I am
   writing to ask that you to call an emergency council meeting and challenge the mayor’s
   proposed budget in favor of The People’s Budget before the budget is adopted on

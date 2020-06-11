@@ -14,7 +14,6 @@ recipients:
 - tlafer@statecollegepa.us
 - emyers@statecollegepa.us
 - dmurphy@statecollegepa.us
-subject: Defund the State College Police department
 body: |
   Dear Mayor and Borough Council,
 

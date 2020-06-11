@@ -13,7 +13,6 @@ recipients:
 - BcFederico@rivco.org
 - cob@rivco.org
 - jaki@rivcoda.org
-subject: Riverside County Resident for Defunding the Police
 body: |-
   Dear County of Riverside Officials,
 

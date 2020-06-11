@@ -11,7 +11,6 @@ recipients:
 - ereece@ci.claremont.ca.us
 - lschroeder@ci.claremont.ca.us
 - jstark@ci.claremont.ca.us
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Larry Schroeder, Mayor Pro Tem Jennifer Stark, and Claremont City Council members,
 

@@ -19,7 +19,6 @@ recipients:
 - esilverman@dccouncil.us
 - btodd@dccouncil.us
 - twhite@dccouncil.us
-subject: DC Resident for Defunding the Metropolitan Police Department
 body: |-
   To the DC council in charge of the allocation of funds to the Metropolitan Police Department and its respective members,
 

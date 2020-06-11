@@ -14,7 +14,6 @@ recipients:
 - lkinnear@spokanecity.org
 - cmumm@spokanecity.org
 - kstratton@spokanecity.org
-subject: Spokane Resident for Defunding of SPD
 body: |-
   Dear Mayor Nadine Woodward and Spokane City Council Members,
 

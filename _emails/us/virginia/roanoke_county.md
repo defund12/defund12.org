@@ -13,7 +13,6 @@ recipients:
 - MTHOMPSON@roanokecountyva.gov
 - MTHOMPSON@roanokecountyva.gov
 - cwhite@roanokecountyva.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Members of the City Council and Budget Department,
 

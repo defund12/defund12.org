@@ -16,7 +16,6 @@ recipients:
 - Esther.rohm@daytonohio.gov
 - Vanessa.moon@daytonohio.gov
 - Erica.fields@daytonohio.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].
 

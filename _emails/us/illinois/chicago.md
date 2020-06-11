@@ -56,7 +56,6 @@ recipients:
 - ward48@cityofchicago.org
 - office@49thward.org
 - ward50@cityofchicago.org
-subject: Commit to reallocate for social equity / Defund the CPD
 body: "Hello, \n\nMy name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I
   am extremely concerned with the City of Chicago’s inordinate investment in the Chicago
   Police Department (CPD) at the expense of critical youth, education, and health

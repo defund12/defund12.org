@@ -21,7 +21,6 @@ recipients:
 - scott.spiker@milwaukee.gov
 - Marina@milwaukee.gov
 - russell.stamper@milwaukee.gov
-subject: Defund MPD, Reallocate for Social Equity
 body: "Dear Milwaukee Council Members,\n\nMy name is [YOUR NAME] and I am a resident
   of [NEIGHBORHOOD/CITY].\n\nI am extremely concerned with the City of Milwaukee’s
   inordinate investment in the Milwaukee Police Department (MPD) at the expense of

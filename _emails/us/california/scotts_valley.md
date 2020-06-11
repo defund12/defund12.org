@@ -13,7 +13,6 @@ recipients:
 - jimreedSV@gmail.com
 - tmcfarlane@scottsvalley.org
 - lgrundy@scottsvalley.org
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Scotts Valley City Council and Finance Department,
 

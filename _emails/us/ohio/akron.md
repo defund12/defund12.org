@@ -20,7 +20,6 @@ recipients:
 - Ward8@akronohio.gov
 - Ward9@akronohio.gov
 - Ward10@akronohio.gov
-subject: Defund the Akron Police Department
 body: |
   "Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD/WARD].
 

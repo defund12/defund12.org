@@ -14,7 +14,6 @@ recipients:
 - rrabeyta@santafenm.gov
 - jcsanchez@santafenm.gov
 - jvcoppler@santafenm.gov
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear City Council Members & Leaders,
 

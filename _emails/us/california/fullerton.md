@@ -11,7 +11,6 @@ recipients:
 - bwwhitaker@live.com
 - ahmadz@cityoffullerton.com
 - evaa@cityoffullerton.com
-subject: Defund Fullterton PD
 body: |
   Dear Fullerton City Council Members,
 

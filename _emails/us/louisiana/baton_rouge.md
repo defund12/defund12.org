@@ -20,7 +20,6 @@ recipients:
 - twicker@brla.gov
 - mwatson@brla.gov
 - CouncilDistrict12DL@brla.gov
-subject: "[Add Unique Subject Line Here!]"
 body: "To Mayor-President Sharon Weston Broome and the Baton Rouge City Council:\n\nMy
   name is [INSERT NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to
   demand that the Baton Rouge City Council adopt a city budget that prioritizes community

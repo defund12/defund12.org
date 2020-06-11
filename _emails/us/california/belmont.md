@@ -13,7 +13,6 @@ recipients:
 - tmccune@belmont.gov
 - aoskoui@belmont.gov
 - tfil@belmont.gov
-subject: Defund the BPD
 body: |-
   Dear Mayor Lieberman, Vice Mayor Stone, the Belmont City Council, Belmont City Manager, and Belmont Finance Manager,
 

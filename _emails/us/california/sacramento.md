@@ -48,7 +48,6 @@ recipients:
 - nottolid@saccounty.net
 - sheriff@sacsheriff.com
 - community@sacsheriff.com
-subject: Sacramento demands a People's Budget
 body: "To the Sacramento City Council and the Sacramento County Board of Supervisors
   in charge of the allocation of funds to the Sacramento Police Department, the Sacramento
   Sheriff’s Department, and the County Jails they fill,\n\nI am writing to demand

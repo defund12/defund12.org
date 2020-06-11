@@ -15,7 +15,6 @@ recipients:
 - ward6@okc.gov
 - ward7@okc.gov
 - ward8@okc.gov
-subject: Defund the Oklahoma City Police Department
 body: "Dear Oklahoma City Mayor, City Council, and Manager, \n\nMy name is [YOUR NAME]
   and I am a resident of [NEIGHBORHOOD/WARD]. The City of Oklahoma City must do better
   by its residents. I am urging you to divest from the criminalization of our communities

@@ -16,7 +16,6 @@ recipients:
 - ENelson@a2gov.org
 - ChSmith@a2gov.org
 - ARamlawi@a2gov.org
-subject: Defund Ann Arbor Police Department
 body: |-
   Mayor Taylor and City Council members,
 

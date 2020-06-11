@@ -14,7 +14,6 @@ recipients:
 - ccmacey@romi.gov
 - ccdouglas@romi.gov
 - citymanager@romi.gov
-subject: A budget for the community well-being of Royal Oak
 body: |-
   To the City of Royal Oak's 50th Commission and City Manager,
 

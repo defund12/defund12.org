@@ -14,7 +14,6 @@ recipients:
 - dist5@stocktonca.gov
 - dist6@stocktonca.gov
 - florence.low@stocktonca.gov
-subject: xxx INSERT UNIQUE SUBJECT LINE xxx
 body: |-
   Dear Mayor Tubbs and City Council Members,
 
