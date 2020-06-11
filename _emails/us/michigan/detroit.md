@@ -1,10 +1,10 @@
 ---
-title: "Detroit, MI"
+title: Detroit, MI
 permalink: "/detroit"
-name: "Letter to City Council"
-city: "Detroit"
-state: "MI"
-layout: "email"
+name: Letter to City Council
+city: Detroit
+state: MI
+layout: email
 recipients:
 - Bjones_mb@detroitmi.gov
 - councilmembersheffield@detroitmi.gov
@@ -55,3 +55,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
