@@ -14,8 +14,6 @@ recipients:
 - bdowning@lafayette.in.gov
 - mwilliamson@lafayette.in.gov
 - lheide@lafayette.in.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear City Council Members,
 
