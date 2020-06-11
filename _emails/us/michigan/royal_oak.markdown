@@ -2,9 +2,8 @@
 title: Royal Oak, MI
 permalink: "/royaloak"
 name: Letter to the City Commission and City Manager
-state: MI
 city: Royal Oak
-layout: email
+state: MI
 recipients:
 - ccfournier@romi.gov
 - ccdubuc@romi.gov
@@ -28,10 +27,10 @@ body: |-
   Hundreds marched in the very streets of Royal Oak on June 6th because this community recognizes demands actions that will result in a healthier, more equitable society. I implore you to listen to the needs of your constituents and take immediate action to address their concerns. If we as a community have the courage to catalyze change, we can be a beacon for other cities in both the Metro-Detroit Area and nationwide to follow.
 
   Sincerely,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
