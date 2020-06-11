@@ -1,10 +1,10 @@
 ---
-title: "Lancaster, PA"
+title: Lancaster, PA
 permalink: "/lancaster"
-name: "Letter to Mayor and City Council"
-city: "Lancaster"
-state: "PA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Lancaster
+state: PA
+layout: email
 recipients:
 - bburkholder@cityoflancasterpa.com
 - astrazzo@cityoflancasterpa.com
@@ -49,3 +49,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
