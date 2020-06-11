@@ -21,13 +21,17 @@ body: |-
   
   As Walnut Creek residents, we therefore demand that you take immediate action to ensure the following:
   
-  Reduce WCPD’s allocation from the General Fund by 50% (roughly $26M)
-  Disallow unauthorised overtime by WCPD
-  Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
-  Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+  * Reduce WCPD’s allocation from the General Fund by 50% (roughly $26M)
+  * Disallow unauthorised overtime by WCPD
+  * Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+  * Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+  
   Walnut Creek can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund and Abolish WCPD.
   
   Thank you,
-  
+
   [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 ---
