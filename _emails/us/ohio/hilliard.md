@@ -13,8 +13,6 @@ recipients:
 - otarazi@hilliardohio.gov
 - cvermillion@hilliardohio.gov
 - Ifasone@hilliardohio.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Hilliard Council Members,
 
