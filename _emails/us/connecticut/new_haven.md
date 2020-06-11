@@ -38,7 +38,6 @@ recipients:
 - Ward28@newhavenct.gov
 - Ward29@newhavenct.gov
 - Ward30@newhavenct.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Elicker and New Haven Board of Alders members,
 

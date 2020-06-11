@@ -16,7 +16,6 @@ recipients:
 - Bill.murray@coloradosprings.gov
 - Tom.strand@coloradosprings.gov
 - Wayne.williams@coloradosprings.gov
-subject: Colorado Springs Resident for Defunding the Police
 body: |-
   Dear Mayor Suthers and Colorado Springs City Council Members,
 

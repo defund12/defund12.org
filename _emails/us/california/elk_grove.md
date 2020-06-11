@@ -11,7 +11,6 @@ recipients:
 - dsuen@elkgrovecity.org
 - phume@elkgrovecity.org
 - snguyen@elkgrovecity.org
-subject: Elk Grove demands a People's Budget
 body: |
   "To whom it may concern,
 

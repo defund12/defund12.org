@@ -6,7 +6,6 @@ city: Bozeman
 state: MT
 recipients:
 - agenda@bozeman.net
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   To the Bozeman City Commission,
 

@@ -12,7 +12,6 @@ recipients:
 - delgadoo@reno.gov
 - weberb@reno.gov
 - jardonn@reno.gov
-subject: Reno Residents for Defunding RPD
 body: |-
   Dear Reno City Leadership,
 

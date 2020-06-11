@@ -12,7 +12,6 @@ recipients:
 - lleeeng@losaltosca.gov
 - cjordan@losaltosca.gov
 - council@losaltosca.gov
-subject: Los Altos Resident for Defunding the LAPD
 body: "To Mayor Pepper and Los Altos City Council Members,\n\nMy name is [YOUR NAME],
   and I am a resident of Los Altos. This past week, our nation and community have
   been gripped by protests calling for an end to racism and anti-Blackness and a complete

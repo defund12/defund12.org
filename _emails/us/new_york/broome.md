@@ -20,7 +20,6 @@ recipients:
 - bob.weslar@broomecounty.us
 - mary.kaminsky@broomecounty.us
 - mark.whalen@broomecounty.us
-subject: Commit to Reallocation for Social Equity
 body: |-
   Dear Broome County Legislature,
 

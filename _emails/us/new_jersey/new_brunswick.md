@@ -12,7 +12,6 @@ recipients:
 - rescobar@cityofnewbrunswick.org
 - ssicoraludwig@cityofnewbrunswick.org
 - kjones11@cityofnewbrunswick.org
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Cahill and Council Members:
 

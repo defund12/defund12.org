@@ -14,7 +14,6 @@ recipients:
 - ward4newsletter@lasvegasnevada.gov
 - ccrear@lasvegasnevada.gov
 - mfiore@lasvegasnevada.gov
-subject: Demand for Redistribution of Funds Allocated To LVMPD
 body: |-
   I am a resident of Las Vegas. I am writing to demand that Mayor Carolyn Goodman and City Council to do everything in their power to adopt a budget that prioritizes our community well being and redirects funding away from the police in the next budget evaluation period.
 

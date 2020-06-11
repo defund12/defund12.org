@@ -11,7 +11,6 @@ recipients:
 - lbabcock@cityofeastlansing.com
 - jgregg@cityofeastlansing.com
 - mmeadows@cityofeastlansing.com
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Hello,
 

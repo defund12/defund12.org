@@ -14,7 +14,6 @@ recipients:
 - jperry@riversideca.gov
 - SHemenway@riversideca.gov
 - 2mayor@riversideca.gov
-subject: Defund Riverside PD
 body: |-
   Dear Mayor Bailey and Riverside City Council Members,
 

@@ -15,7 +15,6 @@ recipients:
 - councilmember.Navarro@montgomerycountymd.gov
 - councilmember.Rice@montgomerycountymd.gov
 - councilmember.Riemer@montgomerycountymd.gov
-subject: MD Resident for Defunding the Montgomery County Police Department
 body: |-
   Dear Montgomery County Officials,
 

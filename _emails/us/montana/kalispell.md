@@ -8,7 +8,6 @@ state: MT
 layout: email
 recipients:
 - 'citycouncil@kalispell.com '
-subject: Kalispell demands a budget for justice
 body: |-
   To the Kalispell City Council,
 

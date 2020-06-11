@@ -8,7 +8,6 @@ recipients:
 - council@cambridgema.gov
 - citymanager@cambridgema.gov
 - mayor@cambridgema.gov
-subject: Reduce the Cambridge Police Department budget
 body: |
   Dear City Councilors, Mayor Siddiqui, and City Manager DePasquale,
 

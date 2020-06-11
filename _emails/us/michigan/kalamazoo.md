@@ -26,7 +26,6 @@ recipients:
 - Meredith.Place@kalcounty.com
 - SenSMcCann@senate.michigan.gov
 - jonhoadley@house.mi.gov
-subject: Regarding the funding of KDPS
 body: |-
   Dear Kalamazoo City and County officials,
 
