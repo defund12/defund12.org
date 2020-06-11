@@ -1,6 +1,6 @@
 ---
-title: Santa Cruz, CA
-permalink: "/santacruz"
+title: Santa Maria, CA
+permalink: "/santamaria"
 name: Letter to City Council
 city: Santa Maria
 state: CA
