@@ -1,26 +1,26 @@
 ---
-title: "Burlington, VT"
+title: Burlington, VT
 permalink: "/burlingtonvt"
-name: "Alternate Letter to the Mayor and City Council"
-state: "VT"
-city: "Burlington"
-layout: "email"
+name: Alternate Letter to the Mayor and City Council
+state: VT
+city: Burlington
+layout: email
 recipients:
-- "mayor@burlingtonvt.gov"
-- "jredell@burlingtonvt.gov"
-- "mtracy@burlingtonvt.gov"
-- "zhightower@burlingtonvt.gov"
-- "bpine@burlingtonvt.gov"
-- "scarpenter@burlingtonvt.gov"
-- "cmason@burlingtonvt.gov"
-- "kpaul@burlingtonvt.gov"
-- "adieng@burlingtonvt.gov"
-- "jstromberg@burlingtonvt.gov"
-- "pfreeman@burlingtonvt.gov"
-- "jhanson@burlingtonvt.gov"
-- "fpaulino@burlingtonvt.gov"
-- "jshannon@burlingtonvt.gov"
-subject: "INSERT UNIQUE SUBJECT LINE"
+- mayor@burlingtonvt.gov
+- jredell@burlingtonvt.gov
+- mtracy@burlingtonvt.gov
+- zhightower@burlingtonvt.gov
+- bpine@burlingtonvt.gov
+- scarpenter@burlingtonvt.gov
+- cmason@burlingtonvt.gov
+- kpaul@burlingtonvt.gov
+- adieng@burlingtonvt.gov
+- jstromberg@burlingtonvt.gov
+- pfreeman@burlingtonvt.gov
+- jhanson@burlingtonvt.gov
+- fpaulino@burlingtonvt.gov
+- jshannon@burlingtonvt.gov
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Weinberger and City Councilmembers,
 
