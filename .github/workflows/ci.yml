@@ -71,7 +71,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set commit message
-        run: echo ::set-env name=COMMIT_MSG::$(git log --format=%B -n 1)
+        run: echo ::set-env name=COMMIT_MSG::$(git log --format=%s -n 1)
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
