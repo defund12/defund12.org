@@ -8,12 +8,11 @@ layout: email
 recipients:
 - mayormclean@cityofboise.org
 - tjthomson@cityofboise.org
-- elaineclegg@cityofboise.org
-- holliwoodings@cityofboise.org
-- lisasanchez@cityofboise.org
-- patrickbageant@cityofboise.org
-- jimmyhallyburton@cityofboise.org
-subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
+- eclegg@cityofboise.org
+- hwoodings@cityofboise.org
+- lsanchez@cityofboise.org
+- pbageant@cityofboise.org
+- jhallyburton@cityofboise.org
 body: |-
   Dear Mayor McLean and Boise City Council Members,
 

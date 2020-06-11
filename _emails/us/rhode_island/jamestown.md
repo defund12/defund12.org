@@ -11,7 +11,6 @@ recipients:
 - meagherjamestowntc@gmail.com
 - jtownelc@aol.com
 - Major510@cox.net
-subject: Budget for The Community
 body: |-
   Dear Jamestown Town Council,
 

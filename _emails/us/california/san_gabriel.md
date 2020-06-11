@@ -11,7 +11,6 @@ recipients:
 - tonydingforsangabriel@gmail.com
 - jharrington@sgch.org
 - jpu@sgch.org
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear San Gabriel Mayor and City Council,
 

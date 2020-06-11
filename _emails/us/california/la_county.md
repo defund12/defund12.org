@@ -11,7 +11,6 @@ recipients:
 - Sheila@bos.lacounty.gov
 - FourthDistrict@bos.lacounty.gov
 - kathryn@bos.lacounty.gov
-subject: Defund and Restructure LA County Sheriffs Department Budget
 body: |
   Dear County Supervisor(s),
 

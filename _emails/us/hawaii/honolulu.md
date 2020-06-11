@@ -16,7 +16,6 @@ recipients:
 - tommy.waters@honolulu.gov
 - kmpine@honolulu.gov
 - htsuneyoshi@honolulu.gov
-subject: Redirecting funds to the community of Honolulu
 body: |-
   Dear Mayor Caldwell and the Honolulu City and County Council,
 

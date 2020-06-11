@@ -18,7 +18,6 @@ recipients:
 - lrainone@njrcmlaw.com
 - annmarie.mccarthy@franklinnj.gov
 - Robert.Vornlocker@franklinnj.gov
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Kramer and Councilmembers:
 

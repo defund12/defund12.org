@@ -13,7 +13,6 @@ recipients:
 - Donald.Wagner@ocgov.com
 - media@da.ocgov.com
 - Media@da.ocgov.com
-subject: Defund Orange County Police
 body: |-
   To my government representatives,
 

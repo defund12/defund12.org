@@ -15,7 +15,6 @@ recipients:
 - mciverl@ci.newark.nj.us
 - quintanal@ci.newark.nj.us
 - crumpm@ci.newark.nj.us
-subject: 'Newark Demands Equity: Police Budget and Reform'
 body: "Hello, \n\nMy name is [YOUR NAME] and I am a resident of Newark. I urge you
   to redirect money away from the NPD and into social service programs that will benefit
   public health and our own communities. Police reforms have not solved police violence:

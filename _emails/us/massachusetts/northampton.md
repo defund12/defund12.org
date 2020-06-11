@@ -16,7 +16,6 @@ recipients:
 - rmaiore@northamptonma.gov
 - lkrutzler@northamptonma.gov
 - mayor@northamptonma.gov
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Mayor Narkiewicz and City Councilors,
 

@@ -17,7 +17,6 @@ recipients:
 - sonia.schmanski@portlandoregon.gov
 - Toni.Anderson@portlandoregon.gov
 - Andrew.Bryans@portlandoregon.gov
-subject: Disturbing Police Tactics
 body: "Hello,\n\nI am a [YOUR CITY/DISTRICT] resident. I have been following the recent
   protests against police brutality, and I am increasingly disturbed by the use of
   force by police in this city. There are plenty of videos showing police attacking

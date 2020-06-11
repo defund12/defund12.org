@@ -10,7 +10,6 @@ recipients:
 - BNash@menlopark.org
 - CCarlton@menlopark.org
 - RDMueller@menlopark.org
-subject: Defund Menlo Park Police Department
 body: "Dear Menlo Park City Council,\n\nMy name is [YOUR NAME] and I am a resident
   of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the Menlo Park City
   Council adopt a city budget that prioritizes community well-being, and redirects

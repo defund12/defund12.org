@@ -16,7 +16,6 @@ recipients:
 - debbie.presson@chicoca.gov
 - dani.rogers@chicoca.gov
 - stina.cooley@chicoca.gov
-subject: xxx INSERT UNIQUE SUBJECT LINE xxx
 body: |-
   Dear City Council Members of Chico,
 

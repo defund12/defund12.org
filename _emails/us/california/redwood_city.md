@@ -13,7 +13,6 @@ recipients:
 - jborgens@redwoodcity.org
 - ghale@redwoodcity.org
 - dreddy@redwoodcity.org
-subject: Redwood City Resident for Defunding the RCPD
 body: |-
   To Mayor Howard, Vice Mayor Masur, and Redwood City Council Members,
 

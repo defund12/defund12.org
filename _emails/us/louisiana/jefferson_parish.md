@@ -18,7 +18,6 @@ recipients:
 - marionedwards@jeffparish.net
 - DeanoBonano@jeffparish.net
 - dimpastato@jeffparish.net
-subject: INSERT UNIQUE SUBJECT LINE
 body: |
   Hello,
 

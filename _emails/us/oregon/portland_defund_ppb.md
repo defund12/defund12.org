@@ -17,7 +17,6 @@ recipients:
 - sonia.schmanski@portlandoregon.gov
 - Toni.Anderson@portlandoregon.gov
 - Andrew.Bryans@portlandoregon.gov
-subject: Defunding the PPB & Increasing PPB Transparency
 body: "I am a resident of Portland.\n\nIn May, Mayor Ted Wheeler released his proposed
   budget for the City of Portland. This included a policing budget of $245,169,804,
   which is over $5 million more than budgeted last year—even amongst city-wide cuts

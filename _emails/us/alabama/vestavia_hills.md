@@ -12,7 +12,6 @@ recipients:
 - mturner@vhal.org
 - bdavis@vhal.org
 - krussom@vhal.org
-subject: A Message from a Concerned Resident
 body: |-
   Dear Mayor Curry and City Council,
 

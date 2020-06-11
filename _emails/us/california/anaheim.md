@@ -14,7 +14,6 @@ recipients:
 - jmoreno@anaheim.net
 - lkring@anaheim.net
 - toneil@anaheim.net
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   To the Anaheim City Council:
 

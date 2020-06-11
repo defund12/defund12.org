@@ -12,7 +12,6 @@ recipients:
 - rgolder@cityofsantacruz.com
 - cmathews@cityofsantacruz.com
 - mwatkins@cityofsantacruz.com
-subject: Defund the SCPD
 body: |-
   To Mayor Cummings and the Santa Cruz City Council:
 

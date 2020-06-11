@@ -12,7 +12,6 @@ recipients:
 - ewaterfield@cityofsantamaria.org
 - mmoats@cityofsantamaria.org
 - mcordero@cityofsantamaria.org
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Santa Maria City Council,
 

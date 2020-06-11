@@ -13,7 +13,6 @@ recipients:
 - milnecouncil@pasco-wa.gov
 - maloneycouncil@pasco-wa.gov
 - roachcouncil@pasco-wa.gov
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Pasco City Leadership,
 

@@ -17,7 +17,6 @@ recipients:
 - melvin_willis@ci.richmond.ca.us
 - demnlus_johnson@ci.richmond.ca.us
 - CPRC@ci.richmond.ca.us
-subject: Richmond Resident for Defunding the RPD
 body: |-
   To Mayor Butt, the Richmond Board of Supervisors, and Richmond Elected Officers,
 

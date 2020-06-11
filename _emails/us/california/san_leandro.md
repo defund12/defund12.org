@@ -13,7 +13,6 @@ recipients:
 - vaguilar@sanleandro.org
 - blee@sanleandro.org
 - clopez@sanleandro.org
-subject: SLPD Budget Reallocation 2020
 body: |-
   Dear Mayor Pauline Russo Cutter and City Council Members,
 

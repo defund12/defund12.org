@@ -32,7 +32,6 @@ recipients:
 - jennifer.pharr@cityofcharleston.org
 - caitlin.cook@cityofcharleston.org
 - john.kennedy.bailey@cityofcharleston.org
-subject: Please Commit More Resources to our Community & Rethink Policing
 body: |-
   My name is [YOUR NAME], and I’m a resident of Charleston, West Virginia. I am writing about the Charleston fiscal year 2021 budget and call for you to review city policies surrounding police.
 

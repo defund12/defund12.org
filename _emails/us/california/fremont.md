@@ -14,7 +14,6 @@ recipients:
 - yshao@fremont.gov
 - cof@fremont.gov
 - PoliceChief@fremont.gov
-subject: Fremont Resident for Defunding the Fremont PD
 body: |-
   To Mayor Mei, the Fremont City Council, Fremont City Manager, and Fremont Police Chief:
 

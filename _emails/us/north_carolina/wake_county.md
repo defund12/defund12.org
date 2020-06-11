@@ -9,7 +9,6 @@ recipients:
 - commissioners@wakegov.com
 cc:
 - denise.hogan@wakegov.com
-subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Wake County Commissioners,
 

@@ -15,7 +15,6 @@ recipients:
 - rollod@bloomington.in.gov
 - sandbers@bloomington.in.gov
 - ron.smith@bloomington.in.gov
-subject: Decrease funding for police in the 2021 budget
 body: "Dear City Councilors,\n\nMy name is [YOUR NAME] and I'm a resident of [YOUR
   CITY/DISTRICT]. I am writing about the fiscal year 2021 budget for the City of Bloomington.
   \n\nMayor Hamilton states that he wants to make Bloomington more \"equitable\" and

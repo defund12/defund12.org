@@ -12,7 +12,6 @@ recipients:
 - cshipley@lawrenceks.org
 - sboley@lawrenceks.org
 - llarsen@lawrenceks.org
-subject: "[INSERT UNIQUE SUBJECT]"
 body: |-
   Dear Mayor Ananda, Lawrence City Commissioners, and City Manager Craig Owens,
 

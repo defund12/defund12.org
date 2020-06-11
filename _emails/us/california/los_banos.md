@@ -11,7 +11,6 @@ recipients:
 - deborah.lewis@losbanos.org
 - daronica.johnson-santos@losbanos.org
 - brett.jones@losbanos.org
-subject: I Demand a People's Budget
 body: |
   Dear Mayor Michael Villalta and Council members,
 

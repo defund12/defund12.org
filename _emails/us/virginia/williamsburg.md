@@ -14,7 +14,6 @@ recipients:
 - atrivette@williamsburgva.gov
 - cshelton@williamsburgva.gov
 - council@williamsburgva.gov
-subject: INSERT UNIQUE SUBJECT LINE
 body: "To Mayor Freiling, Vice Mayor Pons, City Manager Trivette, and Williamsburg
   City Council Members,  \n\nMy name is [YOUR NAME], and I am a resident of Williamsburg,
   VA. Since the end of May, our nation has been gripped by resolute protesters calling
