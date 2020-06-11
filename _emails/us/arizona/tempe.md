@@ -5,13 +5,13 @@ name: Letter to Tempe Mayor and City Council
 city: Tempe
 state: AZ
 recipients:
-- mark_mitchell@tempe.gov
-- lauren_kuby@tempe.gov
-- jennifer_adams@tempe.gov
-- robin_arredondo-savage@tempe.gov
-- arlene_chin@tempe.gov
-- randy_keating@tempe.gov
-- joel_navarro@tempe.gov
+  - mark_mitchell@tempe.gov
+  - lauren_kuby@tempe.gov
+  - jennifer_adams@tempe.gov
+  - robin_arredondo-savage@tempe.gov
+  - arlene_chin@tempe.gov
+  - randy_keating@tempe.gov
+  - joel_navarro@tempe.gov
 body: |-
   Dear Mayor Mitchell and Tempe City Council,
 
@@ -35,4 +35,3 @@ body: |-
   [PHONE NUMBER]
 layout: email
 ---
-

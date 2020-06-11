@@ -1,13 +1,16 @@
 ---
 title: Pittsburgh, PA
-permalink: "/pittsburgh_mayor"
+permalink: "/pittsburgh-mayor"
+redirect_from:
+  - "/pittsburgh_mayor"
 name: Letter to the Mayor
 city: Pittsburgh
 state: PA
 layout: email
 recipients:
-- bill.peduto@pittsburghpa.gov
-body: "Dear Mayor Peduto,\n\nMy name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]\n\nFrom
+  - bill.peduto@pittsburghpa.gov
+body:
+  "Dear Mayor Peduto,\n\nMy name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]\n\nFrom
   reports of protesters being attacked around the city to the killing of Antwon Rose
   in East Pittsburgh - the police have shown that they are not doing their jobs to
   serve and protect all citizens of this city.\n\nIn 2020 the Bureau of Police’s budget
@@ -31,4 +34,3 @@ body: "Dear Mayor Peduto,\n\nMy name is [YOUR NAME] and I am a resident of [NEIG
   the community.\n\nThank you,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL] \n[YOUR
   PHONE NUMBER]"
 ---
-
