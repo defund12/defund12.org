@@ -6,8 +6,8 @@ state: CA
 city: Pittsburg
 layout: email
 recipients:
-  - killings@ci.pittsburg.ca.us
-  - citycouncil@ci.pittsburg.ca.us
+- killings@ci.pittsburg.ca.us
+- citycouncil@ci.pittsburg.ca.us
 subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Killings and Pittsburg City Council Members,
@@ -34,3 +34,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
