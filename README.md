@@ -1,10 +1,10 @@
 # Defund12.org
 
-[Defund12.org](https://defund12.org/) provides shareable links to email the government officials in your community and demand action towards defunding police departments in favor of education, social services, and efforts towards dismantling racial injustice.
+[**Defund12.org**](https://defund12.org/) provides shareable links to email the government officials in your community and demand action towards defunding police departments in favor of education, social services, and efforts towards dismantling racial injustice.
 
 ## Join the conversation
 
-We are dealing with a high volume of requests, but we are doing our best to stay up to date with our community on Discord. [Join our Discord server](https://discord.gg/VhGyXWa) for questions, discussions, or to join a [team](#team-organization).
+We are dealing with a high volume of requests, but we are doing our best to stay up to date with our community on Discord. [**Join our Discord server**](https://discord.gg/VhGyXWa) for questions, discussions, and to join a [team](#team-organization).
 
 ## Development
 
@@ -48,9 +48,9 @@ NOTE: All work that people are doing to further defund12.org is important and he
 
 ### Email templates
 
-Please review our email template style guide [here](EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Please **review our [email template style guide](EMAIL_TEMPLATE_STYLE_GUIDE.md)**. All messages go through basic fact-checking and editorial review before they are published. Following the style guide makes this process go quicker!
 
-NOTE: If possible, limit a PR to one email template. This make it easier to process the history of what’s entering the codebase, and takes some strain off the reviewer.
+NOTE: If possible, limit one email template per PR. This make it easier to process the history of what’s entering the codebase, and takes some strain off the reviewer.
 
 ---
 
