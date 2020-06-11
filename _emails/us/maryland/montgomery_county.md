@@ -2,9 +2,8 @@
 title: Montgomery County, MD
 permalink: "/montgomery_county"
 name: Letter to the County Executive and Council
-state: MD
 city: Montgomery County
-layout: email
+state: MD
 recipients:
 - marc.elrich@montgomerycountymd.gov
 - councilmember.Katz@montgomerycountymd.gov
@@ -16,7 +15,6 @@ recipients:
 - councilmember.Navarro@montgomerycountymd.gov
 - councilmember.Rice@montgomerycountymd.gov
 - councilmember.Riemer@montgomerycountymd.gov
-subject: MD Resident for Defunding the Montgomery County Police Department
 body: |-
   Dear Montgomery County Officials,
 
@@ -24,7 +22,7 @@ body: |-
 
   The brutal, senseless, and violent murder of George Floyd at the hands of police officers derelict in their duties to protect and serve is deeply disturbing. We, as a nation, are in need of a drastic overhaul in policing. Systems of oppression must be undone, and reallocating much of the budget for the MPD to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved.
 
-  Montgomery County's Police is not exempt from racial issues. There is story after story of Black people being harassed, searched and arrested for simple being Black.
+  Montgomery County's Police is not exempt from racial issues. We see story after story of Black people being harassed, searched and arrested for simply being Black.
 
   How many of you have been arrested for helping a drunk neighbor home?
   What about standing outside of a McDonalds?
@@ -38,5 +36,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 

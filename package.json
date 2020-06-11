@@ -4,6 +4,7 @@
     "eslint-config-google": "^0.14.0"
   },
   "scripts": {
+    "lint": "eslint --ext js",
     "test": "jest"
   },
   "dependencies": {

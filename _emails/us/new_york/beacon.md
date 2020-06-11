@@ -13,7 +13,6 @@ recipients:
 - gmansfield@cityofbeacon.org
 - agrant@cityofbeacon.org
 - mayor@cityofbeacon.org
-subject: "[Add Unique Subject Line Here!]"
 body: "Dear Beacon City Council and Mayor,\n\nMy name is [YOUR NAME] and I am a Beacon
   resident and writing to urge you to defund the Beacon Police Department.\n\nThe
   Beacon Police department currently has a budget of $5.5 Million. That has increased

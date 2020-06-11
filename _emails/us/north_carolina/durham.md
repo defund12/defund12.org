@@ -12,7 +12,6 @@ recipients:
 - Mark-Anthony.Middleton@durhamnc.gov
 - Jillian.Johnson@durhamnc.gov
 - charlie.reece@durhamnc.gov
-subject: Defund the Durham Police & Reallocate Funds
 body: "Dear Mayor Schewel & City Council Members:\n\nMy name is [YOUR NAME]. I am
   a resident of Durham. I am writing to object to the allocation of over $70M to the
   Durham Police Department in the 2020-2021 city budget. It is indefensible to increase

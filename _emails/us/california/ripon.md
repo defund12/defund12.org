@@ -12,7 +12,6 @@ recipients:
 - leo.zuber@yahoo.com
 - kwerner@cityofripon.org
 - jkilgore@cityofripon.org
-subject: Ripon Resident for Defunding RPD
 body: |-
   To the City Administrator and the Ripon City Council,
 
