@@ -13,7 +13,7 @@ recipients:
 - jbencomo@las-cruces.org
 - gsorg@las-cruces.org
 - yflores@las-cruces.org
-subject: "[NSERT UNIQUE SUBJECT LINE]"
+subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Mayor Miyagishima and the Las Cruces City Council:
 
