@@ -5,12 +5,11 @@ name: Letter to Mayor and City Council
 city: Upland
 state: CA
 recipients:
-- dstone@ci.upland.ca.us
-- jelliott@ci.upland.ca.us
-- zuniga@ci.upland.ca.us
-- bvelto@ci.upland.ca.us
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - dstone@ci.upland.ca.us
+  - jelliott@ci.upland.ca.us
+  - zuniga@ci.upland.ca.us
+  - bvelto@ci.upland.ca.us
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Upland Mayor and City Council,
 
