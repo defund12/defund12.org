@@ -6,13 +6,12 @@ city: San Gabriel
 state: CA
 layout: email
 recipients:
-- dmenchaca@sgch.org
-- cliao@sgch.org
-- tonydingforsangabriel@gmail.com
-- jharrington@sgch.org
-- jpu@sgch.org
-subject:
-- INSERT UNIQUE SUBJECT LINE
+  - dmenchaca@sgch.org
+  - cliao@sgch.org
+  - tonydingforsangabriel@gmail.com
+  - jharrington@sgch.org
+  - jpu@sgch.org
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear San Gabriel Mayor and City Council,
 
@@ -25,7 +24,7 @@ body: |-
   I also entreat you to stand in solidarity with the movement by demanding change from the LAPD. As neighbors, we are duty-bound to hold each other accountable. I join the calls of those across the country to meaningfully defund the police. The people are demanding a budget that supports community wellbeing, rather than empowering the police forces that tear them apart.
 
   You need to adopt a budget that prioritizes the social programs proven to promote safety and equity much more effectively than policing. You need to steadfastly pressure your peers on the City Council of Los Angeles to do the same. Public opinion is with me.
-  
+
   Thank you for your time,
   [YOUR NAME]
   [YOUR ADDRESS]
