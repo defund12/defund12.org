@@ -19,8 +19,6 @@ recipients:
 - mwoolever@townofpoughkeepsie-ny.gov
 - ashershin@yahoo.com
 - fsalvatore@townofpoughkeepsie-ny.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
 body: |-
   To Poughkeepsie Town Officials:
 
