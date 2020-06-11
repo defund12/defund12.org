@@ -76,7 +76,7 @@ def test_files_exist():
 
 
 def test_file_names_are_valid():
-  """"Tests that all markdown files have valid filenames""""
+  """"Tests that all markdown files have valid filenames"""
   for filepath in get_markdown_files():
     filename = os.path.basename(filepath).rsplit( ".", 1)[0]
     if not re.match("^[a-z_]*$", filename):
