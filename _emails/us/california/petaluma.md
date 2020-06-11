@@ -4,7 +4,6 @@ permalink: "/petaluma"
 name: Letter to Mayor and City Council
 city: Petaluma
 state: CA
-layout: email
 recipients:
 - tbarrett@cityofpetaluma.org
 - dfischer@cityofpetaluma.org
@@ -16,9 +15,9 @@ recipients:
 body: |-
   Dear Petaluma City Leaders,
 
-  I am writing you today out of great concern for our community and our future. I am [INSERT IDENTIFYING INFO BUT ONLY AS MUCH AS YOU FEEL COMFORTABLE WITH INCLUDING THE AMOUNT OF TIME YOU’VE BEEN A RESIDENT OF PETALUMA, IF YOU’RE A LOCAL BUSINESS OWNER, ANY OTHER COMMUNITY TIES LIKE FAITH COMMUNITY OR OTHER COMMUNITY-BASED ORGS]
+  I am writing you today out of great concern for our community and our future. I am [INSERT IDENTIFYING INFO--AS MUCH AS YOU FEEL COMFORTABLE WITH--INCLUDING THE AMOUNT OF TIME YOU’VE BEEN A RESIDENT OF PETALUMA, IF YOU’RE A LOCAL BUSINESS OWNER, ANY OTHER COMMUNITY TIES LIKE FAITH COMMUNITY OR OTHER COMMUNITY-BASED ORGS]
 
-  As Black people across the United States are dying at the hands of law enforcement, our communities are mourning the deaths of George Floyd, tortured to death by Minneapolis police, and Breonna Taylor, an EMT killed by officers while asleep in her bed in Louisville. Their names are added to a devastatingly long list of Black people who have been killed at the hands of law enforcement - it is time for us to make different decisions. We demand change in the operation of the criminal legal system, we demand that we take care of our community instead of criminalizing those amongst us who need help, and we demand that police are not the front line responders to every emergency or call for help.
+  As Black people across the United States are dying at the hands of law enforcement, our communities are mourning the deaths of George Floyd, tortured to death by Minneapolis police, and Breonna Taylor, an EMT killed by officers while asleep in her bed in Louisville. Their names are added to a devastatingly long list of Black people who have been killed at the hands of law enforcement - it is time for us to make different decisions. I write to demand change in the operation of the criminal legal system, and that we take care of our community instead of criminalizing those amongst us who need help. I ask for a system where police are not the front line responders to every emergency or call for help.
 
   In Petaluma, fulfilling these demands requires making dramatic changes in our city’s budget. Our budget should reflect our values. The current budget does not. I am writing to you today to demand that the Petaluma City Council invest in alternative responses to law enforcement that actually keep our community safe and healthy.
 
@@ -29,10 +28,10 @@ body: |-
   Therefore, I demand the following: The creation of a local police commission and a city council subcommittee on alternatives to policing. Investment in local alternatives to policing. This should include investments in existing community based organizations as well as additional funding to support the creation of alternative responses to community needs and emergencies. Some examples of alternative responses include unarmed mediation and intervention teams, social worker teams and mental health experts, and restorative justice programs. I further request that an emergency meeting of the full City Council be immediately scheduled to address these concerns.
 
   Regards,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
