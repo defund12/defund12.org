@@ -1,10 +1,10 @@
 ---
-title: "Las Cruces, NM"
+title: Las Cruces, NM
 permalink: "/lascruces"
-name: "Letter to Mayor and City Council"
-city: "Las Cruces"
-state: "NM"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Las Cruces
+state: NM
+layout: email
 recipients:
 - KMiyagishima@las-cruces.org
 - kgandara@las-cruces.org
@@ -42,3 +42,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
