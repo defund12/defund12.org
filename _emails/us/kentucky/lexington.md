@@ -23,7 +23,6 @@ recipients:
 - CouncilCoreStaff@lexingtonky.gov
 - mayor@lexingtonky.gov
 - karmstrong@lexingtonky.gov
-subject: 'URGENT: Reallocate Funding for the LPD'
 body: |-
   Hello,
 

@@ -13,7 +13,6 @@ recipients:
 - vgordo@cityofpasadena.net
 - smadison@cityofpasadena.net
 - awilson@cityofpasadena.net
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 layout: email
 body: |-
   Dear Pasadena Mayor and City Council,

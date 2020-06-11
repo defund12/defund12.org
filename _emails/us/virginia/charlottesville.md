@@ -12,7 +12,6 @@ recipients:
 - mpayne@charlottesville.gov
 - lsnook@charlottesville.gov
 - budget@charlottesville.gov
-subject: Charlottesville City Resident for Defunding CPD
 body: |-
   Dear Members of the City Council and Budget Department,
 

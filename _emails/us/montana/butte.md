@@ -8,7 +8,6 @@ layout: email
 state: MT
 recipients:
 - 'commissioners@bsb.mt.gov '
-subject: 'Butte demands a budget for justice '
 body: |-
   Dear Butte-Silver Bow Commissioners,
 

@@ -17,7 +17,6 @@ recipients:
 - tmercer@pawtucketri.com
 - mkallman@pawtucketri.com
 - trudd@pawtucketri.com
-subject: Defund Pawtucket Police
 body: |
   Dear Mayor Fung and Cranston City Council,
 

@@ -27,7 +27,6 @@ recipients:
 - sue.himmelrich@smgov.net
 - greg.morena@smgov.net
 - ted.winterer@smgov.net
-subject: Defund Santa Monica PD
 body: |-
   Dear Santa Monica City Managers and Council Members:
 

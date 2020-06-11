@@ -13,7 +13,6 @@ recipients:
 - dking@cityofpetaluma.org
 - kmcdonnell@cityofpetaluma.org
 - kmiller@cityofpetaluma.org
-subject: Petaluma Resident For Defunding The Petaluma Police Department
 body: |-
   Dear Petaluma City Leaders,
 

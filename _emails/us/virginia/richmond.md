@@ -16,7 +16,6 @@ recipients:
 - cynthia.newbille@richmondgov.com
 - reva.trammell@richmondgov.com
 - michael.jones@richmondgov.com
-subject: Reallocation of RPD Budget
 body: "My name is [YOUR NAME], and I am a resident of Richmond. This past week, our
   nation has been gripped by protests calling for rapid and meaningful reevaluation
   of the role of policing in our communities and an end to racism and anti-Blackness.

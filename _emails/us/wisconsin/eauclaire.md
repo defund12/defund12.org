@@ -17,7 +17,6 @@ recipients:
 - David.Klinkhammer@EC-CityCouncil.com
 - John.Lor@EC-CityCouncil.com
 - Mai.Xiong@EC-CityCouncil.com
-subject: Eau Claire Residents for ECPD
 body: |-
   Dear Eau Claire City Council Members,
 

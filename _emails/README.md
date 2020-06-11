@@ -42,7 +42,6 @@ state: <state_initials>
 recipients:
 - <recipient>
 - <recipient>
-subject: <subject>
 body: |-
   <body>
 cc:

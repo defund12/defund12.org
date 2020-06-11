@@ -11,7 +11,6 @@ recipients:
 - Jeanine.Arnett@loudoun.gov
 - budget@loudoun.gov
 - Erin.McLellan@loudoun.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Members of the Board of Supervisors and Budget Department,
 

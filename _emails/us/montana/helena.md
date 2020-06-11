@@ -8,7 +8,6 @@ layout: email
 state: MT
 recipients:
 - 'mayorandcommission@helenamt.gov '
-subject: Helena demands a budget for justice
 body: |-
   Dear Helena City Commission,
 

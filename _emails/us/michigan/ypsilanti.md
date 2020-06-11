@@ -13,7 +13,6 @@ recipients:
 - swilcoxen@cityofypsilanti.com
 - amorgan@cityofypsilanti.com
 - asomerville@cityofypsilanti.com
-subject: Defund Ypsilanti Police Department
 body: |-
   To Mayor Bashert and Ypsilanti City Council:
 

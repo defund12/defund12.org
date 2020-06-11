@@ -31,7 +31,6 @@ recipients:
 - paul.anneed23@gmail.com
 - mike.dilk424@gmail.com
 - brian.mowery@indy.gov
-subject: Decrease funding for police in the 2021 budget
 body: "Dear City Councilors,\n \nMy name is [YOUR NAME] and I'm a resident of Indianapolis.
   I am writing about the fiscal year 2021 budget for the Consolidated City of Indianapolis
   Marion County.\n\nMayor Hogsett claims to be \"dedicated to investing Indianapolis'

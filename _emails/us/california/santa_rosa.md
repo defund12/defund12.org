@@ -18,7 +18,6 @@ recipients:
 - sgallagher@srcity.org
 - cMcBride@srcity.org
 - swilliams@srcity.org
-subject: Santa Rosa Resident for Defunding the SRPD
 body: |-
   Dear Santa Rosa City Leaders,
 
