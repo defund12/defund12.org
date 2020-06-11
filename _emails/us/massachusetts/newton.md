@@ -32,8 +32,7 @@ recipients:
 - bnoel@newtonma.gov
 - lbaker@newtonma.gov
 - hryan@newtonma.
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Fuller and City Council Members,
 

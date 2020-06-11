@@ -7,8 +7,7 @@ city: Little Rock
 layout: email
 recipients:
 - board@littlerock.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Little Rock Board of Directors,
 

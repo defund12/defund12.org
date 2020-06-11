@@ -22,7 +22,7 @@ recipients:
 - Catherine.Crosby@toledo.oh.gov
 - Karen.Poore@toledo.oh.gov
 - Abby.Arnold@toledo.oh.gov
-subject: 
+subject: Defund Toledo PD
 body: "Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. \n\nThe City
   of Toledo must do better by all of its residents. The current city budget affords
   the criminalization of Black communities while offering very little investment in
