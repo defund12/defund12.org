@@ -6,11 +6,11 @@ city: Antioch
 state: CA
 layout: email
 recipients:
-  - swright@ci.antioch.ca.us
-  - jmotts@ci.antioch.ca.us
-  - lthorpe@ci.antioch.ca.us
-  - logorchock@ci.antioch.ca.us
-  - mwilson@ci.antioch.ca.us
+- swright@ci.antioch.ca.us
+- jmotts@ci.antioch.ca.us
+- lthorpe@ci.antioch.ca.us
+- logorchock@ci.antioch.ca.us
+- mwilson@ci.antioch.ca.us
 subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear Antioch City Council,
@@ -28,3 +28,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
