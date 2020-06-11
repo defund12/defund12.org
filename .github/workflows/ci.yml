@@ -45,10 +45,10 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - run: ls -l vendor/bundle/ruby/
+      - run: pwd
       - run: gem install bundler -v 2.1.4
-      - run: bundle config path vendor/bundle
-      - run: bundle install --jobs 4 --retry 3 --path vendor/bundle
+      - run: bundle config path ~/vendor/bundle
+      - run: bundle install --jobs 4 --retry 3 --path ~/vendor/bundle
       - run: ls -l vendor/bundle/ruby/
       - run: bundle install --jobs 4 --retry 3 --path vendor/bundle
       - run: mkdir public
