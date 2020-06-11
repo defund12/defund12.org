@@ -15,6 +15,9 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
+      - run: git log -n 5
+      - run: echo ${{ github.event.after }}
+      - run: git branch
       - name: get commit message
         run: |
           echo ::set-env name=commitmsg::$(git log --format=%B -n 1 ${{ github.event.after }} |  tr -d '\n')
