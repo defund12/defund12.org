@@ -9,7 +9,7 @@ recipients:
 - citycomm@cityofgainesville.org
 - poelb@cityofgainesville.org
 - mayor@cityofgainesville.org
-- johnson1@cityofgainesville.org
+- johnsong1@cityofgainesville.org
 - warrenhk@cityofgainesville.org
 - simmonsgg@cityofgainesville.org
 - wardhl@cityofgainesville.org

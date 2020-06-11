@@ -14,7 +14,7 @@ recipients:
 - ward6@NormanOK.gov
 - ward7@NormanOK.gov
 - ward8@NormanOK.gov
-subject: 
+subject: Defund Norman PD
 body: |
   Dear Mayor Clark and Norman City Council,
 

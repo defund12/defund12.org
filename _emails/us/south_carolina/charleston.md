@@ -19,8 +19,7 @@ recipients:
 - griffinh@charleston-sc.gov
 - appelr@charleston-sc.gov
 - jacksonc@charleston-sc.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: |
   Dear Mayor Tecklenburg and Charleston City Council Members,
 

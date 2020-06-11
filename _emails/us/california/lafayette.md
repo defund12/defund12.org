@@ -1,18 +1,16 @@
 ---
-title: Lafayette, LA
+title: Lafayette, CA
 permalink: "/lafayette"
 name: Letter to the Mayor and City Council
-state: LA
 city: Lafayette
-layout: email
+state: CA
 recipients:
 - manderson@lovelafayette.org
 - scandell@lovelafayette.org
 - sbliss@lovelafayette.org
 - CBurks@lovelafayette.org
 - tgerringer@lovelafayette.org
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   To Mayor Anderson and Lafayette City Council Members,
 
@@ -33,5 +31,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 

@@ -2,9 +2,8 @@
 title: Santa Rosa, CA
 permalink: "/santarosa"
 name: Letter to Mayor and Council Members
-state: CA
 city: Santa Rosa
-layout: email
+state: CA
 recipients:
 - tschwedhelm@srcity.org
 - vfleming@srcity.org
@@ -23,7 +22,7 @@ subject: Santa Rosa Resident for Defunding the SRPD
 body: |-
   Dear Santa Rosa City Leaders,
 
-  I am writing you today out of great concern for our community and our future. I am [INSERT IDENTIFYING INFO BUT ONLY AS MUCH AS YOU FEEL COMFORTABLE WITH INCLUDING THE AMOUNT OF TIME YOU'VE BEEN A RESIDENT OF SR, WHERE YOU WORK, IF YOU'RE A LOCAL BUSINESS OWNER, ANY OTHER COMMUNITY TIES LIKE FAITH COMMUNITY OR OTHER COMMUNITY-BASED ORGS]
+  I am writing you today out of great concern for our community and our future. I am [INSERT IDENTIFYING INFO--AS MUCH AS YOU FEEL COMFORTABLE WITH--INCLUDING THE AMOUNT OF TIME YOU'VE BEEN A RESIDENT OF SR, WHERE YOU WORK, IF YOU'RE A LOCAL BUSINESS OWNER, ANY OTHER COMMUNITY TIES LIKE FAITH COMMUNITY OR OTHER COMMUNITY-BASED ORGS]
 
   As Black people across the United States are dying at the hands of law enforcement, our communities are mourning the deaths of George Floyd, tortured to death by Minneapolis police, and Breonna Taylor an EMT killed by officers while asleep in her bed in Louisville. Their names are added to a devastatingly long list of Black people who have been killed at the hands of law enforcement - it is time for us to make different decisions. We demand change in the operation of the criminal legal system, we demand that we take care of our community instead of criminalizing those amongst us who need help, and we demand that police are not the front line responders to every emergency or call for help.
 
@@ -35,10 +34,10 @@ body: |-
   The creation of a local police commission and a city council subcommittee on alternatives to policing. A commitment to changing Measure O, so we may act to reduce funding for police in the Santa Rosa City budget, and instead invest more in housing and community services. Investment in local alternatives to policing. This should include investments in existing community based organizations as well as additional funding to support the creation of alternative responses to community needs and emergencies, including: Unarmed mediation and intervention teams, Social worker teams and mental health experts, as well as Restorative Justice programs. We further request that an emergency meeting of the full city council be immediately scheduled to address these concerns. You are welcome to contact me with any questions or concerns regarding these requests.
 
   Regards,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 

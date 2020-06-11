@@ -24,8 +24,7 @@ recipients:
 - abowman@newtonma.gov
 - rwgrossman@newtonma.gov
 - dkalis@newtonma.gov
-subject:
-- INSERT UNIQUE SUBJECT LINE
+subject: INSERT UNIQUE SUBJECT LINE
 body: |-
   Dear Mayor Fuller and City Council Members,
 
