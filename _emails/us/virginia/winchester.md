@@ -15,7 +15,6 @@ recipients:
 - corey.sullivan@winchesterva.gov
 - john.willingham@winchesterva.gov
 - judy.mckiernan@winchesterva.gov
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Mayor Smith and City Council members,
 
