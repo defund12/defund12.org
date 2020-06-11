@@ -11,7 +11,7 @@ recipients:
 - jbauters@emeryville.org
 - sdonahue@emeryville.org
 - amedina@emeryville.org
-subject: \[*** INSERT UNIQUE SUBJECT LINE***]
+subject: [*** INSERT UNIQUE SUBJECT LINE***]
 body: |-
     Dear Emeryville Mayor and City Council Members:
 
