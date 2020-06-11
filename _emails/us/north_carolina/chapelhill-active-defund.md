@@ -43,7 +43,7 @@ body: "Dear Mayor Pam and Chapel Hill Town Council,\n\nI am asking you all to ac
   funds divested from policing to provide educational opportunities, youth programs,
   environmental justice initiatives, mental health resources, agricultural and food-based
   inequality programs, sexual assault services, and social work services to our communities.\n\n
-  \ 2. Ensure that Covid-19 budget cuts do not affect important community programs
+  2. Ensure that Covid-19 budget cuts do not affect important community programs
   but the budget rather be drawn from the Chapel Hill Police Department\n\n  3. Commit
   resources to support community-led alternatives to policing, such as social work
   programs.\n\n  4. Propose plans for ensuring the safety of Black and other marginalized

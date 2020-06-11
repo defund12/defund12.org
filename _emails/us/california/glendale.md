@@ -24,7 +24,7 @@ body: "Dear Glendale Mayor and City Council, \n\nMy name is [YOUR NAME] and I am
   also entreat you to stand in solidarity with the movement by demanding change from
   the police department. As neighbors, we are duty-bound to hold each other accountable.
   I join the calls of those across the country to meaningfully defund the police.
-  \ The people are demanding a budget that supports community wellbeing, rather than
+  The people are demanding a budget that supports community wellbeing, rather than
   empowering the police forces that tear them apart. \n\nYou need to adopt a budget
   that prioritizes the social programs proven to promote safety and equity much more
   effectively than policing. You need to pressure your peers on the Glendale City

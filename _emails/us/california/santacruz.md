@@ -16,7 +16,7 @@ subject: Defund the SCPD
 body: |-
   To Mayor Cummings and the Santa Cruz City Council:
 
-  My name is \[YOUR NAME\], and I am a resident of Santa Cruz. This past week, our nation has been gripped by protests calling for a rapid reevaluation of the role of police in our communities, and an end to racism and anti-Blackness. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+  My name is [YOUR NAME], and I am a resident of Santa Cruz. This past week, our nation has been gripped by protests calling for a rapid reevaluation of the role of police in our communities, and an end to racism and anti-Blackness. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
 
   SCPD has been a waste of our resources. Last year, the SCPD budget totaled over $30,000,000, most coming from the general fund -- Over twice as much as any other single department, including firefighters. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police, while these critical issues largely go ignored.
 
@@ -26,10 +26,10 @@ body: |-
 
   Sincerely,
 
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 layout: email
 ---
 

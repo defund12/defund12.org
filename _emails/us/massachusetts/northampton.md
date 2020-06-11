@@ -20,7 +20,7 @@ subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Mayor Narkiewicz and City Councilors,
 
-  My name is \[YOUR NAME\] and I am a resident of \[YOUR NEIGHBORHOOD\]. I’m writing in regard to the recent budget hearing to increase police funding.
+  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I’m writing in regard to the recent budget hearing to increase police funding.
 
   Narkewicz’s proposed 0.28% cut to the current budget is not enough. I urge you to further cut the FY2021 Northampton Police Department funding. The money should NOT be put into the fiscal stability fund, but reallocated toward programs that benefit our community.
   Hundreds of people have spoken to you over the week outlining the reasons why policing is ineffective and even harmful, and the need to reduce the scope of policing nationwide. Thousands of people who care about this city showed up to protest racial inequality perpetuated by law enforcement and I ask you to take this seriously.
@@ -52,10 +52,10 @@ body: |-
   The movement to defund and reimagine the responsibilities of the police is not isolated. Los Angeles is taking action and Minneapolis has already voted to entirely disband their police department, despite the fact that they were considered nationally to be a “model” department. Training does not work. Reform does not work. Defunding is the solution we need. Do not leave Northampton behind in this historic moment.
 
   Thank you for your time,
-  \[YOUR NAME\]
-  \[YOUR ADDRESS\]
-  \[YOUR EMAIL\]
-  \[YOUR PHONE NUMBER\]
+  [YOUR NAME]
+  [YOUR ADDRESS]
+  [YOUR EMAIL]
+  [YOUR PHONE NUMBER]
 layout: email
 ---
 
