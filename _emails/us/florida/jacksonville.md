@@ -27,7 +27,6 @@ recipients:
 - THazouri@coj.net
 - MCarlucci@coj.net
 - SNewby@coj.net
-subject: Defund Jacksonville PD
 body: |-
   Dear Mayor and City Council,
 

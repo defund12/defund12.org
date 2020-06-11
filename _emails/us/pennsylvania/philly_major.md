@@ -25,7 +25,6 @@ recipients:
 - James.Kenney@phila.gov
 - Bobby.Henon@phila.gov
 - Curtis.Jones@phila.gov
-subject: Philadelphia demands a People's Budget
 body: "\"To whom it may concern: \n\nMy name is [INSERT NAME], and I am a resident
   of the [DISTRICT NUMBER] district. I am emailing to demand the restructuring of
   the Philadelphia city budget in a way that prioritizes social services for communities

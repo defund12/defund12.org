@@ -15,7 +15,6 @@ recipients:
 - wbrasington@greenvillesc.gov
 - ddowe@greenvillesc.gov
 - rstall@greenvillesc.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor White and Greenville County Council Members,
 

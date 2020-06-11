@@ -15,7 +15,6 @@ recipients:
 - azapanta@cityofirving.org
 - ktaylor@cityofirving.org
 - dpalmer@cityofirving.org
-subject: xxx UNIQUE SUBJECT LINE xxx
 body: |
   Dear City Council Members and Mayor Stopfer,
 

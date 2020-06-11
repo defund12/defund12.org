@@ -19,7 +19,6 @@ recipients:
 - alawson@auroragov.org
 - budget1@auroragov.org
 - citymanager@auroragov.org
-subject: Defund Aurora Police Department
 body: |-
   Dear Aurora City Council,
 

@@ -15,7 +15,6 @@ recipients:
 - MBernard@pbcgov.org
 - OFMB@pbcgov.org
 - public@co.palm-beach.fl.us
-subject: "[INSERT UNIQUE SUBJECT]"
 body: |-
   To the Board of Palm Beach County Commissioners, OFMB Director Brown, and County Administrator Baker,
 

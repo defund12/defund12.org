@@ -16,7 +16,6 @@ recipients:
 - denisea@cityofws.org
 - jamestjr@cityofws.org
 - morticiap@cityofws.org
-subject: Winston-Salem Resident for Defunding WSPD
 body: |-
   Dear Mayor Joines and City Council,
 

@@ -9,7 +9,6 @@ recipients:
 - rferrier@lahabraca.gov
 - bhurt@lahabraca.gov
 - cc@lahabraca.gov
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Tom Beamish and La Habra City Council members,
 

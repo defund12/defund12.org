@@ -11,7 +11,6 @@ recipients:
 - elaine.bryant@talgov.com
 - curtis.richardson@talgov.com
 - jeremy.matlow@talgov.com
-subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Dear Mayor Dailey and Tallahassee City Commissioners,
 

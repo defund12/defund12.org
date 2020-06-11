@@ -22,7 +22,6 @@ ALLOWLISTED_KEYS_REQUIRED = {
   'city': str,
   'layout': str,
   'recipients': list,
-  'subject': str,
   'body': str
 }
 
@@ -30,7 +29,8 @@ ALLOWLISTED_KEYS_OPTIONAL = {
   'cc': list,
   'expiration_date': str,
   'organization': str,
-  'redirection_from': list
+  'redirection_from': list,
+  'subject': str
 }
 
 def success(test_name):
@@ -113,7 +113,18 @@ def test_file_names_are_valid():
   for filepath in get_markdown_files():
     filename = os.path.basename(filepath).rsplit( ".", 1)[0]
     if not re.match("^[a-z_]*$", filename):
-      fail('filename %s must only contain lowercase and underscore characters' % filepath)
+      fail('%s must only contain lowercase and underscore characters' % filepath)
+
+def test_layout_is_email():
+  for filepath in get_markdown_files():
+    with open(filepath, 'r') as stream:
+      docs = yaml.safe_load_all(stream)
+      for doc in filter(None, docs):
+        if 'layout' not in doc:
+          fail('%s must contain \'layout\' field' % filepath)
+        elif doc['layout'] != 'email':
+          fail('\'layout\' field in %s must be \'email\'' % filepath)  
+
 
 def main():
   print('🔨 Running markdown file tests...')
@@ -123,6 +134,9 @@ def main():
 
   test_file_names_are_valid()
   success('test_file_names_are_valid')
+
+  test_layout_is_email()
+  success('test_layout_is_email')
 
   test_files_contain_allowlisted_keys()
   success('test_files_contain_allowlisted_keys')

@@ -18,7 +18,6 @@ recipients:
 - JRogers@CityOfChowchilla.org
 - HTurner@CityOfChowchilla.org
 - JPalmer@CityOfChowchilla.org
-subject: "[INSERT UNIQUE SUBJECT LINE]"
 body: |-
   Dear Mayor Waseem Ahmed, Council members, and City Officials,
 

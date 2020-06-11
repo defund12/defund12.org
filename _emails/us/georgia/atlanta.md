@@ -7,7 +7,6 @@ state: GA
 recipients:
 - cebell@atlantaga.gov
 - sagabriel@atlantaga.gov
-subject: Please decrease Atlanta's Police Department’s budget
 body: "Hi, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to
   redirect money away from the Atlanta PD and into the following social services:
   [LIST - Community Development, COVID Relief, Education, Parks & Recreation, targeted

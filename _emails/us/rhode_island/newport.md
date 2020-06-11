@@ -14,7 +14,6 @@ recipients:
 - amccalla@cityofnewport.com
 - lceglie@cityofnewport.com
 - KateLeonar@aol.com
-subject: Defund Newport Police
 body: |-
   My name is [YOUR NAME] and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.
 

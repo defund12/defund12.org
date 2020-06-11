@@ -16,7 +16,6 @@ recipients:
 - District8@sanjoseca.gov
 - District9@sanjoseca.gov
 - District10@sanjoseca.gov
-subject: Defund the Police Department
 body: |-
   Hello,
 

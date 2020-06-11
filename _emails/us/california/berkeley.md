@@ -16,7 +16,6 @@ recipients:
 - ldroste@cityofberkeley.info
 - auditor@cityofberkeley.info
 - policycommittee@cityofberkeley.info
-subject: Berkeley Resident for Defunding BPD
 body: "Dear Mayor Arreguín and Berkeley City Council Members,\n\nMy name is [NAME
   HERE] and I am a Berkeley resident from district [YOUR DISTRICT]. BPD takes an enormous
   share of the city’s general fund, and that percentage has risen exponentially for

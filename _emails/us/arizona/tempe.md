@@ -12,7 +12,6 @@ recipients:
 - arlene_chin@tempe.gov
 - randy_keating@tempe.gov
 - joel_navarro@tempe.gov
-subject: Commit to reallocate for social equity - Defund the TPD
 body: |-
   Dear Mayor Mitchell and Tempe City Council,
 

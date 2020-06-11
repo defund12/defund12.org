@@ -15,7 +15,6 @@ recipients:
 - trusteetaglia@oak-park.us
 - TrusteeWalker-Peddakotla@oak-park.us
 - clerkscaman@oak-park.us
-subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Mayor Anan Abu-Taleb and the Oak Park Village Board,
 

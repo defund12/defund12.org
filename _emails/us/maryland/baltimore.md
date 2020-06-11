@@ -22,7 +22,6 @@ recipients:
 - Robert.Stokes@baltimorecity.gov
 - Shannon.Sneed@baltimorecity.gov
 - MaryPat.Clarke@baltimorecity.gov
-subject: Commit to reallocate for social equity
 body: "\"To whom it may concern,\n\nMy name is [YOUR NAME], and I am a Baltimore resident.
   In the midst of this pandemic and public outcry against police brutality, it feels
   especially inappropriate to propose an increase to the BPD budget to $545 million.
