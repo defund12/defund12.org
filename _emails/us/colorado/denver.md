@@ -31,8 +31,8 @@ body: "Dear Denver City Council,\n\nMy name is [YOUR NAME] and I am a resident o
   With record unemployment and a seemingly intractable pattern of abuse and unequal
   treatment by police, our city needs a budget that adequately and effectively meets
   the needs of at-risk Denver residents.\n\nFor FY2020, over $405,000,000 was allocated
-  for policing (29% of the general fund budget) while less than $217m was allocated for
-  health, housing stability, economic development, and parks and recreation combined.
+  for policing (29% of the general fund budget) while less than $217m was allocated
+  for health, housing stability, economic development, and parks and recreation combined.
   In a June 6th interview, Mayor Hancock said that there is no plan to address this
   inequality. This is unacceptable, and I demand that the city council remedy this
   gross display of priorities. You must support a budget that supports social equity
@@ -43,3 +43,4 @@ body: "Dear Denver City Council,\n\nMy name is [YOUR NAME] and I am a resident o
   a city than policing.\n\nThank you for your time,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
   EMAIL]\n[YOUR PHONE NUMBER]"
 ---
+
