@@ -15,6 +15,23 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
+  cache_persist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: "2.6"
+      - uses: actions/cache@v1
+        with:
+          path: .github/vendor/bundle
+          key: github-gems-${{ hashFiles('**/.github/Gemfile.lock') }}
+          restore-keys: |
+            github-gems-
+      - name: bundle install
+        run: |
+          gem install bundler --no-document
+          bundle check --path=vendor/bundle || bundle install --jobs=4 --retry=3 --path=vendor/bundle
   test-jekyll:
     runs-on: ubuntu-latest
     steps:
