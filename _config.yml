@@ -41,6 +41,8 @@ auto_open_message: This page automatically opens a drafted email for you.
 bad_mailto_message: Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
 url: https://defund12.org
+logoUrl: /images/defund12.org.png
+faviconUrl: /favicon.svg
 plugins:
 - jekyll-sitemap
 - jekyll-redirect-from

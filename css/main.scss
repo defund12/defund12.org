@@ -1,6 +1,3 @@
----
----
-
 // SASS mixins =================================================================
 @mixin box-shadow($shadow) {-moz-box-shadow: $shadow; -webkit-box-shadow: $shadow; box-shadow: $shadow;}
 @mixin border-radius($radius) {-moz-border-radius: $radius; -webkit-border-radius: $radius; border-radius: $radius; background-clip: padding-box;}
@@ -318,4 +315,14 @@ header {
 
 .selectBox-inline.selectBox-disabled .selectBox-options a {
   background-color: transparent !important;
+}
+
+#filters {
+  width: 20em;
+}
+
+@media only screen and (max-width: 500px) {
+  #filters {
+    width: 100%
+  }
 }
