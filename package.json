@@ -13,7 +13,9 @@
     "lint": "eslint --ext 'src/**/*js?(x),ts?(x)' && tsc --noEmit",
     "test": "jest",
     "build": "gatsby build",
-    "develop": "gatsby develop"
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "start": "yarn run develop"
   },
   "dependencies": {
     "@types/react-dom": "^16.9.8",
