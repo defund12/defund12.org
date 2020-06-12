@@ -1,7 +1,7 @@
 ---
 title: "Monterey, CA"
 permalink: "/monterey"
-name: "Letter to Mayor and City Council"
+name: "Letter to Mayor, City Council, and City Clerk"
 city: "Monterey"
 state: "CA"
 recipients:
@@ -10,6 +10,7 @@ recipients:
 - "haffa@monterey.org"
 - "smith@monterey.org"
 - "twilliamson@monterey.org"
+- "gawf@monterey.org"
 body: |-
   To Mayor Roberson and Monterey City Council Members,
 
