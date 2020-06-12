@@ -4,7 +4,6 @@ permalink: "/southsanfrancisco"
 name: Letter to Mayor Garbarino and City Council
 city: South San Francisco
 state: CA
-layout: email
 recipients:
 - buenaflor.nicolas@ssf.net
 - mark.nagales@ssf.net
@@ -31,5 +30,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
