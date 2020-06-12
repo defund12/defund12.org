@@ -1,21 +1,21 @@
 ---
-title: "Canandaigua, NY"
+title: Canandaigua, NY
 permalink: "/canandaigua"
-name: "Letter to Mayor and City Officials"
-city: "Canandaigua"
-state: "NY"
+name: Letter to Mayor and City Officials
+city: Canandaigua
+state: NY
 recipients:
-- "Bob.Palumbo@CanandaiguaNewYork.gov"
-- "Nick.Cutri@CanandaiguaNewYork.Gov"
-- "Dan.Unrath@CanandaiguaNewYork.Gov"
-- "Karen.White@CanandaiguaNewYork.gov"
-- "Erich.Dittmar@CanandaiguaNewYork.gov"
-- "Robert.OBrien@CanandaiguaNewYork.Gov"
-- "Renee.Sutton@CanandaiguaNewYork.Gov"
-- "James.Terwilliger@CanandaiguaNewYork.Gov"
-- "Steve.Uebbing@CanandaiguaNewYork.gov"
-- "DavidBaker197@Rochester.rr.com"
-- "richardrussell02@yahoo.com"
+- Bob.Palumbo@CanandaiguaNewYork.gov
+- Nick.Cutri@CanandaiguaNewYork.Gov
+- Dan.Unrath@CanandaiguaNewYork.Gov
+- Karen.White@CanandaiguaNewYork.gov
+- Erich.Dittmar@CanandaiguaNewYork.gov
+- Robert.OBrien@CanandaiguaNewYork.Gov
+- Renee.Sutton@CanandaiguaNewYork.Gov
+- James.Terwilliger@CanandaiguaNewYork.Gov
+- Steve.Uebbing@CanandaiguaNewYork.gov
+- DavidBaker197@Rochester.rr.com
+- richardrussell02@yahoo.com
 body: |-
   Dear City Officials,
 
@@ -35,6 +35,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
