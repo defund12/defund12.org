@@ -1,17 +1,17 @@
 ---
-title: "Mill Valley, California"
+title: Mill Valley, California
 permalink: "/millvalley"
-name: "Letter to the Mayor, Vice Mayor, and Councilmembers"
-state: "CA"
-city: "Mill Valley"
-layout: "email"
+name: Letter to the Mayor, Vice Mayor, and Councilmembers
+state: CA
+city: Mill Valley
+layout: email
 recipients:
-- "finance@cityofmillvalley.org"
-- "jmccauley@cityofmillvalley.org"
-- "smcentee@cityofmillvalley.org"
-- "jwickham@cityofmillvalley.org"
-- "ucarmel@cityofmillvalley.org"
-- "tossa@cityofmillvalley.org"
+- finance@cityofmillvalley.org
+- jmccauley@cityofmillvalley.org
+- smcentee@cityofmillvalley.org
+- jwickham@cityofmillvalley.org
+- ucarmel@cityofmillvalley.org
+- tossa@cityofmillvalley.org
 body: |-
   Dear Mayor Sashi McEntee, Vice Mayor John McCauley, Councilmember Jim Wickham, Councilmember Urban Carmel, and Councilmember Tricia Ossa,
 
