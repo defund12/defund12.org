@@ -110,7 +110,7 @@ jobs:
       - name: Deploy (push to gh-pages branch)
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DEFUND12_GITHUB_TOKEN }}
           publish_branch: gh-pages
           enable_jekyll: true
       - name: Set COMMIT_MSG
