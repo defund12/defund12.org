@@ -12,7 +12,7 @@
 
 // Resets and Universal Classes ================================================
 html { overflow-y: scroll }
-html, body {margin:0px; padding:0px; width:100%; overflow-x: hidden !important;}
+html, body {margin:0px; padding:0px; width:100%;}
 h1, h2, h3, h4, h5, h6 {margin:0px;}
 img {max-width:100%; border:0px;}
 a {text-decoration:none; color:inherit;}
@@ -108,13 +108,14 @@ p.divider {
 }
 
 // Sections and Layout =========================================================
-
 header {
 	.pagetitle {padding-top:30px;}
 	p {margin-bottom:0px;}
 }
 
-.content {padding:30px 0px;}
+.content {
+  padding:30px 0px;
+}
 
 #emailLinks {
 	.state {margin-top:8px;}
@@ -135,6 +136,16 @@ header {
 	.recipients {overflow-wrap: break-word;}
 }
 .footer {margin-top:40px;}
+
+.divider.footer.sticky+p {
+  position: sticky;
+  background: linear-gradient(0deg, var(--bg) 0%, var(--bg) 85%, #ffffff00 100%);
+  padding: 30px 0 24px;
+  bottom: 0;
+  @include breakpoint(s) {
+    padding: 24px 0 30px;
+  }
+}
 
 .copyToClipboard{
     cursor: pointer;
