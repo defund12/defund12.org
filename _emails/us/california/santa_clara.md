@@ -1,17 +1,17 @@
 ---
-title: "Santa Clara, CA"
+title: Santa Clara, CA
 permalink: "/santaclara"
-name: "Letter to Mayor, City Manager, and City Council"
-city: "Santa Clara (City)"
-state: "CA"
+name: Letter to Mayor, City Manager, and City Council
+city: Santa Clara (City)
+state: CA
 recipients:
-- "MayorAndCouncil@santaclaraca.gov"
-- "lgillmor@santaclaraca.gov"
-- "kwatanabe@santaclaraca.gov"
-- "rchahal@santaclaraca.gov"
-- "khardy@santaclaraca.gov"
-- "toneill@santaclaraca.gov"
-- "ddavis@santaclaraca.gov"
+- MayorAndCouncil@santaclaraca.gov
+- lgillmor@santaclaraca.gov
+- kwatanabe@santaclaraca.gov
+- rchahal@santaclaraca.gov
+- khardy@santaclaraca.gov
+- toneill@santaclaraca.gov
+- ddavis@santaclaraca.gov
 body: |-
   To Mayor Lisa Gillmor, Santa Clara City Council Members, and the Santa Clara City Manager,
 
@@ -32,6 +32,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
