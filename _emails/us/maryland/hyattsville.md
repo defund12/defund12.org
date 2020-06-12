@@ -4,7 +4,6 @@ permalink: "/hyattsville"
 name: Letter to Mayor Hollingsworth and City Council
 city: Hyattsville
 state: MD
-layout: email
 recipients:
 - chollingsworth@hyattsville.org
 - kward@hyattsville.org
@@ -26,11 +25,11 @@ body: "Dear Mayor Hollingsworth and members of the Hyattsville City Council,\n\n
   country, this is unacceptable and anathema to the progressive views that our residents
   hold true.\n\nOver the course of the past three fiscal years there has been a 23%
   increase on spending for the police department--an increase that is at odds with
-  increases in other areas of governance that are more impactful on residents' quality
-  of life and trust in the city's leadership. In FY20 spending on the police department
-  comprised 26% of the entire budget for the city. This amount represents more than
-  $450 in spending per resident for police services that largely do not improve their
-  quality of life, and generally detract from it. In the same budget that allocates
+  stagnation in other areas of governance that are more impactful on residents' quality
+  of life, safety, and stability. In FY20 spending on the police department comprised
+  26% of the entire budget for the city. This amount represents more than $450 in
+  spending per resident for police services that largely do not improve their quality
+  of life, and in fact too often detract from it. In the same budget that allocates
   more than 1/4 of our city's funding to police, the city of Hyattsville is spending
   25 times LESS on community development programs like youth initiatives, the arts
   and public health/recreation.\n\nThis is an imbalance that can only be righted by
@@ -40,7 +39,7 @@ body: "Dear Mayor Hollingsworth and members of the Hyattsville City Council,\n\n
   as educational initiatives, mental health programs, ensuring access to affordable
   housing in all 5 wards of Hyattsville, and doing more to support and promote employment
   and vocational training programs.\n\nThe state of Maryland has the highest number
-  of black men incarcerated per capita, and the city of Hyattsville police department
+  of Black men incarcerated per capita, and the city of Hyattsville police department
   plays a role in this sobering statistic. We have seen numerous videos of police
   brutality within our county, including a 2019 officer-involved shooting by a Prince
   George's County officer here in Hyattsville that resulted in the death of a Black
@@ -54,5 +53,6 @@ body: "Dear Mayor Hollingsworth and members of the Hyattsville City Council,\n\n
   police department and allocate those dollars to social programs that will make Hyattsville,
   per one of our city's mottos, A Good Place to Live.\n\nSincerely, \n[YOUR NAME]
   \n[YOUR ADDRESS] \n[YOUR EMAIL] \n[YOUR PHONE NUMBER]"
+layout: email
 ---
 
