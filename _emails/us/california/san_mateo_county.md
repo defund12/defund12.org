@@ -1,6 +1,6 @@
 ---
 title: San Mateo County, CA
-permalink: "/sanmateocounty"
+permalink: "/san-mateo-county"
 name: Letter to County Leadership
 state: CA
 city: San Mateo County
