@@ -133,13 +133,6 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
         with:
           args: '{\"channel\":\"C0153GJV1GV\",\"text\":\":white_check_mark: Deployed <https://github.com/defund12/defund12.org/commit/${{ github.sha }}|${{ env.COMMIT_MSG }}>\"}'
-      - name: Notify deploy failed (#general)
-        if: failure()
-        uses: pullreminders/slack-action@v1.0.9
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.DEFUND12_SLACK_DEPLOY_BOT_TOKEN }}
-        with:
-          args: '{\"channel\":\"C014Q9PLEMC\",\"text\":\":warning: Failed to deploy <https://github.com/defund12/defund12.org/commit/${{ github.sha }}|latest commit> on `master` due to issues with `${{ github.job }}` job\"}'
       - name: Notify deploy failed (#deploys)
         if: failure()
         uses: pullreminders/slack-action@v1.0.9
