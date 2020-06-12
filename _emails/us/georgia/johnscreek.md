@@ -1,19 +1,19 @@
 ---
-title: "Johns Creek, GA"
+title: Johns Creek, GA
 permalink: "/johnscreek"
-name: "Letter to Mayor and City Councilmembers"
-city: "Johns Creek"
-state: "GA"
-layout: "email"
+name: Letter to Mayor and City Councilmembers
+city: Johns Creek
+state: GA
+layout: email
 recipients:
-- "lenny.zaprowski@johnscreekga.gov"
-- "mike.bodker@johnscreekga.gov"
-- "brian.weaver@johnscreekga.gov"
-- "john.bradberry@johnscreekga.gov"
-- "chris.coughlin@johnscreekga.gov"
-- "stephanie.endres@johnscreekga.gov"
-- "erin.elwood@johnscreekga.gov"
-- "ed.densmore@johnscreekga.gov"
+- lenny.zaprowski@johnscreekga.gov
+- mike.bodker@johnscreekga.gov
+- brian.weaver@johnscreekga.gov
+- john.bradberry@johnscreekga.gov
+- chris.coughlin@johnscreekga.gov
+- stephanie.endres@johnscreekga.gov
+- erin.elwood@johnscreekga.gov
+- ed.densmore@johnscreekga.gov
 body: |-
   Dear Mayor Bodker and members of the Johns Creek City Council:
 
