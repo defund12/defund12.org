@@ -1,10 +1,10 @@
 ---
-title: "Anchorage, Alaska"
+title: Anchorage, Alaska
 permalink: "/anchorage"
-name: "Letter to the City Council"
-state: "AK"
-city: "Anchorage"
-layout: "email"
+name: Letter to the City Council
+state: AK
+city: Anchorage
+layout: email
 recipients:
 - Christopher.Constant@AnchorageAK.gov
 - Crystal.Kennedy@AnchorageAK.gov
@@ -29,7 +29,7 @@ body: |-
   - Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
   - Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
   - Invest in community development initiatives and programs.
-  
+
   Anchorage cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund APD.
 
   Thank you,
@@ -38,3 +38,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
