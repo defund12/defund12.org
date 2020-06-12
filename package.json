@@ -10,11 +10,14 @@
     "eslint-config-google": "^0.14.0"
   },
   "scripts": {
-    "lint": "eslint --ext js && tslint 'src/**/*.ts?(x)'",
+    "lint": "eslint --ext 'src/**/*js?(x),ts?(x)' && tsc --noEmit",
     "test": "jest",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "develop": "gatsby develop"
   },
   "dependencies": {
+    "@types/react-dom": "^16.9.8",
+    "@types/theme-ui": "^0.3.3",
     "gatsby": "^2.23.3",
     "gatsby-plugin-google-analytics": "^2.3.4",
     "gatsby-plugin-react-helmet": "^3.3.4",
