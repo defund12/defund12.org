@@ -4,3 +4,4 @@ _site
 node_modules/
 settings.json
 .sass-cache/
+*.scssc
