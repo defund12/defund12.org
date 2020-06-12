@@ -1,5 +1,5 @@
 ---
-title: Lawrence, Kansas
+title: Lawrence, KS
 permalink: "/lawrence"
 name: Letter to the Mayor, City Commissioners, and City Manager
 city: Lawrence
