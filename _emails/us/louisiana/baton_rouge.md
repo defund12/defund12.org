@@ -4,7 +4,6 @@ permalink: "/batonrouge"
 name: Letter to Mayor-President Broome and City Council
 city: Baton Rouge
 state: LA
-layout: email
 recipients:
 - metrocouncil@brla.gov
 - mayor@brla.gov
@@ -26,7 +25,7 @@ body: "To Mayor-President Sharon Weston Broome and the Baton Rouge City Council:
   wellbeing, and redirects funding away from the police.\n\nReferencing the most recent
   city budget, a staggering $93,530,380 has been allocated for the Baton Rouge police
   department. Relatedly, Louisiana has the highest incarceration rate in the nation,
-  which disproportionately affects black citizens (e.g., over 60% of incarcerated
+  which disproportionately affects Black residents (e.g., over 60% of incarcerated
   individuals in LA were black according to the 2010 U.S. census). Baton Rouge’s state
   offices, capitol building, and even LSU’s campus all utilize prison labor, where
   prisoners earn between $0.00 to 0.70 cents per hour for their labor; this is state
@@ -48,5 +47,6 @@ body: "To Mayor-President Sharon Weston Broome and the Baton Rouge City Council:
   to remove funding from police departments and reallocate it to social services that
   make a meaningful difference for the citizens of Baton Rouge.\n\nSincerely,\n[YOUR
   NAME]\n[YOUR ADDRESS]\n[YOUR PHONE] \n[YOUR EMAIL]"
+layout: email
 ---
 
