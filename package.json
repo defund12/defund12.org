@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "14.4.0"
+  },
   "devDependencies": {
     "@types/jquery": "^3.3.38",
     "@types/react-helmet": "^6.0.0",
