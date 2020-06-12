@@ -17,7 +17,7 @@ recipients:
 body: |-
   Dear Mayor Jane Castor & Tampa City Council,
 
-  My name is [INSERT NAME] and I am a resident of [INSERT NEIGHBORHOOD, SUBDIVISION, CITY, ETC], today I am writing to you to demand that the mayor and the city council restrict the police department budjet, and fully reallocate towards community programs, housing, and education to actually keep our community safe.
+  My name is [INSERT NAME] and I am a resident of [INSERT NEIGHBORHOOD, SUBDIVISION, CITY, ETC], today I am writing to you to demand that the mayor and the city council restrict the police department budget, and fully reallocate towards community programs, housing, and education to actually keep our community safe.
 
   The recommended police department budget for 2020 is over $162,000,000--37% of the general fund. This is an astronomical number alone and especially compared to the budgets of other departments. This budget should have been reallocated and reinvested in the community rather than a further militarized police force fundamentally unfit to respond to the types of issues our community faces.
 
