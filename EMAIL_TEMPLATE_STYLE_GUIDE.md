@@ -19,9 +19,10 @@
 9. Avoid using police framing of community problems, i.e. “crime.” Instead of summarizing social programs as being more effective than policing at “reducing crime,” say that they are more effective at “promoting community safety.”
 10. When referring to racial or ethnic identities, capitalize the identifying word, e.g., "Black Americans", "Latinx residents", "White people".
 11. Avoid referring to the email sender as a "citizen" or "voter". Not all senders may be citizens or voters.
+12. Avoid lists of specific demands, unless you are a local organizer or otherwise accurately (and with permission) representing the demands of local activists/organizers working on abolition/defunding. If you represent an organization and want us to include a template tagged to your group, please email us at contact@defund12.org.
 
 #### Tips
-To determine what emails to include, in the U.S., typically the Mayor and City Council determine the budget for the following year (source: [National League of Cities](https://www.nlc.org/public-budgets)). However we recommend looking up the budget process for your local government. 
+To determine what emails to include, in the U.S., typically the Mayor and City Council determine the budget for the following year (source: [National League of Cities](https://www.nlc.org/public-budgets)). However we recommend looking up the budget process for your local government. If your locale uses both city- and county-level policing (i.e. city police and county sheriffs) be careful to include recipients and language consistent with the department you would like to target.
 
 #### 🌟 Shining Star Examples 🌟
 https://defund12.org/santabarbara
