@@ -40,6 +40,7 @@ default_subject_line: "[*** INSERT UNIQUE SUBJECT LINE ***]"
 auto_open_message: This page automatically opens a drafted email for you.
 bad_mailto_message: Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
+share_insta_message: "Share this photo customized to your city:"
 url: https://defund12.org
 plugins:
 - jekyll-sitemap

@@ -148,6 +148,22 @@ header {
     }
 }
 
+.shareSection {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    align-items: center;
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+    a {
+      text-align: center;
+      border-bottom: none;
+    }
+  }
+}
+
 // jQuery Select Box =========================================================
 
 .selectBox-options li {

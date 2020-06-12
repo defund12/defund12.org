@@ -38,6 +38,22 @@
     </div>
 </div>
 
+<div class="content shareSection">
+  <div class="container">
+    <p> {{ site.share_insta_message }}</p>
+    <a href="" id=insta_photo_link>
+      <img src="" alt="Instagram photo to share customized for {{ page.city }}" id="insta_photo">
+    </a>
+    <script>
+      // "/seattle" -> "seattle"
+      const no_leading_slash = "{{ page.permalink }}".substr(1);
+      const insta_src = "https://defund12-image-api.herokuapp.com/api/insta?city={{ page.city }}&path=" + no_leading_slash;
+      document.getElementById("insta_photo").src = insta_src;
+      document.getElementById("insta_photo_link").href = insta_src;
+    </script>
+  </div>
+</div>
+
 {% include list.html %}
 
 <script type="text/javascript">
