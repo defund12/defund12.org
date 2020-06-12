@@ -1,9 +1,9 @@
 ---
-title: "Burbank, CA"
+title: Burbank, CA
 permalink: "/burbank"
-name: "Letter to Mayor and City Councilmembers"
-city: "Burbank"
-state: "CA"
+name: Letter to Mayor and City Councilmembers
+city: Burbank
+state: CA
 recipients:
 - sspringer@burbankca.gov
 - CityCouncil@burbankca.gov
@@ -28,6 +28,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
