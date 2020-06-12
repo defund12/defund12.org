@@ -1,12 +1,12 @@
 ---
-title: "Alamance, NC"
+title: Alamance, NC
 permalink: "/alamance"
-name: "Letter to County Commissioners and Clerk to the Board"
-city: "Alamance"
-state: "NC"
+name: Letter to County Commissioners and Clerk to the Board
+city: Alamance
+state: NC
 recipients:
-- "commissioners@alamance-nc.com"
-- "tory.frink@alamance-nc.com"
+- commissioners@alamance-nc.com
+- tory.frink@alamance-nc.com
 body: |-
   Dear County Commissioners:
 
@@ -21,6 +21,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
