@@ -118,7 +118,11 @@ header {
 	h2 {margin-bottom:8px;}
 	a {color:var(--link);}
 	a:visited {color:var(--text);}
-  li {list-style-position: inside; text-indent: -1em; margin-left: 1em}
+  li {list-style-position: inside; 
+    text-indent: -1em; 
+    margin-left: 1em;
+    @include breakpoint(s){margin-top: 16px; margin-bottom: 16px}
+  }
 }
 .emailPageHeader {
 	.buttons {
