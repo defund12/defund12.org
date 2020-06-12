@@ -5,11 +5,11 @@
 }
 
 .selectBox.selectBox-dropdown {
-  height: 25px;
+  height: $x_3;
   border-radius: 0;
 
   .selectBox-label {
-    padding: 0px 8px;
+    padding: 0 $x_1;
   }
 
   .selectBox-arrow {
@@ -23,11 +23,11 @@
   display: inline-block;
   position: relative;
   min-width: 150px;
-  padding: 5px;
-  margin-bottom: $pad;
+  padding: 6px;
+  margin-bottom: $x_3;
 
   @include breakpoint(xs) {
-    margin-bottom: $pad_;
+    margin-bottom: $x_4;
   }
 
   border: solid 1px var(--subtle);

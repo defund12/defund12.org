@@ -1,27 +1,4 @@
-// SASS mixins =================================================================
-
-@mixin box-shadow($shadow) {
-  box-shadow: $shadow;
-}
-
-@mixin border-radius($radius) {
-  border-radius: $radius;
-  background-clip: padding-box;
-}
-
-@mixin transition($transition) {
-  transition: $transition;
-}
-
-@mixin box-sizing($type) {
-  box-sizing: $type;
-}
-
-@mixin animate($animation, $speed) {
-  animation-duration: $speed;
-  animation-fill-mode: both;
-  animation-name: $animation;
-}
+// Sass mixins =================================================================
 
 @mixin siteWidth {
   width: 720px;
@@ -35,15 +12,7 @@
   }
 }
 
-
-// Responsive Layout Scheme ====================================================
-
-// Spacing Variables
-$pad: 30px; // default and standard
-$pad_: 20px; // tablet and mobile
-
-
-// whole values
+// whole values (used for margins padding and overall spacing)
 $x_1: 8px;
 $x_2: 16px;
 $x_3: 24px;
@@ -52,18 +21,6 @@ $x_5: 40px;
 $x_6: 48px;
 $x_7: 56px;
 $x_8: 64px;
-
-// half values - use only when you really cant work with an 8 value
-$x_half: 2px;
-$x_1half: 4px;
-$x_2half: 12px;
-$x_3half: 20px;
-$x_4half: 28px;
-$x_5half: 36px;
-$x_6half: 44px;
-$x_7half: 52px;
-
-
 
 // breakpoint: reponsive adaptation mixin
 @mixin breakpoint($point) {
