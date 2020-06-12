@@ -1,6 +1,6 @@
 ---
 title: "Mill Valley, California"
-permalink: "/elcerrito"
+permalink: "/millvalley"
 name: "Letter to the Mayor, Vice Mayor, and Councilmembers"
 state: "CA"
 city: "Mill Valley"
