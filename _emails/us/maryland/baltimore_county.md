@@ -19,7 +19,7 @@ body: |-
 
   My name is [YOUR NAME] and I am a Baltimore County resident writing to urge you to defund BCPD. I demand that the Baltimore County Council begin meaningfully defunding the Baltimore County Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community such as community-based mental health services, substance abuse treatment services, and affordable housing programs. I demand a budget that reflects the needs of Baltimore County residents.
 
-  BCPD takes an enormous share of the county's budgetary funds, and that percentage has risen over the years. Looking at the most recent budget proposal, it can be shown that the budget allocation for BCPD has increased over 8% from FY19-FY20 [1][2] and is proposed to rise by almost 12% from FY20 to FY 21 [2][3], taking away desperately needed resources from essential county programs and services. Baltimore police budgets have risen even year, a total of 41% since 2009. Given all that is happening in Baltimore County, I believe these dollars could be better spent on education, community programs, and renovating schools in areas that desperately need it. Investing in small businesses owned by black Americans and latinx residents within this county will promote safety and bring the community together.
+  BCPD takes an enormous share of the county's budgetary funds, and that percentage has risen over the years. Looking at the most recent budget proposal, it can be shown that the budget allocation for BCPD has increased over 8% from FY19-FY20 [1][2] and is proposed to rise by almost 12% from FY20 to FY 21 [2][3], taking away desperately needed resources from essential county programs and services. Baltimore police budgets have risen even year, a total of 41% since 2009. Given all that is happening in Baltimore County, I believe these dollars could be better spent on education, community programs, and renovating schools in areas that desperately need it. Investing in small businesses owned by Black and Latinx Americans within this county will promote safety and bring the community together.
 
   I therefore demand that this council take immediate action to ensure the following:
   -Reduce BCPD’s budget for FY21
@@ -35,5 +35,8 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
----
 
+  [1] http://resources.baltimorecountymd.gov/Documents/Budget/19budget/fy19adoptedbook.pdf
+  [2] http://resources.baltimorecountymd.gov/Documents/Budget/20budget/fy20operatingcapitalbookadopted.pdf
+  [3] http://resources.baltimorecountymd.gov/Documents/Budget/21budget/fy2021operatingbudgetpersonnel.pdf
+---
