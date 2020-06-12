@@ -2,7 +2,7 @@
 title: "Santa Clara, CA"
 permalink: "/santaclara"
 name: "Letter to Mayor, City Manager, and City Council"
-city: "Santa Clara"
+city: "Santa Clara (City)"
 state: "CA"
 recipients:
 - "MayorAndCouncil@santaclaraca.gov"
