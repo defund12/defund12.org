@@ -51,8 +51,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Build
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile --prefer-offline
       - name: Lint
         run: yarn lint
       - name: Test
