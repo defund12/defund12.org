@@ -11,7 +11,8 @@
   },
   "scripts": {
     "lint": "eslint --ext js && tslint 'src/**/*.ts?(x)'",
-    "test": "jest"
+    "test": "jest",
+    "build": "gatsby build"
   },
   "dependencies": {
     "gatsby": "^2.23.3",
