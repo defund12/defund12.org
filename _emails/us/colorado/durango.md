@@ -1,15 +1,15 @@
 ---
-title: "Durango, CO"
+title: Durango, CO
 permalink: "/durango"
-name: "Letter to Mayor and City Council"
-city: "Durango"
-state: "CO"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Durango
+state: CO
+layout: email
 recipients:
-- "DeanBrookie@durangogov.org"
-- "ChrisBettin@durangogov.org"
-- "barbaraNoseworthy@durangogov.org"
-- "MelissaYoussef@durangogov.org"
+- DeanBrookie@durangogov.org
+- ChrisBettin@durangogov.org
+- barbaraNoseworthy@durangogov.org
+- MelissaYoussef@durangogov.org
 body: |-
   Hello,
 
