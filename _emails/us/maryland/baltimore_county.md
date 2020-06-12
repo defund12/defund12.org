@@ -35,4 +35,8 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+
+  [1] http://resources.baltimorecountymd.gov/Documents/Budget/19budget/fy19adoptedbook.pdf
+  [2] http://resources.baltimorecountymd.gov/Documents/Budget/20budget/fy20operatingcapitalbookadopted.pdf
+  [3] http://resources.baltimorecountymd.gov/Documents/Budget/21budget/fy2021operatingbudgetpersonnel.pdf
 ---
