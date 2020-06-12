@@ -1,7 +1,7 @@
 ---
 title: Greenville, SC
 permalink: "/greenville"
-name: Greenville, SC
+name: Letter to the Mayor, City Council, and County Council
 city: Greenville
 state: SC
 recipients:
