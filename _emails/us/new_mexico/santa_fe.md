@@ -1,7 +1,7 @@
 ---
 title: Santa Fe, NM
 permalink: "/santafe"
-name: Letter to City Council
+name: Letter to City Council--vote no on more police weapons
 city: Santa Fe
 state: NM
 recipients:

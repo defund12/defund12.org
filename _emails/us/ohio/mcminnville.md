@@ -1,9 +1,9 @@
 ---
-title: McMinnville, OH
+title: McMinnville, OR
 permalink: "/mcminnville"
 name: Letter to Mayor and City Council
 city: McMinnville
-state: OH
+state: OR
 recipients:
 - scott.hill@mcminnvilleoregon.gov
 - sal.peralta@mcminnvilleoregon.gov

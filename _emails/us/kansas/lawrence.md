@@ -1,10 +1,9 @@
 ---
-title: Lawrence, Kansas
+title: Lawrence, KS
 permalink: "/lawrence"
 name: Letter to the Mayor, City Commissioners, and City Manager
-state: KS
 city: Lawrence
-layout: email
+state: KS
 recipients:
 - jananda@lawrenceks.org
 - craigowens@lawrenceks.org
@@ -25,15 +24,15 @@ body: |-
 
   I love this community and I want to see it flourish into an even more prosperous one. I demand a budget that reflects the actual needs of Lawrence residents and works to improve the wellbeing of everyone who calls Lawrence home.
 
-  History has shown that police “reform” is not enough. No more money, and most importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve&#151;and in fact actively harms&#151;our community, and come together to reimagine the role of police in our city.
+  History has shown that police “reform” is not enough. No more money, and most importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve, and in fact actively harms our community, and come together to reimagine the role of police in our city.
 
   I am urging you to completely revise the current budget as well as the 2021 budget, and to invest our taxpayer money back into the people, not in the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show Lawrence that you care for our community.
 
   Thank you for your time,
-
   [YOUR NAME]
   [ADDRESS]
   [EMAIL]
   [PHONE ]
+layout: email
 ---
 

@@ -1,10 +1,9 @@
 ---
-title: Norfolk, Virginia
+title: Norfolk, VA
 permalink: "/norfolk"
 name: Letter to the City Council and Mayor Alexander
-state: VA
 city: Norfolk
-layout: email
+state: VA
 recipients:
 - mayor@norfolk.gov
 - martin.thomas@norfolk.gov
@@ -21,15 +20,15 @@ body: |-
 
   Norfolk PD receives a disproportionate amount of our city's financial resources. In FY 2020, the Norfolk PD adopted $77,618,592 in total expenditures while the entire Norfolk Community Services Board's adopted expenditures totaled $25,078,661. While we’ve been spending extraordinary amounts on policing, we have not seen significant improvements to safety, homelessness, mental health, or affordability in our city.
 
-  I call on you to meaningfully restrict the Norfolk PD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our Black neighbors and veterans. Social programs and education generally have been shown to be much more effective at promoting safety and social equity than policing and incarceration.
+  I call on you to meaningfully restrict the Norfolk PD budget and instead use those extraordinary resources towards, for example, solving homelessness, which is felt most by our Black neighbors and veterans. Research shows social programs and education to be much more effective at promoting safety and social equity than policing and incarceration.
 
   We can be a beacon for other cities to follow if only we have the courage to change.
 
   Sincerely,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
