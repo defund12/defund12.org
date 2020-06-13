@@ -1,9 +1,7 @@
 .*/*
-.jekyll-cache
+*.scssc
 .sass-cache
 _site
 node_modules/
-settings.json
-.sass-cache
-*.scssc
 public/
+settings.json
