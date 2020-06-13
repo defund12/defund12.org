@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../components/common/Layout";
-import { graphql } from "gatsby";
-import { NotFoundProps } from "../types/PropTypes";
+import { graphql, PageProps } from "gatsby";
+import { SiteProps } from "../types/PropTypes";
 
-export default class NotFound extends React.Component<NotFoundProps> {
+export default class NotFound extends React.Component<PageProps<SiteProps>> {
     render() {
         return (
             <Layout {...this.props.data.siteConfig}>

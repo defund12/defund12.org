@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://defund12.org`,
+    siteUrl: "https://defund12.org",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

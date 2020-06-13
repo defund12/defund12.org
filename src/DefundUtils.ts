@@ -12,4 +12,17 @@ export class DefundUtils {
         .processSync(value)
         .toString()
     }
+
+    static copyToClipboard(copyText: string, isPermalink?: boolean) {
+		const element = document.createElement("textarea");
+		let copyValue = copyText;
+		if (isPermalink) {
+			copyValue = "https://defund12.org".concat(copyText);
+		}
+		element.value = copyValue;
+		document.body.appendChild(element);
+		element.select();
+		document.execCommand("copy");
+		document.body.removeChild(element);
+	}
 }

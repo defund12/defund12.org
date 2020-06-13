@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 import Layout from '../components/common/Layout';
 import EmailList from '../components/email-list/EmailList';
 import { SiteProps } from '../types/PropTypes';
@@ -7,7 +7,7 @@ import { SiteProps } from '../types/PropTypes';
 /**
  * The landing/home/root page. Defund 12!
  */
-export default class Index extends React.Component<SiteProps> {
+export default class Index extends React.Component<PageProps<SiteProps>> {
     constructor(props: any) {
         super(props);
     }

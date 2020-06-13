@@ -3,24 +3,16 @@ import { EmailMetadataGroup, EmailData, EmailMetadata } from "./EmailData";
 
 // {Page query result properties}
 export interface SiteProps {
-    data: {
-        siteConfig: LayoutProps
-    }
+    siteConfig: LayoutProps,
 }
+
+export type EmailConfig = Pick<SiteConfig, "title" | "meta" | "logoUrl" | "faviconUrl" | "auto_open_message" | "bad_mailto_message" | "default_subject_line">;
 
 export interface EmailProps {
-    data: {
-        markdownRemark: {
-            frontmatter: EmailData,
-        },
-        siteConfig: SiteConfig,
-    }
-}
-
-export interface NotFoundProps {
-    data: {
-        siteConfig: LayoutProps;
-    }
+    markdownRemark: {
+        frontmatter: EmailData,
+    },
+    siteConfig: EmailConfig,
 }
 
 

@@ -1,5 +1,7 @@
 ﻿import * as React from 'react';
 import { EmailListItemProps } from '../../types/PropTypes';
+import { Link } from 'gatsby';
+import { DefundUtils } from '../../DefundUtils';
 
 interface EmailListItemState {
 	/** A boolean indicating whether the copy button was recently clicked, to change to the "✅(copied)" label. */
@@ -18,28 +20,18 @@ export class EmailListItem extends React.Component<EmailListItemProps, EmailList
         }
 	}
 
-	copyToClipboard(copyText: string, isPermalink: boolean) {
-		this.setState({ clickActive: true });
-		setTimeout(() => this.setState({ clickActive: false }), 2000);
 
-		const element = document.createElement("textarea");
-		let copyValue = copyText;
-		if (isPermalink) {
-			copyValue = "https://defund12.org".concat(copyText);
-		}
-		element.value = copyValue;
-		document.body.appendChild(element);
-		element.select();
-		document.execCommand("copy");
-		document.body.removeChild(element);
+	handleClipboardCopy() {
+		this.setState({ clickActive: true });
+		DefundUtils.copyToClipboard(this.props.permalink, true)
 	}
 
 	render() {
 		const self = this;
 		return (
 			<li data-state={this.props.state}>
-				<a href={`${this.props.permalink}?browse`}>{this.props.city} - <i>{this.props.name}</i></a>
-				<span tab-index="0" role="button" aria-label="copy to clipboard" className="copyToClipboard" onClick={() => this.copyToClipboard(self.props.permalink, true)}>{(this.state.clickActive ? '✅(copied)' : '🔗')}</span>
+				<Link to={`${this.props.permalink}?browse`}>{this.props.city} - <i>{this.props.name}</i></Link>
+				<span tab-index="0" role="button" aria-label="copy to clipboard" className="copyToClipboard" onClick={this.handleClipboardCopy.bind(this)}>{(this.state.clickActive ? '✅(copied)' : '🔗')}</span>
 			</li>
 		);
 	}

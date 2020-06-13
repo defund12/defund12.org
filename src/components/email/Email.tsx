@@ -1,53 +1,105 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, navigate, PageProps } from "gatsby";
 import Layout from "../common/Layout";
 import EmailList from "../email-list/EmailList";
 import { DefundUtils } from "../../DefundUtils";
-import { EmailProps } from "../../types/PropTypes";
+import { EmailProps, EmailConfig } from "../../types/PropTypes";
+import { EmailData } from "../../types/EmailData";
+import * as queryString from 'query-string';
 
+class EmailState {
+    recipientsCopied: boolean = false;
+    ccCopied: boolean = false;
+    bodyCopied: boolean = false;
+}
 
 /**
  * A rendered email, containing links to send or copy.
  */
-export default class Email extends React.Component<EmailProps> {
+export default class Email extends React.Component<PageProps<EmailProps>, EmailState> {
+    siteConfig: EmailConfig;
+    emailData: EmailData;
+    autoOpen: boolean = false;
+
+    constructor(props: PageProps<EmailProps>) {
+        super(props);
+        this.siteConfig = this.props.data.siteConfig;
+        this.emailData = this.props.data.markdownRemark.frontmatter;
+        const isAndroid = /(android)/i.test(navigator.userAgent);
+        if (isAndroid) this.emailData.body = this.emailData.body.replace('\n', "<br/>");
+        const queryParams = queryString.parse(this.props.location.search);
+        if ("browse" in queryParams) {
+            // Automatically updates the URL so if folks try to share, it will auto-open
+            window.history.replaceState({}, document.title, `${window.location.origin}${window.location.pathname}`)
+        } else {
+            this.autoOpen = true;
+            this.openEmail();
+        }
+
+        this.state = new EmailState();
+    }
+
+    openEmail() {
+        const subject = encodeURIComponent(this.siteConfig.default_subject_line.trim());
+        const body = encodeURIComponent(this.emailData.body.trim());
+        const recipients = this.emailData.recipients.join(', ');
+        const cc = this.emailData.cc?.join(', ');
+        const ccText = cc != null && cc.length > 0 ? `cc=${cc}&` : ``;
+        window.location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+    }
+
+    handleClipboardCopy<K extends keyof EmailState>(statePatch: Pick<EmailState, K>, copy: string) {
+        this.setState(statePatch);
+        DefundUtils.copyToClipboard(copy)
+    }
+
     render() {
-        const { markdownRemark, siteConfig } = this.props.data;
-        const emailData = markdownRemark.frontmatter;
         return (
-            <Layout {...siteConfig}>
+            <Layout {...this.siteConfig}>
                 <section className="emailPageHeader">
-                    <h2>{ emailData.name }</h2>
-                    <b>{ emailData.city }, { emailData.state }</b>
-                    <p id="autoopen">{ siteConfig.auto_open_message }</p>
+                    <h2>{ this.emailData.name }</h2>
+                    <b>{ this.emailData.city }, { this.emailData.state }</b>
+                    <p hidden={!this.autoOpen}>{ this.siteConfig.auto_open_message }</p>
                     <div className='buttons'>
-                        <a>Send email</a>&nbsp;
-                        <a>Copy link</a>
+                        <a onClick={this.openEmail.bind(this)}>Send email</a>&nbsp;
+                        <a onClick={() => DefundUtils.copyToClipboard(this.emailData.permalink, true)}>Copy link</a>
                     </div>
-                    <p>{ siteConfig.bad_mailto_message }</p>
+                    <p>{ this.siteConfig.bad_mailto_message }</p>
                 </section>
 
                 <article className="emailContentSection">
                     <div className="container">
                         <div className="emailContent">
                             <div className="recipients">
-                                <b>To:</b> <span className="copyToClipboard">🔗</span>&nbsp;
-                                {emailData.recipients.join(', ')}
+                                <b>To:</b>
+                                <span className="copyToClipboard"
+                                    onClick={() => this.handleClipboardCopy({recipientsCopied: true}, this.emailData.recipients.join(', '))}>
+                                        {(this.state.recipientsCopied ? '✅(copied)' : '🔗')}
+                                </span>&nbsp;
+                                {this.emailData.recipients.join(', ')}
                             </div>
 
-                            {(emailData.cc ? 
+                            {(this.emailData.cc ? 
                             <div className="recipients">
-                                <b>CC:</b> <span className="copyToClipboard">🔗</span>&nbsp;
-                                {emailData.cc.join(', ')}
+                                <b>CC:</b>
+                                <span className="copyToClipboard"
+                                    onClick={() => this.handleClipboardCopy({ccCopied: true}, this.emailData.cc.join(', '))}>
+                                        {(this.state.ccCopied ? '✅(copied)' : '🔗')}
+                                </span>&nbsp;
+                                {this.emailData.cc.join(', ')}
                             </div> 
                             : undefined)}
                             
                             <div className="recipients">
-                                <b>Subject:</b> { siteConfig.default_subject_line }
+                                <b>Subject:</b> { this.siteConfig.default_subject_line }
                             </div>
                             <div>
-                                <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>&nbsp;
-                                <span className="copyToClipboard">🔗</span>
-                                <span dangerouslySetInnerHTML={{__html: DefundUtils.markdownToHTML(emailData.body)}}></span>
+                                <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+                                <span className="copyToClipboard"
+                                    onClick={() => this.handleClipboardCopy({bodyCopied: true}, this.emailData.body)}>
+                                        {(this.state.bodyCopied ? '✅(copied)' : '🔗')}
+                                </span>
+                                <span dangerouslySetInnerHTML={{__html: DefundUtils.markdownToHTML(this.emailData.body)}}></span>
                             </div>
                         </div>
                     </div>

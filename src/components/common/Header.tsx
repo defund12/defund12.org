@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery, Link } from 'gatsby';
 import { HeaderProps } from '../../types/PropTypes';
 
 /**
@@ -11,9 +11,9 @@ class _Header extends React.Component<HeaderProps> {
     render() {
         return (
             <header className="header">
-                <a href="/">
+                <Link to="/">
                     <h1 aria-label="Defund Twelve .org" className="pagetitle">{ this.props.title }</h1>
-                </a>
+                </Link>
                 <p className="divider">{ this.props.subtitle }</p>
                 <p aria-label="12 = Police"><i>"12" = </i>🚓</p>
             </header>
