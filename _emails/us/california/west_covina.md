@@ -4,7 +4,6 @@ permalink: "/westcovina"
 name: Letter to the Mayor and City Council
 city: West Covina
 state: CA
-layout: email
 recipients:
 - dcarmany@westcovina.org
 - tony.wu@westcovina.org
@@ -16,7 +15,7 @@ recipients:
 body: |-
   Dear Mayor Tony Wu and West Covina City Councilmembers,
 
-  My name is [YOUR NAME]. I am a resident of West Covina and I am emailing today to urge the City of West Covina to defund the WCPD, and prioritize the needs of the community over a dramatic salary raise for law enforcement. The City of West Covina, per the 2020-2021 Preliminary Budget, allocates $31,163,716 (47%) to law enforcement, yet only 9% of this money is distributed to actual materials and services! The remaining 91% of the police’s budget ($30,543,800) is reserved for the salaries of officers.
+  My name is [YOUR NAME]. I am a resident of West Covina and I am emailing today to urge the City of West Covina to defund the WCPD, and prioritize the needs of the community over a dramatic salary raise for law enforcement. The City of West Covina, per the 2020-2021 Preliminary Budget, allocates $31,163,716 (47%) to law enforcement, an incredible fraction of our city's resources.
 
   West Covina is ranked 17th out of 471 cities in California facing fiscal challenges. Furthermore, we are ranked number ONE in future pension costs and obligations, almost entirely due to our Police Department. If we do not reform our budget now and invest in our community, we will be bankrupt in the next few years.
 
@@ -27,10 +26,10 @@ body: |-
   It is now the time to decide whether or not West Covina wants to be on the right side of history. Trust the people of West Covina and listen to what we want, which is a budget for the people and the defunding of our Police Department.
 
   Thank you for your time,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
