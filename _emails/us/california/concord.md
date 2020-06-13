@@ -1,6 +1,6 @@
 ---
 title: "Concord, CA"
-permalink: "/concord"
+permalink: "/concordca"
 name: "Letter to City Council"
 city: "Concord"
 state: "CA"
