@@ -48,7 +48,7 @@ module.exports = {
         path: `${__dirname}/_config.yml`,
       },
     },
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-client-side-redirect`,
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-client-side-redirect",
   ],
 };

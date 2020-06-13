@@ -1,6 +1,5 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions;
-
   const emailComponent = require.resolve("./src/components/email/Email.tsx");
 
   const emailData = await graphql(`
