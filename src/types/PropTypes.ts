@@ -17,6 +17,12 @@ export interface EmailProps {
     }
 }
 
+export interface NotFoundProps {
+    data: {
+        siteConfig: LayoutProps;
+    }
+}
+
 
 // {Static query result properties}
 export type LayoutProps = Pick<SiteConfig, 'title' | 'meta' | 'faviconUrl' | 'logoUrl'>;

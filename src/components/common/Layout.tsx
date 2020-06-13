@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import { LayoutProps } from "../../types/PropTypes";
 
+
 /**
  * The site layout, which contains elements to place in <head> through React Helmet.
  */

@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  jekyll:
+  jekyll: # TODO: change this to gatsby
     image: jekyll/jekyll
     command: jekyll serve --watch --force_polling --verbose
     ports:
