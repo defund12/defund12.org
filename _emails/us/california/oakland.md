@@ -27,11 +27,11 @@ body: "Dear Mayor Schaaf and City Council Members,\n\nMy name is [YOUR NAME] and
   in dire jeopardy, it is clear that we must defund the police.\n\nAs Oakland residents,
   we therefore demand that you take immediate action to ensure the following:\n\n
   \ 1. Reduce OPD’s allocation from the General Fund by 50% (roughly $150 Million)\n
-  \ 2. Disallow unauthorized overtime by OPD\n 
-  \ 3. Invest in housing, jobs, youth programs, restorative justice, and mental health
-  workers to keep the community safe.\n\nOakland can not wait any longer for a budget
-  that meets the needs of its residents. The only way to achieve this is to take immediate
-  steps to Defund OPD. \n\nThank you,\n\n[YOUR NAME]"
+  \ 2. Disallow unauthorized overtime by OPD\n  3. Invest in housing, jobs, youth
+  programs, restorative justice, and mental health workers to keep the community safe.\n\nOakland
+  can not wait any longer for a budget that meets the needs of its residents. The
+  only way to achieve this is to take immediate steps to Defund OPD. \n\nThank you,\n\n[YOUR
+  NAME]"
 layout: email
 ---
 
