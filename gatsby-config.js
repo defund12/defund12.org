@@ -4,7 +4,13 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-yaml',
       options: {
-        typeName: 'Yaml',
+        typeName: ({node, object, isArray}) => {
+          if (node.base === '_config.yml') {
+            return 'siteConfig';
+          } else {
+            return 'Yaml';
+          }
+        },
       },
     },
     'gatsby-transformer-remark',

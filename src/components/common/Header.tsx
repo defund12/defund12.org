@@ -26,14 +26,14 @@ export default function Header() {
     return (
         <StaticQuery query={graphql`
             query HeaderQuery {
-                yaml {
+                siteConfig {
                     title
                     subtitle
                 }
             }
         `} 
         render={(data: any) =>
-            <_Header title={data.yaml.title} subtitle={data.yaml.subtitle}></_Header>
+            <_Header title={data.siteConfig.title} subtitle={data.siteConfig.subtitle}></_Header>
         }/>
     );
 }
