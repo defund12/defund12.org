@@ -36,13 +36,13 @@ export interface EmailData extends EmailMetadata {
     cc: Array<string>;
     /**
      * The country the email's region is in.
-     * 
+     *
      * _(Reserved for future use.)_
      */
     country: never & string;
     /**
      * The email's expiration date.
-     * 
+     *
      * _(Reserved for future use.)_
      */
     date: never & Date;
@@ -56,19 +56,19 @@ export interface RemarkNode {
 }
 
 export function isEmailData(emailDataOrMetadata: EmailMetadata & EmailData): emailDataOrMetadata is EmailData {
-    if (emailDataOrMetadata.hasOwnProperty('body')) return true;
-    return false;
+  if (emailDataOrMetadata.hasOwnProperty("body")) return true;
+  return false;
 }
 
 /**
  * A group of email metadata for a specific state.
  */
 export class EmailMetadataGroup {
-    constructor(name: string)
-    constructor(name: string, emails: Array<EmailMetadata> = []) {
-        this.name = name;
-        this.emails = emails;
-    }
+  constructor(name: string)
+  constructor(name: string, emails: Array<EmailMetadata> = []) {
+    this.name = name;
+    this.emails = emails;
+  }
     /** The state name. */
     name: string;
     /** An unambiguous identifier for the state, generated at render-time. */

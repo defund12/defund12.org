@@ -1,2 +1,2 @@
-declare module 'react-select';
-declare module 'remark-html';
+declare module "react-select";
+declare module "remark-html";

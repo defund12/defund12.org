@@ -17,9 +17,9 @@ export interface SiteConfig {
     /** The default subject line text. */
     default_subject_line: string;
     /** The site footer pretext. */
-   footer_text_pr: string;
-   /** Instructions on how to enter an issue request. */
-   footer_text_instructions: string;
-   /** Contact information for the community. */
-   contact_email_footer: string;
+    footer_text_pr: string;
+    /** Instructions on how to enter an issue request. */
+    footer_text_instructions: string;
+    /** Contact information for the community. */
+    contact_email_footer: string;
 }

@@ -3,6 +3,7 @@
         "node": "14.4.0"
     },
     "devDependencies": {
+        "@types/loadable__component": "^5.10.0",
         "@types/react": "^16.9.36",
         "@types/react-dom": "^16.9.8",
         "@types/react-helmet": "^6.0.0",
@@ -15,15 +16,16 @@
         "eslint-plugin-react": "^7.20.0"
     },
     "scripts": {
-        "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
+        "lint": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit",
         "test": "jest",
-        "check": "yarn lint && yarn test",
+        "verify": "yarn lint; yarn test",
         "build": "gatsby build",
         "develop": "gatsby develop",
         "clean": "gatsby clean",
         "start": "yarn develop"
     },
     "dependencies": {
+        "@loadable/component": "^5.12.0",
         "gatsby": "^2.23.3",
         "gatsby-plugin-client-side-redirect": "^1.1.0",
         "gatsby-plugin-google-analytics": "^2.3.4",

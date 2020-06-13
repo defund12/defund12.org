@@ -1,4 +1,4 @@
-import { SiteConfig } from "./SiteConfig"
+import { SiteConfig } from "./SiteConfig";
 import { EmailMetadataGroup, EmailData, EmailMetadata } from "./EmailData";
 
 // {Page query result properties}
@@ -17,11 +17,11 @@ export interface EmailProps {
 
 
 // {Static query result properties}
-export type LayoutProps = Pick<SiteConfig, 'title' | 'meta' | 'faviconUrl' | 'logoUrl'>;
+export type LayoutProps = Pick<SiteConfig, "title" | "meta" | "faviconUrl" | "logoUrl">;
 
 export type HeaderProps = Pick<SiteConfig, "title" | "subtitle">;
 
-export type FooterProps = Pick<SiteConfig, 'footer_text_pr' | 'footer_text_instructions' | 'contact_email_footer'>;
+export type FooterProps = Pick<SiteConfig, "footer_text_pr" | "footer_text_instructions" | "contact_email_footer">;
 
 
 // {Component-provided properties}
