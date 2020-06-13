@@ -1,8 +1,10 @@
 @import "./0-base/reset";
 @import "./1-modules/mixins";
 @import "./1-modules/colors";
+@import "./1-modules/header";
 @import "./1-modules/selectBox";
 @import "./1-modules/stickyAside";
+@import "./1-modules/footer";
 
 @import "./list";
 @import "./email";
@@ -32,7 +34,7 @@ a {
   border-bottom: 1px solid var(--link_subtle);
 
   &:hover {
-    border-color: var(--subtle_);
+    border-color: var(--text_subtle);
   }
 
   &:focus {
@@ -77,9 +79,12 @@ header,
 footer {
   @include siteWidth;
 }
+
 p {
+  max-width: 580px;
   margin-bottom: $x_2;
 }
+
 p.divider {
   &:before {
     content: "";
@@ -87,19 +92,18 @@ p.divider {
     width: $x_6;
     border-bottom: 1px solid var(--link_subtle);
     margin: $x_2 0 $x_3;
+    max-width: 720px;
   }
 
   line-height: 1.6;
-  max-width: 720px;
   margin-bottom: $x_2;
 }
 
-// Sections and Layout =========================================================
+.copyToClipboard {
+  cursor: pointer;
+  opacity: 0.7;
 
-.header {
-  margin-top: $x_4;
-}
-
-.content {
-  margin-top: $x_4;
+  &:hover {
+    opacity: 1.0;
+  }
 }

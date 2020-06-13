@@ -1,70 +1,41 @@
-.cityList {
-  @include siteWidth;
+.content {
+  margin-top: $x_4;
 
-  .state {
-    margin-top: 8px;
-  }
+  .cityList {
+    @include siteWidth;
 
-  h2 {
-    margin-bottom: 8px;
-  }
-
-  a {
-    color: var(--link);
-  }
-
-  a:visited {
-    color: var(--text);
-  }
-
-  ul {
-    list-style: disc;
-
-    li {
-      list-style-position: inside;
-      text-indent: -1em;
-      margin-left: 1em;
-
-      @include breakpoint(s) {
-        margin-top: 16px;
-        margin-bottom: 16px
-      }
+    .state {
+      margin-top: 8px;
     }
-  }
-}
 
-.emailPageHeader {
-  .buttons {
-    margin-top: 20px;
+    h2 {
+      margin-bottom: 8px;
+    }
 
     a {
-      display: inline-block;
-      margin-right: 12px;
       color: var(--link);
-      cursor: pointer;
     }
-  }
-}
 
-.emailContentSection {
-  background-color: var(--bg_);
-}
+    a:visited {
+      color: var(--text);
+    }
 
-.emailContent {
-  div {
-    margin-top: 20px;
-  }
+    ul {
+      list-style: disc;
 
-  .recipients {
-    overflow-wrap: break-word;
-  }
-}
+      li {
+        list-style-position: inside;
+        text-indent: -1em;
+        margin-left: 1em;
 
-.copyToClipboard {
-  cursor: pointer;
-  opacity: 0.7;
+        @include breakpoint(s) {
+          margin: $x_2 0;
+        }
+      }
+    }
 
-  &:hover {
-    opacity: 1.0;
+    &+.divider {
+      margin-top: $x_5;
+    }
   }
 }

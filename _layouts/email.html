@@ -2,7 +2,7 @@
 
 <section class="emailPageHeader">
   <h2>{{ page.name }}</h2>
-  <b>{{ page.city }}, {{ page.state }}</b><br /> {{ site.email_intro_text | markdownify }}
+  <b>{{ page.city }}, {{ page.state }}</b>{{ site.email_intro_text | markdownify }}
   <p id="autoopen">{{ site.auto_open_message }}</p>
   <div class='buttons'>
     <a href="javascript:void(0);" onclick="openEmail()">Send email</a>

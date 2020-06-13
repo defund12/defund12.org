@@ -11,5 +11,12 @@
 
   p {
     @include siteWidth;
+    max-width: none;
+    margin-bottom: 0;
+
+    &:first-of-type,
+    &:last-of-type {
+      margin: 0;
+    }
   }
 }
