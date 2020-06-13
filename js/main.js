@@ -7,7 +7,7 @@ function formatEmailList() {
   const list = $('#emailLinks');
   const stateList = $('#selected_state');
   if (list.length) {
-    const content = $('<div></div>');
+    const content = $('<article></article>');
     const items = list.find('li');
     const locales = {};
     for (const item of items) {
@@ -20,7 +20,7 @@ function formatEmailList() {
       locales[state].push(item);
     }
     for (const [state, items] of Object.entries(locales)) {
-      const stateElement = $(`<div class='state' data-state="${state}"></div>`);
+      const stateElement = $(`<ul class='state' data-state="${state}"></div>`);
       stateElement.append(`<h2>${state}</h2>`);
       for (const item of items) stateElement.append(item);
       content.append(stateElement);
