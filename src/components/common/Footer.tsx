@@ -35,13 +35,13 @@ export default function Footer() {
     return (
         <StaticQuery query={graphql`
             query FooterQuery {
-                defund12Yaml {
+                yaml {
                     footer_text
                     contact_email_footer
                 }
             }`
         }
-        render={(data: any) => <_Footer footerText={data.defund12Yaml.footer_text} contactEmailFooter={data.defund12Yaml.contact_email_footer}/>}
+        render={(data: any) => <_Footer footerText={data.yaml.footer_text} contactEmailFooter={data.yaml.contact_email_footer}/>}
         />
     );
 }

@@ -26,14 +26,14 @@ export default function Header() {
     return (
         <StaticQuery query={graphql`
             query HeaderQuery {
-                defund12Yaml {
+                yaml {
                     title
                     subtitle
                 }
             }
         `} 
         render={(data: any) =>
-            <_Header title={data.defund12Yaml.title} subtitle={data.defund12Yaml.subtitle}></_Header>
+            <_Header title={data.yaml.title} subtitle={data.yaml.subtitle}></_Header>
         }/>
     );
 }
