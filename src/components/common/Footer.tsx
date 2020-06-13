@@ -1,47 +1,49 @@
 import React from 'react';
-import remark from 'remark';
 import { StaticQuery, graphql } from 'gatsby';
-import remarkHTML from 'remark-html';
+import { DefundUtils } from '../../DefundUtils';
+import { FooterProps } from '../../types/PropTypes';
 
-interface FooterProps {
-    footerText: string;
-    contactEmailFooter: string;
-}
-
-
+/**
+ * The site footer, containing issue request and contact information.
+ * 
+ * _This is meant to be internal to this file and should probably not be exported._
+ */
 class _Footer extends React.Component<FooterProps> {
     constructor(props: FooterProps) {
         super(props);
-    }
-    
-    markdownToHTML(value: string) {
-        return remark()
-        .use(remarkHTML)
-        .processSync(value)
-        .toString()
     }
 
     render() {
         return (
             <>
-                <p className="divider footer" dangerouslySetInnerHTML={ { __html: this.markdownToHTML(this.props.footerText) } }></p>
-                <p className="divider footer" dangerouslySetInnerHTML={ { __html: this.markdownToHTML(this.props.contactEmailFooter) } }></p>
+                <aside className="sticky">
+                    <p dangerouslySetInnerHTML={ { __html: DefundUtils.markdownToHTML(this.props.footer_text_pr) } }></p>
+                </aside>
+                <footer className="footerMain">
+                    <p dangerouslySetInnerHTML={ { __html: DefundUtils.markdownToHTML(this.props.footer_text_instructions) } }></p>
+                    <p className="divider footer" dangerouslySetInnerHTML={ { __html: DefundUtils.markdownToHTML(this.props.contact_email_footer) } }></p>
+                </footer>
             </>
         );
     }
 }
 
+/**
+ * The site footer, containing issue request and contact information.
+ */
 export default function Footer() {
     return (
         <StaticQuery query={graphql`
             query FooterQuery {
                 siteConfig {
-                    footer_text
+                    footer_text_pr
+                    footer_text_instructions
                     contact_email_footer
                 }
             }`
         }
-        render={(data: any) => <_Footer footerText={data.siteConfig.footer_text} contactEmailFooter={data.siteConfig.contact_email_footer}/>}
+        render={(data: {siteConfig: FooterProps}) => 
+            <_Footer {...data.siteConfig} />}
         />
     );
 }

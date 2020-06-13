@@ -2,16 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby';
 import Layout from '../components/common/Layout';
 import EmailList from '../components/email-list/EmailList';
+import { SiteProps } from '../types/PropTypes';
 
-import '../../css/main.scss';
-import { SiteConfig } from '../types/SiteConfig';
-
-interface SiteProps {
-    data: {
-        siteConfig: SiteConfig
-    }
-}
-
+/**
+ * The landing/home/root page. Defund 12!
+ */
 export default class Index extends React.Component<SiteProps> {
     constructor(props: any) {
         super(props);
@@ -19,11 +14,9 @@ export default class Index extends React.Component<SiteProps> {
 
     render() {
         return (
-            <>
-                <Layout siteConfig={this.props.data.siteConfig}>
-                    <EmailList />
-                </Layout>
-            </>
+            <Layout {...this.props.data.siteConfig}>
+                <EmailList />
+            </Layout>
         );
     }
 }
@@ -33,8 +26,6 @@ export const data: any = graphql`
         siteConfig {
             title
             meta
-            contact_email_footer
-            footer_text
             logoUrl
             faviconUrl
         }

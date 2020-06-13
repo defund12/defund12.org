@@ -1,17 +1,8 @@
 ﻿import * as React from 'react';
-
-export interface EmailInfo {
-	state: string,
-	city: string,
-	name: string,
-	permalink: string,
-};
-
-interface EmailListItemProps {
-	emailInfo: EmailInfo
-}
+import { EmailListItemProps } from '../../types/PropTypes';
 
 interface EmailListItemState {
+	/** A boolean indicating whether the copy button was recently clicked, to change to the "✅(copied)" label. */
 	clickActive: boolean;
 }
 
@@ -46,9 +37,9 @@ export class EmailListItem extends React.Component<EmailListItemProps, EmailList
 	render() {
 		const self = this;
 		return (
-			<li data-state={this.props.emailInfo.state}>
-				<a href={`${this.props.emailInfo.permalink}?browse`}>{this.props.emailInfo.city} - <i>{this.props.emailInfo.name}</i></a>
-				<span tab-index="0" role="button" aria-label="copy to clipboard" className="copyToClipboard" onClick={() => this.copyToClipboard(self.props.emailInfo.permalink, true)}>{(this.state.clickActive ? '✅(copied)' : '🔗')}</span>
+			<li data-state={this.props.state}>
+				<a href={`${this.props.permalink}?browse`}>{this.props.city} - <i>{this.props.name}</i></a>
+				<span tab-index="0" role="button" aria-label="copy to clipboard" className="copyToClipboard" onClick={() => this.copyToClipboard(self.props.permalink, true)}>{(this.state.clickActive ? '✅(copied)' : '🔗')}</span>
 			</li>
 		);
 	}

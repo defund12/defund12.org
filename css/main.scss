@@ -1,11 +1,1 @@
-
-#filters {
-  width: 20em;
-}
-
-@media only screen and (max-width: 500px) {
-  #filters {
-    width: 100%
-  }
-}
-@import "styles"
+@import "../_sass/styles.scss"

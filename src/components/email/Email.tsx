@@ -2,49 +2,42 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../common/Layout";
 import EmailList from "../email-list/EmailList";
-import { EmailData } from "../../types/EmailData";
-import { SiteConfig } from "../../types/SiteConfig";
+import { DefundUtils } from "../../DefundUtils";
+import { EmailProps } from "../../types/PropTypes";
 
-interface EmailProps {
-    data: {
-        markdownRemark: {
-            frontmatter: EmailData,
-        },
-        siteConfig: SiteConfig,
-    }
-}
 
+/**
+ * A rendered email, containing links to send or copy.
+ */
 export default class Email extends React.Component<EmailProps> {
     render() {
         const { markdownRemark, siteConfig } = this.props.data;
-        const { frontmatter } = markdownRemark;
+        const emailData = markdownRemark.frontmatter;
         return (
-            <Layout siteConfig={siteConfig}>
-                <div className="content emailPageHeader">
-                    <div className="container">
-                        <h2>{ frontmatter.name }</h2>
-                        <b>{ frontmatter.city }, { frontmatter.state }</b><br />
-                        <p id="autoopen">{ siteConfig.auto_open_message }</p>
-                        <div className='buttons'>
-                            <a>Send email</a>
-                            <a>Copy link</a>
-                        </div>
-                        <p>{ siteConfig.bad_mailto_message }</p>
+            <Layout {...siteConfig}>
+                <section className="emailPageHeader">
+                    <h2>{ emailData.name }</h2>
+                    <b>{ emailData.city }, { emailData.state }</b>
+                    <p id="autoopen">{ siteConfig.auto_open_message }</p>
+                    <div className='buttons'>
+                        <a>Send email</a>&nbsp;
+                        <a>Copy link</a>
                     </div>
-                </div>
+                    <p>{ siteConfig.bad_mailto_message }</p>
+                </section>
 
-                <div className="content emailContentSection">
+                <article className="emailContentSection">
                     <div className="container">
                         <div className="emailContent">
                             <div className="recipients">
-                                <b>To:</b> <span className="copyToClipboard">🔗</span>
-                                {frontmatter.recipients.join(',')}
+                                <b>To:</b> <span className="copyToClipboard">🔗</span>&nbsp;
+                                {emailData.recipients.join(', ')}
                             </div>
 
-                            {(frontmatter.cc ? 
+                            {(emailData.cc ? 
                             <div className="recipients">
-                                <b>CC:</b> <span className="copyToClipboard">🔗</span>
-                                {frontmatter.cc.join(',')}
+                                <b>CC:</b> <span className="copyToClipboard">🔗</span>&nbsp;
+                                {emailData.cc.join(', ')}
                             </div> 
                             : undefined)}
                             
@@ -52,13 +45,13 @@ export default class Email extends React.Component<EmailProps> {
                                 <b>Subject:</b> { siteConfig.default_subject_line }
                             </div>
                             <div>
-                                <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+                                <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>&nbsp;
                                 <span className="copyToClipboard">🔗</span>
-                                <br /> {frontmatter.body}
+                                <span dangerouslySetInnerHTML={{__html: DefundUtils.markdownToHTML(emailData.body)}}></span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <EmailList />
             </Layout>
         );
@@ -83,8 +76,6 @@ export const pageQuery = graphql`
         siteConfig {
           title
           meta
-          contact_email_footer
-          footer_text
           logoUrl
           faviconUrl
           auto_open_message
