@@ -91,7 +91,7 @@ export default function EmailList() {
             `
         }
         render={
-            data => {
+            (data: any) => {
                 let id = 0;
                 const emailsStateGrouped = Object.entries(data.allMarkdownRemark.nodes.reduce((prev: {[key: string]: Array<EmailMetadata>}, current: EmailNode) => {
                     if (!prev[current.frontmatter.state]) {

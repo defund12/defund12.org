@@ -41,7 +41,7 @@ export default function Footer() {
                 }
             }`
         }
-        render={data => <_Footer footerText={data.defund12Yaml.footer_text} contactEmailFooter={data.defund12Yaml.contact_email_footer}/>}
+        render={(data: any) => <_Footer footerText={data.defund12Yaml.footer_text} contactEmailFooter={data.defund12Yaml.contact_email_footer}/>}
         />
     );
 }

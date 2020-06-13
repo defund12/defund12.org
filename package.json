@@ -3,8 +3,10 @@
     "node": "14.4.0"
   },
   "devDependencies": {
-    "@types/jquery": "^3.3.38",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.0.0",
+    "@types/theme-ui": "^0.3.3",
     "@types/uuid": "^8.0.0",
     "eslint": "^7.2.0",
     "eslint-config-google": "^0.14.0"
@@ -18,8 +20,6 @@
     "start": "yarn run develop"
   },
   "dependencies": {
-    "@types/react-dom": "^16.9.8",
-    "@types/theme-ui": "^0.3.3",
     "gatsby": "^2.23.3",
     "gatsby-plugin-google-analytics": "^2.3.4",
     "gatsby-plugin-react-helmet": "^3.3.4",
@@ -39,6 +39,8 @@
     "remark": "^12.0.0",
     "remark-html": "^11.0.2",
     "tslint": "^6.1.2",
-    "uuid": "^8.1.0"
+    "typescript": "^3.9.5",
+    "uuid": "^8.1.0",
+    "webpack": "^4.43.0"
   }
 }

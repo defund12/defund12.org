@@ -32,7 +32,7 @@ export default function Header() {
                 }
             }
         `} 
-        render={data =>
+        render={(data: any) =>
             <_Header title={data.defund12Yaml.title} subtitle={data.defund12Yaml.subtitle}></_Header>
         }/>
     );
