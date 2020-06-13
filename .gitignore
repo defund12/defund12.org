@@ -4,8 +4,5 @@
 _site
 node_modules/
 settings.json
-<<<<<<< HEAD
 .sass-cache
 *.scssc
-=======
->>>>>>> 3420f60a5fddfb7c3e8d78802f108394481087d3
