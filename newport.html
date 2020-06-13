@@ -96,11 +96,13 @@
       </div>
       <div>
         <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
-        <span class="copyToClipboard" onclick="copyToClipboard(this, `My name is [YOUR NAME] and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Governor Raimondo, Mayor Bova, and Newport City Council Members:
+
+My name is [YOUR NAME], and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.
 
 According to the proposed budget for fiscal year 2021, the city of Newport expects to lose $3.5 million as a result of the COVID-19 pandemic. However, the city is projecting that General Fund revenue will total approximately $96.4 million for the upcoming fiscal year, with $79.8 million of that money coming directly from this city’s residents through local property and motor vehicle taxes.
 
-There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most at risk among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.
+There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life-enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most impacted among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.
 
 Imagine what over $4 million could do if it were invested in low-income and public housing, education, resources for formerly incarcerated individuals, public transportation, and other city initiatives that have been proven to strengthen communities.
 
@@ -110,12 +112,15 @@ Thank you for your time,
 
 [YOUR NAME]
 [YOUR ADDRESS]
+[YOUR EMAIL]
 [YOUR PHONE NUMBER]`)">🔗</span>
-        <br /> <p>My name is [YOUR NAME] and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.</p>
+        <br /> <p>Dear Governor Raimondo, Mayor Bova, and Newport City Council Members:</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.</p>
 
 <p>According to the proposed budget for fiscal year 2021, the city of Newport expects to lose $3.5 million as a result of the COVID-19 pandemic. However, the city is projecting that General Fund revenue will total approximately $96.4 million for the upcoming fiscal year, with $79.8 million of that money coming directly from this city’s residents through local property and motor vehicle taxes.</p>
 
-<p>There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most at risk among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.</p>
+<p>There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life-enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most impacted among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.</p>
 
 <p>Imagine what over $4 million could do if it were invested in low-income and public housing, education, resources for formerly incarcerated individuals, public transportation, and other city initiatives that have been proven to strengthen communities.</p>
 
@@ -125,6 +130,7 @@ Thank you for your time,
 
 <p>[YOUR NAME]
 [YOUR ADDRESS]
+[YOUR EMAIL]
 [YOUR PHONE NUMBER]</p>
 
       </div>
@@ -1938,11 +1944,13 @@ Thank you for your time,
     const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
     const body = encodeURIComponent(
       isAndroid ?
-      `My name is [YOUR NAME] and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.<br />
+      `Dear Governor Raimondo, Mayor Bova, and Newport City Council Members:<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.<br />
 <br />
 According to the proposed budget for fiscal year 2021, the city of Newport expects to lose $3.5 million as a result of the COVID-19 pandemic. However, the city is projecting that General Fund revenue will total approximately $96.4 million for the upcoming fiscal year, with $79.8 million of that money coming directly from this city’s residents through local property and motor vehicle taxes.<br />
 <br />
-There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most at risk among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.<br />
+There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life-enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most impacted among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.<br />
 <br />
 Imagine what over $4 million could do if it were invested in low-income and public housing, education, resources for formerly incarcerated individuals, public transportation, and other city initiatives that have been proven to strengthen communities.<br />
 <br />
@@ -1952,12 +1960,15 @@ Thank you for your time,<br />
 <br />
 [YOUR NAME]<br />
 [YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
 [YOUR PHONE NUMBER]`.trim() :
-      `My name is [YOUR NAME] and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.
+      `Dear Governor Raimondo, Mayor Bova, and Newport City Council Members:
+
+My name is [YOUR NAME], and I am a resident of Newport. I am writing to demand that Governor Raimondo, Mayor Bova and the members of the City Council do everything in their power to adopt a budget that redirects all funds from the Police Department and towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe and that they perpetuate the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.
 
 According to the proposed budget for fiscal year 2021, the city of Newport expects to lose $3.5 million as a result of the COVID-19 pandemic. However, the city is projecting that General Fund revenue will total approximately $96.4 million for the upcoming fiscal year, with $79.8 million of that money coming directly from this city’s residents through local property and motor vehicle taxes.
 
-There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most at risk among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.
+There are plans to make donations to various local organizations, including Visiting Nurses, Newport County Mental Health, and Clean Ocean Access. It’s wonderful that our city would use a portion of the budget to make donations to programs that promote well-being and provide life-enriching activities and public spaces for its residents, as well as outreach and civic service to some of the most impacted among us. However, those donations total $127,200. Compare that to the proposed $19 million the city plans to use to police those residents and you might see why it is that thousands of them were marching in the streets on June 6.
 
 Imagine what over $4 million could do if it were invested in low-income and public housing, education, resources for formerly incarcerated individuals, public transportation, and other city initiatives that have been proven to strengthen communities.
 
@@ -1967,6 +1978,7 @@ Thank you for your time,
 
 [YOUR NAME]
 [YOUR ADDRESS]
+[YOUR EMAIL]
 [YOUR PHONE NUMBER]`.trim()
     );
     const recipients = `governor@governor.ri.gov,jbova@cityofnewport.com,staylor@cityofnewport.com,jnapolitano@cityofnewport.com,justin-at-large@cox.net,amccalla@cityofnewport.com,lceglie@cityofnewport.com,KateLeonar@aol.com`;
