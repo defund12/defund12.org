@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { v1 as UUID } from 'uuid';
 import { StaticQuery, graphql } from 'gatsby';
-import { EmailListItem } from './EmailListItem';
+import { EmailListItem } from './EmailPageLink';
 import Select from 'react-select';
 import { ReactSelectOption } from '../../types/ReactSelectOption';
 import { EmailMetadata, RemarkNode, EmailMetadataGroup } from '../../types/EmailData';
