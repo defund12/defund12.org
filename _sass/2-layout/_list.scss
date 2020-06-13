@@ -27,6 +27,8 @@
         list-style-position: inside;
         text-indent: -1em;
         margin-left: 1em;
+        margin-top: 2px;
+        margin-bottom: 2px;
 
         @include breakpoint(s) {
           margin-top: $x_2;
