@@ -29,7 +29,8 @@
         margin-left: 1em;
 
         @include breakpoint(s) {
-          margin: $x_2 0;
+          margin-top: $x_2;
+          margin-bottom: $x_2;
         }
       }
     }
