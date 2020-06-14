@@ -1,8 +1,7 @@
-**/.DS_Store
-.jekyll-cache
+.*/*
+*.scssc
 .sass-cache
 _site
 node_modules/
+public/
 settings.json
-.sass-cache
-*.scssc
