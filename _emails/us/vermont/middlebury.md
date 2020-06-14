@@ -1,15 +1,15 @@
 ---
-title: "Middlebury, VT"
+title: Middlebury, VT
 permalink: "/middlebury"
-name: "Letter to the Town Manager and Selectboard"
-state: "VT"
-city: "Middlebury"
-layout: "email"
+name: Letter to the Town Manager and Selectboard
+state: VT
+city: Middlebury
+layout: email
 recipients:
-- "kramsay@townofmiddlebury.org"
-- "cenglish@townofmiddlebury.org"
-- "nuovo@middlebury.edu"
-- "bdow@townofmiddlebury.org"
+- kramsay@townofmiddlebury.org
+- cenglish@townofmiddlebury.org
+- nuovo@middlebury.edu
+- bdow@townofmiddlebury.org
 body: |-
   My name is [INSERT], and I live in Middlebury, Vermont.
 
