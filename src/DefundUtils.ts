@@ -1,5 +1,9 @@
-import remark from "remark";
-import remarkHTML from "remark-html";
+import unified from "unified";
+import markdown from "remark-parse";
+import rehype from "remark-rehype";
+import sanitize from "rehype-sanitize";
+import html from "rehype-stringify";
+
 
 /**
  * Helper functions used throughout the site.
@@ -11,8 +15,10 @@ export class DefundUtils {
      * @return {string} an HTML string
      */
   static markdownToHTML(value: string) {
-    return remark()
-        .use(remarkHTML)
+    return unified().use(markdown)
+        .use(rehype)
+        .use(sanitize)
+        .use(html)
         .processSync(value)
         .toString();
   }
