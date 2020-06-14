@@ -3,4 +3,6 @@ module.exports = {
     "<rootDir>/node_modules",
     "<rootDir>/.cache",
   ],
+  preset: "ts-jest",
+  testEnvironment: "node",
 };
