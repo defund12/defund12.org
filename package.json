@@ -20,12 +20,12 @@
         "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
         "test": "jest",
         "verify": "yarn lint && yarn test",
-        "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; jest #run all checks no matter the results",
+        "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; jest # run all checks no matter the results",
         "build": "gatsby build",
         "clean": "gatsby clean",
         "start": "gatsby build && gatsby serve",
         "start-dev": "gatsby develop",
-        "start-safe": "yarn clean && yarn verify && yarn start"
+        "start-safe": "yarn verify && yarn clean && yarn start # ensure all checks pass, and serve a clean build"
     },
     "dependencies": {
         "gatsby": "^2.23.3",
@@ -46,12 +46,14 @@
         "react-helmet": "^6.1.0",
         "react-select": "^3.1.0",
         "rehype-sanitize": "^3.0.1",
-        "rehype-stringify": "^8.0.0",
+        "rehype-stringify": "8.0.0",
         "remark": "^12.0.0",
-        "remark-html": "^11.0.2",
+        "remark-html": "11.0.2",
         "remark-rehype": "^7.0.0",
+        "remark-parse": "^8.0.2",
         "tslint": "^6.1.2",
         "typescript": "^3.9.5",
+        "unified": "^9.0.0",
         "uuid": "^8.1.0",
         "webpack": "^4.43.0"
     }
