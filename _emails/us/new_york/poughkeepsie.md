@@ -19,14 +19,19 @@ recipients:
 - mwoolever@townofpoughkeepsie-ny.gov
 - ashershin@yahoo.com
 - fsalvatore@townofpoughkeepsie-ny.gov
+- mayor@cityofpoughkeepsie.com
+- CommonCouncilMembers@cityofpoughkeepsie.com
+- TPape@cityofpoughkeepsie.com
+- superintendent@poughkeepsieschools.org
+- boe@poughkeepsieschools.org
 body: |-
-  To Poughkeepsie Town Officials:
+  To Poughkeepsie Officials:
 
   My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD].
 
-  Given the historic, social, and political origins of police and policing, in conjunction with the recent nationwide protests reflecting the antiBlack deaths of George Floyd, Breonna Taylor, and Tony McDade I am contacting you because I am demanding you to redirect money away from the Poughkeepsie Police Department and prioritize collective services that will help improve the socio-economic conditions of Poughkeepsie's predominately Black communities.
+  Given the historic, social, and political origins of police and policing, in conjunction with the recent nationwide protests reflecting the antiBlack deaths of George Floyd, Breonna Taylor, and Tony McDade I am contacting you because I am demanding you to redirect money away Poughkeepsie policing and prioritize collective services that will help improve the economic conditions, health, and wellbeing of Poughkeepsie residents, especially our Black communities.
 
-  Subsequently, a majority of teachers are at serious risk of losing their positions as well the youth losing the essential human right to learn and receive a formal education. As such, the Poughkeepsie City School District has stated the following:
+  Teachers are at serious risk of losing their positions as well the youth losing the essential human right to learn and receive a formal education. As such, the Poughkeepsie City School District has stated the following:
 
     The Poughkeepsie City School District is proposing to eliminate 48 positions, including teachers, administrators and support staff, as it attempts to erase a $2.6 million deficit for its 2020-21 budget. The board voted Wednesday to eliminate positions for elementary assistant principals, the Poughkeepsie High School dean of students, the assistant to the superintendent and a position that had yet to be filled for the director of grants and advancement.
 
@@ -53,7 +58,7 @@ body: |-
 
     Moreover, "...[r]evenues increased in 2019, even as expenditures also increased in several areas. That included a $7.6 million cost increase to the Dutchess County Sheriff's Employee Association for union contract settlements, positions, employee benefits and debt service."
 
-  Ultimately, the allocation of funds that have been attributed to the Poughkeepsie police department in contrast to the funding towards schools, is both erring and telling. I yearn to know what you will do to protect Black lives and prevent further instances of police-state-sanctioned violence, the emotional, social, and educational well-being of Black lives. I am calling to urge you to condemn police brutality, racial profiling, and the use of excessive force by police on oppressed communities.
+  Ultimately, the allocation of funds to the Poughkeepsie Police Department in contrast to the funding towards schools, is telling and disgraceful. I yearn to know what you will do to protect Black lives and prevent further instances of police-state-sanctioned violence, and support the emotional, social, and educational well-being of your Black constituents. I urge you to condemn police brutality, racial profiling, and the use of excessive force by police on oppressed communities, and show with your budget priorities that you actually care about a safe and healthy community.
 
   Sincerely,
   [YOUR NAME]
