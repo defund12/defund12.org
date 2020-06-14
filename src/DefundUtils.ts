@@ -1,10 +1,14 @@
 import remark from "remark";
 import remarkHTML from "remark-html";
 
+/**
+ * Helper functions used throughout the site.
+ */
 export class DefundUtils {
   /**
      * Renders markdown to HTML using remark-html.
-     * @param value a markdown string to render to HTML.
+     * @param {string} value a markdown string to render to HTML.
+     * @return {string} an HTML string
      */
   static markdownToHTML(value: string) {
     return remark()
@@ -13,6 +17,12 @@ export class DefundUtils {
         .toString();
   }
 
+  /**
+   * Temporarily reates a <textarea> in the browser and copies its content.
+   * @param {string} copyText the text to copy.
+   * @param {boolean} isPermalink a value indicating if the string is
+   *   a permalink, and as such should have the root path prepended.
+   */
   static copyToClipboard(copyText: string, isPermalink?: boolean) {
     const element = document.createElement("textarea");
     let copyValue = copyText;

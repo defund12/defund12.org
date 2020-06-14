@@ -3,8 +3,15 @@ import Layout from "../components/common/Layout";
 import { graphql, PageProps } from "gatsby";
 import { SiteProps } from "../types/PropTypes";
 
+/**
+ * The site's 404 page.
+ */
 export default class NotFound extends React.Component<PageProps<SiteProps>> {
-  render() {
+  /**
+    * React render method.
+    * @return {React.ReactNode} the rendered component
+    */
+  render(): React.ReactNode {
     return (
       <Layout {...this.props.data.siteConfig}>
         <main className="content">

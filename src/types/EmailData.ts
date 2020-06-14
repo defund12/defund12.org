@@ -48,14 +48,25 @@ export interface EmailData extends EmailMetadata {
     date: never & Date;
 }
 
+type EmailDataType = EmailMetadata & EmailData;
+
 /**
  * A node from remark containing either partial or full email data.
  */
 export interface RemarkNode {
-    frontmatter: EmailMetadata & EmailData;
+    frontmatter: EmailDataType;
 }
 
-export function isEmailData(emailDataOrMetadata: EmailMetadata & EmailData): emailDataOrMetadata is EmailData {
+
+/**
+ * A type guard function that checks whether the object passed to it
+ * is @link {EmailData}
+ * @param {EmailDataType} emailDataOrMetadata the object to check.
+ * @return {boolean}
+ */
+export function isEmailData(
+    emailDataOrMetadata: EmailMetadata & EmailData):
+    emailDataOrMetadata is EmailData {
   if (emailDataOrMetadata.hasOwnProperty("body")) return true;
   return false;
 }
@@ -64,8 +75,19 @@ export function isEmailData(emailDataOrMetadata: EmailMetadata & EmailData): ema
  * A group of email metadata for a specific state.
  */
 export class EmailMetadataGroup {
+  /**
+   * Create an empty group.
+   * @param name the state name.
+   */
   constructor(name: string)
-  constructor(name: string, emails: Array<EmailMetadata> = []) {
+  /**
+   * Create a group containing emails.
+   * @param {string} name the state name.
+   * @param {Array<EmailMetadata>} emails the state's emails.
+   */
+  constructor(
+      name: string,
+      emails: Array<EmailMetadata> = []) {
     this.name = name;
     this.emails = emails;
   }

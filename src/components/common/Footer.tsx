@@ -6,22 +6,47 @@ import { FooterProps } from "../../types/PropTypes";
 /**
  * The site footer, containing issue request and contact information.
  *
- * _This is meant to be internal to this file and should probably not be exported._
+ * _This is meant to be internal to this file and should
+ * probably not be exported._
  */
 class _Footer extends React.Component<FooterProps> {
+  /**
+   * Initialize the component.
+   * @param {FooterProps} props
+   */
   constructor(props: FooterProps) {
     super(props);
   }
 
+  /**
+    * React render method.
+    * @return {React.ReactNode} the rendered component
+    */
   render() {
     return (
       <>
         <aside className="sticky">
-          <p dangerouslySetInnerHTML={ { __html: DefundUtils.markdownToHTML(this.props.footer_text_pr) } }></p>
+          <p dangerouslySetInnerHTML={
+            {
+              __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
+            }
+          }></p>
         </aside>
         <footer className="footerMain">
-          <p dangerouslySetInnerHTML={ { __html: DefundUtils.markdownToHTML(this.props.footer_text_instructions) } }></p>
-          <p className="divider footer" dangerouslySetInnerHTML={ { __html: DefundUtils.markdownToHTML(this.props.contact_email_footer) } }></p>
+          <p dangerouslySetInnerHTML={
+            {
+              __html:
+                DefundUtils.markdownToHTML(this.props.footerTextInstructions),
+            }
+          }></p>
+          <p
+            className="divider footer"
+            dangerouslySetInnerHTML={
+              {
+                __html:
+                  DefundUtils.markdownToHTML(this.props.contactEmailFooter),
+              }
+            }></p>
         </footer>
       </>
     );
@@ -30,15 +55,16 @@ class _Footer extends React.Component<FooterProps> {
 
 /**
  * The site footer, containing issue request and contact information.
+ * @return {React.ReactNode}
  */
-export default function Footer() {
+export default function Footer(): JSX.Element {
   return (
     <StaticQuery query={graphql`
             query FooterQuery {
                 siteConfig {
-                    footer_text_pr
-                    footer_text_instructions
-                    contact_email_footer
+                    footerTextPr
+                    footerTextInstructions
+                    contactEmailFooter
                 }
             }`
     }

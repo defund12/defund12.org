@@ -6,9 +6,14 @@ import { LayoutProps } from "../../types/PropTypes";
 
 
 /**
- * The site layout, which contains elements to place in <head> through React Helmet.
+ * The site layout, which contains elements to
+ * place in <head> through React Helmet.
  */
 export default class Layout extends React.Component<LayoutProps> {
+  /**
+    * React render method.
+    * @return {React.ReactNode} the rendered component
+    */
   render() {
     return (
       <>
@@ -39,9 +44,11 @@ export default class Layout extends React.Component<LayoutProps> {
           <meta name="twitter:description" content={this.props.meta} />
 
           {/* CSS Includes */}
+          {/* eslint-disable-next-line max-len*/}
           <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 
           {/* JS Includes */}
+          {/* eslint-disable-next-line max-len*/}
           <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossOrigin="anonymous"></script>
         </Helmet>
         <Header />

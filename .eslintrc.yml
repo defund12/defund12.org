@@ -13,7 +13,8 @@ parserOptions:
     jsx: true
 rules: {
   "quotes": ["error", "double"],
-  "object-curly-spacing": ["error", "always"]
+  "object-curly-spacing": ["error", "always"],
+  "max-len": ["error", { "ignoreTemplateLiterals": true }]
 }
 overrides: [
   {

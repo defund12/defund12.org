@@ -11,15 +11,15 @@ export interface SiteConfig {
     /** A URL pointing to a favicon logo. */
     faviconUrl: string;
     /** A message that appears when an email is opened through a shared link. */
-    auto_open_message: string;
+    autoOpenMessage: string;
     /**  */
-    bad_mailto_message: string;
+    badMailtoMessage: string;
     /** The default subject line text. */
-    default_subject_line: string;
+    defaultSubjectLine: string;
     /** The site footer pretext. */
-    footer_text_pr: string;
+    footerTextPr: string;
     /** Instructions on how to enter an issue request. */
-    footer_text_instructions: string;
+    footerTextInstructions: string;
     /** Contact information for the community. */
-    contact_email_footer: string;
+    contactEmailFooter: string;
 }

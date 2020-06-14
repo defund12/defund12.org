@@ -16,6 +16,10 @@ export class EmailListItem extends React.Component<
   EmailListItemProps,
   EmailListItemState> {
     copyButtonText: string = "🔗";
+    /**
+     * Initialize the component and its state.
+     * @param {EmailListItemProps} props
+     */
     constructor(props: EmailListItemProps) {
       super(props);
       this.state = {
@@ -40,8 +44,17 @@ export class EmailListItem extends React.Component<
     render(): React.ReactNode {
       return (
         <li data-state={this.props.state}>
-          <Link to={`${this.props.permalink}?browse`}>{this.props.city} - <i>{this.props.name}</i></Link>
-          <span tab-index="0" role="button" aria-label="copy to clipboard" className="copyToClipboard" onClick={this.handleClipboardCopy.bind(this)}>{(this.state.clickActive ? "✅(copied)" : "🔗")}</span>
+          <Link to={`${this.props.permalink}?browse`}>
+            {this.props.city} - <i>{this.props.name}</i>
+          </Link>
+          <span
+            tab-index="0"
+            role="button"
+            aria-label="copy to clipboard"
+            className="copyToClipboard"
+            onClick={this.handleClipboardCopy.bind(this)}>
+            {(this.state.clickActive ? "✅(copied)" : "🔗")}
+          </span>
         </li>
       );
     }

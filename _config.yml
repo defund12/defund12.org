@@ -33,14 +33,14 @@ subtitle:
 meta:
   Email government officials and council members to reallocate police budgets
   towards education, social services, and dismantling racial injustice.
-footer_text_pr: Want to add your city? [Open a request.](https://github.com/defund12/defund12.org/issues)
-footer_text_instructions:
+footerTextPr: Want to add your city? [Open a request.](https://github.com/defund12/defund12.org/issues)
+footerTextInstructions:
   Have the emails of your city government officials and a
   drafted template ready.
-contact_email_footer: "[contact@defund12.org](mailto:contact@defund12.org)"
-default_subject_line: "[*** INSERT UNIQUE SUBJECT LINE ***]"
-auto_open_message: This page automatically opens a drafted email for you.
-bad_mailto_message:
+contactEmailFooter: "[contact@defund12.org](mailto:contact@defund12.org)"
+defaultSubjectLine: "[*** INSERT UNIQUE SUBJECT LINE ***]"
+autoOpenMessage: This page automatically opens a drafted email for you.
+badMailtoMessage:
   Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
 url: https://defund12.org
