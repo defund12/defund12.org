@@ -1,16 +1,16 @@
 ---
-title: "Monterey, CA"
+title: Monterey, CA
 permalink: "/monterey"
-name: "Letter to Mayor, City Council, and City Clerk"
-city: "Monterey"
-state: "CA"
+name: Letter to Mayor, City Council, and City Clerk
+city: Monterey
+state: CA
 recipients:
-- "roberson@monterey.org"
-- "albert@monterey.org"
-- "haffa@monterey.org"
-- "smith@monterey.org"
-- "twilliamson@monterey.org"
-- "gawf@monterey.org"
+- roberson@monterey.org
+- albert@monterey.org
+- haffa@monterey.org
+- smith@monterey.org
+- twilliamson@monterey.org
+- gawf@monterey.org
 body: |-
   To Mayor Roberson and Monterey City Council Members,
 
@@ -27,6 +27,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
