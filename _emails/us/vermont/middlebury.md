@@ -1,7 +1,7 @@
 ---
 title: "Middlebury, VT"
 permalink: "/middlebury"
-name: "Letter to the Town Council"
+name: "Letter to the Town Manager and Selectboard"
 state: "VT"
 city: "Middlebury"
 layout: "email"
