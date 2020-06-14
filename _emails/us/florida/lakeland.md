@@ -1,13 +1,13 @@
 ---
-title: "Lakeland, FL"
+title: Lakeland, FL
 permalink: "/lakeland"
-name: "Letter to Mayor and City Commission"
-state: "FL"
-city: "Lakeland"
-layout: "email"
+name: Letter to Mayor and City Commission
+state: FL
+city: Lakeland
+layout: email
 recipients:
-- "william.muntz@lakelandgov.net"
-- "citycommission@lakelandgov.net"
+- william.muntz@lakelandgov.net
+- citycommission@lakelandgov.net
 body: |-
   Dear Mayor Bill Muntz & Lakeland City Commission,
 
