@@ -16,9 +16,10 @@
         "eslint-plugin-react": "^7.20.0"
     },
     "scripts": {
-        "lint": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit",
+        "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
         "test": "jest",
-        "verify": "yarn lint; yarn test",
+        "verify": "yarn lint && yarn test",
+        "dev-verify": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; jest",
         "build": "gatsby build",
         "develop": "gatsby develop",
         "clean": "gatsby clean",
