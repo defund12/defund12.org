@@ -93,21 +93,21 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
         <section className="cityList" id="emailLinks">
           <article>
             {this.props.stateGroupedEmails
-              .filter(
-                (stateGroup) =>
-                  this.state.selectedState.value === 0 /* 'Choose state' */ ||
-                  stateGroup.id === this.state.selectedState.value
-              )
-              .map((stateGroup) => {
-                return (
-                  <ul key={uuid()} className="state">
-                    {this.state.selectedState === this.stateOptions[0] ? (
+                .filter(
+                    (stateGroup) =>
+                      this.state.selectedState.value === 0 ||
+                  stateGroup.id === this.state.selectedState.value,
+                )
+                .map((stateGroup) => {
+                  return (
+                    <ul key={uuid()} className="state">
+                      {this.state.selectedState === this.stateOptions[0] ? (
                       <h2>{stateGroup.name}</h2>
                     ) : null}
-                    {this.renderEmailLinks(stateGroup.emails)}
-                  </ul>
-                );
-              })}
+                      {this.renderEmailLinks(stateGroup.emails)}
+                    </ul>
+                  );
+                })}
           </article>
         </section>
         <p className="divider footer"></p>
@@ -124,30 +124,31 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
  * @return {Array<EmailMetadataGroup>}
  */
 function groupEmailMetadataByState(
-  metadata: Array<EmailMetadata>
+    metadata: Array<EmailMetadata>,
 ): Array<EmailMetadataGroup> {
   // map group the emails with all others in the same state
   const emailGroups = Object.values(
-    metadata.reduce(
-      (prev: { [key: string]: EmailMetadataGroup }, current: EmailMetadata) => {
-        const stateName = current.state;
+      metadata.reduce(
+          (prev: { [key: string]: EmailMetadataGroup },
+              current: EmailMetadata) => {
+            const stateName = current.state;
 
-        // if the state has not been added yet,
-        // add a new email group for it
-        if (!prev[stateName]) {
-          prev[stateName] = new EmailMetadataGroup(stateName);
-        }
+            // if the state has not been added yet,
+            // add a new email group for it
+            if (!prev[stateName]) {
+              prev[stateName] = new EmailMetadataGroup(stateName);
+            }
 
-        // add the current email metadata to the group for its state
-        prev[stateName].emails.push(current);
+            // add the current email metadata to the group for its state
+            prev[stateName].emails.push(current);
 
-        return prev;
-      },
-      {}
-    )
+            return prev;
+          },
+          {},
+      ),
   )
-    // and sort the groups alphabetically by state
-    .sort((first, second) => (first.name > second.name ? 1 : -1));
+  // and sort the groups alphabetically by state
+      .sort((first, second) => (first.name > second.name ? 1 : -1));
 
   // assign each state an ID based on its index
   emailGroups.forEach((stateGroup, index) => (stateGroup.id = index + 1));
@@ -185,7 +186,7 @@ export default function EmailList(): JSX.Element {
         // extract the email metadata from the nodes collected from markdown
         const allNodes = data.allMarkdownRemark.nodes;
         const allEmailMetadata = allNodes.map(
-          (node: RemarkNode) => node.frontmatter
+            (node: RemarkNode) => node.frontmatter,
         );
 
         const stateGroupedEmails = groupEmailMetadataByState(allEmailMetadata);
