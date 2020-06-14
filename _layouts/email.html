@@ -1,9 +1,17 @@
 {% include header.html %}
 
+<div class="alertBox">
+  <div class="overlay" onclick="hideAlertOverlay()"></div>
+  <div class="tabArea">
+    <div class="dismissAlert" onclick="hideAlertOverlay()">✕</div>
+    <div class="tabText">Send a {{ page.name }}:</div>
+    <div class="tabText tabTextLocation">{{ page.city }}, {{ page.state }}</div>
+    <button class="emailCTA" onclick="openEmail()">{{ site.open_message_button }}</button>
+  </div>
+</div>
 <section class="emailPageHeader">
   <h2>{{ page.name }}</h2>
   <b>{{ page.city }}, {{ page.state }}</b>{{ site.email_intro_text | markdownify }}
-  <p id="autoopen">{{ site.auto_open_message }}</p>
   <div class='buttons'>
     <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
     <a href="javascript:void(0);" onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
@@ -40,6 +48,10 @@
 {% include list.html %}
 
 <script type="text/javascript">
+  function hideAlertOverlay() {
+    $(".alertBox").fadeOut("fast");
+  }
+
   function openEmail() {
     const isAndroid = /(android)/i.test(navigator.userAgent);
     const subject = encodeURIComponent(`{{ site.default_subject_line }}`.trim());
@@ -55,14 +67,22 @@
   }
   $(document).ready(() => {
     const params = getParams(window.location.href)
+
+    // example: https://defund12.org/anchorage?browse
     if (params.browse !== undefined) {
-      $("#autoopen").hide()
+      $(".alertBox").hide();
       // Automatically updates the URL so if folks try to share, it will auto-open
       window.history.replaceState({}, document.title, `${window.location.origin}{{ page.permalink }}`)
     } else {
-      openEmail()
+    // example: https://defund12.org/anchorage
+      $(".alertBox").show();
+      $(".alertBox").css({ height: window.innerHeight });
     }
-  })
+  });
+
+  $( window ).resize(function() {
+    $(".alertBox").css({ height: window.innerHeight });
+  });
 </script>
 
 {% include footer.html %}
