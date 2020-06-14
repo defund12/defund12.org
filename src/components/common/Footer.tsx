@@ -26,26 +26,26 @@ class _Footer extends React.Component<FooterProps> {
     return (
       <>
         <aside className="sticky">
-          <p
+          <span
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
             }}
-          ></p>
+          ></span>
         </aside>
         <footer className="footerMain">
-          <p
+          <span
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(
                 this.props.footerTextInstructions
               ),
             }}
-          ></p>
-          <p
+          ></span>
+          <span
             className="divider footer"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(this.props.contactEmailFooter),
             }}
-          ></p>
+          ></span>
         </footer>
       </>
     );
