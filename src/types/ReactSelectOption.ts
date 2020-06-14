@@ -7,5 +7,5 @@ export interface ReactSelectOption {
   /**
    * The option's value.
    */
-  value: string | number | Date | Record<string, unknown>;
+  value?: string | number | Date | Record<string, unknown>;
 }

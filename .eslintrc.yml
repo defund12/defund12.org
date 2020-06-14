@@ -25,7 +25,7 @@ overrides: [
       "react"
     ],
     rules: {
-      "quotes": ["error", "double"],
+      "quotes": ["error", "double", {"avoidEscape": true}],
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "error",
       "react/jsx-uses-vars": "error",
