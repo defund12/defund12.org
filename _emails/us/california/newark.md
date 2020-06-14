@@ -1,16 +1,16 @@
 ---
-title: "Newark, CA"
+title: Newark, CA
 permalink: "/newark-ca"
-name: "Letter to City Council"
-city: "Newark"
-state: "CA"
-layout: "email"
+name: Letter to City Council
+city: Newark
+state: CA
+layout: email
 recipients:
-- "alan.nagy@newark.org"
-- "luis.freitas@newark.org"
-- "sucy.collazo@newark.org"
-- "michael.hannon@newark.org"
-- "mike.bucci@newark.org"
+- alan.nagy@newark.org
+- luis.freitas@newark.org
+- sucy.collazo@newark.org
+- michael.hannon@newark.org
+- mike.bucci@newark.org
 subject: "[Add Unique Subject Line Here!]"
 body: |-
   Dear Councilmembers,
