@@ -27,7 +27,7 @@ export interface EmailListState {
 class _EmailList extends React.Component<EmailListProps, EmailListState> {
   stateOptions: Array<ReactSelectOption>;
   selectStyles = {
-    option: (provided: any, state: { isSelected: any }) => ({
+    option: (provided: any) => ({
       ...provided,
       color: `black`
     }),
