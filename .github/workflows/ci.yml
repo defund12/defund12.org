@@ -27,16 +27,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "${{ steps.nvm.outputs.NVMRC }}"
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+      # - name: Get yarn cache directory path
+      #   id: yarn-cache-dir-path
+      #   run: echo "::set-output name=dir::$(yarn cache dir)"
+      # - uses: actions/cache@v2
+      #   id: yarn-cache
+      #   with:
+      #     path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-yarn-
       - name: Install deps
         run: yarn install --frozen-lockfile --prefer-offline
       - run: mkdir public
@@ -47,6 +47,7 @@ jobs:
         with:
           github_token: ${{ secrets.DEFUND12_GITHUB_TOKEN }}
           publish_branch: gh-pages-test
+          publish_dir: ./public
   js-lint-and-test:
     runs-on: ubuntu-latest
     steps:
@@ -58,16 +59,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "${{ steps.nvm.outputs.NVMRC }}"
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+      # - name: Get yarn cache directory path
+      #   id: yarn-cache-dir-path
+      #   run: echo "::set-output name=dir::$(yarn cache dir)"
+      # - uses: actions/cache@v2
+      #   id: yarn-cache
+      #   with:
+      #     path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-yarn-
       - name: Build
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Lint
@@ -130,16 +131,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "${{ steps.nvm.outputs.NVMRC }}"
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+      # - name: Get yarn cache directory path
+      #   id: yarn-cache-dir-path
+      #   run: echo "::set-output name=dir::$(yarn cache dir)"
+      # - uses: actions/cache@v2
+      #   id: yarn-cache
+      #   with:
+      #     path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-yarn-
       - name: Install deps
         run: yarn install --frozen-lockfile --prefer-offline
       - run: mkdir public
@@ -150,6 +151,7 @@ jobs:
         with:
           github_token: ${{ secrets.DEFUND12_GITHUB_TOKEN }}
           publish_branch: gh-pages
+          publish_dir: ./public
       - name: Set COMMIT_MSG
         run: echo ::set-env name=COMMIT_MSG::$(git log --format=%s -n 1)
       - name: Notify deploy succeeded (#deploys)
