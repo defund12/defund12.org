@@ -4,32 +4,6 @@ env:
   es2020: true
 extends:
   - google
-plugins:
-  - react
 parserOptions:
   ecmaVersion: 11
-  sourceType: module
-  ecmaFeatures:
-    jsx: true
-rules: {
-  "quotes": ["error", "double"],
-  "max-len": ["error", { "ignoreTemplateLiterals": true }],
-}
-overrides: [
-  {
-    extends:["./node_modules/gts"],
-    files: ["*.ts?(x)"],
-    parser: "@typescript-eslint/parser",
-    plugins: [
-      "@typescript-eslint",
-      "react"
-    ],
-    rules: {
-      "quotes": ["error", "double", {"avoidEscape": true}],
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": "error",
-      "react/jsx-uses-vars": "error",
-    }
-  }
-]
-  
+rules: {}

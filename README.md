@@ -10,11 +10,17 @@ We are dealing with a high volume of requests, but we are doing our best to stay
 
 To build the application:
 
-1. Install [Node JS](https://nodejs.org/en/download/)
-2. Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
-3. Install [Gatsby](https://www.gatsbyjs.org/docs/gatsby-cli/)
+1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
+2. Install [Node JS](https://nodejs.org/en/download/)
+3. Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
 4. Clone and navigate to the repository
-5. `gatsby develop`
+5. `bundle exec jekyll serve`
+
+### Running with Docker locally
+
+1. [Install Docker](https://docs.docker.com/get-docker/)
+2. Start docker locally
+3. In directory run, `docker-compose up`
 
 ### Running eslint
 
@@ -25,12 +31,10 @@ To build the application:
 ### Running tests
 
 #### JS tests
-
-- `yarn install` && `yarn test`
+* `yarn install` && `yarn test`
 
 #### Markdown tests
-
-- [/test/markdown/README.md](./test/markdown/README.md)
+* [/test/markdown/README.md](./test/markdown/README.md)
 
 ## Contribution guidelines
 

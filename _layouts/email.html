@@ -1,0 +1,68 @@
+{% include header.html %}
+
+<section class="emailPageHeader">
+  <h2>{{ page.name }}</h2>
+  <b>{{ page.city }}, {{ page.state }}</b>{{ site.email_intro_text | markdownify }}
+  <p id="autoopen">{{ site.auto_open_message }}</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `{{ page.permalink }}`, true)">Copy link</a>
+  </div>
+  <p>{{ site.bad_mailto_message }}</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `{{ page.recipients | join: ', ' }}`)">🔗</span>
+        {{ page.recipients | join: ', ' }}
+      </div>
+      {% if page.cc %}
+      <div class="recipients">
+        <b>CC:</b> <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.cc | join: ', ' }}`)">🔗</span>
+        {{ page.cc | join: ', ' }}
+      </div>
+      {% endif %}
+      <div class="recipients">
+        <b>Subject:</b> {{ site.default_subject_line }}
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `{{ page.body }}`)">🔗</span>
+        <br /> {{ page.body | markdownify }}
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include list.html %}
+
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`{{ site.default_subject_line }}`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `{{ page.body | newline_to_br }}`.trim() :
+      `{{ page.body }}`.trim()
+    );
+    const recipients = `{{ page.recipients | join: ',' }}`;
+    const cc = `{{ page.cc | join: ',' }}`;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}{{ page.permalink }}`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
+{% include footer.html %}

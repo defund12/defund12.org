@@ -1,0 +1,22 @@
+<main class="content">
+  <div id="filters">
+    <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
+      <option selected>Choose state</option>
+    </select>
+  </div>
+  <section class="cityList" id="emailLinks">
+    {% assign states = site.emails | group_by:"state" %}
+    {% assign sorted_states = states | sort:"name" %}
+    {% for state in sorted_states %}
+    {% assign sorted_emails = state.items | sort:"city" %}
+    {% for email in sorted_emails %}
+    <li data-state="{{ email.state }}">
+      <a href="{{ email.permalink }}?browse">{{ email.city }} - <i>{{ email.name }}</i></a>
+      <span tab-index="0" role="button" aria-label="copy to clipboard" class="copyToClipboard"
+        onclick="copyToClipboard(this, `{{ email.permalink }}`, true)">🔗</span>
+    </li>
+    {% endfor %}
+    {% endfor %}
+  </section>
+  <p class="divider footer"></p>
+</main>
