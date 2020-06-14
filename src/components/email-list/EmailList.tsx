@@ -26,6 +26,12 @@ export interface EmailListState {
  */
 class _EmailList extends React.Component<EmailListProps, EmailListState> {
     stateOptions: Array<ReactSelectOption>;
+    selectStyles = {
+      option: (provided: any, state: { isSelected: any }) => ({
+        ...provided,
+        color: state.isSelected ? 'black' : 'black',
+      }),
+    };
     /**
      * Initialize the list component along with its filter options.
      * @param {EmailListProps} props
@@ -79,7 +85,8 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
               className="reactSelect"
               value={this.state.selectedState}
               onChange={this.onStateSelectionChanged.bind(this)}
-              options={this.stateOptions}>
+              options={this.stateOptions}
+              styles={this.selectStyles}>
             </Select>
           </div>
           <section className="cityList" id="emailLinks">
