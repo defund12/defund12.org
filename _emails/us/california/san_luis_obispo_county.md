@@ -1,6 +1,6 @@
 ---
 title: "San Luis Obispo County, CA"
-permalink: "/san-luis-obispo"
+permalink: "/san-luis-obispo-county"
 name: "Letter to Board of Supervisors"
 city: "San Luis Obispo County"
 state: "CA"
