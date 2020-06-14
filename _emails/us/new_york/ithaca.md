@@ -1,12 +1,12 @@
 ---
-title: "Ithaca, NY"
+title: Ithaca, NY
 permalink: "/ithaca"
-name: "Letter to Mayor and Common Council"
-city: "Ithaca"
-state: "NY"
-layout: "email"
+name: Letter to Mayor and Common Council
+city: Ithaca
+state: NY
+layout: email
 recipients:
-- "council@cityofithaca.org"
+- council@cityofithaca.org
 body: |-
   To the Ithaca Common Council and Mayor Svante Myrick,
 
@@ -22,7 +22,7 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-  
+
   (1): https://ithacavoice.com/2020/06/women-led-rally-for-racial-justice-draws-c  rowd-to-downtown-ithaca-as-protests-continue/
   (2): https://www.cityofithaca.org/427/City-Budget
 ---
