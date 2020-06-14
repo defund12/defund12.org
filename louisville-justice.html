@@ -70,6 +70,97 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor & Council - Justice for Breonna Taylor</h2>
+  <b>Louisville, KY</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/louisville-justice`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `greg.fischer@louisvilleky.gov, attorney.general@ag.ky.gov, jessica.green@louisvilleky.gov, barbara.shanklin@louisvilleky.gov, keisha.dorsey@louisvilleky.gov, barbara.sextonsmith@louisvilleky.gov, donna.purvis@louisvilleky.gov, david.james@louisvilleky.gov, paula.mccraney@louisvilleky.gov, brandon.coan@louisvilleky.gov, bill.hollander@louisvilleky.gov, pat.mulvihill@louisvilleky.gov, kevin.kramer@louisvilleky.gov, rick.blackwell@louisvilleky.gov, mark.fox@louisvilleky.gov, cindi.fowler@louisvilleky.gov, kevin.triplett@louisvilleky.gov, scott.reed@louisvilleky.gov, markus.winkler@louisvilleky.gov, marilyn.parker@louisvilleky.gov, anthony.piagentini@louisvilleky.gov, stuart.benson@louisvilleky.gov, nicole.george@louisvilleky.gov, robin.engel@louisvilleky.gov, james.peden@louisvilleky.gov, madonna.flood@louisvilleky.gov, david.yates@louisvilleky.gov, brent.ackerson@louisvilleky.gov`)">🔗</span>
+        greg.fischer@louisvilleky.gov, attorney.general@ag.ky.gov, jessica.green@louisvilleky.gov, barbara.shanklin@louisvilleky.gov, keisha.dorsey@louisvilleky.gov, barbara.sextonsmith@louisvilleky.gov, donna.purvis@louisvilleky.gov, david.james@louisvilleky.gov, paula.mccraney@louisvilleky.gov, brandon.coan@louisvilleky.gov, bill.hollander@louisvilleky.gov, pat.mulvihill@louisvilleky.gov, kevin.kramer@louisvilleky.gov, rick.blackwell@louisvilleky.gov, mark.fox@louisvilleky.gov, cindi.fowler@louisvilleky.gov, kevin.triplett@louisvilleky.gov, scott.reed@louisvilleky.gov, markus.winkler@louisvilleky.gov, marilyn.parker@louisvilleky.gov, anthony.piagentini@louisvilleky.gov, stuart.benson@louisvilleky.gov, nicole.george@louisvilleky.gov, robin.engel@louisvilleky.gov, james.peden@louisvilleky.gov, madonna.flood@louisvilleky.gov, david.yates@louisvilleky.gov, brent.ackerson@louisvilleky.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Fischer,
+
+My name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD] and I am emailing today to demand accountability for the racist and brutal murder of Breonna Taylor.
+
+I demand that charges be filed against all officers involved in this heinous act and its coverup, especially John Mattingly, Brett Hankinson, and Myles Cosgrove. There have been no charges thus far and this is unacceptable.
+
+Breonna Taylor would be alive today if it was not for the gross abuse of power and negligence exhibited by the Louisville Metro Police Department; all officers involved must face consequences for this murder in order to provide her family with justice and prevent further cops from committing brutal acts of violence against our communities.
+
+WE DEMAND THE FOLLOWING OF OUR CITY:
+
+1. Mayor and City Council address the use of force by LMPD.
+
+2. Fire, criminally charge, and revoke the pensions of the officers that murdered Breonna. Ensure the newly requested special prosecutor, State AG Daniel Cameron, seeks full transparency and accountability.
+
+3. Provide all necessary information to a local, independent civilian community police accountability council.
+
+4. Create policy for transparent investigation process due to law enforcement misconduct. 
+
+5. Eliminate No Knock Warrants.
+
+Sincerely,
+[NAME]
+[PHONE_NUMBER]
+[EMAIL]
+[ADDRESS]
+`)">🔗</span>
+        <br /> <p>Dear Mayor Fischer,</p>
+
+<p>My name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD] and I am emailing today to demand accountability for the racist and brutal murder of Breonna Taylor.</p>
+
+<p>I demand that charges be filed against all officers involved in this heinous act and its coverup, especially John Mattingly, Brett Hankinson, and Myles Cosgrove. There have been no charges thus far and this is unacceptable.</p>
+
+<p>Breonna Taylor would be alive today if it was not for the gross abuse of power and negligence exhibited by the Louisville Metro Police Department; all officers involved must face consequences for this murder in order to provide her family with justice and prevent further cops from committing brutal acts of violence against our communities.</p>
+
+<p>WE DEMAND THE FOLLOWING OF OUR CITY:</p>
+
+<ol>
+  <li>
+    <p>Mayor and City Council address the use of force by LMPD.</p>
+  </li>
+  <li>
+    <p>Fire, criminally charge, and revoke the pensions of the officers that murdered Breonna. Ensure the newly requested special prosecutor, State AG Daniel Cameron, seeks full transparency and accountability.</p>
+  </li>
+  <li>
+    <p>Provide all necessary information to a local, independent civilian community police accountability council.</p>
+  </li>
+  <li>
+    <p>Create policy for transparent investigation process due to law enforcement misconduct.</p>
+  </li>
+  <li>
+    <p>Eliminate No Knock Warrants.</p>
+  </li>
+</ol>
+
+<p>Sincerely,
+[NAME]
+[PHONE_NUMBER]
+[EMAIL]
+[ADDRESS]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1961,82 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Fischer,<br />
+<br />
+My name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD] and I am emailing today to demand accountability for the racist and brutal murder of Breonna Taylor.<br />
+<br />
+I demand that charges be filed against all officers involved in this heinous act and its coverup, especially John Mattingly, Brett Hankinson, and Myles Cosgrove. There have been no charges thus far and this is unacceptable.<br />
+<br />
+Breonna Taylor would be alive today if it was not for the gross abuse of power and negligence exhibited by the Louisville Metro Police Department; all officers involved must face consequences for this murder in order to provide her family with justice and prevent further cops from committing brutal acts of violence against our communities.<br />
+<br />
+WE DEMAND THE FOLLOWING OF OUR CITY:<br />
+<br />
+1. Mayor and City Council address the use of force by LMPD.<br />
+<br />
+2. Fire, criminally charge, and revoke the pensions of the officers that murdered Breonna. Ensure the newly requested special prosecutor, State AG Daniel Cameron, seeks full transparency and accountability.<br />
+<br />
+3. Provide all necessary information to a local, independent civilian community police accountability council.<br />
+<br />
+4. Create policy for transparent investigation process due to law enforcement misconduct. <br />
+<br />
+5. Eliminate No Knock Warrants.<br />
+<br />
+Sincerely,<br />
+[NAME]<br />
+[PHONE_NUMBER]<br />
+[EMAIL]<br />
+[ADDRESS]<br />
+`.trim() :
+      `Dear Mayor Fischer,
+
+My name is [NAME]. I am a resident of [CITY/NEIGHBORHOOD] and I am emailing today to demand accountability for the racist and brutal murder of Breonna Taylor.
+
+I demand that charges be filed against all officers involved in this heinous act and its coverup, especially John Mattingly, Brett Hankinson, and Myles Cosgrove. There have been no charges thus far and this is unacceptable.
+
+Breonna Taylor would be alive today if it was not for the gross abuse of power and negligence exhibited by the Louisville Metro Police Department; all officers involved must face consequences for this murder in order to provide her family with justice and prevent further cops from committing brutal acts of violence against our communities.
+
+WE DEMAND THE FOLLOWING OF OUR CITY:
+
+1. Mayor and City Council address the use of force by LMPD.
+
+2. Fire, criminally charge, and revoke the pensions of the officers that murdered Breonna. Ensure the newly requested special prosecutor, State AG Daniel Cameron, seeks full transparency and accountability.
+
+3. Provide all necessary information to a local, independent civilian community police accountability council.
+
+4. Create policy for transparent investigation process due to law enforcement misconduct. 
+
+5. Eliminate No Knock Warrants.
+
+Sincerely,
+[NAME]
+[PHONE_NUMBER]
+[EMAIL]
+[ADDRESS]
+`.trim()
+    );
+    const recipients = `greg.fischer@louisvilleky.gov,attorney.general@ag.ky.gov,jessica.green@louisvilleky.gov,barbara.shanklin@louisvilleky.gov,keisha.dorsey@louisvilleky.gov,barbara.sextonsmith@louisvilleky.gov,donna.purvis@louisvilleky.gov,david.james@louisvilleky.gov,paula.mccraney@louisvilleky.gov,brandon.coan@louisvilleky.gov,bill.hollander@louisvilleky.gov,pat.mulvihill@louisvilleky.gov,kevin.kramer@louisvilleky.gov,rick.blackwell@louisvilleky.gov,mark.fox@louisvilleky.gov,cindi.fowler@louisvilleky.gov,kevin.triplett@louisvilleky.gov,scott.reed@louisvilleky.gov,markus.winkler@louisvilleky.gov,marilyn.parker@louisvilleky.gov,anthony.piagentini@louisvilleky.gov,stuart.benson@louisvilleky.gov,nicole.george@louisvilleky.gov,robin.engel@louisvilleky.gov,james.peden@louisvilleky.gov,madonna.flood@louisvilleky.gov,david.yates@louisvilleky.gov,brent.ackerson@louisvilleky.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/louisville-justice`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2050,4 @@
 </body>
 
 </html>
+

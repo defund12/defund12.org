@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and Elected Officials</h2>
+  <b>Clarksville, TN</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/clarksville`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `joe.pitts@cityofclarksville.com, ward1@cityofclarksville.com, ward2@cityofclarksville.com, ward3@cityofclarksville.com, ward4@cityofclarksville.com, ward5@cityofclarksville.com, ward6@cityofclarksville.com, ward7@cityofclarksville.com, ward8@cityofclarksville.com, ward9@cityofclarksville.com, ward10@cityofclarksville.com, ward11@cityofclarksville.com, ward12@cityofclarksville.com`)">🔗</span>
+        joe.pitts@cityofclarksville.com, ward1@cityofclarksville.com, ward2@cityofclarksville.com, ward3@cityofclarksville.com, ward4@cityofclarksville.com, ward5@cityofclarksville.com, ward6@cityofclarksville.com, ward7@cityofclarksville.com, ward8@cityofclarksville.com, ward9@cityofclarksville.com, ward10@cityofclarksville.com, ward11@cityofclarksville.com, ward12@cityofclarksville.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Pitts and Clarksville City Council Members:
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/WARD]. The unjust deaths of George Floyd, Breonna Taylor, and others undeniably call for justice. I am emailing today to demand action.
+
+If you stand and, as Leaf Chronicle Photo captions, “listen to protesters in the middle of Wilma Rudolph Boulevard on Saturday,” we demand that you recognize and condemn the murder of George Floyd, who did not simply “die in police custody.” Failing to acknowledge his death as a murder only serves to minimize the responsibility that should be assumed by the police.
+
+In response to national protests and unrest relating to police brutality and racial biases, the Clarksville Police Department has decided to conduct a review of its practices, which articles report you “praised.” I demand that such a review be performed externally rather than internally so as to improve the reliability of the findings of the review. The police killed 1,098 people in 2019. The existing policies do not work. The praise reported in the article is directed towards the CALEA accreditation website. Further research reveals no statistically significant difference between CALEA-accredited departments and non-accredited ones in the total number of complaints received and the number of sustained citizen complaints. That being said, the cities with the highest average number of police killings per 1M in the US (St. Louis and Oklahoma City) also have this accreditation. What significance does CALEA really play in reducing police brutality other than providing a certificate of completion when it is shown not to work?
+
+I demand that the budget for the Clarksville Police Department be made available immediately and I urge you to consider redistributing funds from the CPD to initiatives relating to community development, COVID-19 relief, Parks and Recreation, and the Clarksville Montgomery County School System. Better investment of resources in these sectors can be used to ameliorate Clarksville’s sense of community and even to address racism explicitly.
+
+This is a human rights issue. I am heartbroken to see yet another black life lost at the hands of racist officers. They must be held accountable. Your immediate action is necessary. I urge you to do the right thing.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`)">🔗</span>
+        <br /> <p>Dear Mayor Pitts and Clarksville City Council Members:</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/WARD]. The unjust deaths of George Floyd, Breonna Taylor, and others undeniably call for justice. I am emailing today to demand action.</p>
+
+<p>If you stand and, as Leaf Chronicle Photo captions, “listen to protesters in the middle of Wilma Rudolph Boulevard on Saturday,” we demand that you recognize and condemn the murder of George Floyd, who did not simply “die in police custody.” Failing to acknowledge his death as a murder only serves to minimize the responsibility that should be assumed by the police.</p>
+
+<p>In response to national protests and unrest relating to police brutality and racial biases, the Clarksville Police Department has decided to conduct a review of its practices, which articles report you “praised.” I demand that such a review be performed externally rather than internally so as to improve the reliability of the findings of the review. The police killed 1,098 people in 2019. The existing policies do not work. The praise reported in the article is directed towards the CALEA accreditation website. Further research reveals no statistically significant difference between CALEA-accredited departments and non-accredited ones in the total number of complaints received and the number of sustained citizen complaints. That being said, the cities with the highest average number of police killings per 1M in the US (St. Louis and Oklahoma City) also have this accreditation. What significance does CALEA really play in reducing police brutality other than providing a certificate of completion when it is shown not to work?</p>
+
+<p>I demand that the budget for the Clarksville Police Department be made available immediately and I urge you to consider redistributing funds from the CPD to initiatives relating to community development, COVID-19 relief, Parks and Recreation, and the Clarksville Montgomery County School System. Better investment of resources in these sectors can be used to ameliorate Clarksville’s sense of community and even to address racism explicitly.</p>
+
+<p>This is a human rights issue. I am heartbroken to see yet another black life lost at the hands of racist officers. They must be held accountable. Your immediate action is necessary. I urge you to do the right thing.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Pitts and Clarksville City Council Members:<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/WARD]. The unjust deaths of George Floyd, Breonna Taylor, and others undeniably call for justice. I am emailing today to demand action.<br />
+<br />
+If you stand and, as Leaf Chronicle Photo captions, “listen to protesters in the middle of Wilma Rudolph Boulevard on Saturday,” we demand that you recognize and condemn the murder of George Floyd, who did not simply “die in police custody.” Failing to acknowledge his death as a murder only serves to minimize the responsibility that should be assumed by the police.<br />
+<br />
+In response to national protests and unrest relating to police brutality and racial biases, the Clarksville Police Department has decided to conduct a review of its practices, which articles report you “praised.” I demand that such a review be performed externally rather than internally so as to improve the reliability of the findings of the review. The police killed 1,098 people in 2019. The existing policies do not work. The praise reported in the article is directed towards the CALEA accreditation website. Further research reveals no statistically significant difference between CALEA-accredited departments and non-accredited ones in the total number of complaints received and the number of sustained citizen complaints. That being said, the cities with the highest average number of police killings per 1M in the US (St. Louis and Oklahoma City) also have this accreditation. What significance does CALEA really play in reducing police brutality other than providing a certificate of completion when it is shown not to work?<br />
+<br />
+I demand that the budget for the Clarksville Police Department be made available immediately and I urge you to consider redistributing funds from the CPD to initiatives relating to community development, COVID-19 relief, Parks and Recreation, and the Clarksville Montgomery County School System. Better investment of resources in these sectors can be used to ameliorate Clarksville’s sense of community and even to address racism explicitly.<br />
+<br />
+This is a human rights issue. I am heartbroken to see yet another black life lost at the hands of racist officers. They must be held accountable. Your immediate action is necessary. I urge you to do the right thing.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE]<br />
+[YOUR EMAIL]`.trim() :
+      `Dear Mayor Pitts and Clarksville City Council Members:
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/WARD]. The unjust deaths of George Floyd, Breonna Taylor, and others undeniably call for justice. I am emailing today to demand action.
+
+If you stand and, as Leaf Chronicle Photo captions, “listen to protesters in the middle of Wilma Rudolph Boulevard on Saturday,” we demand that you recognize and condemn the murder of George Floyd, who did not simply “die in police custody.” Failing to acknowledge his death as a murder only serves to minimize the responsibility that should be assumed by the police.
+
+In response to national protests and unrest relating to police brutality and racial biases, the Clarksville Police Department has decided to conduct a review of its practices, which articles report you “praised.” I demand that such a review be performed externally rather than internally so as to improve the reliability of the findings of the review. The police killed 1,098 people in 2019. The existing policies do not work. The praise reported in the article is directed towards the CALEA accreditation website. Further research reveals no statistically significant difference between CALEA-accredited departments and non-accredited ones in the total number of complaints received and the number of sustained citizen complaints. That being said, the cities with the highest average number of police killings per 1M in the US (St. Louis and Oklahoma City) also have this accreditation. What significance does CALEA really play in reducing police brutality other than providing a certificate of completion when it is shown not to work?
+
+I demand that the budget for the Clarksville Police Department be made available immediately and I urge you to consider redistributing funds from the CPD to initiatives relating to community development, COVID-19 relief, Parks and Recreation, and the Clarksville Montgomery County School System. Better investment of resources in these sectors can be used to ameliorate Clarksville’s sense of community and even to address racism explicitly.
+
+This is a human rights issue. I am heartbroken to see yet another black life lost at the hands of racist officers. They must be held accountable. Your immediate action is necessary. I urge you to do the right thing.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`.trim()
+    );
+    const recipients = `joe.pitts@cityofclarksville.com,ward1@cityofclarksville.com,ward2@cityofclarksville.com,ward3@cityofclarksville.com,ward4@cityofclarksville.com,ward5@cityofclarksville.com,ward6@cityofclarksville.com,ward7@cityofclarksville.com,ward8@cityofclarksville.com,ward9@cityofclarksville.com,ward10@cityofclarksville.com,ward11@cityofclarksville.com,ward12@cityofclarksville.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/clarksville`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,80 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Torrance, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/torrance`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `PFurey@TorranceCA.Gov, HAshcraft@TorranceCA.Gov, GChen@TorranceCA.Gov, TGoodrich@TorranceCA.Gov, MGriffiths@TorranceCA.Gov, SKalani@TorranceCA.gov, AMattucci@TorranceCA.gov`)">🔗</span>
+        PFurey@TorranceCA.Gov, HAshcraft@TorranceCA.Gov, GChen@TorranceCA.Gov, TGoodrich@TorranceCA.Gov, MGriffiths@TorranceCA.Gov, SKalani@TorranceCA.gov, AMattucci@TorranceCA.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Furey and Torrance City Council Members,
+
+My name is [NAME HERE] and I am a Torrance resident. Torrance PD takes an enormous share of the city’s general fund, taking away desperately needed resources from essential city programs and services. Over 22% of our city’s budget is directed the police department, while only 4.4% is devoted to community services.
+
+Torrance may be faced with up to a 22 million dollar budget deficit in the FY2020-2021 and is set to divest only 5.7% of Torrance PD's total departmental budget, while enacting steeper cuts on vital public services such as libraries, park maintenance, and public works. The investment in policing has not made us safer – Torrance PD continues to constitute a lethal threat to Torrance's Black and Brown communities. Officers Anthony Chavez and Matthew Concannon, who fatally shot 23-year-old Christopher DeAndre Mitchell in December 2018, are still decorated members of the police force. With Torrance's current finances in dire jeopardy, it is clear that we must defund the police.
+
+As a Torrance resident, I demand that you take immediate action to ensure the following:
+
+1. Significantly reduce Torrance PD’s allocation from the general fund.
+2. Create an independent commission to review police misconduct and negligence by Torrance PD.
+3. Invest in housing, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+Torrance can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund Torrance PD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Furey and Torrance City Council Members,</p>
+
+<p>My name is [NAME HERE] and I am a Torrance resident. Torrance PD takes an enormous share of the city’s general fund, taking away desperately needed resources from essential city programs and services. Over 22% of our city’s budget is directed the police department, while only 4.4% is devoted to community services.</p>
+
+<p>Torrance may be faced with up to a 22 million dollar budget deficit in the FY2020-2021 and is set to divest only 5.7% of Torrance PD’s total departmental budget, while enacting steeper cuts on vital public services such as libraries, park maintenance, and public works. The investment in policing has not made us safer – Torrance PD continues to constitute a lethal threat to Torrance’s Black and Brown communities. Officers Anthony Chavez and Matthew Concannon, who fatally shot 23-year-old Christopher DeAndre Mitchell in December 2018, are still decorated members of the police force. With Torrance’s current finances in dire jeopardy, it is clear that we must defund the police.</p>
+
+<p>As a Torrance resident, I demand that you take immediate action to ensure the following:</p>
+
+<ol>
+  <li>Significantly reduce Torrance PD’s allocation from the general fund.</li>
+  <li>Create an independent commission to review police misconduct and negligence by Torrance PD.</li>
+  <li>Invest in housing, youth programs, restorative justice, and mental health workers to keep the community safe.</li>
+</ol>
+
+<p>Torrance can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund Torrance PD.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1944,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Furey and Torrance City Council Members,<br />
+<br />
+My name is [NAME HERE] and I am a Torrance resident. Torrance PD takes an enormous share of the city’s general fund, taking away desperately needed resources from essential city programs and services. Over 22% of our city’s budget is directed the police department, while only 4.4% is devoted to community services.<br />
+<br />
+Torrance may be faced with up to a 22 million dollar budget deficit in the FY2020-2021 and is set to divest only 5.7% of Torrance PD's total departmental budget, while enacting steeper cuts on vital public services such as libraries, park maintenance, and public works. The investment in policing has not made us safer – Torrance PD continues to constitute a lethal threat to Torrance's Black and Brown communities. Officers Anthony Chavez and Matthew Concannon, who fatally shot 23-year-old Christopher DeAndre Mitchell in December 2018, are still decorated members of the police force. With Torrance's current finances in dire jeopardy, it is clear that we must defund the police.<br />
+<br />
+As a Torrance resident, I demand that you take immediate action to ensure the following:<br />
+<br />
+1. Significantly reduce Torrance PD’s allocation from the general fund.<br />
+2. Create an independent commission to review police misconduct and negligence by Torrance PD.<br />
+3. Invest in housing, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+<br />
+Torrance can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund Torrance PD.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Furey and Torrance City Council Members,
+
+My name is [NAME HERE] and I am a Torrance resident. Torrance PD takes an enormous share of the city’s general fund, taking away desperately needed resources from essential city programs and services. Over 22% of our city’s budget is directed the police department, while only 4.4% is devoted to community services.
+
+Torrance may be faced with up to a 22 million dollar budget deficit in the FY2020-2021 and is set to divest only 5.7% of Torrance PD's total departmental budget, while enacting steeper cuts on vital public services such as libraries, park maintenance, and public works. The investment in policing has not made us safer – Torrance PD continues to constitute a lethal threat to Torrance's Black and Brown communities. Officers Anthony Chavez and Matthew Concannon, who fatally shot 23-year-old Christopher DeAndre Mitchell in December 2018, are still decorated members of the police force. With Torrance's current finances in dire jeopardy, it is clear that we must defund the police.
+
+As a Torrance resident, I demand that you take immediate action to ensure the following:
+
+1. Significantly reduce Torrance PD’s allocation from the general fund.
+2. Create an independent commission to review police misconduct and negligence by Torrance PD.
+3. Invest in housing, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+Torrance can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund Torrance PD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `PFurey@TorranceCA.Gov,HAshcraft@TorranceCA.Gov,GChen@TorranceCA.Gov,TGoodrich@TorranceCA.Gov,MGriffiths@TorranceCA.Gov,SKalani@TorranceCA.gov,AMattucci@TorranceCA.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/torrance`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2021,4 @@
 </body>
 
 </html>
+

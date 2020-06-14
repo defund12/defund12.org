@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and Urban County Council</h2>
+  <b>Lexington, KY</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/lexington`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `skay@lexingtonky.gov, cellinger@lexingtonky.gov, rmoloney@lexingtonky.gov, jbrown2@lexingtonky.gov, jmccurn@lexingtonky.gov, mswanson@lexingtonky.gov, susanl@lexingtonky.gov, bfarmer@lexingtonky.gov, aevans@lexingtonky.gov, pworley@lexingtonky.gov, fbrown@lexingtonky.gov, jmossotti@lexingtonky.gov, abledsoe@lexingtonky.gov,, reynolds@lexingtonky.gov, kplomin@lexingtonky.gov, CouncilCoreStaff@lexingtonky.gov, mayor@lexingtonky.gov, karmstrong@lexingtonky.gov`)">🔗</span>
+        skay@lexingtonky.gov, cellinger@lexingtonky.gov, rmoloney@lexingtonky.gov, jbrown2@lexingtonky.gov, jmccurn@lexingtonky.gov, mswanson@lexingtonky.gov, susanl@lexingtonky.gov, bfarmer@lexingtonky.gov, aevans@lexingtonky.gov, pworley@lexingtonky.gov, fbrown@lexingtonky.gov, jmossotti@lexingtonky.gov, abledsoe@lexingtonky.gov,, reynolds@lexingtonky.gov, kplomin@lexingtonky.gov, CouncilCoreStaff@lexingtonky.gov, mayor@lexingtonky.gov, karmstrong@lexingtonky.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY/STATE]. I am extremely concerned with the Lexington-Fayette Urban County Government's inordinate investment in the Lexington Police Department (LPD), particularly in light of the death of Breonna Taylor, a 26-year old Black woman who was killed by three Louisville Metro Police Department officers earlier this year on March 13th. The case--along with its mishandling and lack of appropriate corrective actions regarding the officers involved--has made national headlines and instigated protests from hundreds of thousands of people across the city, commonwealth, nation, and globe.
+
+I am therefore writing to demand that the LFUCG consider reapportioning general funds away from the LPD and towards social programs and other critical community needs effective at the beginning of FY20-21, July 1, 2020.
+It is morally reprehensible to dedicate approximately $84 million dollars of the city’s available funds to the LPD while cutting almost all funding to social service agencies, slashing the Affordable Housing Fund by 90%, and reducing funding for Homelessness initiatives by almost 50%.
+
+Through a reallocation of funds, we can promote the well-being of citizens and promote a safer city by sourcing community-based solutions, allowing residents to become invested in providing recommendations for improvements in criminal justice system operations and to engage in creating solutions that best serve their communities and their needs.
+
+I also urge the LFUCG to enact legislation that holds police members accountable and to overturn policies that allow police members to engage in unlawful behavior with impunity, and that an elected Civilian Oversight Committee be established with real enforcement powers. Ending an unfair and secretive internal LPD review process is a good first step in achieving this goal.
+
+I ask that all council members leverage great attention and effort towards fostering sustainable, long-term change, to prevent further tragedies at the hands of the police, and to take immediate action for the well-being of all Lexington citizens.
+
+Thank you,
+[YOUR NAME], in solidarity with the protestors and residents of Lexington, KY.
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY/STATE]. I am extremely concerned with the Lexington-Fayette Urban County Government’s inordinate investment in the Lexington Police Department (LPD), particularly in light of the death of Breonna Taylor, a 26-year old Black woman who was killed by three Louisville Metro Police Department officers earlier this year on March 13th. The case–along with its mishandling and lack of appropriate corrective actions regarding the officers involved–has made national headlines and instigated protests from hundreds of thousands of people across the city, commonwealth, nation, and globe.</p>
+
+<p>I am therefore writing to demand that the LFUCG consider reapportioning general funds away from the LPD and towards social programs and other critical community needs effective at the beginning of FY20-21, July 1, 2020.
+It is morally reprehensible to dedicate approximately $84 million dollars of the city’s available funds to the LPD while cutting almost all funding to social service agencies, slashing the Affordable Housing Fund by 90%, and reducing funding for Homelessness initiatives by almost 50%.</p>
+
+<p>Through a reallocation of funds, we can promote the well-being of citizens and promote a safer city by sourcing community-based solutions, allowing residents to become invested in providing recommendations for improvements in criminal justice system operations and to engage in creating solutions that best serve their communities and their needs.</p>
+
+<p>I also urge the LFUCG to enact legislation that holds police members accountable and to overturn policies that allow police members to engage in unlawful behavior with impunity, and that an elected Civilian Oversight Committee be established with real enforcement powers. Ending an unfair and secretive internal LPD review process is a good first step in achieving this goal.</p>
+
+<p>I ask that all council members leverage great attention and effort towards fostering sustainable, long-term change, to prevent further tragedies at the hands of the police, and to take immediate action for the well-being of all Lexington citizens.</p>
+
+<p>Thank you,
+[YOUR NAME], in solidarity with the protestors and residents of Lexington, KY.
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY/STATE]. I am extremely concerned with the Lexington-Fayette Urban County Government's inordinate investment in the Lexington Police Department (LPD), particularly in light of the death of Breonna Taylor, a 26-year old Black woman who was killed by three Louisville Metro Police Department officers earlier this year on March 13th. The case--along with its mishandling and lack of appropriate corrective actions regarding the officers involved--has made national headlines and instigated protests from hundreds of thousands of people across the city, commonwealth, nation, and globe.<br />
+<br />
+I am therefore writing to demand that the LFUCG consider reapportioning general funds away from the LPD and towards social programs and other critical community needs effective at the beginning of FY20-21, July 1, 2020.<br />
+It is morally reprehensible to dedicate approximately $84 million dollars of the city’s available funds to the LPD while cutting almost all funding to social service agencies, slashing the Affordable Housing Fund by 90%, and reducing funding for Homelessness initiatives by almost 50%.<br />
+<br />
+Through a reallocation of funds, we can promote the well-being of citizens and promote a safer city by sourcing community-based solutions, allowing residents to become invested in providing recommendations for improvements in criminal justice system operations and to engage in creating solutions that best serve their communities and their needs.<br />
+<br />
+I also urge the LFUCG to enact legislation that holds police members accountable and to overturn policies that allow police members to engage in unlawful behavior with impunity, and that an elected Civilian Oversight Committee be established with real enforcement powers. Ending an unfair and secretive internal LPD review process is a good first step in achieving this goal.<br />
+<br />
+I ask that all council members leverage great attention and effort towards fostering sustainable, long-term change, to prevent further tragedies at the hands of the police, and to take immediate action for the well-being of all Lexington citizens.<br />
+<br />
+Thank you,<br />
+[YOUR NAME], in solidarity with the protestors and residents of Lexington, KY.<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY/STATE]. I am extremely concerned with the Lexington-Fayette Urban County Government's inordinate investment in the Lexington Police Department (LPD), particularly in light of the death of Breonna Taylor, a 26-year old Black woman who was killed by three Louisville Metro Police Department officers earlier this year on March 13th. The case--along with its mishandling and lack of appropriate corrective actions regarding the officers involved--has made national headlines and instigated protests from hundreds of thousands of people across the city, commonwealth, nation, and globe.
+
+I am therefore writing to demand that the LFUCG consider reapportioning general funds away from the LPD and towards social programs and other critical community needs effective at the beginning of FY20-21, July 1, 2020.
+It is morally reprehensible to dedicate approximately $84 million dollars of the city’s available funds to the LPD while cutting almost all funding to social service agencies, slashing the Affordable Housing Fund by 90%, and reducing funding for Homelessness initiatives by almost 50%.
+
+Through a reallocation of funds, we can promote the well-being of citizens and promote a safer city by sourcing community-based solutions, allowing residents to become invested in providing recommendations for improvements in criminal justice system operations and to engage in creating solutions that best serve their communities and their needs.
+
+I also urge the LFUCG to enact legislation that holds police members accountable and to overturn policies that allow police members to engage in unlawful behavior with impunity, and that an elected Civilian Oversight Committee be established with real enforcement powers. Ending an unfair and secretive internal LPD review process is a good first step in achieving this goal.
+
+I ask that all council members leverage great attention and effort towards fostering sustainable, long-term change, to prevent further tragedies at the hands of the police, and to take immediate action for the well-being of all Lexington citizens.
+
+Thank you,
+[YOUR NAME], in solidarity with the protestors and residents of Lexington, KY.
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `skay@lexingtonky.gov,cellinger@lexingtonky.gov,rmoloney@lexingtonky.gov,jbrown2@lexingtonky.gov,jmccurn@lexingtonky.gov,mswanson@lexingtonky.gov,susanl@lexingtonky.gov,bfarmer@lexingtonky.gov,aevans@lexingtonky.gov,pworley@lexingtonky.gov,fbrown@lexingtonky.gov,jmossotti@lexingtonky.gov,abledsoe@lexingtonky.gov,,reynolds@lexingtonky.gov,kplomin@lexingtonky.gov,CouncilCoreStaff@lexingtonky.gov,mayor@lexingtonky.gov,karmstrong@lexingtonky.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/lexington`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

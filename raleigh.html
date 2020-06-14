@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Raleigh, NC</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/raleigh`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mary-ann.baldwin@raleighnc.gov`)">🔗</span>
+        mary-ann.baldwin@raleighnc.gov
+      </div>
+      
+      <div class="recipients">
+        <b>CC:</b> <span class="copyToClipboard" onclick="copyToClipboard(this, `jonathan.melton@raleighnc.gov, nicole.stewart@raleighnc.gov, patrick.buffkin@raleighnc.gov, david.cox@raleighnc.gov, corey.branch@raleighnc.gov, saige.martin@raleighnc.gov, david.knight@raleighnc.gov`)">🔗</span>
+        jonathan.melton@raleighnc.gov, nicole.stewart@raleighnc.gov, patrick.buffkin@raleighnc.gov, david.cox@raleighnc.gov, corey.branch@raleighnc.gov, saige.martin@raleighnc.gov, david.knight@raleighnc.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Baldwin,
+
+My name is [NAME] and I am a resident of Raleigh. I urge you and the rest of the city council to amend or deny the proposed budget for 2021. I would like to redirect money away from RPD and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for 2021 suggests that the largest fraction of the city’s budget should go to policing ($110,650,573), which is over 60% larger than even the second largest allocation of funds, fire ($67,687,901). If this is truly representative of the council’s thoughts on how funds should be allocated in a city in which over 6,000 of my neighbors (Raleigh + Wake County) are currently experiencing homelessness and in which nearly 100,000 of my neighbors (Raleigh + Wake County) are impoverished and at risk of becoming homeless (www.raleighrescue.org), I am ashamed to call Raleigh my home and I am ashamed to call you my elected officials.
+
+Crime is not random. Crime usually happens when someone has been unable to meet their basic needs through other means. So, to really "fight crime," we don't need more police officers - we need more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
+
+We don't need a militarized police force. We need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Mayor Baldwin, will you look out for me, and will you look out for us?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear Mayor Baldwin,</p>
+
+<p>My name is [NAME] and I am a resident of Raleigh. I urge you and the rest of the city council to amend or deny the proposed budget for 2021. I would like to redirect money away from RPD and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for 2021 suggests that the largest fraction of the city’s budget should go to policing ($110,650,573), which is over 60% larger than even the second largest allocation of funds, fire ($67,687,901). If this is truly representative of the council’s thoughts on how funds should be allocated in a city in which over 6,000 of my neighbors (Raleigh + Wake County) are currently experiencing homelessness and in which nearly 100,000 of my neighbors (Raleigh + Wake County) are impoverished and at risk of becoming homeless (www.raleighrescue.org), I am ashamed to call Raleigh my home and I am ashamed to call you my elected officials.</p>
+
+<p>Crime is not random. Crime usually happens when someone has been unable to meet their basic needs through other means. So, to really “fight crime,” we don’t need more police officers - we need more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!</p>
+
+<p>We don’t need a militarized police force. We need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Mayor Baldwin, will you look out for me, and will you look out for us?</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Baldwin,<br />
+<br />
+My name is [NAME] and I am a resident of Raleigh. I urge you and the rest of the city council to amend or deny the proposed budget for 2021. I would like to redirect money away from RPD and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for 2021 suggests that the largest fraction of the city’s budget should go to policing ($110,650,573), which is over 60% larger than even the second largest allocation of funds, fire ($67,687,901). If this is truly representative of the council’s thoughts on how funds should be allocated in a city in which over 6,000 of my neighbors (Raleigh + Wake County) are currently experiencing homelessness and in which nearly 100,000 of my neighbors (Raleigh + Wake County) are impoverished and at risk of becoming homeless (www.raleighrescue.org), I am ashamed to call Raleigh my home and I am ashamed to call you my elected officials.<br />
+<br />
+Crime is not random. Crime usually happens when someone has been unable to meet their basic needs through other means. So, to really "fight crime," we don't need more police officers - we need more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!<br />
+<br />
+We don't need a militarized police force. We need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Mayor Baldwin, will you look out for me, and will you look out for us?<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear Mayor Baldwin,
+
+My name is [NAME] and I am a resident of Raleigh. I urge you and the rest of the city council to amend or deny the proposed budget for 2021. I would like to redirect money away from RPD and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for 2021 suggests that the largest fraction of the city’s budget should go to policing ($110,650,573), which is over 60% larger than even the second largest allocation of funds, fire ($67,687,901). If this is truly representative of the council’s thoughts on how funds should be allocated in a city in which over 6,000 of my neighbors (Raleigh + Wake County) are currently experiencing homelessness and in which nearly 100,000 of my neighbors (Raleigh + Wake County) are impoverished and at risk of becoming homeless (www.raleighrescue.org), I am ashamed to call Raleigh my home and I am ashamed to call you my elected officials.
+
+Crime is not random. Crime usually happens when someone has been unable to meet their basic needs through other means. So, to really "fight crime," we don't need more police officers - we need more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
+
+We don't need a militarized police force. We need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Mayor Baldwin, will you look out for me, and will you look out for us?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `mary-ann.baldwin@raleighnc.gov`;
+    const cc = `jonathan.melton@raleighnc.gov,nicole.stewart@raleighnc.gov,patrick.buffkin@raleighnc.gov,david.cox@raleighnc.gov,corey.branch@raleighnc.gov,saige.martin@raleighnc.gov,david.knight@raleighnc.gov`;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/raleigh`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

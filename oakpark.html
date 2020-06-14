@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Abu-Taleb and Village Board</h2>
+  <b>Oak Park, IL</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/oakpark`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `board@oak-park.us, mayoranan@oak-park.us, trusteeandrews@oak-park.us, trusteeboutet@oak-park.us, TrusteeBuchanan@oak-park.us, trusteemoroney@oak-park.us, trusteetaglia@oak-park.us, TrusteeWalker-Peddakotla@oak-park.us, clerkscaman@oak-park.us`)">🔗</span>
+        board@oak-park.us, mayoranan@oak-park.us, trusteeandrews@oak-park.us, trusteeboutet@oak-park.us, TrusteeBuchanan@oak-park.us, trusteemoroney@oak-park.us, trusteetaglia@oak-park.us, TrusteeWalker-Peddakotla@oak-park.us, clerkscaman@oak-park.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Anan Abu-Taleb and the Oak Park Village Board,
+
+My name is [YOUR NAME] and I am a resident of Oak Park. I am writing to demand that the Oak Park Village Board adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In 2019, the Village of Oak Park allocated $24,877,758 to our police system, an inordinate 33% of the Village general fund budget. This is compared much higher than the amount of money allocated towards public health services (less than 0.01% of the budget), or any other department. Next year, there will likely be deficits as a result of the pandemic. The city must recoup these funds by decreasing the police budget.
+
+I demand that the Village Board begin meaningfully defunding the Oak Park Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Oak Park residents.
+
+History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs for police will not fix our current system. It will instead cause future lives, especially Black lives, to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.
+
+I am urging you to act on this as you develop the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Anan Abu-Taleb and the Oak Park Village Board,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Oak Park. I am writing to demand that the Oak Park Village Board adopt a city budget that prioritizes community well-being, and redirects funding away from the police.</p>
+
+<p>In 2019, the Village of Oak Park allocated $24,877,758 to our police system, an inordinate 33% of the Village general fund budget. This is compared much higher than the amount of money allocated towards public health services (less than 0.01% of the budget), or any other department. Next year, there will likely be deficits as a result of the pandemic. The city must recoup these funds by decreasing the police budget.</p>
+
+<p>I demand that the Village Board begin meaningfully defunding the Oak Park Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Oak Park residents.</p>
+
+<p>History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs for police will not fix our current system. It will instead cause future lives, especially Black lives, to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.</p>
+
+<p>I am urging you to act on this as you develop the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Anan Abu-Taleb and the Oak Park Village Board,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Oak Park. I am writing to demand that the Oak Park Village Board adopt a city budget that prioritizes community well-being, and redirects funding away from the police.<br />
+<br />
+In 2019, the Village of Oak Park allocated $24,877,758 to our police system, an inordinate 33% of the Village general fund budget. This is compared much higher than the amount of money allocated towards public health services (less than 0.01% of the budget), or any other department. Next year, there will likely be deficits as a result of the pandemic. The city must recoup these funds by decreasing the police budget.<br />
+<br />
+I demand that the Village Board begin meaningfully defunding the Oak Park Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Oak Park residents.<br />
+<br />
+History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs for police will not fix our current system. It will instead cause future lives, especially Black lives, to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.<br />
+<br />
+I am urging you to act on this as you develop the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Anan Abu-Taleb and the Oak Park Village Board,
+
+My name is [YOUR NAME] and I am a resident of Oak Park. I am writing to demand that the Oak Park Village Board adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In 2019, the Village of Oak Park allocated $24,877,758 to our police system, an inordinate 33% of the Village general fund budget. This is compared much higher than the amount of money allocated towards public health services (less than 0.01% of the budget), or any other department. Next year, there will likely be deficits as a result of the pandemic. The city must recoup these funds by decreasing the police budget.
+
+I demand that the Village Board begin meaningfully defunding the Oak Park Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Oak Park residents.
+
+History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs for police will not fix our current system. It will instead cause future lives, especially Black lives, to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.
+
+I am urging you to act on this as you develop the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `board@oak-park.us,mayoranan@oak-park.us,trusteeandrews@oak-park.us,trusteeboutet@oak-park.us,TrusteeBuchanan@oak-park.us,trusteemoroney@oak-park.us,trusteetaglia@oak-park.us,TrusteeWalker-Peddakotla@oak-park.us,clerkscaman@oak-park.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/oakpark`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

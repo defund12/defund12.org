@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the City Council and Mayor Alexander</h2>
+  <b>Norfolk, VA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/norfolk`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@norfolk.gov, martin.thomas@norfolk.gov, courtney.doyle@norfolk.gov, mamie.johnson@norfolk.gov, paul.riddick@norfolk.gov, thomas.smigiel@norfolk.gov, andria.mcclellan@norfolk.gov, angelia.williams@norfolk.gov`)">🔗</span>
+        mayor@norfolk.gov, martin.thomas@norfolk.gov, courtney.doyle@norfolk.gov, mamie.johnson@norfolk.gov, paul.riddick@norfolk.gov, thomas.smigiel@norfolk.gov, andria.mcclellan@norfolk.gov, angelia.williams@norfolk.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Alexander and City Council Members,
+
+My name is [YOUR NAME], and I am a resident of Norfolk. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to institutionalized racism. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+Norfolk PD receives a disproportionate amount of our city's financial resources. In FY 2020, the Norfolk PD adopted $77,618,592 in total expenditures while the entire Norfolk Community Services Board's adopted expenditures totaled $25,078,661. While we’ve been spending extraordinary amounts on policing, we have not seen significant improvements to safety, homelessness, mental health, or affordability in our city.
+
+I call on you to meaningfully restrict the Norfolk PD budget and instead use those extraordinary resources towards, for example, solving homelessness, which is felt most by our Black neighbors and veterans. Research shows social programs and education to be much more effective at promoting safety and social equity than policing and incarceration.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Alexander and City Council Members,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Norfolk. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to institutionalized racism. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.</p>
+
+<p>Norfolk PD receives a disproportionate amount of our city’s financial resources. In FY 2020, the Norfolk PD adopted $77,618,592 in total expenditures while the entire Norfolk Community Services Board’s adopted expenditures totaled $25,078,661. While we’ve been spending extraordinary amounts on policing, we have not seen significant improvements to safety, homelessness, mental health, or affordability in our city.</p>
+
+<p>I call on you to meaningfully restrict the Norfolk PD budget and instead use those extraordinary resources towards, for example, solving homelessness, which is felt most by our Black neighbors and veterans. Research shows social programs and education to be much more effective at promoting safety and social equity than policing and incarceration.</p>
+
+<p>We can be a beacon for other cities to follow if only we have the courage to change.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Alexander and City Council Members,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Norfolk. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to institutionalized racism. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.<br />
+<br />
+Norfolk PD receives a disproportionate amount of our city's financial resources. In FY 2020, the Norfolk PD adopted $77,618,592 in total expenditures while the entire Norfolk Community Services Board's adopted expenditures totaled $25,078,661. While we’ve been spending extraordinary amounts on policing, we have not seen significant improvements to safety, homelessness, mental health, or affordability in our city.<br />
+<br />
+I call on you to meaningfully restrict the Norfolk PD budget and instead use those extraordinary resources towards, for example, solving homelessness, which is felt most by our Black neighbors and veterans. Research shows social programs and education to be much more effective at promoting safety and social equity than policing and incarceration.<br />
+<br />
+We can be a beacon for other cities to follow if only we have the courage to change.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Alexander and City Council Members,
+
+My name is [YOUR NAME], and I am a resident of Norfolk. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to institutionalized racism. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+Norfolk PD receives a disproportionate amount of our city's financial resources. In FY 2020, the Norfolk PD adopted $77,618,592 in total expenditures while the entire Norfolk Community Services Board's adopted expenditures totaled $25,078,661. While we’ve been spending extraordinary amounts on policing, we have not seen significant improvements to safety, homelessness, mental health, or affordability in our city.
+
+I call on you to meaningfully restrict the Norfolk PD budget and instead use those extraordinary resources towards, for example, solving homelessness, which is felt most by our Black neighbors and veterans. Research shows social programs and education to be much more effective at promoting safety and social equity than policing and incarceration.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@norfolk.gov,martin.thomas@norfolk.gov,courtney.doyle@norfolk.gov,mamie.johnson@norfolk.gov,paul.riddick@norfolk.gov,thomas.smigiel@norfolk.gov,andria.mcclellan@norfolk.gov,angelia.williams@norfolk.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/norfolk`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+

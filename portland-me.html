@@ -70,6 +70,82 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Portland, ME</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/portland-me`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `ksnyder@portlandmaine.gov, bsr@portlandmaine.gov, sthibodeau@portlandmaine.gov, tchong@portlandmaine.gov, jcosta@portlandmaine.gov, kcook@portlandmaine.gov, pali@portlandmaine.gov, jduson@portlandmaine.gov, nmm@portlandmaine.gov, fclark@portlandmaine.org, Richard.Farnsworth@legislature.maine.gov, pali@portlandmaine.org`)">🔗</span>
+        ksnyder@portlandmaine.gov, bsr@portlandmaine.gov, sthibodeau@portlandmaine.gov, tchong@portlandmaine.gov, jcosta@portlandmaine.gov, kcook@portlandmaine.gov, pali@portlandmaine.gov, jduson@portlandmaine.gov, nmm@portlandmaine.gov, fclark@portlandmaine.org, Richard.Farnsworth@legislature.maine.gov, pali@portlandmaine.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Civil Servants,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].
+
+I am writing to ask that you provide no new funding for the Portland Police Department (PPD) and that you halt all funding that has already been approved in order to begin defunding the police immediately.
+
+According to the City Manager's Recommended Budget, PPD received an overall increase of 5.3% in the budget plan for 2020. I ask you to refuse to increase the budget for PPD and rather reallocate funding for PPD to organizations for essential human services including education, social services, housing, job creation. 
+
+With the economic impact that COVID-19 has had on Portland’s economy, difficult and thoughtful decisions will be required regarding the budget for Portland for 2021. Residents of Portland are experiencing homelessness, illness, unemployment, loss of income, and police brutality in record numbers. The people that have bear the brunt of this are People of Color, Indigenous peoples, the poor, and the working class.
+
+Data shows that Black people are disproportionately more likely to be policed, arrested, and incarcerated than white people in Portland. This proves that systemic racism is present here in Portland and is perpetuated by the Portland Police Department. Defunding the police will be the first step towards improving the quality of living for Black, Indigenous, People of Color (BIPOC) that are residents of Portland. It will divert funds from going to an institutionally racist association and allow those funds to be diverted to human services that need them badly.
+
+Please do the right thing. Prioritize the health, safety and well-being of Portland residents.
+
+REFUSE TO FUND THE PORTLAND POLICE DEPARTMENT.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Civil Servants,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].</p>
+
+<p>I am writing to ask that you provide no new funding for the Portland Police Department (PPD) and that you halt all funding that has already been approved in order to begin defunding the police immediately.</p>
+
+<p>According to the City Manager’s Recommended Budget, PPD received an overall increase of 5.3% in the budget plan for 2020. I ask you to refuse to increase the budget for PPD and rather reallocate funding for PPD to organizations for essential human services including education, social services, housing, job creation.</p>
+
+<p>With the economic impact that COVID-19 has had on Portland’s economy, difficult and thoughtful decisions will be required regarding the budget for Portland for 2021. Residents of Portland are experiencing homelessness, illness, unemployment, loss of income, and police brutality in record numbers. The people that have bear the brunt of this are People of Color, Indigenous peoples, the poor, and the working class.</p>
+
+<p>Data shows that Black people are disproportionately more likely to be policed, arrested, and incarcerated than white people in Portland. This proves that systemic racism is present here in Portland and is perpetuated by the Portland Police Department. Defunding the police will be the first step towards improving the quality of living for Black, Indigenous, People of Color (BIPOC) that are residents of Portland. It will divert funds from going to an institutionally racist association and allow those funds to be diverted to human services that need them badly.</p>
+
+<p>Please do the right thing. Prioritize the health, safety and well-being of Portland residents.</p>
+
+<p>REFUSE TO FUND THE PORTLAND POLICE DEPARTMENT.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1946,74 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Civil Servants,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].<br />
+<br />
+I am writing to ask that you provide no new funding for the Portland Police Department (PPD) and that you halt all funding that has already been approved in order to begin defunding the police immediately.<br />
+<br />
+According to the City Manager's Recommended Budget, PPD received an overall increase of 5.3% in the budget plan for 2020. I ask you to refuse to increase the budget for PPD and rather reallocate funding for PPD to organizations for essential human services including education, social services, housing, job creation. <br />
+<br />
+With the economic impact that COVID-19 has had on Portland’s economy, difficult and thoughtful decisions will be required regarding the budget for Portland for 2021. Residents of Portland are experiencing homelessness, illness, unemployment, loss of income, and police brutality in record numbers. The people that have bear the brunt of this are People of Color, Indigenous peoples, the poor, and the working class.<br />
+<br />
+Data shows that Black people are disproportionately more likely to be policed, arrested, and incarcerated than white people in Portland. This proves that systemic racism is present here in Portland and is perpetuated by the Portland Police Department. Defunding the police will be the first step towards improving the quality of living for Black, Indigenous, People of Color (BIPOC) that are residents of Portland. It will divert funds from going to an institutionally racist association and allow those funds to be diverted to human services that need them badly.<br />
+<br />
+Please do the right thing. Prioritize the health, safety and well-being of Portland residents.<br />
+<br />
+REFUSE TO FUND THE PORTLAND POLICE DEPARTMENT.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Civil Servants,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].
+
+I am writing to ask that you provide no new funding for the Portland Police Department (PPD) and that you halt all funding that has already been approved in order to begin defunding the police immediately.
+
+According to the City Manager's Recommended Budget, PPD received an overall increase of 5.3% in the budget plan for 2020. I ask you to refuse to increase the budget for PPD and rather reallocate funding for PPD to organizations for essential human services including education, social services, housing, job creation. 
+
+With the economic impact that COVID-19 has had on Portland’s economy, difficult and thoughtful decisions will be required regarding the budget for Portland for 2021. Residents of Portland are experiencing homelessness, illness, unemployment, loss of income, and police brutality in record numbers. The people that have bear the brunt of this are People of Color, Indigenous peoples, the poor, and the working class.
+
+Data shows that Black people are disproportionately more likely to be policed, arrested, and incarcerated than white people in Portland. This proves that systemic racism is present here in Portland and is perpetuated by the Portland Police Department. Defunding the police will be the first step towards improving the quality of living for Black, Indigenous, People of Color (BIPOC) that are residents of Portland. It will divert funds from going to an institutionally racist association and allow those funds to be diverted to human services that need them badly.
+
+Please do the right thing. Prioritize the health, safety and well-being of Portland residents.
+
+REFUSE TO FUND THE PORTLAND POLICE DEPARTMENT.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `ksnyder@portlandmaine.gov,bsr@portlandmaine.gov,sthibodeau@portlandmaine.gov,tchong@portlandmaine.gov,jcosta@portlandmaine.gov,kcook@portlandmaine.gov,pali@portlandmaine.gov,jduson@portlandmaine.gov,nmm@portlandmaine.gov,fclark@portlandmaine.org,Richard.Farnsworth@legislature.maine.gov,pali@portlandmaine.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/portland-me`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2027,4 @@
 </body>
 
 </html>
+

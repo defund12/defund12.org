@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and Town Council</h2>
+  <b>Jamestown, RI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/jamestown`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `billpiva8@cox.net, mgblanco@cox.net, meagherjamestowntc@gmail.com, jtownelc@aol.com, Major510@cox.net`)">🔗</span>
+        billpiva8@cox.net, mgblanco@cox.net, meagherjamestowntc@gmail.com, jtownelc@aol.com, Major510@cox.net
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Jamestown Town Council,
+
+My name is [Your Name] and I am a resident of [Your Neighborhood]. I am writing to demand that Jamestown Town Council adopt a town budget that prioritizes community welfare and redirects funding away from police.
+
+This fiscal year the town plans to give just over 1.8 million to our police system, a substantial 15.5% of the budget. Community development interests--including libraries, parks, recreation, and public health--by contrast make up only 9% of the budget in total. Out of the community development interests only 31,000 dollars is allocated to Public Health services(0.2% of the budget), and no money is allocated to affordable housing.
+
+I demand that Town Council begin defunding Jamestown Police, and re-allocate those funds to community programs that could truly help the Jamestown community, like community based mental health services, affordable housing, and other improved social services. I demand a budget reflecting what the community of Jamestown needs.
+
+The Jamestown community needs to take part in meaningful change. We may be small, but we must consider the message that our community sends when it does not take part in considering our role in perpetuating systems of harm instead of providing for those most in need.
+
+Sincerely,
+
+[Your Name]
+[Your Address]
+[Your Phone Number]`)">🔗</span>
+        <br /> <p>Dear Jamestown Town Council,</p>
+
+<p>My name is [Your Name] and I am a resident of [Your Neighborhood]. I am writing to demand that Jamestown Town Council adopt a town budget that prioritizes community welfare and redirects funding away from police.</p>
+
+<p>This fiscal year the town plans to give just over 1.8 million to our police system, a substantial 15.5% of the budget. Community development interests–including libraries, parks, recreation, and public health–by contrast make up only 9% of the budget in total. Out of the community development interests only 31,000 dollars is allocated to Public Health services(0.2% of the budget), and no money is allocated to affordable housing.</p>
+
+<p>I demand that Town Council begin defunding Jamestown Police, and re-allocate those funds to community programs that could truly help the Jamestown community, like community based mental health services, affordable housing, and other improved social services. I demand a budget reflecting what the community of Jamestown needs.</p>
+
+<p>The Jamestown community needs to take part in meaningful change. We may be small, but we must consider the message that our community sends when it does not take part in considering our role in perpetuating systems of harm instead of providing for those most in need.</p>
+
+<p>Sincerely,</p>
+
+<p>[Your Name]
+[Your Address]
+[Your Phone Number]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Jamestown Town Council,<br />
+<br />
+My name is [Your Name] and I am a resident of [Your Neighborhood]. I am writing to demand that Jamestown Town Council adopt a town budget that prioritizes community welfare and redirects funding away from police.<br />
+<br />
+This fiscal year the town plans to give just over 1.8 million to our police system, a substantial 15.5% of the budget. Community development interests--including libraries, parks, recreation, and public health--by contrast make up only 9% of the budget in total. Out of the community development interests only 31,000 dollars is allocated to Public Health services(0.2% of the budget), and no money is allocated to affordable housing.<br />
+<br />
+I demand that Town Council begin defunding Jamestown Police, and re-allocate those funds to community programs that could truly help the Jamestown community, like community based mental health services, affordable housing, and other improved social services. I demand a budget reflecting what the community of Jamestown needs.<br />
+<br />
+The Jamestown community needs to take part in meaningful change. We may be small, but we must consider the message that our community sends when it does not take part in considering our role in perpetuating systems of harm instead of providing for those most in need.<br />
+<br />
+Sincerely,<br />
+<br />
+[Your Name]<br />
+[Your Address]<br />
+[Your Phone Number]`.trim() :
+      `Dear Jamestown Town Council,
+
+My name is [Your Name] and I am a resident of [Your Neighborhood]. I am writing to demand that Jamestown Town Council adopt a town budget that prioritizes community welfare and redirects funding away from police.
+
+This fiscal year the town plans to give just over 1.8 million to our police system, a substantial 15.5% of the budget. Community development interests--including libraries, parks, recreation, and public health--by contrast make up only 9% of the budget in total. Out of the community development interests only 31,000 dollars is allocated to Public Health services(0.2% of the budget), and no money is allocated to affordable housing.
+
+I demand that Town Council begin defunding Jamestown Police, and re-allocate those funds to community programs that could truly help the Jamestown community, like community based mental health services, affordable housing, and other improved social services. I demand a budget reflecting what the community of Jamestown needs.
+
+The Jamestown community needs to take part in meaningful change. We may be small, but we must consider the message that our community sends when it does not take part in considering our role in perpetuating systems of harm instead of providing for those most in need.
+
+Sincerely,
+
+[Your Name]
+[Your Address]
+[Your Phone Number]`.trim()
+    );
+    const recipients = `billpiva8@cox.net,mgblanco@cox.net,meagherjamestowntc@gmail.com,jtownelc@aol.com,Major510@cox.net`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/jamestown`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+

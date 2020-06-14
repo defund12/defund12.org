@@ -70,6 +70,92 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor</h2>
+  <b>Pittsburgh, PA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/pittsburgh-mayor`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `bill.peduto@pittsburghpa.gov`)">🔗</span>
+        bill.peduto@pittsburghpa.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Peduto,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]
+
+From reports of protesters being attacked around the city to the killing of Antwon Rose in East Pittsburgh - the police have shown that they are not doing their jobs to serve and protect all citizens of this city.
+
+In 2020 the Bureau of Police’s budget INCREASED by over $10 million dollars. The first goal listed on the budget is to improve “boots on the ground” field operations. This is not a budget dedicated to keeping citizens safe and healthy.
+
+I demand that budgeting funds are moved from the Bureau of Police (~18.8% of Pittsburgh’s Operating Budget) towards programs that support housing, jobs, education, and improve quality of life in our community and for Black Pittsburghers.
+
+Here are some departments from the Operations and Capital budgets that could use this financial support:
+
+Office of Equity - only allocated $1,758,022 (~0.29% of 2020 Operating Budget)
+Neighborhood and Community Development - only allocated $7,502,080 (~6.8% of 2020 Capital Budget)
+Community Based Organizations - only allocated $500,000 (~0.45% of 2020 Capital Budget)
+Neighborhood Employment Centers - only allocated $150,000 (~0.14% of Capital Budget)
+Pittsburgh Employment Program - only allocated $150,000 (~0.14% of Capital Budget)
+Fair Housing - only allocated $100,000 (~0.09% of Capital Budget)
+
+The lack of community support is evident in the Pittsburgh 2020 budget. No amount of tweets, photo-ops, bare minimum training, or grand promises will make up for the fact that the city is not monetarily invested in supporting its people. Move to make real change in the city of Pittsburgh by divesting from the Bureau of Police and funneling money back into supporting the community.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL] 
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Peduto,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]</p>
+
+<p>From reports of protesters being attacked around the city to the killing of Antwon Rose in East Pittsburgh - the police have shown that they are not doing their jobs to serve and protect all citizens of this city.</p>
+
+<p>In 2020 the Bureau of Police’s budget INCREASED by over $10 million dollars. The first goal listed on the budget is to improve “boots on the ground” field operations. This is not a budget dedicated to keeping citizens safe and healthy.</p>
+
+<p>I demand that budgeting funds are moved from the Bureau of Police (~18.8% of Pittsburgh’s Operating Budget) towards programs that support housing, jobs, education, and improve quality of life in our community and for Black Pittsburghers.</p>
+
+<p>Here are some departments from the Operations and Capital budgets that could use this financial support:</p>
+
+<p>Office of Equity - only allocated $1,758,022 (~0.29% of 2020 Operating Budget)
+Neighborhood and Community Development - only allocated $7,502,080 (~6.8% of 2020 Capital Budget)
+Community Based Organizations - only allocated $500,000 (~0.45% of 2020 Capital Budget)
+Neighborhood Employment Centers - only allocated $150,000 (~0.14% of Capital Budget)
+Pittsburgh Employment Program - only allocated $150,000 (~0.14% of Capital Budget)
+Fair Housing - only allocated $100,000 (~0.09% of Capital Budget)</p>
+
+<p>The lack of community support is evident in the Pittsburgh 2020 budget. No amount of tweets, photo-ops, bare minimum training, or grand promises will make up for the fact that the city is not monetarily invested in supporting its people. Move to make real change in the city of Pittsburgh by divesting from the Bureau of Police and funneling money back into supporting the community.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL] 
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1956,84 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Peduto,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]<br />
+<br />
+From reports of protesters being attacked around the city to the killing of Antwon Rose in East Pittsburgh - the police have shown that they are not doing their jobs to serve and protect all citizens of this city.<br />
+<br />
+In 2020 the Bureau of Police’s budget INCREASED by over $10 million dollars. The first goal listed on the budget is to improve “boots on the ground” field operations. This is not a budget dedicated to keeping citizens safe and healthy.<br />
+<br />
+I demand that budgeting funds are moved from the Bureau of Police (~18.8% of Pittsburgh’s Operating Budget) towards programs that support housing, jobs, education, and improve quality of life in our community and for Black Pittsburghers.<br />
+<br />
+Here are some departments from the Operations and Capital budgets that could use this financial support:<br />
+<br />
+Office of Equity - only allocated $1,758,022 (~0.29% of 2020 Operating Budget)<br />
+Neighborhood and Community Development - only allocated $7,502,080 (~6.8% of 2020 Capital Budget)<br />
+Community Based Organizations - only allocated $500,000 (~0.45% of 2020 Capital Budget)<br />
+Neighborhood Employment Centers - only allocated $150,000 (~0.14% of Capital Budget)<br />
+Pittsburgh Employment Program - only allocated $150,000 (~0.14% of Capital Budget)<br />
+Fair Housing - only allocated $100,000 (~0.09% of Capital Budget)<br />
+<br />
+The lack of community support is evident in the Pittsburgh 2020 budget. No amount of tweets, photo-ops, bare minimum training, or grand promises will make up for the fact that the city is not monetarily invested in supporting its people. Move to make real change in the city of Pittsburgh by divesting from the Bureau of Police and funneling money back into supporting the community.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL] <br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Peduto,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]
+
+From reports of protesters being attacked around the city to the killing of Antwon Rose in East Pittsburgh - the police have shown that they are not doing their jobs to serve and protect all citizens of this city.
+
+In 2020 the Bureau of Police’s budget INCREASED by over $10 million dollars. The first goal listed on the budget is to improve “boots on the ground” field operations. This is not a budget dedicated to keeping citizens safe and healthy.
+
+I demand that budgeting funds are moved from the Bureau of Police (~18.8% of Pittsburgh’s Operating Budget) towards programs that support housing, jobs, education, and improve quality of life in our community and for Black Pittsburghers.
+
+Here are some departments from the Operations and Capital budgets that could use this financial support:
+
+Office of Equity - only allocated $1,758,022 (~0.29% of 2020 Operating Budget)
+Neighborhood and Community Development - only allocated $7,502,080 (~6.8% of 2020 Capital Budget)
+Community Based Organizations - only allocated $500,000 (~0.45% of 2020 Capital Budget)
+Neighborhood Employment Centers - only allocated $150,000 (~0.14% of Capital Budget)
+Pittsburgh Employment Program - only allocated $150,000 (~0.14% of Capital Budget)
+Fair Housing - only allocated $100,000 (~0.09% of Capital Budget)
+
+The lack of community support is evident in the Pittsburgh 2020 budget. No amount of tweets, photo-ops, bare minimum training, or grand promises will make up for the fact that the city is not monetarily invested in supporting its people. Move to make real change in the city of Pittsburgh by divesting from the Bureau of Police and funneling money back into supporting the community.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL] 
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `bill.peduto@pittsburghpa.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/pittsburgh-mayor`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2047,4 @@
 </body>
 
 </html>
+

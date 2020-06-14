@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Emeryville, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/emeryville`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `crpatz@emeryville.org, dmartinez@emeryville.org, jbauters@emeryville.org, sdonahue@emeryville.org, amedina@emeryville.org`)">🔗</span>
+        crpatz@emeryville.org, dmartinez@emeryville.org, jbauters@emeryville.org, sdonahue@emeryville.org, amedina@emeryville.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Emeryville Mayor and City Council Members:
+
+My name is [YOUR NAME] and I am a resident of Emeryville, CA. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Our little town experienced some of the righteous and valid anger that Black communities have felt for centuries. Our police force's response was less than acceptable. Videos of the Gamestop loot showed police using what looked like flash-bang grenades to disperse those kids. Studies showing that flash bangs cause permanent hearing damage, and I was appalled that police would use such weapons against their own communities. Moreover, the fact that such weapons were used against kids--it was a Gamestop after all--was even more infuriating. We may have an interest to protect property, but that interest can never overcome our interest to protect people. Gamestop has insurance, those kids, on the other hand, will continue to deal with the same systemic issues that they, their parents, and generations before them have had to face.
+
+Such police action clearly displays that our local police embodies the same problems being marched against all across our country. At the same time, we spend more on police than any other department: 31% of our budget. Community services amounted to just 8%.
+
+I demand that we slash the police budget and defund its programs to meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, instead of empowering police to physically hurt community members while solving none of the underlying issues. Further, police reform cannot help us, that much is clear. Instead we must move away from militaristic services provided by the polices to people-oriented services that try to resolve problems in the community, rather than beating them down.
+
+Many other cities, including Minneapolis, are now beginning to defund their police departments. It is possible, and we can look to them for guidance.
+
+The current system has failed us. We must look to new ways of providing a safe environment to everyone in our community and reimagining the role of police in our little town.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Emeryville Mayor and City Council Members:</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Emeryville, CA. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Our little town experienced some of the righteous and valid anger that Black communities have felt for centuries. Our police force’s response was less than acceptable. Videos of the Gamestop loot showed police using what looked like flash-bang grenades to disperse those kids. Studies showing that flash bangs cause permanent hearing damage, and I was appalled that police would use such weapons against their own communities. Moreover, the fact that such weapons were used against kids–it was a Gamestop after all–was even more infuriating. We may have an interest to protect property, but that interest can never overcome our interest to protect people. Gamestop has insurance, those kids, on the other hand, will continue to deal with the same systemic issues that they, their parents, and generations before them have had to face.</p>
+
+<p>Such police action clearly displays that our local police embodies the same problems being marched against all across our country. At the same time, we spend more on police than any other department: 31% of our budget. Community services amounted to just 8%.</p>
+
+<p>I demand that we slash the police budget and defund its programs to meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, instead of empowering police to physically hurt community members while solving none of the underlying issues. Further, police reform cannot help us, that much is clear. Instead we must move away from militaristic services provided by the polices to people-oriented services that try to resolve problems in the community, rather than beating them down.</p>
+
+<p>Many other cities, including Minneapolis, are now beginning to defund their police departments. It is possible, and we can look to them for guidance.</p>
+
+<p>The current system has failed us. We must look to new ways of providing a safe environment to everyone in our community and reimagining the role of police in our little town.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Emeryville Mayor and City Council Members:<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Emeryville, CA. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Our little town experienced some of the righteous and valid anger that Black communities have felt for centuries. Our police force's response was less than acceptable. Videos of the Gamestop loot showed police using what looked like flash-bang grenades to disperse those kids. Studies showing that flash bangs cause permanent hearing damage, and I was appalled that police would use such weapons against their own communities. Moreover, the fact that such weapons were used against kids--it was a Gamestop after all--was even more infuriating. We may have an interest to protect property, but that interest can never overcome our interest to protect people. Gamestop has insurance, those kids, on the other hand, will continue to deal with the same systemic issues that they, their parents, and generations before them have had to face.<br />
+<br />
+Such police action clearly displays that our local police embodies the same problems being marched against all across our country. At the same time, we spend more on police than any other department: 31% of our budget. Community services amounted to just 8%.<br />
+<br />
+I demand that we slash the police budget and defund its programs to meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, instead of empowering police to physically hurt community members while solving none of the underlying issues. Further, police reform cannot help us, that much is clear. Instead we must move away from militaristic services provided by the polices to people-oriented services that try to resolve problems in the community, rather than beating them down.<br />
+<br />
+Many other cities, including Minneapolis, are now beginning to defund their police departments. It is possible, and we can look to them for guidance.<br />
+<br />
+The current system has failed us. We must look to new ways of providing a safe environment to everyone in our community and reimagining the role of police in our little town.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Emeryville Mayor and City Council Members:
+
+My name is [YOUR NAME] and I am a resident of Emeryville, CA. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. Our little town experienced some of the righteous and valid anger that Black communities have felt for centuries. Our police force's response was less than acceptable. Videos of the Gamestop loot showed police using what looked like flash-bang grenades to disperse those kids. Studies showing that flash bangs cause permanent hearing damage, and I was appalled that police would use such weapons against their own communities. Moreover, the fact that such weapons were used against kids--it was a Gamestop after all--was even more infuriating. We may have an interest to protect property, but that interest can never overcome our interest to protect people. Gamestop has insurance, those kids, on the other hand, will continue to deal with the same systemic issues that they, their parents, and generations before them have had to face.
+
+Such police action clearly displays that our local police embodies the same problems being marched against all across our country. At the same time, we spend more on police than any other department: 31% of our budget. Community services amounted to just 8%.
+
+I demand that we slash the police budget and defund its programs to meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, instead of empowering police to physically hurt community members while solving none of the underlying issues. Further, police reform cannot help us, that much is clear. Instead we must move away from militaristic services provided by the polices to people-oriented services that try to resolve problems in the community, rather than beating them down.
+
+Many other cities, including Minneapolis, are now beginning to defund their police departments. It is possible, and we can look to them for guidance.
+
+The current system has failed us. We must look to new ways of providing a safe environment to everyone in our community and reimagining the role of police in our little town.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `crpatz@emeryville.org,dmartinez@emeryville.org,jbauters@emeryville.org,sdonahue@emeryville.org,amedina@emeryville.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/emeryville`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

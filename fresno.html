@@ -70,6 +70,60 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council</h2>
+  <b>Fresno, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/fresno`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `esmeralda.soria@fresno.gov, miguel.arias@fresno.gov, paul.capriogolio@fresno.gov, mike.karbassi@fresno.gov, luis.chavez@fresno.gov, garry.bredefeld@fresno.gov, nelson.esparza@fresno.gov, wilma.quan@fresno.gov, yvonne.spence@fresno.gov`)">🔗</span>
+        esmeralda.soria@fresno.gov, miguel.arias@fresno.gov, paul.capriogolio@fresno.gov, mike.karbassi@fresno.gov, luis.chavez@fresno.gov, garry.bredefeld@fresno.gov, nelson.esparza@fresno.gov, wilma.quan@fresno.gov, yvonne.spence@fresno.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello City Council Member,
+
+My name is [YOUR NAME] and I am a resident of Fresno, CA. As you may well know this year, city council officials are expecting a budget deficit of $32 million due to Covid-19.
+
+The Fresno Police Department makes up approximately 53% of the city's budget, more than the budgets of FAX, PARCS, Human Services, Affordable Housing, and economic development COMBINED. In light of recent police violence, as well as documented cases of FPD abuse and racial profiling, I urge you to advocate for reducing funding to FPD during the City of Fresno budget hearing on Monday, June 15th, 2020. I would like to redirect funding away from FPD and into health, housing, education, and social services that support vulnerable residents and residents of color, especially lower-income Black residents. I would also urge you to work towards an eventual abolition of the Fresno Police Department in favor of investing into non-violent social services, restorative justice practices, and investing back into minority communities.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello City Council Member,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Fresno, CA. As you may well know this year, city council officials are expecting a budget deficit of $32 million due to Covid-19.</p>
+
+<p>The Fresno Police Department makes up approximately 53% of the city’s budget, more than the budgets of FAX, PARCS, Human Services, Affordable Housing, and economic development COMBINED. In light of recent police violence, as well as documented cases of FPD abuse and racial profiling, I urge you to advocate for reducing funding to FPD during the City of Fresno budget hearing on Monday, June 15th, 2020. I would like to redirect funding away from FPD and into health, housing, education, and social services that support vulnerable residents and residents of color, especially lower-income Black residents. I would also urge you to work towards an eventual abolition of the Fresno Police Department in favor of investing into non-violent social services, restorative justice practices, and investing back into minority communities.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1924,52 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello City Council Member,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Fresno, CA. As you may well know this year, city council officials are expecting a budget deficit of $32 million due to Covid-19.<br />
+<br />
+The Fresno Police Department makes up approximately 53% of the city's budget, more than the budgets of FAX, PARCS, Human Services, Affordable Housing, and economic development COMBINED. In light of recent police violence, as well as documented cases of FPD abuse and racial profiling, I urge you to advocate for reducing funding to FPD during the City of Fresno budget hearing on Monday, June 15th, 2020. I would like to redirect funding away from FPD and into health, housing, education, and social services that support vulnerable residents and residents of color, especially lower-income Black residents. I would also urge you to work towards an eventual abolition of the Fresno Police Department in favor of investing into non-violent social services, restorative justice practices, and investing back into minority communities.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello City Council Member,
+
+My name is [YOUR NAME] and I am a resident of Fresno, CA. As you may well know this year, city council officials are expecting a budget deficit of $32 million due to Covid-19.
+
+The Fresno Police Department makes up approximately 53% of the city's budget, more than the budgets of FAX, PARCS, Human Services, Affordable Housing, and economic development COMBINED. In light of recent police violence, as well as documented cases of FPD abuse and racial profiling, I urge you to advocate for reducing funding to FPD during the City of Fresno budget hearing on Monday, June 15th, 2020. I would like to redirect funding away from FPD and into health, housing, education, and social services that support vulnerable residents and residents of color, especially lower-income Black residents. I would also urge you to work towards an eventual abolition of the Fresno Police Department in favor of investing into non-violent social services, restorative justice practices, and investing back into minority communities.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `esmeralda.soria@fresno.gov,miguel.arias@fresno.gov,paul.capriogolio@fresno.gov,mike.karbassi@fresno.gov,luis.chavez@fresno.gov,garry.bredefeld@fresno.gov,nelson.esparza@fresno.gov,wilma.quan@fresno.gov,yvonne.spence@fresno.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/fresno`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1983,4 @@
 </body>
 
 </html>
+

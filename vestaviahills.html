@@ -70,6 +70,62 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Vestavia Hills, AL</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/vestaviahills`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `desksgt@vhal.org, administration@vhal.org, rleavings@vhal.org, mturner@vhal.org, bdavis@vhal.org, krussom@vhal.org`)">🔗</span>
+        desksgt@vhal.org, administration@vhal.org, rleavings@vhal.org, mturner@vhal.org, bdavis@vhal.org, krussom@vhal.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Curry and City Council,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. I am emailing you today to demand that the Vestavia Hills Police Department (VHPD) be defunded and that the budget and resources of the VHPD be allocated to social service programs that are more effective at promoting community safety. Police presence has been proven time and time again to be ineffective at protecting the citizens of Vestavia Hills. Often, police presence results in the death of an innocent person of color (POC). I am outraged by the incompetence of Vestavia Hills city officials and their lack of insight to see the VHPD’s use of excessive force against the people of Vestavia Hills, especially POC. Police have terrorized my community for too long, and I am asking that you put a stop to it. Defund the Vestavia Hills Police Department and allocate those funds to social service programs that better protect our community and are more effective at promoting community safety.
+
+Ask yourself what side of history you want to be on. I hope that you choose the side of the people.
+
+Black Lives Matter,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Curry and City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. I am emailing you today to demand that the Vestavia Hills Police Department (VHPD) be defunded and that the budget and resources of the VHPD be allocated to social service programs that are more effective at promoting community safety. Police presence has been proven time and time again to be ineffective at protecting the citizens of Vestavia Hills. Often, police presence results in the death of an innocent person of color (POC). I am outraged by the incompetence of Vestavia Hills city officials and their lack of insight to see the VHPD’s use of excessive force against the people of Vestavia Hills, especially POC. Police have terrorized my community for too long, and I am asking that you put a stop to it. Defund the Vestavia Hills Police Department and allocate those funds to social service programs that better protect our community and are more effective at promoting community safety.</p>
+
+<p>Ask yourself what side of history you want to be on. I hope that you choose the side of the people.</p>
+
+<p>Black Lives Matter,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1926,54 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Curry and City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. I am emailing you today to demand that the Vestavia Hills Police Department (VHPD) be defunded and that the budget and resources of the VHPD be allocated to social service programs that are more effective at promoting community safety. Police presence has been proven time and time again to be ineffective at protecting the citizens of Vestavia Hills. Often, police presence results in the death of an innocent person of color (POC). I am outraged by the incompetence of Vestavia Hills city officials and their lack of insight to see the VHPD’s use of excessive force against the people of Vestavia Hills, especially POC. Police have terrorized my community for too long, and I am asking that you put a stop to it. Defund the Vestavia Hills Police Department and allocate those funds to social service programs that better protect our community and are more effective at promoting community safety.<br />
+<br />
+Ask yourself what side of history you want to be on. I hope that you choose the side of the people.<br />
+<br />
+Black Lives Matter,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Curry and City Council,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. I am emailing you today to demand that the Vestavia Hills Police Department (VHPD) be defunded and that the budget and resources of the VHPD be allocated to social service programs that are more effective at promoting community safety. Police presence has been proven time and time again to be ineffective at protecting the citizens of Vestavia Hills. Often, police presence results in the death of an innocent person of color (POC). I am outraged by the incompetence of Vestavia Hills city officials and their lack of insight to see the VHPD’s use of excessive force against the people of Vestavia Hills, especially POC. Police have terrorized my community for too long, and I am asking that you put a stop to it. Defund the Vestavia Hills Police Department and allocate those funds to social service programs that better protect our community and are more effective at promoting community safety.
+
+Ask yourself what side of history you want to be on. I hope that you choose the side of the people.
+
+Black Lives Matter,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `desksgt@vhal.org,administration@vhal.org,rleavings@vhal.org,mturner@vhal.org,bdavis@vhal.org,krussom@vhal.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/vestaviahills`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1987,4 @@
 </body>
 
 </html>
+

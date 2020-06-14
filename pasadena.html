@@ -70,6 +70,76 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Pasadena, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/pasadena`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `ttornek@cityofpasadena.net, district1@cityofpasadena.net, mmcaustin@cityofpasadena.net, jkennedy@cityofpasadena.net, gmasuda@cityofpasadena.net, vgordo@cityofpasadena.net, smadison@cityofpasadena.net, awilson@cityofpasadena.net`)">🔗</span>
+        ttornek@cityofpasadena.net, district1@cityofpasadena.net, mmcaustin@cityofpasadena.net, jkennedy@cityofpasadena.net, gmasuda@cityofpasadena.net, vgordo@cityofpasadena.net, smadison@cityofpasadena.net, awilson@cityofpasadena.net
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Pasadena Mayor and City Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.
+
+Not only are we experiencing the trauma of global pandemic, we are also in the midst of widespread upheaval over the systemic violence embodied by American police departments’ well-documented history of murdering Black people. Empty gestures and suggestions of “reform” are unacceptable. I am demanding that the City Council of Pasadena stand with the People. I am demanding that you root out systemic and institutional racism by defunding the police and prioritizing and reallocating much-needed funds to education, housing, and community and social services.
+
+* Reallocate PPD's $91 million dollar budget towards a neglected public school system, social programs for youth/young adults, public health and housing services, etc.
+* Work in partnership with the City Council to develop a reparations ordinance as cities like Chicago have established. This policy would provide financial, mental health, educational and other resources for the families of victims of police torture.
+
+I also entreat you to stand in solidarity with the movement by demanding change from the LAPD. As neighbors, we are duty-bound to hold each other accountable. I join the calls of those across the country to meaningfully defund the police. The people are demanding a budget that supports community wellbeing, rather than empowering the police forces that tear them apart.
+
+You need to adopt a budget that prioritizes the social programs proven to promote safety and equity much more effectively than policing. You need to steadfastly pressure your peers on the City Council to do the same. Public opinion is with me.
+
+Thank you for your time,
+[YOURNAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Pasadena Mayor and City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.</p>
+
+<p>Not only are we experiencing the trauma of global pandemic, we are also in the midst of widespread upheaval over the systemic violence embodied by American police departments’ well-documented history of murdering Black people. Empty gestures and suggestions of “reform” are unacceptable. I am demanding that the City Council of Pasadena stand with the People. I am demanding that you root out systemic and institutional racism by defunding the police and prioritizing and reallocating much-needed funds to education, housing, and community and social services.</p>
+
+<ul>
+  <li>Reallocate PPD’s $91 million dollar budget towards a neglected public school system, social programs for youth/young adults, public health and housing services, etc.</li>
+  <li>Work in partnership with the City Council to develop a reparations ordinance as cities like Chicago have established. This policy would provide financial, mental health, educational and other resources for the families of victims of police torture.</li>
+</ul>
+
+<p>I also entreat you to stand in solidarity with the movement by demanding change from the LAPD. As neighbors, we are duty-bound to hold each other accountable. I join the calls of those across the country to meaningfully defund the police. The people are demanding a budget that supports community wellbeing, rather than empowering the police forces that tear them apart.</p>
+
+<p>You need to adopt a budget that prioritizes the social programs proven to promote safety and equity much more effectively than policing. You need to steadfastly pressure your peers on the City Council to do the same. Public opinion is with me.</p>
+
+<p>Thank you for your time,
+[YOURNAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1940,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Pasadena Mayor and City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.<br />
+<br />
+Not only are we experiencing the trauma of global pandemic, we are also in the midst of widespread upheaval over the systemic violence embodied by American police departments’ well-documented history of murdering Black people. Empty gestures and suggestions of “reform” are unacceptable. I am demanding that the City Council of Pasadena stand with the People. I am demanding that you root out systemic and institutional racism by defunding the police and prioritizing and reallocating much-needed funds to education, housing, and community and social services.<br />
+<br />
+* Reallocate PPD's $91 million dollar budget towards a neglected public school system, social programs for youth/young adults, public health and housing services, etc.<br />
+* Work in partnership with the City Council to develop a reparations ordinance as cities like Chicago have established. This policy would provide financial, mental health, educational and other resources for the families of victims of police torture.<br />
+<br />
+I also entreat you to stand in solidarity with the movement by demanding change from the LAPD. As neighbors, we are duty-bound to hold each other accountable. I join the calls of those across the country to meaningfully defund the police. The people are demanding a budget that supports community wellbeing, rather than empowering the police forces that tear them apart.<br />
+<br />
+You need to adopt a budget that prioritizes the social programs proven to promote safety and equity much more effectively than policing. You need to steadfastly pressure your peers on the City Council to do the same. Public opinion is with me.<br />
+<br />
+Thank you for your time,<br />
+[YOURNAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Pasadena Mayor and City Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.
+
+Not only are we experiencing the trauma of global pandemic, we are also in the midst of widespread upheaval over the systemic violence embodied by American police departments’ well-documented history of murdering Black people. Empty gestures and suggestions of “reform” are unacceptable. I am demanding that the City Council of Pasadena stand with the People. I am demanding that you root out systemic and institutional racism by defunding the police and prioritizing and reallocating much-needed funds to education, housing, and community and social services.
+
+* Reallocate PPD's $91 million dollar budget towards a neglected public school system, social programs for youth/young adults, public health and housing services, etc.
+* Work in partnership with the City Council to develop a reparations ordinance as cities like Chicago have established. This policy would provide financial, mental health, educational and other resources for the families of victims of police torture.
+
+I also entreat you to stand in solidarity with the movement by demanding change from the LAPD. As neighbors, we are duty-bound to hold each other accountable. I join the calls of those across the country to meaningfully defund the police. The people are demanding a budget that supports community wellbeing, rather than empowering the police forces that tear them apart.
+
+You need to adopt a budget that prioritizes the social programs proven to promote safety and equity much more effectively than policing. You need to steadfastly pressure your peers on the City Council to do the same. Public opinion is with me.
+
+Thank you for your time,
+[YOURNAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `ttornek@cityofpasadena.net,district1@cityofpasadena.net,mmcaustin@cityofpasadena.net,jkennedy@cityofpasadena.net,gmasuda@cityofpasadena.net,vgordo@cityofpasadena.net,smadison@cityofpasadena.net,awilson@cityofpasadena.net`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/pasadena`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2013,4 @@
 </body>
 
 </html>
+

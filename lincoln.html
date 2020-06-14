@@ -70,6 +70,78 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Bairdand and City Council</h2>
+  <b>Lincoln, NE</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/lincoln`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@lincoln.ne.gov, news@lincoln.ne.gov, councilpacket@lincoln.ne.gov, jbowers@lincoln.ne.gov, rmeginnis@lincoln.ne.gov, jraybould@lincoln.ne.gov, tjward@lincoln.ne.gov, swashington@lincoln.ne.gov, rchristensen@lincoln.ne.gov, bshobe@lincoln.ne.gov`)">🔗</span>
+        mayor@lincoln.ne.gov, news@lincoln.ne.gov, councilpacket@lincoln.ne.gov, jbowers@lincoln.ne.gov, rmeginnis@lincoln.ne.gov, jraybould@lincoln.ne.gov, tjward@lincoln.ne.gov, swashington@lincoln.ne.gov, rchristensen@lincoln.ne.gov, bshobe@lincoln.ne.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Gaylor Bairdand Members of City Council,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I write this letter to urge you to begin defunding and demilitarizing the Lincoln Police Department. LPD’s budget has increased by 14% since the 2017-2018 budget. For the 2019-2020 year, the portion of the general fund spent on LPD was just under 25%. LPD’s increased funding is a direct harm to other necessary and more needed services in our city. Other services including parks and recreation, transportation and utilities, and urban development take much less out of the general cost for the city: 9.8%, 1.3%, and 0.5% respectively (Source: 2018-2020 Council Adopted Biennial Operating Budget). LPD is a direct cost to other services this city desperately needs.
+
+As Lincoln residents, we therefore demand that you take immediate action to ensure the following:
+
+* Reduce LPD's allocation from the General Fund.
+* Reallocate those funds into housing, jobs, youth programs, restorative justice, mental health workers, and community development programs to keep the community safe.
+* Disallow unauthorized overtime by LPD.
+* Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence. 
+
+Lincoln cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund LPD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Gaylor Bairdand Members of City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I write this letter to urge you to begin defunding and demilitarizing the Lincoln Police Department. LPD’s budget has increased by 14% since the 2017-2018 budget. For the 2019-2020 year, the portion of the general fund spent on LPD was just under 25%. LPD’s increased funding is a direct harm to other necessary and more needed services in our city. Other services including parks and recreation, transportation and utilities, and urban development take much less out of the general cost for the city: 9.8%, 1.3%, and 0.5% respectively (Source: 2018-2020 Council Adopted Biennial Operating Budget). LPD is a direct cost to other services this city desperately needs.</p>
+
+<p>As Lincoln residents, we therefore demand that you take immediate action to ensure the following:</p>
+
+<ul>
+  <li>Reduce LPD’s allocation from the General Fund.</li>
+  <li>Reallocate those funds into housing, jobs, youth programs, restorative justice, mental health workers, and community development programs to keep the community safe.</li>
+  <li>Disallow unauthorized overtime by LPD.</li>
+  <li>Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence.</li>
+</ul>
+
+<p>Lincoln cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund LPD.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1942,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Gaylor Bairdand Members of City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I write this letter to urge you to begin defunding and demilitarizing the Lincoln Police Department. LPD’s budget has increased by 14% since the 2017-2018 budget. For the 2019-2020 year, the portion of the general fund spent on LPD was just under 25%. LPD’s increased funding is a direct harm to other necessary and more needed services in our city. Other services including parks and recreation, transportation and utilities, and urban development take much less out of the general cost for the city: 9.8%, 1.3%, and 0.5% respectively (Source: 2018-2020 Council Adopted Biennial Operating Budget). LPD is a direct cost to other services this city desperately needs.<br />
+<br />
+As Lincoln residents, we therefore demand that you take immediate action to ensure the following:<br />
+<br />
+* Reduce LPD's allocation from the General Fund.<br />
+* Reallocate those funds into housing, jobs, youth programs, restorative justice, mental health workers, and community development programs to keep the community safe.<br />
+* Disallow unauthorized overtime by LPD.<br />
+* Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence. <br />
+<br />
+Lincoln cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund LPD.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Gaylor Bairdand Members of City Council,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I write this letter to urge you to begin defunding and demilitarizing the Lincoln Police Department. LPD’s budget has increased by 14% since the 2017-2018 budget. For the 2019-2020 year, the portion of the general fund spent on LPD was just under 25%. LPD’s increased funding is a direct harm to other necessary and more needed services in our city. Other services including parks and recreation, transportation and utilities, and urban development take much less out of the general cost for the city: 9.8%, 1.3%, and 0.5% respectively (Source: 2018-2020 Council Adopted Biennial Operating Budget). LPD is a direct cost to other services this city desperately needs.
+
+As Lincoln residents, we therefore demand that you take immediate action to ensure the following:
+
+* Reduce LPD's allocation from the General Fund.
+* Reallocate those funds into housing, jobs, youth programs, restorative justice, mental health workers, and community development programs to keep the community safe.
+* Disallow unauthorized overtime by LPD.
+* Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence. 
+
+Lincoln cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund LPD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@lincoln.ne.gov,news@lincoln.ne.gov,councilpacket@lincoln.ne.gov,jbowers@lincoln.ne.gov,rmeginnis@lincoln.ne.gov,jraybould@lincoln.ne.gov,tjward@lincoln.ne.gov,swashington@lincoln.ne.gov,rchristensen@lincoln.ne.gov,bshobe@lincoln.ne.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/lincoln`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2017,4 @@
 </body>
 
 </html>
+

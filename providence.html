@@ -70,6 +70,65 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Governor, Mayor, and City Council</h2>
+  <b>Providence, RI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/providence`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `governor@governor.ri.gov, Mayor@providenceri.gov, Ward2@providenceri.gov, Ward3@providenceri.gov, Ward4@providenceri.gov, Ward5@providenceri.gov, Ward6@providenceri.gov, Ward7@providenceri.gov, Ward8@providenceri.gov, Ward9@providenceri.gov, Ward10@providenceri.gov, Ward11@providenceri.gov, Ward12@providenceri.gov, Ward13@providenceri.gov, Ward14@providenceri.gov, Ward15@providenceri.gov`)">🔗</span>
+        governor@governor.ri.gov, Mayor@providenceri.gov, Ward2@providenceri.gov, Ward3@providenceri.gov, Ward4@providenceri.gov, Ward5@providenceri.gov, Ward6@providenceri.gov, Ward7@providenceri.gov, Ward8@providenceri.gov, Ward9@providenceri.gov, Ward10@providenceri.gov, Ward11@providenceri.gov, Ward12@providenceri.gov, Ward13@providenceri.gov, Ward14@providenceri.gov, Ward15@providenceri.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [NAME] and I am a resident of Providence. I am writing to demand that Governor Raimondo, Mayor Elorza, and the members of the City Council do everything in their power to adopt a budget that redirects funds from the Police Department towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe, and that they perpetuate the oppression of residents who are people of color, undocumented, mentally ill, disabled, and LGBTQ.
+
+While Providence has received a $700,000 grant to formulate a Behavioral Health Response Team, that amount is a mere drop in the bucket of the nearly $90 million budgeted for Police in 2021. The current budget proposal has allocated $154,450 on guns and ammunition, $1,461,620 for 50 new police recruits, not to mention $963,626 that is allocated for uniforms and "wearing apparel,” presumably including more of the riot gear that is currently being used to suppress peaceful protests. Imagine how much those dollars could accomplish when used to fund low-income and public housing, education, resources for formerly incarcerated individuals, and public transportation, as Direct Action for Rights and Equality has demanded.
+
+Providence may be a small city, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to communities, not cops.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [NAME] and I am a resident of Providence. I am writing to demand that Governor Raimondo, Mayor Elorza, and the members of the City Council do everything in their power to adopt a budget that redirects funds from the Police Department towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe, and that they perpetuate the oppression of residents who are people of color, undocumented, mentally ill, disabled, and LGBTQ.</p>
+
+<p>While Providence has received a $700,000 grant to formulate a Behavioral Health Response Team, that amount is a mere drop in the bucket of the nearly $90 million budgeted for Police in 2021. The current budget proposal has allocated $154,450 on guns and ammunition, $1,461,620 for 50 new police recruits, not to mention $963,626 that is allocated for uniforms and “wearing apparel,” presumably including more of the riot gear that is currently being used to suppress peaceful protests. Imagine how much those dollars could accomplish when used to fund low-income and public housing, education, resources for formerly incarcerated individuals, and public transportation, as Direct Action for Rights and Equality has demanded.</p>
+
+<p>Providence may be a small city, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to communities, not cops.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1929,58 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [NAME] and I am a resident of Providence. I am writing to demand that Governor Raimondo, Mayor Elorza, and the members of the City Council do everything in their power to adopt a budget that redirects funds from the Police Department towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe, and that they perpetuate the oppression of residents who are people of color, undocumented, mentally ill, disabled, and LGBTQ.<br />
+<br />
+While Providence has received a $700,000 grant to formulate a Behavioral Health Response Team, that amount is a mere drop in the bucket of the nearly $90 million budgeted for Police in 2021. The current budget proposal has allocated $154,450 on guns and ammunition, $1,461,620 for 50 new police recruits, not to mention $963,626 that is allocated for uniforms and "wearing apparel,” presumably including more of the riot gear that is currently being used to suppress peaceful protests. Imagine how much those dollars could accomplish when used to fund low-income and public housing, education, resources for formerly incarcerated individuals, and public transportation, as Direct Action for Rights and Equality has demanded.<br />
+<br />
+Providence may be a small city, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to communities, not cops.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Hello,
+
+My name is [NAME] and I am a resident of Providence. I am writing to demand that Governor Raimondo, Mayor Elorza, and the members of the City Council do everything in their power to adopt a budget that redirects funds from the Police Department towards community wellbeing, mental health and the needs of its residents. It has become clear that police forces are ineffective at keeping local communities safe, and that they perpetuate the oppression of residents who are people of color, undocumented, mentally ill, disabled, and LGBTQ.
+
+While Providence has received a $700,000 grant to formulate a Behavioral Health Response Team, that amount is a mere drop in the bucket of the nearly $90 million budgeted for Police in 2021. The current budget proposal has allocated $154,450 on guns and ammunition, $1,461,620 for 50 new police recruits, not to mention $963,626 that is allocated for uniforms and "wearing apparel,” presumably including more of the riot gear that is currently being used to suppress peaceful protests. Imagine how much those dollars could accomplish when used to fund low-income and public housing, education, resources for formerly incarcerated individuals, and public transportation, as Direct Action for Rights and Equality has demanded.
+
+Providence may be a small city, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to communities, not cops.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `governor@governor.ri.gov,Mayor@providenceri.gov,Ward2@providenceri.gov,Ward3@providenceri.gov,Ward4@providenceri.gov,Ward5@providenceri.gov,Ward6@providenceri.gov,Ward7@providenceri.gov,Ward8@providenceri.gov,Ward9@providenceri.gov,Ward10@providenceri.gov,Ward11@providenceri.gov,Ward12@providenceri.gov,Ward13@providenceri.gov,Ward14@providenceri.gov,Ward15@providenceri.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/providence`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1994,4 @@
 </body>
 
 </html>
+

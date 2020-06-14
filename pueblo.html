@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Pueblo, CO</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/pueblo`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@pueblo.us, cityadmin@pueblo.us, bobschilling68@gmail.com, latencio@pueblo.us, ebrown@pueblo.us, raguilera@pueblo.us, maliff@pueblo.us, dflores@pueblo.us, lovepueblo@yahoo.com, policedept@pueblo.us`)">🔗</span>
+        mayor@pueblo.us, cityadmin@pueblo.us, bobschilling68@gmail.com, latencio@pueblo.us, ebrown@pueblo.us, raguilera@pueblo.us, maliff@pueblo.us, dflores@pueblo.us, lovepueblo@yahoo.com, policedept@pueblo.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Gradisar and City Council Members,
+
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].
+
+I am writing to demand a significant reallocation of funding from the Pueblo Police Department to social and public programs that support housing, jobs, education, health care, child care, and other critical community needs.
+
+With record unemployment and a seemingly intractable pattern of abuse and unequal treatment by police, our city requires a budget that adequately and effectively meets the needs of at-risk Pueblo residents. You must support a budget that supports social equity in our community, rather than empowering the police forces that tear us apart.
+
+It is your duty to represent your constituents. I am urging you to advocate for revision of the Pueblo city budget for the 2020-2021 fiscal year to reflect the decades of research showing that education and social programs better promote the safety of a city than policing.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Gradisar and City Council Members,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].</p>
+
+<p>I am writing to demand a significant reallocation of funding from the Pueblo Police Department to social and public programs that support housing, jobs, education, health care, child care, and other critical community needs.</p>
+
+<p>With record unemployment and a seemingly intractable pattern of abuse and unequal treatment by police, our city requires a budget that adequately and effectively meets the needs of at-risk Pueblo residents. You must support a budget that supports social equity in our community, rather than empowering the police forces that tear us apart.</p>
+
+<p>It is your duty to represent your constituents. I am urging you to advocate for revision of the Pueblo city budget for the 2020-2021 fiscal year to reflect the decades of research showing that education and social programs better promote the safety of a city than policing.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Gradisar and City Council Members,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].<br />
+<br />
+I am writing to demand a significant reallocation of funding from the Pueblo Police Department to social and public programs that support housing, jobs, education, health care, child care, and other critical community needs.<br />
+<br />
+With record unemployment and a seemingly intractable pattern of abuse and unequal treatment by police, our city requires a budget that adequately and effectively meets the needs of at-risk Pueblo residents. You must support a budget that supports social equity in our community, rather than empowering the police forces that tear us apart.<br />
+<br />
+It is your duty to represent your constituents. I am urging you to advocate for revision of the Pueblo city budget for the 2020-2021 fiscal year to reflect the decades of research showing that education and social programs better promote the safety of a city than policing.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Gradisar and City Council Members,
+
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].
+
+I am writing to demand a significant reallocation of funding from the Pueblo Police Department to social and public programs that support housing, jobs, education, health care, child care, and other critical community needs.
+
+With record unemployment and a seemingly intractable pattern of abuse and unequal treatment by police, our city requires a budget that adequately and effectively meets the needs of at-risk Pueblo residents. You must support a budget that supports social equity in our community, rather than empowering the police forces that tear us apart.
+
+It is your duty to represent your constituents. I am urging you to advocate for revision of the Pueblo city budget for the 2020-2021 fiscal year to reflect the decades of research showing that education and social programs better promote the safety of a city than policing.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@pueblo.us,cityadmin@pueblo.us,bobschilling68@gmail.com,latencio@pueblo.us,ebrown@pueblo.us,raguilera@pueblo.us,maliff@pueblo.us,dflores@pueblo.us,lovepueblo@yahoo.com,policedept@pueblo.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/pueblo`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

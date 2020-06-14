@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor and City Council</h2>
+  <b>Englewood, NJ</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/englewood`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayorwildes@cityofenglewood.org, ccobb@cityofenglewood.org, cwrosenberg@cityofenglewood.org, mcohen@cityofenglewood.org, kglynn@cityofenglewood.org, whamer@cityofenglewood.org`)">🔗</span>
+        mayorwildes@cityofenglewood.org, ccobb@cityofenglewood.org, cwrosenberg@cityofenglewood.org, mcohen@cityofenglewood.org, kglynn@cityofenglewood.org, whamer@cityofenglewood.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [YOUR NAME] and I am a resident of Englewood. In light of recent events, I demand that you recognize racism as the public health crisis that it is, and take direct action to address this issue:
+
+I demand that you divest funds from the EPD as you make considerations for your FY21 municipal budget.
+I demand that you reallocate funds from the EPD to health and social services, for the safety and well-being of Englewood’s current residents.
+Englewood’s 2020 Municipal Budget demonstrates that the largest fraction of the city’s budget is appropriated for the Police Department. That is approximately 17 times the amount allocated to the entire Department of Health and Human Services and 56 times what is allocated for Community Development.
+
+I implore you to recognize this budget as a moral document, as well as the systematic violence that the police as an institution continue to exercise. Rather than using a militarized police force to physically harm, arrest, or incarcerate my neighbors, we need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another.
+
+Mayor Wildes and City Councilors, will you look out for me and our beloved community?
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Englewood. In light of recent events, I demand that you recognize racism as the public health crisis that it is, and take direct action to address this issue:</p>
+
+<p>I demand that you divest funds from the EPD as you make considerations for your FY21 municipal budget.
+I demand that you reallocate funds from the EPD to health and social services, for the safety and well-being of Englewood’s current residents.
+Englewood’s 2020 Municipal Budget demonstrates that the largest fraction of the city’s budget is appropriated for the Police Department. That is approximately 17 times the amount allocated to the entire Department of Health and Human Services and 56 times what is allocated for Community Development.</p>
+
+<p>I implore you to recognize this budget as a moral document, as well as the systematic violence that the police as an institution continue to exercise. Rather than using a militarized police force to physically harm, arrest, or incarcerate my neighbors, we need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another.</p>
+
+<p>Mayor Wildes and City Councilors, will you look out for me and our beloved community?</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Englewood. In light of recent events, I demand that you recognize racism as the public health crisis that it is, and take direct action to address this issue:<br />
+<br />
+I demand that you divest funds from the EPD as you make considerations for your FY21 municipal budget.<br />
+I demand that you reallocate funds from the EPD to health and social services, for the safety and well-being of Englewood’s current residents.<br />
+Englewood’s 2020 Municipal Budget demonstrates that the largest fraction of the city’s budget is appropriated for the Police Department. That is approximately 17 times the amount allocated to the entire Department of Health and Human Services and 56 times what is allocated for Community Development.<br />
+<br />
+I implore you to recognize this budget as a moral document, as well as the systematic violence that the police as an institution continue to exercise. Rather than using a militarized police force to physically harm, arrest, or incarcerate my neighbors, we need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another.<br />
+<br />
+Mayor Wildes and City Councilors, will you look out for me and our beloved community?<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello,
+
+My name is [YOUR NAME] and I am a resident of Englewood. In light of recent events, I demand that you recognize racism as the public health crisis that it is, and take direct action to address this issue:
+
+I demand that you divest funds from the EPD as you make considerations for your FY21 municipal budget.
+I demand that you reallocate funds from the EPD to health and social services, for the safety and well-being of Englewood’s current residents.
+Englewood’s 2020 Municipal Budget demonstrates that the largest fraction of the city’s budget is appropriated for the Police Department. That is approximately 17 times the amount allocated to the entire Department of Health and Human Services and 56 times what is allocated for Community Development.
+
+I implore you to recognize this budget as a moral document, as well as the systematic violence that the police as an institution continue to exercise. Rather than using a militarized police force to physically harm, arrest, or incarcerate my neighbors, we need to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another.
+
+Mayor Wildes and City Councilors, will you look out for me and our beloved community?
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayorwildes@cityofenglewood.org,ccobb@cityofenglewood.org,cwrosenberg@cityofenglewood.org,mcohen@cityofenglewood.org,kglynn@cityofenglewood.org,whamer@cityofenglewood.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/englewood`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

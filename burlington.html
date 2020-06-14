@@ -70,6 +70,64 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor and City Council</h2>
+  <b>Burlington, VT</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/burlington`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@burlingtonvt.gov, jredell@burlingtonvt.gov, mtracy@burlingtonvt.gov, zhightower@burlingtonvt.gov, bpine@burlingtonvt.gov, scarpenter@burlingtonvt.gov, cmason@burlingtonvt.gov, kpaul@burlingtonvt.gov, adieng@burlingtonvt.gov, jstromberg@burlingtonvt.gov, pfreeman@burlingtonvt.gov, jhanson@burlingtonvt.gov, fpaulino@burlingtonvt.gov, jshannon@burlingtonvt.gov`)">🔗</span>
+        mayor@burlingtonvt.gov, jredell@burlingtonvt.gov, mtracy@burlingtonvt.gov, zhightower@burlingtonvt.gov, bpine@burlingtonvt.gov, scarpenter@burlingtonvt.gov, cmason@burlingtonvt.gov, kpaul@burlingtonvt.gov, adieng@burlingtonvt.gov, jstromberg@burlingtonvt.gov, pfreeman@burlingtonvt.gov, jhanson@burlingtonvt.gov, fpaulino@burlingtonvt.gov, jshannon@burlingtonvt.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Weinberger and City Council members,
+
+My name is [YOUR NAME] and I write today to urge you to amend the recommended budget for FY 2020-21. In light of the continued devaluation of Black life in this country, there needs to be change to the ways towns and cities spend their money. The BPD is no longer the best use of city funds. Particularly after the BPD refuses to fire the 3 officers who have been known to abuse Black people. Black people make up approximately 1.4% of the population of Vermont, yet almost 8% of the state's prisoners are Black. This is one of the highest disparities in the country, at a rate of almost 10 to 1 (https://www.sentencingproject.org/publications/color-of-justice-racial-and-ethnic-disparity-in-state-prisons/)
+
+We have reached a turning point, here in Burlington and around the country. We may choose to divert funds from an increasingly militarized police force and invest in community education, health, and employment. Or we may increase already sizable budgets and escalate the terror Black Americans face on our streets. I hope you all will choose the former.
+
+Please Defund the Burlington Police.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Weinberger and City Council members,</p>
+
+<p>My name is [YOUR NAME] and I write today to urge you to amend the recommended budget for FY 2020-21. In light of the continued devaluation of Black life in this country, there needs to be change to the ways towns and cities spend their money. The BPD is no longer the best use of city funds. Particularly after the BPD refuses to fire the 3 officers who have been known to abuse Black people. Black people make up approximately 1.4% of the population of Vermont, yet almost 8% of the state’s prisoners are Black. This is one of the highest disparities in the country, at a rate of almost 10 to 1 (https://www.sentencingproject.org/publications/color-of-justice-racial-and-ethnic-disparity-in-state-prisons/)</p>
+
+<p>We have reached a turning point, here in Burlington and around the country. We may choose to divert funds from an increasingly militarized police force and invest in community education, health, and employment. Or we may increase already sizable budgets and escalate the terror Black Americans face on our streets. I hope you all will choose the former.</p>
+
+<p>Please Defund the Burlington Police.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1928,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Weinberger and City Council members,<br />
+<br />
+My name is [YOUR NAME] and I write today to urge you to amend the recommended budget for FY 2020-21. In light of the continued devaluation of Black life in this country, there needs to be change to the ways towns and cities spend their money. The BPD is no longer the best use of city funds. Particularly after the BPD refuses to fire the 3 officers who have been known to abuse Black people. Black people make up approximately 1.4% of the population of Vermont, yet almost 8% of the state's prisoners are Black. This is one of the highest disparities in the country, at a rate of almost 10 to 1 (https://www.sentencingproject.org/publications/color-of-justice-racial-and-ethnic-disparity-in-state-prisons/)<br />
+<br />
+We have reached a turning point, here in Burlington and around the country. We may choose to divert funds from an increasingly militarized police force and invest in community education, health, and employment. Or we may increase already sizable budgets and escalate the terror Black Americans face on our streets. I hope you all will choose the former.<br />
+<br />
+Please Defund the Burlington Police.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Weinberger and City Council members,
+
+My name is [YOUR NAME] and I write today to urge you to amend the recommended budget for FY 2020-21. In light of the continued devaluation of Black life in this country, there needs to be change to the ways towns and cities spend their money. The BPD is no longer the best use of city funds. Particularly after the BPD refuses to fire the 3 officers who have been known to abuse Black people. Black people make up approximately 1.4% of the population of Vermont, yet almost 8% of the state's prisoners are Black. This is one of the highest disparities in the country, at a rate of almost 10 to 1 (https://www.sentencingproject.org/publications/color-of-justice-racial-and-ethnic-disparity-in-state-prisons/)
+
+We have reached a turning point, here in Burlington and around the country. We may choose to divert funds from an increasingly militarized police force and invest in community education, health, and employment. Or we may increase already sizable budgets and escalate the terror Black Americans face on our streets. I hope you all will choose the former.
+
+Please Defund the Burlington Police.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@burlingtonvt.gov,jredell@burlingtonvt.gov,mtracy@burlingtonvt.gov,zhightower@burlingtonvt.gov,bpine@burlingtonvt.gov,scarpenter@burlingtonvt.gov,cmason@burlingtonvt.gov,kpaul@burlingtonvt.gov,adieng@burlingtonvt.gov,jstromberg@burlingtonvt.gov,pfreeman@burlingtonvt.gov,jhanson@burlingtonvt.gov,fpaulino@burlingtonvt.gov,jshannon@burlingtonvt.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/burlington`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1991,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,71 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members</h2>
+  <b>Los Angeles, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/la`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor.helpdesk@lacity.org, councilmember.cedillo@lacity.org, councilmember.Krekorian@lacity.org, councilmember.blumenfield@lacity.org, david.ryu@lacity.org, paul.koretz@lacity.org, councilmember.martinez@lacity.org, councilmember.rodriguez@lacity.org, councilmember.harris-dawson@lacity.org, councilmember.price@lacity.org, councilmember.wesson@lacity.org, councilmember.bonin@lacity.org, councilmember.lee@lacity.org, councilmember.ofarrell@lacity.org, councilmember.huizar@lacity.org, councilmember.buscaino@lacity.org`)">🔗</span>
+        mayor.helpdesk@lacity.org, councilmember.cedillo@lacity.org, councilmember.Krekorian@lacity.org, councilmember.blumenfield@lacity.org, david.ryu@lacity.org, paul.koretz@lacity.org, councilmember.martinez@lacity.org, councilmember.rodriguez@lacity.org, councilmember.harris-dawson@lacity.org, councilmember.price@lacity.org, councilmember.wesson@lacity.org, councilmember.bonin@lacity.org, councilmember.lee@lacity.org, councilmember.ofarrell@lacity.org, councilmember.huizar@lacity.org, councilmember.buscaino@lacity.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+
+We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the LAPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” This includes Mayor Garcetti's paltry 5% proposed cut with no clarity as to where these funds will be redirected, if at all. We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+
+We are in the midst of a pandemic with severe economic consequences. Over 50% of Angelenos are unemployed, and we can expect 42% lasting unemployment. Over 50% of those in this city are renters. When people are unemployed, they cannot pay rent. Prior to the pandemic, 60k people were unhoused; the evictions and economic insecurity caused by COVID-19 will bring that number even higher.
+
+We demand that the City Council meaningfully defund the LAPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Angelenos during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+
+Although City Council has avoided voting or revising Mayor Garcetti's draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the LA budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.</p>
+
+<p>We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the LAPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” This includes Mayor Garcetti’s paltry 5% proposed cut with no clarity as to where these funds will be redirected, if at all. We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.</p>
+
+<p>We are in the midst of a pandemic with severe economic consequences. Over 50% of Angelenos are unemployed, and we can expect 42% lasting unemployment. Over 50% of those in this city are renters. When people are unemployed, they cannot pay rent. Prior to the pandemic, 60k people were unhoused; the evictions and economic insecurity caused by COVID-19 will bring that number even higher.</p>
+
+<p>We demand that the City Council meaningfully defund the LAPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Angelenos during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.</p>
+
+<p>Although City Council has avoided voting or revising Mayor Garcetti’s draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the LA budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1935,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.<br />
+<br />
+We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the LAPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” This includes Mayor Garcetti's paltry 5% proposed cut with no clarity as to where these funds will be redirected, if at all. We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.<br />
+<br />
+We are in the midst of a pandemic with severe economic consequences. Over 50% of Angelenos are unemployed, and we can expect 42% lasting unemployment. Over 50% of those in this city are renters. When people are unemployed, they cannot pay rent. Prior to the pandemic, 60k people were unhoused; the evictions and economic insecurity caused by COVID-19 will bring that number even higher.<br />
+<br />
+We demand that the City Council meaningfully defund the LAPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Angelenos during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.<br />
+<br />
+Although City Council has avoided voting or revising Mayor Garcetti's draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the LA budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+
+We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the LAPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” This includes Mayor Garcetti's paltry 5% proposed cut with no clarity as to where these funds will be redirected, if at all. We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+
+We are in the midst of a pandemic with severe economic consequences. Over 50% of Angelenos are unemployed, and we can expect 42% lasting unemployment. Over 50% of those in this city are renters. When people are unemployed, they cannot pay rent. Prior to the pandemic, 60k people were unhoused; the evictions and economic insecurity caused by COVID-19 will bring that number even higher.
+
+We demand that the City Council meaningfully defund the LAPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Angelenos during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+
+Although City Council has avoided voting or revising Mayor Garcetti's draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the LA budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `mayor.helpdesk@lacity.org,councilmember.cedillo@lacity.org,councilmember.Krekorian@lacity.org,councilmember.blumenfield@lacity.org,david.ryu@lacity.org,paul.koretz@lacity.org,councilmember.martinez@lacity.org,councilmember.rodriguez@lacity.org,councilmember.harris-dawson@lacity.org,councilmember.price@lacity.org,councilmember.wesson@lacity.org,councilmember.bonin@lacity.org,councilmember.lee@lacity.org,councilmember.ofarrell@lacity.org,councilmember.huizar@lacity.org,councilmember.buscaino@lacity.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/la`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2006,4 @@
 </body>
 
 </html>
+

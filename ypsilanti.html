@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Ypsilanti, MI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/ypsilanti`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@cityofypsilanti.com, loiserich@hotmail.com, nbrown@cityofypsilanti.com, jsymanns@cityofypsilanti.com, swilcoxen@cityofypsilanti.com, amorgan@cityofypsilanti.com, asomerville@cityofypsilanti.com`)">🔗</span>
+        mayor@cityofypsilanti.com, loiserich@hotmail.com, nbrown@cityofypsilanti.com, jsymanns@cityofypsilanti.com, swilcoxen@cityofypsilanti.com, amorgan@cityofypsilanti.com, asomerville@cityofypsilanti.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor Bashert and Ypsilanti City Council:
+
+My name is [YOUR NAME], and I am a resident of Ypsilanti. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. It has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+YPD has been a waste of our resources. Last year, the YPD budget was approximately one quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
+
+I call on you to slash the YPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To Mayor Bashert and Ypsilanti City Council:</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Ypsilanti. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. It has come to my attention that the budget for 2021 is being decided as these protests continue.</p>
+
+<p>YPD has been a waste of our resources. Last year, the YPD budget was approximately one quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.</p>
+
+<p>I call on you to slash the YPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.</p>
+
+<p>We can be a beacon for other cities to follow if only we have the courage to change.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor Bashert and Ypsilanti City Council:<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Ypsilanti. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. It has come to my attention that the budget for 2021 is being decided as these protests continue.<br />
+<br />
+YPD has been a waste of our resources. Last year, the YPD budget was approximately one quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.<br />
+<br />
+I call on you to slash the YPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.<br />
+<br />
+We can be a beacon for other cities to follow if only we have the courage to change.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To Mayor Bashert and Ypsilanti City Council:
+
+My name is [YOUR NAME], and I am a resident of Ypsilanti. This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. It has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+YPD has been a waste of our resources. Last year, the YPD budget was approximately one quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
+
+I call on you to slash the YPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@cityofypsilanti.com,loiserich@hotmail.com,nbrown@cityofypsilanti.com,jsymanns@cityofypsilanti.com,swilcoxen@cityofypsilanti.com,amorgan@cityofypsilanti.com,asomerville@cityofypsilanti.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/ypsilanti`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

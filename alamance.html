@@ -70,6 +70,64 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to County Commissioners and Clerk to the Board</h2>
+  <b>Alamance, NC</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/alamance`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `commissioners@alamance-nc.com, tory.frink@alamance-nc.com`)">🔗</span>
+        commissioners@alamance-nc.com, tory.frink@alamance-nc.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear County Commissioners:
+
+My name is [YOUR NAME], and I am a resident of Alamance County. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
+
+In 2019, Alamance County spent 7% of our County's budget on the Sheriff's office with another 7% going to the jail. In contrast, our schools have 26% of the budget, and we have one of the worst performing school districts in NC. The local community college receives only 2% of our budget, students have to take out loans in order to attend, and adjunct faculty get paid $2,000 to teach a class. We are a rural community. Our investment should be in uplifting people through education, not punishing people for poverty.
+
+In the proposed budget for 2020-2021 the "public safety" budget is 23%, almost double what it is now. Although we all want to live in a safe place, the best way to guarantee our safety is to provide people with skills, healthcare, housing, and food. Our local tax dollars should be going towards promoting community safety through investing in our children, education, and health and well-being.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear County Commissioners:</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Alamance County. I urge you to advocate for a meaningful reallocation of the city’s expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.</p>
+
+<p>In 2019, Alamance County spent 7% of our County’s budget on the Sheriff’s office with another 7% going to the jail. In contrast, our schools have 26% of the budget, and we have one of the worst performing school districts in NC. The local community college receives only 2% of our budget, students have to take out loans in order to attend, and adjunct faculty get paid $2,000 to teach a class. We are a rural community. Our investment should be in uplifting people through education, not punishing people for poverty.</p>
+
+<p>In the proposed budget for 2020-2021 the “public safety” budget is 23%, almost double what it is now. Although we all want to live in a safe place, the best way to guarantee our safety is to provide people with skills, healthcare, housing, and food. Our local tax dollars should be going towards promoting community safety through investing in our children, education, and health and well-being.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1928,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear County Commissioners:<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Alamance County. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.<br />
+<br />
+In 2019, Alamance County spent 7% of our County's budget on the Sheriff's office with another 7% going to the jail. In contrast, our schools have 26% of the budget, and we have one of the worst performing school districts in NC. The local community college receives only 2% of our budget, students have to take out loans in order to attend, and adjunct faculty get paid $2,000 to teach a class. We are a rural community. Our investment should be in uplifting people through education, not punishing people for poverty.<br />
+<br />
+In the proposed budget for 2020-2021 the "public safety" budget is 23%, almost double what it is now. Although we all want to live in a safe place, the best way to guarantee our safety is to provide people with skills, healthcare, housing, and food. Our local tax dollars should be going towards promoting community safety through investing in our children, education, and health and well-being.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear County Commissioners:
+
+My name is [YOUR NAME], and I am a resident of Alamance County. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
+
+In 2019, Alamance County spent 7% of our County's budget on the Sheriff's office with another 7% going to the jail. In contrast, our schools have 26% of the budget, and we have one of the worst performing school districts in NC. The local community college receives only 2% of our budget, students have to take out loans in order to attend, and adjunct faculty get paid $2,000 to teach a class. We are a rural community. Our investment should be in uplifting people through education, not punishing people for poverty.
+
+In the proposed budget for 2020-2021 the "public safety" budget is 23%, almost double what it is now. Although we all want to live in a safe place, the best way to guarantee our safety is to provide people with skills, healthcare, housing, and food. Our local tax dollars should be going towards promoting community safety through investing in our children, education, and health and well-being.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `commissioners@alamance-nc.com,tory.frink@alamance-nc.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/alamance`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1991,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,80 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Tempe Mayor and City Council</h2>
+  <b>Tempe, AZ</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/tempe`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mark_mitchell@tempe.gov, lauren_kuby@tempe.gov, jennifer_adams@tempe.gov, robin_arredondo-savage@tempe.gov, arlene_chin@tempe.gov, randy_keating@tempe.gov, joel_navarro@tempe.gov`)">🔗</span>
+        mark_mitchell@tempe.gov, lauren_kuby@tempe.gov, jennifer_adams@tempe.gov, robin_arredondo-savage@tempe.gov, arlene_chin@tempe.gov, randy_keating@tempe.gov, joel_navarro@tempe.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Mitchell and Tempe City Council,
+
+My name is [NAME] and I am a resident of Tempe, AZ. I am writing today to urge you to reduce funding for and limit the reach of the police in Tempe.
+
+I implore you to take action on the following:
+
+* Prioritize spending on community health, education, and affordable housing
+* Reduce the size of the police force
+* Suspend the use of paid administrative leave for police officers under investigation
+* Withhold pensions and don’t rehire police officers involved in excessive force
+* Require police officers to be liable for misconduct settlements
+* Withdraw participation in police militarization programs
+
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
+
+Thank you for your time,
+[NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Mitchell and Tempe City Council,</p>
+
+<p>My name is [NAME] and I am a resident of Tempe, AZ. I am writing today to urge you to reduce funding for and limit the reach of the police in Tempe.</p>
+
+<p>I implore you to take action on the following:</p>
+
+<ul>
+  <li>Prioritize spending on community health, education, and affordable housing</li>
+  <li>Reduce the size of the police force</li>
+  <li>Suspend the use of paid administrative leave for police officers under investigation</li>
+  <li>Withhold pensions and don’t rehire police officers involved in excessive force</li>
+  <li>Require police officers to be liable for misconduct settlements</li>
+  <li>Withdraw participation in police militarization programs</li>
+</ul>
+
+<p>People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.</p>
+
+<p>Thank you for your time,
+[NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1944,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Mitchell and Tempe City Council,<br />
+<br />
+My name is [NAME] and I am a resident of Tempe, AZ. I am writing today to urge you to reduce funding for and limit the reach of the police in Tempe.<br />
+<br />
+I implore you to take action on the following:<br />
+<br />
+* Prioritize spending on community health, education, and affordable housing<br />
+* Reduce the size of the police force<br />
+* Suspend the use of paid administrative leave for police officers under investigation<br />
+* Withhold pensions and don’t rehire police officers involved in excessive force<br />
+* Require police officers to be liable for misconduct settlements<br />
+* Withdraw participation in police militarization programs<br />
+<br />
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.<br />
+<br />
+Thank you for your time,<br />
+[NAME]<br />
+[ADDRESS]<br />
+[EMAIL]<br />
+[PHONE NUMBER]`.trim() :
+      `Dear Mayor Mitchell and Tempe City Council,
+
+My name is [NAME] and I am a resident of Tempe, AZ. I am writing today to urge you to reduce funding for and limit the reach of the police in Tempe.
+
+I implore you to take action on the following:
+
+* Prioritize spending on community health, education, and affordable housing
+* Reduce the size of the police force
+* Suspend the use of paid administrative leave for police officers under investigation
+* Withhold pensions and don’t rehire police officers involved in excessive force
+* Require police officers to be liable for misconduct settlements
+* Withdraw participation in police militarization programs
+
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
+
+Thank you for your time,
+[NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE NUMBER]`.trim()
+    );
+    const recipients = `mark_mitchell@tempe.gov,lauren_kuby@tempe.gov,jennifer_adams@tempe.gov,robin_arredondo-savage@tempe.gov,arlene_chin@tempe.gov,randy_keating@tempe.gov,joel_navarro@tempe.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/tempe`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2021,4 @@
 </body>
 
 </html>
+

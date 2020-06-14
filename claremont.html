@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Schroeder and City Council</h2>
+  <b>Claremont, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/claremont`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `ccalaycay@ci.claremont.ca.us, jleano@ci.claremont.ca.us, ereece@ci.claremont.ca.us, lschroeder@ci.claremont.ca.us, jstark@ci.claremont.ca.us`)">🔗</span>
+        ccalaycay@ci.claremont.ca.us, jleano@ci.claremont.ca.us, ereece@ci.claremont.ca.us, lschroeder@ci.claremont.ca.us, jstark@ci.claremont.ca.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Larry Schroeder, Mayor Pro Tem Jennifer Stark, and Claremont City Council members,
+
+My name is [YOUR NAME] and I am a resident of Claremont. I am writing to demand that the Claremont City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In FY2019, the City of Claremont allocated an egregious $12,496,360 to our police department. Next year, there will likely be deficits as a result of the pandemic. The city may recoup these funds by decreasing the police budget.
+
+I demand that the City Council begin meaningfully defunding the Claremont Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Claremont residents.
+
+History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs will not only not fix our current system, they will cause future lives to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.
+
+I am urging you to keep these things in mind for the budget for the 2020-2021 fiscal year and to invest in the people, not the police.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Larry Schroeder, Mayor Pro Tem Jennifer Stark, and Claremont City Council members,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Claremont. I am writing to demand that the Claremont City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.</p>
+
+<p>In FY2019, the City of Claremont allocated an egregious $12,496,360 to our police department. Next year, there will likely be deficits as a result of the pandemic. The city may recoup these funds by decreasing the police budget.</p>
+
+<p>I demand that the City Council begin meaningfully defunding the Claremont Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Claremont residents.</p>
+
+<p>History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs will not only not fix our current system, they will cause future lives to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.</p>
+
+<p>I am urging you to keep these things in mind for the budget for the 2020-2021 fiscal year and to invest in the people, not the police.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Larry Schroeder, Mayor Pro Tem Jennifer Stark, and Claremont City Council members,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Claremont. I am writing to demand that the Claremont City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.<br />
+<br />
+In FY2019, the City of Claremont allocated an egregious $12,496,360 to our police department. Next year, there will likely be deficits as a result of the pandemic. The city may recoup these funds by decreasing the police budget.<br />
+<br />
+I demand that the City Council begin meaningfully defunding the Claremont Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Claremont residents.<br />
+<br />
+History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs will not only not fix our current system, they will cause future lives to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.<br />
+<br />
+I am urging you to keep these things in mind for the budget for the 2020-2021 fiscal year and to invest in the people, not the police.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Larry Schroeder, Mayor Pro Tem Jennifer Stark, and Claremont City Council members,
+
+My name is [YOUR NAME] and I am a resident of Claremont. I am writing to demand that the Claremont City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In FY2019, the City of Claremont allocated an egregious $12,496,360 to our police department. Next year, there will likely be deficits as a result of the pandemic. The city may recoup these funds by decreasing the police budget.
+
+I demand that the City Council begin meaningfully defunding the Claremont Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs. Police officers should not need to be the first resource for every crisis. I demand a budget that reflects the actual needs of Claremont residents.
+
+History has shown that police “reform” is not enough. Policing in America was developed to protect the institution of slavery. More money and training programs will not only not fix our current system, they will cause future lives to be lost to police brutality. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.
+
+I am urging you to keep these things in mind for the budget for the 2020-2021 fiscal year and to invest in the people, not the police.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `ccalaycay@ci.claremont.ca.us,jleano@ci.claremont.ca.us,ereece@ci.claremont.ca.us,lschroeder@ci.claremont.ca.us,jstark@ci.claremont.ca.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/claremont`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,73 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council</h2>
+  <b>Fort Wayne, IN</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/fortwayne`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `citycouncil@cityoffortwayne.org, paul@paulensley.com, russ@russjehl.com, tdidiers5@frontier.com, jasonarpcitycouncil@gmail.com, geoffreypaddock@aol.com, sharon.tucker@cityoffortwayne.org, michelle.chambers@cityoffortwayne.org, glynnhines@aol.com, freistrofferatlarge@gmail.com`)">🔗</span>
+        citycouncil@cityoffortwayne.org, paul@paulensley.com, russ@russjehl.com, tdidiers5@frontier.com, jasonarpcitycouncil@gmail.com, geoffreypaddock@aol.com, sharon.tucker@cityoffortwayne.org, michelle.chambers@cityoffortwayne.org, glynnhines@aol.com, freistrofferatlarge@gmail.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `"Dear City Councilors,
+
+My name is [INSERT NAME], and I’m a resident of Fort Wayne. I am writing about the fiscal year 2021 budget for the City of Fort Wayne.
+
+Mayor Henry claims “It's critical for all of us to come together united with a commitment to gaining a better understanding of the divsions in our city, state, and country” yet the 2020 budget allocated $64.7 million (62% of the total general fund) to the FWPD. By contrast, Community Development received funds amounting to 5% of the total general fund, or less than a tenth of the FWPD budget.
+
+I am asking that the Fort Wayne City Council push to make a more overt and visible commitment to the city and county’s Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the FWPD’s overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city’s expenditures, away from the FWPD, and towards sectors that facilitate the dismantling of racial and class inequality.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.
+
+Can I count on you to consider an alternative budget that puts a focus on social services programs?
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]"
+`)">🔗</span>
+        <br /> <p>“Dear City Councilors,</p>
+
+<p>My name is [INSERT NAME], and I’m a resident of Fort Wayne. I am writing about the fiscal year 2021 budget for the City of Fort Wayne.</p>
+
+<p>Mayor Henry claims “It’s critical for all of us to come together united with a commitment to gaining a better understanding of the divsions in our city, state, and country” yet the 2020 budget allocated $64.7 million (62% of the total general fund) to the FWPD. By contrast, Community Development received funds amounting to 5% of the total general fund, or less than a tenth of the FWPD budget.</p>
+
+<p>I am asking that the Fort Wayne City Council push to make a more overt and visible commitment to the city and county’s Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the FWPD’s overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city’s expenditures, away from the FWPD, and towards sectors that facilitate the dismantling of racial and class inequality.</p>
+
+<p>Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.</p>
+
+<p>Can I count on you to consider an alternative budget that puts a focus on social services programs?</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]”</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1937,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `"Dear City Councilors,<br />
+<br />
+My name is [INSERT NAME], and I’m a resident of Fort Wayne. I am writing about the fiscal year 2021 budget for the City of Fort Wayne.<br />
+<br />
+Mayor Henry claims “It's critical for all of us to come together united with a commitment to gaining a better understanding of the divsions in our city, state, and country” yet the 2020 budget allocated $64.7 million (62% of the total general fund) to the FWPD. By contrast, Community Development received funds amounting to 5% of the total general fund, or less than a tenth of the FWPD budget.<br />
+<br />
+I am asking that the Fort Wayne City Council push to make a more overt and visible commitment to the city and county’s Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the FWPD’s overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city’s expenditures, away from the FWPD, and towards sectors that facilitate the dismantling of racial and class inequality.<br />
+<br />
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.<br />
+<br />
+Can I count on you to consider an alternative budget that puts a focus on social services programs?<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]"<br />
+`.trim() :
+      `"Dear City Councilors,
+
+My name is [INSERT NAME], and I’m a resident of Fort Wayne. I am writing about the fiscal year 2021 budget for the City of Fort Wayne.
+
+Mayor Henry claims “It's critical for all of us to come together united with a commitment to gaining a better understanding of the divsions in our city, state, and country” yet the 2020 budget allocated $64.7 million (62% of the total general fund) to the FWPD. By contrast, Community Development received funds amounting to 5% of the total general fund, or less than a tenth of the FWPD budget.
+
+I am asking that the Fort Wayne City Council push to make a more overt and visible commitment to the city and county’s Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the FWPD’s overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city’s expenditures, away from the FWPD, and towards sectors that facilitate the dismantling of racial and class inequality.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.
+
+Can I count on you to consider an alternative budget that puts a focus on social services programs?
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]"
+`.trim()
+    );
+    const recipients = `citycouncil@cityoffortwayne.org,paul@paulensley.com,russ@russjehl.com,tdidiers5@frontier.com,jasonarpcitycouncil@gmail.com,geoffreypaddock@aol.com,sharon.tucker@cityoffortwayne.org,michelle.chambers@cityoffortwayne.org,glynnhines@aol.com,freistrofferatlarge@gmail.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/fortwayne`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2010,4 @@
 </body>
 
 </html>
+

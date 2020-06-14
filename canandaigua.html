@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Officials</h2>
+  <b>Canandaigua, NY</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/canandaigua`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Bob.Palumbo@CanandaiguaNewYork.gov, Nick.Cutri@CanandaiguaNewYork.Gov, Dan.Unrath@CanandaiguaNewYork.Gov, Karen.White@CanandaiguaNewYork.gov, Erich.Dittmar@CanandaiguaNewYork.gov, Robert.OBrien@CanandaiguaNewYork.Gov, Renee.Sutton@CanandaiguaNewYork.Gov, James.Terwilliger@CanandaiguaNewYork.Gov, Steve.Uebbing@CanandaiguaNewYork.gov, DavidBaker197@Rochester.rr.com, richardrussell02@yahoo.com`)">🔗</span>
+        Bob.Palumbo@CanandaiguaNewYork.gov, Nick.Cutri@CanandaiguaNewYork.Gov, Dan.Unrath@CanandaiguaNewYork.Gov, Karen.White@CanandaiguaNewYork.gov, Erich.Dittmar@CanandaiguaNewYork.gov, Robert.OBrien@CanandaiguaNewYork.Gov, Renee.Sutton@CanandaiguaNewYork.Gov, James.Terwilliger@CanandaiguaNewYork.Gov, Steve.Uebbing@CanandaiguaNewYork.gov, DavidBaker197@Rochester.rr.com, richardrussell02@yahoo.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear City Officials,
+
+My name is [YOUR NAME], and I’m a resident of Canandaigua, NY. I am writing about the Canandaigua fiscal year 2021 budget and calling for you to review city policies surrounding police.
+
+I am asking that the City of Canandaigua makes a more overt and visible commitment to racial justice. I demand that the budget be amended and reviewed so that Council may find ways to redirect money away from Canandaigua Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office and your colleagues towards an ethical and equal reallocation of the city’s expenditures, away from PD, and towards sectors that facilitate the dismantling of racial and class inequality.
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas. New York and our city’s budgets are already struggling. We need to devote more money to building community and community resources across the state.
+
+Do not forget our poor communities and communities of color in New York State who are disproportionate targets of police violence. The "wellness check" that ended in Sandy Guardiola's shooting death in 2017 should have served as a wake-up call. It's not too late to prevent another violent and wholly unnecessary death. Justice will only be served when the police are reformed, and this will not be possible until we defund them.
+
+Can I count on you to consider an alternative budget and review policing methods that puts a focus on social service programs?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear City Officials,</p>
+
+<p>My name is [YOUR NAME], and I’m a resident of Canandaigua, NY. I am writing about the Canandaigua fiscal year 2021 budget and calling for you to review city policies surrounding police.</p>
+
+<p>I am asking that the City of Canandaigua makes a more overt and visible commitment to racial justice. I demand that the budget be amended and reviewed so that Council may find ways to redirect money away from Canandaigua Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office and your colleagues towards an ethical and equal reallocation of the city’s expenditures, away from PD, and towards sectors that facilitate the dismantling of racial and class inequality.</p>
+
+<p>Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas. New York and our city’s budgets are already struggling. We need to devote more money to building community and community resources across the state.</p>
+
+<p>Do not forget our poor communities and communities of color in New York State who are disproportionate targets of police violence. The “wellness check” that ended in Sandy Guardiola’s shooting death in 2017 should have served as a wake-up call. It’s not too late to prevent another violent and wholly unnecessary death. Justice will only be served when the police are reformed, and this will not be possible until we defund them.</p>
+
+<p>Can I count on you to consider an alternative budget and review policing methods that puts a focus on social service programs?</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear City Officials,<br />
+<br />
+My name is [YOUR NAME], and I’m a resident of Canandaigua, NY. I am writing about the Canandaigua fiscal year 2021 budget and calling for you to review city policies surrounding police.<br />
+<br />
+I am asking that the City of Canandaigua makes a more overt and visible commitment to racial justice. I demand that the budget be amended and reviewed so that Council may find ways to redirect money away from Canandaigua Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office and your colleagues towards an ethical and equal reallocation of the city’s expenditures, away from PD, and towards sectors that facilitate the dismantling of racial and class inequality.<br />
+<br />
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas. New York and our city’s budgets are already struggling. We need to devote more money to building community and community resources across the state.<br />
+<br />
+Do not forget our poor communities and communities of color in New York State who are disproportionate targets of police violence. The "wellness check" that ended in Sandy Guardiola's shooting death in 2017 should have served as a wake-up call. It's not too late to prevent another violent and wholly unnecessary death. Justice will only be served when the police are reformed, and this will not be possible until we defund them.<br />
+<br />
+Can I count on you to consider an alternative budget and review policing methods that puts a focus on social service programs?<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear City Officials,
+
+My name is [YOUR NAME], and I’m a resident of Canandaigua, NY. I am writing about the Canandaigua fiscal year 2021 budget and calling for you to review city policies surrounding police.
+
+I am asking that the City of Canandaigua makes a more overt and visible commitment to racial justice. I demand that the budget be amended and reviewed so that Council may find ways to redirect money away from Canandaigua Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office and your colleagues towards an ethical and equal reallocation of the city’s expenditures, away from PD, and towards sectors that facilitate the dismantling of racial and class inequality.
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas. New York and our city’s budgets are already struggling. We need to devote more money to building community and community resources across the state.
+
+Do not forget our poor communities and communities of color in New York State who are disproportionate targets of police violence. The "wellness check" that ended in Sandy Guardiola's shooting death in 2017 should have served as a wake-up call. It's not too late to prevent another violent and wholly unnecessary death. Justice will only be served when the police are reformed, and this will not be possible until we defund them.
+
+Can I count on you to consider an alternative budget and review policing methods that puts a focus on social service programs?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `Bob.Palumbo@CanandaiguaNewYork.gov,Nick.Cutri@CanandaiguaNewYork.Gov,Dan.Unrath@CanandaiguaNewYork.Gov,Karen.White@CanandaiguaNewYork.gov,Erich.Dittmar@CanandaiguaNewYork.gov,Robert.OBrien@CanandaiguaNewYork.Gov,Renee.Sutton@CanandaiguaNewYork.Gov,James.Terwilliger@CanandaiguaNewYork.Gov,Steve.Uebbing@CanandaiguaNewYork.gov,DavidBaker197@Rochester.rr.com,richardrussell02@yahoo.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/canandaigua`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

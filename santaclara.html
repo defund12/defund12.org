@@ -70,6 +70,76 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor, City Manager, and City Council</h2>
+  <b>Santa Clara (City), CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/santaclara`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `MayorAndCouncil@santaclaraca.gov, lgillmor@santaclaraca.gov, kwatanabe@santaclaraca.gov, rchahal@santaclaraca.gov, khardy@santaclaraca.gov, toneill@santaclaraca.gov, ddavis@santaclaraca.gov`)">🔗</span>
+        MayorAndCouncil@santaclaraca.gov, lgillmor@santaclaraca.gov, kwatanabe@santaclaraca.gov, rchahal@santaclaraca.gov, khardy@santaclaraca.gov, toneill@santaclaraca.gov, ddavis@santaclaraca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor Lisa Gillmor, Santa Clara City Council Members, and the Santa Clara City Manager,
+
+My name is [YOUR NAME], and I am a resident of Santa Clara. These past weeks, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul of our approach to criminal justice in America. I ask that our voices be heard and that real change be made to the way this city allocates its resources. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2020-2021 is under review as these protests continue. SCPD is a poor use of our resources.
+
+The fact that SCPD encompasses over $77 million of the city’s general operating fund in the proposed 2020-2021 budget is deeply concerning. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy).
+
+We could be spending our current policing budget on resources that better serve the community, such as affordable housing, public education, mental health resources, and improving the library system, just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.
+
+I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Santa Clara residents during this trying and uncertain time when livelihoods are on the line. I ask you to meaningfully reallocate funds towards social programs and resources that support housing, education, and other critical community needs. I urge you to pass a budget that supports community well-being, rather than empowers the police forces that tear them apart.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To Mayor Lisa Gillmor, Santa Clara City Council Members, and the Santa Clara City Manager,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Santa Clara. These past weeks, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul of our approach to criminal justice in America. I ask that our voices be heard and that real change be made to the way this city allocates its resources. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2020-2021 is under review as these protests continue. SCPD is a poor use of our resources.</p>
+
+<p>The fact that SCPD encompasses over $77 million of the city’s general operating fund in the proposed 2020-2021 budget is deeply concerning. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy).</p>
+
+<p>We could be spending our current policing budget on resources that better serve the community, such as affordable housing, public education, mental health resources, and improving the library system, just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.</p>
+
+<p>I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Santa Clara residents during this trying and uncertain time when livelihoods are on the line. I ask you to meaningfully reallocate funds towards social programs and resources that support housing, education, and other critical community needs. I urge you to pass a budget that supports community well-being, rather than empowers the police forces that tear them apart.</p>
+
+<p>As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.</p>
+
+<p>We can be a beacon for other cities to follow if only we have the courage to change.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1940,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor Lisa Gillmor, Santa Clara City Council Members, and the Santa Clara City Manager,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Santa Clara. These past weeks, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul of our approach to criminal justice in America. I ask that our voices be heard and that real change be made to the way this city allocates its resources. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2020-2021 is under review as these protests continue. SCPD is a poor use of our resources.<br />
+<br />
+The fact that SCPD encompasses over $77 million of the city’s general operating fund in the proposed 2020-2021 budget is deeply concerning. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy).<br />
+<br />
+We could be spending our current policing budget on resources that better serve the community, such as affordable housing, public education, mental health resources, and improving the library system, just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.<br />
+<br />
+I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Santa Clara residents during this trying and uncertain time when livelihoods are on the line. I ask you to meaningfully reallocate funds towards social programs and resources that support housing, education, and other critical community needs. I urge you to pass a budget that supports community well-being, rather than empowers the police forces that tear them apart.<br />
+<br />
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.<br />
+<br />
+We can be a beacon for other cities to follow if only we have the courage to change.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To Mayor Lisa Gillmor, Santa Clara City Council Members, and the Santa Clara City Manager,
+
+My name is [YOUR NAME], and I am a resident of Santa Clara. These past weeks, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul of our approach to criminal justice in America. I ask that our voices be heard and that real change be made to the way this city allocates its resources. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2020-2021 is under review as these protests continue. SCPD is a poor use of our resources.
+
+The fact that SCPD encompasses over $77 million of the city’s general operating fund in the proposed 2020-2021 budget is deeply concerning. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy).
+
+We could be spending our current policing budget on resources that better serve the community, such as affordable housing, public education, mental health resources, and improving the library system, just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.
+
+I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Santa Clara residents during this trying and uncertain time when livelihoods are on the line. I ask you to meaningfully reallocate funds towards social programs and resources that support housing, education, and other critical community needs. I urge you to pass a budget that supports community well-being, rather than empowers the police forces that tear them apart.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `MayorAndCouncil@santaclaraca.gov,lgillmor@santaclaraca.gov,kwatanabe@santaclaraca.gov,rchahal@santaclaraca.gov,khardy@santaclaraca.gov,toneill@santaclaraca.gov,ddavis@santaclaraca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/santaclara`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2015,4 @@
 </body>
 
 </html>
+

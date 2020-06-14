@@ -70,6 +70,90 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor and City Council</h2>
+  <b>Omaha, NE</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/omaha`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Pete.Festersen@cityofomaha.org, Ben.Gray@cityofomaha.org, Chris.Jerram@cityofomaha.org, Vinny.Palermo@cityofomaha.org, Rich.Pahls@cityofomaha.org, Brinker.Harding@cityofomaha.org, Aimee.Melton@cityofomaha.org, carrie.murphy@cityofomaha.org, hotline@cityofomaha.org`)">🔗</span>
+        Pete.Festersen@cityofomaha.org, Ben.Gray@cityofomaha.org, Chris.Jerram@cityofomaha.org, Vinny.Palermo@cityofomaha.org, Rich.Pahls@cityofomaha.org, Brinker.Harding@cityofomaha.org, Aimee.Melton@cityofomaha.org, carrie.murphy@cityofomaha.org, hotline@cityofomaha.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Jean Stothert and Members of City Council,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. First, I demand justice for James Scurlock who was killed by Jake Gardner on May 30th, 2020. Jake Gardner has been released from police custody and has not been charged. This case must be officially reopened. Second, I urge you to begin defunding and demilitarizing the Omaha Police Department.
+
+The 2020 budget for OPD is outrageously high and unwarranted. Omaha’s general budget for 2020 was $419.6 million and the OPD currently takes up nearly 40% of that budget, or $159.5 million. Since 2016, the OPD’s budget has increased 22% but the city’s clearance rates still remain relatively stagnant.
+
+In 2019, OPD’s portion of the budget was at 38% while Public Works, Parks, and Libraries made up just 5.7%, 5.5%, and 3.3% of the budget respectively. The underfunding of schools, infrastructure, parks, and libraries is causing much of Omaha’s suffering. The aforementioned underfunding of public services paired with the overfunding of the police shows me as your constituent that you are merely putting Band-Aids over bullet holes.
+
+As an Omaha resident, I therefore demand that you take immediate action to do the following:
+
+    Reduce Omaha’s allocation from the General Fund by 50% (roughly $80 million)
+    Disallow unauthorized overtime by OPD
+    Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+    Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe
+    Invest in community development initiatives and programs
+    Officially charge Jake Gardner
+
+Omaha cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund OPD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear Mayor Jean Stothert and Members of City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. First, I demand justice for James Scurlock who was killed by Jake Gardner on May 30th, 2020. Jake Gardner has been released from police custody and has not been charged. This case must be officially reopened. Second, I urge you to begin defunding and demilitarizing the Omaha Police Department.</p>
+
+<p>The 2020 budget for OPD is outrageously high and unwarranted. Omaha’s general budget for 2020 was $419.6 million and the OPD currently takes up nearly 40% of that budget, or $159.5 million. Since 2016, the OPD’s budget has increased 22% but the city’s clearance rates still remain relatively stagnant.</p>
+
+<p>In 2019, OPD’s portion of the budget was at 38% while Public Works, Parks, and Libraries made up just 5.7%, 5.5%, and 3.3% of the budget respectively. The underfunding of schools, infrastructure, parks, and libraries is causing much of Omaha’s suffering. The aforementioned underfunding of public services paired with the overfunding of the police shows me as your constituent that you are merely putting Band-Aids over bullet holes.</p>
+
+<p>As an Omaha resident, I therefore demand that you take immediate action to do the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Reduce Omaha’s allocation from the General Fund by 50% (roughly $80 million)
+Disallow unauthorized overtime by OPD
+Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe
+Invest in community development initiatives and programs
+Officially charge Jake Gardner
+</code></pre></div></div>
+
+<p>Omaha cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund OPD.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1954,82 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Jean Stothert and Members of City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. First, I demand justice for James Scurlock who was killed by Jake Gardner on May 30th, 2020. Jake Gardner has been released from police custody and has not been charged. This case must be officially reopened. Second, I urge you to begin defunding and demilitarizing the Omaha Police Department.<br />
+<br />
+The 2020 budget for OPD is outrageously high and unwarranted. Omaha’s general budget for 2020 was $419.6 million and the OPD currently takes up nearly 40% of that budget, or $159.5 million. Since 2016, the OPD’s budget has increased 22% but the city’s clearance rates still remain relatively stagnant.<br />
+<br />
+In 2019, OPD’s portion of the budget was at 38% while Public Works, Parks, and Libraries made up just 5.7%, 5.5%, and 3.3% of the budget respectively. The underfunding of schools, infrastructure, parks, and libraries is causing much of Omaha’s suffering. The aforementioned underfunding of public services paired with the overfunding of the police shows me as your constituent that you are merely putting Band-Aids over bullet holes.<br />
+<br />
+As an Omaha resident, I therefore demand that you take immediate action to do the following:<br />
+<br />
+    Reduce Omaha’s allocation from the General Fund by 50% (roughly $80 million)<br />
+    Disallow unauthorized overtime by OPD<br />
+    Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence<br />
+    Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe<br />
+    Invest in community development initiatives and programs<br />
+    Officially charge Jake Gardner<br />
+<br />
+Omaha cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund OPD.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear Mayor Jean Stothert and Members of City Council,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY]. First, I demand justice for James Scurlock who was killed by Jake Gardner on May 30th, 2020. Jake Gardner has been released from police custody and has not been charged. This case must be officially reopened. Second, I urge you to begin defunding and demilitarizing the Omaha Police Department.
+
+The 2020 budget for OPD is outrageously high and unwarranted. Omaha’s general budget for 2020 was $419.6 million and the OPD currently takes up nearly 40% of that budget, or $159.5 million. Since 2016, the OPD’s budget has increased 22% but the city’s clearance rates still remain relatively stagnant.
+
+In 2019, OPD’s portion of the budget was at 38% while Public Works, Parks, and Libraries made up just 5.7%, 5.5%, and 3.3% of the budget respectively. The underfunding of schools, infrastructure, parks, and libraries is causing much of Omaha’s suffering. The aforementioned underfunding of public services paired with the overfunding of the police shows me as your constituent that you are merely putting Band-Aids over bullet holes.
+
+As an Omaha resident, I therefore demand that you take immediate action to do the following:
+
+    Reduce Omaha’s allocation from the General Fund by 50% (roughly $80 million)
+    Disallow unauthorized overtime by OPD
+    Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+    Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe
+    Invest in community development initiatives and programs
+    Officially charge Jake Gardner
+
+Omaha cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund OPD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `Pete.Festersen@cityofomaha.org,Ben.Gray@cityofomaha.org,Chris.Jerram@cityofomaha.org,Vinny.Palermo@cityofomaha.org,Rich.Pahls@cityofomaha.org,Brinker.Harding@cityofomaha.org,Aimee.Melton@cityofomaha.org,carrie.murphy@cityofomaha.org,hotline@cityofomaha.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/omaha`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2043,4 @@
 </body>
 
 </html>
+

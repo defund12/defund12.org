@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to County Executive and County Council</h2>
+  <b>Prince George's County, MD</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/princegeorges-county`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `countyexecutive@co.pg.md.us, CouncilDistrict4@co.pg.md.us, CouncilDistrict7@co.pg.md.us, At-LargeMemberFranklin@co.pg.md.us, At-LargeMemberHawkins@co.pg.md.us, CouncilDistrict1@co.pg.md.us, CouncilDistrict2@co.pg.md.us, CouncilDistrict3@co.pg.md.us, CouncilDistrict5@co.pg.md.us, CouncilDistrict6@co.pg.md.us, CouncilDistrict8@co.pg.md.us, CouncilDistrict9@co.pg.md.us`)">🔗</span>
+        countyexecutive@co.pg.md.us, CouncilDistrict4@co.pg.md.us, CouncilDistrict7@co.pg.md.us, At-LargeMemberFranklin@co.pg.md.us, At-LargeMemberHawkins@co.pg.md.us, CouncilDistrict1@co.pg.md.us, CouncilDistrict2@co.pg.md.us, CouncilDistrict3@co.pg.md.us, CouncilDistrict5@co.pg.md.us, CouncilDistrict6@co.pg.md.us, CouncilDistrict8@co.pg.md.us, CouncilDistrict9@co.pg.md.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear County Executive Alsobrooks and County Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR CITY] writing to demand that you adopt a budget that prioritizes community services such as mental health, rehabilitation, housing, and employment, and directs funding away from the police and sheriff’s departments.
+
+Maryland has the highest number of Black men incarcerated per capita, and Prince George's County Police plays a role in this statistic. We have seen numerous videos of police brutality within our county. Why should the police be funded given their history of violence within our community? In our schools, School Resource Officers contribute to the school to prison pipeline and continue to make our children feel unsafe.
+
+In light of events of recent weeks, including the killing of George Floyd in Minneapolis and Breonna Taylor in Louisville, it feels especially inappropriate that the in the amended FY21 budget recently passed by the county council, over $348 million was allocated for the police budget, but less than $41 million was allocated for the entirety of Health and Human Services.
+
+Your job as elected officials is to take action when your constituents request. Today, I demand that you defund the Prince George's County Police and re-allocate those funds to programs that aim to promote a safer, more equitable community: student-centered educational reform, comprehensive community-based mental-health services, substance abuse treatment services, prisoner reentry, rehabilitation, and employment programs, affordable housing services, and more. I demand a budget that reflects the needs of Prince George’s County residents.
+
+Thank You,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear County Executive Alsobrooks and County Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR CITY] writing to demand that you adopt a budget that prioritizes community services such as mental health, rehabilitation, housing, and employment, and directs funding away from the police and sheriff’s departments.</p>
+
+<p>Maryland has the highest number of Black men incarcerated per capita, and Prince George’s County Police plays a role in this statistic. We have seen numerous videos of police brutality within our county. Why should the police be funded given their history of violence within our community? In our schools, School Resource Officers contribute to the school to prison pipeline and continue to make our children feel unsafe.</p>
+
+<p>In light of events of recent weeks, including the killing of George Floyd in Minneapolis and Breonna Taylor in Louisville, it feels especially inappropriate that the in the amended FY21 budget recently passed by the county council, over $348 million was allocated for the police budget, but less than $41 million was allocated for the entirety of Health and Human Services.</p>
+
+<p>Your job as elected officials is to take action when your constituents request. Today, I demand that you defund the Prince George’s County Police and re-allocate those funds to programs that aim to promote a safer, more equitable community: student-centered educational reform, comprehensive community-based mental-health services, substance abuse treatment services, prisoner reentry, rehabilitation, and employment programs, affordable housing services, and more. I demand a budget that reflects the needs of Prince George’s County residents.</p>
+
+<p>Thank You,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear County Executive Alsobrooks and County Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR CITY] writing to demand that you adopt a budget that prioritizes community services such as mental health, rehabilitation, housing, and employment, and directs funding away from the police and sheriff’s departments.<br />
+<br />
+Maryland has the highest number of Black men incarcerated per capita, and Prince George's County Police plays a role in this statistic. We have seen numerous videos of police brutality within our county. Why should the police be funded given their history of violence within our community? In our schools, School Resource Officers contribute to the school to prison pipeline and continue to make our children feel unsafe.<br />
+<br />
+In light of events of recent weeks, including the killing of George Floyd in Minneapolis and Breonna Taylor in Louisville, it feels especially inappropriate that the in the amended FY21 budget recently passed by the county council, over $348 million was allocated for the police budget, but less than $41 million was allocated for the entirety of Health and Human Services.<br />
+<br />
+Your job as elected officials is to take action when your constituents request. Today, I demand that you defund the Prince George's County Police and re-allocate those funds to programs that aim to promote a safer, more equitable community: student-centered educational reform, comprehensive community-based mental-health services, substance abuse treatment services, prisoner reentry, rehabilitation, and employment programs, affordable housing services, and more. I demand a budget that reflects the needs of Prince George’s County residents.<br />
+<br />
+Thank You,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear County Executive Alsobrooks and County Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR CITY] writing to demand that you adopt a budget that prioritizes community services such as mental health, rehabilitation, housing, and employment, and directs funding away from the police and sheriff’s departments.
+
+Maryland has the highest number of Black men incarcerated per capita, and Prince George's County Police plays a role in this statistic. We have seen numerous videos of police brutality within our county. Why should the police be funded given their history of violence within our community? In our schools, School Resource Officers contribute to the school to prison pipeline and continue to make our children feel unsafe.
+
+In light of events of recent weeks, including the killing of George Floyd in Minneapolis and Breonna Taylor in Louisville, it feels especially inappropriate that the in the amended FY21 budget recently passed by the county council, over $348 million was allocated for the police budget, but less than $41 million was allocated for the entirety of Health and Human Services.
+
+Your job as elected officials is to take action when your constituents request. Today, I demand that you defund the Prince George's County Police and re-allocate those funds to programs that aim to promote a safer, more equitable community: student-centered educational reform, comprehensive community-based mental-health services, substance abuse treatment services, prisoner reentry, rehabilitation, and employment programs, affordable housing services, and more. I demand a budget that reflects the needs of Prince George’s County residents.
+
+Thank You,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `countyexecutive@co.pg.md.us,CouncilDistrict4@co.pg.md.us,CouncilDistrict7@co.pg.md.us,At-LargeMemberFranklin@co.pg.md.us,At-LargeMemberHawkins@co.pg.md.us,CouncilDistrict1@co.pg.md.us,CouncilDistrict2@co.pg.md.us,CouncilDistrict3@co.pg.md.us,CouncilDistrict5@co.pg.md.us,CouncilDistrict6@co.pg.md.us,CouncilDistrict8@co.pg.md.us,CouncilDistrict9@co.pg.md.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/princegeorges-county`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

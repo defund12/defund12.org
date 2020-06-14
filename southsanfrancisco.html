@@ -70,6 +70,76 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Garbarino and City Council</h2>
+  <b>South San Francisco, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/southsanfrancisco`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `buenaflor.nicolas@ssf.net, mark.nagales@ssf.net, rich.garbarino@ssf.net, mark.addiego@ssf.net, karyl.matsumoto@ssf.net`)">🔗</span>
+        buenaflor.nicolas@ssf.net, mark.nagales@ssf.net, rich.garbarino@ssf.net, mark.addiego@ssf.net, karyl.matsumoto@ssf.net
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Garbarino and South San Francisco City Council,
+
+My name is [YOUR NAME] and I am a [RESIDENT/COMMUNITY MEMBER/CITY EMPLOYEE/COMPANY EMPLOYEE/ETC] of South San Francisco.
+
+I am emailing to demand Mayor Garbarino and the City Council divest from the South San Francisco Police Department. The demonstrations across the nation have made it clear that there is a need for change. How will our city address the police brutality and systematic oppression we see occurring across the nation and in our own city?
+
+Currently, the proposed budget for the next fiscal year would allocate $31,935,228—28% of the proposed $112,416,313 general fund—to the police department. I urge Mayor Garbarino and the city council to restructure the fiscal year 2020-2021 budget. The current investment in policing
+perpetuates a system that serves the purpose of controlling and threatening Black and Brown people. It is unacceptable that Black lives continue to be lost at the hands of police, and it is clear that policing reforms are not enough. I am calling on our city council to commit to reducing the police budget and reinvesting in other essential programs such as COVID relief, affordable housing, educational enrichment, transportation, and community programs.
+
+Specifically, I would rather see funds go towards mental health programs, crisis de-escalators, and the Community Development Block Grant fund which serves to assist low income persons by: providing decent and affordable housing, providing a suitable living environment, and expanding economic opportunities.
+
+The current funds dedicated to the SSFPD have been harmful to our community and I ask that our leadership take a look at alternatives to policing and in the meantime allocate money to programs and services that will benefit our community.
+
+Thank you for your attention to my concerns. I hope to see action from our leadership soon.
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Garbarino and South San Francisco City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a [RESIDENT/COMMUNITY MEMBER/CITY EMPLOYEE/COMPANY EMPLOYEE/ETC] of South San Francisco.</p>
+
+<p>I am emailing to demand Mayor Garbarino and the City Council divest from the South San Francisco Police Department. The demonstrations across the nation have made it clear that there is a need for change. How will our city address the police brutality and systematic oppression we see occurring across the nation and in our own city?</p>
+
+<p>Currently, the proposed budget for the next fiscal year would allocate $31,935,228—28% of the proposed $112,416,313 general fund—to the police department. I urge Mayor Garbarino and the city council to restructure the fiscal year 2020-2021 budget. The current investment in policing
+perpetuates a system that serves the purpose of controlling and threatening Black and Brown people. It is unacceptable that Black lives continue to be lost at the hands of police, and it is clear that policing reforms are not enough. I am calling on our city council to commit to reducing the police budget and reinvesting in other essential programs such as COVID relief, affordable housing, educational enrichment, transportation, and community programs.</p>
+
+<p>Specifically, I would rather see funds go towards mental health programs, crisis de-escalators, and the Community Development Block Grant fund which serves to assist low income persons by: providing decent and affordable housing, providing a suitable living environment, and expanding economic opportunities.</p>
+
+<p>The current funds dedicated to the SSFPD have been harmful to our community and I ask that our leadership take a look at alternatives to policing and in the meantime allocate money to programs and services that will benefit our community.</p>
+
+<p>Thank you for your attention to my concerns. I hope to see action from our leadership soon.</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1940,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Garbarino and South San Francisco City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a [RESIDENT/COMMUNITY MEMBER/CITY EMPLOYEE/COMPANY EMPLOYEE/ETC] of South San Francisco.<br />
+<br />
+I am emailing to demand Mayor Garbarino and the City Council divest from the South San Francisco Police Department. The demonstrations across the nation have made it clear that there is a need for change. How will our city address the police brutality and systematic oppression we see occurring across the nation and in our own city?<br />
+<br />
+Currently, the proposed budget for the next fiscal year would allocate $31,935,228—28% of the proposed $112,416,313 general fund—to the police department. I urge Mayor Garbarino and the city council to restructure the fiscal year 2020-2021 budget. The current investment in policing<br />
+perpetuates a system that serves the purpose of controlling and threatening Black and Brown people. It is unacceptable that Black lives continue to be lost at the hands of police, and it is clear that policing reforms are not enough. I am calling on our city council to commit to reducing the police budget and reinvesting in other essential programs such as COVID relief, affordable housing, educational enrichment, transportation, and community programs.<br />
+<br />
+Specifically, I would rather see funds go towards mental health programs, crisis de-escalators, and the Community Development Block Grant fund which serves to assist low income persons by: providing decent and affordable housing, providing a suitable living environment, and expanding economic opportunities.<br />
+<br />
+The current funds dedicated to the SSFPD have been harmful to our community and I ask that our leadership take a look at alternatives to policing and in the meantime allocate money to programs and services that will benefit our community.<br />
+<br />
+Thank you for your attention to my concerns. I hope to see action from our leadership soon.<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Garbarino and South San Francisco City Council,
+
+My name is [YOUR NAME] and I am a [RESIDENT/COMMUNITY MEMBER/CITY EMPLOYEE/COMPANY EMPLOYEE/ETC] of South San Francisco.
+
+I am emailing to demand Mayor Garbarino and the City Council divest from the South San Francisco Police Department. The demonstrations across the nation have made it clear that there is a need for change. How will our city address the police brutality and systematic oppression we see occurring across the nation and in our own city?
+
+Currently, the proposed budget for the next fiscal year would allocate $31,935,228—28% of the proposed $112,416,313 general fund—to the police department. I urge Mayor Garbarino and the city council to restructure the fiscal year 2020-2021 budget. The current investment in policing
+perpetuates a system that serves the purpose of controlling and threatening Black and Brown people. It is unacceptable that Black lives continue to be lost at the hands of police, and it is clear that policing reforms are not enough. I am calling on our city council to commit to reducing the police budget and reinvesting in other essential programs such as COVID relief, affordable housing, educational enrichment, transportation, and community programs.
+
+Specifically, I would rather see funds go towards mental health programs, crisis de-escalators, and the Community Development Block Grant fund which serves to assist low income persons by: providing decent and affordable housing, providing a suitable living environment, and expanding economic opportunities.
+
+The current funds dedicated to the SSFPD have been harmful to our community and I ask that our leadership take a look at alternatives to policing and in the meantime allocate money to programs and services that will benefit our community.
+
+Thank you for your attention to my concerns. I hope to see action from our leadership soon.
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `buenaflor.nicolas@ssf.net,mark.nagales@ssf.net,rich.garbarino@ssf.net,mark.addiego@ssf.net,karyl.matsumoto@ssf.net`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/southsanfrancisco`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2015,4 @@
 </body>
 
 </html>
+

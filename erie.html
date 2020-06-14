@@ -70,6 +70,56 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the City Council, Mayor's Office, and Other City Officials</h2>
+  <b>Erie, PA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/erie`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `RLamis@erie.pa.us, PLichtenwalter@erie.pa.us, CGroner@erie.pa.us, MOutlaw@erie.pa.us, MSala@erie.pa.us, MBruce@erie.pa.us, DSpizarny@erie.pa.us, FStrumila@erie.pa.us, Jwinarski@erie.pa.us, Lallen@erie.pa.us, Dbrennan@erie.pa.us, Ebrzezinski@erie.pa.us, Mkeys@erie.pa.us, Kschaaf@erie.pa.us, Mwitherspoon@erie.pa.us`)">🔗</span>
+        RLamis@erie.pa.us, PLichtenwalter@erie.pa.us, CGroner@erie.pa.us, MOutlaw@erie.pa.us, MSala@erie.pa.us, MBruce@erie.pa.us, DSpizarny@erie.pa.us, FStrumila@erie.pa.us, Jwinarski@erie.pa.us, Lallen@erie.pa.us, Dbrennan@erie.pa.us, Ebrzezinski@erie.pa.us, Mkeys@erie.pa.us, Kschaaf@erie.pa.us, Mwitherspoon@erie.pa.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Erie Mayor's Office, City Council Members and other City Officials,
+
+My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. More than a third of Erie's overall budget goes to funding the Erie PD. This is unacceptable. I urge you towards a reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Erie Mayor’s Office, City Council Members and other City Officials,</p>
+
+<p>My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. More than a third of Erie’s overall budget goes to funding the Erie PD. This is unacceptable. I urge you towards a reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1920,48 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Erie Mayor's Office, City Council Members and other City Officials,<br />
+<br />
+My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. More than a third of Erie's overall budget goes to funding the Erie PD. This is unacceptable. I urge you towards a reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Erie Mayor's Office, City Council Members and other City Officials,
+
+My name is [YOUR NAME] from [YOUR NEIGHBORHOOD]. More than a third of Erie's overall budget goes to funding the Erie PD. This is unacceptable. I urge you towards a reallocation of the Erie expense budget, away from Erie PD and towards social services and educational services.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `RLamis@erie.pa.us,PLichtenwalter@erie.pa.us,CGroner@erie.pa.us,MOutlaw@erie.pa.us,MSala@erie.pa.us,MBruce@erie.pa.us,DSpizarny@erie.pa.us,FStrumila@erie.pa.us,Jwinarski@erie.pa.us,Lallen@erie.pa.us,Dbrennan@erie.pa.us,Ebrzezinski@erie.pa.us,Mkeys@erie.pa.us,Kschaaf@erie.pa.us,Mwitherspoon@erie.pa.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/erie`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1975,4 @@
 </body>
 
 </html>
+

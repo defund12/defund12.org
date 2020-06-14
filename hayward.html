@@ -70,6 +70,66 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members</h2>
+  <b>Hayward, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/hayward`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Barbara.Halliday@hayward-ca.gov, Francisco.Zermeno@hayward-ca.gov, Al.Mendall@hayward-ca.gov, Sara.Lamnin@hayward-ca.gov, Elisa.Marquez@hayward-ca.gov, Mark.Salinas@hayward-ca.gov, aisha.wahab@hayward-ca.gov, askrcd-da@acgov.org, Toney.Chaplin@hayward-ca.gov, Maria.Hurtado@hayward-ca.gov, Dustin.Claussen@hayward-ca.gov`)">🔗</span>
+        Barbara.Halliday@hayward-ca.gov, Francisco.Zermeno@hayward-ca.gov, Al.Mendall@hayward-ca.gov, Sara.Lamnin@hayward-ca.gov, Elisa.Marquez@hayward-ca.gov, Mark.Salinas@hayward-ca.gov, aisha.wahab@hayward-ca.gov, askrcd-da@acgov.org, Toney.Chaplin@hayward-ca.gov, Maria.Hurtado@hayward-ca.gov, Dustin.Claussen@hayward-ca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor Halliday, the Hayward City Council and Alameda County Elected Officials,
+
+My name is \[YOUR NAME\], and I am a resident of Hayward. This past week, our nation has been gripped by protests calling for a rapid and meaningful reevaluation of the role of police in our communities, given the racism and anti-Blackness that they have come to represent and perpetuate. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+Hayward Police Department (HPD) has been a waste of our resources. Last year, the HPD consumed approximately a quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police. In addition, the proposed budget changes introduced during the City Council meeting held on June 2 will slash funding for essential public programs that will disproportionately affect the Black residents of Hayward. Meanwhile, the HPD received no proposed cuts to staffing and a minimal impact to its budget.
+
+I call on you to meaningfully restrict the HPD budget and instead re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+
+\[YOUR NAME\]
+\[YOUR ADDRESS\]
+\[YOUR EMAIL\]
+\[YOUR PHONE NUMBER\]`)">🔗</span>
+        <br /> <p>To Mayor Halliday, the Hayward City Council and Alameda County Elected Officials,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Hayward. This past week, our nation has been gripped by protests calling for a rapid and meaningful reevaluation of the role of police in our communities, given the racism and anti-Blackness that they have come to represent and perpetuate. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.</p>
+
+<p>Hayward Police Department (HPD) has been a waste of our resources. Last year, the HPD consumed approximately a quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police. In addition, the proposed budget changes introduced during the City Council meeting held on June 2 will slash funding for essential public programs that will disproportionately affect the Black residents of Hayward. Meanwhile, the HPD received no proposed cuts to staffing and a minimal impact to its budget.</p>
+
+<p>I call on you to meaningfully restrict the HPD budget and instead re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. We can be a beacon for other cities to follow if only we have the courage to change.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1930,58 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor Halliday, the Hayward City Council and Alameda County Elected Officials,<br />
+<br />
+My name is \[YOUR NAME\], and I am a resident of Hayward. This past week, our nation has been gripped by protests calling for a rapid and meaningful reevaluation of the role of police in our communities, given the racism and anti-Blackness that they have come to represent and perpetuate. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.<br />
+<br />
+Hayward Police Department (HPD) has been a waste of our resources. Last year, the HPD consumed approximately a quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police. In addition, the proposed budget changes introduced during the City Council meeting held on June 2 will slash funding for essential public programs that will disproportionately affect the Black residents of Hayward. Meanwhile, the HPD received no proposed cuts to staffing and a minimal impact to its budget.<br />
+<br />
+I call on you to meaningfully restrict the HPD budget and instead re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. We can be a beacon for other cities to follow if only we have the courage to change.<br />
+<br />
+Sincerely,<br />
+<br />
+\[YOUR NAME\]<br />
+\[YOUR ADDRESS\]<br />
+\[YOUR EMAIL\]<br />
+\[YOUR PHONE NUMBER\]`.trim() :
+      `To Mayor Halliday, the Hayward City Council and Alameda County Elected Officials,
+
+My name is \[YOUR NAME\], and I am a resident of Hayward. This past week, our nation has been gripped by protests calling for a rapid and meaningful reevaluation of the role of police in our communities, given the racism and anti-Blackness that they have come to represent and perpetuate. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+Hayward Police Department (HPD) has been a waste of our resources. Last year, the HPD consumed approximately a quarter of available discretionary funds. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police. In addition, the proposed budget changes introduced during the City Council meeting held on June 2 will slash funding for essential public programs that will disproportionately affect the Black residents of Hayward. Meanwhile, the HPD received no proposed cuts to staffing and a minimal impact to its budget.
+
+I call on you to meaningfully restrict the HPD budget and instead re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+
+\[YOUR NAME\]
+\[YOUR ADDRESS\]
+\[YOUR EMAIL\]
+\[YOUR PHONE NUMBER\]`.trim()
+    );
+    const recipients = `Barbara.Halliday@hayward-ca.gov,Francisco.Zermeno@hayward-ca.gov,Al.Mendall@hayward-ca.gov,Sara.Lamnin@hayward-ca.gov,Elisa.Marquez@hayward-ca.gov,Mark.Salinas@hayward-ca.gov,aisha.wahab@hayward-ca.gov,askrcd-da@acgov.org,Toney.Chaplin@hayward-ca.gov,Maria.Hurtado@hayward-ca.gov,Dustin.Claussen@hayward-ca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/hayward`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1995,4 @@
 </body>
 
 </html>
+

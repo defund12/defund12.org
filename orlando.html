@@ -70,6 +70,71 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members</h2>
+  <b>Orlando, FL</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/orlando`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `buddy.dyer@orlando.gov, tony.ortiz@orlando.gov, jim.gray@orlando.gov, robert.stuart@orlando.gov, regina.hill@orlando.gov, patty.sheehan@orlando.gov, bakari.burns@orlando.gov`)">🔗</span>
+        buddy.dyer@orlando.gov, tony.ortiz@orlando.gov, jim.gray@orlando.gov, robert.stuart@orlando.gov, regina.hill@orlando.gov, patty.sheehan@orlando.gov, bakari.burns@orlando.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Orlando City Council Members,
+
+My name is [YOUR NAME] and I am a resident of [district number]. This year, Mayor Dyer expressed that community safety was his top priority, yet only allocated 10,841,328 (0.8% of total budget) toward affordable housing and community development. Rather than prioritize quality of life for all of Orlando with a proportional housing and development budget, Mayor Dyer chose to prioritize OPD with a budget of 187,104,901 (13.7% of total budget) with an additional $4,432,857 for non-departmental costs.
+
+I am emailing today to demand that you vote against the Mayor's 2020-2021 proposed budget. Furthermore, I urge you to pressure the office of the mayor towards an ethical and equal reallocation of the budget away from OPD and towards safe housing, social services, and education programs, effective at the beginning of FY 2020-2021. Mayor Dyer has become complicit in his tenure as mayor with police brutality and I am asking that city officials lobby the same amount of attention and effort towards finding sustainable, longterm change for our entire community. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons.
+
+To the commissioners that represent statistically wealthy, white neighborhoods, do not forget our poor communities and communities of color who are disproportionate targets of police violence.
+
+Can I count on you to pass an alternative budget that puts a focus on social service programs? If not, you can count on me to help ensure you are voted out of office.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear Orlando City Council Members,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [district number]. This year, Mayor Dyer expressed that community safety was his top priority, yet only allocated 10,841,328 (0.8% of total budget) toward affordable housing and community development. Rather than prioritize quality of life for all of Orlando with a proportional housing and development budget, Mayor Dyer chose to prioritize OPD with a budget of 187,104,901 (13.7% of total budget) with an additional $4,432,857 for non-departmental costs.</p>
+
+<p>I am emailing today to demand that you vote against the Mayor’s 2020-2021 proposed budget. Furthermore, I urge you to pressure the office of the mayor towards an ethical and equal reallocation of the budget away from OPD and towards safe housing, social services, and education programs, effective at the beginning of FY 2020-2021. Mayor Dyer has become complicit in his tenure as mayor with police brutality and I am asking that city officials lobby the same amount of attention and effort towards finding sustainable, longterm change for our entire community. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons.</p>
+
+<p>To the commissioners that represent statistically wealthy, white neighborhoods, do not forget our poor communities and communities of color who are disproportionate targets of police violence.</p>
+
+<p>Can I count on you to pass an alternative budget that puts a focus on social service programs? If not, you can count on me to help ensure you are voted out of office.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1935,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Orlando City Council Members,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [district number]. This year, Mayor Dyer expressed that community safety was his top priority, yet only allocated 10,841,328 (0.8% of total budget) toward affordable housing and community development. Rather than prioritize quality of life for all of Orlando with a proportional housing and development budget, Mayor Dyer chose to prioritize OPD with a budget of 187,104,901 (13.7% of total budget) with an additional $4,432,857 for non-departmental costs.<br />
+<br />
+I am emailing today to demand that you vote against the Mayor's 2020-2021 proposed budget. Furthermore, I urge you to pressure the office of the mayor towards an ethical and equal reallocation of the budget away from OPD and towards safe housing, social services, and education programs, effective at the beginning of FY 2020-2021. Mayor Dyer has become complicit in his tenure as mayor with police brutality and I am asking that city officials lobby the same amount of attention and effort towards finding sustainable, longterm change for our entire community. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons.<br />
+<br />
+To the commissioners that represent statistically wealthy, white neighborhoods, do not forget our poor communities and communities of color who are disproportionate targets of police violence.<br />
+<br />
+Can I count on you to pass an alternative budget that puts a focus on social service programs? If not, you can count on me to help ensure you are voted out of office.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear Orlando City Council Members,
+
+My name is [YOUR NAME] and I am a resident of [district number]. This year, Mayor Dyer expressed that community safety was his top priority, yet only allocated 10,841,328 (0.8% of total budget) toward affordable housing and community development. Rather than prioritize quality of life for all of Orlando with a proportional housing and development budget, Mayor Dyer chose to prioritize OPD with a budget of 187,104,901 (13.7% of total budget) with an additional $4,432,857 for non-departmental costs.
+
+I am emailing today to demand that you vote against the Mayor's 2020-2021 proposed budget. Furthermore, I urge you to pressure the office of the mayor towards an ethical and equal reallocation of the budget away from OPD and towards safe housing, social services, and education programs, effective at the beginning of FY 2020-2021. Mayor Dyer has become complicit in his tenure as mayor with police brutality and I am asking that city officials lobby the same amount of attention and effort towards finding sustainable, longterm change for our entire community. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons.
+
+To the commissioners that represent statistically wealthy, white neighborhoods, do not forget our poor communities and communities of color who are disproportionate targets of police violence.
+
+Can I count on you to pass an alternative budget that puts a focus on social service programs? If not, you can count on me to help ensure you are voted out of office.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `buddy.dyer@orlando.gov,tony.ortiz@orlando.gov,jim.gray@orlando.gov,robert.stuart@orlando.gov,regina.hill@orlando.gov,patty.sheehan@orlando.gov,bakari.burns@orlando.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/orlando`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2006,4 @@
 </body>
 
 </html>
+

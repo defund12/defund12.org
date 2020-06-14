@@ -70,6 +70,69 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Governor, Mayor, and City Council</h2>
+  <b>Pawtucket, RI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/pawtucket`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `governor@governor.ri.gov, don@dongrebien.com, dzelazo@pawtucketri.com, maraujo@pawtucketri.com, avitali@pawtucketri.com, evasquez@pawtucketri.com, pawtward1@gmail.com, MJWildenhain@pawtucketri.com, tmercer@pawtucketri.com, mkallman@pawtucketri.com, trudd@pawtucketri.com`)">🔗</span>
+        governor@governor.ri.gov, don@dongrebien.com, dzelazo@pawtucketri.com, maraujo@pawtucketri.com, avitali@pawtucketri.com, evasquez@pawtucketri.com, pawtward1@gmail.com, MJWildenhain@pawtucketri.com, tmercer@pawtucketri.com, mkallman@pawtucketri.com, trudd@pawtucketri.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Grebien and Pawtucket City Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to urge Governor Raimondo, Mayor Grebien, and the members of the Pawtucket City Council to adopt a budget redirecting funding from the Pawtucket Police Department to initiatives that better serve the wellbeing of the community. It has become clear that police do not meet the needs of the community and are in fact a detriment to community safety, furthering the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.
+
+The mayor’s office has proposed a police budget of over $24 million for FY21. This includes a significant sum to keep police in Pawtucket public schools, contributing to the criminalization of youth and the school-to-prison pipeline that disproportionately targets Black students and students of color within the Pawtucket Public School system.
+
+Imagine what over $24 million could do for this community if it was invested in education, community mental health services, resources for formerly incarcerated, housing, and other services that have been proven to reduce crime and contribute to the safety and well-being of communities.
+
+Pawtucket may be a small city in a tiny state, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to our community, not cops.
+
+Thank you,
+[YOUR NAME]
+[ADDRESS]
+[PHONE NUMBER]
+[EMAIL ADDRESS]
+`)">🔗</span>
+        <br /> <p>Dear Mayor Grebien and Pawtucket City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to urge Governor Raimondo, Mayor Grebien, and the members of the Pawtucket City Council to adopt a budget redirecting funding from the Pawtucket Police Department to initiatives that better serve the wellbeing of the community. It has become clear that police do not meet the needs of the community and are in fact a detriment to community safety, furthering the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.</p>
+
+<p>The mayor’s office has proposed a police budget of over $24 million for FY21. This includes a significant sum to keep police in Pawtucket public schools, contributing to the criminalization of youth and the school-to-prison pipeline that disproportionately targets Black students and students of color within the Pawtucket Public School system.</p>
+
+<p>Imagine what over $24 million could do for this community if it was invested in education, community mental health services, resources for formerly incarcerated, housing, and other services that have been proven to reduce crime and contribute to the safety and well-being of communities.</p>
+
+<p>Pawtucket may be a small city in a tiny state, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to our community, not cops.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[ADDRESS]
+[PHONE NUMBER]
+[EMAIL ADDRESS]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1933,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Grebien and Pawtucket City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to urge Governor Raimondo, Mayor Grebien, and the members of the Pawtucket City Council to adopt a budget redirecting funding from the Pawtucket Police Department to initiatives that better serve the wellbeing of the community. It has become clear that police do not meet the needs of the community and are in fact a detriment to community safety, furthering the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.<br />
+<br />
+The mayor’s office has proposed a police budget of over $24 million for FY21. This includes a significant sum to keep police in Pawtucket public schools, contributing to the criminalization of youth and the school-to-prison pipeline that disproportionately targets Black students and students of color within the Pawtucket Public School system.<br />
+<br />
+Imagine what over $24 million could do for this community if it was invested in education, community mental health services, resources for formerly incarcerated, housing, and other services that have been proven to reduce crime and contribute to the safety and well-being of communities.<br />
+<br />
+Pawtucket may be a small city in a tiny state, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to our community, not cops.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[ADDRESS]<br />
+[PHONE NUMBER]<br />
+[EMAIL ADDRESS]<br />
+`.trim() :
+      `Dear Mayor Grebien and Pawtucket City Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to urge Governor Raimondo, Mayor Grebien, and the members of the Pawtucket City Council to adopt a budget redirecting funding from the Pawtucket Police Department to initiatives that better serve the wellbeing of the community. It has become clear that police do not meet the needs of the community and are in fact a detriment to community safety, furthering the oppression of residents of color, undocumented residents, disabled residents, mentally ill residents, and LGBTQ residents.
+
+The mayor’s office has proposed a police budget of over $24 million for FY21. This includes a significant sum to keep police in Pawtucket public schools, contributing to the criminalization of youth and the school-to-prison pipeline that disproportionately targets Black students and students of color within the Pawtucket Public School system.
+
+Imagine what over $24 million could do for this community if it was invested in education, community mental health services, resources for formerly incarcerated, housing, and other services that have been proven to reduce crime and contribute to the safety and well-being of communities.
+
+Pawtucket may be a small city in a tiny state, but we have shown that we can make a huge impact on America at large. We desperately need to change our financial priorities and let our tax dollars go to our community, not cops.
+
+Thank you,
+[YOUR NAME]
+[ADDRESS]
+[PHONE NUMBER]
+[EMAIL ADDRESS]
+`.trim()
+    );
+    const recipients = `governor@governor.ri.gov,don@dongrebien.com,dzelazo@pawtucketri.com,maraujo@pawtucketri.com,avitali@pawtucketri.com,evasquez@pawtucketri.com,pawtward1@gmail.com,MJWildenhain@pawtucketri.com,tmercer@pawtucketri.com,mkallman@pawtucketri.com,trudd@pawtucketri.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/pawtucket`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2002,4 @@
 </body>
 
 </html>
+

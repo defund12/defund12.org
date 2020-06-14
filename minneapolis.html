@@ -70,6 +70,73 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Minneapolis, MN</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/minneapolis`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jacob.frey@minneapolismn.gov`)">🔗</span>
+        jacob.frey@minneapolismn.gov
+      </div>
+      
+      <div class="recipients">
+        <b>CC:</b> <span class="copyToClipboard" onclick="copyToClipboard(this, `kevin.reich@minneapolismn.gov, cam.gordon@minneapolismn.gov, steve.fletcher@minneapolismn.gov, phillipe.cunningham@minneapolismn.gov, jeremiah.ellison@minneapolismn.gov, abdi.warsame@minneapolismn.gov, lisa.goodman@minneapolismn.gov, andrea.jenkins@minneapolismn.gov, alondra.cano@minneapolismn.gov, lisa.bender@minneapolismn.gov, jeremy.schroeder@minneapolismn.gov, andrew.johnson@minneapolismn.gov, linea.palmisano@minneapolismn.gov`)">🔗</span>
+        kevin.reich@minneapolismn.gov, cam.gordon@minneapolismn.gov, steve.fletcher@minneapolismn.gov, phillipe.cunningham@minneapolismn.gov, jeremiah.ellison@minneapolismn.gov, abdi.warsame@minneapolismn.gov, lisa.goodman@minneapolismn.gov, andrea.jenkins@minneapolismn.gov, alondra.cano@minneapolismn.gov, lisa.bender@minneapolismn.gov, jeremy.schroeder@minneapolismn.gov, andrew.johnson@minneapolismn.gov, linea.palmisano@minneapolismn.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Frey and City Council Members,
+
+My name is [YOUR NAME]. I am a resident of [YOUR CITY, STATE] and I am emailing today to demand the defunding of the Minneapolis Police Department and the funding of new, community-led and integrated health and safety strategies.
+
+We are in the midst of widespread upheaval over the systemic, racist violence which has been, to this point, overseen by the Minneapolis City Council. George Floyd was murdered during this oversight. Beloved Minneapolis institutions were burned and destroyed in the aftermath. People have been left without the resources they need. Jobs and livelihoods will take a long time to recover. And most of all, Black citizens of Minneapolis continue in this moment to live in a city that is currently upholding the Minneapolis Police Department which has brutalized and taken too many Black lives. Therefore, we will no longer accept empty gestures and suggestions of reform. 
+
+We need to defund the Minneapolis Police Department. We need a budget that adequately and effectively meets the needs of Minneapolis residents during the pandemic and well past it; and we need a budget that supports communities and supports their well-being. 
+
+I am urging you and the Minneapolis City Council to adopt a budget that defunds the police and funds non-violent, community-led, health and safety strategies.
+
+Sincerely,\
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Frey and City Council Members,</p>
+
+<p>My name is [YOUR NAME]. I am a resident of [YOUR CITY, STATE] and I am emailing today to demand the defunding of the Minneapolis Police Department and the funding of new, community-led and integrated health and safety strategies.</p>
+
+<p>We are in the midst of widespread upheaval over the systemic, racist violence which has been, to this point, overseen by the Minneapolis City Council. George Floyd was murdered during this oversight. Beloved Minneapolis institutions were burned and destroyed in the aftermath. People have been left without the resources they need. Jobs and livelihoods will take a long time to recover. And most of all, Black citizens of Minneapolis continue in this moment to live in a city that is currently upholding the Minneapolis Police Department which has brutalized and taken too many Black lives. Therefore, we will no longer accept empty gestures and suggestions of reform.</p>
+
+<p>We need to defund the Minneapolis Police Department. We need a budget that adequately and effectively meets the needs of Minneapolis residents during the pandemic and well past it; and we need a budget that supports communities and supports their well-being.</p>
+
+<p>I am urging you and the Minneapolis City Council to adopt a budget that defunds the police and funds non-violent, community-led, health and safety strategies.</p>
+
+<p>Sincerely,\
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1937,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Frey and City Council Members,<br />
+<br />
+My name is [YOUR NAME]. I am a resident of [YOUR CITY, STATE] and I am emailing today to demand the defunding of the Minneapolis Police Department and the funding of new, community-led and integrated health and safety strategies.<br />
+<br />
+We are in the midst of widespread upheaval over the systemic, racist violence which has been, to this point, overseen by the Minneapolis City Council. George Floyd was murdered during this oversight. Beloved Minneapolis institutions were burned and destroyed in the aftermath. People have been left without the resources they need. Jobs and livelihoods will take a long time to recover. And most of all, Black citizens of Minneapolis continue in this moment to live in a city that is currently upholding the Minneapolis Police Department which has brutalized and taken too many Black lives. Therefore, we will no longer accept empty gestures and suggestions of reform. <br />
+<br />
+We need to defund the Minneapolis Police Department. We need a budget that adequately and effectively meets the needs of Minneapolis residents during the pandemic and well past it; and we need a budget that supports communities and supports their well-being. <br />
+<br />
+I am urging you and the Minneapolis City Council to adopt a budget that defunds the police and funds non-violent, community-led, health and safety strategies.<br />
+<br />
+Sincerely,\<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Frey and City Council Members,
+
+My name is [YOUR NAME]. I am a resident of [YOUR CITY, STATE] and I am emailing today to demand the defunding of the Minneapolis Police Department and the funding of new, community-led and integrated health and safety strategies.
+
+We are in the midst of widespread upheaval over the systemic, racist violence which has been, to this point, overseen by the Minneapolis City Council. George Floyd was murdered during this oversight. Beloved Minneapolis institutions were burned and destroyed in the aftermath. People have been left without the resources they need. Jobs and livelihoods will take a long time to recover. And most of all, Black citizens of Minneapolis continue in this moment to live in a city that is currently upholding the Minneapolis Police Department which has brutalized and taken too many Black lives. Therefore, we will no longer accept empty gestures and suggestions of reform. 
+
+We need to defund the Minneapolis Police Department. We need a budget that adequately and effectively meets the needs of Minneapolis residents during the pandemic and well past it; and we need a budget that supports communities and supports their well-being. 
+
+I am urging you and the Minneapolis City Council to adopt a budget that defunds the police and funds non-violent, community-led, health and safety strategies.
+
+Sincerely,\
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `jacob.frey@minneapolismn.gov`;
+    const cc = `kevin.reich@minneapolismn.gov,cam.gordon@minneapolismn.gov,steve.fletcher@minneapolismn.gov,phillipe.cunningham@minneapolismn.gov,jeremiah.ellison@minneapolismn.gov,abdi.warsame@minneapolismn.gov,lisa.goodman@minneapolismn.gov,andrea.jenkins@minneapolismn.gov,alondra.cano@minneapolismn.gov,lisa.bender@minneapolismn.gov,jeremy.schroeder@minneapolismn.gov,andrew.johnson@minneapolismn.gov,linea.palmisano@minneapolismn.gov`;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/minneapolis`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2004,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,69 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council</h2>
+  <b>Fullerton, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/fullerton`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jenniferf@cityoffullerton.com, jflory@cityoffullerton.com, jesuss@cityoffullerton.com, bwwhitaker@live.com, ahmadz@cityoffullerton.com, evaa@cityoffullerton.com`)">🔗</span>
+        jenniferf@cityoffullerton.com, jflory@cityoffullerton.com, jesuss@cityoffullerton.com, bwwhitaker@live.com, ahmadz@cityoffullerton.com, evaa@cityoffullerton.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Fullerton City Council Members,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the Fullerton City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.
+
+According to the Fullerton city website, the proposed budget for the 2020-2021 fiscal year allocates 47% of the general fund ($49,860,929) to the Fullerton Police Force. Meanwhile, Community Development only comprises 5% of the general fund and 3.5% of all funds and expenses. While the budget allocates extraordinary amounts to policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Fullerton does not have a crime problem, Fullerton has a social problem. I am demanding you completely revise the budget for the 2020-2021 fiscal year to fund care, not cops.
+
+I insist that the City Council begin meaningfully defunding the Fullerton Police Department and re-allocate funds to social programs long proven to be more effective than policing at promoting community safety and equity. Specifically, we are looking to bolster our existing child and family, housing and neighborhood, food, health, homeless, training, employment and financial services. I demand a budget that reflects the actual needs of Fullerton residents.
+
+History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear Fullerton City Council Members,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the Fullerton City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.</p>
+
+<p>According to the Fullerton city website, the proposed budget for the 2020-2021 fiscal year allocates 47% of the general fund ($49,860,929) to the Fullerton Police Force. Meanwhile, Community Development only comprises 5% of the general fund and 3.5% of all funds and expenses. While the budget allocates extraordinary amounts to policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Fullerton does not have a crime problem, Fullerton has a social problem. I am demanding you completely revise the budget for the 2020-2021 fiscal year to fund care, not cops.</p>
+
+<p>I insist that the City Council begin meaningfully defunding the Fullerton Police Department and re-allocate funds to social programs long proven to be more effective than policing at promoting community safety and equity. Specifically, we are looking to bolster our existing child and family, housing and neighborhood, food, health, homeless, training, employment and financial services. I demand a budget that reflects the actual needs of Fullerton residents.</p>
+
+<p>History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1933,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Fullerton City Council Members,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the Fullerton City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.<br />
+<br />
+According to the Fullerton city website, the proposed budget for the 2020-2021 fiscal year allocates 47% of the general fund ($49,860,929) to the Fullerton Police Force. Meanwhile, Community Development only comprises 5% of the general fund and 3.5% of all funds and expenses. While the budget allocates extraordinary amounts to policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Fullerton does not have a crime problem, Fullerton has a social problem. I am demanding you completely revise the budget for the 2020-2021 fiscal year to fund care, not cops.<br />
+<br />
+I insist that the City Council begin meaningfully defunding the Fullerton Police Department and re-allocate funds to social programs long proven to be more effective than policing at promoting community safety and equity. Specifically, we are looking to bolster our existing child and family, housing and neighborhood, food, health, homeless, training, employment and financial services. I demand a budget that reflects the actual needs of Fullerton residents.<br />
+<br />
+History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear Fullerton City Council Members,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the Fullerton City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.
+
+According to the Fullerton city website, the proposed budget for the 2020-2021 fiscal year allocates 47% of the general fund ($49,860,929) to the Fullerton Police Force. Meanwhile, Community Development only comprises 5% of the general fund and 3.5% of all funds and expenses. While the budget allocates extraordinary amounts to policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Fullerton does not have a crime problem, Fullerton has a social problem. I am demanding you completely revise the budget for the 2020-2021 fiscal year to fund care, not cops.
+
+I insist that the City Council begin meaningfully defunding the Fullerton Police Department and re-allocate funds to social programs long proven to be more effective than policing at promoting community safety and equity. Specifically, we are looking to bolster our existing child and family, housing and neighborhood, food, health, homeless, training, employment and financial services. I demand a budget that reflects the actual needs of Fullerton residents.
+
+History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `jenniferf@cityoffullerton.com,jflory@cityoffullerton.com,jesuss@cityoffullerton.com,bwwhitaker@live.com,ahmadz@cityoffullerton.com,evaa@cityoffullerton.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/fullerton`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2002,4 @@
 </body>
 
 </html>
+

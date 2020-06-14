@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to County Officials</h2>
+  <b>Riverside County, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/riverside-county`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `District1@rivco.org, District2@rivco.org, District3@rivco.org, District4@rivco.org, District5@rivco.org, BcFederico@rivco.org, cob@rivco.org, jaki@rivcoda.org`)">🔗</span>
+        District1@rivco.org, District2@rivco.org, District3@rivco.org, District4@rivco.org, District5@rivco.org, BcFederico@rivco.org, cob@rivco.org, jaki@rivcoda.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear County of Riverside Officials,
+
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/CITY]. I am writing to demand that you, as officials for the County of Riverside, revise your budget proposal to defund the Riverside County Sheriff's Department and redirect that funding into services that prioritize community well-being such as education, housing, and public health.
+
+As you know, we are in the midst of widespread upheaval over the systemic violence of over-policing our communities. George Floyd's murder is one of many instances that show how policing leads to death when racism and anti-Blackness still exist in America. Hence, instead of "reforming" or "reviewing police policies," the time has come to defund the Sheriff's Department.
+
+Currently, the County of Riverside is recommending a 3% increase in appropriation to $1.5 billion towards Public Safety for FY2020-2021. Continued status quo funding only sustains systemic violence in our county against Black and Brown communities through policing and mass incarceration. As seen with George Floyd's murder and many others before him, funding law enforcement will not be the solution for a change.
+
+I urge you to join the calls of those across the country to defund the police. The County of Riverside cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police and support community well-being.
+
+It is your duty to represent your constituents. Thus, I am urging you to revise the County of Riverside budget for FY2020-2021 completely. Public opinion is with me.
+
+Thank you for your time,
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear County of Riverside Officials,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/CITY]. I am writing to demand that you, as officials for the County of Riverside, revise your budget proposal to defund the Riverside County Sheriff’s Department and redirect that funding into services that prioritize community well-being such as education, housing, and public health.</p>
+
+<p>As you know, we are in the midst of widespread upheaval over the systemic violence of over-policing our communities. George Floyd’s murder is one of many instances that show how policing leads to death when racism and anti-Blackness still exist in America. Hence, instead of “reforming” or “reviewing police policies,” the time has come to defund the Sheriff’s Department.</p>
+
+<p>Currently, the County of Riverside is recommending a 3% increase in appropriation to $1.5 billion towards Public Safety for FY2020-2021. Continued status quo funding only sustains systemic violence in our county against Black and Brown communities through policing and mass incarceration. As seen with George Floyd’s murder and many others before him, funding law enforcement will not be the solution for a change.</p>
+
+<p>I urge you to join the calls of those across the country to defund the police. The County of Riverside cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police and support community well-being.</p>
+
+<p>It is your duty to represent your constituents. Thus, I am urging you to revise the County of Riverside budget for FY2020-2021 completely. Public opinion is with me.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear County of Riverside Officials,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/CITY]. I am writing to demand that you, as officials for the County of Riverside, revise your budget proposal to defund the Riverside County Sheriff's Department and redirect that funding into services that prioritize community well-being such as education, housing, and public health.<br />
+<br />
+As you know, we are in the midst of widespread upheaval over the systemic violence of over-policing our communities. George Floyd's murder is one of many instances that show how policing leads to death when racism and anti-Blackness still exist in America. Hence, instead of "reforming" or "reviewing police policies," the time has come to defund the Sheriff's Department.<br />
+<br />
+Currently, the County of Riverside is recommending a 3% increase in appropriation to $1.5 billion towards Public Safety for FY2020-2021. Continued status quo funding only sustains systemic violence in our county against Black and Brown communities through policing and mass incarceration. As seen with George Floyd's murder and many others before him, funding law enforcement will not be the solution for a change.<br />
+<br />
+I urge you to join the calls of those across the country to defund the police. The County of Riverside cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police and support community well-being.<br />
+<br />
+It is your duty to represent your constituents. Thus, I am urging you to revise the County of Riverside budget for FY2020-2021 completely. Public opinion is with me.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[ADDRESS]<br />
+[EMAIL]<br />
+[PHONE NUMBER]`.trim() :
+      `Dear County of Riverside Officials,
+
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/CITY]. I am writing to demand that you, as officials for the County of Riverside, revise your budget proposal to defund the Riverside County Sheriff's Department and redirect that funding into services that prioritize community well-being such as education, housing, and public health.
+
+As you know, we are in the midst of widespread upheaval over the systemic violence of over-policing our communities. George Floyd's murder is one of many instances that show how policing leads to death when racism and anti-Blackness still exist in America. Hence, instead of "reforming" or "reviewing police policies," the time has come to defund the Sheriff's Department.
+
+Currently, the County of Riverside is recommending a 3% increase in appropriation to $1.5 billion towards Public Safety for FY2020-2021. Continued status quo funding only sustains systemic violence in our county against Black and Brown communities through policing and mass incarceration. As seen with George Floyd's murder and many others before him, funding law enforcement will not be the solution for a change.
+
+I urge you to join the calls of those across the country to defund the police. The County of Riverside cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police and support community well-being.
+
+It is your duty to represent your constituents. Thus, I am urging you to revise the County of Riverside budget for FY2020-2021 completely. Public opinion is with me.
+
+Thank you for your time,
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE NUMBER]`.trim()
+    );
+    const recipients = `District1@rivco.org,District2@rivco.org,District3@rivco.org,District4@rivco.org,District5@rivco.org,BcFederico@rivco.org,cob@rivco.org,jaki@rivcoda.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/riverside-county`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

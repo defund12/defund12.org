@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Government Officials</h2>
+  <b>Concord, NH</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/concord`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jpbouley@comcast.net, brenttoddconcord@gmail.com, pierce4council@comcast.net, JKretovic@concordnh.gov, mhatfield@concordnh.gov, rwerner@concordnh.gov, LKenison@concordnh.gov, knyhan@concordnh.gov, gmatson@concordnh.gov, cwbouchard@concordnh.gov, zricehawkins@concordnh.gov, nfennessy@concordnh.gov, agradysexton@concordnh.gov, fkeach@concordnh.gov, chamby@comcast.net, finance@concordnh.gov`)">🔗</span>
+        jpbouley@comcast.net, brenttoddconcord@gmail.com, pierce4council@comcast.net, JKretovic@concordnh.gov, mhatfield@concordnh.gov, rwerner@concordnh.gov, LKenison@concordnh.gov, knyhan@concordnh.gov, gmatson@concordnh.gov, cwbouchard@concordnh.gov, zricehawkins@concordnh.gov, nfennessy@concordnh.gov, agradysexton@concordnh.gov, fkeach@concordnh.gov, chamby@comcast.net, finance@concordnh.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Concord Government Officials,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a budget for the people that prioritizes community wellbeing and redirects funding away from the police and towards social services that actually keep our community safe.
+
+We are in the midst of a pandemic that has had severe consequences on our city. As of April 2020, the unemployment rate in Merrimack County has skyrocketed to 15.8% of the labor force. According to Concord Coalition to End Homelessness we are “bracing for a new wave of homelessness.” The responsibility of solving this rising crisis cannot fall on outside organizations and private donors.
+
+Supporting communities in need is necessary now, more than ever. Yet the FY 2021 Budget would increase the Concord Police's budget by nearly a million dollars. Research shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful promoting community safety than police or prisons. As such, I demand more aggressive financial support be directed to those areas, particularly in response to the economic impact of COVID-19. I insist as a taxpayer of the city of Concord that funds be reallocated from the Concord Police to Human Services to ensure that the basic needs of all Concord citizens are met.
+
+As our poor communities and communities of color are disproportionate targets of police violence and disproportionately affected by the COVID-19 pandemic, the current proposed budget for 2021 that would increase the budget of the Concord Police is unacceptable. We must join the calls of those across the country to Defund The Police and demand a budget that adequately and ethically meets the needs of impacted Concord residents during this trying and uncertain time, when livelihoods are on the line. I insist on a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Concord Government Officials,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a budget for the people that prioritizes community wellbeing and redirects funding away from the police and towards social services that actually keep our community safe.</p>
+
+<p>We are in the midst of a pandemic that has had severe consequences on our city. As of April 2020, the unemployment rate in Merrimack County has skyrocketed to 15.8% of the labor force. According to Concord Coalition to End Homelessness we are “bracing for a new wave of homelessness.” The responsibility of solving this rising crisis cannot fall on outside organizations and private donors.</p>
+
+<p>Supporting communities in need is necessary now, more than ever. Yet the FY 2021 Budget would increase the Concord Police’s budget by nearly a million dollars. Research shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful promoting community safety than police or prisons. As such, I demand more aggressive financial support be directed to those areas, particularly in response to the economic impact of COVID-19. I insist as a taxpayer of the city of Concord that funds be reallocated from the Concord Police to Human Services to ensure that the basic needs of all Concord citizens are met.</p>
+
+<p>As our poor communities and communities of color are disproportionate targets of police violence and disproportionately affected by the COVID-19 pandemic, the current proposed budget for 2021 that would increase the budget of the Concord Police is unacceptable. We must join the calls of those across the country to Defund The Police and demand a budget that adequately and ethically meets the needs of impacted Concord residents during this trying and uncertain time, when livelihoods are on the line. I insist on a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Concord Government Officials,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a budget for the people that prioritizes community wellbeing and redirects funding away from the police and towards social services that actually keep our community safe.<br />
+<br />
+We are in the midst of a pandemic that has had severe consequences on our city. As of April 2020, the unemployment rate in Merrimack County has skyrocketed to 15.8% of the labor force. According to Concord Coalition to End Homelessness we are “bracing for a new wave of homelessness.” The responsibility of solving this rising crisis cannot fall on outside organizations and private donors.<br />
+<br />
+Supporting communities in need is necessary now, more than ever. Yet the FY 2021 Budget would increase the Concord Police's budget by nearly a million dollars. Research shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful promoting community safety than police or prisons. As such, I demand more aggressive financial support be directed to those areas, particularly in response to the economic impact of COVID-19. I insist as a taxpayer of the city of Concord that funds be reallocated from the Concord Police to Human Services to ensure that the basic needs of all Concord citizens are met.<br />
+<br />
+As our poor communities and communities of color are disproportionate targets of police violence and disproportionately affected by the COVID-19 pandemic, the current proposed budget for 2021 that would increase the budget of the Concord Police is unacceptable. We must join the calls of those across the country to Defund The Police and demand a budget that adequately and ethically meets the needs of impacted Concord residents during this trying and uncertain time, when livelihoods are on the line. I insist on a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Concord Government Officials,
+
+My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a budget for the people that prioritizes community wellbeing and redirects funding away from the police and towards social services that actually keep our community safe.
+
+We are in the midst of a pandemic that has had severe consequences on our city. As of April 2020, the unemployment rate in Merrimack County has skyrocketed to 15.8% of the labor force. According to Concord Coalition to End Homelessness we are “bracing for a new wave of homelessness.” The responsibility of solving this rising crisis cannot fall on outside organizations and private donors.
+
+Supporting communities in need is necessary now, more than ever. Yet the FY 2021 Budget would increase the Concord Police's budget by nearly a million dollars. Research shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful promoting community safety than police or prisons. As such, I demand more aggressive financial support be directed to those areas, particularly in response to the economic impact of COVID-19. I insist as a taxpayer of the city of Concord that funds be reallocated from the Concord Police to Human Services to ensure that the basic needs of all Concord citizens are met.
+
+As our poor communities and communities of color are disproportionate targets of police violence and disproportionately affected by the COVID-19 pandemic, the current proposed budget for 2021 that would increase the budget of the Concord Police is unacceptable. We must join the calls of those across the country to Defund The Police and demand a budget that adequately and ethically meets the needs of impacted Concord residents during this trying and uncertain time, when livelihoods are on the line. I insist on a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `jpbouley@comcast.net,brenttoddconcord@gmail.com,pierce4council@comcast.net,JKretovic@concordnh.gov,mhatfield@concordnh.gov,rwerner@concordnh.gov,LKenison@concordnh.gov,knyhan@concordnh.gov,gmatson@concordnh.gov,cwbouchard@concordnh.gov,zricehawkins@concordnh.gov,nfennessy@concordnh.gov,agradysexton@concordnh.gov,fkeach@concordnh.gov,chamby@comcast.net,finance@concordnh.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/concord`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+

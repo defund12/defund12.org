@@ -70,6 +70,78 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the County Executive and Council</h2>
+  <b>Montgomery County, MD</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/montgomery-county`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `marc.elrich@montgomerycountymd.gov, councilmember.Katz@montgomerycountymd.gov, councilmember.Hucker@montgomerycountymd.gov, councilmember.albornoz@montgomerycountymd.gov, councilmember.Friedson@montgomerycountymd.gov, councilmember.Glass@montgomerycountymd.gov, councilmember.jawando@montgomerycountymd.gov, councilmember.Navarro@montgomerycountymd.gov, councilmember.Rice@montgomerycountymd.gov, councilmember.Riemer@montgomerycountymd.gov`)">🔗</span>
+        marc.elrich@montgomerycountymd.gov, councilmember.Katz@montgomerycountymd.gov, councilmember.Hucker@montgomerycountymd.gov, councilmember.albornoz@montgomerycountymd.gov, councilmember.Friedson@montgomerycountymd.gov, councilmember.Glass@montgomerycountymd.gov, councilmember.jawando@montgomerycountymd.gov, councilmember.Navarro@montgomerycountymd.gov, councilmember.Rice@montgomerycountymd.gov, councilmember.Riemer@montgomerycountymd.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Montgomery County Officials,
+
+My name is [YOUR NAME], and I am a resident of Montgomery County, MD. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Our county has been at the forefront of much of this action.
+
+The brutal, senseless, and violent murder of George Floyd at the hands of police officers derelict in their duties to protect and serve is deeply disturbing. We, as a nation, are in need of a drastic overhaul in policing. Systems of oppression must be undone, and reallocating much of the budget for the MPD to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved.
+
+Montgomery County's Police is not exempt from racial issues. We see story after story of Black people being harassed, searched and arrested for simply being Black.
+
+How many of you have been arrested for helping a drunk neighbor home?
+What about standing outside of a McDonalds?
+What about walking down the street?
+Will Jawando himself was stopped for driving while Black. If even elected officials are not safe from this treatment, how can the average person have any sense of safety and trust in the police?
+
+This is not acceptable behavior for people expected to uphold the law and keep all members of the community safe. There are consequences to actions. Even if you wear a badge.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Montgomery County Officials,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Montgomery County, MD. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Our county has been at the forefront of much of this action.</p>
+
+<p>The brutal, senseless, and violent murder of George Floyd at the hands of police officers derelict in their duties to protect and serve is deeply disturbing. We, as a nation, are in need of a drastic overhaul in policing. Systems of oppression must be undone, and reallocating much of the budget for the MPD to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved.</p>
+
+<p>Montgomery County’s Police is not exempt from racial issues. We see story after story of Black people being harassed, searched and arrested for simply being Black.</p>
+
+<p>How many of you have been arrested for helping a drunk neighbor home?
+What about standing outside of a McDonalds?
+What about walking down the street?
+Will Jawando himself was stopped for driving while Black. If even elected officials are not safe from this treatment, how can the average person have any sense of safety and trust in the police?</p>
+
+<p>This is not acceptable behavior for people expected to uphold the law and keep all members of the community safe. There are consequences to actions. Even if you wear a badge.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1942,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Montgomery County Officials,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Montgomery County, MD. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Our county has been at the forefront of much of this action.<br />
+<br />
+The brutal, senseless, and violent murder of George Floyd at the hands of police officers derelict in their duties to protect and serve is deeply disturbing. We, as a nation, are in need of a drastic overhaul in policing. Systems of oppression must be undone, and reallocating much of the budget for the MPD to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved.<br />
+<br />
+Montgomery County's Police is not exempt from racial issues. We see story after story of Black people being harassed, searched and arrested for simply being Black.<br />
+<br />
+How many of you have been arrested for helping a drunk neighbor home?<br />
+What about standing outside of a McDonalds?<br />
+What about walking down the street?<br />
+Will Jawando himself was stopped for driving while Black. If even elected officials are not safe from this treatment, how can the average person have any sense of safety and trust in the police?<br />
+<br />
+This is not acceptable behavior for people expected to uphold the law and keep all members of the community safe. There are consequences to actions. Even if you wear a badge.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Montgomery County Officials,
+
+My name is [YOUR NAME], and I am a resident of Montgomery County, MD. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Our county has been at the forefront of much of this action.
+
+The brutal, senseless, and violent murder of George Floyd at the hands of police officers derelict in their duties to protect and serve is deeply disturbing. We, as a nation, are in need of a drastic overhaul in policing. Systems of oppression must be undone, and reallocating much of the budget for the MPD to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented initiatives is a goal that must be achieved.
+
+Montgomery County's Police is not exempt from racial issues. We see story after story of Black people being harassed, searched and arrested for simply being Black.
+
+How many of you have been arrested for helping a drunk neighbor home?
+What about standing outside of a McDonalds?
+What about walking down the street?
+Will Jawando himself was stopped for driving while Black. If even elected officials are not safe from this treatment, how can the average person have any sense of safety and trust in the police?
+
+This is not acceptable behavior for people expected to uphold the law and keep all members of the community safe. There are consequences to actions. Even if you wear a badge.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `marc.elrich@montgomerycountymd.gov,councilmember.Katz@montgomerycountymd.gov,councilmember.Hucker@montgomerycountymd.gov,councilmember.albornoz@montgomerycountymd.gov,councilmember.Friedson@montgomerycountymd.gov,councilmember.Glass@montgomerycountymd.gov,councilmember.jawando@montgomerycountymd.gov,councilmember.Navarro@montgomerycountymd.gov,councilmember.Rice@montgomerycountymd.gov,councilmember.Riemer@montgomerycountymd.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/montgomery-county`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2019,4 @@
 </body>
 
 </html>
+

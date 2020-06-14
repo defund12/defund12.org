@@ -70,6 +70,77 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Parish Council and Other Parish Officials</h2>
+  <b>Jefferson Parish, LA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/jeffersonparish`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jpbudget@jeffparish.net, sheriff@jpso.com, PIO2@jpso.com, RickyTemplet@jeffparish.net, BLawson@jeffparish.net, ScottWalker@jeffparish.net, BPGrenrood@jeffparish.net, JenniferVanVrancken@JeffParish.net, byronlee@jeffparish.net, marionedwards@jeffparish.net, DeanoBonano@jeffparish.net, dimpastato@jeffparish.net`)">🔗</span>
+        jpbudget@jeffparish.net, sheriff@jpso.com, PIO2@jpso.com, RickyTemplet@jeffparish.net, BLawson@jeffparish.net, ScottWalker@jeffparish.net, BPGrenrood@jeffparish.net, JenniferVanVrancken@JeffParish.net, byronlee@jeffparish.net, marionedwards@jeffparish.net, DeanoBonano@jeffparish.net, dimpastato@jeffparish.net
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [YOUR NAME]. I am a resident of [YOUR CITY]. I am contacting you to demand a significant reduction to the $118 million that is currently allocated to public safety and its functions in the fiscal budget of 2020, and for a formal review of the Jefferson Parish Sheriff’s Office from an independent party that has no affiliation with JPSO.
+
+Public safety makes up roughly 22% of the Jefferson Parish's 2020 budget, while other important public services do not receive even half as much funding. By reducing police funding, we can reallocate those funds into housing, education, sanitation and other community efforts and local organizations, while preventing future police brutality and violence.
+
+In 2018, Keveen Robinson, 22 years old, was killed by Jefferson Parish police officers. His death was released as a homicide, but the four officers were only relinquished to office duty. They should be prosecuted for murder (WDSU.com).
+
+In 2019, Modesto Reyes, 35, was a worker who served the Hard Rock hotel collapse. In 2020, Modesto Reyes was killed by Jefferson Parish police officers. They thought his phone was a gun. He recorded this on his phone, but the JPSO won’t release the footage.
+
+The JPSO contact has problematic language in their contract which disqualifies complaints, restricts/delays interrogation, gives officers unfair access to information, limits oversight/discipline, and erases misconduct records (checkthepolice.org). JPSO’s past behavior indicates that they have a pattern of misconduct that needs to be confronted. This is why I demand JPSO’s contract to be reviewed by an external party that has no affiliation with JPSO.
+
+According to the Washington Post since 2015, 1,276 Black people have been shot and killed by the police, not including those who have died in police custody or were killed using other methods. Police forces across the United States have proved that reforming the police department will not properly address or end police brutality. Jefferson Parish citizens need and deserve policing alternatives like community-led public safety and more investments into the following community services: housing, sanitation, mental health and trauma services, education and after-school care, sustainability efforts, healthcare and employment opportunities.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [YOUR NAME]. I am a resident of [YOUR CITY]. I am contacting you to demand a significant reduction to the $118 million that is currently allocated to public safety and its functions in the fiscal budget of 2020, and for a formal review of the Jefferson Parish Sheriff’s Office from an independent party that has no affiliation with JPSO.</p>
+
+<p>Public safety makes up roughly 22% of the Jefferson Parish’s 2020 budget, while other important public services do not receive even half as much funding. By reducing police funding, we can reallocate those funds into housing, education, sanitation and other community efforts and local organizations, while preventing future police brutality and violence.</p>
+
+<p>In 2018, Keveen Robinson, 22 years old, was killed by Jefferson Parish police officers. His death was released as a homicide, but the four officers were only relinquished to office duty. They should be prosecuted for murder (WDSU.com).</p>
+
+<p>In 2019, Modesto Reyes, 35, was a worker who served the Hard Rock hotel collapse. In 2020, Modesto Reyes was killed by Jefferson Parish police officers. They thought his phone was a gun. He recorded this on his phone, but the JPSO won’t release the footage.</p>
+
+<p>The JPSO contact has problematic language in their contract which disqualifies complaints, restricts/delays interrogation, gives officers unfair access to information, limits oversight/discipline, and erases misconduct records (checkthepolice.org). JPSO’s past behavior indicates that they have a pattern of misconduct that needs to be confronted. This is why I demand JPSO’s contract to be reviewed by an external party that has no affiliation with JPSO.</p>
+
+<p>According to the Washington Post since 2015, 1,276 Black people have been shot and killed by the police, not including those who have died in police custody or were killed using other methods. Police forces across the United States have proved that reforming the police department will not properly address or end police brutality. Jefferson Parish citizens need and deserve policing alternatives like community-led public safety and more investments into the following community services: housing, sanitation, mental health and trauma services, education and after-school care, sustainability efforts, healthcare and employment opportunities.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1941,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [YOUR NAME]. I am a resident of [YOUR CITY]. I am contacting you to demand a significant reduction to the $118 million that is currently allocated to public safety and its functions in the fiscal budget of 2020, and for a formal review of the Jefferson Parish Sheriff’s Office from an independent party that has no affiliation with JPSO.<br />
+<br />
+Public safety makes up roughly 22% of the Jefferson Parish's 2020 budget, while other important public services do not receive even half as much funding. By reducing police funding, we can reallocate those funds into housing, education, sanitation and other community efforts and local organizations, while preventing future police brutality and violence.<br />
+<br />
+In 2018, Keveen Robinson, 22 years old, was killed by Jefferson Parish police officers. His death was released as a homicide, but the four officers were only relinquished to office duty. They should be prosecuted for murder (WDSU.com).<br />
+<br />
+In 2019, Modesto Reyes, 35, was a worker who served the Hard Rock hotel collapse. In 2020, Modesto Reyes was killed by Jefferson Parish police officers. They thought his phone was a gun. He recorded this on his phone, but the JPSO won’t release the footage.<br />
+<br />
+The JPSO contact has problematic language in their contract which disqualifies complaints, restricts/delays interrogation, gives officers unfair access to information, limits oversight/discipline, and erases misconduct records (checkthepolice.org). JPSO’s past behavior indicates that they have a pattern of misconduct that needs to be confronted. This is why I demand JPSO’s contract to be reviewed by an external party that has no affiliation with JPSO.<br />
+<br />
+According to the Washington Post since 2015, 1,276 Black people have been shot and killed by the police, not including those who have died in police custody or were killed using other methods. Police forces across the United States have proved that reforming the police department will not properly address or end police brutality. Jefferson Parish citizens need and deserve policing alternatives like community-led public safety and more investments into the following community services: housing, sanitation, mental health and trauma services, education and after-school care, sustainability efforts, healthcare and employment opportunities.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Hello,
+
+My name is [YOUR NAME]. I am a resident of [YOUR CITY]. I am contacting you to demand a significant reduction to the $118 million that is currently allocated to public safety and its functions in the fiscal budget of 2020, and for a formal review of the Jefferson Parish Sheriff’s Office from an independent party that has no affiliation with JPSO.
+
+Public safety makes up roughly 22% of the Jefferson Parish's 2020 budget, while other important public services do not receive even half as much funding. By reducing police funding, we can reallocate those funds into housing, education, sanitation and other community efforts and local organizations, while preventing future police brutality and violence.
+
+In 2018, Keveen Robinson, 22 years old, was killed by Jefferson Parish police officers. His death was released as a homicide, but the four officers were only relinquished to office duty. They should be prosecuted for murder (WDSU.com).
+
+In 2019, Modesto Reyes, 35, was a worker who served the Hard Rock hotel collapse. In 2020, Modesto Reyes was killed by Jefferson Parish police officers. They thought his phone was a gun. He recorded this on his phone, but the JPSO won’t release the footage.
+
+The JPSO contact has problematic language in their contract which disqualifies complaints, restricts/delays interrogation, gives officers unfair access to information, limits oversight/discipline, and erases misconduct records (checkthepolice.org). JPSO’s past behavior indicates that they have a pattern of misconduct that needs to be confronted. This is why I demand JPSO’s contract to be reviewed by an external party that has no affiliation with JPSO.
+
+According to the Washington Post since 2015, 1,276 Black people have been shot and killed by the police, not including those who have died in police custody or were killed using other methods. Police forces across the United States have proved that reforming the police department will not properly address or end police brutality. Jefferson Parish citizens need and deserve policing alternatives like community-led public safety and more investments into the following community services: housing, sanitation, mental health and trauma services, education and after-school care, sustainability efforts, healthcare and employment opportunities.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `jpbudget@jeffparish.net,sheriff@jpso.com,PIO2@jpso.com,RickyTemplet@jeffparish.net,BLawson@jeffparish.net,ScottWalker@jeffparish.net,BPGrenrood@jeffparish.net,JenniferVanVrancken@JeffParish.net,byronlee@jeffparish.net,marionedwards@jeffparish.net,DeanoBonano@jeffparish.net,dimpastato@jeffparish.net`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/jeffersonparish`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2018,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Board of Directors</h2>
+  <b>Little Rock, AR</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/littlerock`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `board@littlerock.gov`)">🔗</span>
+        board@littlerock.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Little Rock Board of Directors,
+
+My name is [YOUR NAME] and I’m a resident of Little Rock. I am writing about Little Rock Mayor Frank Scott Jr.’s fiscal year 2021 budget proposal.
+
+I am writing to demand that the budget vote be delayed so that Board may find ways to redirect money away from Little Rock Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from LRPD, and towards sectors that facilitate the dismantling of racial and class inequality. The recent approval of body cameras alone will not address the systemic racism of policing at its core. 
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.
+
+Do not forget our poor communities and communities of color who are the disproportionate targets of police violence. Justice will only be served when the police are defunded and their budget is reallocated to social services that aim to improve the wellbeing of our community members.
+
+Can I count on you to lead our nation by example in this fight against police brutality and racial discrimination?
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Little Rock Board of Directors,</p>
+
+<p>My name is [YOUR NAME] and I’m a resident of Little Rock. I am writing about Little Rock Mayor Frank Scott Jr.’s fiscal year 2021 budget proposal.</p>
+
+<p>I am writing to demand that the budget vote be delayed so that Board may find ways to redirect money away from Little Rock Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from LRPD, and towards sectors that facilitate the dismantling of racial and class inequality. The recent approval of body cameras alone will not address the systemic racism of policing at its core.</p>
+
+<p>Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.</p>
+
+<p>Do not forget our poor communities and communities of color who are the disproportionate targets of police violence. Justice will only be served when the police are defunded and their budget is reallocated to social services that aim to improve the wellbeing of our community members.</p>
+
+<p>Can I count on you to lead our nation by example in this fight against police brutality and racial discrimination?</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Little Rock Board of Directors,<br />
+<br />
+My name is [YOUR NAME] and I’m a resident of Little Rock. I am writing about Little Rock Mayor Frank Scott Jr.’s fiscal year 2021 budget proposal.<br />
+<br />
+I am writing to demand that the budget vote be delayed so that Board may find ways to redirect money away from Little Rock Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from LRPD, and towards sectors that facilitate the dismantling of racial and class inequality. The recent approval of body cameras alone will not address the systemic racism of policing at its core. <br />
+<br />
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.<br />
+<br />
+Do not forget our poor communities and communities of color who are the disproportionate targets of police violence. Justice will only be served when the police are defunded and their budget is reallocated to social services that aim to improve the wellbeing of our community members.<br />
+<br />
+Can I count on you to lead our nation by example in this fight against police brutality and racial discrimination?<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Little Rock Board of Directors,
+
+My name is [YOUR NAME] and I’m a resident of Little Rock. I am writing about Little Rock Mayor Frank Scott Jr.’s fiscal year 2021 budget proposal.
+
+I am writing to demand that the budget vote be delayed so that Board may find ways to redirect money away from Little Rock Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from LRPD, and towards sectors that facilitate the dismantling of racial and class inequality. The recent approval of body cameras alone will not address the systemic racism of policing at its core. 
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.
+
+Do not forget our poor communities and communities of color who are the disproportionate targets of police violence. Justice will only be served when the police are defunded and their budget is reallocated to social services that aim to improve the wellbeing of our community members.
+
+Can I count on you to lead our nation by example in this fight against police brutality and racial discrimination?
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `board@littlerock.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/littlerock`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

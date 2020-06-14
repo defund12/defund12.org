@@ -70,6 +70,64 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Demand Justice for Manuel Ellis and Defund Tacoma PD</h2>
+  <b>Tacoma, WA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/tacoma`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `victoria.woodards@cityoftacoma.org, john.hines@cityoftacoma.org, robert.thoms@cityoftacoma.org, catherine.ushka@cityoftacoma.org, chris.beale@cityoftacoma.org, lillian.hunter@cityoftacoma.org, conor.mccarthy@cityoftacoma.org, kristina.walker@cityoftacoma.org, keith.blocker@cityoftacoma.org`)">🔗</span>
+        victoria.woodards@cityoftacoma.org, john.hines@cityoftacoma.org, robert.thoms@cityoftacoma.org, catherine.ushka@cityoftacoma.org, chris.beale@cityoftacoma.org, lillian.hunter@cityoftacoma.org, conor.mccarthy@cityoftacoma.org, kristina.walker@cityoftacoma.org, keith.blocker@cityoftacoma.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Woodards and Tacoma City Council,
+
+My name is [YOUR NAME] and I am a resident of [CITY,STATE]. I am writing to demand justice for Manuel Ellis, an innocent Black man who was murdered by Tacoma police officers on March 3, and so many murdered Black people before him.
+
+Despite autopsy evidence ruling Ellis’ death a homicide, the officers involved in this murder have not been charged and are still employed at the Tacoma Police Department. This is unacceptable. Administrative leave is not enough. I demand that these officers be fired and arrested for their crimes.
+
+I am also asking the City of Tacoma to show your commitment to racial justice moving forward by opposing any increase in the Tacoma Police Department’s budget, and re-allocating city resources from policing to services that keep Black people safe, such as healthcare, education, and community programs. 
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Woodards and Tacoma City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [CITY,STATE]. I am writing to demand justice for Manuel Ellis, an innocent Black man who was murdered by Tacoma police officers on March 3, and so many murdered Black people before him.</p>
+
+<p>Despite autopsy evidence ruling Ellis’ death a homicide, the officers involved in this murder have not been charged and are still employed at the Tacoma Police Department. This is unacceptable. Administrative leave is not enough. I demand that these officers be fired and arrested for their crimes.</p>
+
+<p>I am also asking the City of Tacoma to show your commitment to racial justice moving forward by opposing any increase in the Tacoma Police Department’s budget, and re-allocating city resources from policing to services that keep Black people safe, such as healthcare, education, and community programs.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1928,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Woodards and Tacoma City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [CITY,STATE]. I am writing to demand justice for Manuel Ellis, an innocent Black man who was murdered by Tacoma police officers on March 3, and so many murdered Black people before him.<br />
+<br />
+Despite autopsy evidence ruling Ellis’ death a homicide, the officers involved in this murder have not been charged and are still employed at the Tacoma Police Department. This is unacceptable. Administrative leave is not enough. I demand that these officers be fired and arrested for their crimes.<br />
+<br />
+I am also asking the City of Tacoma to show your commitment to racial justice moving forward by opposing any increase in the Tacoma Police Department’s budget, and re-allocating city resources from policing to services that keep Black people safe, such as healthcare, education, and community programs. <br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Woodards and Tacoma City Council,
+
+My name is [YOUR NAME] and I am a resident of [CITY,STATE]. I am writing to demand justice for Manuel Ellis, an innocent Black man who was murdered by Tacoma police officers on March 3, and so many murdered Black people before him.
+
+Despite autopsy evidence ruling Ellis’ death a homicide, the officers involved in this murder have not been charged and are still employed at the Tacoma Police Department. This is unacceptable. Administrative leave is not enough. I demand that these officers be fired and arrested for their crimes.
+
+I am also asking the City of Tacoma to show your commitment to racial justice moving forward by opposing any increase in the Tacoma Police Department’s budget, and re-allocating city resources from policing to services that keep Black people safe, such as healthcare, education, and community programs. 
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `victoria.woodards@cityoftacoma.org,john.hines@cityoftacoma.org,robert.thoms@cityoftacoma.org,catherine.ushka@cityoftacoma.org,chris.beale@cityoftacoma.org,lillian.hunter@cityoftacoma.org,conor.mccarthy@cityoftacoma.org,kristina.walker@cityoftacoma.org,keith.blocker@cityoftacoma.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/tacoma`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1991,4 @@
 </body>
 
 </html>
+

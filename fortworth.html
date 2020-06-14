@@ -70,6 +70,100 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Fort Worth, TX</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/fortworth`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `betsy.price@fortworthtexas.gov, carlos.flores@fortworthtexas.gov, brian.byrd@fortworthtexas.gov, cary.moon@fortworthtexas.gov, gyna.bivens@fortworthtexas.gov, jungus.jordan@fortworthtexas.gov, dennis.shingleton@fortworthtexas.gov, kelly.allengray@fortworthtexas.gov, ann.zadeh@fortworthtexas.gov`)">🔗</span>
+        betsy.price@fortworthtexas.gov, carlos.flores@fortworthtexas.gov, brian.byrd@fortworthtexas.gov, cary.moon@fortworthtexas.gov, gyna.bivens@fortworthtexas.gov, jungus.jordan@fortworthtexas.gov, dennis.shingleton@fortworthtexas.gov, kelly.allengray@fortworthtexas.gov, ann.zadeh@fortworthtexas.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [NAME]. I am a resident of Fort Worth, Texas and I am emailing today to demand a complete overhaul on our Fort Worth Police Department in light of the Black Lives Matter protests being demonstrated across the US, but specifically our city.
+
+I demand that you, as my local official:
+
+* Vote no on all increases to police budgets
+
+* Vote yes to decrease police spending and budgets
+
+* Vote yes to increase spending on Health care, education and community programs that keep us safe.
+
+The militarized tactics that our Police Department has used against its citizens in response to peaceful protesting are unacceptable and unwarranted. To ensure your dedication to our city and citizens, I demand that you defund the Fort Worth Police Department and start providing more support and funding towards our community efforts and organizations that serve our predominantly Latinx and Black communities, as these are the communities that are being targeted the most. By doing so, I believe this will prevent further police brutality and violence in the future.
+
+The Fort Worth Police Department ride in cars that say "dedicated to protect”. If this true, we demand you listen to our concerns and implement change immediately.
+
+Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections. In 2017, they spent $194 billion, a 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer.
+
+Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless.
+
+We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [NAME]. I am a resident of Fort Worth, Texas and I am emailing today to demand a complete overhaul on our Fort Worth Police Department in light of the Black Lives Matter protests being demonstrated across the US, but specifically our city.</p>
+
+<p>I demand that you, as my local official:</p>
+
+<ul>
+  <li>
+    <p>Vote no on all increases to police budgets</p>
+  </li>
+  <li>
+    <p>Vote yes to decrease police spending and budgets</p>
+  </li>
+  <li>
+    <p>Vote yes to increase spending on Health care, education and community programs that keep us safe.</p>
+  </li>
+</ul>
+
+<p>The militarized tactics that our Police Department has used against its citizens in response to peaceful protesting are unacceptable and unwarranted. To ensure your dedication to our city and citizens, I demand that you defund the Fort Worth Police Department and start providing more support and funding towards our community efforts and organizations that serve our predominantly Latinx and Black communities, as these are the communities that are being targeted the most. By doing so, I believe this will prevent further police brutality and violence in the future.</p>
+
+<p>The Fort Worth Police Department ride in cars that say “dedicated to protect”. If this true, we demand you listen to our concerns and implement change immediately.</p>
+
+<p>Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections. In 2017, they spent $194 billion, a 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer.</p>
+
+<p>Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless.</p>
+
+<p>We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1964,86 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [NAME]. I am a resident of Fort Worth, Texas and I am emailing today to demand a complete overhaul on our Fort Worth Police Department in light of the Black Lives Matter protests being demonstrated across the US, but specifically our city.<br />
+<br />
+I demand that you, as my local official:<br />
+<br />
+* Vote no on all increases to police budgets<br />
+<br />
+* Vote yes to decrease police spending and budgets<br />
+<br />
+* Vote yes to increase spending on Health care, education and community programs that keep us safe.<br />
+<br />
+The militarized tactics that our Police Department has used against its citizens in response to peaceful protesting are unacceptable and unwarranted. To ensure your dedication to our city and citizens, I demand that you defund the Fort Worth Police Department and start providing more support and funding towards our community efforts and organizations that serve our predominantly Latinx and Black communities, as these are the communities that are being targeted the most. By doing so, I believe this will prevent further police brutality and violence in the future.<br />
+<br />
+The Fort Worth Police Department ride in cars that say "dedicated to protect”. If this true, we demand you listen to our concerns and implement change immediately.<br />
+<br />
+Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections. In 2017, they spent $194 billion, a 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer.<br />
+<br />
+Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless.<br />
+<br />
+We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello,
+
+My name is [NAME]. I am a resident of Fort Worth, Texas and I am emailing today to demand a complete overhaul on our Fort Worth Police Department in light of the Black Lives Matter protests being demonstrated across the US, but specifically our city.
+
+I demand that you, as my local official:
+
+* Vote no on all increases to police budgets
+
+* Vote yes to decrease police spending and budgets
+
+* Vote yes to increase spending on Health care, education and community programs that keep us safe.
+
+The militarized tactics that our Police Department has used against its citizens in response to peaceful protesting are unacceptable and unwarranted. To ensure your dedication to our city and citizens, I demand that you defund the Fort Worth Police Department and start providing more support and funding towards our community efforts and organizations that serve our predominantly Latinx and Black communities, as these are the communities that are being targeted the most. By doing so, I believe this will prevent further police brutality and violence in the future.
+
+The Fort Worth Police Department ride in cars that say "dedicated to protect”. If this true, we demand you listen to our concerns and implement change immediately.
+
+Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections. In 2017, they spent $194 billion, a 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer.
+
+Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless.
+
+We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `betsy.price@fortworthtexas.gov,carlos.flores@fortworthtexas.gov,brian.byrd@fortworthtexas.gov,cary.moon@fortworthtexas.gov,gyna.bivens@fortworthtexas.gov,jungus.jordan@fortworthtexas.gov,dennis.shingleton@fortworthtexas.gov,kelly.allengray@fortworthtexas.gov,ann.zadeh@fortworthtexas.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/fortworth`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2057,4 @@
 </body>
 
 </html>
+

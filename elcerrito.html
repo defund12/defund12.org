@@ -70,6 +70,86 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor, Mayor Pro Tem, and City Council</h2>
+  <b>El Cerrito, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/elcerrito`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `glyman@ci.el-cerrito.ca.us, pfadelli@ci.el-cerrito.ca.us, jabelson@ci.el-cerrito.ca.us, gquinto@ci.el-cerrito.ca.us, rpardueokimoto@ci.el-cerrito.ca.us`)">🔗</span>
+        glyman@ci.el-cerrito.ca.us, pfadelli@ci.el-cerrito.ca.us, jabelson@ci.el-cerrito.ca.us, gquinto@ci.el-cerrito.ca.us, rpardueokimoto@ci.el-cerrito.ca.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Lyman, Mayor Pro Tem Fadelli, and El Cerrito Council Members:
+
+My name is [NAME HERE] and I am an El Cerrito resident from [YOUR DISTRICT].
+
+ECPD uses a huge share of our city’s total expenditures, taking away greatly needed resources from essential city services. 24% of the fiscal year 2019-20 budget goes to police, while only 5% goes toward Community Development. That’s $12.5 million being used at the expense of vital public services like housing and healthcare.
+
+The investment in policing has not made us safer&#151;rather, it poses a lethal threat to Black and Brown communities, as well as those who are unhoused and suffering from mental illness. As shown in several reports, there is no correlation between police spending and community safety.
+
+Furthermore, as you know, El Cerrito faces a $4 million deficit in fiscal year 2020-’21. With the city’s finances in dire jeopardy, it is clear that now is the time to defund the police.
+
+As an El Cerrito resident, I demand that you take immediate action to ensure the following:
+
+* Reduce ECPD’s allocation from the general fund by 50%.
+* Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to improve community safety.
+
+El Cerrito cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the ECPD.
+
+Respectfully,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE ]`)">🔗</span>
+        <br /> <p>Dear Mayor Lyman, Mayor Pro Tem Fadelli, and El Cerrito Council Members:</p>
+
+<p>My name is [NAME HERE] and I am an El Cerrito resident from [YOUR DISTRICT].</p>
+
+<p>ECPD uses a huge share of our city’s total expenditures, taking away greatly needed resources from essential city services. 24% of the fiscal year 2019-20 budget goes to police, while only 5% goes toward Community Development. That’s $12.5 million being used at the expense of vital public services like housing and healthcare.</p>
+
+<p>The investment in policing has not made us safer—rather, it poses a lethal threat to Black and Brown communities, as well as those who are unhoused and suffering from mental illness. As shown in several reports, there is no correlation between police spending and community safety.</p>
+
+<p>Furthermore, as you know, El Cerrito faces a $4 million deficit in fiscal year 2020-’21. With the city’s finances in dire jeopardy, it is clear that now is the time to defund the police.</p>
+
+<p>As an El Cerrito resident, I demand that you take immediate action to ensure the following:</p>
+
+<ul>
+  <li>Reduce ECPD’s allocation from the general fund by 50%.</li>
+  <li>Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.</li>
+  <li>Invest in housing, jobs, youth programs, restorative justice, and mental health workers to improve community safety.</li>
+</ul>
+
+<p>El Cerrito cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the ECPD.</p>
+
+<p>Respectfully,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE ]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1950,76 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Lyman, Mayor Pro Tem Fadelli, and El Cerrito Council Members:<br />
+<br />
+My name is [NAME HERE] and I am an El Cerrito resident from [YOUR DISTRICT].<br />
+<br />
+ECPD uses a huge share of our city’s total expenditures, taking away greatly needed resources from essential city services. 24% of the fiscal year 2019-20 budget goes to police, while only 5% goes toward Community Development. That’s $12.5 million being used at the expense of vital public services like housing and healthcare.<br />
+<br />
+The investment in policing has not made us safer&#151;rather, it poses a lethal threat to Black and Brown communities, as well as those who are unhoused and suffering from mental illness. As shown in several reports, there is no correlation between police spending and community safety.<br />
+<br />
+Furthermore, as you know, El Cerrito faces a $4 million deficit in fiscal year 2020-’21. With the city’s finances in dire jeopardy, it is clear that now is the time to defund the police.<br />
+<br />
+As an El Cerrito resident, I demand that you take immediate action to ensure the following:<br />
+<br />
+* Reduce ECPD’s allocation from the general fund by 50%.<br />
+* Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.<br />
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to improve community safety.<br />
+<br />
+El Cerrito cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the ECPD.<br />
+<br />
+Respectfully,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE ]`.trim() :
+      `Dear Mayor Lyman, Mayor Pro Tem Fadelli, and El Cerrito Council Members:
+
+My name is [NAME HERE] and I am an El Cerrito resident from [YOUR DISTRICT].
+
+ECPD uses a huge share of our city’s total expenditures, taking away greatly needed resources from essential city services. 24% of the fiscal year 2019-20 budget goes to police, while only 5% goes toward Community Development. That’s $12.5 million being used at the expense of vital public services like housing and healthcare.
+
+The investment in policing has not made us safer&#151;rather, it poses a lethal threat to Black and Brown communities, as well as those who are unhoused and suffering from mental illness. As shown in several reports, there is no correlation between police spending and community safety.
+
+Furthermore, as you know, El Cerrito faces a $4 million deficit in fiscal year 2020-’21. With the city’s finances in dire jeopardy, it is clear that now is the time to defund the police.
+
+As an El Cerrito resident, I demand that you take immediate action to ensure the following:
+
+* Reduce ECPD’s allocation from the general fund by 50%.
+* Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to improve community safety.
+
+El Cerrito cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the ECPD.
+
+Respectfully,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE ]`.trim()
+    );
+    const recipients = `glyman@ci.el-cerrito.ca.us,pfadelli@ci.el-cerrito.ca.us,jabelson@ci.el-cerrito.ca.us,gquinto@ci.el-cerrito.ca.us,rpardueokimoto@ci.el-cerrito.ca.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/elcerrito`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2033,4 @@
 </body>
 
 </html>
+

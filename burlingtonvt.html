@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Alternate Letter to the Mayor and City Council</h2>
+  <b>Burlington, VT</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/burlingtonvt`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@burlingtonvt.gov, jredell@burlingtonvt.gov, mtracy@burlingtonvt.gov, zhightower@burlingtonvt.gov, bpine@burlingtonvt.gov, scarpenter@burlingtonvt.gov, cmason@burlingtonvt.gov, kpaul@burlingtonvt.gov, adieng@burlingtonvt.gov, jstromberg@burlingtonvt.gov, pfreeman@burlingtonvt.gov, jhanson@burlingtonvt.gov, fpaulino@burlingtonvt.gov, jshannon@burlingtonvt.gov`)">🔗</span>
+        mayor@burlingtonvt.gov, jredell@burlingtonvt.gov, mtracy@burlingtonvt.gov, zhightower@burlingtonvt.gov, bpine@burlingtonvt.gov, scarpenter@burlingtonvt.gov, cmason@burlingtonvt.gov, kpaul@burlingtonvt.gov, adieng@burlingtonvt.gov, jstromberg@burlingtonvt.gov, pfreeman@burlingtonvt.gov, jhanson@burlingtonvt.gov, fpaulino@burlingtonvt.gov, jshannon@burlingtonvt.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Weinberger and City Councilmembers,
+
+My name is [YOUR NAME]. I am a resident of Burlington and I am writing today to demand that you take specific measures to reduce funding for police in the City of Burlington. I call on you to take a serious look at the amount of funding being designated towards criminalization and surveillance. You have a responsibility to address the city’s lack of investment in predominantly Black and Brown communities.
+
+The City of Burlington is looking at increasing the budget of the Police Department by $17.4 million this year, as you well know. Spending for immigrant services, disability services, education, housing, and youth and family services pale in comparison to this excessive budget.
+
+Burlington can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities, starting with cutting the least transparent and most harmful parts of the BPD budget.
+
+As elected officials, you must show strength in your role as a leader of the Council, and take a stand for defunding the BPD. We the residents of Burlington will hold you accountable for swift and just action.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Weinberger and City Councilmembers,</p>
+
+<p>My name is [YOUR NAME]. I am a resident of Burlington and I am writing today to demand that you take specific measures to reduce funding for police in the City of Burlington. I call on you to take a serious look at the amount of funding being designated towards criminalization and surveillance. You have a responsibility to address the city’s lack of investment in predominantly Black and Brown communities.</p>
+
+<p>The City of Burlington is looking at increasing the budget of the Police Department by $17.4 million this year, as you well know. Spending for immigrant services, disability services, education, housing, and youth and family services pale in comparison to this excessive budget.</p>
+
+<p>Burlington can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities, starting with cutting the least transparent and most harmful parts of the BPD budget.</p>
+
+<p>As elected officials, you must show strength in your role as a leader of the Council, and take a stand for defunding the BPD. We the residents of Burlington will hold you accountable for swift and just action.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Weinberger and City Councilmembers,<br />
+<br />
+My name is [YOUR NAME]. I am a resident of Burlington and I am writing today to demand that you take specific measures to reduce funding for police in the City of Burlington. I call on you to take a serious look at the amount of funding being designated towards criminalization and surveillance. You have a responsibility to address the city’s lack of investment in predominantly Black and Brown communities.<br />
+<br />
+The City of Burlington is looking at increasing the budget of the Police Department by $17.4 million this year, as you well know. Spending for immigrant services, disability services, education, housing, and youth and family services pale in comparison to this excessive budget.<br />
+<br />
+Burlington can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities, starting with cutting the least transparent and most harmful parts of the BPD budget.<br />
+<br />
+As elected officials, you must show strength in your role as a leader of the Council, and take a stand for defunding the BPD. We the residents of Burlington will hold you accountable for swift and just action.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Weinberger and City Councilmembers,
+
+My name is [YOUR NAME]. I am a resident of Burlington and I am writing today to demand that you take specific measures to reduce funding for police in the City of Burlington. I call on you to take a serious look at the amount of funding being designated towards criminalization and surveillance. You have a responsibility to address the city’s lack of investment in predominantly Black and Brown communities.
+
+The City of Burlington is looking at increasing the budget of the Police Department by $17.4 million this year, as you well know. Spending for immigrant services, disability services, education, housing, and youth and family services pale in comparison to this excessive budget.
+
+Burlington can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities, starting with cutting the least transparent and most harmful parts of the BPD budget.
+
+As elected officials, you must show strength in your role as a leader of the Council, and take a stand for defunding the BPD. We the residents of Burlington will hold you accountable for swift and just action.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@burlingtonvt.gov,jredell@burlingtonvt.gov,mtracy@burlingtonvt.gov,zhightower@burlingtonvt.gov,bpine@burlingtonvt.gov,scarpenter@burlingtonvt.gov,cmason@burlingtonvt.gov,kpaul@burlingtonvt.gov,adieng@burlingtonvt.gov,jstromberg@burlingtonvt.gov,pfreeman@burlingtonvt.gov,jhanson@burlingtonvt.gov,fpaulino@burlingtonvt.gov,jshannon@burlingtonvt.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/burlingtonvt`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

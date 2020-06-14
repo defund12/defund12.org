@@ -70,6 +70,78 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Los Altos, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/losaltos`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jpepper@losaltosca.gov, jbruins@losaltosca.gov, aenander@losaltosca.gov, nfligor@losaltosca.gov, lleeeng@losaltosca.gov, cjordan@losaltosca.gov, council@losaltosca.gov`)">🔗</span>
+        jpepper@losaltosca.gov, jbruins@losaltosca.gov, aenander@losaltosca.gov, nfligor@losaltosca.gov, lleeeng@losaltosca.gov, cjordan@losaltosca.gov, council@losaltosca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor Pepper and Los Altos City Council Members,
+
+My name is [YOUR NAME], and I am a resident of Los Altos. This past week, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul in our approach to criminal justice in America. We are demanding that our voices be heard, and that real change be made to the way this city allocates its resources.
+
+The fact that the Los Altos Police Department encompasses almost a third of the city’s operating budget while human resources like affordable housing and community programs receive only a small fraction of the budget is shameful and unproductive. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community well-being and safety than police or prisons (Source: Popular Democracy).
+
+There is not just a need for police reform, but police defunding and abolition, because the entire systemic structure of the policing is inherently corrupt and ineffective. The average police recruit spends 58 hours learning how to shoot and only 8 hours learning how to de-escalate (Source: Campaign Zero). They are not trained or equipped to react to the vast majority of crises. Phillip McHarris (doctoral candidate focusing on race), argues that we must work towards a reality in which healthcare workers and emergency response teams handle substance abuse, domestic violence, homelessness, and mental health cases. Policies to “improve the police” are not enough, as there’s no evidence that implicit bias training or community relations initiatives help with reducing the abuses of policing (The Nation). We need to reimagine public safety to prioritize community well-being and finding alternatives to conflict management, rather than defaulting to violent policing. 
+
+We demand the immediate freezing of budget increases to the police force, cancelling of cadet classes, demilitarization of the police force, and reallocation of funds from police to community-led health and safety strategies.
+
+Please do not vote for more SRO’s in schools, militarized police, and officers patrolling our streets. Do not allow the city to increase police funding another 8%. Do not be complicit in the disproportionate targeting and continuous oppression of people of Black, Indigenous and People of Color. We demand a budget that supports community wellbeing, rather than empowers a police force that tears them apart.
+
+It is your duty to represent your constituents. I am urging you to revise the Los Altos city budget for the next fiscal year and to fund CareNotCops. We can be a beacon for other cities to follow if only we have the courage to change.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To Mayor Pepper and Los Altos City Council Members,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Los Altos. This past week, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul in our approach to criminal justice in America. We are demanding that our voices be heard, and that real change be made to the way this city allocates its resources.</p>
+
+<p>The fact that the Los Altos Police Department encompasses almost a third of the city’s operating budget while human resources like affordable housing and community programs receive only a small fraction of the budget is shameful and unproductive. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community well-being and safety than police or prisons (Source: Popular Democracy).</p>
+
+<p>There is not just a need for police reform, but police defunding and abolition, because the entire systemic structure of the policing is inherently corrupt and ineffective. The average police recruit spends 58 hours learning how to shoot and only 8 hours learning how to de-escalate (Source: Campaign Zero). They are not trained or equipped to react to the vast majority of crises. Phillip McHarris (doctoral candidate focusing on race), argues that we must work towards a reality in which healthcare workers and emergency response teams handle substance abuse, domestic violence, homelessness, and mental health cases. Policies to “improve the police” are not enough, as there’s no evidence that implicit bias training or community relations initiatives help with reducing the abuses of policing (The Nation). We need to reimagine public safety to prioritize community well-being and finding alternatives to conflict management, rather than defaulting to violent policing.</p>
+
+<p>We demand the immediate freezing of budget increases to the police force, cancelling of cadet classes, demilitarization of the police force, and reallocation of funds from police to community-led health and safety strategies.</p>
+
+<p>Please do not vote for more SRO’s in schools, militarized police, and officers patrolling our streets. Do not allow the city to increase police funding another 8%. Do not be complicit in the disproportionate targeting and continuous oppression of people of Black, Indigenous and People of Color. We demand a budget that supports community wellbeing, rather than empowers a police force that tears them apart.</p>
+
+<p>It is your duty to represent your constituents. I am urging you to revise the Los Altos city budget for the next fiscal year and to fund CareNotCops. We can be a beacon for other cities to follow if only we have the courage to change.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1942,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor Pepper and Los Altos City Council Members,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Los Altos. This past week, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul in our approach to criminal justice in America. We are demanding that our voices be heard, and that real change be made to the way this city allocates its resources.<br />
+<br />
+The fact that the Los Altos Police Department encompasses almost a third of the city’s operating budget while human resources like affordable housing and community programs receive only a small fraction of the budget is shameful and unproductive. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community well-being and safety than police or prisons (Source: Popular Democracy).<br />
+<br />
+There is not just a need for police reform, but police defunding and abolition, because the entire systemic structure of the policing is inherently corrupt and ineffective. The average police recruit spends 58 hours learning how to shoot and only 8 hours learning how to de-escalate (Source: Campaign Zero). They are not trained or equipped to react to the vast majority of crises. Phillip McHarris (doctoral candidate focusing on race), argues that we must work towards a reality in which healthcare workers and emergency response teams handle substance abuse, domestic violence, homelessness, and mental health cases. Policies to “improve the police” are not enough, as there’s no evidence that implicit bias training or community relations initiatives help with reducing the abuses of policing (The Nation). We need to reimagine public safety to prioritize community well-being and finding alternatives to conflict management, rather than defaulting to violent policing. <br />
+<br />
+We demand the immediate freezing of budget increases to the police force, cancelling of cadet classes, demilitarization of the police force, and reallocation of funds from police to community-led health and safety strategies.<br />
+<br />
+Please do not vote for more SRO’s in schools, militarized police, and officers patrolling our streets. Do not allow the city to increase police funding another 8%. Do not be complicit in the disproportionate targeting and continuous oppression of people of Black, Indigenous and People of Color. We demand a budget that supports community wellbeing, rather than empowers a police force that tears them apart.<br />
+<br />
+It is your duty to represent your constituents. I am urging you to revise the Los Altos city budget for the next fiscal year and to fund CareNotCops. We can be a beacon for other cities to follow if only we have the courage to change.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To Mayor Pepper and Los Altos City Council Members,
+
+My name is [YOUR NAME], and I am a resident of Los Altos. This past week, our nation and community have been gripped by protests calling for an end to racism and anti-Blackness and a complete overhaul in our approach to criminal justice in America. We are demanding that our voices be heard, and that real change be made to the way this city allocates its resources.
+
+The fact that the Los Altos Police Department encompasses almost a third of the city’s operating budget while human resources like affordable housing and community programs receive only a small fraction of the budget is shameful and unproductive. Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at promoting community well-being and safety than police or prisons (Source: Popular Democracy).
+
+There is not just a need for police reform, but police defunding and abolition, because the entire systemic structure of the policing is inherently corrupt and ineffective. The average police recruit spends 58 hours learning how to shoot and only 8 hours learning how to de-escalate (Source: Campaign Zero). They are not trained or equipped to react to the vast majority of crises. Phillip McHarris (doctoral candidate focusing on race), argues that we must work towards a reality in which healthcare workers and emergency response teams handle substance abuse, domestic violence, homelessness, and mental health cases. Policies to “improve the police” are not enough, as there’s no evidence that implicit bias training or community relations initiatives help with reducing the abuses of policing (The Nation). We need to reimagine public safety to prioritize community well-being and finding alternatives to conflict management, rather than defaulting to violent policing. 
+
+We demand the immediate freezing of budget increases to the police force, cancelling of cadet classes, demilitarization of the police force, and reallocation of funds from police to community-led health and safety strategies.
+
+Please do not vote for more SRO’s in schools, militarized police, and officers patrolling our streets. Do not allow the city to increase police funding another 8%. Do not be complicit in the disproportionate targeting and continuous oppression of people of Black, Indigenous and People of Color. We demand a budget that supports community wellbeing, rather than empowers a police force that tears them apart.
+
+It is your duty to represent your constituents. I am urging you to revise the Los Altos city budget for the next fiscal year and to fund CareNotCops. We can be a beacon for other cities to follow if only we have the courage to change.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `jpepper@losaltosca.gov,jbruins@losaltosca.gov,aenander@losaltosca.gov,nfligor@losaltosca.gov,lleeeng@losaltosca.gov,cjordan@losaltosca.gov,council@losaltosca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/losaltos`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2019,4 @@
 </body>
 
 </html>
+

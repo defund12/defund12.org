@@ -70,6 +70,78 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor and City Council</h2>
+  <b>Palo Alto, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/paloalto`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Adrian.Fine@cityofpaloalto.org, Alison.Cormack@cityofpaloalto.org, Tom.Dubois@cityofpaloalto.org, eric.filseth@cityofpaloalto.org, liz.kniss@cityofpaloalto.org, Lydia.Kou@cityofpaloalto.org, greg.tanaka@cityofpaloalto.org, citymgr@cityofpaloalto.org, pd@cityofpaloalto.org`)">🔗</span>
+        Adrian.Fine@cityofpaloalto.org, Alison.Cormack@cityofpaloalto.org, Tom.Dubois@cityofpaloalto.org, eric.filseth@cityofpaloalto.org, liz.kniss@cityofpaloalto.org, Lydia.Kou@cityofpaloalto.org, greg.tanaka@cityofpaloalto.org, citymgr@cityofpaloalto.org, pd@cityofpaloalto.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hi all,
+
+My name is [YOUR NAME], and I am a resident of Palo Alto. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+
+This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+PAPD is a poor use of our resources. Last year, the Palo Alto general fund spent 43.8 million dollars on the PAPD. This means PAPD cost us taxpayers more than was spent on libraries, parks, arts, sciences, and recreation programs combined.
+
+We could be spending this money on resources that better serve the community, like affordable housing, mental health resources, and the library system just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.
+
+I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of impacted Palo Alto residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the PAPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hi all,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Palo Alto. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.</p>
+
+<p>This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+PAPD is a poor use of our resources. Last year, the Palo Alto general fund spent 43.8 million dollars on the PAPD. This means PAPD cost us taxpayers more than was spent on libraries, parks, arts, sciences, and recreation programs combined.</p>
+
+<p>We could be spending this money on resources that better serve the community, like affordable housing, mental health resources, and the library system just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.</p>
+
+<p>I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of impacted Palo Alto residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the PAPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.</p>
+
+<p>As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.</p>
+
+<p>We can be a beacon for other cities to follow if only we have the courage to change.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1942,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hi all,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Palo Alto. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.<br />
+<br />
+This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.<br />
+PAPD is a poor use of our resources. Last year, the Palo Alto general fund spent 43.8 million dollars on the PAPD. This means PAPD cost us taxpayers more than was spent on libraries, parks, arts, sciences, and recreation programs combined.<br />
+<br />
+We could be spending this money on resources that better serve the community, like affordable housing, mental health resources, and the library system just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.<br />
+<br />
+I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of impacted Palo Alto residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the PAPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.<br />
+<br />
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.<br />
+<br />
+We can be a beacon for other cities to follow if only we have the courage to change.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hi all,
+
+My name is [YOUR NAME], and I am a resident of Palo Alto. I am writing to demand that the City Council adopts a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+
+This past week, our nation has been gripped by protests calling for a rapid and meaningful reconsideration of the role of policing in communities as well as an end to racism and anti-Blackness in America. The Bay Area has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+PAPD is a poor use of our resources. Last year, the Palo Alto general fund spent 43.8 million dollars on the PAPD. This means PAPD cost us taxpayers more than was spent on libraries, parks, arts, sciences, and recreation programs combined.
+
+We could be spending this money on resources that better serve the community, like affordable housing, mental health resources, and the library system just to name a few. Amidst a pandemic in which everyone has been affected monetarily, the police system should be the first to be defunded. There are other far more important initiatives that need our money.
+
+I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of impacted Palo Alto residents during this trying and uncertain time, when livelihoods are on the line. I call on you to slash the PAPD budget and instead meaningfully reallocate funds towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. We demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `Adrian.Fine@cityofpaloalto.org,Alison.Cormack@cityofpaloalto.org,Tom.Dubois@cityofpaloalto.org,eric.filseth@cityofpaloalto.org,liz.kniss@cityofpaloalto.org,Lydia.Kou@cityofpaloalto.org,greg.tanaka@cityofpaloalto.org,citymgr@cityofpaloalto.org,pd@cityofpaloalto.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/paloalto`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2019,4 @@
 </body>
 
 </html>
+

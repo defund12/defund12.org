@@ -70,6 +70,60 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Baltimore, MD</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/baltimore`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@baltimorecity.gov, CouncilPresident@baltimorecity.gov, Zeke.Cohen@baltimorecity.gov, Danielle.McCray@baltimorecity.gov, Ryan.Dorsey@baltimorecity.gov, Bill.Henry@baltimorecity.gov, Isaac.Schleifer@baltimorecity.gov, Sharon.Middleton@baltimorecity.gov, Leon.Pinkett@baltimorecity.gov, Kristerfer.Burnett@baltimorecity.gov, John.Bullock@baltimorecity.gov, Edward.Reisinger@baltimorecity.gov, Eric.Costello@baltimorecity.gov, Robert.Stokes@baltimorecity.gov, Shannon.Sneed@baltimorecity.gov, MaryPat.Clarke@baltimorecity.gov`)">🔗</span>
+        mayor@baltimorecity.gov, CouncilPresident@baltimorecity.gov, Zeke.Cohen@baltimorecity.gov, Danielle.McCray@baltimorecity.gov, Ryan.Dorsey@baltimorecity.gov, Bill.Henry@baltimorecity.gov, Isaac.Schleifer@baltimorecity.gov, Sharon.Middleton@baltimorecity.gov, Leon.Pinkett@baltimorecity.gov, Kristerfer.Burnett@baltimorecity.gov, John.Bullock@baltimorecity.gov, Edward.Reisinger@baltimorecity.gov, Eric.Costello@baltimorecity.gov, Robert.Stokes@baltimorecity.gov, Shannon.Sneed@baltimorecity.gov, MaryPat.Clarke@baltimorecity.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `"To whom it may concern,
+
+My name is [YOUR NAME], and I am a Baltimore resident. In the midst of this pandemic and public outcry against police brutality, it feels especially inappropriate to propose an increase to the BPD budget to $545 million. I urge you to ethically reallocate this increase, as well as a meaningful portion of the remaining BPD budget, towards social services and education. Investment in programs such as the Affordable Housing Trust Fund, Baltimore Children and Youth Fund, Safe Streets Baltimore, the Office of Employment and Development, or the Department of Health, shows our commitment to communities and the vision that all Baltimore residents deserve to thrive. Historically, the city government has spent far more on police than on public health, homeless services, youth services, and other vital agencies. This while the Baltimore Police Department disproportionately targets nonwhite residents--from traffic stops to the use of lethal force. 
+
+It’s time to staunch the expansion of the BPD's mandate into homeless services, schools, youth services, mental health, and other social services where an armed police force simply doesn't belong. It’s time to protect investments in human services, the social safety net, and racial and economic justice. I am writing to insist that the upcoming BBMR budget hearings for FY 2021 reflect the voices and needs of Baltimore’s citizens. I am asking that city officials give intense care, attention and effort towards sustainable, long-term change.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]"`)">🔗</span>
+        <br /> <p>“To whom it may concern,</p>
+
+<p>My name is [YOUR NAME], and I am a Baltimore resident. In the midst of this pandemic and public outcry against police brutality, it feels especially inappropriate to propose an increase to the BPD budget to $545 million. I urge you to ethically reallocate this increase, as well as a meaningful portion of the remaining BPD budget, towards social services and education. Investment in programs such as the Affordable Housing Trust Fund, Baltimore Children and Youth Fund, Safe Streets Baltimore, the Office of Employment and Development, or the Department of Health, shows our commitment to communities and the vision that all Baltimore residents deserve to thrive. Historically, the city government has spent far more on police than on public health, homeless services, youth services, and other vital agencies. This while the Baltimore Police Department disproportionately targets nonwhite residents–from traffic stops to the use of lethal force.</p>
+
+<p>It’s time to staunch the expansion of the BPD’s mandate into homeless services, schools, youth services, mental health, and other social services where an armed police force simply doesn’t belong. It’s time to protect investments in human services, the social safety net, and racial and economic justice. I am writing to insist that the upcoming BBMR budget hearings for FY 2021 reflect the voices and needs of Baltimore’s citizens. I am asking that city officials give intense care, attention and effort towards sustainable, long-term change.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]”</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1924,52 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `"To whom it may concern,<br />
+<br />
+My name is [YOUR NAME], and I am a Baltimore resident. In the midst of this pandemic and public outcry against police brutality, it feels especially inappropriate to propose an increase to the BPD budget to $545 million. I urge you to ethically reallocate this increase, as well as a meaningful portion of the remaining BPD budget, towards social services and education. Investment in programs such as the Affordable Housing Trust Fund, Baltimore Children and Youth Fund, Safe Streets Baltimore, the Office of Employment and Development, or the Department of Health, shows our commitment to communities and the vision that all Baltimore residents deserve to thrive. Historically, the city government has spent far more on police than on public health, homeless services, youth services, and other vital agencies. This while the Baltimore Police Department disproportionately targets nonwhite residents--from traffic stops to the use of lethal force. <br />
+<br />
+It’s time to staunch the expansion of the BPD's mandate into homeless services, schools, youth services, mental health, and other social services where an armed police force simply doesn't belong. It’s time to protect investments in human services, the social safety net, and racial and economic justice. I am writing to insist that the upcoming BBMR budget hearings for FY 2021 reflect the voices and needs of Baltimore’s citizens. I am asking that city officials give intense care, attention and effort towards sustainable, long-term change.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]"`.trim() :
+      `"To whom it may concern,
+
+My name is [YOUR NAME], and I am a Baltimore resident. In the midst of this pandemic and public outcry against police brutality, it feels especially inappropriate to propose an increase to the BPD budget to $545 million. I urge you to ethically reallocate this increase, as well as a meaningful portion of the remaining BPD budget, towards social services and education. Investment in programs such as the Affordable Housing Trust Fund, Baltimore Children and Youth Fund, Safe Streets Baltimore, the Office of Employment and Development, or the Department of Health, shows our commitment to communities and the vision that all Baltimore residents deserve to thrive. Historically, the city government has spent far more on police than on public health, homeless services, youth services, and other vital agencies. This while the Baltimore Police Department disproportionately targets nonwhite residents--from traffic stops to the use of lethal force. 
+
+It’s time to staunch the expansion of the BPD's mandate into homeless services, schools, youth services, mental health, and other social services where an armed police force simply doesn't belong. It’s time to protect investments in human services, the social safety net, and racial and economic justice. I am writing to insist that the upcoming BBMR budget hearings for FY 2021 reflect the voices and needs of Baltimore’s citizens. I am asking that city officials give intense care, attention and effort towards sustainable, long-term change.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]"`.trim()
+    );
+    const recipients = `mayor@baltimorecity.gov,CouncilPresident@baltimorecity.gov,Zeke.Cohen@baltimorecity.gov,Danielle.McCray@baltimorecity.gov,Ryan.Dorsey@baltimorecity.gov,Bill.Henry@baltimorecity.gov,Isaac.Schleifer@baltimorecity.gov,Sharon.Middleton@baltimorecity.gov,Leon.Pinkett@baltimorecity.gov,Kristerfer.Burnett@baltimorecity.gov,John.Bullock@baltimorecity.gov,Edward.Reisinger@baltimorecity.gov,Eric.Costello@baltimorecity.gov,Robert.Stokes@baltimorecity.gov,Shannon.Sneed@baltimorecity.gov,MaryPat.Clarke@baltimorecity.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/baltimore`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1983,4 @@
 </body>
 
 </html>
+

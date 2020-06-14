@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Colorado Springs, CO</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/coloradosprings`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jsuthers@springsgov.com, allCouncil@springsgov.com, Don.Knight@Coloradosprings.gov, David.Geislinger@Coloradosprings.gov, Richard.Skorman@coloradosprings.gov, Yolanda.Avila@coloradosprings.gov, Jill.Gaebler@coloradosprings.gov, Andy.Pico@Coloradosprings.gov, Bill.murray@coloradosprings.gov, Tom.strand@coloradosprings.gov, Wayne.williams@coloradosprings.gov`)">🔗</span>
+        jsuthers@springsgov.com, allCouncil@springsgov.com, Don.Knight@Coloradosprings.gov, David.Geislinger@Coloradosprings.gov, Richard.Skorman@coloradosprings.gov, Yolanda.Avila@coloradosprings.gov, Jill.Gaebler@coloradosprings.gov, Andy.Pico@Coloradosprings.gov, Bill.murray@coloradosprings.gov, Tom.strand@coloradosprings.gov, Wayne.williams@coloradosprings.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Suthers and Colorado Springs City Council Members,
+
+My name is [YOUR NAME] and I am a resident of Colorado Springs. I write to demand that we defund Colorado Springs Police Department significantly and reallocate funds to be reinvested in communities through more mental health services, social workers, jobs, educational opportunities, community centers, or other beneficial programs.
+
+The CSPD takes up 34.2% of the city’s general fund budget, with only 8.5% of the general fund going to planning and community development, economic development, recreation and administration, and parks, recreation, and cultural services combined. Even with the addition of grants and other funds going to these programs, CSPD is still given 20.6% of funds, while the aforementioned programs are only given 11.3%.
+
+CSPD was also given a $7.2 million increase that came out of the city’s general fund budget to hire 20 new officers. There are many other areas with much smaller budgets where this funding would have stronger benefit, such as homelessness prevention, improving parks and infrastructure, or other types of community support.
+
+The Colorado Department of Labor and Development announced in a news conference June 4th that 517,414 unemployment claims have been filed in Colorado in the past 11 weeks. We need a budget that prioritizes the well-being of Colorado Springs residents and reinvests in communities over the police, an institution that perpetuates systemic racism.
+
+Across the country, it is becoming more and more clear that now is the time to divest from the police and reinvest in our communities. This is especially necessary at a time of economic depression.
+
+I urge you to act today.
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Suthers and Colorado Springs City Council Members,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Colorado Springs. I write to demand that we defund Colorado Springs Police Department significantly and reallocate funds to be reinvested in communities through more mental health services, social workers, jobs, educational opportunities, community centers, or other beneficial programs.</p>
+
+<p>The CSPD takes up 34.2% of the city’s general fund budget, with only 8.5% of the general fund going to planning and community development, economic development, recreation and administration, and parks, recreation, and cultural services combined. Even with the addition of grants and other funds going to these programs, CSPD is still given 20.6% of funds, while the aforementioned programs are only given 11.3%.</p>
+
+<p>CSPD was also given a $7.2 million increase that came out of the city’s general fund budget to hire 20 new officers. There are many other areas with much smaller budgets where this funding would have stronger benefit, such as homelessness prevention, improving parks and infrastructure, or other types of community support.</p>
+
+<p>The Colorado Department of Labor and Development announced in a news conference June 4th that 517,414 unemployment claims have been filed in Colorado in the past 11 weeks. We need a budget that prioritizes the well-being of Colorado Springs residents and reinvests in communities over the police, an institution that perpetuates systemic racism.</p>
+
+<p>Across the country, it is becoming more and more clear that now is the time to divest from the police and reinvest in our communities. This is especially necessary at a time of economic depression.</p>
+
+<p>I urge you to act today.
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Suthers and Colorado Springs City Council Members,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Colorado Springs. I write to demand that we defund Colorado Springs Police Department significantly and reallocate funds to be reinvested in communities through more mental health services, social workers, jobs, educational opportunities, community centers, or other beneficial programs.<br />
+<br />
+The CSPD takes up 34.2% of the city’s general fund budget, with only 8.5% of the general fund going to planning and community development, economic development, recreation and administration, and parks, recreation, and cultural services combined. Even with the addition of grants and other funds going to these programs, CSPD is still given 20.6% of funds, while the aforementioned programs are only given 11.3%.<br />
+<br />
+CSPD was also given a $7.2 million increase that came out of the city’s general fund budget to hire 20 new officers. There are many other areas with much smaller budgets where this funding would have stronger benefit, such as homelessness prevention, improving parks and infrastructure, or other types of community support.<br />
+<br />
+The Colorado Department of Labor and Development announced in a news conference June 4th that 517,414 unemployment claims have been filed in Colorado in the past 11 weeks. We need a budget that prioritizes the well-being of Colorado Springs residents and reinvests in communities over the police, an institution that perpetuates systemic racism.<br />
+<br />
+Across the country, it is becoming more and more clear that now is the time to divest from the police and reinvest in our communities. This is especially necessary at a time of economic depression.<br />
+<br />
+I urge you to act today.<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Suthers and Colorado Springs City Council Members,
+
+My name is [YOUR NAME] and I am a resident of Colorado Springs. I write to demand that we defund Colorado Springs Police Department significantly and reallocate funds to be reinvested in communities through more mental health services, social workers, jobs, educational opportunities, community centers, or other beneficial programs.
+
+The CSPD takes up 34.2% of the city’s general fund budget, with only 8.5% of the general fund going to planning and community development, economic development, recreation and administration, and parks, recreation, and cultural services combined. Even with the addition of grants and other funds going to these programs, CSPD is still given 20.6% of funds, while the aforementioned programs are only given 11.3%.
+
+CSPD was also given a $7.2 million increase that came out of the city’s general fund budget to hire 20 new officers. There are many other areas with much smaller budgets where this funding would have stronger benefit, such as homelessness prevention, improving parks and infrastructure, or other types of community support.
+
+The Colorado Department of Labor and Development announced in a news conference June 4th that 517,414 unemployment claims have been filed in Colorado in the past 11 weeks. We need a budget that prioritizes the well-being of Colorado Springs residents and reinvests in communities over the police, an institution that perpetuates systemic racism.
+
+Across the country, it is becoming more and more clear that now is the time to divest from the police and reinvest in our communities. This is especially necessary at a time of economic depression.
+
+I urge you to act today.
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `jsuthers@springsgov.com,allCouncil@springsgov.com,Don.Knight@Coloradosprings.gov,David.Geislinger@Coloradosprings.gov,Richard.Skorman@coloradosprings.gov,Yolanda.Avila@coloradosprings.gov,Jill.Gaebler@coloradosprings.gov,Andy.Pico@Coloradosprings.gov,Bill.murray@coloradosprings.gov,Tom.strand@coloradosprings.gov,Wayne.williams@coloradosprings.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/coloradosprings`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Schor and City Council</h2>
+  <b>Lansing, MI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/lansing`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `lansing.mayor@lansingmi.gov, city.council@lansingmi.gov, brandon.betz@lansingmi.gov, kathie.dunbar@lansingmi.gov, jeremy.garza@lansingmi.gov, adam.hussain@lansingmi.gov, briant.jackson@lansingmi.gov, peter.spadafore@lansingmi.gov, patricia.spitzley@lansingmi.gov, carol.wood@lansingmi.gov`)">🔗</span>
+        lansing.mayor@lansingmi.gov, city.council@lansingmi.gov, brandon.betz@lansingmi.gov, kathie.dunbar@lansingmi.gov, jeremy.garza@lansingmi.gov, adam.hussain@lansingmi.gov, briant.jackson@lansingmi.gov, peter.spadafore@lansingmi.gov, patricia.spitzley@lansingmi.gov, carol.wood@lansingmi.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Mayor Schor and Lansing City Council members:
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. Given the history of policing and the most recent murders of Black people, I am asking you to redirect money away from the Lansing PD in the 2021 budget and instead to prioritize services that help strengthen our communities.
+
+As members of City Council, it is your mission to ensure quality of life for the Lansing community. You have seen the damage police officers have done to the vibrancy, safety, health, and inclusivity of both our local and national communities. We can no longer deny that increased policing has limited both personal and economic opportunities for people who have already been historically marginalized. To secure both short and long term stability for our city, we need to better allocate and manage our city resources.
+
+Defunding the police is a sustainable practice that will protect and enhance our cultural as well as our natural and historical resources. Under the guise of keeping the public safe, policing has been a well funded form of oppression that continues violent cycles instead of ending them. Lansing residents and businesses deserve to receive reliable, efficient, and quality services, as well as a feeling of safety. It is time to defund the police and move resources to programs and services that heal and build community.
+
+I want a budget that reflects our community’s priorities and needs. In 2020, the City of Lansing’s Budget showed that 32% of the general fund was allocated to policing while only 1% was allocated to human services and only 9% to public services. We want Lansing PD’s funding redistributed to services that actually help the people of Lansing, including affordable housing, more mental health services, and rent suspension and forgiveness for those who are currently unemployed. Beyond policing our community, these services are proven to be more effective in improving community safety and wellness. I demand a budget that supports community wellbeing, rather than funding police forces that tear us apart.
+
+Please consider your role in enriching and empowering our communities, especially amidst systemic racial injustice, wide-spread illness, and economic vulnerability.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Mayor Schor and Lansing City Council members:</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. Given the history of policing and the most recent murders of Black people, I am asking you to redirect money away from the Lansing PD in the 2021 budget and instead to prioritize services that help strengthen our communities.</p>
+
+<p>As members of City Council, it is your mission to ensure quality of life for the Lansing community. You have seen the damage police officers have done to the vibrancy, safety, health, and inclusivity of both our local and national communities. We can no longer deny that increased policing has limited both personal and economic opportunities for people who have already been historically marginalized. To secure both short and long term stability for our city, we need to better allocate and manage our city resources.</p>
+
+<p>Defunding the police is a sustainable practice that will protect and enhance our cultural as well as our natural and historical resources. Under the guise of keeping the public safe, policing has been a well funded form of oppression that continues violent cycles instead of ending them. Lansing residents and businesses deserve to receive reliable, efficient, and quality services, as well as a feeling of safety. It is time to defund the police and move resources to programs and services that heal and build community.</p>
+
+<p>I want a budget that reflects our community’s priorities and needs. In 2020, the City of Lansing’s Budget showed that 32% of the general fund was allocated to policing while only 1% was allocated to human services and only 9% to public services. We want Lansing PD’s funding redistributed to services that actually help the people of Lansing, including affordable housing, more mental health services, and rent suspension and forgiveness for those who are currently unemployed. Beyond policing our community, these services are proven to be more effective in improving community safety and wellness. I demand a budget that supports community wellbeing, rather than funding police forces that tear us apart.</p>
+
+<p>Please consider your role in enriching and empowering our communities, especially amidst systemic racial injustice, wide-spread illness, and economic vulnerability.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Mayor Schor and Lansing City Council members:<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. Given the history of policing and the most recent murders of Black people, I am asking you to redirect money away from the Lansing PD in the 2021 budget and instead to prioritize services that help strengthen our communities.<br />
+<br />
+As members of City Council, it is your mission to ensure quality of life for the Lansing community. You have seen the damage police officers have done to the vibrancy, safety, health, and inclusivity of both our local and national communities. We can no longer deny that increased policing has limited both personal and economic opportunities for people who have already been historically marginalized. To secure both short and long term stability for our city, we need to better allocate and manage our city resources.<br />
+<br />
+Defunding the police is a sustainable practice that will protect and enhance our cultural as well as our natural and historical resources. Under the guise of keeping the public safe, policing has been a well funded form of oppression that continues violent cycles instead of ending them. Lansing residents and businesses deserve to receive reliable, efficient, and quality services, as well as a feeling of safety. It is time to defund the police and move resources to programs and services that heal and build community.<br />
+<br />
+I want a budget that reflects our community’s priorities and needs. In 2020, the City of Lansing’s Budget showed that 32% of the general fund was allocated to policing while only 1% was allocated to human services and only 9% to public services. We want Lansing PD’s funding redistributed to services that actually help the people of Lansing, including affordable housing, more mental health services, and rent suspension and forgiveness for those who are currently unemployed. Beyond policing our community, these services are proven to be more effective in improving community safety and wellness. I demand a budget that supports community wellbeing, rather than funding police forces that tear us apart.<br />
+<br />
+Please consider your role in enriching and empowering our communities, especially amidst systemic racial injustice, wide-spread illness, and economic vulnerability.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Mayor Schor and Lansing City Council members:
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY]. Given the history of policing and the most recent murders of Black people, I am asking you to redirect money away from the Lansing PD in the 2021 budget and instead to prioritize services that help strengthen our communities.
+
+As members of City Council, it is your mission to ensure quality of life for the Lansing community. You have seen the damage police officers have done to the vibrancy, safety, health, and inclusivity of both our local and national communities. We can no longer deny that increased policing has limited both personal and economic opportunities for people who have already been historically marginalized. To secure both short and long term stability for our city, we need to better allocate and manage our city resources.
+
+Defunding the police is a sustainable practice that will protect and enhance our cultural as well as our natural and historical resources. Under the guise of keeping the public safe, policing has been a well funded form of oppression that continues violent cycles instead of ending them. Lansing residents and businesses deserve to receive reliable, efficient, and quality services, as well as a feeling of safety. It is time to defund the police and move resources to programs and services that heal and build community.
+
+I want a budget that reflects our community’s priorities and needs. In 2020, the City of Lansing’s Budget showed that 32% of the general fund was allocated to policing while only 1% was allocated to human services and only 9% to public services. We want Lansing PD’s funding redistributed to services that actually help the people of Lansing, including affordable housing, more mental health services, and rent suspension and forgiveness for those who are currently unemployed. Beyond policing our community, these services are proven to be more effective in improving community safety and wellness. I demand a budget that supports community wellbeing, rather than funding police forces that tear us apart.
+
+Please consider your role in enriching and empowering our communities, especially amidst systemic racial injustice, wide-spread illness, and economic vulnerability.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `lansing.mayor@lansingmi.gov,city.council@lansingmi.gov,brandon.betz@lansingmi.gov,kathie.dunbar@lansingmi.gov,jeremy.garza@lansingmi.gov,adam.hussain@lansingmi.gov,briant.jackson@lansingmi.gov,peter.spadafore@lansingmi.gov,patricia.spitzley@lansingmi.gov,carol.wood@lansingmi.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/lansing`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Winston-Salem, NC</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/winston-salem`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayorsoffice@cityofws.org, info@cityofws.org, john.larson@cityofws.org, robertc@cityofws.org, jeffm@cityofws.org, danb@cityofws.org, annettes@cityofws.org, denisea@cityofws.org, jamestjr@cityofws.org, morticiap@cityofws.org`)">🔗</span>
+        mayorsoffice@cityofws.org, info@cityofws.org, john.larson@cityofws.org, robertc@cityofws.org, jeffm@cityofws.org, danb@cityofws.org, annettes@cityofws.org, denisea@cityofws.org, jamestjr@cityofws.org, morticiap@cityofws.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Joines and City Council,
+
+My name is [INSERT NAME] and I am a resident of [DISTRICT/NEIGHBORHOOD] concerned about the proposed City of Winston-Salem budget that allocates 52.5% of the General Fund to Public Safety, of which over 70% ($78,711,550) is allocated for the Police Department. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
+
+In the public Budget Workshop on June 4, 2020, City Council and the Mayor suggested giving WSPD raises due to their work during the peaceful protests in Winston-Salem, calling these protests "crisis situations." The reason given for not including WSPD raises was for the current public optics when the city needs to be focusing on supporting small businesses. In this Budget Workshop, the question of supporting affordable housing was delayed until after the Budget Adoption meeting on June 15th. It is indefensible to allocate this quantity of funds, and to suggest raises to WSPD, when city workers are experiencing layoffs, denials of wage increases, and thousands of community members face unemployment and housing/food insecurity in the midst of the COVID-19 pandemic.
+
+I call on you to meaningfully restrict the WSPD budget and instead reallocate significant funds towards social programs and resources that support affordable housing, jobs, education, health care, child care, and other critical community needs. These programs have been proven to be more effective than policing at promoting safe communities. I demand a budget that supports community wellbeing, rather than empowering the police force that tears us apart.
+
+Can I count on you to consider an alternative budget that prioritizes social services?
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Joines and City Council,</p>
+
+<p>My name is [INSERT NAME] and I am a resident of [DISTRICT/NEIGHBORHOOD] concerned about the proposed City of Winston-Salem budget that allocates 52.5% of the General Fund to Public Safety, of which over 70% ($78,711,550) is allocated for the Police Department. I urge you to advocate for a meaningful reallocation of the city’s expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.</p>
+
+<p>In the public Budget Workshop on June 4, 2020, City Council and the Mayor suggested giving WSPD raises due to their work during the peaceful protests in Winston-Salem, calling these protests “crisis situations.” The reason given for not including WSPD raises was for the current public optics when the city needs to be focusing on supporting small businesses. In this Budget Workshop, the question of supporting affordable housing was delayed until after the Budget Adoption meeting on June 15th. It is indefensible to allocate this quantity of funds, and to suggest raises to WSPD, when city workers are experiencing layoffs, denials of wage increases, and thousands of community members face unemployment and housing/food insecurity in the midst of the COVID-19 pandemic.</p>
+
+<p>I call on you to meaningfully restrict the WSPD budget and instead reallocate significant funds towards social programs and resources that support affordable housing, jobs, education, health care, child care, and other critical community needs. These programs have been proven to be more effective than policing at promoting safe communities. I demand a budget that supports community wellbeing, rather than empowering the police force that tears us apart.</p>
+
+<p>Can I count on you to consider an alternative budget that prioritizes social services?</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Joines and City Council,<br />
+<br />
+My name is [INSERT NAME] and I am a resident of [DISTRICT/NEIGHBORHOOD] concerned about the proposed City of Winston-Salem budget that allocates 52.5% of the General Fund to Public Safety, of which over 70% ($78,711,550) is allocated for the Police Department. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.<br />
+<br />
+In the public Budget Workshop on June 4, 2020, City Council and the Mayor suggested giving WSPD raises due to their work during the peaceful protests in Winston-Salem, calling these protests "crisis situations." The reason given for not including WSPD raises was for the current public optics when the city needs to be focusing on supporting small businesses. In this Budget Workshop, the question of supporting affordable housing was delayed until after the Budget Adoption meeting on June 15th. It is indefensible to allocate this quantity of funds, and to suggest raises to WSPD, when city workers are experiencing layoffs, denials of wage increases, and thousands of community members face unemployment and housing/food insecurity in the midst of the COVID-19 pandemic.<br />
+<br />
+I call on you to meaningfully restrict the WSPD budget and instead reallocate significant funds towards social programs and resources that support affordable housing, jobs, education, health care, child care, and other critical community needs. These programs have been proven to be more effective than policing at promoting safe communities. I demand a budget that supports community wellbeing, rather than empowering the police force that tears us apart.<br />
+<br />
+Can I count on you to consider an alternative budget that prioritizes social services?<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Joines and City Council,
+
+My name is [INSERT NAME] and I am a resident of [DISTRICT/NEIGHBORHOOD] concerned about the proposed City of Winston-Salem budget that allocates 52.5% of the General Fund to Public Safety, of which over 70% ($78,711,550) is allocated for the Police Department. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
+
+In the public Budget Workshop on June 4, 2020, City Council and the Mayor suggested giving WSPD raises due to their work during the peaceful protests in Winston-Salem, calling these protests "crisis situations." The reason given for not including WSPD raises was for the current public optics when the city needs to be focusing on supporting small businesses. In this Budget Workshop, the question of supporting affordable housing was delayed until after the Budget Adoption meeting on June 15th. It is indefensible to allocate this quantity of funds, and to suggest raises to WSPD, when city workers are experiencing layoffs, denials of wage increases, and thousands of community members face unemployment and housing/food insecurity in the midst of the COVID-19 pandemic.
+
+I call on you to meaningfully restrict the WSPD budget and instead reallocate significant funds towards social programs and resources that support affordable housing, jobs, education, health care, child care, and other critical community needs. These programs have been proven to be more effective than policing at promoting safe communities. I demand a budget that supports community wellbeing, rather than empowering the police force that tears us apart.
+
+Can I count on you to consider an alternative budget that prioritizes social services?
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayorsoffice@cityofws.org,info@cityofws.org,john.larson@cityofws.org,robertc@cityofws.org,jeffm@cityofws.org,danb@cityofws.org,annettes@cityofws.org,denisea@cityofws.org,jamestjr@cityofws.org,morticiap@cityofws.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/winston-salem`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+

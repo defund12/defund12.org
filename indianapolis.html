@@ -70,6 +70,75 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Councilors</h2>
+  <b>Indianapolis, IN</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/indianapolis`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Vop.Osili@indy.gov, Zach@adamsonforindy.com, leroy.robinson@indy.gov, Keith.Potts@indy.gov, Dan.Boots@indy.gov, Ethan.Evans2@indy.gov, Ali.Brown@indy.gov, crista.carlino@indy.gov, John.Barth@indy.gov, monroe.gray@indy.gov, william.oliver@indy.gov, maggie.lewis@indy.gov, blake.johnson@indy.gov, keith.graves@indy.gov, lakeisha.jackson@indy.gov, jessica.mccormick@indy.gov, kristin.jones@indy.gov, michael-paul.hart@indy.gov, david.ray@indy.gov, jasonhollidayccc20@gmail.com, frank.mascari@indy.gov, jared.evans@indy.gov, paul.anneed23@gmail.com, mike.dilk424@gmail.com, brian.mowery@indy.gov`)">🔗</span>
+        Vop.Osili@indy.gov, Zach@adamsonforindy.com, leroy.robinson@indy.gov, Keith.Potts@indy.gov, Dan.Boots@indy.gov, Ethan.Evans2@indy.gov, Ali.Brown@indy.gov, crista.carlino@indy.gov, John.Barth@indy.gov, monroe.gray@indy.gov, william.oliver@indy.gov, maggie.lewis@indy.gov, blake.johnson@indy.gov, keith.graves@indy.gov, lakeisha.jackson@indy.gov, jessica.mccormick@indy.gov, kristin.jones@indy.gov, michael-paul.hart@indy.gov, david.ray@indy.gov, jasonhollidayccc20@gmail.com, frank.mascari@indy.gov, jared.evans@indy.gov, paul.anneed23@gmail.com, mike.dilk424@gmail.com, brian.mowery@indy.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear City Councilors,
+ 
+My name is [YOUR NAME] and I'm a resident of Indianapolis. I am writing about the fiscal year 2021 budget for the Consolidated City of Indianapolis Marion County.
+
+Mayor Hogsett claims to be "dedicated to investing Indianapolis' resources back into our neighborhoods," yet the 2020 budget allocated $253 million or 31% of the total budget to the IMPD. By contrast, Neighborhood Services received funds amounting to 3% of the total budget, or less than a tenth of the IMPD budget.
+
+I am asking that the Indianapolis City Council push to make a more overt and visible commitment to the city and county's Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the IMPD's overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city's expenditures, away from the IMPD, and towards sectors that facilitate the dismantling of racial and class inequality.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.
+
+Can I count on you to consider an alternative budget that puts a focus on social services programs?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear City Councilors,</p>
+
+<p>My name is [YOUR NAME] and I’m a resident of Indianapolis. I am writing about the fiscal year 2021 budget for the Consolidated City of Indianapolis Marion County.</p>
+
+<p>Mayor Hogsett claims to be “dedicated to investing Indianapolis’ resources back into our neighborhoods,” yet the 2020 budget allocated $253 million or 31% of the total budget to the IMPD. By contrast, Neighborhood Services received funds amounting to 3% of the total budget, or less than a tenth of the IMPD budget.</p>
+
+<p>I am asking that the Indianapolis City Council push to make a more overt and visible commitment to the city and county’s Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the IMPD’s overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city’s expenditures, away from the IMPD, and towards sectors that facilitate the dismantling of racial and class inequality.</p>
+
+<p>Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.</p>
+
+<p>Can I count on you to consider an alternative budget that puts a focus on social services programs?</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1939,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear City Councilors,<br />
+ <br />
+My name is [YOUR NAME] and I'm a resident of Indianapolis. I am writing about the fiscal year 2021 budget for the Consolidated City of Indianapolis Marion County.<br />
+<br />
+Mayor Hogsett claims to be "dedicated to investing Indianapolis' resources back into our neighborhoods," yet the 2020 budget allocated $253 million or 31% of the total budget to the IMPD. By contrast, Neighborhood Services received funds amounting to 3% of the total budget, or less than a tenth of the IMPD budget.<br />
+<br />
+I am asking that the Indianapolis City Council push to make a more overt and visible commitment to the city and county's Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the IMPD's overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city's expenditures, away from the IMPD, and towards sectors that facilitate the dismantling of racial and class inequality.<br />
+<br />
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.<br />
+<br />
+Can I count on you to consider an alternative budget that puts a focus on social services programs?<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear City Councilors,
+ 
+My name is [YOUR NAME] and I'm a resident of Indianapolis. I am writing about the fiscal year 2021 budget for the Consolidated City of Indianapolis Marion County.
+
+Mayor Hogsett claims to be "dedicated to investing Indianapolis' resources back into our neighborhoods," yet the 2020 budget allocated $253 million or 31% of the total budget to the IMPD. By contrast, Neighborhood Services received funds amounting to 3% of the total budget, or less than a tenth of the IMPD budget.
+
+I am asking that the Indianapolis City Council push to make a more overt and visible commitment to the city and county's Black and Brown communities and to combat an over-investment in their criminalization and surveillance. I therefore demand that the Council find ways to redirect money away from the IMPD's overinflated budget. I urge you to pressure the mayor for an ethical and equal reallocation of the city's expenditures, away from the IMPD, and towards sectors that facilitate the dismantling of racial and class inequality.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities instead—starting with education, housing, healthcare, cooperative businesses, community centers, and community-led organizations and projects.
+
+Can I count on you to consider an alternative budget that puts a focus on social services programs?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `Vop.Osili@indy.gov,Zach@adamsonforindy.com,leroy.robinson@indy.gov,Keith.Potts@indy.gov,Dan.Boots@indy.gov,Ethan.Evans2@indy.gov,Ali.Brown@indy.gov,crista.carlino@indy.gov,John.Barth@indy.gov,monroe.gray@indy.gov,william.oliver@indy.gov,maggie.lewis@indy.gov,blake.johnson@indy.gov,keith.graves@indy.gov,lakeisha.jackson@indy.gov,jessica.mccormick@indy.gov,kristin.jones@indy.gov,michael-paul.hart@indy.gov,david.ray@indy.gov,jasonhollidayccc20@gmail.com,frank.mascari@indy.gov,jared.evans@indy.gov,paul.anneed23@gmail.com,mike.dilk424@gmail.com,brian.mowery@indy.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/indianapolis`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2014,4 @@
 </body>
 
 </html>
+

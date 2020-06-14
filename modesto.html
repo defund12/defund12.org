@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Modesto, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/modesto`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@modestogov.com, mgrewal@modestogov.com, tmadrigal@modestogov.com, kahyou@modestogov.com, bzoslocki@modestogov.com, jkenoyer@modestogov.com, dridenour@modestogov.com`)">🔗</span>
+        mayor@modestogov.com, mgrewal@modestogov.com, tmadrigal@modestogov.com, kahyou@modestogov.com, bzoslocki@modestogov.com, jkenoyer@modestogov.com, dridenour@modestogov.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Mayor Brandvold and City Council members,
+
+My name is [YOUR NAME], and I am a resident of Modesto, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Based on the population of Modesto, a Black person was 3.1 times as likely to have deadly force used on them than a White person from 2016 - 2018.
+
+At a time when people are calling for an end to racially motivated murders by armed police, in order to reduce police brutality with weapons, there should be a defunding and demilitarization of police. In order for police to be less likely to use deadly force, their access to guns, tear gas, pepper spray and tanks should be limited or completely cut off. After looking at the city’s budget, I am appalled to learn that 50% of Modesto’s general fund expenses is dedicated to funding the police department with only up to 28% of the budget explicitly dedicated to projects, departments, and programs that invest in community well-being.
+
+With the COVID-19 pandemic, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary-- now more than ever. We demand that the City Council defund the Modesto Police Department, which receives at least $69.5 Million, and redirect that money to much needed services and resources for our community. We demand a budget that adequately and effectively meets the needs of vulnerable Modesto locals during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community well-being rather than empower the police.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Mayor Brandvold and City Council members,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Modesto, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Based on the population of Modesto, a Black person was 3.1 times as likely to have deadly force used on them than a White person from 2016 - 2018.</p>
+
+<p>At a time when people are calling for an end to racially motivated murders by armed police, in order to reduce police brutality with weapons, there should be a defunding and demilitarization of police. In order for police to be less likely to use deadly force, their access to guns, tear gas, pepper spray and tanks should be limited or completely cut off. After looking at the city’s budget, I am appalled to learn that 50% of Modesto’s general fund expenses is dedicated to funding the police department with only up to 28% of the budget explicitly dedicated to projects, departments, and programs that invest in community well-being.</p>
+
+<p>With the COVID-19 pandemic, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary– now more than ever. We demand that the City Council defund the Modesto Police Department, which receives at least $69.5 Million, and redirect that money to much needed services and resources for our community. We demand a budget that adequately and effectively meets the needs of vulnerable Modesto locals during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community well-being rather than empower the police.</p>
+
+<p>As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Mayor Brandvold and City Council members,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Modesto, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Based on the population of Modesto, a Black person was 3.1 times as likely to have deadly force used on them than a White person from 2016 - 2018.<br />
+<br />
+At a time when people are calling for an end to racially motivated murders by armed police, in order to reduce police brutality with weapons, there should be a defunding and demilitarization of police. In order for police to be less likely to use deadly force, their access to guns, tear gas, pepper spray and tanks should be limited or completely cut off. After looking at the city’s budget, I am appalled to learn that 50% of Modesto’s general fund expenses is dedicated to funding the police department with only up to 28% of the budget explicitly dedicated to projects, departments, and programs that invest in community well-being.<br />
+<br />
+With the COVID-19 pandemic, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary-- now more than ever. We demand that the City Council defund the Modesto Police Department, which receives at least $69.5 Million, and redirect that money to much needed services and resources for our community. We demand a budget that adequately and effectively meets the needs of vulnerable Modesto locals during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community well-being rather than empower the police.<br />
+<br />
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Mayor Brandvold and City Council members,
+
+My name is [YOUR NAME], and I am a resident of Modesto, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Based on the population of Modesto, a Black person was 3.1 times as likely to have deadly force used on them than a White person from 2016 - 2018.
+
+At a time when people are calling for an end to racially motivated murders by armed police, in order to reduce police brutality with weapons, there should be a defunding and demilitarization of police. In order for police to be less likely to use deadly force, their access to guns, tear gas, pepper spray and tanks should be limited or completely cut off. After looking at the city’s budget, I am appalled to learn that 50% of Modesto’s general fund expenses is dedicated to funding the police department with only up to 28% of the budget explicitly dedicated to projects, departments, and programs that invest in community well-being.
+
+With the COVID-19 pandemic, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary-- now more than ever. We demand that the City Council defund the Modesto Police Department, which receives at least $69.5 Million, and redirect that money to much needed services and resources for our community. We demand a budget that adequately and effectively meets the needs of vulnerable Modesto locals during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community well-being rather than empower the police.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@modestogov.com,mgrewal@modestogov.com,tmadrigal@modestogov.com,kahyou@modestogov.com,bzoslocki@modestogov.com,jkenoyer@modestogov.com,dridenour@modestogov.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/modesto`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Durango, CO</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/durango`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `DeanBrookie@durangogov.org, ChrisBettin@durangogov.org, barbaraNoseworthy@durangogov.org, MelissaYoussef@durangogov.org`)">🔗</span>
+        DeanBrookie@durangogov.org, ChrisBettin@durangogov.org, barbaraNoseworthy@durangogov.org, MelissaYoussef@durangogov.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [YOUR NAME HERE], and I am a resident of Durango, Colorado. We are experiencing a revolution across this country. For too long Black people, Indigenous people, and People of Color have lived in fear of police departments who act violently with little or no consequence. Attempts at reform and extra training have done little to alter this systemic problem.
+
+As a result, I call for immediate defunding of Durango PD. At well over 8 million dollars ($8,417,771), their budget accounts for 16% of the general fund for the city.  In contrast, the funds allotted for community services like aide for the homeless, low income assistance, and youth services are less than 1 million ($921,102). Police have over 9 times the amount of funding of community services. This is absurd. We need to invest in the well-being of the community NOT the police.
+
+Police are not trained to properly deal with most of the calls they answer and often make situations worse, especially when Black people, Indigenous people, and People of Color are involved. What we need are more mental health professionals, more youth counselors, and more resources for homeless folks and those struggling to make ends meet. Investing so much money in the police shows a priority for maintaining a inequitable status quo, not a commitment toward community enhancement and racial justice.
+
+Americans are crying out for justice. And you all are in a position to make a lasting change in our city. This can not wait. I urge you to address this problem head on and reallocate police funds towards programs that will make a safer, healthier, and more thriving community.
+
+Please don’t wait, act now.
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [YOUR NAME HERE], and I am a resident of Durango, Colorado. We are experiencing a revolution across this country. For too long Black people, Indigenous people, and People of Color have lived in fear of police departments who act violently with little or no consequence. Attempts at reform and extra training have done little to alter this systemic problem.</p>
+
+<p>As a result, I call for immediate defunding of Durango PD. At well over 8 million dollars ($8,417,771), their budget accounts for 16% of the general fund for the city.  In contrast, the funds allotted for community services like aide for the homeless, low income assistance, and youth services are less than 1 million ($921,102). Police have over 9 times the amount of funding of community services. This is absurd. We need to invest in the well-being of the community NOT the police.</p>
+
+<p>Police are not trained to properly deal with most of the calls they answer and often make situations worse, especially when Black people, Indigenous people, and People of Color are involved. What we need are more mental health professionals, more youth counselors, and more resources for homeless folks and those struggling to make ends meet. Investing so much money in the police shows a priority for maintaining a inequitable status quo, not a commitment toward community enhancement and racial justice.</p>
+
+<p>Americans are crying out for justice. And you all are in a position to make a lasting change in our city. This can not wait. I urge you to address this problem head on and reallocate police funds towards programs that will make a safer, healthier, and more thriving community.</p>
+
+<p>Please don’t wait, act now.</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [YOUR NAME HERE], and I am a resident of Durango, Colorado. We are experiencing a revolution across this country. For too long Black people, Indigenous people, and People of Color have lived in fear of police departments who act violently with little or no consequence. Attempts at reform and extra training have done little to alter this systemic problem.<br />
+<br />
+As a result, I call for immediate defunding of Durango PD. At well over 8 million dollars ($8,417,771), their budget accounts for 16% of the general fund for the city.  In contrast, the funds allotted for community services like aide for the homeless, low income assistance, and youth services are less than 1 million ($921,102). Police have over 9 times the amount of funding of community services. This is absurd. We need to invest in the well-being of the community NOT the police.<br />
+<br />
+Police are not trained to properly deal with most of the calls they answer and often make situations worse, especially when Black people, Indigenous people, and People of Color are involved. What we need are more mental health professionals, more youth counselors, and more resources for homeless folks and those struggling to make ends meet. Investing so much money in the police shows a priority for maintaining a inequitable status quo, not a commitment toward community enhancement and racial justice.<br />
+<br />
+Americans are crying out for justice. And you all are in a position to make a lasting change in our city. This can not wait. I urge you to address this problem head on and reallocate police funds towards programs that will make a safer, healthier, and more thriving community.<br />
+<br />
+Please don’t wait, act now.<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello,
+
+My name is [YOUR NAME HERE], and I am a resident of Durango, Colorado. We are experiencing a revolution across this country. For too long Black people, Indigenous people, and People of Color have lived in fear of police departments who act violently with little or no consequence. Attempts at reform and extra training have done little to alter this systemic problem.
+
+As a result, I call for immediate defunding of Durango PD. At well over 8 million dollars ($8,417,771), their budget accounts for 16% of the general fund for the city.  In contrast, the funds allotted for community services like aide for the homeless, low income assistance, and youth services are less than 1 million ($921,102). Police have over 9 times the amount of funding of community services. This is absurd. We need to invest in the well-being of the community NOT the police.
+
+Police are not trained to properly deal with most of the calls they answer and often make situations worse, especially when Black people, Indigenous people, and People of Color are involved. What we need are more mental health professionals, more youth counselors, and more resources for homeless folks and those struggling to make ends meet. Investing so much money in the police shows a priority for maintaining a inequitable status quo, not a commitment toward community enhancement and racial justice.
+
+Americans are crying out for justice. And you all are in a position to make a lasting change in our city. This can not wait. I urge you to address this problem head on and reallocate police funds towards programs that will make a safer, healthier, and more thriving community.
+
+Please don’t wait, act now.
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `DeanBrookie@durangogov.org,ChrisBettin@durangogov.org,barbaraNoseworthy@durangogov.org,MelissaYoussef@durangogov.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/durango`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

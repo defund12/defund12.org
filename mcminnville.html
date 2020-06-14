@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>McMinnville, OR</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/mcminnville`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `scott.hill@mcminnvilleoregon.gov, sal.peralta@mcminnvilleoregon.gov, wendy.stassens@mcminnvilleoregon.gov, kellie.menke@mcminnvilleoregon.gov, zack.geary@mcminnvilleoregon.gov, Remy.Drabkin@mcminnvilleoregon.gov, Adam.Garvin@mcminnvilleoregon.gov`)">🔗</span>
+        scott.hill@mcminnvilleoregon.gov, sal.peralta@mcminnvilleoregon.gov, wendy.stassens@mcminnvilleoregon.gov, kellie.menke@mcminnvilleoregon.gov, zack.geary@mcminnvilleoregon.gov, Remy.Drabkin@mcminnvilleoregon.gov, Adam.Garvin@mcminnvilleoregon.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Hill and McMinnville City Council members,
+
+My name is [YOUR NAME] and I am a resident of McMinnville, OR. As McMinnville City Council finalizes the 2020-21 citywide budget, I want to express a concern for the amount of funding that is currently being allocated to the McMinnville Police Department. Although the current budget proposal includes a $35,458 (0.38 percent) decrease in Police funding, the Police Department is still set to receive almost a third of our city’s General Fund budget, and $1.5 million more than their budget in 2017-2018. The police have historically been the single largest expenditure in the city budget. How we spend our public funds expresses our values as a city, and I do not believe that our city should continue to over-invest scarce resources in the McMinnville Police Department.
+
+Especially at this time of unprecedented crisis, we must invest our scarce resources in the health and well-being of our communities. Funding toward life-affirming resources such as those related to housing, access to health care, and food security, must be prioritized. We must direct resources towards dignified temporary and permanent housing and rent relief, towards food assistance programs for people having trouble making ends meet, and to services provided by the library and Parks and Recreation. In particular, I am concerned about the police presence offered by School Resource Officers. I suggest that SROs be cut from the city budget, following Portland’s lead, as police can make non-White students feel unsafe in school. We must also use resources already allocated to the Police Department to invest in police accountability measures. A new budget proposal reallocating funds from the police budget to other departments and programs across the board could tie into all 5 points of the Mac-Town 2032 Strategic Plan.
+
+The economic impact of COVID-19 requires a complete reimagining of how we allocate county resources, and makes clear the necessity for prioritizing investments in communities’ health and well-being. The systems of policing and incarceration have no role in public health or safety; prisons and jails are vectors for the spread of COVID-19 and have always been antithetical to public health. Existing racial and economic disparities will only worsen in the wake of this ongoing crisis. We know that this virus is disproportionately affecting Black and Brown communities & that this disparity is caused by racist systems that affect how and when people receive care.
+
+This moment of reckoning with our nation's history of racist policing practices is an opportunity to rethink public safety in this city and reinvest in services that more effectively benefit our residents. We know that meeting the basic needs of our communities is the only way to ensure their health and safety.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`)">🔗</span>
+        <br /> <p>Dear Mayor Hill and McMinnville City Council members,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of McMinnville, OR. As McMinnville City Council finalizes the 2020-21 citywide budget, I want to express a concern for the amount of funding that is currently being allocated to the McMinnville Police Department. Although the current budget proposal includes a $35,458 (0.38 percent) decrease in Police funding, the Police Department is still set to receive almost a third of our city’s General Fund budget, and $1.5 million more than their budget in 2017-2018. The police have historically been the single largest expenditure in the city budget. How we spend our public funds expresses our values as a city, and I do not believe that our city should continue to over-invest scarce resources in the McMinnville Police Department.</p>
+
+<p>Especially at this time of unprecedented crisis, we must invest our scarce resources in the health and well-being of our communities. Funding toward life-affirming resources such as those related to housing, access to health care, and food security, must be prioritized. We must direct resources towards dignified temporary and permanent housing and rent relief, towards food assistance programs for people having trouble making ends meet, and to services provided by the library and Parks and Recreation. In particular, I am concerned about the police presence offered by School Resource Officers. I suggest that SROs be cut from the city budget, following Portland’s lead, as police can make non-White students feel unsafe in school. We must also use resources already allocated to the Police Department to invest in police accountability measures. A new budget proposal reallocating funds from the police budget to other departments and programs across the board could tie into all 5 points of the Mac-Town 2032 Strategic Plan.</p>
+
+<p>The economic impact of COVID-19 requires a complete reimagining of how we allocate county resources, and makes clear the necessity for prioritizing investments in communities’ health and well-being. The systems of policing and incarceration have no role in public health or safety; prisons and jails are vectors for the spread of COVID-19 and have always been antithetical to public health. Existing racial and economic disparities will only worsen in the wake of this ongoing crisis. We know that this virus is disproportionately affecting Black and Brown communities &amp; that this disparity is caused by racist systems that affect how and when people receive care.</p>
+
+<p>This moment of reckoning with our nation’s history of racist policing practices is an opportunity to rethink public safety in this city and reinvest in services that more effectively benefit our residents. We know that meeting the basic needs of our communities is the only way to ensure their health and safety.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Hill and McMinnville City Council members,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of McMinnville, OR. As McMinnville City Council finalizes the 2020-21 citywide budget, I want to express a concern for the amount of funding that is currently being allocated to the McMinnville Police Department. Although the current budget proposal includes a $35,458 (0.38 percent) decrease in Police funding, the Police Department is still set to receive almost a third of our city’s General Fund budget, and $1.5 million more than their budget in 2017-2018. The police have historically been the single largest expenditure in the city budget. How we spend our public funds expresses our values as a city, and I do not believe that our city should continue to over-invest scarce resources in the McMinnville Police Department.<br />
+<br />
+Especially at this time of unprecedented crisis, we must invest our scarce resources in the health and well-being of our communities. Funding toward life-affirming resources such as those related to housing, access to health care, and food security, must be prioritized. We must direct resources towards dignified temporary and permanent housing and rent relief, towards food assistance programs for people having trouble making ends meet, and to services provided by the library and Parks and Recreation. In particular, I am concerned about the police presence offered by School Resource Officers. I suggest that SROs be cut from the city budget, following Portland’s lead, as police can make non-White students feel unsafe in school. We must also use resources already allocated to the Police Department to invest in police accountability measures. A new budget proposal reallocating funds from the police budget to other departments and programs across the board could tie into all 5 points of the Mac-Town 2032 Strategic Plan.<br />
+<br />
+The economic impact of COVID-19 requires a complete reimagining of how we allocate county resources, and makes clear the necessity for prioritizing investments in communities’ health and well-being. The systems of policing and incarceration have no role in public health or safety; prisons and jails are vectors for the spread of COVID-19 and have always been antithetical to public health. Existing racial and economic disparities will only worsen in the wake of this ongoing crisis. We know that this virus is disproportionately affecting Black and Brown communities & that this disparity is caused by racist systems that affect how and when people receive care.<br />
+<br />
+This moment of reckoning with our nation's history of racist policing practices is an opportunity to rethink public safety in this city and reinvest in services that more effectively benefit our residents. We know that meeting the basic needs of our communities is the only way to ensure their health and safety.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE]<br />
+[YOUR EMAIL]`.trim() :
+      `Dear Mayor Hill and McMinnville City Council members,
+
+My name is [YOUR NAME] and I am a resident of McMinnville, OR. As McMinnville City Council finalizes the 2020-21 citywide budget, I want to express a concern for the amount of funding that is currently being allocated to the McMinnville Police Department. Although the current budget proposal includes a $35,458 (0.38 percent) decrease in Police funding, the Police Department is still set to receive almost a third of our city’s General Fund budget, and $1.5 million more than their budget in 2017-2018. The police have historically been the single largest expenditure in the city budget. How we spend our public funds expresses our values as a city, and I do not believe that our city should continue to over-invest scarce resources in the McMinnville Police Department.
+
+Especially at this time of unprecedented crisis, we must invest our scarce resources in the health and well-being of our communities. Funding toward life-affirming resources such as those related to housing, access to health care, and food security, must be prioritized. We must direct resources towards dignified temporary and permanent housing and rent relief, towards food assistance programs for people having trouble making ends meet, and to services provided by the library and Parks and Recreation. In particular, I am concerned about the police presence offered by School Resource Officers. I suggest that SROs be cut from the city budget, following Portland’s lead, as police can make non-White students feel unsafe in school. We must also use resources already allocated to the Police Department to invest in police accountability measures. A new budget proposal reallocating funds from the police budget to other departments and programs across the board could tie into all 5 points of the Mac-Town 2032 Strategic Plan.
+
+The economic impact of COVID-19 requires a complete reimagining of how we allocate county resources, and makes clear the necessity for prioritizing investments in communities’ health and well-being. The systems of policing and incarceration have no role in public health or safety; prisons and jails are vectors for the spread of COVID-19 and have always been antithetical to public health. Existing racial and economic disparities will only worsen in the wake of this ongoing crisis. We know that this virus is disproportionately affecting Black and Brown communities & that this disparity is caused by racist systems that affect how and when people receive care.
+
+This moment of reckoning with our nation's history of racist policing practices is an opportunity to rethink public safety in this city and reinvest in services that more effectively benefit our residents. We know that meeting the basic needs of our communities is the only way to ensure their health and safety.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`.trim()
+    );
+    const recipients = `scott.hill@mcminnvilleoregon.gov,sal.peralta@mcminnvilleoregon.gov,wendy.stassens@mcminnvilleoregon.gov,kellie.menke@mcminnvilleoregon.gov,zack.geary@mcminnvilleoregon.gov,Remy.Drabkin@mcminnvilleoregon.gov,Adam.Garvin@mcminnvilleoregon.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/mcminnville`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

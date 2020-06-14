@@ -70,6 +70,66 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Dutra, the Union City Council, Union City Manager, and Union City Police Chief</h2>
+  <b>Union City, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/unioncity`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `carold@unioncity.org, emilyd@unioncity.org, jaimep@unioncity.org, patg@unioncity.org, garys@unioncity.org, joanm@unioncity.org, jaredr@unioncity.org`)">🔗</span>
+        carold@unioncity.org, emilyd@unioncity.org, jaimep@unioncity.org, patg@unioncity.org, garys@unioncity.org, joanm@unioncity.org, jaredr@unioncity.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor Dutra, the Union City Council, Union City Manager, and Union City Police Chief,
+
+My name is [YOUR NAME], and I am a resident of Union City. I am writing to demand that the City Council adopts a budget that prioritizes community wellbeing and redirects funding away from the police.  
+
+This past week, we have seen widespread protests across the country and even right here in the Tri-City area. These protests are not simply a response to the recent murder of George Floyd at the hands of the Minneapolis police; they are the continuation of a larger movement calling for the end of decades of endemic police brutality, and the end of a racist hierarchy that this country was founded on. I am writing to you today because it has come to my attention that the Union City proposed budget for the 2020-2021 fiscal year helps to uphold this same system.  
+
+Union City council states that it prides itself on the City’s diversity and core values of “safety, tolerance, and caring.” However, the proposed $26,015,635 to be allocated to UCPD from the City’s 2020-2021 General Funds states otherwise. This proposal is more than 2x the proposed 2020-2021 allocation for Union City Public Works, Community & Recreation Services, and Economic & Community Development combined. If we are a city that truly stands by our core values of protecting and caring for our diverse community, you as a council would redirect funding away from the police and into social programs and services that support education, health care, community-led public safety, and other critical community needs.  
+During the Union City Town Hall on June 4, 2020, Reverend Jerome Brown brought up valuable points about hearing one another in order to spark change. I ask that as our representatives, you hear us and spark this very important and needed change in our City. I am urging you to revise the budget for the 2020-2021 fiscal year to defund the police.  
+
+Sincerely,  
+[YOUR NAME]	
+[YOUR ADDRESS]	
+[YOUR EMAIL]	
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To Mayor Dutra, the Union City Council, Union City Manager, and Union City Police Chief,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Union City. I am writing to demand that the City Council adopts a budget that prioritizes community wellbeing and redirects funding away from the police.</p>
+
+<p>This past week, we have seen widespread protests across the country and even right here in the Tri-City area. These protests are not simply a response to the recent murder of George Floyd at the hands of the Minneapolis police; they are the continuation of a larger movement calling for the end of decades of endemic police brutality, and the end of a racist hierarchy that this country was founded on. I am writing to you today because it has come to my attention that the Union City proposed budget for the 2020-2021 fiscal year helps to uphold this same system.</p>
+
+<p>Union City council states that it prides itself on the City’s diversity and core values of “safety, tolerance, and caring.” However, the proposed $26,015,635 to be allocated to UCPD from the City’s 2020-2021 General Funds states otherwise. This proposal is more than 2x the proposed 2020-2021 allocation for Union City Public Works, Community &amp; Recreation Services, and Economic &amp; Community Development combined. If we are a city that truly stands by our core values of protecting and caring for our diverse community, you as a council would redirect funding away from the police and into social programs and services that support education, health care, community-led public safety, and other critical community needs.<br />
+During the Union City Town Hall on June 4, 2020, Reverend Jerome Brown brought up valuable points about hearing one another in order to spark change. I ask that as our representatives, you hear us and spark this very important and needed change in our City. I am urging you to revise the budget for the 2020-2021 fiscal year to defund the police.</p>
+
+<p>Sincerely,<br />
+[YOUR NAME]	
+[YOUR ADDRESS]	
+[YOUR EMAIL]	
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1930,58 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor Dutra, the Union City Council, Union City Manager, and Union City Police Chief,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Union City. I am writing to demand that the City Council adopts a budget that prioritizes community wellbeing and redirects funding away from the police.  <br />
+<br />
+This past week, we have seen widespread protests across the country and even right here in the Tri-City area. These protests are not simply a response to the recent murder of George Floyd at the hands of the Minneapolis police; they are the continuation of a larger movement calling for the end of decades of endemic police brutality, and the end of a racist hierarchy that this country was founded on. I am writing to you today because it has come to my attention that the Union City proposed budget for the 2020-2021 fiscal year helps to uphold this same system.  <br />
+<br />
+Union City council states that it prides itself on the City’s diversity and core values of “safety, tolerance, and caring.” However, the proposed $26,015,635 to be allocated to UCPD from the City’s 2020-2021 General Funds states otherwise. This proposal is more than 2x the proposed 2020-2021 allocation for Union City Public Works, Community & Recreation Services, and Economic & Community Development combined. If we are a city that truly stands by our core values of protecting and caring for our diverse community, you as a council would redirect funding away from the police and into social programs and services that support education, health care, community-led public safety, and other critical community needs.  <br />
+During the Union City Town Hall on June 4, 2020, Reverend Jerome Brown brought up valuable points about hearing one another in order to spark change. I ask that as our representatives, you hear us and spark this very important and needed change in our City. I am urging you to revise the budget for the 2020-2021 fiscal year to defund the police.  <br />
+<br />
+Sincerely,  <br />
+[YOUR NAME]	<br />
+[YOUR ADDRESS]	<br />
+[YOUR EMAIL]	<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To Mayor Dutra, the Union City Council, Union City Manager, and Union City Police Chief,
+
+My name is [YOUR NAME], and I am a resident of Union City. I am writing to demand that the City Council adopts a budget that prioritizes community wellbeing and redirects funding away from the police.  
+
+This past week, we have seen widespread protests across the country and even right here in the Tri-City area. These protests are not simply a response to the recent murder of George Floyd at the hands of the Minneapolis police; they are the continuation of a larger movement calling for the end of decades of endemic police brutality, and the end of a racist hierarchy that this country was founded on. I am writing to you today because it has come to my attention that the Union City proposed budget for the 2020-2021 fiscal year helps to uphold this same system.  
+
+Union City council states that it prides itself on the City’s diversity and core values of “safety, tolerance, and caring.” However, the proposed $26,015,635 to be allocated to UCPD from the City’s 2020-2021 General Funds states otherwise. This proposal is more than 2x the proposed 2020-2021 allocation for Union City Public Works, Community & Recreation Services, and Economic & Community Development combined. If we are a city that truly stands by our core values of protecting and caring for our diverse community, you as a council would redirect funding away from the police and into social programs and services that support education, health care, community-led public safety, and other critical community needs.  
+During the Union City Town Hall on June 4, 2020, Reverend Jerome Brown brought up valuable points about hearing one another in order to spark change. I ask that as our representatives, you hear us and spark this very important and needed change in our City. I am urging you to revise the budget for the 2020-2021 fiscal year to defund the police.  
+
+Sincerely,  
+[YOUR NAME]	
+[YOUR ADDRESS]	
+[YOUR EMAIL]	
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `carold@unioncity.org,emilyd@unioncity.org,jaimep@unioncity.org,patg@unioncity.org,garys@unioncity.org,joanm@unioncity.org,jaredr@unioncity.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/unioncity`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1995,4 @@
 </body>
 
 </html>
+

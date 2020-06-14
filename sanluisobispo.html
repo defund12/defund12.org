@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>San Luis Obispo, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/sanluisobispo`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `emailcouncil@slocity.org, hharmon@slocity.org, agomez@slocity.org, cchristianson@slocity.org, apease@slocity.org, estewart@slocity.org`)">🔗</span>
+        emailcouncil@slocity.org, hharmon@slocity.org, agomez@slocity.org, cchristianson@slocity.org, apease@slocity.org, estewart@slocity.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Harmon and San Luis Obispo City Council,
+
+My name is [YOUR NAME] and I am a resident of San Luis Obispo. I am writing to demand that the San Luis Obispo City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In 2019, the City of San Luis Obispo allocated 36.3 million dollars to our police system, an inordinate 27.5% of our total budget. This is compared to just 7.3% of the budget, $9.7 million, allocated towards community development, with only $1.4 million towards housing development. Next year, the city estimates that there will be a $8.6 million deficit as a result of the pandemic. The city may recoup these funds by decreasing the police budget.
+
+I demand that the City Council begin meaningfully defunding the San Luis Obispo Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, affordable housing programs, not police. I demand a budget that reflects the actual needs of San Luis Obispo residents.
+
+History has shown that police "reform" is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.
+
+I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Harmon and San Luis Obispo City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of San Luis Obispo. I am writing to demand that the San Luis Obispo City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.</p>
+
+<p>In 2019, the City of San Luis Obispo allocated 36.3 million dollars to our police system, an inordinate 27.5% of our total budget. This is compared to just 7.3% of the budget, $9.7 million, allocated towards community development, with only $1.4 million towards housing development. Next year, the city estimates that there will be a $8.6 million deficit as a result of the pandemic. The city may recoup these funds by decreasing the police budget.</p>
+
+<p>I demand that the City Council begin meaningfully defunding the San Luis Obispo Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, affordable housing programs, not police. I demand a budget that reflects the actual needs of San Luis Obispo residents.</p>
+
+<p>History has shown that police “reform” is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.</p>
+
+<p>I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Harmon and San Luis Obispo City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of San Luis Obispo. I am writing to demand that the San Luis Obispo City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.<br />
+<br />
+In 2019, the City of San Luis Obispo allocated 36.3 million dollars to our police system, an inordinate 27.5% of our total budget. This is compared to just 7.3% of the budget, $9.7 million, allocated towards community development, with only $1.4 million towards housing development. Next year, the city estimates that there will be a $8.6 million deficit as a result of the pandemic. The city may recoup these funds by decreasing the police budget.<br />
+<br />
+I demand that the City Council begin meaningfully defunding the San Luis Obispo Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, affordable housing programs, not police. I demand a budget that reflects the actual needs of San Luis Obispo residents.<br />
+<br />
+History has shown that police "reform" is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.<br />
+<br />
+I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Harmon and San Luis Obispo City Council,
+
+My name is [YOUR NAME] and I am a resident of San Luis Obispo. I am writing to demand that the San Luis Obispo City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In 2019, the City of San Luis Obispo allocated 36.3 million dollars to our police system, an inordinate 27.5% of our total budget. This is compared to just 7.3% of the budget, $9.7 million, allocated towards community development, with only $1.4 million towards housing development. Next year, the city estimates that there will be a $8.6 million deficit as a result of the pandemic. The city may recoup these funds by decreasing the police budget.
+
+I demand that the City Council begin meaningfully defunding the San Luis Obispo Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, affordable housing programs, not police. I demand a budget that reflects the actual needs of San Luis Obispo residents.
+
+History has shown that police "reform" is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our city.
+
+I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `emailcouncil@slocity.org,hharmon@slocity.org,agomez@slocity.org,cchristianson@slocity.org,apease@slocity.org,estewart@slocity.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/sanluisobispo`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

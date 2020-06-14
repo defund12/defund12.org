@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members, Mayor, and City Manager</h2>
+  <b>Charlotte, NC</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/charlotte`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@charlottenc.gov, Marcus.jones@charlottenc.gov, James.mitchell@charlottenc.gov, Braxton.winston@charlottenc.gov, dimple.ajmera@charlottenc.gov, larken.egleston@charlottenc.gov, Malcolm.graham@ci.charlotte.nc.us, Victoria.watlington@charlottenc.gov, Renee.johnson@charlottenc.gov, matt.newton@charlottenc.gov, Tariq.bokhari@charlottenc.gov, edriggs@charlottenc.gov`)">🔗</span>
+        mayor@charlottenc.gov, Marcus.jones@charlottenc.gov, James.mitchell@charlottenc.gov, Braxton.winston@charlottenc.gov, dimple.ajmera@charlottenc.gov, larken.egleston@charlottenc.gov, Malcolm.graham@ci.charlotte.nc.us, Victoria.watlington@charlottenc.gov, Renee.johnson@charlottenc.gov, matt.newton@charlottenc.gov, Tariq.bokhari@charlottenc.gov, edriggs@charlottenc.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Lyles, City Manager Jones, and Charlotte City Council,
+
+My name is [YOUR NAME] and I am a resident of [district/neighborhood]. I write to express my concern that status quo funding of the CMPD is wholly inappropriate at a time when Charlotte residents ravaged by the economic impacts of the COVID-19 pandemic are in urgent need—not of further policing and criminalization, but of meaningful reprioritization towards their social wellbeing.
+
+Specifically, Black Charlotteans have not only experienced disproportionate deaths from COVID-19, but have long been policed and incarcerated at rates far above their share of the population. The CMPD uses lethal force against Black residents over 3 times as often as white residents. Longstanding police tactics, as exemplified most recently by the violent repression of peaceful protests uptown, have been wrought against the interests of our city’s wellbeing. As such, a CMPD that siphons over 40% of the city’s general fund is unacceptable.
+
+Decades of scholarship show that education and social programs are much more effective at promoting safer communities than policing, and yet the city’s answer to every perceived problem has the continued expansion of the CMPD.
+
+I implore you to advocate for the revision of the 2021 budget, for a meaningful reduction in the proposed $290,200,000 allocated for policing from the general fund, and a reallocation of these funds towards housing, education, and targeted support for marginalized communities.
+
+Thank you for your attention,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Lyles, City Manager Jones, and Charlotte City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [district/neighborhood]. I write to express my concern that status quo funding of the CMPD is wholly inappropriate at a time when Charlotte residents ravaged by the economic impacts of the COVID-19 pandemic are in urgent need—not of further policing and criminalization, but of meaningful reprioritization towards their social wellbeing.</p>
+
+<p>Specifically, Black Charlotteans have not only experienced disproportionate deaths from COVID-19, but have long been policed and incarcerated at rates far above their share of the population. The CMPD uses lethal force against Black residents over 3 times as often as white residents. Longstanding police tactics, as exemplified most recently by the violent repression of peaceful protests uptown, have been wrought against the interests of our city’s wellbeing. As such, a CMPD that siphons over 40% of the city’s general fund is unacceptable.</p>
+
+<p>Decades of scholarship show that education and social programs are much more effective at promoting safer communities than policing, and yet the city’s answer to every perceived problem has the continued expansion of the CMPD.</p>
+
+<p>I implore you to advocate for the revision of the 2021 budget, for a meaningful reduction in the proposed $290,200,000 allocated for policing from the general fund, and a reallocation of these funds towards housing, education, and targeted support for marginalized communities.</p>
+
+<p>Thank you for your attention,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Lyles, City Manager Jones, and Charlotte City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [district/neighborhood]. I write to express my concern that status quo funding of the CMPD is wholly inappropriate at a time when Charlotte residents ravaged by the economic impacts of the COVID-19 pandemic are in urgent need—not of further policing and criminalization, but of meaningful reprioritization towards their social wellbeing.<br />
+<br />
+Specifically, Black Charlotteans have not only experienced disproportionate deaths from COVID-19, but have long been policed and incarcerated at rates far above their share of the population. The CMPD uses lethal force against Black residents over 3 times as often as white residents. Longstanding police tactics, as exemplified most recently by the violent repression of peaceful protests uptown, have been wrought against the interests of our city’s wellbeing. As such, a CMPD that siphons over 40% of the city’s general fund is unacceptable.<br />
+<br />
+Decades of scholarship show that education and social programs are much more effective at promoting safer communities than policing, and yet the city’s answer to every perceived problem has the continued expansion of the CMPD.<br />
+<br />
+I implore you to advocate for the revision of the 2021 budget, for a meaningful reduction in the proposed $290,200,000 allocated for policing from the general fund, and a reallocation of these funds towards housing, education, and targeted support for marginalized communities.<br />
+<br />
+Thank you for your attention,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Lyles, City Manager Jones, and Charlotte City Council,
+
+My name is [YOUR NAME] and I am a resident of [district/neighborhood]. I write to express my concern that status quo funding of the CMPD is wholly inappropriate at a time when Charlotte residents ravaged by the economic impacts of the COVID-19 pandemic are in urgent need—not of further policing and criminalization, but of meaningful reprioritization towards their social wellbeing.
+
+Specifically, Black Charlotteans have not only experienced disproportionate deaths from COVID-19, but have long been policed and incarcerated at rates far above their share of the population. The CMPD uses lethal force against Black residents over 3 times as often as white residents. Longstanding police tactics, as exemplified most recently by the violent repression of peaceful protests uptown, have been wrought against the interests of our city’s wellbeing. As such, a CMPD that siphons over 40% of the city’s general fund is unacceptable.
+
+Decades of scholarship show that education and social programs are much more effective at promoting safer communities than policing, and yet the city’s answer to every perceived problem has the continued expansion of the CMPD.
+
+I implore you to advocate for the revision of the 2021 budget, for a meaningful reduction in the proposed $290,200,000 allocated for policing from the general fund, and a reallocation of these funds towards housing, education, and targeted support for marginalized communities.
+
+Thank you for your attention,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@charlottenc.gov,Marcus.jones@charlottenc.gov,James.mitchell@charlottenc.gov,Braxton.winston@charlottenc.gov,dimple.ajmera@charlottenc.gov,larken.egleston@charlottenc.gov,Malcolm.graham@ci.charlotte.nc.us,Victoria.watlington@charlottenc.gov,Renee.johnson@charlottenc.gov,matt.newton@charlottenc.gov,Tariq.bokhari@charlottenc.gov,edriggs@charlottenc.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/charlotte`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+

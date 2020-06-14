@@ -70,6 +70,78 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to County Unified Government</h2>
+  <b>Athens, GA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/athens`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `kelly.girtz@accgov.com, patrick.davenport@accgov.com, mariah.parker@accgov.com, melissa.link@accgov.com, allison.wright@accgov.com, tim.denson@accgov.com, tim.denson@accgov.com, jerry.nesmith@accgov.com, russell.edwards@accgov.com, andy.herod@accgov.com, ovita.thornton@accgov.com, mike.hamby@accgov.com`)">🔗</span>
+        kelly.girtz@accgov.com, patrick.davenport@accgov.com, mariah.parker@accgov.com, melissa.link@accgov.com, allison.wright@accgov.com, tim.denson@accgov.com, tim.denson@accgov.com, jerry.nesmith@accgov.com, russell.edwards@accgov.com, andy.herod@accgov.com, ovita.thornton@accgov.com, mike.hamby@accgov.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Athens-Clarke County Unified Government,
+
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/City]. I am writing to demand that the Athens-Clarke County Commission rewrites the budget to reallocate money away from the police department and reinvest in services to the community instead.
+
+In light of the racist murders of George Floyd, Breonna Taylor, Ahmaud Arbery, Tony McDade, and countless other Black people, I demand to see the reduction of funding for the Athens‐Clarke County Police Department. The fiscal budget allocates around $46 million to the Athens‐Clarke County Police Department. This money could have a greater use being invested in education, healthcare, fighting food insecurity and homelessness, mental health resources, and countless other community programs at the benefit of Athens's Black and Brown communities. The Athens-Clarke County Unified Government must take a stand for racial justice by significantly defunding Athens‐Clarke County Police Department immediately.
+
+Racist police violence happens in Athens just as much as it happens in other cities. However, with actions dedicated to supporting the community, we can create change. As an Athens resident, I therefore demand that you take immediate action to ensure the following:
+
+1. Reduce Athens‐Clarke County Police Department's allocation from the General Fund by 50% (approximately $23 million)
+2. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+3. Invest in housing, jobs, access to food, healthcare, child care, restorative justice, and mental health workers to keep the community safe
+
+Athens cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund Athens‐Clarke County Police Department and reinvest in the community.
+
+Thank you,
+[YOUR NAME]
+[YOUR EMAIL]
+[YOUR ADDRESS]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Athens-Clarke County Unified Government,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/City]. I am writing to demand that the Athens-Clarke County Commission rewrites the budget to reallocate money away from the police department and reinvest in services to the community instead.</p>
+
+<p>In light of the racist murders of George Floyd, Breonna Taylor, Ahmaud Arbery, Tony McDade, and countless other Black people, I demand to see the reduction of funding for the Athens‐Clarke County Police Department. The fiscal budget allocates around $46 million to the Athens‐Clarke County Police Department. This money could have a greater use being invested in education, healthcare, fighting food insecurity and homelessness, mental health resources, and countless other community programs at the benefit of Athens’s Black and Brown communities. The Athens-Clarke County Unified Government must take a stand for racial justice by significantly defunding Athens‐Clarke County Police Department immediately.</p>
+
+<p>Racist police violence happens in Athens just as much as it happens in other cities. However, with actions dedicated to supporting the community, we can create change. As an Athens resident, I therefore demand that you take immediate action to ensure the following:</p>
+
+<ol>
+  <li>Reduce Athens‐Clarke County Police Department’s allocation from the General Fund by 50% (approximately $23 million)</li>
+  <li>Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence</li>
+  <li>Invest in housing, jobs, access to food, healthcare, child care, restorative justice, and mental health workers to keep the community safe</li>
+</ol>
+
+<p>Athens cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund Athens‐Clarke County Police Department and reinvest in the community.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR EMAIL]
+[YOUR ADDRESS]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1942,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Athens-Clarke County Unified Government,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/City]. I am writing to demand that the Athens-Clarke County Commission rewrites the budget to reallocate money away from the police department and reinvest in services to the community instead.<br />
+<br />
+In light of the racist murders of George Floyd, Breonna Taylor, Ahmaud Arbery, Tony McDade, and countless other Black people, I demand to see the reduction of funding for the Athens‐Clarke County Police Department. The fiscal budget allocates around $46 million to the Athens‐Clarke County Police Department. This money could have a greater use being invested in education, healthcare, fighting food insecurity and homelessness, mental health resources, and countless other community programs at the benefit of Athens's Black and Brown communities. The Athens-Clarke County Unified Government must take a stand for racial justice by significantly defunding Athens‐Clarke County Police Department immediately.<br />
+<br />
+Racist police violence happens in Athens just as much as it happens in other cities. However, with actions dedicated to supporting the community, we can create change. As an Athens resident, I therefore demand that you take immediate action to ensure the following:<br />
+<br />
+1. Reduce Athens‐Clarke County Police Department's allocation from the General Fund by 50% (approximately $23 million)<br />
+2. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence<br />
+3. Invest in housing, jobs, access to food, healthcare, child care, restorative justice, and mental health workers to keep the community safe<br />
+<br />
+Athens cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund Athens‐Clarke County Police Department and reinvest in the community.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR EMAIL]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Athens-Clarke County Unified Government,
+
+My name is [YOUR NAME], and I am a resident of [NEIGHBORHOOD/BOROUGH/City]. I am writing to demand that the Athens-Clarke County Commission rewrites the budget to reallocate money away from the police department and reinvest in services to the community instead.
+
+In light of the racist murders of George Floyd, Breonna Taylor, Ahmaud Arbery, Tony McDade, and countless other Black people, I demand to see the reduction of funding for the Athens‐Clarke County Police Department. The fiscal budget allocates around $46 million to the Athens‐Clarke County Police Department. This money could have a greater use being invested in education, healthcare, fighting food insecurity and homelessness, mental health resources, and countless other community programs at the benefit of Athens's Black and Brown communities. The Athens-Clarke County Unified Government must take a stand for racial justice by significantly defunding Athens‐Clarke County Police Department immediately.
+
+Racist police violence happens in Athens just as much as it happens in other cities. However, with actions dedicated to supporting the community, we can create change. As an Athens resident, I therefore demand that you take immediate action to ensure the following:
+
+1. Reduce Athens‐Clarke County Police Department's allocation from the General Fund by 50% (approximately $23 million)
+2. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+3. Invest in housing, jobs, access to food, healthcare, child care, restorative justice, and mental health workers to keep the community safe
+
+Athens cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund Athens‐Clarke County Police Department and reinvest in the community.
+
+Thank you,
+[YOUR NAME]
+[YOUR EMAIL]
+[YOUR ADDRESS]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `kelly.girtz@accgov.com,patrick.davenport@accgov.com,mariah.parker@accgov.com,melissa.link@accgov.com,allison.wright@accgov.com,tim.denson@accgov.com,tim.denson@accgov.com,jerry.nesmith@accgov.com,russell.edwards@accgov.com,andy.herod@accgov.com,ovita.thornton@accgov.com,mike.hamby@accgov.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/athens`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2017,4 @@
 </body>
 
 </html>
+

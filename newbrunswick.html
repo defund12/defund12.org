@@ -70,6 +70,66 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>New Brunswick, NJ</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/newbrunswick`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `smith@cityofnewbrunswick.org, gfleming@cityofnewbrunswick.or, kegan@cityofnewbrunswick.org, janderson@cityofnewbrunswick.org, rescobar@cityofnewbrunswick.org, ssicoraludwig@cityofnewbrunswick.org, kjones11@cityofnewbrunswick.org`)">🔗</span>
+        smith@cityofnewbrunswick.org, gfleming@cityofnewbrunswick.or, kegan@cityofnewbrunswick.org, janderson@cityofnewbrunswick.org, rescobar@cityofnewbrunswick.org, ssicoraludwig@cityofnewbrunswick.org, kjones11@cityofnewbrunswick.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Cahill and Council Members:
+
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. In light of the urgent movement for black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the City's expenditures away from policing and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. As the tragic 2011 shooting of Barry Deloatch shows, police violence against Black people is very much an urgent problem in New Brunswick.
+
+Accordingly, it has come to my attention that the hearing on the Budget and Tax Resolution for fiscal year 2020 will be held on July 15. At $20,181,528 total, an increase from 2019, the City’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for health and human services does not even reach $500,000. This is egregious, particularly in light of the global pandemic - New Brunswick has one of the highest case counts of COVID-19. New Brunswick’s population is 14.6% African American and 50.1% Hispanic/Latino, and 34.2% of its residents are in poverty. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels while starving social programs.
+
+I urge you to advocate for a complete overhaul of the City’s budget that directs at least [INSERT AMOUNT] away from policing. All over the country, American citizens are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like health, youth services, and other social programs. I urge you to revise the FY 2020 budget to reflect the demands of New Brunswick’s residents - ideally with participation of those residents in the budget creation - and show that the City of New Brunswick is committed to a vision of true public safety, one that reduces and eliminates harm for everyone.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`)">🔗</span>
+        <br /> <p>Dear Mayor Cahill and Council Members:</p>
+
+<p>My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. In light of the urgent movement for black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the City’s expenditures away from policing and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. As the tragic 2011 shooting of Barry Deloatch shows, police violence against Black people is very much an urgent problem in New Brunswick.</p>
+
+<p>Accordingly, it has come to my attention that the hearing on the Budget and Tax Resolution for fiscal year 2020 will be held on July 15. At $20,181,528 total, an increase from 2019, the City’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for health and human services does not even reach $500,000. This is egregious, particularly in light of the global pandemic - New Brunswick has one of the highest case counts of COVID-19. New Brunswick’s population is 14.6% African American and 50.1% Hispanic/Latino, and 34.2% of its residents are in poverty. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels while starving social programs.</p>
+
+<p>I urge you to advocate for a complete overhaul of the City’s budget that directs at least [INSERT AMOUNT] away from policing. All over the country, American citizens are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like health, youth services, and other social programs. I urge you to revise the FY 2020 budget to reflect the demands of New Brunswick’s residents - ideally with participation of those residents in the budget creation - and show that the City of New Brunswick is committed to a vision of true public safety, one that reduces and eliminates harm for everyone.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1930,58 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Cahill and Council Members:<br />
+<br />
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. In light of the urgent movement for black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the City's expenditures away from policing and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. As the tragic 2011 shooting of Barry Deloatch shows, police violence against Black people is very much an urgent problem in New Brunswick.<br />
+<br />
+Accordingly, it has come to my attention that the hearing on the Budget and Tax Resolution for fiscal year 2020 will be held on July 15. At $20,181,528 total, an increase from 2019, the City’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for health and human services does not even reach $500,000. This is egregious, particularly in light of the global pandemic - New Brunswick has one of the highest case counts of COVID-19. New Brunswick’s population is 14.6% African American and 50.1% Hispanic/Latino, and 34.2% of its residents are in poverty. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels while starving social programs.<br />
+<br />
+I urge you to advocate for a complete overhaul of the City’s budget that directs at least [INSERT AMOUNT] away from policing. All over the country, American citizens are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like health, youth services, and other social programs. I urge you to revise the FY 2020 budget to reflect the demands of New Brunswick’s residents - ideally with participation of those residents in the budget creation - and show that the City of New Brunswick is committed to a vision of true public safety, one that reduces and eliminates harm for everyone.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE]<br />
+[YOUR EMAIL]`.trim() :
+      `Dear Mayor Cahill and Council Members:
+
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. In light of the urgent movement for black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the City's expenditures away from policing and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. As the tragic 2011 shooting of Barry Deloatch shows, police violence against Black people is very much an urgent problem in New Brunswick.
+
+Accordingly, it has come to my attention that the hearing on the Budget and Tax Resolution for fiscal year 2020 will be held on July 15. At $20,181,528 total, an increase from 2019, the City’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for health and human services does not even reach $500,000. This is egregious, particularly in light of the global pandemic - New Brunswick has one of the highest case counts of COVID-19. New Brunswick’s population is 14.6% African American and 50.1% Hispanic/Latino, and 34.2% of its residents are in poverty. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels while starving social programs.
+
+I urge you to advocate for a complete overhaul of the City’s budget that directs at least [INSERT AMOUNT] away from policing. All over the country, American citizens are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like health, youth services, and other social programs. I urge you to revise the FY 2020 budget to reflect the demands of New Brunswick’s residents - ideally with participation of those residents in the budget creation - and show that the City of New Brunswick is committed to a vision of true public safety, one that reduces and eliminates harm for everyone.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`.trim()
+    );
+    const recipients = `smith@cityofnewbrunswick.org,gfleming@cityofnewbrunswick.or,kegan@cityofnewbrunswick.org,janderson@cityofnewbrunswick.org,rescobar@cityofnewbrunswick.org,ssicoraludwig@cityofnewbrunswick.org,kjones11@cityofnewbrunswick.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/newbrunswick`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1995,4 @@
 </body>
 
 </html>
+

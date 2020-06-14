@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor, Commissioners, and City Council on Defunding PPB</h2>
+  <b>Portland, OR</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/portland-defund`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayorwheeler@portlandoregon.gov, Amanda@portlandoregon.gov, chloe@portlandoregon.gov, joann@portlandoregon.gov, AuditorHullCaballero@portlandoregon.gov, ipr@portlandoregon.gov, Ombudsman@portlandoregon.gov, ppbpio@portlandoregon.gov, sonia.schmanski@portlandoregon.gov, Toni.Anderson@portlandoregon.gov, Andrew.Bryans@portlandoregon.gov`)">🔗</span>
+        mayorwheeler@portlandoregon.gov, Amanda@portlandoregon.gov, chloe@portlandoregon.gov, joann@portlandoregon.gov, AuditorHullCaballero@portlandoregon.gov, ipr@portlandoregon.gov, Ombudsman@portlandoregon.gov, ppbpio@portlandoregon.gov, sonia.schmanski@portlandoregon.gov, Toni.Anderson@portlandoregon.gov, Andrew.Bryans@portlandoregon.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `I am a resident of Portland.
+
+In May, Mayor Ted Wheeler released his proposed budget for the City of Portland. This included a policing budget of $245,169,804, which is over $5 million more than budgeted last year—even amongst city-wide cuts to other departments due to Covid-19. The Portland Police Bureau (PPB), with Wheeler at its helm as Commissioner, has been mired in controversy over the last year with collusion with prominent white nationalist groups, shootings of Black people and people perceived to be in mental health crisis, data uncovered on their racist gang enforcement traffic stops, and the fact that a shameful 52% of people arrested are houseless.
+
+I oppose any increases to the PPB budget. Mayor Wheeler's 2019-20 proposed budget was increased by an additional half million dollars before adoption, and even then the PPB has overspent the increased budget by 1.4 million to date. We anticipate that PPB will attempt a similar increase this year, pushing their budget even higher than the proposed $245 million, thus we stand even more firmly against this increase. 
+
+Additionally and critically, Wheeler's budget ELIMINATES $1.8 million to fund the police body camera program. More money for policing but less money for police accountability is completely unacceptable.
+
+The police budget increases regularly while other services are cut. I can see the ways in which policing continues to perpetuate violence against Black, brown, houseless people, and against people in mental health crisis. While Wheeler's proposal represents a slight decrease from the PPB proposal, the PPB is a department whose reach into Portland communities needs to be curtailed through reducing the budget, not by increasing it.
+
+More money for policing but less money for police accountability is completely unacceptable at this moment in history. The city, the state, and country are all watching. And so am I. I call on the Mayor, the Commissioners, and all other City Council Members to use their powers to continue to reduce the budget and pledge to increase Police accountability and transparency. I promise that you will lose my support and my vote if you aren't willing to make a public and vocal stand to help defund the PPB and increase their accountability and transparency.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>I am a resident of Portland.</p>
+
+<p>In May, Mayor Ted Wheeler released his proposed budget for the City of Portland. This included a policing budget of $245,169,804, which is over $5 million more than budgeted last year—even amongst city-wide cuts to other departments due to Covid-19. The Portland Police Bureau (PPB), with Wheeler at its helm as Commissioner, has been mired in controversy over the last year with collusion with prominent white nationalist groups, shootings of Black people and people perceived to be in mental health crisis, data uncovered on their racist gang enforcement traffic stops, and the fact that a shameful 52% of people arrested are houseless.</p>
+
+<p>I oppose any increases to the PPB budget. Mayor Wheeler’s 2019-20 proposed budget was increased by an additional half million dollars before adoption, and even then the PPB has overspent the increased budget by 1.4 million to date. We anticipate that PPB will attempt a similar increase this year, pushing their budget even higher than the proposed $245 million, thus we stand even more firmly against this increase.</p>
+
+<p>Additionally and critically, Wheeler’s budget ELIMINATES $1.8 million to fund the police body camera program. More money for policing but less money for police accountability is completely unacceptable.</p>
+
+<p>The police budget increases regularly while other services are cut. I can see the ways in which policing continues to perpetuate violence against Black, brown, houseless people, and against people in mental health crisis. While Wheeler’s proposal represents a slight decrease from the PPB proposal, the PPB is a department whose reach into Portland communities needs to be curtailed through reducing the budget, not by increasing it.</p>
+
+<p>More money for policing but less money for police accountability is completely unacceptable at this moment in history. The city, the state, and country are all watching. And so am I. I call on the Mayor, the Commissioners, and all other City Council Members to use their powers to continue to reduce the budget and pledge to increase Police accountability and transparency. I promise that you will lose my support and my vote if you aren’t willing to make a public and vocal stand to help defund the PPB and increase their accountability and transparency.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `I am a resident of Portland.<br />
+<br />
+In May, Mayor Ted Wheeler released his proposed budget for the City of Portland. This included a policing budget of $245,169,804, which is over $5 million more than budgeted last year—even amongst city-wide cuts to other departments due to Covid-19. The Portland Police Bureau (PPB), with Wheeler at its helm as Commissioner, has been mired in controversy over the last year with collusion with prominent white nationalist groups, shootings of Black people and people perceived to be in mental health crisis, data uncovered on their racist gang enforcement traffic stops, and the fact that a shameful 52% of people arrested are houseless.<br />
+<br />
+I oppose any increases to the PPB budget. Mayor Wheeler's 2019-20 proposed budget was increased by an additional half million dollars before adoption, and even then the PPB has overspent the increased budget by 1.4 million to date. We anticipate that PPB will attempt a similar increase this year, pushing their budget even higher than the proposed $245 million, thus we stand even more firmly against this increase. <br />
+<br />
+Additionally and critically, Wheeler's budget ELIMINATES $1.8 million to fund the police body camera program. More money for policing but less money for police accountability is completely unacceptable.<br />
+<br />
+The police budget increases regularly while other services are cut. I can see the ways in which policing continues to perpetuate violence against Black, brown, houseless people, and against people in mental health crisis. While Wheeler's proposal represents a slight decrease from the PPB proposal, the PPB is a department whose reach into Portland communities needs to be curtailed through reducing the budget, not by increasing it.<br />
+<br />
+More money for policing but less money for police accountability is completely unacceptable at this moment in history. The city, the state, and country are all watching. And so am I. I call on the Mayor, the Commissioners, and all other City Council Members to use their powers to continue to reduce the budget and pledge to increase Police accountability and transparency. I promise that you will lose my support and my vote if you aren't willing to make a public and vocal stand to help defund the PPB and increase their accountability and transparency.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `I am a resident of Portland.
+
+In May, Mayor Ted Wheeler released his proposed budget for the City of Portland. This included a policing budget of $245,169,804, which is over $5 million more than budgeted last year—even amongst city-wide cuts to other departments due to Covid-19. The Portland Police Bureau (PPB), with Wheeler at its helm as Commissioner, has been mired in controversy over the last year with collusion with prominent white nationalist groups, shootings of Black people and people perceived to be in mental health crisis, data uncovered on their racist gang enforcement traffic stops, and the fact that a shameful 52% of people arrested are houseless.
+
+I oppose any increases to the PPB budget. Mayor Wheeler's 2019-20 proposed budget was increased by an additional half million dollars before adoption, and even then the PPB has overspent the increased budget by 1.4 million to date. We anticipate that PPB will attempt a similar increase this year, pushing their budget even higher than the proposed $245 million, thus we stand even more firmly against this increase. 
+
+Additionally and critically, Wheeler's budget ELIMINATES $1.8 million to fund the police body camera program. More money for policing but less money for police accountability is completely unacceptable.
+
+The police budget increases regularly while other services are cut. I can see the ways in which policing continues to perpetuate violence against Black, brown, houseless people, and against people in mental health crisis. While Wheeler's proposal represents a slight decrease from the PPB proposal, the PPB is a department whose reach into Portland communities needs to be curtailed through reducing the budget, not by increasing it.
+
+More money for policing but less money for police accountability is completely unacceptable at this moment in history. The city, the state, and country are all watching. And so am I. I call on the Mayor, the Commissioners, and all other City Council Members to use their powers to continue to reduce the budget and pledge to increase Police accountability and transparency. I promise that you will lose my support and my vote if you aren't willing to make a public and vocal stand to help defund the PPB and increase their accountability and transparency.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayorwheeler@portlandoregon.gov,Amanda@portlandoregon.gov,chloe@portlandoregon.gov,joann@portlandoregon.gov,AuditorHullCaballero@portlandoregon.gov,ipr@portlandoregon.gov,Ombudsman@portlandoregon.gov,ppbpio@portlandoregon.gov,sonia.schmanski@portlandoregon.gov,Toni.Anderson@portlandoregon.gov,Andrew.Bryans@portlandoregon.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/portland-defund`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

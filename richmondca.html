@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Richmond Officials</h2>
+  <b>Richmond, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/richmondca`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `TOM.BUTT@intres.com, Belinda_Brown@ci.richmond.ca.us, natbates@comcast.net, eduardo_martinez@ci.richmond.ca.us, trina_jackson@ci.richmond.ca.us, jael_myrick@ci.richmond.ca.us, ben_choi@ci.richmond.ca.us, melvin_willis@ci.richmond.ca.us, demnlus_johnson@ci.richmond.ca.us, CPRC@ci.richmond.ca.us`)">🔗</span>
+        TOM.BUTT@intres.com, Belinda_Brown@ci.richmond.ca.us, natbates@comcast.net, eduardo_martinez@ci.richmond.ca.us, trina_jackson@ci.richmond.ca.us, jael_myrick@ci.richmond.ca.us, ben_choi@ci.richmond.ca.us, melvin_willis@ci.richmond.ca.us, demnlus_johnson@ci.richmond.ca.us, CPRC@ci.richmond.ca.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor Butt, the Richmond Board of Supervisors, and Richmond Elected Officers,
+
+My name is [YOUR NAME], and I am a resident of Richmond. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+RPD has been a waste of our resources. Last year, the RPD budget was $74,990,406, the majority of which comes from the Richmond general fund. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
+
+I call on you to meaningfully restrict the RPD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our Black neighbors and veterans. Social programs and education generally have been shown to be much more effective at promoting safety and social equity than policing and incarceration.
+
+We can be a beacon for other cities to follow if only we have the courage to change. Can I count on you to consider an alternative budget that puts a focus on social service programs?
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To Mayor Butt, the Richmond Board of Supervisors, and Richmond Elected Officers,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Richmond. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.</p>
+
+<p>RPD has been a waste of our resources. Last year, the RPD budget was $74,990,406, the majority of which comes from the Richmond general fund. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.</p>
+
+<p>I call on you to meaningfully restrict the RPD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our Black neighbors and veterans. Social programs and education generally have been shown to be much more effective at promoting safety and social equity than policing and incarceration.</p>
+
+<p>We can be a beacon for other cities to follow if only we have the courage to change. Can I count on you to consider an alternative budget that puts a focus on social service programs?</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor Butt, the Richmond Board of Supervisors, and Richmond Elected Officers,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Richmond. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.<br />
+<br />
+RPD has been a waste of our resources. Last year, the RPD budget was $74,990,406, the majority of which comes from the Richmond general fund. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.<br />
+<br />
+I call on you to meaningfully restrict the RPD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our Black neighbors and veterans. Social programs and education generally have been shown to be much more effective at promoting safety and social equity than policing and incarceration.<br />
+<br />
+We can be a beacon for other cities to follow if only we have the courage to change. Can I count on you to consider an alternative budget that puts a focus on social service programs?<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To Mayor Butt, the Richmond Board of Supervisors, and Richmond Elected Officers,
+
+My name is [YOUR NAME], and I am a resident of Richmond. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+
+RPD has been a waste of our resources. Last year, the RPD budget was $74,990,406, the majority of which comes from the Richmond general fund. While we’ve been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
+
+I call on you to meaningfully restrict the RPD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our Black neighbors and veterans. Social programs and education generally have been shown to be much more effective at promoting safety and social equity than policing and incarceration.
+
+We can be a beacon for other cities to follow if only we have the courage to change. Can I count on you to consider an alternative budget that puts a focus on social service programs?
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `TOM.BUTT@intres.com,Belinda_Brown@ci.richmond.ca.us,natbates@comcast.net,eduardo_martinez@ci.richmond.ca.us,trina_jackson@ci.richmond.ca.us,jael_myrick@ci.richmond.ca.us,ben_choi@ci.richmond.ca.us,melvin_willis@ci.richmond.ca.us,demnlus_johnson@ci.richmond.ca.us,CPRC@ci.richmond.ca.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/richmondca`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

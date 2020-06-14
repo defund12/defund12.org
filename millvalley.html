@@ -70,6 +70,78 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor, Vice Mayor, and Councilmembers</h2>
+  <b>Mill Valley, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/millvalley`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `finance@cityofmillvalley.org, jmccauley@cityofmillvalley.org, smcentee@cityofmillvalley.org, jwickham@cityofmillvalley.org, ucarmel@cityofmillvalley.org, tossa@cityofmillvalley.org`)">🔗</span>
+        finance@cityofmillvalley.org, jmccauley@cityofmillvalley.org, smcentee@cityofmillvalley.org, jwickham@cityofmillvalley.org, ucarmel@cityofmillvalley.org, tossa@cityofmillvalley.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Sashi McEntee, Vice Mayor John McCauley, Councilmember Jim Wickham, Councilmember Urban Carmel, and Councilmember Tricia Ossa,
+
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Mill Valley City Council adopts a budget that prioritizes community well-being, and redirects funding away from the police.
+
+Across all fifty states this past week, through protests, demonstrations, and vigils, the efficacy of our current form of policing and its systemic racism has been called into question. In Mill Valley, hundreds of people blocked Miller Avenue two days in a row protesting in solidarity with the Black Lives Matter movement, demanding police accountability on a national and local level.  In San Francisco, Mayor London Breed has already begun the process of budget reallocation, and now it is our turn, as a neighbor city, to do the same, and to lead the way for the rest of Marin County.
+
+Police Services in the number one expenditure by the City of Mill Valley. This budget is not a reflection of the needs of our city. While individuals are expected to fundraise out-of-pocket for programs within public education, such as dance, drama, and art, the police can be seen on a daily basis giving tickets to drivers going one mile over the speed limit; we need to reprioritize our budget. The millions of dollars we spend each year on police equipment and staff could be channeled into more productive resources, such as funding for mental health services, or on-call social workers. These adaptations are being made by other cities across the country. In a town with infrequent crime, a large and overly-equipped police force results in more arbitrary traffic stops, not less crime. This is a unique opportunity to reimagine public safety from a community-based approach, an opportunity to prioritize youth programming, mental health, public education and more.
+
+Mill Valley can be a leader on this issue, if you and our other city officials have the courage to step up. I join the calls of those across the country to defund the police.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+We can be a beacon for other cities to follow, if only we have the courage to change.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Sashi McEntee, Vice Mayor John McCauley, Councilmember Jim Wickham, Councilmember Urban Carmel, and Councilmember Tricia Ossa,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Mill Valley City Council adopts a budget that prioritizes community well-being, and redirects funding away from the police.</p>
+
+<p>Across all fifty states this past week, through protests, demonstrations, and vigils, the efficacy of our current form of policing and its systemic racism has been called into question. In Mill Valley, hundreds of people blocked Miller Avenue two days in a row protesting in solidarity with the Black Lives Matter movement, demanding police accountability on a national and local level.  In San Francisco, Mayor London Breed has already begun the process of budget reallocation, and now it is our turn, as a neighbor city, to do the same, and to lead the way for the rest of Marin County.</p>
+
+<p>Police Services in the number one expenditure by the City of Mill Valley. This budget is not a reflection of the needs of our city. While individuals are expected to fundraise out-of-pocket for programs within public education, such as dance, drama, and art, the police can be seen on a daily basis giving tickets to drivers going one mile over the speed limit; we need to reprioritize our budget. The millions of dollars we spend each year on police equipment and staff could be channeled into more productive resources, such as funding for mental health services, or on-call social workers. These adaptations are being made by other cities across the country. In a town with infrequent crime, a large and overly-equipped police force results in more arbitrary traffic stops, not less crime. This is a unique opportunity to reimagine public safety from a community-based approach, an opportunity to prioritize youth programming, mental health, public education and more.</p>
+
+<p>Mill Valley can be a leader on this issue, if you and our other city officials have the courage to step up. I join the calls of those across the country to defund the police.</p>
+
+<p>As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.</p>
+
+<p>We can be a beacon for other cities to follow, if only we have the courage to change.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1942,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Sashi McEntee, Vice Mayor John McCauley, Councilmember Jim Wickham, Councilmember Urban Carmel, and Councilmember Tricia Ossa,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Mill Valley City Council adopts a budget that prioritizes community well-being, and redirects funding away from the police.<br />
+<br />
+Across all fifty states this past week, through protests, demonstrations, and vigils, the efficacy of our current form of policing and its systemic racism has been called into question. In Mill Valley, hundreds of people blocked Miller Avenue two days in a row protesting in solidarity with the Black Lives Matter movement, demanding police accountability on a national and local level.  In San Francisco, Mayor London Breed has already begun the process of budget reallocation, and now it is our turn, as a neighbor city, to do the same, and to lead the way for the rest of Marin County.<br />
+<br />
+Police Services in the number one expenditure by the City of Mill Valley. This budget is not a reflection of the needs of our city. While individuals are expected to fundraise out-of-pocket for programs within public education, such as dance, drama, and art, the police can be seen on a daily basis giving tickets to drivers going one mile over the speed limit; we need to reprioritize our budget. The millions of dollars we spend each year on police equipment and staff could be channeled into more productive resources, such as funding for mental health services, or on-call social workers. These adaptations are being made by other cities across the country. In a town with infrequent crime, a large and overly-equipped police force results in more arbitrary traffic stops, not less crime. This is a unique opportunity to reimagine public safety from a community-based approach, an opportunity to prioritize youth programming, mental health, public education and more.<br />
+<br />
+Mill Valley can be a leader on this issue, if you and our other city officials have the courage to step up. I join the calls of those across the country to defund the police.<br />
+<br />
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.<br />
+<br />
+We can be a beacon for other cities to follow, if only we have the courage to change.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Sashi McEntee, Vice Mayor John McCauley, Councilmember Jim Wickham, Councilmember Urban Carmel, and Councilmember Tricia Ossa,
+
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Mill Valley City Council adopts a budget that prioritizes community well-being, and redirects funding away from the police.
+
+Across all fifty states this past week, through protests, demonstrations, and vigils, the efficacy of our current form of policing and its systemic racism has been called into question. In Mill Valley, hundreds of people blocked Miller Avenue two days in a row protesting in solidarity with the Black Lives Matter movement, demanding police accountability on a national and local level.  In San Francisco, Mayor London Breed has already begun the process of budget reallocation, and now it is our turn, as a neighbor city, to do the same, and to lead the way for the rest of Marin County.
+
+Police Services in the number one expenditure by the City of Mill Valley. This budget is not a reflection of the needs of our city. While individuals are expected to fundraise out-of-pocket for programs within public education, such as dance, drama, and art, the police can be seen on a daily basis giving tickets to drivers going one mile over the speed limit; we need to reprioritize our budget. The millions of dollars we spend each year on police equipment and staff could be channeled into more productive resources, such as funding for mental health services, or on-call social workers. These adaptations are being made by other cities across the country. In a town with infrequent crime, a large and overly-equipped police force results in more arbitrary traffic stops, not less crime. This is a unique opportunity to reimagine public safety from a community-based approach, an opportunity to prioritize youth programming, mental health, public education and more.
+
+Mill Valley can be a leader on this issue, if you and our other city officials have the courage to step up. I join the calls of those across the country to defund the police.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+We can be a beacon for other cities to follow, if only we have the courage to change.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `finance@cityofmillvalley.org,jmccauley@cityofmillvalley.org,smcentee@cityofmillvalley.org,jwickham@cityofmillvalley.org,ucarmel@cityofmillvalley.org,tossa@cityofmillvalley.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/millvalley`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2019,4 @@
 </body>
 
 </html>
+

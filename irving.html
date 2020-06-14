@@ -70,6 +70,92 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the City Council and Mayor Stopfer</h2>
+  <b>Irving, TX</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/irving`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@cityofirving.org, jcdanish@cityofirving.org, ameagher@cityofirving.org, dlwebb@cityofirving.org, priddle@cityofirving.org, oward@cityofirving.org, azapanta@cityofirving.org, ktaylor@cityofirving.org, dpalmer@cityofirving.org`)">🔗</span>
+        mayor@cityofirving.org, jcdanish@cityofirving.org, ameagher@cityofirving.org, dlwebb@cityofirving.org, priddle@cityofirving.org, oward@cityofirving.org, azapanta@cityofirving.org, ktaylor@cityofirving.org, dpalmer@cityofirving.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear City Council Members and Mayor Stopfer,
+
+My name is \[YOUR NAME\] and I am a resident of \[NEIGHBORHOOD\]. I write this letter to urge you to begin defunding the Irving Police Department. Instead of shrinking, IPD is growing exponentially. The Irving Police Department takes an enormous share of the city’s general fund, and that percentage has risen for the last three years. From 2017 to 2020 IPD's budget has grown 14% or roughly $8 million. While IPD makes up 9.1% of the city of Irving's budget, the city's libraries, parks and recreation services, and community development programs take up 3.4%, 1.4%, and 0% respectively. IPD's expenditures are taking away desperately needed resources from essential city programs and services. (Source: City of Irving Fiscal Year 2019-2020 Budget).
+
+As an Irving resident, I therefore demand that you take immediate action to ensure the following:
+
+1. Reduce IPD’s allocation from the General Fund 
+
+2. Disallow unauthorized overtime by IPD
+
+3. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+
+4. Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+5. Invest in community development initiatives and programs.
+
+Irving cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund IPD.
+
+Thank you,
+\[YOUR NAME\]
+\[YOUR ADDRESS\]
+\[YOUR EMAIL\]
+\[YOUR PHONE NUMBER\]`)">🔗</span>
+        <br /> <p>Dear City Council Members and Mayor Stopfer,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I write this letter to urge you to begin defunding the Irving Police Department. Instead of shrinking, IPD is growing exponentially. The Irving Police Department takes an enormous share of the city’s general fund, and that percentage has risen for the last three years. From 2017 to 2020 IPD’s budget has grown 14% or roughly $8 million. While IPD makes up 9.1% of the city of Irving’s budget, the city’s libraries, parks and recreation services, and community development programs take up 3.4%, 1.4%, and 0% respectively. IPD’s expenditures are taking away desperately needed resources from essential city programs and services. (Source: City of Irving Fiscal Year 2019-2020 Budget).</p>
+
+<p>As an Irving resident, I therefore demand that you take immediate action to ensure the following:</p>
+
+<ol>
+  <li>
+    <p>Reduce IPD’s allocation from the General Fund</p>
+  </li>
+  <li>
+    <p>Disallow unauthorized overtime by IPD</p>
+  </li>
+  <li>
+    <p>Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence</p>
+  </li>
+  <li>
+    <p>Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.</p>
+  </li>
+  <li>
+    <p>Invest in community development initiatives and programs.</p>
+  </li>
+</ol>
+
+<p>Irving cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund IPD.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1956,76 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear City Council Members and Mayor Stopfer,<br />
+<br />
+My name is \[YOUR NAME\] and I am a resident of \[NEIGHBORHOOD\]. I write this letter to urge you to begin defunding the Irving Police Department. Instead of shrinking, IPD is growing exponentially. The Irving Police Department takes an enormous share of the city’s general fund, and that percentage has risen for the last three years. From 2017 to 2020 IPD's budget has grown 14% or roughly $8 million. While IPD makes up 9.1% of the city of Irving's budget, the city's libraries, parks and recreation services, and community development programs take up 3.4%, 1.4%, and 0% respectively. IPD's expenditures are taking away desperately needed resources from essential city programs and services. (Source: City of Irving Fiscal Year 2019-2020 Budget).<br />
+<br />
+As an Irving resident, I therefore demand that you take immediate action to ensure the following:<br />
+<br />
+1. Reduce IPD’s allocation from the General Fund <br />
+<br />
+2. Disallow unauthorized overtime by IPD<br />
+<br />
+3. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence<br />
+<br />
+4. Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+<br />
+5. Invest in community development initiatives and programs.<br />
+<br />
+Irving cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund IPD.<br />
+<br />
+Thank you,<br />
+\[YOUR NAME\]<br />
+\[YOUR ADDRESS\]<br />
+\[YOUR EMAIL\]<br />
+\[YOUR PHONE NUMBER\]`.trim() :
+      `Dear City Council Members and Mayor Stopfer,
+
+My name is \[YOUR NAME\] and I am a resident of \[NEIGHBORHOOD\]. I write this letter to urge you to begin defunding the Irving Police Department. Instead of shrinking, IPD is growing exponentially. The Irving Police Department takes an enormous share of the city’s general fund, and that percentage has risen for the last three years. From 2017 to 2020 IPD's budget has grown 14% or roughly $8 million. While IPD makes up 9.1% of the city of Irving's budget, the city's libraries, parks and recreation services, and community development programs take up 3.4%, 1.4%, and 0% respectively. IPD's expenditures are taking away desperately needed resources from essential city programs and services. (Source: City of Irving Fiscal Year 2019-2020 Budget).
+
+As an Irving resident, I therefore demand that you take immediate action to ensure the following:
+
+1. Reduce IPD’s allocation from the General Fund 
+
+2. Disallow unauthorized overtime by IPD
+
+3. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+
+4. Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+5. Invest in community development initiatives and programs.
+
+Irving cannot wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund IPD.
+
+Thank you,
+\[YOUR NAME\]
+\[YOUR ADDRESS\]
+\[YOUR EMAIL\]
+\[YOUR PHONE NUMBER\]`.trim()
+    );
+    const recipients = `mayor@cityofirving.org,jcdanish@cityofirving.org,ameagher@cityofirving.org,dlwebb@cityofirving.org,priddle@cityofirving.org,oward@cityofirving.org,azapanta@cityofirving.org,ktaylor@cityofirving.org,dpalmer@cityofirving.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/irving`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2039,4 @@
 </body>
 
 </html>
+

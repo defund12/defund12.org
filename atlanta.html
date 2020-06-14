@@ -70,6 +70,62 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Atlanta Financial Division</h2>
+  <b>Atlanta, GA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/atlanta`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `cebell@atlantaga.gov, sagabriel@atlantaga.gov`)">🔗</span>
+        cebell@atlantaga.gov, sagabriel@atlantaga.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hi, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Atlanta PD and into the following social services: [LIST - Community Development, COVID Relief, Education, Parks & Recreation, targeted support for marginalized communities]. 
+
+I have noticed that in the 2021 budget proposal, from the general fund, the police department is receiving a 5.90% increase from 2020. Meanwhile, many other services are receiving cuts to their budgets. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.
+
+I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor's proposed budget and reallocate these funds to resources the citizens can benefit from.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hi, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Atlanta PD and into the following social services: [LIST - Community Development, COVID Relief, Education, Parks &amp; Recreation, targeted support for marginalized communities].</p>
+
+<p>I have noticed that in the 2021 budget proposal, from the general fund, the police department is receiving a 5.90% increase from 2020. Meanwhile, many other services are receiving cuts to their budgets. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.</p>
+
+<p>I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources the citizens can benefit from.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1926,54 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hi, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Atlanta PD and into the following social services: [LIST - Community Development, COVID Relief, Education, Parks & Recreation, targeted support for marginalized communities]. <br />
+<br />
+I have noticed that in the 2021 budget proposal, from the general fund, the police department is receiving a 5.90% increase from 2020. Meanwhile, many other services are receiving cuts to their budgets. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.<br />
+<br />
+I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor's proposed budget and reallocate these funds to resources the citizens can benefit from.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hi, my name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Atlanta PD and into the following social services: [LIST - Community Development, COVID Relief, Education, Parks & Recreation, targeted support for marginalized communities]. 
+
+I have noticed that in the 2021 budget proposal, from the general fund, the police department is receiving a 5.90% increase from 2020. Meanwhile, many other services are receiving cuts to their budgets. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.
+
+I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor's proposed budget and reallocate these funds to resources the citizens can benefit from.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `cebell@atlantaga.gov,sagabriel@atlantaga.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/atlanta`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1987,4 @@
 </body>
 
 </html>
+

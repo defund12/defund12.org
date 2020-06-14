@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor, City Council and Police Chief</h2>
+  <b>New Orleans, LA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/nola`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@nola.gov, jarwilliams@nola.gov, helena.moreno@nola.gov, joseph.giarrusso@nola.gov, jay.h.banks@nola.gov, kristin.palmer@nola.gov, jcbrossett@nola.gov, cyndi.nguyen@nola.gov, nopdchief@nola.gov`)">🔗</span>
+        mayor@nola.gov, jarwilliams@nola.gov, helena.moreno@nola.gov, joseph.giarrusso@nola.gov, jay.h.banks@nola.gov, kristin.palmer@nola.gov, jcbrossett@nola.gov, cyndi.nguyen@nola.gov, nopdchief@nola.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Cantrell and City Council Members,
+
+My name is [YOUR NAME]. I am a New Orleans resident writing to urge you to defund the New Orleans Police Department.
+
+I am contacting you to demand a significant reduction to the $194 million that is currently allocated to public safety in the upcoming fiscal budget of 2021 and for a formal review of the New Orleans Police Department Union Contract from an independent party that has no affiliation with NOPD. The police funds make up roughly 20% of the budget, while other important public services do not receive even half as much funding. By reducing police funding and reducing incarceration rates, those funds can be reallocated to housing, education or sanitation, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.
+
+As New Orleans residents, we therefore demand that you take immediate action towards the following ends:
+* Reduce NOPD’s allocation from the General Fund
+* Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+* New Orleans can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund NOPD.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR EMAIL]
+[YOUR ADDRESS]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Cantrell and City Council Members,</p>
+
+<p>My name is [YOUR NAME]. I am a New Orleans resident writing to urge you to defund the New Orleans Police Department.</p>
+
+<p>I am contacting you to demand a significant reduction to the $194 million that is currently allocated to public safety in the upcoming fiscal budget of 2021 and for a formal review of the New Orleans Police Department Union Contract from an independent party that has no affiliation with NOPD. The police funds make up roughly 20% of the budget, while other important public services do not receive even half as much funding. By reducing police funding and reducing incarceration rates, those funds can be reallocated to housing, education or sanitation, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.</p>
+
+<p>As New Orleans residents, we therefore demand that you take immediate action towards the following ends:</p>
+<ul>
+  <li>Reduce NOPD’s allocation from the General Fund</li>
+  <li>Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence</li>
+  <li>Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.</li>
+  <li>New Orleans can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund NOPD.</li>
+</ul>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR EMAIL]
+[YOUR ADDRESS]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Cantrell and City Council Members,<br />
+<br />
+My name is [YOUR NAME]. I am a New Orleans resident writing to urge you to defund the New Orleans Police Department.<br />
+<br />
+I am contacting you to demand a significant reduction to the $194 million that is currently allocated to public safety in the upcoming fiscal budget of 2021 and for a formal review of the New Orleans Police Department Union Contract from an independent party that has no affiliation with NOPD. The police funds make up roughly 20% of the budget, while other important public services do not receive even half as much funding. By reducing police funding and reducing incarceration rates, those funds can be reallocated to housing, education or sanitation, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.<br />
+<br />
+As New Orleans residents, we therefore demand that you take immediate action towards the following ends:<br />
+* Reduce NOPD’s allocation from the General Fund<br />
+* Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence<br />
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+* New Orleans can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund NOPD.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR EMAIL]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Cantrell and City Council Members,
+
+My name is [YOUR NAME]. I am a New Orleans resident writing to urge you to defund the New Orleans Police Department.
+
+I am contacting you to demand a significant reduction to the $194 million that is currently allocated to public safety in the upcoming fiscal budget of 2021 and for a formal review of the New Orleans Police Department Union Contract from an independent party that has no affiliation with NOPD. The police funds make up roughly 20% of the budget, while other important public services do not receive even half as much funding. By reducing police funding and reducing incarceration rates, those funds can be reallocated to housing, education or sanitation, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.
+
+As New Orleans residents, we therefore demand that you take immediate action towards the following ends:
+* Reduce NOPD’s allocation from the General Fund
+* Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+* New Orleans can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund NOPD.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR EMAIL]
+[YOUR ADDRESS]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@nola.gov,jarwilliams@nola.gov,helena.moreno@nola.gov,joseph.giarrusso@nola.gov,jay.h.banks@nola.gov,kristin.palmer@nola.gov,jcbrossett@nola.gov,cyndi.nguyen@nola.gov,nopdchief@nola.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/nola`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2009,4 @@
 </body>
 
 </html>
+

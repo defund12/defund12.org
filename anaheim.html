@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council</h2>
+  <b>Anaheim, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/anaheim`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Publiccomment@anaheim.net, hsidhu@anaheim.net, sfaessel@anaheim.net, dbarnes@anaheim.net, jbrandman@anaheim.net, jmoreno@anaheim.net, lkring@anaheim.net, toneil@anaheim.net`)">🔗</span>
+        Publiccomment@anaheim.net, hsidhu@anaheim.net, sfaessel@anaheim.net, dbarnes@anaheim.net, jbrandman@anaheim.net, jmoreno@anaheim.net, lkring@anaheim.net, toneil@anaheim.net
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To the Anaheim City Council:
+
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD/CITY]. I am writing in deep concern for the health of the greater Anaheim community. It has become more than clear that a radical shift in our concept of policing and community health must take place at the local level. Police violence in Anaheim has disproportionately affected Black and Brown residents and that must come to an end.
+
+The United States does not have a national healthcare system. Instead, we have the largest military budget, and some of the most well-funded and militarized police departments in the world. Anaheim is no different: the 2019-2020 budget allocated $153.8 million to law enforcement and only $1 million to community development.
+
+Anaheim is the 9th most violent police department in the U.S. From 2003-2016, Anaheim Police Department killed 33 people during the process of arrest, and nearly 40% of them were unarmed. Since 2014, the rate of arrest-related deaths caused by Anaheim PD exceeds that of LAPD, NYPD, and San Fran PD and is 74% higher than the average for police in California.
+
+I demand that the city council not approve “Resolution 19” that would spend $700,000 dollars of taxpayer money on surveillance technology of anti-police brutality protests and that any future projects related to surveillance be halted. I also demand that the council not approve "Resolution 5" that will use $100,000 to improve 10 police vehicles. Instead, invest that money in creating programs that benefit and enrich the community especially during a global pandemic.
+
+I am calling on our elected officials to stop criminalizing our community members. We as a concerned community refuse to remain silent on the use of technology to further terrorize our community.
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To the Anaheim City Council:</p>
+
+<p>My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD/CITY]. I am writing in deep concern for the health of the greater Anaheim community. It has become more than clear that a radical shift in our concept of policing and community health must take place at the local level. Police violence in Anaheim has disproportionately affected Black and Brown residents and that must come to an end.</p>
+
+<p>The United States does not have a national healthcare system. Instead, we have the largest military budget, and some of the most well-funded and militarized police departments in the world. Anaheim is no different: the 2019-2020 budget allocated $153.8 million to law enforcement and only $1 million to community development.</p>
+
+<p>Anaheim is the 9th most violent police department in the U.S. From 2003-2016, Anaheim Police Department killed 33 people during the process of arrest, and nearly 40% of them were unarmed. Since 2014, the rate of arrest-related deaths caused by Anaheim PD exceeds that of LAPD, NYPD, and San Fran PD and is 74% higher than the average for police in California.</p>
+
+<p>I demand that the city council not approve “Resolution 19” that would spend $700,000 dollars of taxpayer money on surveillance technology of anti-police brutality protests and that any future projects related to surveillance be halted. I also demand that the council not approve “Resolution 5” that will use $100,000 to improve 10 police vehicles. Instead, invest that money in creating programs that benefit and enrich the community especially during a global pandemic.</p>
+
+<p>I am calling on our elected officials to stop criminalizing our community members. We as a concerned community refuse to remain silent on the use of technology to further terrorize our community.</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To the Anaheim City Council:<br />
+<br />
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD/CITY]. I am writing in deep concern for the health of the greater Anaheim community. It has become more than clear that a radical shift in our concept of policing and community health must take place at the local level. Police violence in Anaheim has disproportionately affected Black and Brown residents and that must come to an end.<br />
+<br />
+The United States does not have a national healthcare system. Instead, we have the largest military budget, and some of the most well-funded and militarized police departments in the world. Anaheim is no different: the 2019-2020 budget allocated $153.8 million to law enforcement and only $1 million to community development.<br />
+<br />
+Anaheim is the 9th most violent police department in the U.S. From 2003-2016, Anaheim Police Department killed 33 people during the process of arrest, and nearly 40% of them were unarmed. Since 2014, the rate of arrest-related deaths caused by Anaheim PD exceeds that of LAPD, NYPD, and San Fran PD and is 74% higher than the average for police in California.<br />
+<br />
+I demand that the city council not approve “Resolution 19” that would spend $700,000 dollars of taxpayer money on surveillance technology of anti-police brutality protests and that any future projects related to surveillance be halted. I also demand that the council not approve "Resolution 5" that will use $100,000 to improve 10 police vehicles. Instead, invest that money in creating programs that benefit and enrich the community especially during a global pandemic.<br />
+<br />
+I am calling on our elected officials to stop criminalizing our community members. We as a concerned community refuse to remain silent on the use of technology to further terrorize our community.<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To the Anaheim City Council:
+
+My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD/CITY]. I am writing in deep concern for the health of the greater Anaheim community. It has become more than clear that a radical shift in our concept of policing and community health must take place at the local level. Police violence in Anaheim has disproportionately affected Black and Brown residents and that must come to an end.
+
+The United States does not have a national healthcare system. Instead, we have the largest military budget, and some of the most well-funded and militarized police departments in the world. Anaheim is no different: the 2019-2020 budget allocated $153.8 million to law enforcement and only $1 million to community development.
+
+Anaheim is the 9th most violent police department in the U.S. From 2003-2016, Anaheim Police Department killed 33 people during the process of arrest, and nearly 40% of them were unarmed. Since 2014, the rate of arrest-related deaths caused by Anaheim PD exceeds that of LAPD, NYPD, and San Fran PD and is 74% higher than the average for police in California.
+
+I demand that the city council not approve “Resolution 19” that would spend $700,000 dollars of taxpayer money on surveillance technology of anti-police brutality protests and that any future projects related to surveillance be halted. I also demand that the council not approve "Resolution 5" that will use $100,000 to improve 10 police vehicles. Instead, invest that money in creating programs that benefit and enrich the community especially during a global pandemic.
+
+I am calling on our elected officials to stop criminalizing our community members. We as a concerned community refuse to remain silent on the use of technology to further terrorize our community.
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `Publiccomment@anaheim.net,hsidhu@anaheim.net,sfaessel@anaheim.net,dbarnes@anaheim.net,jbrandman@anaheim.net,jmoreno@anaheim.net,lkring@anaheim.net,toneil@anaheim.net`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/anaheim`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

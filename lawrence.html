@@ -70,6 +70,80 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor, City Commissioners, and City Manager</h2>
+  <b>Lawrence, KS</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/lawrence`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jananda@lawrenceks.org, craigowens@lawrenceks.org, bfinkeldei@lawrenceks.org, cshipley@lawrenceks.org, sboley@lawrenceks.org, llarsen@lawrenceks.org`)">🔗</span>
+        jananda@lawrenceks.org, craigowens@lawrenceks.org, bfinkeldei@lawrenceks.org, cshipley@lawrenceks.org, sboley@lawrenceks.org, llarsen@lawrenceks.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Ananda, Lawrence City Commissioners, and City Manager Craig Owens,
+
+My name is [YOUR NAME] and I am a resident of Lawrence. I am writing to demand that the Lawrence City Commission adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+As you know, in the 2019 budget, the City of Lawrence allocated an increase of over 2 million dollars to fund the Lawrence Police Department. In the 2020 budget, the City of Lawrence increased the Police Department budget another 2.5 million dollars, equating to an inordinate 33.35% of our city’s total taxpayer funded budget at over 27 million dollars. This is compared to just 1.34% of our city budget allocated to Public Health, and 10% of our budget allocated to Municipal Services & Operations.
+
+It has been estimated that there will be a multi-million dollar revenue loss in our city due to the Coronavirus pandemic, and the state of Kansas is facing a 1.3 billion dollar budget shortfall. The Lawrence Community Shelter, and vital community organizations like Just Food and the Willow Domestic Violence Center, both of whom received only 16,000 dollars combined in the 2020 budget. These organizations were underfunded even before the pandemic increased their usage. The city must recoup some of these badly-needed funds by decreasing the police budget.
+
+I demand that the City Commission begin meaningfully defunding the Lawrence Police Department and reallocating those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police.
+
+I love this community and I want to see it flourish into an even more prosperous one. I demand a budget that reflects the actual needs of Lawrence residents and works to improve the wellbeing of everyone who calls Lawrence home.
+
+History has shown that police “reform” is not enough. No more money, and most importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve, and in fact actively harms our community, and come together to reimagine the role of police in our city.
+
+I am urging you to completely revise the current budget as well as the 2021 budget, and to invest our taxpayer money back into the people, not in the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show Lawrence that you care for our community.
+
+Thank you for your time,
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE ]`)">🔗</span>
+        <br /> <p>Dear Mayor Ananda, Lawrence City Commissioners, and City Manager Craig Owens,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Lawrence. I am writing to demand that the Lawrence City Commission adopt a city budget that prioritizes community well-being, and redirects funding away from the police.</p>
+
+<p>As you know, in the 2019 budget, the City of Lawrence allocated an increase of over 2 million dollars to fund the Lawrence Police Department. In the 2020 budget, the City of Lawrence increased the Police Department budget another 2.5 million dollars, equating to an inordinate 33.35% of our city’s total taxpayer funded budget at over 27 million dollars. This is compared to just 1.34% of our city budget allocated to Public Health, and 10% of our budget allocated to Municipal Services &amp; Operations.</p>
+
+<p>It has been estimated that there will be a multi-million dollar revenue loss in our city due to the Coronavirus pandemic, and the state of Kansas is facing a 1.3 billion dollar budget shortfall. The Lawrence Community Shelter, and vital community organizations like Just Food and the Willow Domestic Violence Center, both of whom received only 16,000 dollars combined in the 2020 budget. These organizations were underfunded even before the pandemic increased their usage. The city must recoup some of these badly-needed funds by decreasing the police budget.</p>
+
+<p>I demand that the City Commission begin meaningfully defunding the Lawrence Police Department and reallocating those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police.</p>
+
+<p>I love this community and I want to see it flourish into an even more prosperous one. I demand a budget that reflects the actual needs of Lawrence residents and works to improve the wellbeing of everyone who calls Lawrence home.</p>
+
+<p>History has shown that police “reform” is not enough. No more money, and most importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve, and in fact actively harms our community, and come together to reimagine the role of police in our city.</p>
+
+<p>I am urging you to completely revise the current budget as well as the 2021 budget, and to invest our taxpayer money back into the people, not in the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show Lawrence that you care for our community.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE ]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1944,72 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Ananda, Lawrence City Commissioners, and City Manager Craig Owens,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Lawrence. I am writing to demand that the Lawrence City Commission adopt a city budget that prioritizes community well-being, and redirects funding away from the police.<br />
+<br />
+As you know, in the 2019 budget, the City of Lawrence allocated an increase of over 2 million dollars to fund the Lawrence Police Department. In the 2020 budget, the City of Lawrence increased the Police Department budget another 2.5 million dollars, equating to an inordinate 33.35% of our city’s total taxpayer funded budget at over 27 million dollars. This is compared to just 1.34% of our city budget allocated to Public Health, and 10% of our budget allocated to Municipal Services & Operations.<br />
+<br />
+It has been estimated that there will be a multi-million dollar revenue loss in our city due to the Coronavirus pandemic, and the state of Kansas is facing a 1.3 billion dollar budget shortfall. The Lawrence Community Shelter, and vital community organizations like Just Food and the Willow Domestic Violence Center, both of whom received only 16,000 dollars combined in the 2020 budget. These organizations were underfunded even before the pandemic increased their usage. The city must recoup some of these badly-needed funds by decreasing the police budget.<br />
+<br />
+I demand that the City Commission begin meaningfully defunding the Lawrence Police Department and reallocating those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police.<br />
+<br />
+I love this community and I want to see it flourish into an even more prosperous one. I demand a budget that reflects the actual needs of Lawrence residents and works to improve the wellbeing of everyone who calls Lawrence home.<br />
+<br />
+History has shown that police “reform” is not enough. No more money, and most importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve, and in fact actively harms our community, and come together to reimagine the role of police in our city.<br />
+<br />
+I am urging you to completely revise the current budget as well as the 2021 budget, and to invest our taxpayer money back into the people, not in the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show Lawrence that you care for our community.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[ADDRESS]<br />
+[EMAIL]<br />
+[PHONE ]`.trim() :
+      `Dear Mayor Ananda, Lawrence City Commissioners, and City Manager Craig Owens,
+
+My name is [YOUR NAME] and I am a resident of Lawrence. I am writing to demand that the Lawrence City Commission adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+As you know, in the 2019 budget, the City of Lawrence allocated an increase of over 2 million dollars to fund the Lawrence Police Department. In the 2020 budget, the City of Lawrence increased the Police Department budget another 2.5 million dollars, equating to an inordinate 33.35% of our city’s total taxpayer funded budget at over 27 million dollars. This is compared to just 1.34% of our city budget allocated to Public Health, and 10% of our budget allocated to Municipal Services & Operations.
+
+It has been estimated that there will be a multi-million dollar revenue loss in our city due to the Coronavirus pandemic, and the state of Kansas is facing a 1.3 billion dollar budget shortfall. The Lawrence Community Shelter, and vital community organizations like Just Food and the Willow Domestic Violence Center, both of whom received only 16,000 dollars combined in the 2020 budget. These organizations were underfunded even before the pandemic increased their usage. The city must recoup some of these badly-needed funds by decreasing the police budget.
+
+I demand that the City Commission begin meaningfully defunding the Lawrence Police Department and reallocating those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police.
+
+I love this community and I want to see it flourish into an even more prosperous one. I demand a budget that reflects the actual needs of Lawrence residents and works to improve the wellbeing of everyone who calls Lawrence home.
+
+History has shown that police “reform” is not enough. No more money, and most importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve, and in fact actively harms our community, and come together to reimagine the role of police in our city.
+
+I am urging you to completely revise the current budget as well as the 2021 budget, and to invest our taxpayer money back into the people, not in the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show Lawrence that you care for our community.
+
+Thank you for your time,
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE ]`.trim()
+    );
+    const recipients = `jananda@lawrenceks.org,craigowens@lawrenceks.org,bfinkeldei@lawrenceks.org,cshipley@lawrenceks.org,sboley@lawrenceks.org,llarsen@lawrenceks.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/lawrence`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2023,4 @@
 </body>
 
 </html>
+

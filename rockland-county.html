@@ -70,6 +70,62 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to County Executive, DA, and County Legislature</h2>
+  <b>Rockland County, NY</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/rockland-county`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `CountyExec@co.rockland.ny.us, info@rocklandcountyda.com, WolfeA@co.rockland.ny.us, HofsteiL@co.rockland.ny.us, SoskinP@co.rockland.ny.us, EarlT@co.rockland.ny.us, CareyC@co.rockland.ny.us, CornellH@co.rockland.ny.us, SantullL@co.rockland.ny.us, FalciglC@co.rockland.ny.us, WiederA@co.rockland.ny.us, PaulA@co.rockland.ny.us, McGowanJ@co.rockland.ny.us, TyerV@co.rockland.ny.us, FoleyJa@co.rockland.ny.us, yegerit@co.rockland.ny.us, JobsonD@co.rockland.ny.us, GrantM@co.rockland.ny.us, HoodJ@co.rockland.ny.us`)">🔗</span>
+        CountyExec@co.rockland.ny.us, info@rocklandcountyda.com, WolfeA@co.rockland.ny.us, HofsteiL@co.rockland.ny.us, SoskinP@co.rockland.ny.us, EarlT@co.rockland.ny.us, CareyC@co.rockland.ny.us, CornellH@co.rockland.ny.us, SantullL@co.rockland.ny.us, FalciglC@co.rockland.ny.us, WiederA@co.rockland.ny.us, PaulA@co.rockland.ny.us, McGowanJ@co.rockland.ny.us, TyerV@co.rockland.ny.us, FoleyJa@co.rockland.ny.us, yegerit@co.rockland.ny.us, JobsonD@co.rockland.ny.us, GrantM@co.rockland.ny.us, HoodJ@co.rockland.ny.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To County Executive Ed Day, DA Tom Walsh, and Rockland County legislature,
+
+My name is [YOUR NAME] and I am a resident of [YOUR TOWN/DISTRICT] in Rockland County. I am writing to demand that County Executive Day and the Rockland County legislature adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police. This week, the country has been gripped by protests demanding reconsideration of the role of police in America and an end to racism and anti-Blackness. Moving funds away from the sheriff’s office and police department is a crucial way to combat these issues at the county level.
+
+The current 2020 budget passed by County Executive Ed Day appropriates 73 million dollars to the Sheriff, which is the second highest amount by department. I demand that the County Legislature and County Executive begin to meaningfully defund the Sheriff and redirect funds to community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that supports community wellbeing, instead of one that empowers police forces to tear communities apart.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To County Executive Ed Day, DA Tom Walsh, and Rockland County legislature,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR TOWN/DISTRICT] in Rockland County. I am writing to demand that County Executive Day and the Rockland County legislature adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police. This week, the country has been gripped by protests demanding reconsideration of the role of police in America and an end to racism and anti-Blackness. Moving funds away from the sheriff’s office and police department is a crucial way to combat these issues at the county level.</p>
+
+<p>The current 2020 budget passed by County Executive Ed Day appropriates 73 million dollars to the Sheriff, which is the second highest amount by department. I demand that the County Legislature and County Executive begin to meaningfully defund the Sheriff and redirect funds to community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that supports community wellbeing, instead of one that empowers police forces to tear communities apart.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1926,54 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To County Executive Ed Day, DA Tom Walsh, and Rockland County legislature,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR TOWN/DISTRICT] in Rockland County. I am writing to demand that County Executive Day and the Rockland County legislature adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police. This week, the country has been gripped by protests demanding reconsideration of the role of police in America and an end to racism and anti-Blackness. Moving funds away from the sheriff’s office and police department is a crucial way to combat these issues at the county level.<br />
+<br />
+The current 2020 budget passed by County Executive Ed Day appropriates 73 million dollars to the Sheriff, which is the second highest amount by department. I demand that the County Legislature and County Executive begin to meaningfully defund the Sheriff and redirect funds to community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that supports community wellbeing, instead of one that empowers police forces to tear communities apart.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To County Executive Ed Day, DA Tom Walsh, and Rockland County legislature,
+
+My name is [YOUR NAME] and I am a resident of [YOUR TOWN/DISTRICT] in Rockland County. I am writing to demand that County Executive Day and the Rockland County legislature adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police. This week, the country has been gripped by protests demanding reconsideration of the role of police in America and an end to racism and anti-Blackness. Moving funds away from the sheriff’s office and police department is a crucial way to combat these issues at the county level.
+
+The current 2020 budget passed by County Executive Ed Day appropriates 73 million dollars to the Sheriff, which is the second highest amount by department. I demand that the County Legislature and County Executive begin to meaningfully defund the Sheriff and redirect funds to community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that supports community wellbeing, instead of one that empowers police forces to tear communities apart.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `CountyExec@co.rockland.ny.us,info@rocklandcountyda.com,WolfeA@co.rockland.ny.us,HofsteiL@co.rockland.ny.us,SoskinP@co.rockland.ny.us,EarlT@co.rockland.ny.us,CareyC@co.rockland.ny.us,CornellH@co.rockland.ny.us,SantullL@co.rockland.ny.us,FalciglC@co.rockland.ny.us,WiederA@co.rockland.ny.us,PaulA@co.rockland.ny.us,McGowanJ@co.rockland.ny.us,TyerV@co.rockland.ny.us,FoleyJa@co.rockland.ny.us,yegerit@co.rockland.ny.us,JobsonD@co.rockland.ny.us,GrantM@co.rockland.ny.us,HoodJ@co.rockland.ny.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/rockland-county`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1987,4 @@
 </body>
 
 </html>
+

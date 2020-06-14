@@ -70,6 +70,64 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor and Council</h2>
+  <b>Franklin Township, Somerset County, NJ</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/franklintownship`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Mayor.Kramer@franklinnj.gov, Councilman.Onyejiaka@franklinnj.gov, Councilman.Ram@franklinnj.gov, Councilwoman.Francois@franklinnj.gov, Councilwoman.Pruitt@franklinnj.gov, Councilman.Chase@franklinnj.gov, Councilman.Galtieri@franklinnj.gov, Councilman.Wright@franklinnj.gov, Councilman.Vassanella@franklinnj.gov, lrainone@njrcmlaw.com, annmarie.mccarthy@franklinnj.gov, Robert.Vornlocker@franklinnj.gov`)">🔗</span>
+        Mayor.Kramer@franklinnj.gov, Councilman.Onyejiaka@franklinnj.gov, Councilman.Ram@franklinnj.gov, Councilwoman.Francois@franklinnj.gov, Councilwoman.Pruitt@franklinnj.gov, Councilman.Chase@franklinnj.gov, Councilman.Galtieri@franklinnj.gov, Councilman.Wright@franklinnj.gov, Councilman.Vassanella@franklinnj.gov, lrainone@njrcmlaw.com, annmarie.mccarthy@franklinnj.gov, Robert.Vornlocker@franklinnj.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Kramer and Councilmembers:
+
+My name is [YOUR NAME], and I am a resident of [TOWN/NEIGHBORHOOD]. In light of the urgent movement for Black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the Township's expenditures away from policing, and towards social programs that more effectively meet critical community needs. I know that the Franklin Police Department have pledged to pursue more community policing initiatives. This is insufficient: the entire system of policing is broken and ineffective, and must be replaced with something else.
+
+At $15,545,855 total, representing an increase from 2019, the Township’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for public works totals under $4 million, and the budget for health and human services does not even reach $1 million. If we really don’t need as much as $1 million for health and human services (doubtful, especially in light of the COVID-19 pandemic), how could we possibly need over $15 million for police? Franklin’s population is 28.1% African American. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels.
+
+I urge you to advocate for a complete overhaul of the Township’s budget that directs at least $10 million away from policing. All over the country, concerned residents are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like “Community Resources/Public Assistance,” which is currently slated to receive less than $300,000. I urge you to revise the FY 2020 budget to reflect these demands, and show that Franklin Township is committed to true public safety for its Black population and all of its residents.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Kramer and Councilmembers:</p>
+
+<p>My name is [YOUR NAME], and I am a resident of [TOWN/NEIGHBORHOOD]. In light of the urgent movement for Black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the Township’s expenditures away from policing, and towards social programs that more effectively meet critical community needs. I know that the Franklin Police Department have pledged to pursue more community policing initiatives. This is insufficient: the entire system of policing is broken and ineffective, and must be replaced with something else.</p>
+
+<p>At $15,545,855 total, representing an increase from 2019, the Township’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for public works totals under $4 million, and the budget for health and human services does not even reach $1 million. If we really don’t need as much as $1 million for health and human services (doubtful, especially in light of the COVID-19 pandemic), how could we possibly need over $15 million for police? Franklin’s population is 28.1% African American. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels.</p>
+
+<p>I urge you to advocate for a complete overhaul of the Township’s budget that directs at least $10 million away from policing. All over the country, concerned residents are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like “Community Resources/Public Assistance,” which is currently slated to receive less than $300,000. I urge you to revise the FY 2020 budget to reflect these demands, and show that Franklin Township is committed to true public safety for its Black population and all of its residents.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1928,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Kramer and Councilmembers:<br />
+<br />
+My name is [YOUR NAME], and I am a resident of [TOWN/NEIGHBORHOOD]. In light of the urgent movement for Black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the Township's expenditures away from policing, and towards social programs that more effectively meet critical community needs. I know that the Franklin Police Department have pledged to pursue more community policing initiatives. This is insufficient: the entire system of policing is broken and ineffective, and must be replaced with something else.<br />
+<br />
+At $15,545,855 total, representing an increase from 2019, the Township’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for public works totals under $4 million, and the budget for health and human services does not even reach $1 million. If we really don’t need as much as $1 million for health and human services (doubtful, especially in light of the COVID-19 pandemic), how could we possibly need over $15 million for police? Franklin’s population is 28.1% African American. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels.<br />
+<br />
+I urge you to advocate for a complete overhaul of the Township’s budget that directs at least $10 million away from policing. All over the country, concerned residents are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like “Community Resources/Public Assistance,” which is currently slated to receive less than $300,000. I urge you to revise the FY 2020 budget to reflect these demands, and show that Franklin Township is committed to true public safety for its Black population and all of its residents.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Kramer and Councilmembers:
+
+My name is [YOUR NAME], and I am a resident of [TOWN/NEIGHBORHOOD]. In light of the urgent movement for Black lives happening across our nation, I am writing to urge you to advocate for a meaningful reallocation of the Township's expenditures away from policing, and towards social programs that more effectively meet critical community needs. I know that the Franklin Police Department have pledged to pursue more community policing initiatives. This is insufficient: the entire system of policing is broken and ineffective, and must be replaced with something else.
+
+At $15,545,855 total, representing an increase from 2019, the Township’s amended 2020 budget for policing dwarfs its other appropriations. For example, the allocation for public works totals under $4 million, and the budget for health and human services does not even reach $1 million. If we really don’t need as much as $1 million for health and human services (doubtful, especially in light of the COVID-19 pandemic), how could we possibly need over $15 million for police? Franklin’s population is 28.1% African American. Given that racial inequities persist throughout the nation, and that police have proven to be a dire public health threat for Black Americans, it is unconscionable to continue to fund police at these disproportionate levels.
+
+I urge you to advocate for a complete overhaul of the Township’s budget that directs at least $10 million away from policing. All over the country, concerned residents are calling for budgets that truly represent the people’s needs. In a global pandemic, it is all the more critical to invest funds in areas like “Community Resources/Public Assistance,” which is currently slated to receive less than $300,000. I urge you to revise the FY 2020 budget to reflect these demands, and show that Franklin Township is committed to true public safety for its Black population and all of its residents.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `Mayor.Kramer@franklinnj.gov,Councilman.Onyejiaka@franklinnj.gov,Councilman.Ram@franklinnj.gov,Councilwoman.Francois@franklinnj.gov,Councilwoman.Pruitt@franklinnj.gov,Councilman.Chase@franklinnj.gov,Councilman.Galtieri@franklinnj.gov,Councilman.Wright@franklinnj.gov,Councilman.Vassanella@franklinnj.gov,lrainone@njrcmlaw.com,annmarie.mccarthy@franklinnj.gov,Robert.Vornlocker@franklinnj.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/franklintownship`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1991,4 @@
 </body>
 
 </html>
+

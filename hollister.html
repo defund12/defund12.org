@@ -70,6 +70,74 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council and Mayor Velazquez</h2>
+  <b>Hollister, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/hollister`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@hollister.ca.gov, coh.dist1@hollister.ca.gov, coh.dist2@hollister.ca.gov, coh.dist3@hollister.ca.gov, coh.dist4@hollister.ca.gov, coh.treasurer@hollister.ca.gov`)">🔗</span>
+        mayor@hollister.ca.gov, coh.dist1@hollister.ca.gov, coh.dist2@hollister.ca.gov, coh.dist3@hollister.ca.gov, coh.dist4@hollister.ca.gov, coh.treasurer@hollister.ca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Velazquez and Hollister City Council,
+
+My name is [YOUR NAME] and I am a resident of Hollister. I am writing to demand that the Hollister City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In the 2018-2019 fiscal year, the City of Hollister allocated an increase of 2.4 million dollars to our police system. In the 2019-2020 fiscal year, Hollister administered another increase of 1.6 million dollars to our police system, equating to an inordinate 44% of our total budget at 26.4 million dollars. This is compared to just 14% of the budget, $8.3 million, allocated towards community services and supplies - an 18% decrease from the 2018-2019 budget. It has been estimated that there will be a 54 billion dollar deficit in the California state budget as a result of the pandemic. Our local San Benito High School is preparing for significantly less funding following this crisis. The city may recoup some of these funds by decreasing the police budget.
+
+I demand that the City Council begin meaningfully defunding the Hollister Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police. I love this community and I want to see it flourish into an even better one. I demand a budget that reflects the actual needs of Hollister residents and works to improve the well being of everyone who lives in and visits this city.
+
+History has shown that police "reform" is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.
+
+I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show us that you care for our community as much as we care for each other and this city.
+
+Thank you for your time,
+
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE #]`)">🔗</span>
+        <br /> <p>Dear Mayor Velazquez and Hollister City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Hollister. I am writing to demand that the Hollister City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.</p>
+
+<p>In the 2018-2019 fiscal year, the City of Hollister allocated an increase of 2.4 million dollars to our police system. In the 2019-2020 fiscal year, Hollister administered another increase of 1.6 million dollars to our police system, equating to an inordinate 44% of our total budget at 26.4 million dollars. This is compared to just 14% of the budget, $8.3 million, allocated towards community services and supplies - an 18% decrease from the 2018-2019 budget. It has been estimated that there will be a 54 billion dollar deficit in the California state budget as a result of the pandemic. Our local San Benito High School is preparing for significantly less funding following this crisis. The city may recoup some of these funds by decreasing the police budget.</p>
+
+<p>I demand that the City Council begin meaningfully defunding the Hollister Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police. I love this community and I want to see it flourish into an even better one. I demand a budget that reflects the actual needs of Hollister residents and works to improve the well being of everyone who lives in and visits this city.</p>
+
+<p>History has shown that police “reform” is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.</p>
+
+<p>I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show us that you care for our community as much as we care for each other and this city.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE #]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1938,66 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Velazquez and Hollister City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Hollister. I am writing to demand that the Hollister City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.<br />
+<br />
+In the 2018-2019 fiscal year, the City of Hollister allocated an increase of 2.4 million dollars to our police system. In the 2019-2020 fiscal year, Hollister administered another increase of 1.6 million dollars to our police system, equating to an inordinate 44% of our total budget at 26.4 million dollars. This is compared to just 14% of the budget, $8.3 million, allocated towards community services and supplies - an 18% decrease from the 2018-2019 budget. It has been estimated that there will be a 54 billion dollar deficit in the California state budget as a result of the pandemic. Our local San Benito High School is preparing for significantly less funding following this crisis. The city may recoup some of these funds by decreasing the police budget.<br />
+<br />
+I demand that the City Council begin meaningfully defunding the Hollister Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police. I love this community and I want to see it flourish into an even better one. I demand a budget that reflects the actual needs of Hollister residents and works to improve the well being of everyone who lives in and visits this city.<br />
+<br />
+History has shown that police "reform" is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.<br />
+<br />
+I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show us that you care for our community as much as we care for each other and this city.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[ADDRESS]<br />
+[EMAIL]<br />
+[PHONE #]`.trim() :
+      `Dear Mayor Velazquez and Hollister City Council,
+
+My name is [YOUR NAME] and I am a resident of Hollister. I am writing to demand that the Hollister City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+
+In the 2018-2019 fiscal year, the City of Hollister allocated an increase of 2.4 million dollars to our police system. In the 2019-2020 fiscal year, Hollister administered another increase of 1.6 million dollars to our police system, equating to an inordinate 44% of our total budget at 26.4 million dollars. This is compared to just 14% of the budget, $8.3 million, allocated towards community services and supplies - an 18% decrease from the 2018-2019 budget. It has been estimated that there will be a 54 billion dollar deficit in the California state budget as a result of the pandemic. Our local San Benito High School is preparing for significantly less funding following this crisis. The city may recoup some of these funds by decreasing the police budget.
+
+I demand that the City Council begin meaningfully defunding the Hollister Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, and affordable housing programs, not police. I love this community and I want to see it flourish into an even better one. I demand a budget that reflects the actual needs of Hollister residents and works to improve the well being of everyone who lives in and visits this city.
+
+History has shown that police "reform" is not enough. No more money, and more importantly, no more lives must be lost to police. We must take a hard look at the way the current system in place fails to serve - and in fact actively harms - our community, and come together to reimagine the role of police in our city.
+
+I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to invest in the people, not the police. We trust that you will do the right thing for us, because we put our trust in you when we elected you to serve us. This is a moment for you to step up and show us that you care for our community as much as we care for each other and this city.
+
+Thank you for your time,
+
+[YOUR NAME]
+[ADDRESS]
+[EMAIL]
+[PHONE #]`.trim()
+    );
+    const recipients = `mayor@hollister.ca.gov,coh.dist1@hollister.ca.gov,coh.dist2@hollister.ca.gov,coh.dist3@hollister.ca.gov,coh.dist4@hollister.ca.gov,coh.treasurer@hollister.ca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/hollister`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2011,4 @@
 </body>
 
 </html>
+

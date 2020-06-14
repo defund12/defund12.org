@@ -70,6 +70,71 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members</h2>
+  <b>Boulder, CO</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/boulder`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `brocketta@bouldercolorado.gov, friendr@bouldercolorado.gov, josephj@bouldercolorado.gov, naglem@bouldercolorado.gov, swetlika@bouldercolorado.gov, wallachm@bouldercolorado.gov, youngm@bouldercolorado.gov, WeaverS@bouldercolorado.gov, yatesb@bouldercolorado.gov, council@bouldercolorado.gov, homeownership@bouldercolorado.gov`)">🔗</span>
+        brocketta@bouldercolorado.gov, friendr@bouldercolorado.gov, josephj@bouldercolorado.gov, naglem@bouldercolorado.gov, swetlika@bouldercolorado.gov, wallachm@bouldercolorado.gov, youngm@bouldercolorado.gov, WeaverS@bouldercolorado.gov, yatesb@bouldercolorado.gov, council@bouldercolorado.gov, homeownership@bouldercolorado.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Council Members of the City of Boulder,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am writing to urge you to defund the Boulder Police Department.
+
+Based on the 2020 budget that you approved in October 2019, the Boulder Police Department received $38,629,082, which represents an ~8% increase since 2018. Meanwhile, the budget for Housing and Human Services for 2020 is $21,655,671, representing a staggering 28% reduction in budget since 2018. Most of those cuts come from a reduction in funding to "Community Investment" for Housing. That's untenable, especially coming from a city that prides itself in promoting equity and being on the progressive edge of history. 
+
+In light of these statistics, and in the wake of the Minneapolis City Council pledging to completely reimagine policing in their city, I strongly support the Boulder Police Department being defunded immediately, and that the money go towards creating affordable housing within city limits. I also want you to consider pledging that money to other community programs that invest in restorative justice, mental health, and our youth. Finally, I would like to see policy enacted around increasing limits on unrelated residents within a home.
+
+I also want to surface the harassment of Zayd Atkinson, a resident of Boulder and a student at Naropa University, by the Boulder Police Department. Instead of funding the harassment of Boulder residents of color, the city should fund affordable housing and other community programs.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear Council Members of the City of Boulder,</p>
+
+<p>My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am writing to urge you to defund the Boulder Police Department.</p>
+
+<p>Based on the 2020 budget that you approved in October 2019, the Boulder Police Department received $38,629,082, which represents an ~8% increase since 2018. Meanwhile, the budget for Housing and Human Services for 2020 is $21,655,671, representing a staggering 28% reduction in budget since 2018. Most of those cuts come from a reduction in funding to “Community Investment” for Housing. That’s untenable, especially coming from a city that prides itself in promoting equity and being on the progressive edge of history.</p>
+
+<p>In light of these statistics, and in the wake of the Minneapolis City Council pledging to completely reimagine policing in their city, I strongly support the Boulder Police Department being defunded immediately, and that the money go towards creating affordable housing within city limits. I also want you to consider pledging that money to other community programs that invest in restorative justice, mental health, and our youth. Finally, I would like to see policy enacted around increasing limits on unrelated residents within a home.</p>
+
+<p>I also want to surface the harassment of Zayd Atkinson, a resident of Boulder and a student at Naropa University, by the Boulder Police Department. Instead of funding the harassment of Boulder residents of color, the city should fund affordable housing and other community programs.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1935,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Council Members of the City of Boulder,<br />
+<br />
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am writing to urge you to defund the Boulder Police Department.<br />
+<br />
+Based on the 2020 budget that you approved in October 2019, the Boulder Police Department received $38,629,082, which represents an ~8% increase since 2018. Meanwhile, the budget for Housing and Human Services for 2020 is $21,655,671, representing a staggering 28% reduction in budget since 2018. Most of those cuts come from a reduction in funding to "Community Investment" for Housing. That's untenable, especially coming from a city that prides itself in promoting equity and being on the progressive edge of history. <br />
+<br />
+In light of these statistics, and in the wake of the Minneapolis City Council pledging to completely reimagine policing in their city, I strongly support the Boulder Police Department being defunded immediately, and that the money go towards creating affordable housing within city limits. I also want you to consider pledging that money to other community programs that invest in restorative justice, mental health, and our youth. Finally, I would like to see policy enacted around increasing limits on unrelated residents within a home.<br />
+<br />
+I also want to surface the harassment of Zayd Atkinson, a resident of Boulder and a student at Naropa University, by the Boulder Police Department. Instead of funding the harassment of Boulder residents of color, the city should fund affordable housing and other community programs.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear Council Members of the City of Boulder,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am writing to urge you to defund the Boulder Police Department.
+
+Based on the 2020 budget that you approved in October 2019, the Boulder Police Department received $38,629,082, which represents an ~8% increase since 2018. Meanwhile, the budget for Housing and Human Services for 2020 is $21,655,671, representing a staggering 28% reduction in budget since 2018. Most of those cuts come from a reduction in funding to "Community Investment" for Housing. That's untenable, especially coming from a city that prides itself in promoting equity and being on the progressive edge of history. 
+
+In light of these statistics, and in the wake of the Minneapolis City Council pledging to completely reimagine policing in their city, I strongly support the Boulder Police Department being defunded immediately, and that the money go towards creating affordable housing within city limits. I also want you to consider pledging that money to other community programs that invest in restorative justice, mental health, and our youth. Finally, I would like to see policy enacted around increasing limits on unrelated residents within a home.
+
+I also want to surface the harassment of Zayd Atkinson, a resident of Boulder and a student at Naropa University, by the Boulder Police Department. Instead of funding the harassment of Boulder residents of color, the city should fund affordable housing and other community programs.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `brocketta@bouldercolorado.gov,friendr@bouldercolorado.gov,josephj@bouldercolorado.gov,naglem@bouldercolorado.gov,swetlika@bouldercolorado.gov,wallachm@bouldercolorado.gov,youngm@bouldercolorado.gov,WeaverS@bouldercolorado.gov,yatesb@bouldercolorado.gov,council@bouldercolorado.gov,homeownership@bouldercolorado.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/boulder`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2006,4 @@
 </body>
 
 </html>
+

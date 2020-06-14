@@ -70,6 +70,71 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the County Manager and Board of Commissioners</h2>
+  <b>Wake County, NC</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/wakecounty`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `commissioners@wakegov.com`)">🔗</span>
+        commissioners@wakegov.com
+      </div>
+      
+      <div class="recipients">
+        <b>CC:</b> <span class="copyToClipboard" onclick="copyToClipboard(this, `denise.hogan@wakegov.com`)">🔗</span>
+        denise.hogan@wakegov.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Wake County Commissioners,
+
+My name is [YOUR NAME] and I am a resident of Wake County. I urge you and the rest of the board to amend or deny the proposed budget for 2021. I would like to redirect money away from Wake Sheriff's Department and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for Fiscal Year 2021 (http://www.wakegov.com/budget/fy21/Documents/Recommended%20Budget%20Book.pdf) suggests cutting ambulances but not law enforcement. Fortunately it does not approve the $8 Million the Sheriff requested for even more officers, but that is less than 10% of the proposed total expenditures ($97,103,645) and it does little to invest in the community. Over 6,000 of my neighbors in Wake County are currently experiencing homelessness and in which nearly 100,000 of our neighbors in Wake County are impoverished and at risk of becoming homeless (www.raleighrescue.org) - these are the issues the board needs to address.
+
+In order to really promote community safety, more law enforcement officers and more detention officers is not the answer - it is more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
+
+I believe we don’t need a militarized police force. Wake County needs to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Greg Ford and Commissioners, will you look out for me, and will you look out for us?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Wake County Commissioners,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Wake County. I urge you and the rest of the board to amend or deny the proposed budget for 2021. I would like to redirect money away from Wake Sheriff’s Department and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for Fiscal Year 2021 (http://www.wakegov.com/budget/fy21/Documents/Recommended%20Budget%20Book.pdf) suggests cutting ambulances but not law enforcement. Fortunately it does not approve the $8 Million the Sheriff requested for even more officers, but that is less than 10% of the proposed total expenditures ($97,103,645) and it does little to invest in the community. Over 6,000 of my neighbors in Wake County are currently experiencing homelessness and in which nearly 100,000 of our neighbors in Wake County are impoverished and at risk of becoming homeless (www.raleighrescue.org) - these are the issues the board needs to address.</p>
+
+<p>In order to really promote community safety, more law enforcement officers and more detention officers is not the answer - it is more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!</p>
+
+<p>I believe we don’t need a militarized police force. Wake County needs to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Greg Ford and Commissioners, will you look out for me, and will you look out for us?</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1935,58 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Wake County Commissioners,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Wake County. I urge you and the rest of the board to amend or deny the proposed budget for 2021. I would like to redirect money away from Wake Sheriff's Department and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for Fiscal Year 2021 (http://www.wakegov.com/budget/fy21/Documents/Recommended%20Budget%20Book.pdf) suggests cutting ambulances but not law enforcement. Fortunately it does not approve the $8 Million the Sheriff requested for even more officers, but that is less than 10% of the proposed total expenditures ($97,103,645) and it does little to invest in the community. Over 6,000 of my neighbors in Wake County are currently experiencing homelessness and in which nearly 100,000 of our neighbors in Wake County are impoverished and at risk of becoming homeless (www.raleighrescue.org) - these are the issues the board needs to address.<br />
+<br />
+In order to really promote community safety, more law enforcement officers and more detention officers is not the answer - it is more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!<br />
+<br />
+I believe we don’t need a militarized police force. Wake County needs to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Greg Ford and Commissioners, will you look out for me, and will you look out for us?<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Wake County Commissioners,
+
+My name is [YOUR NAME] and I am a resident of Wake County. I urge you and the rest of the board to amend or deny the proposed budget for 2021. I would like to redirect money away from Wake Sheriff's Department and into social service programs that will benefit public health and our own communities, especially communities of color. The proposed budget for Fiscal Year 2021 (http://www.wakegov.com/budget/fy21/Documents/Recommended%20Budget%20Book.pdf) suggests cutting ambulances but not law enforcement. Fortunately it does not approve the $8 Million the Sheriff requested for even more officers, but that is less than 10% of the proposed total expenditures ($97,103,645) and it does little to invest in the community. Over 6,000 of my neighbors in Wake County are currently experiencing homelessness and in which nearly 100,000 of our neighbors in Wake County are impoverished and at risk of becoming homeless (www.raleighrescue.org) - these are the issues the board needs to address.
+
+In order to really promote community safety, more law enforcement officers and more detention officers is not the answer - it is more jobs, more educational opportunities, more arts programs, more community centers, more mental health resources, as well as more of a say in how our own communities function. This is a long transition process but change starts with reallocating this funding!
+
+I believe we don’t need a militarized police force. Wake County needs to create a space in which more mental health service providers, social workers, victim/survivor advocates, religious leaders, neighbors, and friends - all of the people who really make up our community - can look out for one another. Greg Ford and Commissioners, will you look out for me, and will you look out for us?
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `commissioners@wakegov.com`;
+    const cc = `denise.hogan@wakegov.com`;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/wakecounty`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2000,4 @@
 </body>
 
 </html>
+

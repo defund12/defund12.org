@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and Aldermen</h2>
+  <b>Evanston, IL</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/evanston`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `shagerty@cityofevanston.org, jfiske@cityofevanston.org, pbraithwaite@cityofevanston.org, mwynne@cityofevanston.org, dwilson@cityofevanston.org, tsuffredin@cityofevanston.org, rsimmons@cityofevanston.org, erevelle@cityofevanston.org, arainey@cityofevanston.org, cfleming@cityofevanston.org`)">🔗</span>
+        shagerty@cityofevanston.org, jfiske@cityofevanston.org, pbraithwaite@cityofevanston.org, mwynne@cityofevanston.org, dwilson@cityofevanston.org, tsuffredin@cityofevanston.org, rsimmons@cityofevanston.org, erevelle@cityofevanston.org, arainey@cityofevanston.org, cfleming@cityofevanston.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [INSERT NAME] and I am a resident of Evanston's [INSERT WARD NUMBER] ward. I am extremely concerned with our City's budget for the Evanston Police Department (EPD) at the expense of critical youth, education, and health services. This fiscal year's budget of $56,000,000 for the police is alarming especially when the EPD has continually brutalized the Black and Brown communities at the expense of funding educational, financial, environmental, and health-based initiatives to fix our cities apparent and gaping racial disparities across the board.
+
+I am therefore writing to demand that the City Council vote to reapportion funds allocated to the EPD to support evidence-based programs and services that, unlike increased police presence, promote the well-being of citizens and reduce crime. It is morally reprehensible to dedicate 34% of the City’s general fund towards policing while hundreds of citizens are homeless and many more lack access to essential services, including food, housing, and necessary mental health resources. Moreover, the 5th ward hasn't had a public K-12 school since desegregation which could be a great starting point for a place to reallocate funds.
+
+I also urge the City Council to enact legislation that holds police accountable and overturn policies that allow police to engage in unlawful behavior with impunity. The newly established Citizen Police Review Commission isn't enough. The police were created to control Black/Brown bodies; it's impossible to reform an inherently racist system. Read the "8 To Abolition," campaign and see how other cities are already defunding their police forces in support of funding community safety, health, and other needs.
+
+Reform is impossible, and we demand you reckon with the EPD's force by firing officers who have traumatized thousands of members of our community. Hold the officers who were involved in the racist and unjust arrests of Iain Bady, Trent Hunt, and Lawrence Crosby to name a few. Black Lives can't matter until we defund the police.
+
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents, especially Black ones, and take immediate action to address their concerns.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [INSERT NAME] and I am a resident of Evanston’s [INSERT WARD NUMBER] ward. I am extremely concerned with our City’s budget for the Evanston Police Department (EPD) at the expense of critical youth, education, and health services. This fiscal year’s budget of $56,000,000 for the police is alarming especially when the EPD has continually brutalized the Black and Brown communities at the expense of funding educational, financial, environmental, and health-based initiatives to fix our cities apparent and gaping racial disparities across the board.</p>
+
+<p>I am therefore writing to demand that the City Council vote to reapportion funds allocated to the EPD to support evidence-based programs and services that, unlike increased police presence, promote the well-being of citizens and reduce crime. It is morally reprehensible to dedicate 34% of the City’s general fund towards policing while hundreds of citizens are homeless and many more lack access to essential services, including food, housing, and necessary mental health resources. Moreover, the 5th ward hasn’t had a public K-12 school since desegregation which could be a great starting point for a place to reallocate funds.</p>
+
+<p>I also urge the City Council to enact legislation that holds police accountable and overturn policies that allow police to engage in unlawful behavior with impunity. The newly established Citizen Police Review Commission isn’t enough. The police were created to control Black/Brown bodies; it’s impossible to reform an inherently racist system. Read the “8 To Abolition,” campaign and see how other cities are already defunding their police forces in support of funding community safety, health, and other needs.</p>
+
+<p>Reform is impossible, and we demand you reckon with the EPD’s force by firing officers who have traumatized thousands of members of our community. Hold the officers who were involved in the racist and unjust arrests of Iain Bady, Trent Hunt, and Lawrence Crosby to name a few. Black Lives can’t matter until we defund the police.</p>
+
+<p>People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents, especially Black ones, and take immediate action to address their concerns.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [INSERT NAME] and I am a resident of Evanston's [INSERT WARD NUMBER] ward. I am extremely concerned with our City's budget for the Evanston Police Department (EPD) at the expense of critical youth, education, and health services. This fiscal year's budget of $56,000,000 for the police is alarming especially when the EPD has continually brutalized the Black and Brown communities at the expense of funding educational, financial, environmental, and health-based initiatives to fix our cities apparent and gaping racial disparities across the board.<br />
+<br />
+I am therefore writing to demand that the City Council vote to reapportion funds allocated to the EPD to support evidence-based programs and services that, unlike increased police presence, promote the well-being of citizens and reduce crime. It is morally reprehensible to dedicate 34% of the City’s general fund towards policing while hundreds of citizens are homeless and many more lack access to essential services, including food, housing, and necessary mental health resources. Moreover, the 5th ward hasn't had a public K-12 school since desegregation which could be a great starting point for a place to reallocate funds.<br />
+<br />
+I also urge the City Council to enact legislation that holds police accountable and overturn policies that allow police to engage in unlawful behavior with impunity. The newly established Citizen Police Review Commission isn't enough. The police were created to control Black/Brown bodies; it's impossible to reform an inherently racist system. Read the "8 To Abolition," campaign and see how other cities are already defunding their police forces in support of funding community safety, health, and other needs.<br />
+<br />
+Reform is impossible, and we demand you reckon with the EPD's force by firing officers who have traumatized thousands of members of our community. Hold the officers who were involved in the racist and unjust arrests of Iain Bady, Trent Hunt, and Lawrence Crosby to name a few. Black Lives can't matter until we defund the police.<br />
+<br />
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents, especially Black ones, and take immediate action to address their concerns.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello,
+
+My name is [INSERT NAME] and I am a resident of Evanston's [INSERT WARD NUMBER] ward. I am extremely concerned with our City's budget for the Evanston Police Department (EPD) at the expense of critical youth, education, and health services. This fiscal year's budget of $56,000,000 for the police is alarming especially when the EPD has continually brutalized the Black and Brown communities at the expense of funding educational, financial, environmental, and health-based initiatives to fix our cities apparent and gaping racial disparities across the board.
+
+I am therefore writing to demand that the City Council vote to reapportion funds allocated to the EPD to support evidence-based programs and services that, unlike increased police presence, promote the well-being of citizens and reduce crime. It is morally reprehensible to dedicate 34% of the City’s general fund towards policing while hundreds of citizens are homeless and many more lack access to essential services, including food, housing, and necessary mental health resources. Moreover, the 5th ward hasn't had a public K-12 school since desegregation which could be a great starting point for a place to reallocate funds.
+
+I also urge the City Council to enact legislation that holds police accountable and overturn policies that allow police to engage in unlawful behavior with impunity. The newly established Citizen Police Review Commission isn't enough. The police were created to control Black/Brown bodies; it's impossible to reform an inherently racist system. Read the "8 To Abolition," campaign and see how other cities are already defunding their police forces in support of funding community safety, health, and other needs.
+
+Reform is impossible, and we demand you reckon with the EPD's force by firing officers who have traumatized thousands of members of our community. Hold the officers who were involved in the racist and unjust arrests of Iain Bady, Trent Hunt, and Lawrence Crosby to name a few. Black Lives can't matter until we defund the police.
+
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents, especially Black ones, and take immediate action to address their concerns.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `shagerty@cityofevanston.org,jfiske@cityofevanston.org,pbraithwaite@cityofevanston.org,mwynne@cityofevanston.org,dwilson@cityofevanston.org,tsuffredin@cityofevanston.org,rsimmons@cityofevanston.org,erevelle@cityofevanston.org,arainey@cityofevanston.org,cfleming@cityofevanston.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/evanston`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

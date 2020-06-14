@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Jersey City, NJ</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/jerseycity`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `info@stevenfulop.com, Fulops@jcnj.org, jwatterman@jcnj.org, RLavarro@jcnj.org, DRivera@jcnj.org, DRidley@jcnj.org, MPrinz-Arey@jcnj.org, RBoggiano@jcnj.org, YSaleh@jcnj.org, JSolomon@jcnj.org, JDRobinson@jcnj.org`)">🔗</span>
+        info@stevenfulop.com, Fulops@jcnj.org, jwatterman@jcnj.org, RLavarro@jcnj.org, DRivera@jcnj.org, DRidley@jcnj.org, MPrinz-Arey@jcnj.org, RBoggiano@jcnj.org, YSaleh@jcnj.org, JSolomon@jcnj.org, JDRobinson@jcnj.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Fulop and Jersey City Council Members:
+
+My name is [YOUR NAME] and I am a resident of Jersey City. While I applaud Mayor Fulop’s commitment to the Obama Foundation pledge to review and reform police use of force policies, I don’t believe this is enough. Police reforms do not necessarily eliminate police violence: the Minneapolis Police Department had already implemented many reforms, and George Floyd was still murdered. I urge that you take radical steps to defund the police and move towards the goal of reimagining public safety without a police department.
+
+Jersey City’s proposed 2020 Municipal Budget has $111,390,803 allocated to the Division of Police. This is by far the largest fraction of the city’s budget, and is nearly 50% higher than the second largest allocation of funds (Division of Fire’s $76,744,661). It’s an egregious statistic compared to $41,306,177 proposed for the entire Department of Public Works; $8,569,377 for the Department of Housing, Economic Development & Commerce; and $5,282,056 for the Department of Health & Human Services. The allocation for the police alone takes up nearly 20% of the entire $612 million budget.
+
+I am writing to demand that the 2020-2021 Jersey City municipal budget be revised to reallocate funds away from police and towards things like education, healthcare infrastructure (including non-coercive mental healthcare), youth programming, and non-coercive drug and alcohol treatment programming.
+
+Mayor Fulop and city councilors, please consider making these changes that are in the best interest of our community now and for the future.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`)">🔗</span>
+        <br /> <p>Dear Mayor Fulop and Jersey City Council Members:</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Jersey City. While I applaud Mayor Fulop’s commitment to the Obama Foundation pledge to review and reform police use of force policies, I don’t believe this is enough. Police reforms do not necessarily eliminate police violence: the Minneapolis Police Department had already implemented many reforms, and George Floyd was still murdered. I urge that you take radical steps to defund the police and move towards the goal of reimagining public safety without a police department.</p>
+
+<p>Jersey City’s proposed 2020 Municipal Budget has $111,390,803 allocated to the Division of Police. This is by far the largest fraction of the city’s budget, and is nearly 50% higher than the second largest allocation of funds (Division of Fire’s $76,744,661). It’s an egregious statistic compared to $41,306,177 proposed for the entire Department of Public Works; $8,569,377 for the Department of Housing, Economic Development &amp; Commerce; and $5,282,056 for the Department of Health &amp; Human Services. The allocation for the police alone takes up nearly 20% of the entire $612 million budget.</p>
+
+<p>I am writing to demand that the 2020-2021 Jersey City municipal budget be revised to reallocate funds away from police and towards things like education, healthcare infrastructure (including non-coercive mental healthcare), youth programming, and non-coercive drug and alcohol treatment programming.</p>
+
+<p>Mayor Fulop and city councilors, please consider making these changes that are in the best interest of our community now and for the future.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Fulop and Jersey City Council Members:<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Jersey City. While I applaud Mayor Fulop’s commitment to the Obama Foundation pledge to review and reform police use of force policies, I don’t believe this is enough. Police reforms do not necessarily eliminate police violence: the Minneapolis Police Department had already implemented many reforms, and George Floyd was still murdered. I urge that you take radical steps to defund the police and move towards the goal of reimagining public safety without a police department.<br />
+<br />
+Jersey City’s proposed 2020 Municipal Budget has $111,390,803 allocated to the Division of Police. This is by far the largest fraction of the city’s budget, and is nearly 50% higher than the second largest allocation of funds (Division of Fire’s $76,744,661). It’s an egregious statistic compared to $41,306,177 proposed for the entire Department of Public Works; $8,569,377 for the Department of Housing, Economic Development & Commerce; and $5,282,056 for the Department of Health & Human Services. The allocation for the police alone takes up nearly 20% of the entire $612 million budget.<br />
+<br />
+I am writing to demand that the 2020-2021 Jersey City municipal budget be revised to reallocate funds away from police and towards things like education, healthcare infrastructure (including non-coercive mental healthcare), youth programming, and non-coercive drug and alcohol treatment programming.<br />
+<br />
+Mayor Fulop and city councilors, please consider making these changes that are in the best interest of our community now and for the future.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE]<br />
+[YOUR EMAIL]`.trim() :
+      `Dear Mayor Fulop and Jersey City Council Members:
+
+My name is [YOUR NAME] and I am a resident of Jersey City. While I applaud Mayor Fulop’s commitment to the Obama Foundation pledge to review and reform police use of force policies, I don’t believe this is enough. Police reforms do not necessarily eliminate police violence: the Minneapolis Police Department had already implemented many reforms, and George Floyd was still murdered. I urge that you take radical steps to defund the police and move towards the goal of reimagining public safety without a police department.
+
+Jersey City’s proposed 2020 Municipal Budget has $111,390,803 allocated to the Division of Police. This is by far the largest fraction of the city’s budget, and is nearly 50% higher than the second largest allocation of funds (Division of Fire’s $76,744,661). It’s an egregious statistic compared to $41,306,177 proposed for the entire Department of Public Works; $8,569,377 for the Department of Housing, Economic Development & Commerce; and $5,282,056 for the Department of Health & Human Services. The allocation for the police alone takes up nearly 20% of the entire $612 million budget.
+
+I am writing to demand that the 2020-2021 Jersey City municipal budget be revised to reallocate funds away from police and towards things like education, healthcare infrastructure (including non-coercive mental healthcare), youth programming, and non-coercive drug and alcohol treatment programming.
+
+Mayor Fulop and city councilors, please consider making these changes that are in the best interest of our community now and for the future.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`.trim()
+    );
+    const recipients = `info@stevenfulop.com,Fulops@jcnj.org,jwatterman@jcnj.org,RLavarro@jcnj.org,DRivera@jcnj.org,DRidley@jcnj.org,MPrinz-Arey@jcnj.org,RBoggiano@jcnj.org,YSaleh@jcnj.org,JSolomon@jcnj.org,JDRobinson@jcnj.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/jerseycity`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

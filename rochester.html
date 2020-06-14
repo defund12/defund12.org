@@ -70,6 +70,64 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council and Mayor</h2>
+  <b>Rochester, NY</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/rochester`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Loretta.Scott@cityofrochester.gov, Malik.Evans@cityofrochester.gov, Mitch.Gruber@cityofrochester.gov, Willie.Lightfoot@cityofrochester.gov, Jacklyn.Ortiz@cityofrochester.gov, LaShay.Harris@cityofrochester.gov, Mary.Lupien@cityofrochester.gov, Michael.Patterson@cityofrochester.gov, Jose.Peo@cityofrochester.gov, info@cityofrochester.gov, Lovely@MayorLovelyWarren.com`)">🔗</span>
+        Loretta.Scott@cityofrochester.gov, Malik.Evans@cityofrochester.gov, Mitch.Gruber@cityofrochester.gov, Willie.Lightfoot@cityofrochester.gov, Jacklyn.Ortiz@cityofrochester.gov, LaShay.Harris@cityofrochester.gov, Mary.Lupien@cityofrochester.gov, Michael.Patterson@cityofrochester.gov, Jose.Peo@cityofrochester.gov, info@cityofrochester.gov, Lovely@MayorLovelyWarren.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To the Rochester City Council and Mayor Lovely Warren,
+
+My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am imploring you to meaningfully restrict the Rochester Police Department’s $95.87 million dollar budget immediately. These funds would be better allocated towards services proven to more effectively promote a safe and equitable community, such as community mental health services, substance abuse treatment services, education, affordable housing programs, and more.
+
+In the proposed 2020-2021 budget, it was mentioned that many residents are dissatisfied with the Rochester City School District and prioritize the cultivation of healthy schools and recreational services for Rochester children. Recreational and youth services are budgeted at just over $12.4 million. The child poverty level in Rochester is one of the highest in the nation, with a rate of 52 percent between 2013 and 2017. The police are allocated over 672% more funds than youth services in the proposed 2020-2021 budget. Additionally, while the city spends $119.1 million in aid to the Rochester City School District, this accounts for only 12.8% of the RCSD budget. If even part of the police budget were allocated to the RCSD, imagine the kind of change that the city could see in its education system.
+
+Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. Police “reform” is not enough. As such, I demand a meaningful reallocation of police department funds towards education, healthcare, and social programs.
+
+Sincerely, 
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To the Rochester City Council and Mayor Lovely Warren,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am imploring you to meaningfully restrict the Rochester Police Department’s $95.87 million dollar budget immediately. These funds would be better allocated towards services proven to more effectively promote a safe and equitable community, such as community mental health services, substance abuse treatment services, education, affordable housing programs, and more.</p>
+
+<p>In the proposed 2020-2021 budget, it was mentioned that many residents are dissatisfied with the Rochester City School District and prioritize the cultivation of healthy schools and recreational services for Rochester children. Recreational and youth services are budgeted at just over $12.4 million. The child poverty level in Rochester is one of the highest in the nation, with a rate of 52 percent between 2013 and 2017. The police are allocated over 672% more funds than youth services in the proposed 2020-2021 budget. Additionally, while the city spends $119.1 million in aid to the Rochester City School District, this accounts for only 12.8% of the RCSD budget. If even part of the police budget were allocated to the RCSD, imagine the kind of change that the city could see in its education system.</p>
+
+<p>Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. Police “reform” is not enough. As such, I demand a meaningful reallocation of police department funds towards education, healthcare, and social programs.</p>
+
+<p>Sincerely, 
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1928,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To the Rochester City Council and Mayor Lovely Warren,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am imploring you to meaningfully restrict the Rochester Police Department’s $95.87 million dollar budget immediately. These funds would be better allocated towards services proven to more effectively promote a safe and equitable community, such as community mental health services, substance abuse treatment services, education, affordable housing programs, and more.<br />
+<br />
+In the proposed 2020-2021 budget, it was mentioned that many residents are dissatisfied with the Rochester City School District and prioritize the cultivation of healthy schools and recreational services for Rochester children. Recreational and youth services are budgeted at just over $12.4 million. The child poverty level in Rochester is one of the highest in the nation, with a rate of 52 percent between 2013 and 2017. The police are allocated over 672% more funds than youth services in the proposed 2020-2021 budget. Additionally, while the city spends $119.1 million in aid to the Rochester City School District, this accounts for only 12.8% of the RCSD budget. If even part of the police budget were allocated to the RCSD, imagine the kind of change that the city could see in its education system.<br />
+<br />
+Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. Police “reform” is not enough. As such, I demand a meaningful reallocation of police department funds towards education, healthcare, and social programs.<br />
+<br />
+Sincerely, <br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To the Rochester City Council and Mayor Lovely Warren,
+
+My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am imploring you to meaningfully restrict the Rochester Police Department’s $95.87 million dollar budget immediately. These funds would be better allocated towards services proven to more effectively promote a safe and equitable community, such as community mental health services, substance abuse treatment services, education, affordable housing programs, and more.
+
+In the proposed 2020-2021 budget, it was mentioned that many residents are dissatisfied with the Rochester City School District and prioritize the cultivation of healthy schools and recreational services for Rochester children. Recreational and youth services are budgeted at just over $12.4 million. The child poverty level in Rochester is one of the highest in the nation, with a rate of 52 percent between 2013 and 2017. The police are allocated over 672% more funds than youth services in the proposed 2020-2021 budget. Additionally, while the city spends $119.1 million in aid to the Rochester City School District, this accounts for only 12.8% of the RCSD budget. If even part of the police budget were allocated to the RCSD, imagine the kind of change that the city could see in its education system.
+
+Much scholarship shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting community safety than policing and prisons. Police “reform” is not enough. As such, I demand a meaningful reallocation of police department funds towards education, healthcare, and social programs.
+
+Sincerely, 
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `Loretta.Scott@cityofrochester.gov,Malik.Evans@cityofrochester.gov,Mitch.Gruber@cityofrochester.gov,Willie.Lightfoot@cityofrochester.gov,Jacklyn.Ortiz@cityofrochester.gov,LaShay.Harris@cityofrochester.gov,Mary.Lupien@cityofrochester.gov,Michael.Patterson@cityofrochester.gov,Jose.Peo@cityofrochester.gov,info@cityofrochester.gov,Lovely@MayorLovelyWarren.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/rochester`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1991,4 @@
 </body>
 
 </html>
+

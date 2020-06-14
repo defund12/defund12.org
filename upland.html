@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Upland, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/upland`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `dstone@ci.upland.ca.us, jelliott@ci.upland.ca.us, zuniga@ci.upland.ca.us, bvelto@ci.upland.ca.us`)">🔗</span>
+        dstone@ci.upland.ca.us, jelliott@ci.upland.ca.us, zuniga@ci.upland.ca.us, bvelto@ci.upland.ca.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Upland Mayor and City Council,
+
+My name is [YOUR NAME], and I am a resident of Upland. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.
+
+We are in the midst of widespread upheaval over the systemic violence of policing. This, combined with a global pandemic with severe economic consequences, brings the issue of police budgeting to the forefront.
+
+The 2019-20 Upland budget called for 54% of its General Fund Expenditure ($22.6 million of $41.9 million) to go towards the Upland Police Department, an even larger proportion than cities like Oakland (41%) and Houston (32%). Furthermore, the majority of the 460K increase to the maintenance and operations budget belonged to the police, even as communities have become safer in Upland and nationwide.
+
+I demand the Upland City Council meaningfully defund Upland PD. I join the calls of those across the country demanding a budget that adequately and effectively meets the needs of its citizens during this trying and uncertain time.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`)">🔗</span>
+        <br /> <p>Dear Upland Mayor and City Council,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Upland. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.</p>
+
+<p>We are in the midst of widespread upheaval over the systemic violence of policing. This, combined with a global pandemic with severe economic consequences, brings the issue of police budgeting to the forefront.</p>
+
+<p>The 2019-20 Upland budget called for 54% of its General Fund Expenditure ($22.6 million of $41.9 million) to go towards the Upland Police Department, an even larger proportion than cities like Oakland (41%) and Houston (32%). Furthermore, the majority of the 460K increase to the maintenance and operations budget belonged to the police, even as communities have become safer in Upland and nationwide.</p>
+
+<p>I demand the Upland City Council meaningfully defund Upland PD. I join the calls of those across the country demanding a budget that adequately and effectively meets the needs of its citizens during this trying and uncertain time.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Upland Mayor and City Council,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Upland. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.<br />
+<br />
+We are in the midst of widespread upheaval over the systemic violence of policing. This, combined with a global pandemic with severe economic consequences, brings the issue of police budgeting to the forefront.<br />
+<br />
+The 2019-20 Upland budget called for 54% of its General Fund Expenditure ($22.6 million of $41.9 million) to go towards the Upland Police Department, an even larger proportion than cities like Oakland (41%) and Houston (32%). Furthermore, the majority of the 460K increase to the maintenance and operations budget belonged to the police, even as communities have become safer in Upland and nationwide.<br />
+<br />
+I demand the Upland City Council meaningfully defund Upland PD. I join the calls of those across the country demanding a budget that adequately and effectively meets the needs of its citizens during this trying and uncertain time.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE]<br />
+[YOUR EMAIL]`.trim() :
+      `Dear Upland Mayor and City Council,
+
+My name is [YOUR NAME], and I am a resident of Upland. I am writing to demand that the City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.
+
+We are in the midst of widespread upheaval over the systemic violence of policing. This, combined with a global pandemic with severe economic consequences, brings the issue of police budgeting to the forefront.
+
+The 2019-20 Upland budget called for 54% of its General Fund Expenditure ($22.6 million of $41.9 million) to go towards the Upland Police Department, an even larger proportion than cities like Oakland (41%) and Houston (32%). Furthermore, the majority of the 460K increase to the maintenance and operations budget belonged to the police, even as communities have become safer in Upland and nationwide.
+
+I demand the Upland City Council meaningfully defund Upland PD. I join the calls of those across the country demanding a budget that adequately and effectively meets the needs of its citizens during this trying and uncertain time.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`.trim()
+    );
+    const recipients = `dstone@ci.upland.ca.us,jelliott@ci.upland.ca.us,zuniga@ci.upland.ca.us,bvelto@ci.upland.ca.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/upland`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

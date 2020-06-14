@@ -70,6 +70,64 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Riverside Mayor and City Council</h2>
+  <b>Riverside, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/riverside`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `EEdwards@riversideca.gov, asmelendrez@riversideca.gov, RFierro@riversideca.gov, cconder@riversideca.gov, GPlascencia@riversideca.gov, jperry@riversideca.gov, SHemenway@riversideca.gov, 2mayor@riversideca.gov`)">🔗</span>
+        EEdwards@riversideca.gov, asmelendrez@riversideca.gov, RFierro@riversideca.gov, cconder@riversideca.gov, GPlascencia@riversideca.gov, jperry@riversideca.gov, SHemenway@riversideca.gov, 2mayor@riversideca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Bailey and Riverside City Council Members,
+
+My name is [YOUR NAME] and I am a Riverside resident. I am writing to demand that the Riverside City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+In 2019, the City of Riverside directed $123,598,355 of General Fund money to the police, representing 44% of the total budget alongside additional Measure Z funds. On June 16, the City Council will adopt an Emergency Budget to respond to shortfalls related to the COVID-19 crisis.
+The proposed budget increases the police budget both numerically and as a percentage of the general fund. Given the circumstances of the public health crisis, it is more urgent than ever that the City Council go back to the drawing board and redirect a significant portion of the police budget toward programs that support a healthy and secure Riverside. I demand a budget that reflects the real needs of Riverside residents including affordable housing programs, community-based mental health services, and more.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Bailey and Riverside City Council Members,</p>
+
+<p>My name is [YOUR NAME] and I am a Riverside resident. I am writing to demand that the Riverside City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.</p>
+
+<p>In 2019, the City of Riverside directed $123,598,355 of General Fund money to the police, representing 44% of the total budget alongside additional Measure Z funds. On June 16, the City Council will adopt an Emergency Budget to respond to shortfalls related to the COVID-19 crisis.
+The proposed budget increases the police budget both numerically and as a percentage of the general fund. Given the circumstances of the public health crisis, it is more urgent than ever that the City Council go back to the drawing board and redirect a significant portion of the police budget toward programs that support a healthy and secure Riverside. I demand a budget that reflects the real needs of Riverside residents including affordable housing programs, community-based mental health services, and more.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1928,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Bailey and Riverside City Council Members,<br />
+<br />
+My name is [YOUR NAME] and I am a Riverside resident. I am writing to demand that the Riverside City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.<br />
+<br />
+In 2019, the City of Riverside directed $123,598,355 of General Fund money to the police, representing 44% of the total budget alongside additional Measure Z funds. On June 16, the City Council will adopt an Emergency Budget to respond to shortfalls related to the COVID-19 crisis.<br />
+The proposed budget increases the police budget both numerically and as a percentage of the general fund. Given the circumstances of the public health crisis, it is more urgent than ever that the City Council go back to the drawing board and redirect a significant portion of the police budget toward programs that support a healthy and secure Riverside. I demand a budget that reflects the real needs of Riverside residents including affordable housing programs, community-based mental health services, and more.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Bailey and Riverside City Council Members,
+
+My name is [YOUR NAME] and I am a Riverside resident. I am writing to demand that the Riverside City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+In 2019, the City of Riverside directed $123,598,355 of General Fund money to the police, representing 44% of the total budget alongside additional Measure Z funds. On June 16, the City Council will adopt an Emergency Budget to respond to shortfalls related to the COVID-19 crisis.
+The proposed budget increases the police budget both numerically and as a percentage of the general fund. Given the circumstances of the public health crisis, it is more urgent than ever that the City Council go back to the drawing board and redirect a significant portion of the police budget toward programs that support a healthy and secure Riverside. I demand a budget that reflects the real needs of Riverside residents including affordable housing programs, community-based mental health services, and more.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `EEdwards@riversideca.gov,asmelendrez@riversideca.gov,RFierro@riversideca.gov,cconder@riversideca.gov,GPlascencia@riversideca.gov,jperry@riversideca.gov,SHemenway@riversideca.gov,2mayor@riversideca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/riverside`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1991,4 @@
 </body>
 
 </html>
+

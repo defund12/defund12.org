@@ -70,6 +70,80 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members</h2>
+  <b>Madison, WI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/madison`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `district1@cityofmadison.com, district2@cityofmadison.com, district3@cityofmadison.com, district4@cityofmadison.com, district5@cityofmadison.com, district6@cityofmadison.com, district7@cityofmadison.com, district8@cityofmadison.com, district9@cityofmadison.com, district10@cityofmadison.com, district11@cityofmadison.com, district12@cityofmadison.com, district13@cityofmadison.com, district14@cityofmadison.com, district15@cityofmadison.com, district16@cityofmadison.com, district17@cityofmadison.com, district18@cityofmadison.com, district19@cityofmadison.com, district20@cityofmadison.com`)">🔗</span>
+        district1@cityofmadison.com, district2@cityofmadison.com, district3@cityofmadison.com, district4@cityofmadison.com, district5@cityofmadison.com, district6@cityofmadison.com, district7@cityofmadison.com, district8@cityofmadison.com, district9@cityofmadison.com, district10@cityofmadison.com, district11@cityofmadison.com, district12@cityofmadison.com, district13@cityofmadison.com, district14@cityofmadison.com, district15@cityofmadison.com, district16@cityofmadison.com, district17@cityofmadison.com, district18@cityofmadison.com, district19@cityofmadison.com, district20@cityofmadison.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Madison Council Members and Alderpersons,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY].
+
+I am extremely concerned with the City of Madison's inordinate investment in the Madison Police Department (MPD) at the expense of critical youth, education, and health services.
+
+I am asking that the Madison Common Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that the Council may find ways to redirect money away from Madison Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from MPD, and towards sectors that facilitate the dismantling of racial and class inequality. 
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. As such, I demand more aggressive financial support be directed to those areas.
+
+I also urge the Madison Common Council to enact legislation that holds police accountable and to overturn policies that allow police to engage in unlawful behavior with impunity. These 
+steps to reform the police department are also necessary now but true justice will only occur when the police are defunded. 
+
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
+
+Can I count on you to consider an alternative budget that puts a focus on social service programs?
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Madison Council Members and Alderpersons,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY].</p>
+
+<p>I am extremely concerned with the City of Madison’s inordinate investment in the Madison Police Department (MPD) at the expense of critical youth, education, and health services.</p>
+
+<p>I am asking that the Madison Common Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that the Council may find ways to redirect money away from Madison Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from MPD, and towards sectors that facilitate the dismantling of racial and class inequality.</p>
+
+<p>Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. As such, I demand more aggressive financial support be directed to those areas.</p>
+
+<p>I also urge the Madison Common Council to enact legislation that holds police accountable and to overturn policies that allow police to engage in unlawful behavior with impunity. These 
+steps to reform the police department are also necessary now but true justice will only occur when the police are defunded.</p>
+
+<p>People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.</p>
+
+<p>Can I count on you to consider an alternative budget that puts a focus on social service programs?
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1944,72 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Madison Council Members and Alderpersons,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY].<br />
+<br />
+I am extremely concerned with the City of Madison's inordinate investment in the Madison Police Department (MPD) at the expense of critical youth, education, and health services.<br />
+<br />
+I am asking that the Madison Common Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that the Council may find ways to redirect money away from Madison Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from MPD, and towards sectors that facilitate the dismantling of racial and class inequality. <br />
+<br />
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. As such, I demand more aggressive financial support be directed to those areas.<br />
+<br />
+I also urge the Madison Common Council to enact legislation that holds police accountable and to overturn policies that allow police to engage in unlawful behavior with impunity. These <br />
+steps to reform the police department are also necessary now but true justice will only occur when the police are defunded. <br />
+<br />
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.<br />
+<br />
+Can I count on you to consider an alternative budget that puts a focus on social service programs?<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Madison Council Members and Alderpersons,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/CITY].
+
+I am extremely concerned with the City of Madison's inordinate investment in the Madison Police Department (MPD) at the expense of critical youth, education, and health services.
+
+I am asking that the Madison Common Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that the Council may find ways to redirect money away from Madison Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from MPD, and towards sectors that facilitate the dismantling of racial and class inequality. 
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. As such, I demand more aggressive financial support be directed to those areas.
+
+I also urge the Madison Common Council to enact legislation that holds police accountable and to overturn policies that allow police to engage in unlawful behavior with impunity. These 
+steps to reform the police department are also necessary now but true justice will only occur when the police are defunded. 
+
+People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
+
+Can I count on you to consider an alternative budget that puts a focus on social service programs?
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `district1@cityofmadison.com,district2@cityofmadison.com,district3@cityofmadison.com,district4@cityofmadison.com,district5@cityofmadison.com,district6@cityofmadison.com,district7@cityofmadison.com,district8@cityofmadison.com,district9@cityofmadison.com,district10@cityofmadison.com,district11@cityofmadison.com,district12@cityofmadison.com,district13@cityofmadison.com,district14@cityofmadison.com,district15@cityofmadison.com,district16@cityofmadison.com,district17@cityofmadison.com,district18@cityofmadison.com,district19@cityofmadison.com,district20@cityofmadison.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/madison`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2023,4 @@
 </body>
 
 </html>
+

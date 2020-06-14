@@ -70,6 +70,77 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Councilors</h2>
+  <b>Memphis, TN</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/memphis`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `JFord.Canale@memphistn.gov, Jeff.Warren@memphistn.gov, Chase.Carlisle@memphistn.gov, Martavius.Jones@memphistn.gov, Cheyenne.Johnson@memphistn.gov, JB.Smileyjr@memphistn.gov, Michalyn.Easter-Thomas@memphistn.gov, Edmund.FordSr@memphistn.gov, Worth.Morgan@memphistn.gov, Jamita.Swearengen@memphistn.gov, frank.colvettjr@memphistn.gov, Rhonda.Logan@memphistn.gov, Patrice.Robinson@memphistn.gov`)">🔗</span>
+        JFord.Canale@memphistn.gov, Jeff.Warren@memphistn.gov, Chase.Carlisle@memphistn.gov, Martavius.Jones@memphistn.gov, Cheyenne.Johnson@memphistn.gov, JB.Smileyjr@memphistn.gov, Michalyn.Easter-Thomas@memphistn.gov, Edmund.FordSr@memphistn.gov, Worth.Morgan@memphistn.gov, Jamita.Swearengen@memphistn.gov, frank.colvettjr@memphistn.gov, Rhonda.Logan@memphistn.gov, Patrice.Robinson@memphistn.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Memphis City Councilors,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Memphis PD and into the following social services and community needs: 
+* Community Development and Job Creation;
+* COVID Relief during this crisis and long-term healthcare;
+* Education;
+* Housing;
+* Child Care;
+* Parks & Recreation. 
+
+I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources that promote equity and community well-being for Memphis residents. 
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear Memphis City Councilors,</p>
+
+<p>My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Memphis PD and into the following social services and community needs:</p>
+<ul>
+  <li>Community Development and Job Creation;</li>
+  <li>COVID Relief during this crisis and long-term healthcare;</li>
+  <li>Education;</li>
+  <li>Housing;</li>
+  <li>Child Care;</li>
+  <li>Parks &amp; Recreation.</li>
+</ul>
+
+<p>I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources that promote equity and community well-being for Memphis residents.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1941,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Memphis City Councilors,<br />
+<br />
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Memphis PD and into the following social services and community needs: <br />
+* Community Development and Job Creation;<br />
+* COVID Relief during this crisis and long-term healthcare;<br />
+* Education;<br />
+* Housing;<br />
+* Child Care;<br />
+* Parks & Recreation. <br />
+<br />
+I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources that promote equity and community well-being for Memphis residents. <br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear Memphis City Councilors,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to redirect money away from the Memphis PD and into the following social services and community needs: 
+* Community Development and Job Creation;
+* COVID Relief during this crisis and long-term healthcare;
+* Education;
+* Housing;
+* Child Care;
+* Parks & Recreation. 
+
+I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources that promote equity and community well-being for Memphis residents. 
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `JFord.Canale@memphistn.gov,Jeff.Warren@memphistn.gov,Chase.Carlisle@memphistn.gov,Martavius.Jones@memphistn.gov,Cheyenne.Johnson@memphistn.gov,JB.Smileyjr@memphistn.gov,Michalyn.Easter-Thomas@memphistn.gov,Edmund.FordSr@memphistn.gov,Worth.Morgan@memphistn.gov,Jamita.Swearengen@memphistn.gov,frank.colvettjr@memphistn.gov,Rhonda.Logan@memphistn.gov,Patrice.Robinson@memphistn.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/memphis`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2016,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Knoxville, TN</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/knoxville`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@knoxvilletn.gov, bhevans@knoxvilletn.gov, gmckenzie@knoxvilletn.gov, tsmith@knoxvilletn.gov, aroberto@knoxvilletn.gov, ssingh@knoxvilletn.gov, lrider@knoxvilletn.gov, cathomas@knoxvilletn.gov, lfugate@knoxvilletn.gov, jtesterman@knoxvilletn.gov, amparker@knoxvilletn.gov, wjohnson@knoxvilletn.gov, dbrace@knoxvilletn.gov, egill@knoxvilletn.gov, swelch@knoxvilletn.gov`)">🔗</span>
+        mayor@knoxvilletn.gov, bhevans@knoxvilletn.gov, gmckenzie@knoxvilletn.gov, tsmith@knoxvilletn.gov, aroberto@knoxvilletn.gov, ssingh@knoxvilletn.gov, lrider@knoxvilletn.gov, cathomas@knoxvilletn.gov, lfugate@knoxvilletn.gov, jtesterman@knoxvilletn.gov, amparker@knoxvilletn.gov, wjohnson@knoxvilletn.gov, dbrace@knoxvilletn.gov, egill@knoxvilletn.gov, swelch@knoxvilletn.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello Knoxville Elected Officials,
+
+My name is [YOUR NAME], and my address is [YOUR ADDRESS]. I am writing to say that I am strongly against the provisions found in the FY2020-2021 budget.
+
+The mayor’s budget would spend $60.7 million ($58 million of which comes directly from the Knoxville City General Fund of $164.5 million, or 35%) on a “public safety” system that does not keep us safe. The vast majority of that money would be spent on police, jails, and courts. That means the mayor wants to spend more on cops and cages than on almost all public goods combined. Fully 1/3 of the full-time government positions in this city are police officers. This isn’t how we create public safety. True public safety requires fully-funded and community-controlled resources, not more police and jails.
+
+In the midst of a budget crisis, the mayor is proposing we increase spending on police and jails, and decrease spending on social services, transit, and other critical public goods. This is unacceptable and will not keep us safe. The mayor has stressed the necessity of fiscal austerity during these trying times, but these cuts come at the expense of necessary community services instead of a massively overfunded police force.
+
+Over-policed communities are not safe communities. Thriving communities are safe communities, and communities thrive when they are well-resourced. We deserve a budget that divests from policing and jails and uses that money to invest in our community.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello Knoxville Elected Officials,</p>
+
+<p>My name is [YOUR NAME], and my address is [YOUR ADDRESS]. I am writing to say that I am strongly against the provisions found in the FY2020-2021 budget.</p>
+
+<p>The mayor’s budget would spend $60.7 million ($58 million of which comes directly from the Knoxville City General Fund of $164.5 million, or 35%) on a “public safety” system that does not keep us safe. The vast majority of that money would be spent on police, jails, and courts. That means the mayor wants to spend more on cops and cages than on almost all public goods combined. Fully 1/3 of the full-time government positions in this city are police officers. This isn’t how we create public safety. True public safety requires fully-funded and community-controlled resources, not more police and jails.</p>
+
+<p>In the midst of a budget crisis, the mayor is proposing we increase spending on police and jails, and decrease spending on social services, transit, and other critical public goods. This is unacceptable and will not keep us safe. The mayor has stressed the necessity of fiscal austerity during these trying times, but these cuts come at the expense of necessary community services instead of a massively overfunded police force.</p>
+
+<p>Over-policed communities are not safe communities. Thriving communities are safe communities, and communities thrive when they are well-resourced. We deserve a budget that divests from policing and jails and uses that money to invest in our community.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello Knoxville Elected Officials,<br />
+<br />
+My name is [YOUR NAME], and my address is [YOUR ADDRESS]. I am writing to say that I am strongly against the provisions found in the FY2020-2021 budget.<br />
+<br />
+The mayor’s budget would spend $60.7 million ($58 million of which comes directly from the Knoxville City General Fund of $164.5 million, or 35%) on a “public safety” system that does not keep us safe. The vast majority of that money would be spent on police, jails, and courts. That means the mayor wants to spend more on cops and cages than on almost all public goods combined. Fully 1/3 of the full-time government positions in this city are police officers. This isn’t how we create public safety. True public safety requires fully-funded and community-controlled resources, not more police and jails.<br />
+<br />
+In the midst of a budget crisis, the mayor is proposing we increase spending on police and jails, and decrease spending on social services, transit, and other critical public goods. This is unacceptable and will not keep us safe. The mayor has stressed the necessity of fiscal austerity during these trying times, but these cuts come at the expense of necessary community services instead of a massively overfunded police force.<br />
+<br />
+Over-policed communities are not safe communities. Thriving communities are safe communities, and communities thrive when they are well-resourced. We deserve a budget that divests from policing and jails and uses that money to invest in our community.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello Knoxville Elected Officials,
+
+My name is [YOUR NAME], and my address is [YOUR ADDRESS]. I am writing to say that I am strongly against the provisions found in the FY2020-2021 budget.
+
+The mayor’s budget would spend $60.7 million ($58 million of which comes directly from the Knoxville City General Fund of $164.5 million, or 35%) on a “public safety” system that does not keep us safe. The vast majority of that money would be spent on police, jails, and courts. That means the mayor wants to spend more on cops and cages than on almost all public goods combined. Fully 1/3 of the full-time government positions in this city are police officers. This isn’t how we create public safety. True public safety requires fully-funded and community-controlled resources, not more police and jails.
+
+In the midst of a budget crisis, the mayor is proposing we increase spending on police and jails, and decrease spending on social services, transit, and other critical public goods. This is unacceptable and will not keep us safe. The mayor has stressed the necessity of fiscal austerity during these trying times, but these cuts come at the expense of necessary community services instead of a massively overfunded police force.
+
+Over-policed communities are not safe communities. Thriving communities are safe communities, and communities thrive when they are well-resourced. We deserve a budget that divests from policing and jails and uses that money to invest in our community.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@knoxvilletn.gov,bhevans@knoxvilletn.gov,gmckenzie@knoxvilletn.gov,tsmith@knoxvilletn.gov,aroberto@knoxvilletn.gov,ssingh@knoxvilletn.gov,lrider@knoxvilletn.gov,cathomas@knoxvilletn.gov,lfugate@knoxvilletn.gov,jtesterman@knoxvilletn.gov,amparker@knoxvilletn.gov,wjohnson@knoxvilletn.gov,dbrace@knoxvilletn.gov,egill@knoxvilletn.gov,swelch@knoxvilletn.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/knoxville`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+

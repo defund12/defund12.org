@@ -70,6 +70,78 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Ripon, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/ripon`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jparks@cityofripon.org, ddegraaf@cityofripon.org, uecker105@yahoo.com, mrestuccia@cityofripon.org, leo.zuber@yahoo.com, kwerner@cityofripon.org, jkilgore@cityofripon.org`)">🔗</span>
+        jparks@cityofripon.org, ddegraaf@cityofripon.org, uecker105@yahoo.com, mrestuccia@cityofripon.org, leo.zuber@yahoo.com, kwerner@cityofripon.org, jkilgore@cityofripon.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To the City Administrator and the Ripon City Council,
+
+My name is [YOUR NAME], and I am a resident of Ripon.
+
+This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police brutality, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Accordingly, it has come to my attention that the budget for 2019-2020 is poorly allocated. I am emailing you to demand an ethical and equal reallocation of the Ripon expense budget away from Ripon Police Department and towards the community center, parks, and the library.
+
+Redirect money away from the police department and into these programs that will benefit public health and the community. The budget for 2019-2020 suggests that the largest fraction of the city's budget should go to policing ($6,557,258) whereas the budget for the community center is a mere $98,971.
+
+If this is truly representative of the council's thoughts on how funds should be allocated, I am ashamed to call Ripon my home, and I am ashamed to call you my elected officials.
+
+Transitioning funding away from policing and into community programming such as educational opportunities, arts programs, community centers, healthcare, and mental health resources will strengthen our communities and make them safer for everyone. When every person has the resources they need to be healthy and safe, our community can thrive. This is a long transition process but change starts with reallocating this funding!
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To the City Administrator and the Ripon City Council,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Ripon.</p>
+
+<p>This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police brutality, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Accordingly, it has come to my attention that the budget for 2019-2020 is poorly allocated. I am emailing you to demand an ethical and equal reallocation of the Ripon expense budget away from Ripon Police Department and towards the community center, parks, and the library.</p>
+
+<p>Redirect money away from the police department and into these programs that will benefit public health and the community. The budget for 2019-2020 suggests that the largest fraction of the city’s budget should go to policing ($6,557,258) whereas the budget for the community center is a mere $98,971.</p>
+
+<p>If this is truly representative of the council’s thoughts on how funds should be allocated, I am ashamed to call Ripon my home, and I am ashamed to call you my elected officials.</p>
+
+<p>Transitioning funding away from policing and into community programming such as educational opportunities, arts programs, community centers, healthcare, and mental health resources will strengthen our communities and make them safer for everyone. When every person has the resources they need to be healthy and safe, our community can thrive. This is a long transition process but change starts with reallocating this funding!</p>
+
+<p>We can be a beacon for other cities to follow if only we have the courage to change.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1942,70 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To the City Administrator and the Ripon City Council,<br />
+<br />
+My name is [YOUR NAME], and I am a resident of Ripon.<br />
+<br />
+This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police brutality, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Accordingly, it has come to my attention that the budget for 2019-2020 is poorly allocated. I am emailing you to demand an ethical and equal reallocation of the Ripon expense budget away from Ripon Police Department and towards the community center, parks, and the library.<br />
+<br />
+Redirect money away from the police department and into these programs that will benefit public health and the community. The budget for 2019-2020 suggests that the largest fraction of the city's budget should go to policing ($6,557,258) whereas the budget for the community center is a mere $98,971.<br />
+<br />
+If this is truly representative of the council's thoughts on how funds should be allocated, I am ashamed to call Ripon my home, and I am ashamed to call you my elected officials.<br />
+<br />
+Transitioning funding away from policing and into community programming such as educational opportunities, arts programs, community centers, healthcare, and mental health resources will strengthen our communities and make them safer for everyone. When every person has the resources they need to be healthy and safe, our community can thrive. This is a long transition process but change starts with reallocating this funding!<br />
+<br />
+We can be a beacon for other cities to follow if only we have the courage to change.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To the City Administrator and the Ripon City Council,
+
+My name is [YOUR NAME], and I am a resident of Ripon.
+
+This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police brutality, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Accordingly, it has come to my attention that the budget for 2019-2020 is poorly allocated. I am emailing you to demand an ethical and equal reallocation of the Ripon expense budget away from Ripon Police Department and towards the community center, parks, and the library.
+
+Redirect money away from the police department and into these programs that will benefit public health and the community. The budget for 2019-2020 suggests that the largest fraction of the city's budget should go to policing ($6,557,258) whereas the budget for the community center is a mere $98,971.
+
+If this is truly representative of the council's thoughts on how funds should be allocated, I am ashamed to call Ripon my home, and I am ashamed to call you my elected officials.
+
+Transitioning funding away from policing and into community programming such as educational opportunities, arts programs, community centers, healthcare, and mental health resources will strengthen our communities and make them safer for everyone. When every person has the resources they need to be healthy and safe, our community can thrive. This is a long transition process but change starts with reallocating this funding!
+
+We can be a beacon for other cities to follow if only we have the courage to change.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `jparks@cityofripon.org,ddegraaf@cityofripon.org,uecker105@yahoo.com,mrestuccia@cityofripon.org,leo.zuber@yahoo.com,kwerner@cityofripon.org,jkilgore@cityofripon.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/ripon`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2019,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,62 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Gunter and Council Members</h2>
+  <b>Salinas, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/salinas`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `cityclerkwebmail@ci.salinas.ca.us, salinasmayor@ci.salinas.ca.us, district1@ci.salinas.ca.us, district2@ci.salinas.ca.us, district4@ci.salinas.ca.us, district5@ci.salinas.ca.us, district6@ci.salinas.ca.us, district3@ci.salinas.ca.us`)">🔗</span>
+        cityclerkwebmail@ci.salinas.ca.us, salinasmayor@ci.salinas.ca.us, district1@ci.salinas.ca.us, district2@ci.salinas.ca.us, district4@ci.salinas.ca.us, district5@ci.salinas.ca.us, district6@ci.salinas.ca.us, district3@ci.salinas.ca.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Gunter and Salinas City Councilmembers,
+
+I am writing to you as a resident of Salinas, asking that you budget for our community. As the nation mourns the loss of not only George Floyd, but the deaths of countless people of color at the hands of local law enforcement, now more than ever, we need to support our children and families.
+
+Our local police department is set to receive an increase of $447,026 for 2020-2021 in their budget which is already nearly half of our entire general fund (45%). At the same time, our Library and Community Services Department is projected to lose $326,000 of their funding having only received 8% of our budget as it were.
+
+This is unacceptable. The youngest members of our community deserve access to clean parks, online learning spaces and library resources, and to continue to have access to the quality sports, arts, and cultural programming taking place in our recreation centers. Furthermore, we need to fund mental health professionals, crisis de-escalators, and other resources for those suffering from domestic abuse and addiction, who are too often subjected to unjust policing.
+
+Please take action to make the necessary investments for the future of our community. 
+
+Sincerely,
+[Resident Name, District (optional)]`)">🔗</span>
+        <br /> <p>Dear Mayor Gunter and Salinas City Councilmembers,</p>
+
+<p>I am writing to you as a resident of Salinas, asking that you budget for our community. As the nation mourns the loss of not only George Floyd, but the deaths of countless people of color at the hands of local law enforcement, now more than ever, we need to support our children and families.</p>
+
+<p>Our local police department is set to receive an increase of $447,026 for 2020-2021 in their budget which is already nearly half of our entire general fund (45%). At the same time, our Library and Community Services Department is projected to lose $326,000 of their funding having only received 8% of our budget as it were.</p>
+
+<p>This is unacceptable. The youngest members of our community deserve access to clean parks, online learning spaces and library resources, and to continue to have access to the quality sports, arts, and cultural programming taking place in our recreation centers. Furthermore, we need to fund mental health professionals, crisis de-escalators, and other resources for those suffering from domestic abuse and addiction, who are too often subjected to unjust policing.</p>
+
+<p>Please take action to make the necessary investments for the future of our community.</p>
+
+<p>Sincerely,
+[Resident Name, District (optional)]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1926,54 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Gunter and Salinas City Councilmembers,<br />
+<br />
+I am writing to you as a resident of Salinas, asking that you budget for our community. As the nation mourns the loss of not only George Floyd, but the deaths of countless people of color at the hands of local law enforcement, now more than ever, we need to support our children and families.<br />
+<br />
+Our local police department is set to receive an increase of $447,026 for 2020-2021 in their budget which is already nearly half of our entire general fund (45%). At the same time, our Library and Community Services Department is projected to lose $326,000 of their funding having only received 8% of our budget as it were.<br />
+<br />
+This is unacceptable. The youngest members of our community deserve access to clean parks, online learning spaces and library resources, and to continue to have access to the quality sports, arts, and cultural programming taking place in our recreation centers. Furthermore, we need to fund mental health professionals, crisis de-escalators, and other resources for those suffering from domestic abuse and addiction, who are too often subjected to unjust policing.<br />
+<br />
+Please take action to make the necessary investments for the future of our community. <br />
+<br />
+Sincerely,<br />
+[Resident Name, District (optional)]`.trim() :
+      `Dear Mayor Gunter and Salinas City Councilmembers,
+
+I am writing to you as a resident of Salinas, asking that you budget for our community. As the nation mourns the loss of not only George Floyd, but the deaths of countless people of color at the hands of local law enforcement, now more than ever, we need to support our children and families.
+
+Our local police department is set to receive an increase of $447,026 for 2020-2021 in their budget which is already nearly half of our entire general fund (45%). At the same time, our Library and Community Services Department is projected to lose $326,000 of their funding having only received 8% of our budget as it were.
+
+This is unacceptable. The youngest members of our community deserve access to clean parks, online learning spaces and library resources, and to continue to have access to the quality sports, arts, and cultural programming taking place in our recreation centers. Furthermore, we need to fund mental health professionals, crisis de-escalators, and other resources for those suffering from domestic abuse and addiction, who are too often subjected to unjust policing.
+
+Please take action to make the necessary investments for the future of our community. 
+
+Sincerely,
+[Resident Name, District (optional)]`.trim()
+    );
+    const recipients = `cityclerkwebmail@ci.salinas.ca.us,salinasmayor@ci.salinas.ca.us,district1@ci.salinas.ca.us,district2@ci.salinas.ca.us,district4@ci.salinas.ca.us,district5@ci.salinas.ca.us,district6@ci.salinas.ca.us,district3@ci.salinas.ca.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/salinas`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1987,4 @@
 </body>
 
 </html>
+

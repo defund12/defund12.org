@@ -70,6 +70,76 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor of Honolulu</h2>
+  <b>Honolulu, HI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/honolulu`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@honolulu.gov, ianderson@honolulu.gov, akobayashi@honolulu.gov, cafukunaga@honolulu.gov, jmanahan@honolulu.gov, belefante@honolulu.gov, rmenor@honolulu.gov, tommy.waters@honolulu.gov, kmpine@honolulu.gov, htsuneyoshi@honolulu.gov`)">🔗</span>
+        mayor@honolulu.gov, ianderson@honolulu.gov, akobayashi@honolulu.gov, cafukunaga@honolulu.gov, jmanahan@honolulu.gov, belefante@honolulu.gov, rmenor@honolulu.gov, tommy.waters@honolulu.gov, kmpine@honolulu.gov, htsuneyoshi@honolulu.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Caldwell and the Honolulu City and County Council,
+
+My name is [NAME] and I am a resident of Honolulu. I am writing to demand that Honolulu adopts a budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+In 2019, the City and County of Honolulu allocated $295,681,922 to our police. This is compared to just $112 million budgeted for ALL Community Services. Only $10.2 million was projected to be spent on the Housing First Program.
+
+According to lthawaii.gov there are approximately 15,000 homeless people in Hawai’i. By diverting funds from the HPD budget of $296 million to the Housing First Project, we could drastically reduce this number. Further studies show this could reduce the amount of visits to the ER and healthcare centers from these individuals by 64% and the number of arrests by 61% (I have included the source of this data below) Spending the resources to properly help the homeless community will not only increase their quality of life, but promote city safety and save our city money. This is just one example of how divesting from the police could improve our city.
+
+I demand that the City Council begin meaningfully defunding the Honolulu Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Honolulu.
+
+History has shown that police "reform" is not enough. We must take a hard look at the ways that the current system in place fails to serve--and in fact actively harms--our community, and come together to reimagine the role of police in our city.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+
+Source : https://www.honolulu.gov/rep/site/ohou/ohou_docs/HousingFirst-Societal-Impacts-Final.pdf`)">🔗</span>
+        <br /> <p>Dear Mayor Caldwell and the Honolulu City and County Council,</p>
+
+<p>My name is [NAME] and I am a resident of Honolulu. I am writing to demand that Honolulu adopts a budget that prioritizes community wellbeing, and redirects funding away from the police.</p>
+
+<p>In 2019, the City and County of Honolulu allocated $295,681,922 to our police. This is compared to just $112 million budgeted for ALL Community Services. Only $10.2 million was projected to be spent on the Housing First Program.</p>
+
+<p>According to lthawaii.gov there are approximately 15,000 homeless people in Hawai’i. By diverting funds from the HPD budget of $296 million to the Housing First Project, we could drastically reduce this number. Further studies show this could reduce the amount of visits to the ER and healthcare centers from these individuals by 64% and the number of arrests by 61% (I have included the source of this data below) Spending the resources to properly help the homeless community will not only increase their quality of life, but promote city safety and save our city money. This is just one example of how divesting from the police could improve our city.</p>
+
+<p>I demand that the City Council begin meaningfully defunding the Honolulu Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Honolulu.</p>
+
+<p>History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+<p>Source : https://www.honolulu.gov/rep/site/ohou/ohou_docs/HousingFirst-Societal-Impacts-Final.pdf</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1940,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Caldwell and the Honolulu City and County Council,<br />
+<br />
+My name is [NAME] and I am a resident of Honolulu. I am writing to demand that Honolulu adopts a budget that prioritizes community wellbeing, and redirects funding away from the police.<br />
+<br />
+In 2019, the City and County of Honolulu allocated $295,681,922 to our police. This is compared to just $112 million budgeted for ALL Community Services. Only $10.2 million was projected to be spent on the Housing First Program.<br />
+<br />
+According to lthawaii.gov there are approximately 15,000 homeless people in Hawai’i. By diverting funds from the HPD budget of $296 million to the Housing First Project, we could drastically reduce this number. Further studies show this could reduce the amount of visits to the ER and healthcare centers from these individuals by 64% and the number of arrests by 61% (I have included the source of this data below) Spending the resources to properly help the homeless community will not only increase their quality of life, but promote city safety and save our city money. This is just one example of how divesting from the police could improve our city.<br />
+<br />
+I demand that the City Council begin meaningfully defunding the Honolulu Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Honolulu.<br />
+<br />
+History has shown that police "reform" is not enough. We must take a hard look at the ways that the current system in place fails to serve--and in fact actively harms--our community, and come together to reimagine the role of police in our city.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+<br />
+Source : https://www.honolulu.gov/rep/site/ohou/ohou_docs/HousingFirst-Societal-Impacts-Final.pdf`.trim() :
+      `Dear Mayor Caldwell and the Honolulu City and County Council,
+
+My name is [NAME] and I am a resident of Honolulu. I am writing to demand that Honolulu adopts a budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+In 2019, the City and County of Honolulu allocated $295,681,922 to our police. This is compared to just $112 million budgeted for ALL Community Services. Only $10.2 million was projected to be spent on the Housing First Program.
+
+According to lthawaii.gov there are approximately 15,000 homeless people in Hawai’i. By diverting funds from the HPD budget of $296 million to the Housing First Project, we could drastically reduce this number. Further studies show this could reduce the amount of visits to the ER and healthcare centers from these individuals by 64% and the number of arrests by 61% (I have included the source of this data below) Spending the resources to properly help the homeless community will not only increase their quality of life, but promote city safety and save our city money. This is just one example of how divesting from the police could improve our city.
+
+I demand that the City Council begin meaningfully defunding the Honolulu Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Honolulu.
+
+History has shown that police "reform" is not enough. We must take a hard look at the ways that the current system in place fails to serve--and in fact actively harms--our community, and come together to reimagine the role of police in our city.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+
+Source : https://www.honolulu.gov/rep/site/ohou/ohou_docs/HousingFirst-Societal-Impacts-Final.pdf`.trim()
+    );
+    const recipients = `mayor@honolulu.gov,ianderson@honolulu.gov,akobayashi@honolulu.gov,cafukunaga@honolulu.gov,jmanahan@honolulu.gov,belefante@honolulu.gov,rmenor@honolulu.gov,tommy.waters@honolulu.gov,kmpine@honolulu.gov,htsuneyoshi@honolulu.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/honolulu`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2015,4 @@
 </body>
 
 </html>
+

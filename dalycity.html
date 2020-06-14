@@ -70,6 +70,70 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council and City Manager</h2>
+  <b>Daly City, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/dalycity`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `citycouncil@dalycity.org, citymanager@dalycity.org`)">🔗</span>
+        citycouncil@dalycity.org, citymanager@dalycity.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To our Daly City elected and appointed officials,
+
+My name is [YOUR NAME], and I am a Daly City resident. Within the past week, we have seen a nationwide movement take to our streets in protest and outrage at the brutalization of Black people in our country at the hands of the police. The discussion has branched to whether the violent enforcement strategies of police actually keep us safe and are helpful to our community, and I believe we need to address that here in Daly City. We must acknowledge and dismantle the waste and harm of our police budget.
+
+Looking at the Daly City budgets from past years to now, DCPD has constantly been awarded a colossal share of our city's expenditures, far more than the rest of our services provided. This year, the allocation for DCPD was $36,691,658, which is 40% of our total city budget. Forty Percent! The next closest item in the budget is our Fire Department at 23%. And to what end? DCPD are not showing in budget reports that their massive resources have kept us safer. We are seeing that police around the country are violent, racist, and wasteful, and that's what we're financially empowering in our community above all other services. What we are also seeing is more and more evidence that community safety is much more likely to occur when people's needs are being met.
+
+We must consider how far that $36 million would go with other non-violent, prevention-oriented services that address our livelihoods and humanity such as health services, social services, infrastructure, childcare assistance, homelessness services, libraries, and our parks and recreation services. We need to reimagine public safety to address root causes rather than defaulting to violence - which is disproportionately used against our Black neighbors (and others who've been targeted by police historically). Additionally with COVID-19 affecting our community's economy for the forseeable future, budget cuts will likely be made; we must start with DCPD before anything else.
+
+I call on you to slash the DCPD budget and instead apply those massive resources towards these stated alternatives. Help us keep Daly City truly safe, healthy, and prosperous. and join me, your fellow residents, and the rest of the country in moving away from violent policing and toward a just society.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To our Daly City elected and appointed officials,</p>
+
+<p>My name is [YOUR NAME], and I am a Daly City resident. Within the past week, we have seen a nationwide movement take to our streets in protest and outrage at the brutalization of Black people in our country at the hands of the police. The discussion has branched to whether the violent enforcement strategies of police actually keep us safe and are helpful to our community, and I believe we need to address that here in Daly City. We must acknowledge and dismantle the waste and harm of our police budget.</p>
+
+<p>Looking at the Daly City budgets from past years to now, DCPD has constantly been awarded a colossal share of our city’s expenditures, far more than the rest of our services provided. This year, the allocation for DCPD was $36,691,658, which is 40% of our total city budget. Forty Percent! The next closest item in the budget is our Fire Department at 23%. And to what end? DCPD are not showing in budget reports that their massive resources have kept us safer. We are seeing that police around the country are violent, racist, and wasteful, and that’s what we’re financially empowering in our community above all other services. What we are also seeing is more and more evidence that community safety is much more likely to occur when people’s needs are being met.</p>
+
+<p>We must consider how far that $36 million would go with other non-violent, prevention-oriented services that address our livelihoods and humanity such as health services, social services, infrastructure, childcare assistance, homelessness services, libraries, and our parks and recreation services. We need to reimagine public safety to address root causes rather than defaulting to violence - which is disproportionately used against our Black neighbors (and others who’ve been targeted by police historically). Additionally with COVID-19 affecting our community’s economy for the forseeable future, budget cuts will likely be made; we must start with DCPD before anything else.</p>
+
+<p>I call on you to slash the DCPD budget and instead apply those massive resources towards these stated alternatives. Help us keep Daly City truly safe, healthy, and prosperous. and join me, your fellow residents, and the rest of the country in moving away from violent policing and toward a just society.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1934,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To our Daly City elected and appointed officials,<br />
+<br />
+My name is [YOUR NAME], and I am a Daly City resident. Within the past week, we have seen a nationwide movement take to our streets in protest and outrage at the brutalization of Black people in our country at the hands of the police. The discussion has branched to whether the violent enforcement strategies of police actually keep us safe and are helpful to our community, and I believe we need to address that here in Daly City. We must acknowledge and dismantle the waste and harm of our police budget.<br />
+<br />
+Looking at the Daly City budgets from past years to now, DCPD has constantly been awarded a colossal share of our city's expenditures, far more than the rest of our services provided. This year, the allocation for DCPD was $36,691,658, which is 40% of our total city budget. Forty Percent! The next closest item in the budget is our Fire Department at 23%. And to what end? DCPD are not showing in budget reports that their massive resources have kept us safer. We are seeing that police around the country are violent, racist, and wasteful, and that's what we're financially empowering in our community above all other services. What we are also seeing is more and more evidence that community safety is much more likely to occur when people's needs are being met.<br />
+<br />
+We must consider how far that $36 million would go with other non-violent, prevention-oriented services that address our livelihoods and humanity such as health services, social services, infrastructure, childcare assistance, homelessness services, libraries, and our parks and recreation services. We need to reimagine public safety to address root causes rather than defaulting to violence - which is disproportionately used against our Black neighbors (and others who've been targeted by police historically). Additionally with COVID-19 affecting our community's economy for the forseeable future, budget cuts will likely be made; we must start with DCPD before anything else.<br />
+<br />
+I call on you to slash the DCPD budget and instead apply those massive resources towards these stated alternatives. Help us keep Daly City truly safe, healthy, and prosperous. and join me, your fellow residents, and the rest of the country in moving away from violent policing and toward a just society.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To our Daly City elected and appointed officials,
+
+My name is [YOUR NAME], and I am a Daly City resident. Within the past week, we have seen a nationwide movement take to our streets in protest and outrage at the brutalization of Black people in our country at the hands of the police. The discussion has branched to whether the violent enforcement strategies of police actually keep us safe and are helpful to our community, and I believe we need to address that here in Daly City. We must acknowledge and dismantle the waste and harm of our police budget.
+
+Looking at the Daly City budgets from past years to now, DCPD has constantly been awarded a colossal share of our city's expenditures, far more than the rest of our services provided. This year, the allocation for DCPD was $36,691,658, which is 40% of our total city budget. Forty Percent! The next closest item in the budget is our Fire Department at 23%. And to what end? DCPD are not showing in budget reports that their massive resources have kept us safer. We are seeing that police around the country are violent, racist, and wasteful, and that's what we're financially empowering in our community above all other services. What we are also seeing is more and more evidence that community safety is much more likely to occur when people's needs are being met.
+
+We must consider how far that $36 million would go with other non-violent, prevention-oriented services that address our livelihoods and humanity such as health services, social services, infrastructure, childcare assistance, homelessness services, libraries, and our parks and recreation services. We need to reimagine public safety to address root causes rather than defaulting to violence - which is disproportionately used against our Black neighbors (and others who've been targeted by police historically). Additionally with COVID-19 affecting our community's economy for the forseeable future, budget cuts will likely be made; we must start with DCPD before anything else.
+
+I call on you to slash the DCPD budget and instead apply those massive resources towards these stated alternatives. Help us keep Daly City truly safe, healthy, and prosperous. and join me, your fellow residents, and the rest of the country in moving away from violent policing and toward a just society.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `citycouncil@dalycity.org,citymanager@dalycity.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/dalycity`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2003,4 @@
 </body>
 
 </html>
+

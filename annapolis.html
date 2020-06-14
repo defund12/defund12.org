@@ -70,6 +70,76 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council and Mayor</h2>
+  <b>Annapolis, MD</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/annapolis`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayorbuckley@annapolis.gov, aldtierney@annapolis.gov, aldpaone@annapolis.gov, aldpindellcharles@annapolis.gov, aldfinlayson@annapolis.gov, aldrodriguez@annapolis.gov, aldgay@annapolis.gov, aldsavidge@annapolis.gov, aldarnett@annapolis.gov`)">🔗</span>
+        mayorbuckley@annapolis.gov, aldtierney@annapolis.gov, aldpaone@annapolis.gov, aldpindellcharles@annapolis.gov, aldfinlayson@annapolis.gov, aldrodriguez@annapolis.gov, aldgay@annapolis.gov, aldsavidge@annapolis.gov, aldarnett@annapolis.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear City Council Members and Mayor Buckley,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I write this letter to urge you to defund not only the Annapolis Police Department, but the Office of Emergency Management as well. The UASI (Urban Area Security Initiative) falls under the Office of Emergency Management Department, and is a crucial aspect to be addressed in policy reform for the safety, justice & quality of life of our community.
+The Annapolis Police Department takes up 23% of the city's general fund leaving parks and recreation services, community enrichment, and environmental conservation/policy at 1.5%, 3.1% and 2.8% respectively. Beyond the general funding, the grants allocated to the Police Department and Office of Emergency Management take up 96% of the federal grant funds, 73% of state grant funds, and 100% of county grant funds. APD & OEM are taking away needed resources from essential city programs and services that can better the lives of our people! (Source: Annapolis Fiscal Year 2020 Adopted Annual Operating Budget) .
+
+As Annapolis residents, we therefore demand that you take immediate action to ensure the health, safety & wellness of our people.
+Defund the Police Department.
+Defund the UASI in the Office of Emergency Management
+Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+Invest in community development initiatives and programs.
+Invest in environmental restoration & policy.
+Annapolis is the capital of Maryland. We demand change!
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`)">🔗</span>
+        <br /> <p>Dear City Council Members and Mayor Buckley,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I write this letter to urge you to defund not only the Annapolis Police Department, but the Office of Emergency Management as well. The UASI (Urban Area Security Initiative) falls under the Office of Emergency Management Department, and is a crucial aspect to be addressed in policy reform for the safety, justice &amp; quality of life of our community.
+The Annapolis Police Department takes up 23% of the city’s general fund leaving parks and recreation services, community enrichment, and environmental conservation/policy at 1.5%, 3.1% and 2.8% respectively. Beyond the general funding, the grants allocated to the Police Department and Office of Emergency Management take up 96% of the federal grant funds, 73% of state grant funds, and 100% of county grant funds. APD &amp; OEM are taking away needed resources from essential city programs and services that can better the lives of our people! (Source: Annapolis Fiscal Year 2020 Adopted Annual Operating Budget) .</p>
+
+<p>As Annapolis residents, we therefore demand that you take immediate action to ensure the health, safety &amp; wellness of our people.
+Defund the Police Department.
+Defund the UASI in the Office of Emergency Management
+Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+Invest in community development initiatives and programs.
+Invest in environmental restoration &amp; policy.
+Annapolis is the capital of Maryland. We demand change!</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1940,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear City Council Members and Mayor Buckley,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I write this letter to urge you to defund not only the Annapolis Police Department, but the Office of Emergency Management as well. The UASI (Urban Area Security Initiative) falls under the Office of Emergency Management Department, and is a crucial aspect to be addressed in policy reform for the safety, justice & quality of life of our community.<br />
+The Annapolis Police Department takes up 23% of the city's general fund leaving parks and recreation services, community enrichment, and environmental conservation/policy at 1.5%, 3.1% and 2.8% respectively. Beyond the general funding, the grants allocated to the Police Department and Office of Emergency Management take up 96% of the federal grant funds, 73% of state grant funds, and 100% of county grant funds. APD & OEM are taking away needed resources from essential city programs and services that can better the lives of our people! (Source: Annapolis Fiscal Year 2020 Adopted Annual Operating Budget) .<br />
+<br />
+As Annapolis residents, we therefore demand that you take immediate action to ensure the health, safety & wellness of our people.<br />
+Defund the Police Department.<br />
+Defund the UASI in the Office of Emergency Management<br />
+Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+Invest in community development initiatives and programs.<br />
+Invest in environmental restoration & policy.<br />
+Annapolis is the capital of Maryland. We demand change!<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE]<br />
+[YOUR EMAIL]`.trim() :
+      `Dear City Council Members and Mayor Buckley,
+
+My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I write this letter to urge you to defund not only the Annapolis Police Department, but the Office of Emergency Management as well. The UASI (Urban Area Security Initiative) falls under the Office of Emergency Management Department, and is a crucial aspect to be addressed in policy reform for the safety, justice & quality of life of our community.
+The Annapolis Police Department takes up 23% of the city's general fund leaving parks and recreation services, community enrichment, and environmental conservation/policy at 1.5%, 3.1% and 2.8% respectively. Beyond the general funding, the grants allocated to the Police Department and Office of Emergency Management take up 96% of the federal grant funds, 73% of state grant funds, and 100% of county grant funds. APD & OEM are taking away needed resources from essential city programs and services that can better the lives of our people! (Source: Annapolis Fiscal Year 2020 Adopted Annual Operating Budget) .
+
+As Annapolis residents, we therefore demand that you take immediate action to ensure the health, safety & wellness of our people.
+Defund the Police Department.
+Defund the UASI in the Office of Emergency Management
+Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+Invest in community development initiatives and programs.
+Invest in environmental restoration & policy.
+Annapolis is the capital of Maryland. We demand change!
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE]
+[YOUR EMAIL]`.trim()
+    );
+    const recipients = `mayorbuckley@annapolis.gov,aldtierney@annapolis.gov,aldpaone@annapolis.gov,aldpindellcharles@annapolis.gov,aldfinlayson@annapolis.gov,aldrodriguez@annapolis.gov,aldgay@annapolis.gov,aldsavidge@annapolis.gov,aldarnett@annapolis.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/annapolis`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2015,4 @@
 </body>
 
 </html>
+

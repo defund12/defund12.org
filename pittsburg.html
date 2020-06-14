@@ -70,6 +70,84 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor and City Council</h2>
+  <b>Pittsburg, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/pittsburg`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `killings@ci.pittsburg.ca.us, citycouncil@ci.pittsburg.ca.us`)">🔗</span>
+        killings@ci.pittsburg.ca.us, citycouncil@ci.pittsburg.ca.us
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Killings and Pittsburg City Council Members,
+
+My name is [YOUR NAME] and I am a resident of Pittsburg. Pittsburg Police Department represents an enormous share of the city’s general fund, taking an incredible 61.53% of needed resources that can be allocated to essential programs and services in our city. I’m writing to you today to demand that Pittsburg support the redirection of significant funds back into the community for the 2020-2021 fiscal year.
+
+Over the past fourteen days, our nation has been seized by protests calling for the systematic upheaval of institutions that promote racism and anti-Blackness--especially the police--while also reimagining what community accountability can look like. While other Bay Area cities have been at the forefront of many of these protests, there has also been significant action in Pittsburg. You may have witnessed these outcries through the 24 letters sent during the June 3rd city council meeting, through numerous posts on social media, and through the peaceful demonstration outside of City Hall on Friday, June 5th.
+
+Our city leaders must prioritize our community’s social programs, health care, housing, small businesses, and education. We must ensure that all students, especially Black students and other students of color, are equipped with the tools necessary to continue learning and thriving, rather than being stereotyped and heavily policed. Moreover, there is absolutely no reason a teacher must ask a student to bring basic school supplies when the funds distributed to the police department can be allocated to fulfill the needs of PUSD.
+
+In addition to redirecting funds, we need to hold our local leaders accountable. Our Chief of Police, Brian Addington, failed to properly disclose documents in a case involving excessive force in 2014. We demand the resignation of Brian Addington in this formidable role.
+
+As a Pittsburg resident, I demand that you take immediate action to ensure the following:
+
+-Reduce PPD’s allocation from the general fund by 50%.
+-Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+-Hold local leaders, like Police Chief Addington, and yourselves accountable.
+I am urging you to completely revise the budget for the 2020-2021 fiscal year. Public opinion is with me.
+
+Thank you for your time and consideration,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Killings and Pittsburg City Council Members,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Pittsburg. Pittsburg Police Department represents an enormous share of the city’s general fund, taking an incredible 61.53% of needed resources that can be allocated to essential programs and services in our city. I’m writing to you today to demand that Pittsburg support the redirection of significant funds back into the community for the 2020-2021 fiscal year.</p>
+
+<p>Over the past fourteen days, our nation has been seized by protests calling for the systematic upheaval of institutions that promote racism and anti-Blackness–especially the police–while also reimagining what community accountability can look like. While other Bay Area cities have been at the forefront of many of these protests, there has also been significant action in Pittsburg. You may have witnessed these outcries through the 24 letters sent during the June 3rd city council meeting, through numerous posts on social media, and through the peaceful demonstration outside of City Hall on Friday, June 5th.</p>
+
+<p>Our city leaders must prioritize our community’s social programs, health care, housing, small businesses, and education. We must ensure that all students, especially Black students and other students of color, are equipped with the tools necessary to continue learning and thriving, rather than being stereotyped and heavily policed. Moreover, there is absolutely no reason a teacher must ask a student to bring basic school supplies when the funds distributed to the police department can be allocated to fulfill the needs of PUSD.</p>
+
+<p>In addition to redirecting funds, we need to hold our local leaders accountable. Our Chief of Police, Brian Addington, failed to properly disclose documents in a case involving excessive force in 2014. We demand the resignation of Brian Addington in this formidable role.</p>
+
+<p>As a Pittsburg resident, I demand that you take immediate action to ensure the following:</p>
+
+<p>-Reduce PPD’s allocation from the general fund by 50%.
+-Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+-Hold local leaders, like Police Chief Addington, and yourselves accountable.
+I am urging you to completely revise the budget for the 2020-2021 fiscal year. Public opinion is with me.</p>
+
+<p>Thank you for your time and consideration,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1948,76 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Killings and Pittsburg City Council Members,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Pittsburg. Pittsburg Police Department represents an enormous share of the city’s general fund, taking an incredible 61.53% of needed resources that can be allocated to essential programs and services in our city. I’m writing to you today to demand that Pittsburg support the redirection of significant funds back into the community for the 2020-2021 fiscal year.<br />
+<br />
+Over the past fourteen days, our nation has been seized by protests calling for the systematic upheaval of institutions that promote racism and anti-Blackness--especially the police--while also reimagining what community accountability can look like. While other Bay Area cities have been at the forefront of many of these protests, there has also been significant action in Pittsburg. You may have witnessed these outcries through the 24 letters sent during the June 3rd city council meeting, through numerous posts on social media, and through the peaceful demonstration outside of City Hall on Friday, June 5th.<br />
+<br />
+Our city leaders must prioritize our community’s social programs, health care, housing, small businesses, and education. We must ensure that all students, especially Black students and other students of color, are equipped with the tools necessary to continue learning and thriving, rather than being stereotyped and heavily policed. Moreover, there is absolutely no reason a teacher must ask a student to bring basic school supplies when the funds distributed to the police department can be allocated to fulfill the needs of PUSD.<br />
+<br />
+In addition to redirecting funds, we need to hold our local leaders accountable. Our Chief of Police, Brian Addington, failed to properly disclose documents in a case involving excessive force in 2014. We demand the resignation of Brian Addington in this formidable role.<br />
+<br />
+As a Pittsburg resident, I demand that you take immediate action to ensure the following:<br />
+<br />
+-Reduce PPD’s allocation from the general fund by 50%.<br />
+-Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.<br />
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+-Hold local leaders, like Police Chief Addington, and yourselves accountable.<br />
+I am urging you to completely revise the budget for the 2020-2021 fiscal year. Public opinion is with me.<br />
+<br />
+Thank you for your time and consideration,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Killings and Pittsburg City Council Members,
+
+My name is [YOUR NAME] and I am a resident of Pittsburg. Pittsburg Police Department represents an enormous share of the city’s general fund, taking an incredible 61.53% of needed resources that can be allocated to essential programs and services in our city. I’m writing to you today to demand that Pittsburg support the redirection of significant funds back into the community for the 2020-2021 fiscal year.
+
+Over the past fourteen days, our nation has been seized by protests calling for the systematic upheaval of institutions that promote racism and anti-Blackness--especially the police--while also reimagining what community accountability can look like. While other Bay Area cities have been at the forefront of many of these protests, there has also been significant action in Pittsburg. You may have witnessed these outcries through the 24 letters sent during the June 3rd city council meeting, through numerous posts on social media, and through the peaceful demonstration outside of City Hall on Friday, June 5th.
+
+Our city leaders must prioritize our community’s social programs, health care, housing, small businesses, and education. We must ensure that all students, especially Black students and other students of color, are equipped with the tools necessary to continue learning and thriving, rather than being stereotyped and heavily policed. Moreover, there is absolutely no reason a teacher must ask a student to bring basic school supplies when the funds distributed to the police department can be allocated to fulfill the needs of PUSD.
+
+In addition to redirecting funds, we need to hold our local leaders accountable. Our Chief of Police, Brian Addington, failed to properly disclose documents in a case involving excessive force in 2014. We demand the resignation of Brian Addington in this formidable role.
+
+As a Pittsburg resident, I demand that you take immediate action to ensure the following:
+
+-Reduce PPD’s allocation from the general fund by 50%.
+-Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+-Hold local leaders, like Police Chief Addington, and yourselves accountable.
+I am urging you to completely revise the budget for the 2020-2021 fiscal year. Public opinion is with me.
+
+Thank you for your time and consideration,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `killings@ci.pittsburg.ca.us,citycouncil@ci.pittsburg.ca.us`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/pittsburg`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2031,4 @@
 </body>
 
 </html>
+

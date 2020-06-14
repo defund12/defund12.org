@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council</h2>
+  <b>Santa Barbara, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/santabarbara`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `MHarmon@santabarbaraca.gov, KSneddon@santabarbaraca.gov, MJordan@santabarbaraca.gov, OGutierrez@santabarbaraca.gov, efriedman@santabarbaraca.gov, AlGutierrez@santabarbaraca.gov, cmurillo@santabarbaraca.gov`)">🔗</span>
+        MHarmon@santabarbaraca.gov, KSneddon@santabarbaraca.gov, MJordan@santabarbaraca.gov, OGutierrez@santabarbaraca.gov, efriedman@santabarbaraca.gov, AlGutierrez@santabarbaraca.gov, cmurillo@santabarbaraca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Santa Barbara City Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the Santa Barbara City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+In 2019, the City of Santa Barbara allocated 42 million dollars to our police system, an inordinate 32% of our total budget. This is compared to just $13 million allocated towards community development (9.2% of the budget). Within the community development budget, $1.05 million was projected to be spent on human services  (0.07% of the city's budget), with even less appropriated for housing development (0.04%).
+
+I demand that the City Council begin meaningfully defunding the Santa Barbara Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Santa Barbara residents.
+
+History has shown that police "reform" is not enough. We must take a hard look at the ways that the current system in place fails to serve--and in fact actively harms--our community, and come together to reimagine the role of police in our city.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Santa Barbara City Council,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the Santa Barbara City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.</p>
+
+<p>In 2019, the City of Santa Barbara allocated 42 million dollars to our police system, an inordinate 32% of our total budget. This is compared to just $13 million allocated towards community development (9.2% of the budget). Within the community development budget, $1.05 million was projected to be spent on human services  (0.07% of the city’s budget), with even less appropriated for housing development (0.04%).</p>
+
+<p>I demand that the City Council begin meaningfully defunding the Santa Barbara Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Santa Barbara residents.</p>
+
+<p>History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Santa Barbara City Council,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the Santa Barbara City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.<br />
+<br />
+In 2019, the City of Santa Barbara allocated 42 million dollars to our police system, an inordinate 32% of our total budget. This is compared to just $13 million allocated towards community development (9.2% of the budget). Within the community development budget, $1.05 million was projected to be spent on human services  (0.07% of the city's budget), with even less appropriated for housing development (0.04%).<br />
+<br />
+I demand that the City Council begin meaningfully defunding the Santa Barbara Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Santa Barbara residents.<br />
+<br />
+History has shown that police "reform" is not enough. We must take a hard look at the ways that the current system in place fails to serve--and in fact actively harms--our community, and come together to reimagine the role of police in our city.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Santa Barbara City Council,
+
+My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the Santa Barbara City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+In 2019, the City of Santa Barbara allocated 42 million dollars to our police system, an inordinate 32% of our total budget. This is compared to just $13 million allocated towards community development (9.2% of the budget). Within the community development budget, $1.05 million was projected to be spent on human services  (0.07% of the city's budget), with even less appropriated for housing development (0.04%).
+
+I demand that the City Council begin meaningfully defunding the Santa Barbara Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Santa Barbara residents.
+
+History has shown that police "reform" is not enough. We must take a hard look at the ways that the current system in place fails to serve--and in fact actively harms--our community, and come together to reimagine the role of police in our city.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `MHarmon@santabarbaraca.gov,KSneddon@santabarbaraca.gov,MJordan@santabarbaraca.gov,OGutierrez@santabarbaraca.gov,efriedman@santabarbaraca.gov,AlGutierrez@santabarbaraca.gov,cmurillo@santabarbaraca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/santabarbara`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,80 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council, Staff, and Executive Department</h2>
+  <b>Shreveport, LA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/shreveport`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `adrian.perkins@shreveportla.gov, HenryL.Whitehorn@shreveportla.gov, finance@shreveportla.gov, Tabatha.taylor@shreveportla.gov, LeVette.Fuller@shreveportla.gov, John.Nickelson@shreveportla.gov, Grayson.Boucher@shreveportla.gov, James.Flurry@shreveportla.gov, James.Green@shreveportla.gov, Jerry.Bowman@shreveportla.gov`)">🔗</span>
+        adrian.perkins@shreveportla.gov, HenryL.Whitehorn@shreveportla.gov, finance@shreveportla.gov, Tabatha.taylor@shreveportla.gov, LeVette.Fuller@shreveportla.gov, John.Nickelson@shreveportla.gov, Grayson.Boucher@shreveportla.gov, James.Flurry@shreveportla.gov, James.Green@shreveportla.gov, Jerry.Bowman@shreveportla.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Shreveport City Council, staff, and Executive departments
+
+My name is [YOUR NAME]. I am a Shreveport resident writing to urge you to defund the City of Shreveport Police Department.
+
+I am contacting you to demand a significant reduction to the $60,588,900 million that is currently allocated to funding the Shreveport Police department and for a formal review of the Shreveport Police Department Union Contract from an independent party that has no affiliation with SPD [1]. The police funds make up roughly 28% of the budget, while other important public services such as Community development which should cover social programs and outreach receives only 10%, and property standards receive less than 2% [1]. By reducing police funding and reducing incarceration rates, those funds can be reallocated to reducing blighted properties, housing, education, or improving our aging infrastructure, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.
+
+As Shreveport a resident, I therefore demand that you take immediate action towards the following ends:
+
+-Reduce SPD’s allocation from the General Fund
+-Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+-Shreveport can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund SPD.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+
+[1] https://www.shreveportla.gov/DocumentCenter/View/16851/2020-Annual-Operating-Budget?bidId=`)">🔗</span>
+        <br /> <p>Dear Shreveport City Council, staff, and Executive departments</p>
+
+<p>My name is [YOUR NAME]. I am a Shreveport resident writing to urge you to defund the City of Shreveport Police Department.</p>
+
+<p>I am contacting you to demand a significant reduction to the $60,588,900 million that is currently allocated to funding the Shreveport Police department and for a formal review of the Shreveport Police Department Union Contract from an independent party that has no affiliation with SPD [1]. The police funds make up roughly 28% of the budget, while other important public services such as Community development which should cover social programs and outreach receives only 10%, and property standards receive less than 2% [1]. By reducing police funding and reducing incarceration rates, those funds can be reallocated to reducing blighted properties, housing, education, or improving our aging infrastructure, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.</p>
+
+<p>As Shreveport a resident, I therefore demand that you take immediate action towards the following ends:</p>
+
+<p>-Reduce SPD’s allocation from the General Fund
+-Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+-Shreveport can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund SPD.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+<p>[1] https://www.shreveportla.gov/DocumentCenter/View/16851/2020-Annual-Operating-Budget?bidId=</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1944,72 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Shreveport City Council, staff, and Executive departments<br />
+<br />
+My name is [YOUR NAME]. I am a Shreveport resident writing to urge you to defund the City of Shreveport Police Department.<br />
+<br />
+I am contacting you to demand a significant reduction to the $60,588,900 million that is currently allocated to funding the Shreveport Police department and for a formal review of the Shreveport Police Department Union Contract from an independent party that has no affiliation with SPD [1]. The police funds make up roughly 28% of the budget, while other important public services such as Community development which should cover social programs and outreach receives only 10%, and property standards receive less than 2% [1]. By reducing police funding and reducing incarceration rates, those funds can be reallocated to reducing blighted properties, housing, education, or improving our aging infrastructure, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.<br />
+<br />
+As Shreveport a resident, I therefore demand that you take immediate action towards the following ends:<br />
+<br />
+-Reduce SPD’s allocation from the General Fund<br />
+-Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence<br />
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+-Shreveport can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund SPD.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+<br />
+[1] https://www.shreveportla.gov/DocumentCenter/View/16851/2020-Annual-Operating-Budget?bidId=`.trim() :
+      `Dear Shreveport City Council, staff, and Executive departments
+
+My name is [YOUR NAME]. I am a Shreveport resident writing to urge you to defund the City of Shreveport Police Department.
+
+I am contacting you to demand a significant reduction to the $60,588,900 million that is currently allocated to funding the Shreveport Police department and for a formal review of the Shreveport Police Department Union Contract from an independent party that has no affiliation with SPD [1]. The police funds make up roughly 28% of the budget, while other important public services such as Community development which should cover social programs and outreach receives only 10%, and property standards receive less than 2% [1]. By reducing police funding and reducing incarceration rates, those funds can be reallocated to reducing blighted properties, housing, education, or improving our aging infrastructure, among other needs. That way we can focus on building our community efforts and local organizations, while preventing future police brutality and violence.
+
+As Shreveport a resident, I therefore demand that you take immediate action towards the following ends:
+
+-Reduce SPD’s allocation from the General Fund
+-Discontinue use of General Fund dollars to pay for settlements due to police murder, misconduct, and negligence
+-Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+-Shreveport can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund SPD.
+
+Sincerely,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+
+[1] https://www.shreveportla.gov/DocumentCenter/View/16851/2020-Annual-Operating-Budget?bidId=`.trim()
+    );
+    const recipients = `adrian.perkins@shreveportla.gov,HenryL.Whitehorn@shreveportla.gov,finance@shreveportla.gov,Tabatha.taylor@shreveportla.gov,LeVette.Fuller@shreveportla.gov,John.Nickelson@shreveportla.gov,Grayson.Boucher@shreveportla.gov,James.Flurry@shreveportla.gov,James.Green@shreveportla.gov,Jerry.Bowman@shreveportla.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/shreveport`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2023,4 @@
 </body>
 
 </html>
+

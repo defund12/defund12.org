@@ -70,6 +70,69 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor, Comptroller, and Ward Commissioners</h2>
+  <b>Grand Rapids, MI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/grandrapids`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@grcity.us, comptroller@grcity.us, joconnor@grcity.us, kreppart@grcity.us, jdjones@grcity.us, mysasi@grcity.us, slenear@grcity.us, nmoody@grcity.us, manager@grcity.us, cityatty@grcity.us, meastman@grcity.us, asnow@grcity.us, communitydev@grcity.us, inclusion@grcity.us, RachelHood@house.mi.gov, DavidLaGrand@house.mi.gov`)">🔗</span>
+        mayor@grcity.us, comptroller@grcity.us, joconnor@grcity.us, kreppart@grcity.us, jdjones@grcity.us, mysasi@grcity.us, slenear@grcity.us, nmoody@grcity.us, manager@grcity.us, cityatty@grcity.us, meastman@grcity.us, asnow@grcity.us, communitydev@grcity.us, inclusion@grcity.us, RachelHood@house.mi.gov, DavidLaGrand@house.mi.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello, 
+
+My name is [INSERT NAME] and I live in [YOUR NEIGHBORHOOD]. I am writing to ask that you to call an emergency council meeting and challenge the mayor’s proposed budget before it is adopted on July 1st, in favor of a budget for the people. 
+
+I know that public services are set to be cut by $22M by FY2021. I think that this is unacceptable, and ask that funds be redirected away from the Grand Rapids Police Department and into public services such as affordable housing, education, and healthcare access, and to consider direct financial relief to citizens, not just businesses, impacted by COVID-19. 
+
+This funding must be redistributed based on the input of community groups and leaders so that it provides the most relief to communities of color that have historically been over-policed and
+disinvested in due to the structural racism and inequity that Grand Rapids is built upon, and that the Grand Rapids Police Department and City are
+complicit in enforcing. Public tensions are rising and public opinion is dwindling in regard to the City’s inappropriate response to the murder of George Floyd and militarized, over-policed response to subsequent protests of police brutality and racism.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [INSERT NAME] and I live in [YOUR NEIGHBORHOOD]. I am writing to ask that you to call an emergency council meeting and challenge the mayor’s proposed budget before it is adopted on July 1st, in favor of a budget for the people.</p>
+
+<p>I know that public services are set to be cut by $22M by FY2021. I think that this is unacceptable, and ask that funds be redirected away from the Grand Rapids Police Department and into public services such as affordable housing, education, and healthcare access, and to consider direct financial relief to citizens, not just businesses, impacted by COVID-19.</p>
+
+<p>This funding must be redistributed based on the input of community groups and leaders so that it provides the most relief to communities of color that have historically been over-policed and
+disinvested in due to the structural racism and inequity that Grand Rapids is built upon, and that the Grand Rapids Police Department and City are
+complicit in enforcing. Public tensions are rising and public opinion is dwindling in regard to the City’s inappropriate response to the murder of George Floyd and militarized, over-policed response to subsequent protests of police brutality and racism.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1933,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello, <br />
+<br />
+My name is [INSERT NAME] and I live in [YOUR NEIGHBORHOOD]. I am writing to ask that you to call an emergency council meeting and challenge the mayor’s proposed budget before it is adopted on July 1st, in favor of a budget for the people. <br />
+<br />
+I know that public services are set to be cut by $22M by FY2021. I think that this is unacceptable, and ask that funds be redirected away from the Grand Rapids Police Department and into public services such as affordable housing, education, and healthcare access, and to consider direct financial relief to citizens, not just businesses, impacted by COVID-19. <br />
+<br />
+This funding must be redistributed based on the input of community groups and leaders so that it provides the most relief to communities of color that have historically been over-policed and<br />
+disinvested in due to the structural racism and inequity that Grand Rapids is built upon, and that the Grand Rapids Police Department and City are<br />
+complicit in enforcing. Public tensions are rising and public opinion is dwindling in regard to the City’s inappropriate response to the murder of George Floyd and militarized, over-policed response to subsequent protests of police brutality and racism.<br />
+<br />
+Thank you for your time,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Hello, 
+
+My name is [INSERT NAME] and I live in [YOUR NEIGHBORHOOD]. I am writing to ask that you to call an emergency council meeting and challenge the mayor’s proposed budget before it is adopted on July 1st, in favor of a budget for the people. 
+
+I know that public services are set to be cut by $22M by FY2021. I think that this is unacceptable, and ask that funds be redirected away from the Grand Rapids Police Department and into public services such as affordable housing, education, and healthcare access, and to consider direct financial relief to citizens, not just businesses, impacted by COVID-19. 
+
+This funding must be redistributed based on the input of community groups and leaders so that it provides the most relief to communities of color that have historically been over-policed and
+disinvested in due to the structural racism and inequity that Grand Rapids is built upon, and that the Grand Rapids Police Department and City are
+complicit in enforcing. Public tensions are rising and public opinion is dwindling in regard to the City’s inappropriate response to the murder of George Floyd and militarized, over-policed response to subsequent protests of police brutality and racism.
+
+Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `mayor@grcity.us,comptroller@grcity.us,joconnor@grcity.us,kreppart@grcity.us,jdjones@grcity.us,mysasi@grcity.us,slenear@grcity.us,nmoody@grcity.us,manager@grcity.us,cityatty@grcity.us,meastman@grcity.us,asnow@grcity.us,communitydev@grcity.us,inclusion@grcity.us,RachelHood@house.mi.gov,DavidLaGrand@house.mi.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/grandrapids`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2002,4 @@
 </body>
 
 </html>
+

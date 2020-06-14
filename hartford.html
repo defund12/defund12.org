@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the City Council</h2>
+  <b>Hartford, CT</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/hartford`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Maly.Rosado@hartford.gov, TJ.Clarke@hartford.gov, James.Sanchez@hartford.gov, Nick.Lebron@hartford.gov, Marilyn.Rossetti@hartford.gov, Shirley.Surgeon@hartford.gov, John.Gale@hartford.gov, wildaliz.bermudez@hartford.gov, Joshua.Michtom@hartford.gov`)">🔗</span>
+        Maly.Rosado@hartford.gov, TJ.Clarke@hartford.gov, James.Sanchez@hartford.gov, Nick.Lebron@hartford.gov, Marilyn.Rossetti@hartford.gov, Shirley.Surgeon@hartford.gov, John.Gale@hartford.gov, wildaliz.bermudez@hartford.gov, Joshua.Michtom@hartford.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear City Councilors,
+
+My name is [YOUR NAME] and I am a resident of Hartford. I am writing to demand that the Hartford City reduce the Hartford Police Department budget. Hartford’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.
+
+Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Hartford is intensely segregated, and deals with the issues of extreme income inequality between Hartford City, and suburbs like West Hartford. Members of our community live in tight quarters and on lean budgets–this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.
+
+Hartford City spends over half of its Public Safety budget on Police, when that money could be better reallocated toward improving addiction and mental health services, providing permanent housing for our unhoused neighbors, and improving city infrastructure.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities–starting with cutting the least transparent and most harmful parts of the Hartford Police Department budget.
+
+Racist police violence doesn’t just happen in other cities–it happens here in Hartford too. We see it in the disproportionate imprisonment of Black people, and in the racialized inequality that is prevalent in Hartford. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy:\ COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear City Councilors,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Hartford. I am writing to demand that the Hartford City reduce the Hartford Police Department budget. Hartford’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.</p>
+
+<p>Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Hartford is intensely segregated, and deals with the issues of extreme income inequality between Hartford City, and suburbs like West Hartford. Members of our community live in tight quarters and on lean budgets–this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.</p>
+
+<p>Hartford City spends over half of its Public Safety budget on Police, when that money could be better reallocated toward improving addiction and mental health services, providing permanent housing for our unhoused neighbors, and improving city infrastructure.</p>
+
+<p>Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities–starting with cutting the least transparent and most harmful parts of the Hartford Police Department budget.</p>
+
+<p>Racist police violence doesn’t just happen in other cities–it happens here in Hartford too. We see it in the disproportionate imprisonment of Black people, and in the racialized inequality that is prevalent in Hartford. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy:\ COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.</p>
+
+<p>Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear City Councilors,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Hartford. I am writing to demand that the Hartford City reduce the Hartford Police Department budget. Hartford’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.<br />
+<br />
+Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Hartford is intensely segregated, and deals with the issues of extreme income inequality between Hartford City, and suburbs like West Hartford. Members of our community live in tight quarters and on lean budgets–this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.<br />
+<br />
+Hartford City spends over half of its Public Safety budget on Police, when that money could be better reallocated toward improving addiction and mental health services, providing permanent housing for our unhoused neighbors, and improving city infrastructure.<br />
+<br />
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities–starting with cutting the least transparent and most harmful parts of the Hartford Police Department budget.<br />
+<br />
+Racist police violence doesn’t just happen in other cities–it happens here in Hartford too. We see it in the disproportionate imprisonment of Black people, and in the racialized inequality that is prevalent in Hartford. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy:\ COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.<br />
+<br />
+Thank you,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear City Councilors,
+
+My name is [YOUR NAME] and I am a resident of Hartford. I am writing to demand that the Hartford City reduce the Hartford Police Department budget. Hartford’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.
+
+Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Hartford is intensely segregated, and deals with the issues of extreme income inequality between Hartford City, and suburbs like West Hartford. Members of our community live in tight quarters and on lean budgets–this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.
+
+Hartford City spends over half of its Public Safety budget on Police, when that money could be better reallocated toward improving addiction and mental health services, providing permanent housing for our unhoused neighbors, and improving city infrastructure.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities–starting with cutting the least transparent and most harmful parts of the Hartford Police Department budget.
+
+Racist police violence doesn’t just happen in other cities–it happens here in Hartford too. We see it in the disproportionate imprisonment of Black people, and in the racialized inequality that is prevalent in Hartford. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy:\ COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
+
+Thank you,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `Maly.Rosado@hartford.gov,TJ.Clarke@hartford.gov,James.Sanchez@hartford.gov,Nick.Lebron@hartford.gov,Marilyn.Rossetti@hartford.gov,Shirley.Surgeon@hartford.gov,John.Gale@hartford.gov,wildaliz.bermudez@hartford.gov,Joshua.Michtom@hartford.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/hartford`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

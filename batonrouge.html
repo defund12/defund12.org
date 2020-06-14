@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor-President Broome and City Council</h2>
+  <b>Baton Rouge, LA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/batonrouge`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `metrocouncil@brla.gov, mayor@brla.gov, council-dist1@brla.gov, council-dist2@brla.gov, council-dist3@brla.gov, council-dist4@brla.gov, council-dist5@brgov.com, DLewis@brla.gov, lcole@brla.gov, council-dist8@brla.gov, dhudson@brla.gov, twicker@brla.gov, mwatson@brla.gov, CouncilDistrict12DL@brla.gov`)">🔗</span>
+        metrocouncil@brla.gov, mayor@brla.gov, council-dist1@brla.gov, council-dist2@brla.gov, council-dist3@brla.gov, council-dist4@brla.gov, council-dist5@brgov.com, DLewis@brla.gov, lcole@brla.gov, council-dist8@brla.gov, dhudson@brla.gov, twicker@brla.gov, mwatson@brla.gov, CouncilDistrict12DL@brla.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor-President Sharon Weston Broome and the Baton Rouge City Council:
+
+My name is [INSERT NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Baton Rouge City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+Referencing the most recent city budget, a staggering $93,530,380 has been allocated for the Baton Rouge police department. Relatedly, Louisiana has the highest incarceration rate in the nation, which disproportionately affects Black residents (e.g., over 60% of incarcerated individuals in LA were black according to the 2010 U.S. census). Baton Rouge’s state offices, capitol building, and even LSU’s campus all utilize prison labor, where prisoners earn between $0.00 to 0.70 cents per hour for their labor; this is state sanctioned, modern-day slavery.
+
+Significantly less funds are allocated for vital community programs including workforce innovations, job training, and employment support programs under the Department of Human Development and Services (e.g., $736,520) and social services assistance, economic assistance, and housing assistance provided by the Office of Community Development (i.e., $8,299,510) for example.
+
+Baton Rouge is a city with high levels of poverty (i.e., 25.2% of Baton Rouge residents, over half of which are black, are living in poverty compared to the national average of 11.8% according to the U.S. census) and I am demanding that we re-allocate funds to programs proven to more effectively promote a safe and equitable community and to address economic disparities. These programs include community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Baton Rouge residents.
+
+History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city. I strongly urge you to remove funding from police departments and reallocate it to social services that make a meaningful difference for the citizens of Baton Rouge.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE] 
+[YOUR EMAIL]`)">🔗</span>
+        <br /> <p>To Mayor-President Sharon Weston Broome and the Baton Rouge City Council:</p>
+
+<p>My name is [INSERT NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Baton Rouge City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.</p>
+
+<p>Referencing the most recent city budget, a staggering $93,530,380 has been allocated for the Baton Rouge police department. Relatedly, Louisiana has the highest incarceration rate in the nation, which disproportionately affects Black residents (e.g., over 60% of incarcerated individuals in LA were black according to the 2010 U.S. census). Baton Rouge’s state offices, capitol building, and even LSU’s campus all utilize prison labor, where prisoners earn between $0.00 to 0.70 cents per hour for their labor; this is state sanctioned, modern-day slavery.</p>
+
+<p>Significantly less funds are allocated for vital community programs including workforce innovations, job training, and employment support programs under the Department of Human Development and Services (e.g., $736,520) and social services assistance, economic assistance, and housing assistance provided by the Office of Community Development (i.e., $8,299,510) for example.</p>
+
+<p>Baton Rouge is a city with high levels of poverty (i.e., 25.2% of Baton Rouge residents, over half of which are black, are living in poverty compared to the national average of 11.8% according to the U.S. census) and I am demanding that we re-allocate funds to programs proven to more effectively promote a safe and equitable community and to address economic disparities. These programs include community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Baton Rouge residents.</p>
+
+<p>History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city. I strongly urge you to remove funding from police departments and reallocate it to social services that make a meaningful difference for the citizens of Baton Rouge.</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE] 
+[YOUR EMAIL]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor-President Sharon Weston Broome and the Baton Rouge City Council:<br />
+<br />
+My name is [INSERT NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Baton Rouge City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.<br />
+<br />
+Referencing the most recent city budget, a staggering $93,530,380 has been allocated for the Baton Rouge police department. Relatedly, Louisiana has the highest incarceration rate in the nation, which disproportionately affects Black residents (e.g., over 60% of incarcerated individuals in LA were black according to the 2010 U.S. census). Baton Rouge’s state offices, capitol building, and even LSU’s campus all utilize prison labor, where prisoners earn between $0.00 to 0.70 cents per hour for their labor; this is state sanctioned, modern-day slavery.<br />
+<br />
+Significantly less funds are allocated for vital community programs including workforce innovations, job training, and employment support programs under the Department of Human Development and Services (e.g., $736,520) and social services assistance, economic assistance, and housing assistance provided by the Office of Community Development (i.e., $8,299,510) for example.<br />
+<br />
+Baton Rouge is a city with high levels of poverty (i.e., 25.2% of Baton Rouge residents, over half of which are black, are living in poverty compared to the national average of 11.8% according to the U.S. census) and I am demanding that we re-allocate funds to programs proven to more effectively promote a safe and equitable community and to address economic disparities. These programs include community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Baton Rouge residents.<br />
+<br />
+History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city. I strongly urge you to remove funding from police departments and reallocate it to social services that make a meaningful difference for the citizens of Baton Rouge.<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR PHONE] <br />
+[YOUR EMAIL]`.trim() :
+      `To Mayor-President Sharon Weston Broome and the Baton Rouge City Council:
+
+My name is [INSERT NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am writing to demand that the Baton Rouge City Council adopt a city budget that prioritizes community wellbeing, and redirects funding away from the police.
+
+Referencing the most recent city budget, a staggering $93,530,380 has been allocated for the Baton Rouge police department. Relatedly, Louisiana has the highest incarceration rate in the nation, which disproportionately affects Black residents (e.g., over 60% of incarcerated individuals in LA were black according to the 2010 U.S. census). Baton Rouge’s state offices, capitol building, and even LSU’s campus all utilize prison labor, where prisoners earn between $0.00 to 0.70 cents per hour for their labor; this is state sanctioned, modern-day slavery.
+
+Significantly less funds are allocated for vital community programs including workforce innovations, job training, and employment support programs under the Department of Human Development and Services (e.g., $736,520) and social services assistance, economic assistance, and housing assistance provided by the Office of Community Development (i.e., $8,299,510) for example.
+
+Baton Rouge is a city with high levels of poverty (i.e., 25.2% of Baton Rouge residents, over half of which are black, are living in poverty compared to the national average of 11.8% according to the U.S. census) and I am demanding that we re-allocate funds to programs proven to more effectively promote a safe and equitable community and to address economic disparities. These programs include community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Baton Rouge residents.
+
+History has shown that police “reform” is not enough. We must take a hard look at the ways that the current system in place fails to serve–and in fact actively harms–our community, and come together to reimagine the role of police in our city. I strongly urge you to remove funding from police departments and reallocate it to social services that make a meaningful difference for the citizens of Baton Rouge.
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR PHONE] 
+[YOUR EMAIL]`.trim()
+    );
+    const recipients = `metrocouncil@brla.gov,mayor@brla.gov,council-dist1@brla.gov,council-dist2@brla.gov,council-dist3@brla.gov,council-dist4@brla.gov,council-dist5@brgov.com,DLewis@brla.gov,lcole@brla.gov,council-dist8@brla.gov,dhudson@brla.gov,twicker@brla.gov,mwatson@brla.gov,CouncilDistrict12DL@brla.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/batonrouge`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

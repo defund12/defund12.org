@@ -70,6 +70,71 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members and Mayor</h2>
+  <b>Salt Lake City, UT</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/saltlakecity`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@slcgov.com, james.rogers@slcgov.com, andrew.johnston@slcgov.com, chris.wharton@slcgov.com, ana.valdemoros@slcgov.com, darin.mano@slcgov.com, dan.dugan@slcgov.com, amy.fowler@slcgov.com`)">🔗</span>
+        mayor@slcgov.com, james.rogers@slcgov.com, andrew.johnston@slcgov.com, chris.wharton@slcgov.com, ana.valdemoros@slcgov.com, darin.mano@slcgov.com, dan.dugan@slcgov.com, amy.fowler@slcgov.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+
+We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+
+Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, despite the fact that crime has fallen considerably during the past few months. The SLCPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.
+
+We demand that the City Council defund the SLCPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Utahans during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+
+Although City Council has avoided voting or revising Mayor Mendenhall’s draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SLC budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.</p>
+
+<p>We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.</p>
+
+<p>Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, despite the fact that crime has fallen considerably during the past few months. The SLCPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.</p>
+
+<p>We demand that the City Council defund the SLCPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Utahans during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.</p>
+
+<p>Although City Council has avoided voting or revising Mayor Mendenhall’s draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SLC budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1935,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.<br />
+<br />
+We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.<br />
+<br />
+Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, despite the fact that crime has fallen considerably during the past few months. The SLCPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.<br />
+<br />
+We demand that the City Council defund the SLCPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Utahans during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.<br />
+<br />
+Although City Council has avoided voting or revising Mayor Mendenhall’s draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SLC budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+
+We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+
+Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, despite the fact that crime has fallen considerably during the past few months. The SLCPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.
+
+We demand that the City Council defund the SLCPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Utahans during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+
+Although City Council has avoided voting or revising Mayor Mendenhall’s draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SLC budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `mayor@slcgov.com,james.rogers@slcgov.com,andrew.johnston@slcgov.com,chris.wharton@slcgov.com,ana.valdemoros@slcgov.com,darin.mano@slcgov.com,dan.dugan@slcgov.com,amy.fowler@slcgov.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/saltlakecity`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2006,4 @@
 </body>
 
 </html>
+

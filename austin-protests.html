@@ -70,6 +70,63 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>To Mayor & City Council - Condemning Excessive Force</h2>
+  <b>Austin, TX</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/austin-protests`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `steve.adler@austintexas.gov, Natasha.Madison@austintexas.gov, Delia.Garza@austintexas.gov, Sabino.Renteria@austintexas.gov, Greg.Casar@austintexas.gov, Ann.Kitchen@austintexas.gov, jimmy.flannigan@austintexas.gov, Leslie.Pool@austintexas.gov, Paige.Ellis@austintexas.gov, Kathie.Tovo@austintexas.gov, Alison.Alter@austintexas.gov`)">🔗</span>
+        steve.adler@austintexas.gov, Natasha.Madison@austintexas.gov, Delia.Garza@austintexas.gov, Sabino.Renteria@austintexas.gov, Greg.Casar@austintexas.gov, Ann.Kitchen@austintexas.gov, jimmy.flannigan@austintexas.gov, Leslie.Pool@austintexas.gov, Paige.Ellis@austintexas.gov, Kathie.Tovo@austintexas.gov, Alison.Alter@austintexas.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear City Council Members, 
+
+My name is [NAME], and I am a resident of Austin, Texas. I am outraged at the excessive use of force that APD used against protesters this weekend. Using police brutality against people peacefully protesting police brutality is, at the very least, a bad look and, to be honest, is proof that these protests are necessary. A sixteen year old Chicano boy was shot while standing away from the main crowd of protestors, and a twenty year old Black man was shot in the head and remains in critical condition. A pregnant Black woman was shot in her stomach and back with "non-lethal" rounds by APD. The use of tear gas (prohibited for use in WARFARE by many international treaties) and rubber bullets (not meant to be shot point blank, but has been) against unarmed protesters is absolutely unacceptable. 
+
+Following the murder of Mike Ramos and the recent city report that found a culture of misogyny and racism at APD, I am calling on you to seriously reduce city funding to APD and to implement immediate reform. There is no reason that over ⅓ of Austin’s budget should be allocated to the police. In the middle of a pandemic and a recession, we should be using our city's budget to fund affordable housing and public health rather than a violent police department that is, quite frankly, upholding policies and practices that allow white supremacy to take Black lives every single day. Thank you for your work to serve our city.
+
+Sincerely,
+The People of Austin, TX
+[NAME]
+[PHONE_NUMBER]
+[EMAIL]
+[ADDRESS]
+`)">🔗</span>
+        <br /> <p>Dear City Council Members,</p>
+
+<p>My name is [NAME], and I am a resident of Austin, Texas. I am outraged at the excessive use of force that APD used against protesters this weekend. Using police brutality against people peacefully protesting police brutality is, at the very least, a bad look and, to be honest, is proof that these protests are necessary. A sixteen year old Chicano boy was shot while standing away from the main crowd of protestors, and a twenty year old Black man was shot in the head and remains in critical condition. A pregnant Black woman was shot in her stomach and back with “non-lethal” rounds by APD. The use of tear gas (prohibited for use in WARFARE by many international treaties) and rubber bullets (not meant to be shot point blank, but has been) against unarmed protesters is absolutely unacceptable.</p>
+
+<p>Following the murder of Mike Ramos and the recent city report that found a culture of misogyny and racism at APD, I am calling on you to seriously reduce city funding to APD and to implement immediate reform. There is no reason that over ⅓ of Austin’s budget should be allocated to the police. In the middle of a pandemic and a recession, we should be using our city’s budget to fund affordable housing and public health rather than a violent police department that is, quite frankly, upholding policies and practices that allow white supremacy to take Black lives every single day. Thank you for your work to serve our city.</p>
+
+<p>Sincerely,
+The People of Austin, TX
+[NAME]
+[PHONE_NUMBER]
+[EMAIL]
+[ADDRESS]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1927,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear City Council Members, <br />
+<br />
+My name is [NAME], and I am a resident of Austin, Texas. I am outraged at the excessive use of force that APD used against protesters this weekend. Using police brutality against people peacefully protesting police brutality is, at the very least, a bad look and, to be honest, is proof that these protests are necessary. A sixteen year old Chicano boy was shot while standing away from the main crowd of protestors, and a twenty year old Black man was shot in the head and remains in critical condition. A pregnant Black woman was shot in her stomach and back with "non-lethal" rounds by APD. The use of tear gas (prohibited for use in WARFARE by many international treaties) and rubber bullets (not meant to be shot point blank, but has been) against unarmed protesters is absolutely unacceptable. <br />
+<br />
+Following the murder of Mike Ramos and the recent city report that found a culture of misogyny and racism at APD, I am calling on you to seriously reduce city funding to APD and to implement immediate reform. There is no reason that over ⅓ of Austin’s budget should be allocated to the police. In the middle of a pandemic and a recession, we should be using our city's budget to fund affordable housing and public health rather than a violent police department that is, quite frankly, upholding policies and practices that allow white supremacy to take Black lives every single day. Thank you for your work to serve our city.<br />
+<br />
+Sincerely,<br />
+The People of Austin, TX<br />
+[NAME]<br />
+[PHONE_NUMBER]<br />
+[EMAIL]<br />
+[ADDRESS]<br />
+`.trim() :
+      `Dear City Council Members, 
+
+My name is [NAME], and I am a resident of Austin, Texas. I am outraged at the excessive use of force that APD used against protesters this weekend. Using police brutality against people peacefully protesting police brutality is, at the very least, a bad look and, to be honest, is proof that these protests are necessary. A sixteen year old Chicano boy was shot while standing away from the main crowd of protestors, and a twenty year old Black man was shot in the head and remains in critical condition. A pregnant Black woman was shot in her stomach and back with "non-lethal" rounds by APD. The use of tear gas (prohibited for use in WARFARE by many international treaties) and rubber bullets (not meant to be shot point blank, but has been) against unarmed protesters is absolutely unacceptable. 
+
+Following the murder of Mike Ramos and the recent city report that found a culture of misogyny and racism at APD, I am calling on you to seriously reduce city funding to APD and to implement immediate reform. There is no reason that over ⅓ of Austin’s budget should be allocated to the police. In the middle of a pandemic and a recession, we should be using our city's budget to fund affordable housing and public health rather than a violent police department that is, quite frankly, upholding policies and practices that allow white supremacy to take Black lives every single day. Thank you for your work to serve our city.
+
+Sincerely,
+The People of Austin, TX
+[NAME]
+[PHONE_NUMBER]
+[EMAIL]
+[ADDRESS]
+`.trim()
+    );
+    const recipients = `steve.adler@austintexas.gov,Natasha.Madison@austintexas.gov,Delia.Garza@austintexas.gov,Sabino.Renteria@austintexas.gov,Greg.Casar@austintexas.gov,Ann.Kitchen@austintexas.gov,jimmy.flannigan@austintexas.gov,Leslie.Pool@austintexas.gov,Paige.Ellis@austintexas.gov,Kathie.Tovo@austintexas.gov,Alison.Alter@austintexas.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/austin-protests`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1990,4 @@
 </body>
 
 </html>
+

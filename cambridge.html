@@ -70,6 +70,81 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor, City Councilors, and the City Manager</h2>
+  <b>Cambridge, MA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/cambridge`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `council@cambridgema.gov, citymanager@cambridgema.gov, mayor@cambridgema.gov`)">🔗</span>
+        council@cambridgema.gov, citymanager@cambridgema.gov, mayor@cambridgema.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear City Councilors, Mayor Siddiqui, and City Manager DePasquale,
+
+My name is [YOUR NAME] and I am a resident of Cambridge. I am writing in support of Policy Order #7 to demand that the City of Cambridge reduce the Cambridge Police Department budget. Cambridge’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.
+
+Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Members of our community live in tight quarters and on lean budgets--this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.
+
+Meanwhile, the Police Department is the single largest expenditure in the City’s General Fund behind loan repayments. The CPD currently spends 52% of its budget on patrolling--$33,000,000--or 7x as much spending on patrol than social justice initiatives.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities--starting with cutting the least transparent and most harmful parts of the CPD budget.
+
+Racist police violence doesn’t just happen in other cities--it happens here in Cambridge too. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
+
+Thank you,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear City Councilors, Mayor Siddiqui, and City Manager DePasquale,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of Cambridge. I am writing in support of Policy Order #7 to demand that the City of Cambridge reduce the Cambridge Police Department budget. Cambridge’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.</p>
+
+<p>Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Members of our community live in tight quarters and on lean budgets–this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.</p>
+
+<p>Meanwhile, the Police Department is the single largest expenditure in the City’s General Fund behind loan repayments. The CPD currently spends 52% of its budget on patrolling–$33,000,000–or 7x as much spending on patrol than social justice initiatives.</p>
+
+<p>Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities–starting with cutting the least transparent and most harmful parts of the CPD budget.</p>
+
+<p>Racist police violence doesn’t just happen in other cities–it happens here in Cambridge too. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]</p>
+
+<p>[YOUR ADDRESS]</p>
+
+<p>[YOUR EMAIL]</p>
+
+<p>[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1945,74 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear City Councilors, Mayor Siddiqui, and City Manager DePasquale,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of Cambridge. I am writing in support of Policy Order #7 to demand that the City of Cambridge reduce the Cambridge Police Department budget. Cambridge’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.<br />
+<br />
+Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Members of our community live in tight quarters and on lean budgets--this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.<br />
+<br />
+Meanwhile, the Police Department is the single largest expenditure in the City’s General Fund behind loan repayments. The CPD currently spends 52% of its budget on patrolling--$33,000,000--or 7x as much spending on patrol than social justice initiatives.<br />
+<br />
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities--starting with cutting the least transparent and most harmful parts of the CPD budget.<br />
+<br />
+Racist police violence doesn’t just happen in other cities--it happens here in Cambridge too. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+<br />
+[YOUR ADDRESS]<br />
+<br />
+[YOUR EMAIL]<br />
+<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear City Councilors, Mayor Siddiqui, and City Manager DePasquale,
+
+My name is [YOUR NAME] and I am a resident of Cambridge. I am writing in support of Policy Order #7 to demand that the City of Cambridge reduce the Cambridge Police Department budget. Cambridge’s needs must be addressed by the provision of care, and not the threat of violence. We must invest in public services that build towards “a free and fair society” rather than an armed force that endangers us.
+
+Our city faces racial inequalities, borne from historical injustice and brought into sharp relief by the COVID-19 epidemic, that can’t be solved by policing. Members of our community live in tight quarters and on lean budgets--this before a pandemic stole three months of wages, and counting. Thousands of us are becoming food-insecure and are at risk of eviction as soon as the ban is lifted. Essential educators are living on starvation pay while repeated and overwhelming community demands to right this glaring injustice are ignored.
+
+Meanwhile, the Police Department is the single largest expenditure in the City’s General Fund behind loan repayments. The CPD currently spends 52% of its budget on patrolling--$33,000,000--or 7x as much spending on patrol than social justice initiatives.
+
+Now especially, the City Council can take a stand for racial justice by significantly defunding policing and investing in Black and Brown communities--starting with cutting the least transparent and most harmful parts of the CPD budget.
+
+Racist police violence doesn’t just happen in other cities--it happens here in Cambridge too. The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
+
+Thank you,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `council@cambridgema.gov,citymanager@cambridgema.gov,mayor@cambridgema.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/cambridge`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2026,4 @@
 </body>
 
 </html>
+

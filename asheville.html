@@ -70,6 +70,69 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Council Members</h2>
+  <b>Asheville, NC</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/asheville`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `ashevillenccouncil@ashevillenc.gov, AshevilleCityCouncilJune92020@PublicInput.com`)">🔗</span>
+        ashevillenccouncil@ashevillenc.gov, AshevilleCityCouncilJune92020@PublicInput.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Asheville City Councilmembers, 
+
+My name is [x] and I’m a resident of Asheville. I am writing about Asheville Mayor Esther Manheimer’s fiscal year 2021 budget proposal.
+
+I am asking that the Asheville City Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that Council may find ways to redirect money away from Asheville Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from APD, and towards sectors that facilitate the dismantling of racial and class inequality. 
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.
+
+Do not forget our poor communities and communities of color who are disproportionate targets of police violence. Justice will only be served when the police are reformed, and this will not be possible until we defund them. 
+
+Can I count on you to consider an alternative budget that puts a focus on social service programs? 
+
+Thank you,
+
+[x]
+`)">🔗</span>
+        <br /> <p>Dear Asheville City Councilmembers,</p>
+
+<p>My name is [x] and I’m a resident of Asheville. I am writing about Asheville Mayor Esther Manheimer’s fiscal year 2021 budget proposal.</p>
+
+<p>I am asking that the Asheville City Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that Council may find ways to redirect money away from Asheville Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from APD, and towards sectors that facilitate the dismantling of racial and class inequality.</p>
+
+<p>Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.</p>
+
+<p>Do not forget our poor communities and communities of color who are disproportionate targets of police violence. Justice will only be served when the police are reformed, and this will not be possible until we defund them.</p>
+
+<p>Can I count on you to consider an alternative budget that puts a focus on social service programs?</p>
+
+<p>Thank you,</p>
+
+<p>[x]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1933,62 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Asheville City Councilmembers, <br />
+<br />
+My name is [x] and I’m a resident of Asheville. I am writing about Asheville Mayor Esther Manheimer’s fiscal year 2021 budget proposal.<br />
+<br />
+I am asking that the Asheville City Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that Council may find ways to redirect money away from Asheville Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from APD, and towards sectors that facilitate the dismantling of racial and class inequality. <br />
+<br />
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.<br />
+<br />
+Do not forget our poor communities and communities of color who are disproportionate targets of police violence. Justice will only be served when the police are reformed, and this will not be possible until we defund them. <br />
+<br />
+Can I count on you to consider an alternative budget that puts a focus on social service programs? <br />
+<br />
+Thank you,<br />
+<br />
+[x]<br />
+`.trim() :
+      `Dear Asheville City Councilmembers, 
+
+My name is [x] and I’m a resident of Asheville. I am writing about Asheville Mayor Esther Manheimer’s fiscal year 2021 budget proposal.
+
+I am asking that the Asheville City Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that Council may find ways to redirect money away from Asheville Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from APD, and towards sectors that facilitate the dismantling of racial and class inequality. 
+
+Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons (Source: Popular Democracy). As such, I demand more aggressive financial support be directed to those areas.
+
+Do not forget our poor communities and communities of color who are disproportionate targets of police violence. Justice will only be served when the police are reformed, and this will not be possible until we defund them. 
+
+Can I count on you to consider an alternative budget that puts a focus on social service programs? 
+
+Thank you,
+
+[x]
+`.trim()
+    );
+    const recipients = `ashevillenccouncil@ashevillenc.gov,AshevilleCityCouncilJune92020@PublicInput.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/asheville`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2002,4 @@
 </body>
 
 </html>
+

@@ -70,6 +70,95 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Tallahassee, FL</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/tallahassee`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@talgov.com, dianne.williams-cox@talgov.com, elaine.bryant@talgov.com, curtis.richardson@talgov.com, jeremy.matlow@talgov.com`)">🔗</span>
+        mayor@talgov.com, dianne.williams-cox@talgov.com, elaine.bryant@talgov.com, curtis.richardson@talgov.com, jeremy.matlow@talgov.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Dailey and Tallahassee City Commissioners,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I request that the Mayor and City Commission support our community and hear our call for:
+
+- Efforts to defund and de-escalate the police department, and to reallocate money to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented activities.
+
+- Rejection of expanded and militarized police budgets.
+
+- Efforts to improve oversight and independent investigations to hold individual law enforcement officers and police departments accountable for misconduct.
+
+- Redirection of money away from the Tallahassee PD, and into Community Development, Public Transportation, Education, Parks & Recreation, as well as targeted support for marginalized communities.
+
+I have noticed that in the FY20 approved budget the police department's budget is over $59 million. That is over twice the amount for parks and recreation, and, critically, nearly three times the amount for StarMetro Operating Fund. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.
+
+I request that an emergency meeting be called before the fiscal year goes into effect in order to reallocate these funds to resources that community members can benefit from.
+
+Thank you for your time,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Dailey and Tallahassee City Commissioners,</p>
+
+<p>My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I request that the Mayor and City Commission support our community and hear our call for:</p>
+
+<ul>
+  <li>
+    <p>Efforts to defund and de-escalate the police department, and to reallocate money to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented activities.</p>
+  </li>
+  <li>
+    <p>Rejection of expanded and militarized police budgets.</p>
+  </li>
+  <li>
+    <p>Efforts to improve oversight and independent investigations to hold individual law enforcement officers and police departments accountable for misconduct.</p>
+  </li>
+  <li>
+    <p>Redirection of money away from the Tallahassee PD, and into Community Development, Public Transportation, Education, Parks &amp; Recreation, as well as targeted support for marginalized communities.</p>
+  </li>
+</ul>
+
+<p>I have noticed that in the FY20 approved budget the police department’s budget is over $59 million. That is over twice the amount for parks and recreation, and, critically, nearly three times the amount for StarMetro Operating Fund. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.</p>
+
+<p>I request that an emergency meeting be called before the fiscal year goes into effect in order to reallocate these funds to resources that community members can benefit from.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]</p>
+
+<p>[YOUR ADDRESS]</p>
+
+<p>[YOUR EMAIL]</p>
+
+<p>[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1959,80 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Dailey and Tallahassee City Commissioners,<br />
+<br />
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I request that the Mayor and City Commission support our community and hear our call for:<br />
+<br />
+- Efforts to defund and de-escalate the police department, and to reallocate money to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented activities.<br />
+<br />
+- Rejection of expanded and militarized police budgets.<br />
+<br />
+- Efforts to improve oversight and independent investigations to hold individual law enforcement officers and police departments accountable for misconduct.<br />
+<br />
+- Redirection of money away from the Tallahassee PD, and into Community Development, Public Transportation, Education, Parks & Recreation, as well as targeted support for marginalized communities.<br />
+<br />
+I have noticed that in the FY20 approved budget the police department's budget is over $59 million. That is over twice the amount for parks and recreation, and, critically, nearly three times the amount for StarMetro Operating Fund. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.<br />
+<br />
+I request that an emergency meeting be called before the fiscal year goes into effect in order to reallocate these funds to resources that community members can benefit from.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+<br />
+[YOUR ADDRESS]<br />
+<br />
+[YOUR EMAIL]<br />
+<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Dailey and Tallahassee City Commissioners,
+
+My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I request that the Mayor and City Commission support our community and hear our call for:
+
+- Efforts to defund and de-escalate the police department, and to reallocate money to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented activities.
+
+- Rejection of expanded and militarized police budgets.
+
+- Efforts to improve oversight and independent investigations to hold individual law enforcement officers and police departments accountable for misconduct.
+
+- Redirection of money away from the Tallahassee PD, and into Community Development, Public Transportation, Education, Parks & Recreation, as well as targeted support for marginalized communities.
+
+I have noticed that in the FY20 approved budget the police department's budget is over $59 million. That is over twice the amount for parks and recreation, and, critically, nearly three times the amount for StarMetro Operating Fund. In light of recent events, I believe it is critical that policing be deprioritized relative to spending on social programs that are actually proven to promote safe and equitable communities.
+
+I request that an emergency meeting be called before the fiscal year goes into effect in order to reallocate these funds to resources that community members can benefit from.
+
+Thank you for your time,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayor@talgov.com,dianne.williams-cox@talgov.com,elaine.bryant@talgov.com,curtis.richardson@talgov.com,jeremy.matlow@talgov.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/tallahassee`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2046,4 @@
 </body>
 
 </html>
+

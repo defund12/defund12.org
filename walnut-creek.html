@@ -70,6 +70,82 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor Haskew and City Council</h2>
+  <b>Walnut Creek, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/walnut-creek`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `justin@justinwedel.com, kwilk@walnut-creek.org, cindy@cindysilva.org, francois@walnut-creek.org, mayor@walnut-creek.org`)">🔗</span>
+        justin@justinwedel.com, kwilk@walnut-creek.org, cindy@cindysilva.org, francois@walnut-creek.org, mayor@walnut-creek.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Haskew and City Council Members,
+
+My name is [YOUR NAME] and I am a Walnut Creek resident writing to urge you to defund the Walnut Creek Police Department.
+
+WCPD takes up 30% ($52.1M) of the city’s general fund, and that percentage has risen for the last two decades, taking away desperately needed resources from essential city programs and services. The entire budget for Community & Economic Development only accounts for 8% ($14.9M) of the city's budget. The investment in policing has not made us safer – WCPD remains an embarrassment to the city and a lethal threat to Walnut Creek's Black and Brown communities, while increased police spending shows no correlation to increasing public safety over the past 20 years. With Walnut Creek's current finances in dire jeopardy, it is clear that we must defund the police.
+
+As Walnut Creek residents, we therefore demand that you take immediate action to ensure the following:
+
+* Reduce WCPD’s allocation from the General Fund by 50% (roughly $26M)
+* Disallow unauthorised overtime by WCPD
+* Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+Walnut Creek can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund and Abolish WCPD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Haskew and City Council Members,</p>
+
+<p>My name is [YOUR NAME] and I am a Walnut Creek resident writing to urge you to defund the Walnut Creek Police Department.</p>
+
+<p>WCPD takes up 30% ($52.1M) of the city’s general fund, and that percentage has risen for the last two decades, taking away desperately needed resources from essential city programs and services. The entire budget for Community &amp; Economic Development only accounts for 8% ($14.9M) of the city’s budget. The investment in policing has not made us safer – WCPD remains an embarrassment to the city and a lethal threat to Walnut Creek’s Black and Brown communities, while increased police spending shows no correlation to increasing public safety over the past 20 years. With Walnut Creek’s current finances in dire jeopardy, it is clear that we must defund the police.</p>
+
+<p>As Walnut Creek residents, we therefore demand that you take immediate action to ensure the following:</p>
+
+<ul>
+  <li>Reduce WCPD’s allocation from the General Fund by 50% (roughly $26M)</li>
+  <li>Disallow unauthorised overtime by WCPD</li>
+  <li>Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence</li>
+  <li>Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.</li>
+</ul>
+
+<p>Walnut Creek can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund and Abolish WCPD.</p>
+
+<p>Thank you,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1946,72 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Haskew and City Council Members,<br />
+<br />
+My name is [YOUR NAME] and I am a Walnut Creek resident writing to urge you to defund the Walnut Creek Police Department.<br />
+<br />
+WCPD takes up 30% ($52.1M) of the city’s general fund, and that percentage has risen for the last two decades, taking away desperately needed resources from essential city programs and services. The entire budget for Community & Economic Development only accounts for 8% ($14.9M) of the city's budget. The investment in policing has not made us safer – WCPD remains an embarrassment to the city and a lethal threat to Walnut Creek's Black and Brown communities, while increased police spending shows no correlation to increasing public safety over the past 20 years. With Walnut Creek's current finances in dire jeopardy, it is clear that we must defund the police.<br />
+<br />
+As Walnut Creek residents, we therefore demand that you take immediate action to ensure the following:<br />
+<br />
+* Reduce WCPD’s allocation from the General Fund by 50% (roughly $26M)<br />
+* Disallow unauthorised overtime by WCPD<br />
+* Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence<br />
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+<br />
+Walnut Creek can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund and Abolish WCPD.<br />
+<br />
+Thank you,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Haskew and City Council Members,
+
+My name is [YOUR NAME] and I am a Walnut Creek resident writing to urge you to defund the Walnut Creek Police Department.
+
+WCPD takes up 30% ($52.1M) of the city’s general fund, and that percentage has risen for the last two decades, taking away desperately needed resources from essential city programs and services. The entire budget for Community & Economic Development only accounts for 8% ($14.9M) of the city's budget. The investment in policing has not made us safer – WCPD remains an embarrassment to the city and a lethal threat to Walnut Creek's Black and Brown communities, while increased police spending shows no correlation to increasing public safety over the past 20 years. With Walnut Creek's current finances in dire jeopardy, it is clear that we must defund the police.
+
+As Walnut Creek residents, we therefore demand that you take immediate action to ensure the following:
+
+* Reduce WCPD’s allocation from the General Fund by 50% (roughly $26M)
+* Disallow unauthorised overtime by WCPD
+* Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+* Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+Walnut Creek can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to Defund and Abolish WCPD.
+
+Thank you,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `justin@justinwedel.com,kwilk@walnut-creek.org,cindy@cindysilva.org,francois@walnut-creek.org,mayor@walnut-creek.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/walnut-creek`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2025,4 @@
 </body>
 
 </html>
+

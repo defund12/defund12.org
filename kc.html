@@ -70,6 +70,85 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to the Mayor and City Councilmembers</h2>
+  <b>Kansas City, MO</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/kc`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayorq@kcmo.org, heather.hall@kcmo.org, kevin.oneill@kcmo.org, teresa.loar@kcmo.org, amy.justis@kcmo.org, brandon.ellington@kcmo.org, melissa.robinson@kcmo.org, katheryn.shields@kcmo.org, eric.bunch@kcmo.org, keema.mccoy@kcmo.org, angela.pearson@kcmo.org, katrina.foster@kcmo.org, fred.wickham@kcmo.org`)">🔗</span>
+        mayorq@kcmo.org, heather.hall@kcmo.org, kevin.oneill@kcmo.org, teresa.loar@kcmo.org, amy.justis@kcmo.org, brandon.ellington@kcmo.org, melissa.robinson@kcmo.org, katheryn.shields@kcmo.org, eric.bunch@kcmo.org, keema.mccoy@kcmo.org, angela.pearson@kcmo.org, katrina.foster@kcmo.org, fred.wickham@kcmo.org
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Lucas and City Council,
+
+My name is [NAME] and I am a resident of Kansas City. I am writing to ask you to reallocate funds away from the KCPD and toward public resources such as healthcare services, housing, and education. I commend Mayor Lucas for de-escalating the protests in our city by removing the unnecessary and militarized police presence. Let that serve as a picture of how our city ought to operate as a whole.
+
+The city’s recently approved FY2020-21 budget promises ~$270 million to police alone, which is ~$50 million more than the entire budget for Neighborhoods, Housing, and Healthy Communities in this fiscal year. This year’s policing budget brings a $10.7 million increase from the previous year’s budget, an increase enabling ten new police officer positions as well as wage increases and pensions for existing officers.
+
+As the city’s policing budget increases, direct investment in our communities continues to be overlooked. No part of the budget was reserved for the fulfillment of Office of Tenant Advocate, a mere $1.2 million dollar budget proposal from the KC Tenants group to Mayor Lucas. This proposal, made to fulfill the Tenants Bill of Rights passed by the mayor and city council in December 2019, was seemingly ignored in the city’s budget. This is but one example of the way that police funding interferes with and blocks the allocation of funds back into our communities, as a result perpetuating racial and economic inequality in Kansas City.
+
+On June 4th, 2020, Mayor Lucas announced “significant” police oversight measures. While these measures indicate that the mayor and city council are open to hearing the demands of the people, the measures themselves do not address the issue of police department overfunding in the city’s FY2020-21 budget.
+
+There is little evidence that more policing and increased wages for police officers correlates to safer communities. Investment in the police does not equal an investment in communities. To truly help our citizens, I would like to see an immediate reconsideration and revision of police funding in our city so that we might begin to adequately invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+Kansas City can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police department.
+
+Thank you for your time,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]
+`)">🔗</span>
+        <br /> <p>Dear Mayor Lucas and City Council,</p>
+
+<p>My name is [NAME] and I am a resident of Kansas City. I am writing to ask you to reallocate funds away from the KCPD and toward public resources such as healthcare services, housing, and education. I commend Mayor Lucas for de-escalating the protests in our city by removing the unnecessary and militarized police presence. Let that serve as a picture of how our city ought to operate as a whole.</p>
+
+<p>The city’s recently approved FY2020-21 budget promises ~$270 million to police alone, which is ~$50 million more than the entire budget for Neighborhoods, Housing, and Healthy Communities in this fiscal year. This year’s policing budget brings a $10.7 million increase from the previous year’s budget, an increase enabling ten new police officer positions as well as wage increases and pensions for existing officers.</p>
+
+<p>As the city’s policing budget increases, direct investment in our communities continues to be overlooked. No part of the budget was reserved for the fulfillment of Office of Tenant Advocate, a mere $1.2 million dollar budget proposal from the KC Tenants group to Mayor Lucas. This proposal, made to fulfill the Tenants Bill of Rights passed by the mayor and city council in December 2019, was seemingly ignored in the city’s budget. This is but one example of the way that police funding interferes with and blocks the allocation of funds back into our communities, as a result perpetuating racial and economic inequality in Kansas City.</p>
+
+<p>On June 4th, 2020, Mayor Lucas announced “significant” police oversight measures. While these measures indicate that the mayor and city council are open to hearing the demands of the people, the measures themselves do not address the issue of police department overfunding in the city’s FY2020-21 budget.</p>
+
+<p>There is little evidence that more policing and increased wages for police officers correlates to safer communities. Investment in the police does not equal an investment in communities. To truly help our citizens, I would like to see an immediate reconsideration and revision of police funding in our city so that we might begin to adequately invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.</p>
+
+<p>Kansas City can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police department.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]</p>
+
+<p>[YOUR ADDRESS]</p>
+
+<p>[YOUR EMAIL]</p>
+
+<p>[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1949,78 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Lucas and City Council,<br />
+<br />
+My name is [NAME] and I am a resident of Kansas City. I am writing to ask you to reallocate funds away from the KCPD and toward public resources such as healthcare services, housing, and education. I commend Mayor Lucas for de-escalating the protests in our city by removing the unnecessary and militarized police presence. Let that serve as a picture of how our city ought to operate as a whole.<br />
+<br />
+The city’s recently approved FY2020-21 budget promises ~$270 million to police alone, which is ~$50 million more than the entire budget for Neighborhoods, Housing, and Healthy Communities in this fiscal year. This year’s policing budget brings a $10.7 million increase from the previous year’s budget, an increase enabling ten new police officer positions as well as wage increases and pensions for existing officers.<br />
+<br />
+As the city’s policing budget increases, direct investment in our communities continues to be overlooked. No part of the budget was reserved for the fulfillment of Office of Tenant Advocate, a mere $1.2 million dollar budget proposal from the KC Tenants group to Mayor Lucas. This proposal, made to fulfill the Tenants Bill of Rights passed by the mayor and city council in December 2019, was seemingly ignored in the city’s budget. This is but one example of the way that police funding interferes with and blocks the allocation of funds back into our communities, as a result perpetuating racial and economic inequality in Kansas City.<br />
+<br />
+On June 4th, 2020, Mayor Lucas announced “significant” police oversight measures. While these measures indicate that the mayor and city council are open to hearing the demands of the people, the measures themselves do not address the issue of police department overfunding in the city’s FY2020-21 budget.<br />
+<br />
+There is little evidence that more policing and increased wages for police officers correlates to safer communities. Investment in the police does not equal an investment in communities. To truly help our citizens, I would like to see an immediate reconsideration and revision of police funding in our city so that we might begin to adequately invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.<br />
+<br />
+Kansas City can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police department.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+<br />
+[YOUR ADDRESS]<br />
+<br />
+[YOUR EMAIL]<br />
+<br />
+[YOUR PHONE NUMBER]<br />
+`.trim() :
+      `Dear Mayor Lucas and City Council,
+
+My name is [NAME] and I am a resident of Kansas City. I am writing to ask you to reallocate funds away from the KCPD and toward public resources such as healthcare services, housing, and education. I commend Mayor Lucas for de-escalating the protests in our city by removing the unnecessary and militarized police presence. Let that serve as a picture of how our city ought to operate as a whole.
+
+The city’s recently approved FY2020-21 budget promises ~$270 million to police alone, which is ~$50 million more than the entire budget for Neighborhoods, Housing, and Healthy Communities in this fiscal year. This year’s policing budget brings a $10.7 million increase from the previous year’s budget, an increase enabling ten new police officer positions as well as wage increases and pensions for existing officers.
+
+As the city’s policing budget increases, direct investment in our communities continues to be overlooked. No part of the budget was reserved for the fulfillment of Office of Tenant Advocate, a mere $1.2 million dollar budget proposal from the KC Tenants group to Mayor Lucas. This proposal, made to fulfill the Tenants Bill of Rights passed by the mayor and city council in December 2019, was seemingly ignored in the city’s budget. This is but one example of the way that police funding interferes with and blocks the allocation of funds back into our communities, as a result perpetuating racial and economic inequality in Kansas City.
+
+On June 4th, 2020, Mayor Lucas announced “significant” police oversight measures. While these measures indicate that the mayor and city council are open to hearing the demands of the people, the measures themselves do not address the issue of police department overfunding in the city’s FY2020-21 budget.
+
+There is little evidence that more policing and increased wages for police officers correlates to safer communities. Investment in the police does not equal an investment in communities. To truly help our citizens, I would like to see an immediate reconsideration and revision of police funding in our city so that we might begin to adequately invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
+
+Kansas City can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund the police department.
+
+Thank you for your time,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]
+`.trim()
+    );
+    const recipients = `mayorq@kcmo.org,heather.hall@kcmo.org,kevin.oneill@kcmo.org,teresa.loar@kcmo.org,amy.justis@kcmo.org,brandon.ellington@kcmo.org,melissa.robinson@kcmo.org,katheryn.shields@kcmo.org,eric.bunch@kcmo.org,keema.mccoy@kcmo.org,angela.pearson@kcmo.org,katrina.foster@kcmo.org,fred.wickham@kcmo.org`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/kc`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2034,4 @@
 </body>
 
 </html>
+

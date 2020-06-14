@@ -70,6 +70,72 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council Members and Mayor Jane Castor</h2>
+  <b>Tampa, FL</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/tampa`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `jane.castor@tampagov.net, tampacitycouncil@tampagov.net, joseph.citro@tampagov.net, charlie.miranda@tampagov.net, john.dingfelder@tampagov.net, bill.carlson@tampagov.net, orlando.gudes@tampagov.net, guido.maniscalco@tampagov.net, luis.viera@tampagov.net`)">🔗</span>
+        jane.castor@tampagov.net, tampacitycouncil@tampagov.net, joseph.citro@tampagov.net, charlie.miranda@tampagov.net, john.dingfelder@tampagov.net, bill.carlson@tampagov.net, orlando.gudes@tampagov.net, guido.maniscalco@tampagov.net, luis.viera@tampagov.net
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Jane Castor & Tampa City Council,
+
+My name is [INSERT NAME] and I am a resident of [INSERT NEIGHBORHOOD, SUBDIVISION, CITY, ETC], today I am writing to you to demand that the mayor and the city council restrict the police department budget, and fully reallocate towards community programs, housing, and education to actually keep our community safe.
+
+The recommended police department budget for 2020 is over $162,000,000--37% of the general fund. This is an astronomical number alone and especially compared to the budgets of other departments. This budget should have been reallocated and reinvested in the community rather than a further militarized police force fundamentally unfit to respond to the types of issues our community faces.
+
+I demand that the City Council begin meaningfully defunding the Tampa Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Tampa residents.
+
+I call on City Council as well as the mayor to slash this budget, invest in the citizens of Tampa, and set an example for the Tampa Bay area and for the nation as a whole. With these initiatives, our community can lead the nation towards a healthier, safer, and more equitable future.
+
+Can I count on you to reallocate and reinvest these funds?
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Dear Mayor Jane Castor &amp; Tampa City Council,</p>
+
+<p>My name is [INSERT NAME] and I am a resident of [INSERT NEIGHBORHOOD, SUBDIVISION, CITY, ETC], today I am writing to you to demand that the mayor and the city council restrict the police department budget, and fully reallocate towards community programs, housing, and education to actually keep our community safe.</p>
+
+<p>The recommended police department budget for 2020 is over $162,000,000–37% of the general fund. This is an astronomical number alone and especially compared to the budgets of other departments. This budget should have been reallocated and reinvested in the community rather than a further militarized police force fundamentally unfit to respond to the types of issues our community faces.</p>
+
+<p>I demand that the City Council begin meaningfully defunding the Tampa Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Tampa residents.</p>
+
+<p>I call on City Council as well as the mayor to slash this budget, invest in the citizens of Tampa, and set an example for the Tampa Bay area and for the nation as a whole. With these initiatives, our community can lead the nation towards a healthier, safer, and more equitable future.</p>
+
+<p>Can I count on you to reallocate and reinvest these funds?</p>
+
+<p>Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1936,64 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Jane Castor & Tampa City Council,<br />
+<br />
+My name is [INSERT NAME] and I am a resident of [INSERT NEIGHBORHOOD, SUBDIVISION, CITY, ETC], today I am writing to you to demand that the mayor and the city council restrict the police department budget, and fully reallocate towards community programs, housing, and education to actually keep our community safe.<br />
+<br />
+The recommended police department budget for 2020 is over $162,000,000--37% of the general fund. This is an astronomical number alone and especially compared to the budgets of other departments. This budget should have been reallocated and reinvested in the community rather than a further militarized police force fundamentally unfit to respond to the types of issues our community faces.<br />
+<br />
+I demand that the City Council begin meaningfully defunding the Tampa Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Tampa residents.<br />
+<br />
+I call on City Council as well as the mayor to slash this budget, invest in the citizens of Tampa, and set an example for the Tampa Bay area and for the nation as a whole. With these initiatives, our community can lead the nation towards a healthier, safer, and more equitable future.<br />
+<br />
+Can I count on you to reallocate and reinvest these funds?<br />
+<br />
+Sincerely,<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Dear Mayor Jane Castor & Tampa City Council,
+
+My name is [INSERT NAME] and I am a resident of [INSERT NEIGHBORHOOD, SUBDIVISION, CITY, ETC], today I am writing to you to demand that the mayor and the city council restrict the police department budget, and fully reallocate towards community programs, housing, and education to actually keep our community safe.
+
+The recommended police department budget for 2020 is over $162,000,000--37% of the general fund. This is an astronomical number alone and especially compared to the budgets of other departments. This budget should have been reallocated and reinvested in the community rather than a further militarized police force fundamentally unfit to respond to the types of issues our community faces.
+
+I demand that the City Council begin meaningfully defunding the Tampa Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Tampa residents.
+
+I call on City Council as well as the mayor to slash this budget, invest in the citizens of Tampa, and set an example for the Tampa Bay area and for the nation as a whole. With these initiatives, our community can lead the nation towards a healthier, safer, and more equitable future.
+
+Can I count on you to reallocate and reinvest these funds?
+
+Sincerely,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `jane.castor@tampagov.net,tampacitycouncil@tampagov.net,joseph.citro@tampagov.net,charlie.miranda@tampagov.net,john.dingfelder@tampagov.net,bill.carlson@tampagov.net,orlando.gudes@tampagov.net,guido.maniscalco@tampagov.net,luis.viera@tampagov.net`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/tampa`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2007,4 @@
 </body>
 
 </html>
+

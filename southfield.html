@@ -70,6 +70,80 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Southfield, MI</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/southfield`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `ksiver@cityofsouthfield.com, lcrews@cityofsouthfield.com, tmorris@cityofsouthfield.com, nbanks@cityofsouthfield.com, dbrightwell@cityofsouthfield.com, jhoskins@cityofsouthfield.com, mmandelbaum@cityofsouthfield.com, ltaylor@cityofsouthfield.com, ilowenberg@cityofsouthfield.com`)">🔗</span>
+        ksiver@cityofsouthfield.com, lcrews@cityofsouthfield.com, tmorris@cityofsouthfield.com, nbanks@cityofsouthfield.com, dbrightwell@cityofsouthfield.com, jhoskins@cityofsouthfield.com, mmandelbaum@cityofsouthfield.com, ltaylor@cityofsouthfield.com, ilowenberg@cityofsouthfield.com
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `To Mayor Siver and Southfield City Council,
+
+My name is [INSERT NAME HERE] and I am a resident of [INSERT CITY/NEIGHBORHOOD]. For centuries, our nation has upheld and perpetuated persistent racist and oppressive policies against Black communities. And during this past week our nation has come together to mourn, and mobilize against the chokehold of white supremacy in law enforcement.
+
+Therefore, I am calling for a rapid and meaningful reconsideration of the role of law enforcement in the Southfield community. In Southfield’s 19-20 FY budget, expenditures on Police vastly exceeded every other category at $26,774,810. This is unacceptable especially in a city where 70.3% of it’s residents are Black and thus more likely to be criminalized, assaulted, and incarcerated by our own law enforcement.
+
+As we march and rally against the unjust murder of George Floyd, I am concerned that the proposed raise in the Police budget will have a negative affect on Black Southfield residents.
+
+I call on you to divest from the SPD and meaningfully reinvest funds into the community. Instead of feeding the disenfranchisement of Black lives, the reallocated funds must be put towards social supports such as affordable housing, quality education, mental health response teams and public health approaches to violence prevention. We must begin valuing and trusting those who live in the community, to know how to best protect our community.
+
+The safest communities don’t have more police—they have more resources.
+
+Sincerely,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>To Mayor Siver and Southfield City Council,</p>
+
+<p>My name is [INSERT NAME HERE] and I am a resident of [INSERT CITY/NEIGHBORHOOD]. For centuries, our nation has upheld and perpetuated persistent racist and oppressive policies against Black communities. And during this past week our nation has come together to mourn, and mobilize against the chokehold of white supremacy in law enforcement.</p>
+
+<p>Therefore, I am calling for a rapid and meaningful reconsideration of the role of law enforcement in the Southfield community. In Southfield’s 19-20 FY budget, expenditures on Police vastly exceeded every other category at $26,774,810. This is unacceptable especially in a city where 70.3% of it’s residents are Black and thus more likely to be criminalized, assaulted, and incarcerated by our own law enforcement.</p>
+
+<p>As we march and rally against the unjust murder of George Floyd, I am concerned that the proposed raise in the Police budget will have a negative affect on Black Southfield residents.</p>
+
+<p>I call on you to divest from the SPD and meaningfully reinvest funds into the community. Instead of feeding the disenfranchisement of Black lives, the reallocated funds must be put towards social supports such as affordable housing, quality education, mental health response teams and public health approaches to violence prevention. We must begin valuing and trusting those who live in the community, to know how to best protect our community.</p>
+
+<p>The safest communities don’t have more police—they have more resources.</p>
+
+<p>Sincerely,</p>
+
+<p>[YOUR NAME]</p>
+
+<p>[YOUR ADDRESS]</p>
+
+<p>[YOUR EMAIL]</p>
+
+<p>[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1944,72 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `To Mayor Siver and Southfield City Council,<br />
+<br />
+My name is [INSERT NAME HERE] and I am a resident of [INSERT CITY/NEIGHBORHOOD]. For centuries, our nation has upheld and perpetuated persistent racist and oppressive policies against Black communities. And during this past week our nation has come together to mourn, and mobilize against the chokehold of white supremacy in law enforcement.<br />
+<br />
+Therefore, I am calling for a rapid and meaningful reconsideration of the role of law enforcement in the Southfield community. In Southfield’s 19-20 FY budget, expenditures on Police vastly exceeded every other category at $26,774,810. This is unacceptable especially in a city where 70.3% of it’s residents are Black and thus more likely to be criminalized, assaulted, and incarcerated by our own law enforcement.<br />
+<br />
+As we march and rally against the unjust murder of George Floyd, I am concerned that the proposed raise in the Police budget will have a negative affect on Black Southfield residents.<br />
+<br />
+I call on you to divest from the SPD and meaningfully reinvest funds into the community. Instead of feeding the disenfranchisement of Black lives, the reallocated funds must be put towards social supports such as affordable housing, quality education, mental health response teams and public health approaches to violence prevention. We must begin valuing and trusting those who live in the community, to know how to best protect our community.<br />
+<br />
+The safest communities don’t have more police—they have more resources.<br />
+<br />
+Sincerely,<br />
+<br />
+[YOUR NAME]<br />
+<br />
+[YOUR ADDRESS]<br />
+<br />
+[YOUR EMAIL]<br />
+<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `To Mayor Siver and Southfield City Council,
+
+My name is [INSERT NAME HERE] and I am a resident of [INSERT CITY/NEIGHBORHOOD]. For centuries, our nation has upheld and perpetuated persistent racist and oppressive policies against Black communities. And during this past week our nation has come together to mourn, and mobilize against the chokehold of white supremacy in law enforcement.
+
+Therefore, I am calling for a rapid and meaningful reconsideration of the role of law enforcement in the Southfield community. In Southfield’s 19-20 FY budget, expenditures on Police vastly exceeded every other category at $26,774,810. This is unacceptable especially in a city where 70.3% of it’s residents are Black and thus more likely to be criminalized, assaulted, and incarcerated by our own law enforcement.
+
+As we march and rally against the unjust murder of George Floyd, I am concerned that the proposed raise in the Police budget will have a negative affect on Black Southfield residents.
+
+I call on you to divest from the SPD and meaningfully reinvest funds into the community. Instead of feeding the disenfranchisement of Black lives, the reallocated funds must be put towards social supports such as affordable housing, quality education, mental health response teams and public health approaches to violence prevention. We must begin valuing and trusting those who live in the community, to know how to best protect our community.
+
+The safest communities don’t have more police—they have more resources.
+
+Sincerely,
+
+[YOUR NAME]
+
+[YOUR ADDRESS]
+
+[YOUR EMAIL]
+
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `ksiver@cityofsouthfield.com,lcrews@cityofsouthfield.com,tmorris@cityofsouthfield.com,nbanks@cityofsouthfield.com,dbrightwell@cityofsouthfield.com,jhoskins@cityofsouthfield.com,mmandelbaum@cityofsouthfield.com,ltaylor@cityofsouthfield.com,ilowenberg@cityofsouthfield.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/southfield`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2023,4 @@
 </body>
 
 </html>
+

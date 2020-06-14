@@ -70,6 +70,66 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and Council Members</h2>
+  <b>San Jose, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/sanjose`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayoremail@sanjoseca.gov, District1@sanjoseca.gov, District2@sanjoseca.gov, District3@sanjoseca.gov, District4@sanjoseca.gov, District5@sanjoseca.gov, District6@sanjoseca.gov, District7@sanjoseca.gov, District8@sanjoseca.gov, District9@sanjoseca.gov, District10@sanjoseca.gov`)">🔗</span>
+        mayoremail@sanjoseca.gov, District1@sanjoseca.gov, District2@sanjoseca.gov, District3@sanjoseca.gov, District4@sanjoseca.gov, District5@sanjoseca.gov, District6@sanjoseca.gov, District7@sanjoseca.gov, District8@sanjoseca.gov, District9@sanjoseca.gov, District10@sanjoseca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hello,
+
+My name is [YOUR NAME] and I am a resident of San Jose. I am writing to demand that funding is reallocated from SJPD to social and public programming that takes place in our communities. It is an outrage that 44% of city funding goes towards the Police Department. The SJPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, and people of color.
+
+We demand that the City Council defund the SJPD. We join the calls of those across the country to defund the police. We demand a budget that adequately and effectively meets the needs of at-risk San Jose residents during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers police.
+
+It is your duty to represent your constituents. I am urging you to completely revise the San Jose city budget for 2020-2021 fiscal year. Public opinion is with me.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hello,</p>
+
+<p>My name is [YOUR NAME] and I am a resident of San Jose. I am writing to demand that funding is reallocated from SJPD to social and public programming that takes place in our communities. It is an outrage that 44% of city funding goes towards the Police Department. The SJPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, and people of color.</p>
+
+<p>We demand that the City Council defund the SJPD. We join the calls of those across the country to defund the police. We demand a budget that adequately and effectively meets the needs of at-risk San Jose residents during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers police.</p>
+
+<p>It is your duty to represent your constituents. I am urging you to completely revise the San Jose city budget for 2020-2021 fiscal year. Public opinion is with me.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1930,58 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hello,<br />
+<br />
+My name is [YOUR NAME] and I am a resident of San Jose. I am writing to demand that funding is reallocated from SJPD to social and public programming that takes place in our communities. It is an outrage that 44% of city funding goes towards the Police Department. The SJPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, and people of color.<br />
+<br />
+We demand that the City Council defund the SJPD. We join the calls of those across the country to defund the police. We demand a budget that adequately and effectively meets the needs of at-risk San Jose residents during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers police.<br />
+<br />
+It is your duty to represent your constituents. I am urging you to completely revise the San Jose city budget for 2020-2021 fiscal year. Public opinion is with me.<br />
+<br />
+Thank you for your time,<br />
+<br />
+[YOUR NAME]<br />
+[YOUR ADDRESS]<br />
+[YOUR EMAIL]<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hello,
+
+My name is [YOUR NAME] and I am a resident of San Jose. I am writing to demand that funding is reallocated from SJPD to social and public programming that takes place in our communities. It is an outrage that 44% of city funding goes towards the Police Department. The SJPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, and people of color.
+
+We demand that the City Council defund the SJPD. We join the calls of those across the country to defund the police. We demand a budget that adequately and effectively meets the needs of at-risk San Jose residents during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers police.
+
+It is your duty to represent your constituents. I am urging you to completely revise the San Jose city budget for 2020-2021 fiscal year. Public opinion is with me.
+
+Thank you for your time,
+
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `mayoremail@sanjoseca.gov,District1@sanjoseca.gov,District2@sanjoseca.gov,District3@sanjoseca.gov,District4@sanjoseca.gov,District5@sanjoseca.gov,District6@sanjoseca.gov,District7@sanjoseca.gov,District8@sanjoseca.gov,District9@sanjoseca.gov,District10@sanjoseca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/sanjose`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1995,4 @@
 </body>
 
 </html>
+

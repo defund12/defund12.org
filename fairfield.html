@@ -70,6 +70,76 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Fairfield, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/fairfield`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `hprice@fairfield.ca.gov, pbertani@fairfield.ca.gov, cct707@aol.com, cmoy@fairfield.ca.gov, rvaccaro@fairfield.ca.gov`)">🔗</span>
+        hprice@fairfield.ca.gov, pbertani@fairfield.ca.gov, cct707@aol.com, cmoy@fairfield.ca.gov, rvaccaro@fairfield.ca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Mayor Price and City Council members,
+
+My name is \[YOUR NAME\], and I am a resident of Fairfield, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. After looking at the city budget for FY2019-2020, I am appalled to see that 44% of Fairfield's city budget is dedicated to funding the police department while Parks & Recreation and Community Development make up 7% and 4% respectively. I am writing to demand that the City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.
+
+With the rise of COVID-19, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary now, more than ever. I demand that the City Council defund the Fairfield Police Department, which receives at least 40% of the city budget, and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more.
+
+I demand a budget that adequately and effectively meets the needs of at-risk Fairfield residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowers the police.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+Thank you for your time,
+
+\[YOUR NAME\]
+
+\[ADDRESS\]
+
+\[EMAIL\]
+
+\[PHONE NUMBER\]`)">🔗</span>
+        <br /> <p>Mayor Price and City Council members,</p>
+
+<p>My name is [YOUR NAME], and I am a resident of Fairfield, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. After looking at the city budget for FY2019-2020, I am appalled to see that 44% of Fairfield’s city budget is dedicated to funding the police department while Parks &amp; Recreation and Community Development make up 7% and 4% respectively. I am writing to demand that the City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.</p>
+
+<p>With the rise of COVID-19, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary now, more than ever. I demand that the City Council defund the Fairfield Police Department, which receives at least 40% of the city budget, and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more.</p>
+
+<p>I demand a budget that adequately and effectively meets the needs of at-risk Fairfield residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowers the police.</p>
+
+<p>As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]</p>
+
+<p>[ADDRESS]</p>
+
+<p>[EMAIL]</p>
+
+<p>[PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1940,68 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Mayor Price and City Council members,<br />
+<br />
+My name is \[YOUR NAME\], and I am a resident of Fairfield, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. After looking at the city budget for FY2019-2020, I am appalled to see that 44% of Fairfield's city budget is dedicated to funding the police department while Parks & Recreation and Community Development make up 7% and 4% respectively. I am writing to demand that the City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.<br />
+<br />
+With the rise of COVID-19, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary now, more than ever. I demand that the City Council defund the Fairfield Police Department, which receives at least 40% of the city budget, and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more.<br />
+<br />
+I demand a budget that adequately and effectively meets the needs of at-risk Fairfield residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowers the police.<br />
+<br />
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.<br />
+<br />
+Thank you for your time,<br />
+<br />
+\[YOUR NAME\]<br />
+<br />
+\[ADDRESS\]<br />
+<br />
+\[EMAIL\]<br />
+<br />
+\[PHONE NUMBER\]`.trim() :
+      `Mayor Price and City Council members,
+
+My name is \[YOUR NAME\], and I am a resident of Fairfield, California. This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. After looking at the city budget for FY2019-2020, I am appalled to see that 44% of Fairfield's city budget is dedicated to funding the police department while Parks & Recreation and Community Development make up 7% and 4% respectively. I am writing to demand that the City Council adopts a budget that prioritizes community well-being and redirects funding away from the police.
+
+With the rise of COVID-19, the rise of homelessness in our city and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary now, more than ever. I demand that the City Council defund the Fairfield Police Department, which receives at least 40% of the city budget, and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more.
+
+I demand a budget that adequately and effectively meets the needs of at-risk Fairfield residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowers the police.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year.
+
+Thank you for your time,
+
+\[YOUR NAME\]
+
+\[ADDRESS\]
+
+\[EMAIL\]
+
+\[PHONE NUMBER\]`.trim()
+    );
+    const recipients = `hprice@fairfield.ca.gov,pbertani@fairfield.ca.gov,cct707@aol.com,cmoy@fairfield.ca.gov,rvaccaro@fairfield.ca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/fairfield`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +2015,4 @@
 </body>
 
 </html>
+

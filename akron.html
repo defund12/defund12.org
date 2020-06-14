@@ -70,6 +70,63 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Akron, OH</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/akron`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `Mayor@akronohio.gov, AtLarge1@akronohio.gov, AtLarge2@akronohio.gov, AtLarge3@akronohio.gov, Ward1@akronohio.gov, Ward2@akronohio.gov, Ward3@akronohio.gov, Ward4@akronohio.gov, Ward5@akronohio.gov, Ward6@akronohio.gov, Ward7@akronohio.gov, Ward8@akronohio.gov, Ward9@akronohio.gov, Ward10@akronohio.gov`)">🔗</span>
+        Mayor@akronohio.gov, AtLarge1@akronohio.gov, AtLarge2@akronohio.gov, AtLarge3@akronohio.gov, Ward1@akronohio.gov, Ward2@akronohio.gov, Ward3@akronohio.gov, Ward4@akronohio.gov, Ward5@akronohio.gov, Ward6@akronohio.gov, Ward7@akronohio.gov, Ward8@akronohio.gov, Ward9@akronohio.gov, Ward10@akronohio.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `"Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD/WARD].
+
+The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.
+
+In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.
+
+I know many of you feel strongly about racial justice and equity. On June 4, Mayor Horrigan said the City is working on a “culture of outreach, compliance, transparency, and inclusion.” It is time to take action.
+
+Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.
+
+Thank you,
+[NAME]"
+`)">🔗</span>
+        <br /> <p>“Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD/WARD].</p>
+
+<p>The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.</p>
+
+<p>In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.</p>
+
+<p>I know many of you feel strongly about racial justice and equity. On June 4, Mayor Horrigan said the City is working on a “culture of outreach, compliance, transparency, and inclusion.” It is time to take action.</p>
+
+<p>Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.</p>
+
+<p>Thank you,
+[NAME]”</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1927,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `"Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD/WARD].<br />
+<br />
+The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.<br />
+<br />
+In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.<br />
+<br />
+I know many of you feel strongly about racial justice and equity. On June 4, Mayor Horrigan said the City is working on a “culture of outreach, compliance, transparency, and inclusion.” It is time to take action.<br />
+<br />
+Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.<br />
+<br />
+Thank you,<br />
+[NAME]"<br />
+`.trim() :
+      `"Hello, my name is [NAME] and I am a resident of [NEIGHBORHOOD/WARD].
+
+The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.
+
+In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.
+
+I know many of you feel strongly about racial justice and equity. On June 4, Mayor Horrigan said the City is working on a “culture of outreach, compliance, transparency, and inclusion.” It is time to take action.
+
+Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.
+
+Thank you,
+[NAME]"
+`.trim()
+    );
+    const recipients = `Mayor@akronohio.gov,AtLarge1@akronohio.gov,AtLarge2@akronohio.gov,AtLarge3@akronohio.gov,Ward1@akronohio.gov,Ward2@akronohio.gov,Ward3@akronohio.gov,Ward4@akronohio.gov,Ward5@akronohio.gov,Ward6@akronohio.gov,Ward7@akronohio.gov,Ward8@akronohio.gov,Ward9@akronohio.gov,Ward10@akronohio.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/akron`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1990,4 @@
 </body>
 
 </html>
+

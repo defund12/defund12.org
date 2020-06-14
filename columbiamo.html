@@ -70,6 +70,64 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to City Council & Mayor</h2>
+  <b>Columbia, MO</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/columbiamo`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `ward6@CoMo.gov, mayor@CoMo.gov, ward2@CoMo.gov, ward3@CoMo.gov, ward4@CoMo.gov, ward5@CoMo.gov, ward1@CoMo.gov`)">🔗</span>
+        ward6@CoMo.gov, mayor@CoMo.gov, ward2@CoMo.gov, ward3@CoMo.gov, ward4@CoMo.gov, ward5@CoMo.gov, ward1@CoMo.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Hi, my name is [NAME] and I am a resident of Columbia's [YOUR COUNCIL WARD]. I am asking you to redirect money away from the Columbia PD and into the public services such as housing, education, and healthcare access, and to consider direct financial relief to citizens (not just businesses) impacted by COVID-19. 
+
+As it stands, our city is facing massive revenue shortfalls due to conditions created by the Covid-19 Pandemic. Rather than see further reduction to public services and layoffs of essential public workers, I request that the mayor and city council first and foremost consider significantly defunding the police department. In the FY21 budget, there was an increase to both police personnel and corrections spending. This money can be spent in other ways that are proven to be more effective in improving community safety and wellness. 
+
+Thank you for your time, 
+
+[YOUR NAME] 
+
+[YOUR ADDRESS] 
+
+[YOUR EMAIL] 
+
+[YOUR PHONE NUMBER]`)">🔗</span>
+        <br /> <p>Hi, my name is [NAME] and I am a resident of Columbia’s [YOUR COUNCIL WARD]. I am asking you to redirect money away from the Columbia PD and into the public services such as housing, education, and healthcare access, and to consider direct financial relief to citizens (not just businesses) impacted by COVID-19.</p>
+
+<p>As it stands, our city is facing massive revenue shortfalls due to conditions created by the Covid-19 Pandemic. Rather than see further reduction to public services and layoffs of essential public workers, I request that the mayor and city council first and foremost consider significantly defunding the police department. In the FY21 budget, there was an increase to both police personnel and corrections spending. This money can be spent in other ways that are proven to be more effective in improving community safety and wellness.</p>
+
+<p>Thank you for your time,</p>
+
+<p>[YOUR NAME]</p>
+
+<p>[YOUR ADDRESS]</p>
+
+<p>[YOUR EMAIL]</p>
+
+<p>[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1928,56 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Hi, my name is [NAME] and I am a resident of Columbia's [YOUR COUNCIL WARD]. I am asking you to redirect money away from the Columbia PD and into the public services such as housing, education, and healthcare access, and to consider direct financial relief to citizens (not just businesses) impacted by COVID-19. <br />
+<br />
+As it stands, our city is facing massive revenue shortfalls due to conditions created by the Covid-19 Pandemic. Rather than see further reduction to public services and layoffs of essential public workers, I request that the mayor and city council first and foremost consider significantly defunding the police department. In the FY21 budget, there was an increase to both police personnel and corrections spending. This money can be spent in other ways that are proven to be more effective in improving community safety and wellness. <br />
+<br />
+Thank you for your time, <br />
+<br />
+[YOUR NAME] <br />
+<br />
+[YOUR ADDRESS] <br />
+<br />
+[YOUR EMAIL] <br />
+<br />
+[YOUR PHONE NUMBER]`.trim() :
+      `Hi, my name is [NAME] and I am a resident of Columbia's [YOUR COUNCIL WARD]. I am asking you to redirect money away from the Columbia PD and into the public services such as housing, education, and healthcare access, and to consider direct financial relief to citizens (not just businesses) impacted by COVID-19. 
+
+As it stands, our city is facing massive revenue shortfalls due to conditions created by the Covid-19 Pandemic. Rather than see further reduction to public services and layoffs of essential public workers, I request that the mayor and city council first and foremost consider significantly defunding the police department. In the FY21 budget, there was an increase to both police personnel and corrections spending. This money can be spent in other ways that are proven to be more effective in improving community safety and wellness. 
+
+Thank you for your time, 
+
+[YOUR NAME] 
+
+[YOUR ADDRESS] 
+
+[YOUR EMAIL] 
+
+[YOUR PHONE NUMBER]`.trim()
+    );
+    const recipients = `ward6@CoMo.gov,mayor@CoMo.gov,ward2@CoMo.gov,ward3@CoMo.gov,ward4@CoMo.gov,ward5@CoMo.gov,ward1@CoMo.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/columbiamo`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1991,4 @@
 </body>
 
 </html>
+

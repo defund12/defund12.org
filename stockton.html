@@ -70,6 +70,68 @@
 </header>
 
 
+<section class="emailPageHeader">
+  <h2>Letter to Mayor and City Council</h2>
+  <b>Stockton, CA</b>
+
+  <p id="autoopen">This page automatically opens a drafted email for you.</p>
+  <div class='buttons'>
+    <a href="javascript:void(0);" onclick="openEmail()">Send email</a>
+    <a href="javascript:void(0);" onclick="copyToClipboard(this, `/stockton`, true)">Copy link</a>
+  </div>
+  <p>Email link not working correctly? You can copy and paste the recipients, subject and message individually below.</p>
+</section>
+
+<article class="emailContentSection">
+  <div class="container">
+    <div class="emailContent">
+      <div class="recipients">
+        <b>To:</b> <span class="copyToClipboard"
+          onclick="copyToClipboard(this, `mayor@stocktonca.gov, dist1@stocktonca.gov, dist2@stocktonca.gov, dist3@stocktonca.gov, dist4@stocktonca.gov, dist5@stocktonca.gov, dist6@stocktonca.gov, florence.low@stocktonca.gov`)">🔗</span>
+        mayor@stocktonca.gov, dist1@stocktonca.gov, dist2@stocktonca.gov, dist3@stocktonca.gov, dist4@stocktonca.gov, dist5@stocktonca.gov, dist6@stocktonca.gov, florence.low@stocktonca.gov
+      </div>
+      
+      <div class="recipients">
+        <b>Subject:</b> [*** INSERT UNIQUE SUBJECT LINE ***]
+      </div>
+      <div>
+        <b>Message:</b> <i>(Don't forget to replace the [x]'s with your information!)</i>
+        <span class="copyToClipboard" onclick="copyToClipboard(this, `Dear Mayor Tubbs and City Council Members,
+
+I am a resident of \[YOUR DISTRICT\]. I am writing to demand that the City Council adopts a budget for the people that prioritizes community well-being and redirects funding away from the police, including the proposed police funding increase of $3,311,169 in the upcoming year.
+
+We are in the midst of widespread upheaval over the systemic violence of policing. Empty gestures and suggestions of “reform” are at this point unacceptable. I am demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+
+Support for communities in need is necessary now, more than ever. We demand that the City Council defund the SPD. I join the calls of those across the country to meaningfully reduce funding to the police department. I demand a budget that adequately and effectively meets the needs of impacted Stockton residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to fund people, not police. We must take immediate action on this issue.
+
+Thank you for your time,
+\[YOUR NAME\]
+\[YOUR ADDRESS\]
+\[YOUR EMAIL\]
+\[YOUR PHONE NUMBER\]`)">🔗</span>
+        <br /> <p>Dear Mayor Tubbs and City Council Members,</p>
+
+<p>I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopts a budget for the people that prioritizes community well-being and redirects funding away from the police, including the proposed police funding increase of $3,311,169 in the upcoming year.</p>
+
+<p>We are in the midst of widespread upheaval over the systemic violence of policing. Empty gestures and suggestions of “reform” are at this point unacceptable. I am demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.</p>
+
+<p>Support for communities in need is necessary now, more than ever. We demand that the City Council defund the SPD. I join the calls of those across the country to meaningfully reduce funding to the police department. I demand a budget that adequately and effectively meets the needs of impacted Stockton residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.</p>
+
+<p>As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to fund people, not police. We must take immediate action on this issue.</p>
+
+<p>Thank you for your time,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]</p>
+
+      </div>
+    </div>
+  </div>
+</article>
+
 <main class="content">
   <div id="filters">
     <select aria-label="Select State" id="selected_state" onchange="selectState(event)">
@@ -1870,6 +1932,60 @@
 </main>
 
 
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(`[*** INSERT UNIQUE SUBJECT LINE ***]`.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      `Dear Mayor Tubbs and City Council Members,<br />
+<br />
+I am a resident of \[YOUR DISTRICT\]. I am writing to demand that the City Council adopts a budget for the people that prioritizes community well-being and redirects funding away from the police, including the proposed police funding increase of $3,311,169 in the upcoming year.<br />
+<br />
+We are in the midst of widespread upheaval over the systemic violence of policing. Empty gestures and suggestions of “reform” are at this point unacceptable. I am demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.<br />
+<br />
+Support for communities in need is necessary now, more than ever. We demand that the City Council defund the SPD. I join the calls of those across the country to meaningfully reduce funding to the police department. I demand a budget that adequately and effectively meets the needs of impacted Stockton residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.<br />
+<br />
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to fund people, not police. We must take immediate action on this issue.<br />
+<br />
+Thank you for your time,<br />
+\[YOUR NAME\]<br />
+\[YOUR ADDRESS\]<br />
+\[YOUR EMAIL\]<br />
+\[YOUR PHONE NUMBER\]`.trim() :
+      `Dear Mayor Tubbs and City Council Members,
+
+I am a resident of \[YOUR DISTRICT\]. I am writing to demand that the City Council adopts a budget for the people that prioritizes community well-being and redirects funding away from the police, including the proposed police funding increase of $3,311,169 in the upcoming year.
+
+We are in the midst of widespread upheaval over the systemic violence of policing. Empty gestures and suggestions of “reform” are at this point unacceptable. I am demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+
+Support for communities in need is necessary now, more than ever. We demand that the City Council defund the SPD. I join the calls of those across the country to meaningfully reduce funding to the police department. I demand a budget that adequately and effectively meets the needs of impacted Stockton residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
+
+As the City Council, the budget proposal is in your hands. It is your duty to represent your constituents. I am urging you to completely revise the budget for the 2020-2021 fiscal year, and to fund people, not police. We must take immediate action on this issue.
+
+Thank you for your time,
+\[YOUR NAME\]
+\[YOUR ADDRESS\]
+\[YOUR EMAIL\]
+\[YOUR PHONE NUMBER\]`.trim()
+    );
+    const recipients = `mayor@stocktonca.gov,dist1@stocktonca.gov,dist2@stocktonca.gov,dist3@stocktonca.gov,dist4@stocktonca.gov,dist5@stocktonca.gov,dist6@stocktonca.gov,florence.low@stocktonca.gov`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+  $(document).ready(() => {
+    const params = getParams(window.location.href)
+    if (params.browse !== undefined) {
+      $("#autoopen").hide()
+      // Automatically updates the URL so if folks try to share, it will auto-open
+      window.history.replaceState({}, document.title, `${window.location.origin}/stockton`)
+    } else {
+      openEmail()
+    }
+  })
+</script>
+
 <aside class="sticky">
   <p><p>Want to add your city? <a href="https://github.com/defund12/defund12.org/issues">Open a request.</a></p>
 </p>
@@ -1883,3 +1999,4 @@
 </body>
 
 </html>
+
