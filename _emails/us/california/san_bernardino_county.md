@@ -1,19 +1,19 @@
 ---
-title: "San Bernardino County, CA"
+title: San Bernardino County, CA
 permalink: "/sanbernardinocounty"
-name: "Letter to County Officials"
-city: "San Bernardino County"
-state: "CA"
+name: Letter to County Officials
+city: San Bernardino County
+state: CA
 recipients:
-- "SupervisorLovingood@sbcounty.gov"
-- "assemblymember.obernolte@assembly.ca.gov"
-- "SupervisorRutherford@sbcounty.gov"
-- "Supervisor.Rowe@bos.sbcounty.gov"
-- "supervisor.hagman@bos.sbcounty.gov"
-- "supervisorgonzales@sbcounty.gov"
-- "dwert@sbcounty.gov"
-- "COB@sbcounty.gov"
-- "da@sbcda.org"
+- SupervisorLovingood@sbcounty.gov
+- assemblymember.obernolte@assembly.ca.gov
+- SupervisorRutherford@sbcounty.gov
+- Supervisor.Rowe@bos.sbcounty.gov
+- supervisor.hagman@bos.sbcounty.gov
+- supervisorgonzales@sbcounty.gov
+- dwert@sbcounty.gov
+- COB@sbcounty.gov
+- da@sbcda.org
 body: |-
   Dear San Bernardino County elected officials,
 
@@ -28,6 +28,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
