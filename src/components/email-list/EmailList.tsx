@@ -29,7 +29,7 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
   selectStyles = {
     option: (provided: any, state: { isSelected: any }) => ({
       ...provided,
-      color: state.isSelected ? 'black' : 'black',
+      color: `black`
     }),
   };
   /**
