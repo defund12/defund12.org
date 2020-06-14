@@ -1,7 +1,7 @@
-import React from 'react';
-import {StaticQuery, graphql} from 'gatsby';
-import {DefundUtils} from '../../DefundUtils';
-import {FooterProps} from '../../types/PropTypes';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import { DefundUtils } from "../../DefundUtils";
+import { FooterProps } from "../../types/PropTypes";
 
 /**
  * The site footer, containing issue request and contact information.
@@ -19,34 +19,33 @@ class _Footer extends React.Component<FooterProps> {
   }
 
   /**
-    * React render method.
-    * @return {React.ReactNode} the rendered component
-    */
+   * React render method.
+   * @return {React.ReactNode} the rendered component
+   */
   render() {
     return (
       <>
         <aside className="sticky">
-          <p dangerouslySetInnerHTML={
-            {
+          <p
+            dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
-            }
-          }></p>
+            }}
+          ></p>
         </aside>
         <footer className="footerMain">
-          <p dangerouslySetInnerHTML={
-            {
-              __html:
-                DefundUtils.markdownToHTML(this.props.footerTextInstructions),
-            }
-          }></p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: DefundUtils.markdownToHTML(
+                this.props.footerTextInstructions
+              ),
+            }}
+          ></p>
           <p
             className="divider footer"
-            dangerouslySetInnerHTML={
-              {
-                __html:
-                  DefundUtils.markdownToHTML(this.props.contactEmailFooter),
-              }
-            }></p>
+            dangerouslySetInnerHTML={{
+              __html: DefundUtils.markdownToHTML(this.props.contactEmailFooter),
+            }}
+          ></p>
         </footer>
       </>
     );
@@ -59,17 +58,19 @@ class _Footer extends React.Component<FooterProps> {
  */
 export default function Footer(): JSX.Element {
   return (
-    <StaticQuery query={graphql`
-            query FooterQuery {
-                siteConfig {
-                    footerTextPr
-                    footerTextInstructions
-                    contactEmailFooter
-                }
-            }`
-    }
-    render={(data: {siteConfig: FooterProps}) =>
-      <_Footer {...data.siteConfig} />}
+    <StaticQuery
+      query={graphql`
+        query FooterQuery {
+          siteConfig {
+            footerTextPr
+            footerTextInstructions
+            contactEmailFooter
+          }
+        }
+      `}
+      render={(data: { siteConfig: FooterProps }) => (
+        <_Footer {...data.siteConfig} />
+      )}
     />
   );
 }
