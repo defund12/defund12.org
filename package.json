@@ -25,7 +25,7 @@
         "test": "jest",
         "verify": "yarn lint && yarn test",
         "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; jest # run all checks no matter the results",
-        "build": "gatsby build",
+        "build": "gatsby clean && gatsby build",
         "clean": "gatsby clean",
         "start": "gatsby build && gatsby serve",
         "start-dev": "gatsby develop",
