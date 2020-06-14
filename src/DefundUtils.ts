@@ -18,7 +18,7 @@ export class DefundUtils {
   }
 
   /**
-   * Temporarily reates a <textarea> in the browser and copies its content.
+   * Temporarily creates a <textarea> in the browser and copies its content.
    * @param {string} copyText the text to copy.
    * @param {boolean} isPermalink a value indicating if the string is
    *   a permalink, and as such should have the root path prepended.
