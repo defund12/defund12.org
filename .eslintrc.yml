@@ -12,11 +12,12 @@ parserOptions:
   ecmaFeatures:
     jsx: true
 rules: {
-  "max-len": ["error", { "ignoreTemplateLiterals": true }]
+  "quotes": ["error", "double"],
+  "max-len": ["error", { "ignoreTemplateLiterals": true }],
 }
 overrides: [
   {
-    extends:["google"],
+    extends:["./node_modules/gts"],
     files: ["*.ts?(x)"],
     parser: "@typescript-eslint/parser",
     plugins: [
@@ -24,6 +25,7 @@ overrides: [
       "react"
     ],
     rules: {
+      "quotes": ["error", "double", {"avoidEscape": true}],
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "error",
       "react/jsx-uses-vars": "error",
