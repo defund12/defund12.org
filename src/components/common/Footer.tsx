@@ -1,7 +1,7 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import { DefundUtils } from "../../DefundUtils";
-import { FooterProps } from "../../types/PropTypes";
+import React from 'react';
+import {StaticQuery, graphql} from 'gatsby';
+import {DefundUtils} from '../../DefundUtils';
+import {FooterProps} from '../../types/PropTypes';
 
 /**
  * The site footer, containing issue request and contact information.

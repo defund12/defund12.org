@@ -1,8 +1,8 @@
-import React from "react";
-import { graphql, PageProps } from "gatsby";
-import Layout from "../components/common/Layout";
-import EmailList from "../components/email-list/EmailList";
-import { SiteProps } from "../types/PropTypes";
+import React from 'react';
+import {graphql, PageProps} from 'gatsby';
+import Layout from '../components/common/Layout';
+import EmailList from '../components/email-list/EmailList';
+import {SiteProps} from '../types/PropTypes';
 
 /**
  * The landing/home/root page. Defund 12!

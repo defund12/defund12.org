@@ -67,7 +67,7 @@ export interface RemarkNode {
 export function isEmailData(
     emailDataOrMetadata: EmailMetadata & EmailData):
     emailDataOrMetadata is EmailData {
-  if (emailDataOrMetadata.hasOwnProperty("body")) return true;
+  if (emailDataOrMetadata.hasOwnProperty('body')) return true;
   return false;
 }
 

@@ -1,8 +1,8 @@
-import unified from "unified";
-import markdown from "remark-parse";
-import rehype from "remark-rehype";
-import sanitize from "rehype-sanitize";
-import html from "rehype-stringify";
+import unified from 'unified';
+import markdown from 'remark-parse';
+import rehype from 'remark-rehype';
+import sanitize from 'rehype-sanitize';
+import html from 'rehype-stringify';
 
 
 /**
@@ -30,15 +30,15 @@ export class DefundUtils {
    *   a permalink, and as such should have the root path prepended.
    */
   static copyToClipboard(copyText: string, isPermalink?: boolean) {
-    const element = document.createElement("textarea");
+    const element = document.createElement('textarea');
     let copyValue = copyText;
     if (isPermalink) {
-      copyValue = "https://defund12.org".concat(copyText);
+      copyValue = 'https://defund12.org'.concat(copyText);
     }
     element.value = copyValue;
     document.body.appendChild(element);
     element.select();
-    document.execCommand("copy");
+    document.execCommand('copy');
     document.body.removeChild(element);
   }
 }

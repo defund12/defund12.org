@@ -1,6 +1,6 @@
-﻿import React from "react";
-import { graphql, StaticQuery, Link } from "gatsby";
-import { HeaderProps } from "../../types/PropTypes";
+﻿import React from 'react';
+import {graphql, StaticQuery, Link} from 'gatsby';
+import {HeaderProps} from '../../types/PropTypes';
 
 /**
  * The site header, containing the banner and introduction.

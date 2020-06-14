@@ -1,11 +1,11 @@
-import React from "react";
-import { graphql, PageProps } from "gatsby";
-import Layout from "../common/Layout";
-import EmailList from "../email-list/EmailList";
-import { DefundUtils } from "../../DefundUtils";
-import { EmailProps, EmailConfig } from "../../types/PropTypes";
-import { EmailData } from "../../types/EmailData";
-import * as queryString from "query-string";
+import React from 'react';
+import {graphql, PageProps} from 'gatsby';
+import Layout from '../common/Layout';
+import EmailList from '../email-list/EmailList';
+import {DefundUtils} from '../../DefundUtils';
+import {EmailProps, EmailConfig} from '../../types/PropTypes';
+import {EmailData} from '../../types/EmailData';
+import * as queryString from 'query-string';
 
 /**
  * The @link {Email} component state.
@@ -43,10 +43,10 @@ export default class Email extends React.Component<
     componentDidMount() {
       const isAndroid = /(android)/i.test(navigator.userAgent);
       if (isAndroid) {
-        this.emailData.body = this.emailData.body.replace("\n", "<br/>");
+        this.emailData.body = this.emailData.body.replace('\n', '<br/>');
       }
       const queryParams = queryString.parse(this.props.location.search);
-      if ("browse" in queryParams) {
+      if ('browse' in queryParams) {
         // Automatically updates the URL so
         // if folks try to share, it will auto-open
         const pathWithoutQuery =
@@ -67,11 +67,11 @@ export default class Email extends React.Component<
       const body =
         encodeURIComponent(this.emailData.body.trim());
       const recipients =
-        this.emailData.recipients.join(", ");
+        this.emailData.recipients.join(', ');
       const cc =
-        this.emailData.cc?.join(", ");
+        this.emailData.cc?.join(', ');
       const ccText =
-        cc != null && cc.length > 0 ? `cc=${cc}&` : "";
+        cc != null && cc.length > 0 ? `cc=${cc}&` : '';
       window.location.href =
         `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
     }
@@ -119,12 +119,12 @@ export default class Email extends React.Component<
                   <span className="copyToClipboard"
                     onClick={() =>
                       this.handleClipboardCopy(
-                          { recipientsCopied: true },
-                          this.emailData.recipients.join(", "))
+                          {recipientsCopied: true},
+                          this.emailData.recipients.join(', '))
                     }>
-                    {(this.state.recipientsCopied ? "✅(copied)" : "🔗")}
+                    {(this.state.recipientsCopied ? '✅(copied)' : '🔗')}
                   </span>&nbsp;
-                  {this.emailData.recipients.join(", ")}
+                  {this.emailData.recipients.join(', ')}
                 </div>
 
                 {(this.emailData.cc ?
@@ -133,12 +133,12 @@ export default class Email extends React.Component<
                               <span className="copyToClipboard"
                                 onClick={() =>
                                   this.handleClipboardCopy(
-                                      { ccCopied: true },
-                                      this.emailData.cc.join(", "))
+                                      {ccCopied: true},
+                                      this.emailData.cc.join(', '))
                                 }>
-                                {(this.state.ccCopied ? "✅(copied)" : "🔗")}
+                                {(this.state.ccCopied ? '✅(copied)' : '🔗')}
                               </span>&nbsp;
-                              {this.emailData.cc.join(", ")}
+                              {this.emailData.cc.join(', ')}
                             </div> :
                             undefined)}
 
@@ -152,10 +152,10 @@ export default class Email extends React.Component<
                   <span className="copyToClipboard"
                     onClick={() =>
                       this.handleClipboardCopy(
-                          { bodyCopied: true },
+                          {bodyCopied: true},
                           this.emailData.body)
                     }>
-                    {(this.state.bodyCopied ? "✅(copied)" : "🔗")}
+                    {(this.state.bodyCopied ? '✅(copied)' : '🔗')}
                   </span>
                   <span dangerouslySetInnerHTML={
                     {

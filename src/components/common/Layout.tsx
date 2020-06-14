@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import { Helmet } from "react-helmet";
-import { LayoutProps } from "../../types/PropTypes";
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import {Helmet} from 'react-helmet';
+import {LayoutProps} from '../../types/PropTypes';
 
 
 /**

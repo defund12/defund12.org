@@ -1,7 +1,7 @@
-import React from "react";
-import Layout from "../components/common/Layout";
-import { graphql, PageProps } from "gatsby";
-import { SiteProps } from "../types/PropTypes";
+import React from 'react';
+import Layout from '../components/common/Layout';
+import {graphql, PageProps} from 'gatsby';
+import {SiteProps} from '../types/PropTypes';
 
 /**
  * The site's 404 page.

@@ -1,7 +1,7 @@
-﻿import * as React from "react";
-import { EmailListItemProps } from "../../types/PropTypes";
-import { DefundUtils } from "../../DefundUtils";
-import { Link } from "gatsby";
+﻿import * as React from 'react';
+import {EmailListItemProps} from '../../types/PropTypes';
+import {DefundUtils} from '../../DefundUtils';
+import {Link} from 'gatsby';
 
 interface EmailListItemState {
   /** A boolean indicating whether the copy button was recently clicked,
@@ -15,7 +15,7 @@ interface EmailListItemState {
 export class EmailListItem extends React.Component<
   EmailListItemProps,
   EmailListItemState> {
-    copyButtonText: string = "🔗";
+    copyButtonText: string = '🔗';
     /**
      * Initialize the component and its state.
      * @param {EmailListItemProps} props
@@ -33,7 +33,7 @@ export class EmailListItem extends React.Component<
      * link content.
      */
     handleClipboardCopy() {
-      this.setState({ clickActive: true });
+      this.setState({clickActive: true});
       DefundUtils.copyToClipboard(this.props.permalink, true);
     }
 
@@ -53,7 +53,7 @@ export class EmailListItem extends React.Component<
             aria-label="copy to clipboard"
             className="copyToClipboard"
             onClick={this.handleClipboardCopy.bind(this)}>
-            {(this.state.clickActive ? "✅(copied)" : "🔗")}
+            {(this.state.clickActive ? '✅(copied)' : '🔗')}
           </span>
         </li>
       );

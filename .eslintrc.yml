@@ -12,12 +12,11 @@ parserOptions:
   ecmaFeatures:
     jsx: true
 rules: {
-  "quotes": ["error", "double"],
-  "object-curly-spacing": ["error", "always"],
   "max-len": ["error", { "ignoreTemplateLiterals": true }]
 }
 overrides: [
   {
+    extends:["google"],
     files: ["*.ts?(x)"],
     parser: "@typescript-eslint/parser",
     plugins: [

@@ -1,15 +1,15 @@
-import * as React from "react";
-import { v1 as uuid } from "uuid";
-import { StaticQuery, graphql } from "gatsby";
-import { EmailListItem } from "./EmailPageLink";
-import Select from "react-select";
-import { ReactSelectOption } from "../../types/ReactSelectOption";
+import * as React from 'react';
+import {v1 as uuid} from 'uuid';
+import {StaticQuery, graphql} from 'gatsby';
+import {EmailListItem} from './EmailPageLink';
+import Select from 'react-select';
+import {ReactSelectOption} from '../../types/ReactSelectOption';
 import {
   EmailMetadata,
   RemarkNode,
   EmailMetadataGroup,
-} from "../../types/EmailData";
-import { EmailListProps } from "../../types/PropTypes";
+} from '../../types/EmailData';
+import {EmailListProps} from '../../types/PropTypes';
 
 export interface EmailListState {
     /**
@@ -37,10 +37,10 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
       // generate the state selection options
       this.stateOptions =
         emails.map((stateGroup) =>
-          ({ label: stateGroup.name, value: stateGroup.id }));
+          ({label: stateGroup.name, value: stateGroup.id}));
 
       // add a default option that will show all email links when selected
-      this.stateOptions.unshift({ label: "Choose state", value: 0 });
+      this.stateOptions.unshift({label: 'Choose state', value: 0});
 
       this.state = {
         selectedState: this.stateOptions[0],
@@ -63,7 +63,7 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
      *   The option object of the selected state.
      */
     onStateSelectionChanged(selectedState: ReactSelectOption) {
-      this.setState({ selectedState });
+      this.setState({selectedState});
     }
 
     /**
