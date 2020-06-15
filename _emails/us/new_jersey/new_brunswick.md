@@ -5,8 +5,7 @@ name: Letter to Mayor and City Council
 city: New Brunswick
 state: NJ
 recipients:
-- smith@cityofnewbrunswick.org
-- gfleming@cityofnewbrunswick.or
+- gfleming@cityofnewbrunswick.org
 - kegan@cityofnewbrunswick.org
 - janderson@cityofnewbrunswick.org
 - rescobar@cityofnewbrunswick.org
