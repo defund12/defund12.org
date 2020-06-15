@@ -3,9 +3,8 @@ title: Los Gatos, California
 permalink: "/losgatos"
 name: Letter to the Mayor, Vice Mayor, Town Council Members, and Elected Officers
   and Staff
-state: CA
 city: Los Gatos
-layout: email
+state: CA
 recipients:
 - mjensen@losgatosca.gov
 - bspector@losgatosca.gov
@@ -45,17 +44,19 @@ recipients:
 - chill@losgatosca.gov
 - HTarling@losgatosca.gov
 - mrenn@losgatosca.gov
-body: |
+body: |-
   To Mayor Jensen, Vice Mayor Spector, Town Council Members, and Elected Officers and Staff,
 
-  My name is [YOUR NAME] and I am a resident of Los Gatos. I am writing to urge you to defund the Los Gatos Police Department.
+  My name is \[YOUR NAME\] and I am a resident of Los Gatos. I am writing to urge you to defund the Los Gatos Police Department.
 
-  LGPD takes an enormous share of the town's general fund, at 36.7%. Compared to the FY 2019-20 adopted budget, the proposed budget for LGPD for FY 2020-21 increased by $647,039, while the proposed budget for Community Development decreased by $243,069. The LGPD proposed budget is also more than the proposed budgets for Community Development, Parks & Public Works, and Library Services combined. This investment in policing has not made us safer&#151;LGPD is a lethal threat to Los Gatos' Black, Brown, and Indigenous communities. With Los Gatos' current finances in dire jeopardy due to the COVID-19 financial crisis, it is clear that the LGPD budget must be reallocated.
+  LGPD takes an enormous share of the town's general fund at 36.7%. Compared to the FY 2019-20 adopted budget, the proposed budget for FY 2020-21 increases the funding for the LGPD by $647,039, while decreasing the budget for Community Development  by $243,069. The proposed budget for the LGPD is more than that of Community Development, Parks & Public Works, and Library Services combined. This investment in policing has not made us safer. Instead, LGPD has served as a lethal threat to Los Gatos' Black, Brown, and Indigenous communities. With Los Gatos' current finances in dire jeopardy due to the COVID-19 financial crisis, it is clear that the LGPD budget must be reallocated.
 
   As a Los Gatos resident, I demand that you take immediate action and update the FY 2020-21 budget beginning July 1, 2020 to do the following:
 
-  1. Reduce LGPD’s allocation from the General Fund
-  2. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence
+  1. Reduce LGPD’s allocation from the General Fund.
+
+  2. Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
+
   3. Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
 
   I urge you to advocate for a meaningful reallocation of the town's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
@@ -64,9 +65,10 @@ body: |
 
   Thank you,
 
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
+  \[YOUR NAME\]
+  \[YOUR ADDRESS\]
+  \[YOUR EMAIL\]
+  \[YOUR PHONE NUMBER\]
+layout: email
 ---
 
