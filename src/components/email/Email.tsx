@@ -88,10 +88,35 @@ export default class Email extends React.Component<
   }
 
   /**
+   * Checks whether the page has expired based on comparing the current
+   * timestamp with the page's expiration date, if it has one
+   * @return {boolean} True if the page is expired, false otherwise
+   */
+  isExpired(): boolean {
+    if (!this.emailData.expiration_date) {
+      return false;
+    }
+    const now = Date.now() / 1000;
+    const expirationTimestamp =
+      Date.parse(this.emailData.expiration_date) / 1000;
+    return expirationTimestamp < now;
+  }
+
+  /**
    * React render method.
    * @return {React.ReactNode} the rendered component
    */
   render(): React.ReactNode {
+    if (this.isExpired()) {
+      return (
+        <Layout {...this.siteConfig}>
+          <article className="emailContentSection">
+            <h2>Page expired</h2>
+            <p>This page has expired and contains information that is up to date.</p>
+          </article>
+        </Layout>
+      );
+    }
     return (
       <Layout {...this.siteConfig}>
         <section className="emailPageHeader">
@@ -199,6 +224,7 @@ export const pageQuery = graphql`
         state
         permalink
         recipients
+        expiration_date
       }
     }
     siteConfig {

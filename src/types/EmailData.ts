@@ -44,7 +44,7 @@ export interface EmailData extends EmailMetadata {
    *
    * _(Reserved for future use.)_
    */
-  date: never & Date;
+  expiration_date: never & string;
 }
 
 type EmailDataType = EmailMetadata & EmailData;

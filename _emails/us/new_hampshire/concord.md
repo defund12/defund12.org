@@ -1,6 +1,7 @@
 ---
 title: Concord, NH
 permalink: "/concord"
+expiration_date: "2020-03-02"
 name: Letter to City Government Officials
 city: Concord
 state: NH
