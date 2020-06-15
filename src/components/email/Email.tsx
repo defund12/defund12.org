@@ -73,8 +73,8 @@ export default class Email extends React.Component<
     const recipients = this.emailData.recipients.join(", ");
     const cc = this.emailData.cc?.join(", ");
     const ccText =
-      cc !== undefined && cc !== null && cc.length > 0 ? `cc=${cc}&` : "";
-    window.location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+      cc !== undefined && cc !== null && cc.length > 0 ? `cc=${cc}` : "";
+    window.location.href = `mailto:?bcc=${recipients}?${ccText}&subject=${subject}&body=${body}`;
   }
 
   /**
