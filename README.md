@@ -8,17 +8,39 @@ We are dealing with a high volume of requests, but we are doing our best to stay
 
 ## Development
 
-To build the application:
+1. Clone the repo:
 
-1. Install [Node JS](https://nodejs.org/en/download/)
-2. Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
-3. Install [Gatsby](https://www.gatsbyjs.org/docs/gatsby-cli/)
-4. Clone and navigate to the repository
-5. `gatsby develop`
+   ```bash
+   git clone git@github.com:defund12/defund12.org.git
+   ```
+
+2. Install [Homebrew](https://brew.sh/), and:
+
+   ```bash
+   brew bundle
+   ```
+
+3. Install Node via [Node Version Manager](https://github.com/nvm-sh/nvm):
+
+   ```bash
+   nvm install
+   ```
+
+4. Install JS dependencies:
+
+   ```bash
+   yarn install --frozen-lockfile
+   ```
+
+5. Start the app:
+
+   ```bash
+   yarn start-dev
+   ```
 
 ### Running eslint
 
-1. `yarn install`
+1. If you haven't already, install JS dependencies: `yarn install --frozen-lockfile`
 2. To run eslint and automatically fix issues:
    `./node_modules/.bin/eslint --fix .`
 
@@ -26,7 +48,8 @@ To build the application:
 
 #### JS tests
 
-- `yarn install` && `yarn test`
+1. If you haven't already, install JS dependencies: `yarn install --frozen-lockfile`
+2. `yarn test`
 
 #### Markdown tests
 
