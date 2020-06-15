@@ -2,6 +2,11 @@
   margin-top: $x_4;
   min-height: 25vh;
 
+  #filters {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+
   .cityList {
     @include siteWidth;
 
