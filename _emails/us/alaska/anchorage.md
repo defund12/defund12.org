@@ -2,9 +2,8 @@
 title: Anchorage, Alaska
 permalink: "/anchorage"
 name: Letter to the City Council
-state: AK
 city: Anchorage
-layout: email
+state: AK
 recipients:
 - Christopher.Constant@AnchorageAK.gov
 - Crystal.Kennedy@AnchorageAK.gov
@@ -24,7 +23,7 @@ body: |-
 
   As an Anchorage resident, I therefore demand that you take immediate action to ensure the following:
 
-  - Reduce Anchorage’s allocation from the General Fund by 50% (roughly $60 million).
+  - Reduce Anchorage PD's allocation from the General Fund by 50% (roughly $60 million).
   - Disallow unauthorized overtime by APD.
   - Discontinue use of general fund dollars to pay for settlements due to police murder, misconduct, and negligence.
   - Invest in housing, jobs, youth programs, restorative justice, and mental health workers to keep the community safe.
@@ -37,5 +36,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
