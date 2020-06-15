@@ -2,9 +2,8 @@
 title: Kennewick, WA
 permalink: "/kennewick"
 name: Letter to City Leadership
-state: WA
 city: Kennewick
-layout: email
+state: WA
 recipients:
 - Don.Britain@ci.kennewick.wa.us
 - steve.lee@ci.kennewick.wa.us,
@@ -24,7 +23,7 @@ body: |-
 
   According to the Tri-City Herald, 223 Tri-Citians were homeless as of 2017, however the pandemic’s severe economic consequences has likely caused this number to increase. Support for communities in need is necessary now, more than ever. But instead, Kennewick has chosen to prioritize KPD over funding services for the homeless, many of whom are facing mental health problems and drug addiction.
 
-  I demand that the City Council completely revises the Kennewick budget for the 2020-2021 fiscal year. I demand we redirect police funding to improving mental health response teams, homeless shelters, and funding drug addiction treatment centers. I join the calls of those across the country to defund the police. I demand a budget that supports community well-being, rather than empowers the police forces that tear them apart.
+  I demand that the City Council completely revises the Kennewick budget for the 2020-2021 fiscal year. I demand we redirect police funding to improving mental health response teams, homeless shelters, and funding drug addiction treatment centers. I join the calls of those across the country to defund the police. I demand a budget that supports community well-being, rather than empowering the police forces that tear us apart.
 
   Public opinion is with me.
 
@@ -33,5 +32,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
