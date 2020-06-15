@@ -4,7 +4,6 @@ permalink: "/newark-ca"
 name: Letter to City Council
 city: Newark
 state: CA
-layout: email
 recipients:
 - alan.nagy@newark.org
 - luis.freitas@newark.org
@@ -25,12 +24,11 @@ body: |-
 
   Many residents have experienced firsthand the rapid increase in Newark's cost of living, with skyrocketing prices in rental housing and home ownership. Yet within the budget objectives, there is no mention of affordable housing for residents at risk of displacement. Decreasing police department expenditures would allow for the creation of more affordable housing.
 
-  I demand a budget that adequately and effectively meets the needs of at-risk Newark residents during this trying and uncertain time when livelihoods are on the line. I demand a budget that supports our community’s well-being, rather than one that disparately empowers police.
+  I demand a budget that adequately and effectively meets the needs of impacted Newark residents during this trying and uncertain time when livelihoods are on the line. I demand a budget that supports our community’s well-being, rather than one that disparately empowers police.
 
   It is your duty to represent your constituents. I am urging you to meaningfully revise the Newark city budget for 2020-2021 fiscal year and for all future budgets.
 
   Thank you for your time,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
@@ -38,5 +36,6 @@ body: |-
 
   [1] Sewell, Abigail A., Kevin A. Jefferson, and Hedwig Lee. 2016. “Living under Surveillance: Gender, Psychological Distress, and Stop-Question-and-Frisk Policing in New York City.” Social Science & Medicine 159:1–13.
   [2] Sullivan, Christopher M., and Zachary P. O’Keeffe. 2017. “Evidence That Curtailing Proactive Policing Can Reduce Major Crime.” Nature Human Behaviour 1(10):730–37.
+layout: email
 ---
 
