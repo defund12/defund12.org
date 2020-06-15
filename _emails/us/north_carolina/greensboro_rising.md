@@ -3,6 +3,7 @@ title: Greensboro Rising
 date: 2020-06-12 12:36:00 Z
 permalink: "/greensboro-rising"
 name: Letter to Mayor and City Council -- Greensboro Rising
+layout: email
 city: Greensboro
 state: NC
 recipients:
