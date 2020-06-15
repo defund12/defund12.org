@@ -29,9 +29,9 @@ body: |-
 
   My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD].
 
-  Given the historic, social, and political origins of police and policing, in conjunction with the recent nationwide protests reflecting the antiBlack deaths of George Floyd, Breonna Taylor, and Tony McDade I am contacting you because I am demanding you to redirect money away Poughkeepsie policing and prioritize collective services that will help improve the economic conditions, health, and wellbeing of Poughkeepsie residents, especially our Black communities.
+  Given the historic, social, and political origins of police and policing, in conjunction with the recent nationwide protests reflecting the police murders of George Floyd, Breonna Taylor, and Tony McDade I am contacting you because I am demanding you to redirect money away Poughkeepsie policing and prioritize community services that will help improve the economic conditions, health, and wellbeing of Poughkeepsie residents, especially our Black communities.
 
-  Teachers are at serious risk of losing their positions as well the youth losing the essential human right to learn and receive a formal education. As such, the Poughkeepsie City School District has stated the following:
+  Teachers are at serious risk of losing their positions as well the youth losing the essential human right to learn and receive a sound education. As such, the Poughkeepsie City School District has stated the following:
 
     The Poughkeepsie City School District is proposing to eliminate 48 positions, including teachers, administrators and support staff, as it attempts to erase a $2.6 million deficit for its 2020-21 budget. The board voted Wednesday to eliminate positions for elementary assistant principals, the Poughkeepsie High School dean of students, the assistant to the superintendent and a position that had yet to be filled for the director of grants and advancement.
 
@@ -48,7 +48,6 @@ body: |-
     Administrative positions eliminated would include the P-Tech program principal, the PACE (Poughkeepsie Academic and Career Excellence) program principal, the PACE assistant principal, the high school dean of students, five elementary assistant principals, the assistant to the superintendent, and the director of grants and advancement.
 
     The proposed layoffs would result in around $3 million of savings. Rosser said the eliminations are likely to happen given the economic uncertainty amid the pandemic, and the district could see more eliminations as the budget is finalized.
-    He said more eliminations will be voted on by the board Wednesday, May 6.
 
     When asked by the board at the meeting how the schools will continue to provide services, Rosser did not have an answer.
 
