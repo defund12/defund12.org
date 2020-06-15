@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import { LayoutProps } from "../../types/PropTypes";
+import Footer from "./Footer";
+import Header from "./Header";
 
 /**
  * The site layout, which contains elements to
@@ -51,11 +51,6 @@ export default class Layout extends React.Component<LayoutProps> {
 
           {/* JS Includes */}
           {/* eslint-disable-next-line max-len*/}
-          <script
-            src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossOrigin="anonymous"
-          ></script>
         </Helmet>
         <Header />
         {this.props.children}

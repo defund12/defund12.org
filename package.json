@@ -42,7 +42,6 @@
         "gatsby-transformer-remark": "^2.8.15",
         "gatsby-transformer-yaml": "^2.4.4",
         "jest": "25.5.4",
-        "jquery": "^3.5.1",
         "node-sass": "^4.14.1",
         "query-string": "^6.13.1",
         "react": "^16.13.1",
