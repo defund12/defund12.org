@@ -4,7 +4,6 @@ permalink: "/winchester"
 name: Letter to Mayor and City Council
 city: Winchester
 state: VA
-layout: email
 recipients:
 - david.smith@winchesterva.gov
 - evan.clark@winchesterva.gov
@@ -22,7 +21,7 @@ body: |-
 
   While we’ve been spending extraordinary amounts on policing, we have not seen sufficient improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police. Research shows that a living wage, access to health services and treatment, educational opportunity, and stable housing are far more successful at promoting safe communities than police or prisons. As such, I demand more aggressive financial support be directed to those areas.
 
-  I urge you and the rest of the city council to amend the budget for 2021 and all future budgets. Money should be redirected away from the WPD and into social service programs that will benefit public health and our own communities, especially communities of color.
+  I urge you and the rest of the city council to amend the budget for 2021 and all future budgets. Money should be redirected away from the WPD and into social service programs that will benefit public health and our own communities, especially Communities of Color.
 
   Can I count on you to consider an alternative budget and review policing methods that puts a focus on social service programs and the wellbeing of the community?
 
@@ -32,5 +31,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
