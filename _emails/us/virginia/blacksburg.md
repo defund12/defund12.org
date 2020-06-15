@@ -4,7 +4,6 @@ permalink: "/blacksburg"
 name: Letter to Mayor Hager-Smith and City Council
 city: Blacksburg
 state: VA
-layout: email
 recipients:
 - lhagersmith@blacksburg.gov
 - msutphin@blacksburg.gov
@@ -21,7 +20,7 @@ body: |-
 
   Even though the FY 2020-21 budget has been passed as a placeholder, I urge the Town Council to amend this budget and begin meaningfully re-allocating Blacksburg Police Department funds to programs proven to more effectively promote a safe and equitable community. Blacksburg needs funding for community-based mental health services, substance abuse treatment services, affordable housing programs, childcare, public health, sustainability, and capital improvement projects. Additionally, police officers should not be the first resource for every crisis.
 
-  I demand a budget that reflects the needs and values of Blacksburg residents. This council must take a hard look at the way the current system fails to serve-and in fact actively harms-our community, and come together to reimagine the role of police in our town.
+  I demand a budget that reflects the needs and values of Blacksburg residents. This council must take a hard look at the way the current system fails to serve, and in fact actively harms our community, and come together to reimagine the role of police in our town.
 
   I am urging you to keep these things in mind for the budget for the 2020-2021 fiscal year and to invest in the people, not the police.
 
@@ -32,5 +31,6 @@ body: |-
   [YOUR PHONE NUMBER]
 
   [1] https://www.blacksburg.gov/home/showdocument?id=9284
+layout: email
 ---
 
