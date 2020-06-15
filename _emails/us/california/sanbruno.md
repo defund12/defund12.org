@@ -1,9 +1,9 @@
 ---
-title: "San Bruno, CA"
+title: San Bruno, CA
 permalink: "/sanbruno"
-name: "Letter to Mayor and City Council"
-city: "San Bruno"
-state: "CA"
+name: Letter to Mayor and City Council
+city: San Bruno
+state: CA
 layout: email
 recipients:
 - councilsb@sanbruno.ca.gov
@@ -33,3 +33,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
