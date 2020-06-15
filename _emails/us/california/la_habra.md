@@ -4,7 +4,6 @@ permalink: "/lahabra"
 name: Letter to Mayor Beamish and City Council
 city: La Habra
 state: CA
-layout: email
 recipients:
 - rferrier@lahabraca.gov
 - bhurt@lahabraca.gov
@@ -12,7 +11,7 @@ recipients:
 body: |-
   Dear Mayor Tom Beamish and La Habra City Council members,
 
-  My name is [YOUR NAME] and I am a concerned resident of La Habra. I am emailing in support of the nation wide initiative to defund all police departments across the United States and redistribute funds to community based public safety measures. These include but are not limited to: alleviating homelessness, mental health, domestic abuse, sexual assault, and affordable housing. I have seen my communities' pleas for help and change go ignored for far too long.
+  My name is [YOUR NAME] and I am a concerned resident of La Habra. I am emailing in support of the nation wide initiative to defund police departments across the United States and redistribute funds to community based public safety measures. These include but are not limited to: alleviating homelessness, mental health, domestic abuse, sexual assault, and affordable housing. I have seen my communities' pleas for help and change go ignored for far too long.
 
   For over a week, protests across the nation have called for an end to systematic racism in the criminal justice system that has stoked its fire on this country for far too long. I am writing to demand real change in the La Habra criminal justice system. The La Habra police department's total budget of $20 million makes up 45.5% of the general city budget, according to the annual budget of 2019-2020. This funding should instead go to other public services that better our community while providing basic services to every resident in La Habra and ensuring their physical and financial safety.
 
@@ -24,12 +23,13 @@ body: |-
 
   I demand immediate reduction of the police department budget, demilitarization of our forces, and the reallocation of funds from the police department to community-led health and safety strategies. Put your trust in the hands of the community. It is your duty to represent the will of the people, and I am urging you to immediately revise the La Habra operating budget to one that doesn’t put an emphasis on the police, but rather puts an emphasis on the betterment of the people.
 
-  I have seen this city turn their focus away from their citizens and instead put their focus towards big businesses and the police department. In order to hold you accountable for the years of injustice and the mishandling of funds, we must stand together in solidarity and let La Habra know just how powerful this new young base of voters really are. My voice will be heard and the defunding of the police will happen.
+  I have seen this city turn its focus away from the safety and welfare of residents and instead put towards big businesses and the police department. After years of misguided priorities, we must stand together in solidarity and reimagine public safety in La Habra.
 
   Sincerely,
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
