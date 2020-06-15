@@ -4,7 +4,6 @@ permalink: "/sangabriel"
 name: Letter to Mayor and City Council
 city: San Gabriel
 state: CA
-layout: email
 recipients:
 - dmenchaca@sgch.org
 - cliao@sgch.org
@@ -12,7 +11,7 @@ recipients:
 - jharrington@sgch.org
 - jpu@sgch.org
 body: |-
-  Dear San Gabriel Mayor and City Council,
+  Dear Mayor Menchaca and City Council,
 
   My name is [YOUR NAME] and I am a resident of [YOUR DISTRICT/NEIGHBORHOOD]. I am writing to demand that the San Gabriel City Council adopt a budget that prioritizes community wellbeing and redirects funding away from the police.
 
@@ -29,5 +28,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
