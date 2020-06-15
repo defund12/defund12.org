@@ -23,7 +23,6 @@ body: |-
   Burbank can not wait any longer for a budget that meets the needs of its residents. The only way to achieve this is to take immediate steps to defund Burbank PD.
 
   Thank you,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
