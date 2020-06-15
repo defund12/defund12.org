@@ -4,7 +4,6 @@ permalink: "/anaheim"
 name: Letter to City Council
 city: Anaheim
 state: CA
-layout: email
 recipients:
 - Publiccomment@anaheim.net
 - hsidhu@anaheim.net
@@ -17,7 +16,7 @@ recipients:
 body: |-
   To the Anaheim City Council:
 
-  My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD/CITY]. I am writing in deep concern for the health of the greater Anaheim community. It has become more than clear that a radical shift in our concept of policing and community health must take place at the local level. Police violence in Anaheim has disproportionately affected Black and Brown residents and that must come to an end.
+  My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing in deep concern for the health of the greater Anaheim community. It has become more than clear that a radical shift in our concept of policing and community health must take place at the local level. Police violence in Anaheim has disproportionately affected Black and Brown residents and that must come to an end.
 
   The United States does not have a national healthcare system. Instead, we have the largest military budget, and some of the most well-funded and militarized police departments in the world. Anaheim is no different: the 2019-2020 budget allocated $153.8 million to law enforcement and only $1 million to community development.
 
@@ -27,9 +26,11 @@ body: |-
 
   I am calling on our elected officials to stop criminalizing our community members. We as a concerned community refuse to remain silent on the use of technology to further terrorize our community.
 
+  Thank you,
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
