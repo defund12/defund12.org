@@ -2,9 +2,8 @@
 title: Pittsfield, MA
 permalink: "/pittsfield"
 name: Letter to Mayor Tyer and City Councilors
-state: MA
 city: Pittsfield
-layout: email
+state: MA
 recipients:
 - ltyer@cityofpittsfield.org
 - pmarchetti@cityofpittsfield.org
@@ -22,7 +21,7 @@ body: |-
 
   In the middle of a pandemic and financial crisis whereby millions are jobless and at risk of illness, it is an affront to your constituents to increase funding to the police while other crucial public services suffer. Pittsfield PD is one of the only city departments to see a funding increase in the proposed fiscal 2021 budget – up 5% to almost $11.5 million annually. The same budget reduces funding for Education by $1.4 million. Police Chief Wynn accurately identified some of the primary ways funding for the police harms the community in his June 11th interview with Northeast Public Radio when he attempted to defend increased funding for Pittsfield police – the lack of accountability in billing overtime and budgeting for vacant positions and that Pittsfield PD is “the first call anybody makes” for issues like substance abuse, homelessness and domestic violence. The proposed 2021 budget increase for the police department would only exacerbate the problem of armed officers unprepared to deal with these issues being the “first call” by underfunding other public services which could prevent or more effectively respond to these issues.
 
-  Policing is a paradox that creates the “crime” it aims to deter. A person who is houseless will have to break the law to survive because the police took all the money that would have otherwise provided affordable housing. A person struggling with addiction will be forced to steal because the police took all the money that would have otherwise provided access to treatment. A person in a mental health crisis will react with fear in the face of an armed officer with no skills relevant to helping them, increasing the chance they will cause harm to them self or others. We know for a fact that in every part of this country the detrimental effects of policing disproportionately harm Black people and communities of color. We must bring this violent cycle to an end.
+  Policing is a paradox that creates the “crime” it aims to deter. A person who is houseless will have to break the law to survive because the police took all the money that would have otherwise provided affordable housing. A person struggling with addiction will be forced to steal because the police took all the money that would have otherwise provided access to treatment. A person in a mental health crisis will react with fear in the face of an armed officer with no skills relevant to helping them, increasing the chance they will cause harm to them self or others. We know for a fact that in every part of this country the detrimental effects of policing disproportionately harm Black people and Communities of Color. We must bring this violent cycle to an end.
 
   I am asking you to take action in the following ways:
 
@@ -54,5 +53,6 @@ body: |-
   Landes, Josh. “Objecting To Calls To Defund, Chief Wynn Discusses Rising
   Pittsfield Police Spending .” Northeast Public Radio, 11 June 2020,
   https://www.wamc.org/post/objecting-calls-defund-chief-wynn-discusses-rising-pittsfield-police-spending
+layout: email
 ---
 
