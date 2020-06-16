@@ -14,11 +14,22 @@ We are dealing with a high volume of requests, but we are doing our best to stay
    git clone git@github.com:defund12/defund12.org.git
    ```
 
-2. Install [Homebrew](https://brew.sh/), and:
+2. Install Node Version Manager
+MacOS:
+   Install [Homebrew](https://brew.sh/), and:
 
    ```bash
    brew bundle
    ```
+
+Linux (this should also work on Mac, for if you don't want to use Homebrew):
+   ```bash
+   wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+   ```
+
+Windows:
+   Install [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows) using its installer.
+   
 
 3. Install Node via [Node Version Manager](https://github.com/nvm-sh/nvm):
 
