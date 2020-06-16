@@ -1,21 +1,21 @@
 ---
-title: "Peoria, IL"
+title: Peoria, IL
 permalink: "/peoria"
-name: "Letter to City Council"
-city: "Peoria"
-state: "IL"
+name: Letter to City Council
+city: Peoria
+state: IL
 recipients:
-- "rali@peoriagov.org"
-- "bjensen@peoriagov.org"
-- "cgrayeb@peoriagov.org"
-- "dcyr@peoriagov.org"
-- "dmoore@peoriagov.org"
-- "jardis@peoriagov.org"
-- "jkelly@peoriagov.org"
-- "jmontelongo@peoriagov.org"
-- "sruckriegel@peoriagov.org"
-- "triggenbach@peoriagov.org"
-- "zoyler@peoriagov.org"
+- rali@peoriagov.org
+- bjensen@peoriagov.org
+- cgrayeb@peoriagov.org
+- dcyr@peoriagov.org
+- dmoore@peoriagov.org
+- jardis@peoriagov.org
+- jkelly@peoriagov.org
+- jmontelongo@peoriagov.org
+- sruckriegel@peoriagov.org
+- triggenbach@peoriagov.org
+- zoyler@peoriagov.org
 body: |-
   [MAKE SURE YOU FILL IN BRACKETS. ALSO ADD A LINE OR TWO SO THEY HAVE TO READ EACH MESSAGE]
 
@@ -35,6 +35,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
