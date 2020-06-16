@@ -1,17 +1,17 @@
 ---
-title: "Roanoke, VA"
+title: Roanoke, VA
 permalink: "/roanoke"
-name: "Letter to City Council"
-city: "Roanoke"
-state: "VA"
+name: Letter to City Council
+city: Roanoke
+state: VA
 recipients:
-- "sherman.lea@roanokeva.gov"
-- "michelle.dykstra@roanokeva.gov"
-- "joseph.cobb@roanokeva.gov"
-- "bill.bestpitch@roanokeva.gov"
-- "djuna.osborne@roanokeva.gov"
-- "trish.white-boyd@roanokeva.gov"
-- "anita.price@roanokeva.gov"
+- sherman.lea@roanokeva.gov
+- michelle.dykstra@roanokeva.gov
+- joseph.cobb@roanokeva.gov
+- bill.bestpitch@roanokeva.gov
+- djuna.osborne@roanokeva.gov
+- trish.white-boyd@roanokeva.gov
+- anita.price@roanokeva.gov
 body: |-
   Hello, my name is [NAME] and I live in [CITY/NEIGHBORHOOD].
 
@@ -44,6 +44,6 @@ body: |-
   [PHONE_NUMBER]
   [EMAIL]
   [HOME/LIVING ADDRESS]
-layout: "email"
+layout: email
 ---
 
