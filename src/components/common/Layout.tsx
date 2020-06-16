@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { LayoutProps } from "../../types/PropTypes";
+import { LayoutProps, OptionalLayoutProps } from "../../types/PropTypes";
 import { graphql, StaticQuery } from "gatsby";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -66,11 +66,13 @@ class _Layout extends React.Component<LayoutProps> {
 /**
  * The site layout, which contains elements to
  * place in <head> through React Helmet.
- * @param {any} props
- *    pass in child elements and optionally, pageTitle and meta
+ * @param {OptionalLayoutProps} props
+ *    pass in child elements, page title, and meta
  * @return {JSX.Element}
  */
-export default function Layout(props: any): JSX.Element {
+export default function Layout(
+  props: React.PropsWithChildren<OptionalLayoutProps>
+): JSX.Element {
   return (
     <StaticQuery
       query={graphql`
@@ -85,13 +87,11 @@ export default function Layout(props: any): JSX.Element {
       `}
       render={(data: { siteConfig: LayoutProps }) => (
         <_Layout
-          siteTitle={data.siteConfig.siteTitle}
+          {...data.siteConfig}
           pageTitle={
             props.pageTitle ? props.pageTitle : data.siteConfig.siteTitle
           }
           meta={props.meta ? props.meta : data.siteConfig.meta}
-          logoUrl={data.siteConfig.logoUrl}
-          faviconUrl={data.siteConfig.faviconUrl}
         >
           {props.children}
         </_Layout>

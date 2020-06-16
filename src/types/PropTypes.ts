@@ -26,13 +26,15 @@ export interface EmailProps {
 
 export interface OptionalLayoutProps {
   pageTitle?: string;
+  meta?: string;
 }
 
 // {Static query result properties}
 export type LayoutProps = Pick<
-  SiteConfig & OptionalLayoutProps,
-  "siteTitle" | "meta" | "faviconUrl" | "logoUrl" | "pageTitle"
->;
+  SiteConfig,
+  "siteTitle" | "meta" | "faviconUrl" | "logoUrl"
+> &
+  OptionalLayoutProps;
 
 export type HeaderProps = Pick<SiteConfig, "siteTitle" | "subtitle">;
 
