@@ -1,18 +1,18 @@
 ---
-title: "Artesia, CA"
+title: Artesia, CA
 permalink: "/artesia"
-name: "Letter to Mayor, Mayor Pro Tem, City Manager, and City Council"
-city: "Artesia"
-state: "CA"
-layout: "email"
+name: Letter to Mayor, Mayor Pro Tem, City Manager, and City Council
+city: Artesia
+state: CA
+layout: email
 recipients:
-- "tlima@cityofartesia.us"
-- "mcanales@cityofartesia.us"
-- "ataj@cityofartesia.us"
-- "rtrevino@cityofartesia.us"
-- "mramoso@cityofartesia.us"
-- "jalderete@cityofartesia.us"
-- "wrawlings@cityofartesia.us"
+- tlima@cityofartesia.us
+- mcanales@cityofartesia.us
+- ataj@cityofartesia.us
+- rtrevino@cityofartesia.us
+- mramoso@cityofartesia.us
+- jalderete@cityofartesia.us
+- wrawlings@cityofartesia.us
 body: |-
   Dear Elected Officials of Artesia,
 
