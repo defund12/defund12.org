@@ -37,7 +37,7 @@ We are dealing with a high volume of requests, but we are doing our best to stay
    Install [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows) using its installer.
    
 
-3. Install Node via :
+3. Install Node via nvm:
 
    ```bash
    nvm install
