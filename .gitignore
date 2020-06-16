@@ -5,3 +5,4 @@ _site
 node_modules/
 public/
 settings.json
+*.log
