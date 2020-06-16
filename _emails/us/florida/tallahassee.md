@@ -4,7 +4,6 @@ permalink: "/tallahassee"
 name: Letter to Mayor and City Council
 city: Tallahassee
 state: FL
-layout: email
 recipients:
 - mayor@talgov.com
 - dianne.williams-cox@talgov.com
@@ -14,7 +13,7 @@ recipients:
 body: |-
   Dear Mayor Dailey and Tallahassee City Commissioners,
 
-  My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I request that the Mayor and City Commission support our community and hear our call for:
+  My name is [NAME] and I am a resident of [NEIGHBORHOOD]. I request that the Mayor and City Commission support our community and hear the overwhelming call for:
 
   - Efforts to defund and de-escalate the police department, and to reallocate money to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented activities.
 
@@ -29,13 +28,10 @@ body: |-
   I request that an emergency meeting be called before the fiscal year goes into effect in order to reallocate these funds to resources that community members can benefit from.
 
   Thank you for your time,
-
   [YOUR NAME]
-
   [YOUR ADDRESS]
-
   [YOUR EMAIL]
-
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
