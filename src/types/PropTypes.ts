@@ -8,7 +8,7 @@ export interface SiteProps {
 
 export type EmailConfig = Pick<
   SiteConfig,
-  | "title"
+  | "siteTitle"
   | "meta"
   | "logoUrl"
   | "faviconUrl"
@@ -24,13 +24,17 @@ export interface EmailProps {
   siteConfig: EmailConfig;
 }
 
+export interface OptionalLayoutProps {
+  pageTitle?: string;
+}
+
 // {Static query result properties}
 export type LayoutProps = Pick<
-  SiteConfig & EmailMetadata,
-  "title" | "meta" | "faviconUrl" | "logoUrl" | "name" | "city" | "state"
+  SiteConfig & OptionalLayoutProps,
+  "siteTitle" | "meta" | "faviconUrl" | "logoUrl" | "pageTitle"
 >;
 
-export type HeaderProps = Pick<SiteConfig, "title" | "subtitle">;
+export type HeaderProps = Pick<SiteConfig, "siteTitle" | "subtitle">;
 
 export type FooterProps = Pick<
   SiteConfig,

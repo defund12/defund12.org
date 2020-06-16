@@ -1,32 +1,17 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { LayoutProps } from "../../types/PropTypes";
+import { graphql, StaticQuery } from "gatsby";
 import Footer from "./Footer";
 import Header from "./Header";
 
 /**
  * The site layout, which contains elements to
  * place in <head> through React Helmet.
+ * _This is meant to be internal to this file and should
+ * probably not be exported._
  */
-export default class Layout extends React.Component<LayoutProps> {
-  title: string;
-  description: string;
-
-  /**
-   * Initialize the component and its state.
-   * @param {LayoutProps} props
-   */
-  constructor(props: LayoutProps) {
-    super(props);
-    if (this.props.city) {
-      this.title = this.props.city + " on Defund12.org";
-      this.description = `Send a pre-written email directly to ${this.props.city}, ${this.props.state} officials`;
-    } else {
-      this.title = this.props.title;
-      this.description = this.props.meta;
-    }
-  }
-
+class _Layout extends React.Component<LayoutProps> {
   /**
    * React render method.
    * @return {React.ReactNode} the rendered component
@@ -35,30 +20,30 @@ export default class Layout extends React.Component<LayoutProps> {
     return (
       <>
         <Helmet>
-          <title>{this.title}</title>
+          <title>{this.props.pageTitle}</title>
           <meta charSet="utf-8" />
-          <meta name="description" content={this.description} />
+          <meta name="description" content={this.props.meta} />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <link rel="icon" type="image/svg+xml" href={this.props.faviconUrl} />
 
           {/* Schema protocol */}
-          <meta itemProp="name" content={this.title} />
-          <meta itemProp="description" content={this.description} />
+          <meta itemProp="name" content={this.props.pageTitle} />
+          <meta itemProp="description" content={this.props.meta} />
           <meta itemProp="image" content={this.props.logoUrl} />
 
           {/* Facebook Open Graph protocol*/}
-          <meta property="og:title" content={this.title} />
-          <meta property="og:site_name" content={this.props.title} />
-          <meta property="og:description" content={this.description} />
+          <meta property="og:title" content={this.props.pageTitle} />
+          <meta property="og:site_name" content={this.props.siteTitle} />
+          <meta property="og:description" content={this.props.meta} />
           <meta property="og:image" content={this.props.logoUrl} />
 
           {/* Twitter card protocol */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content={this.title} />
+          <meta name="twitter:title" content={this.props.pageTitle} />
           <meta name="twitter:image" content={this.props.logoUrl} />
-          <meta name="twitter:description" content={this.description} />
+          <meta name="twitter:description" content={this.props.meta} />
 
           {/* CSS Includes */}
           {/* eslint-disable-next-line max-len*/}
@@ -76,4 +61,41 @@ export default class Layout extends React.Component<LayoutProps> {
       </>
     );
   }
+}
+
+/**
+ * The site layout, which contains elements to
+ * place in <head> through React Helmet.
+ * @param {any} props
+ *    pass in child elements and optionally, pageTitle and meta
+ * @return {JSX.Element}
+ */
+export default function Layout(props: any): JSX.Element {
+  return (
+    <StaticQuery
+      query={graphql`
+        query LayoutQuery {
+          siteConfig {
+            siteTitle
+            meta
+            logoUrl
+            faviconUrl
+          }
+        }
+      `}
+      render={(data: { siteConfig: LayoutProps }) => (
+        <_Layout
+          siteTitle={data.siteConfig.siteTitle}
+          pageTitle={
+            props.pageTitle ? props.pageTitle : data.siteConfig.siteTitle
+          }
+          meta={props.meta ? props.meta : data.siteConfig.meta}
+          logoUrl={data.siteConfig.logoUrl}
+          faviconUrl={data.siteConfig.faviconUrl}
+        >
+          {props.children}
+        </_Layout>
+      )}
+    />
+  );
 }
