@@ -14,18 +14,17 @@ recipients:
 - dan.dugan@slcgov.com
 - amy.fowler@slcgov.com
 body: |
-  I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+  I am a resident of [YOUR DISTRICT]. I am writing to demand that the City Council adopt a budget for the people, that prioritizes community wellbeing and redirects funding away from the police.
 
-  We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+  We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of lethal force against residents of color. Empty gestures and suggestions of “reform” are unacceptable. I am demanding the voices of this movement be heard, and that real change be made to the way this city allocates its resources.
 
-  Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, despite the fact that crime has fallen considerably during the past few months. The SLCPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.
+  Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, while social services--proven to better promote community safety than policing--stagnate. The SLCPD has seen a rise in overtime pay which, when too often paid out to officers responsible for harassing unhoused, Black, Indigenous, and Latinx residents, is deeply insulting.
 
-  We demand that the City Council defund the SLCPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Utahans during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+  I am demanding that the City Council defund the SLCPD. I demand a budget that adequately and effectively meets the needs of impacted Utahans during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
 
-  Although City Council has avoided voting or revising Mayor Mendenhall’s draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SLC budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.
+  Although City Council has thus far avoided voting or revising Mayor Mendenhall’s budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SLC budget for 2020-2021 fiscal year, and to fund care, not criminalization and incarceration. You must adopt a budget for the people. Public opinion is with me.
 
   Thank you for your time,
-
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
