@@ -26,15 +26,15 @@ export interface EmailProps {
 
 // {Static query result properties}
 export type LayoutProps = Pick<
-  SiteConfig,
-  "title" | "meta" | "faviconUrl" | "logoUrl"
+  SiteConfig & EmailMetadata,
+  "title" | "meta" | "faviconUrl" | "logoUrl" | "name" | "city" | "state"
 >;
 
 export type HeaderProps = Pick<SiteConfig, "title" | "subtitle">;
 
 export type FooterProps = Pick<
   SiteConfig,
-  "footerTextPr" | "footerTextInstructions" | "contactEmailFooter"
+  "footerTextPr" | "footerTextInstructions" | "contactEmailFooter" 
 >;
 
 // {Component-provided properties}

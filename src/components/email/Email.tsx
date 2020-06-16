@@ -93,7 +93,7 @@ export default class Email extends React.Component<
    */
   render(): React.ReactNode {
     return (
-      <Layout {...this.siteConfig}>
+      <Layout {...this.siteConfig} {...this.emailData}>
         <section className="emailPageHeader">
           <h2>{this.emailData.name}</h2>
           <b>
