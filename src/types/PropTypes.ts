@@ -34,7 +34,7 @@ export type HeaderProps = Pick<SiteConfig, "title" | "subtitle">;
 
 export type FooterProps = Pick<
   SiteConfig,
-  "footerTextPr" | "footerTextInstructions" | "contactEmailFooter" 
+  "footerTextPr" | "footerTextInstructions" | "contactEmailFooter"
 >;
 
 // {Component-provided properties}

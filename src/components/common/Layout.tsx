@@ -11,26 +11,26 @@ import Header from "./Header";
 export default class Layout extends React.Component<LayoutProps> {
   title: string;
   description: string;
-  /**
-   * React render method.
-   * @return {React.ReactNode} the rendered component
-  */
 
   /**
    * Initialize the component and its state.
    * @param {LayoutProps} props
    */
-  constructor(props: LayoutProps){
-    super(props)
-    if(this.props.city){
+  constructor(props: LayoutProps) {
+    super(props);
+    if (this.props.city) {
       this.title = this.props.city + " on Defund12.org";
-      this.description = `Send a pre-written email directly to ${this.props.city}, ${this.props.state} officials`
-    } else{
+      this.description = `Send a pre-written email directly to ${this.props.city}, ${this.props.state} officials`;
+    } else {
       this.title = this.props.title;
       this.description = this.props.meta;
     }
   }
 
+  /**
+   * React render method.
+   * @return {React.ReactNode} the rendered component
+   */
   render(): React.ReactNode {
     return (
       <>
