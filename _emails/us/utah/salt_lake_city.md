@@ -18,7 +18,7 @@ body: |
 
   We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of lethal force against residents of color. Empty gestures and suggestions of “reform” are unacceptable. I am demanding the voices of this movement be heard, and that real change be made to the way this city allocates its resources.
 
-  Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, while social services--proven to better promote community safety than policing--stagnate. The SLCPD has seen a rise in overtime pay which, when too often paid out to officers responsible for harassing unhoused, Black, Indigenous, and Latinx residents, is deeply insulting.
+  Support for marginalized communities is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, while social services and education--proven to better promote community safety than policing--stagnate. The SLCPD has seen a rise in overtime pay which, when too often paid out to officers responsible for harassing unhoused, Black, Indigenous, and Latinx residents, is deeply insulting.
 
   I am demanding that the City Council defund the SLCPD. I demand a budget that adequately and effectively meets the needs of impacted Utahans during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowering the police forces that tear us apart.
 
