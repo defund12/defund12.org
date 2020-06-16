@@ -1,24 +1,24 @@
 ---
-title: "St. Mary's County, MD"
+title: St. Mary's County, MD
 permalink: "/stmarys"
-name: "Letter to County Officials"
-city: "St. Mary's County"
-state: "MD"
+name: Letter to County Officials
+city: St. Mary's County
+state: MD
 recipients:
-- "csmc@stmarysmd.com"
-- "todd.morgan@stmarysmd.com"
-- "john.oconnor@stmarysmd.com"
-- "mike.hewitt@stmarysmd.com"
-- "eric.colvin@stmarysmd.com"
-- "randy.guy@stmarysmd.com"
-- "Jason.Babcock@stmarysmd.com"
-- "Julie.Yingling@stmarysmd.com"
-- "marvin.butler@stmarysmd.com"
-- "tim.cameron@stmarysmd.com"
-- "michael.merican@stmarysmd.com"
-- "Rebecca.Bridgett@stmarysmd.com"
-- "finance@stmarysmd.com"
-- "sheriff@stmarysmd.com"
+- csmc@stmarysmd.com
+- todd.morgan@stmarysmd.com
+- john.oconnor@stmarysmd.com
+- mike.hewitt@stmarysmd.com
+- eric.colvin@stmarysmd.com
+- randy.guy@stmarysmd.com
+- Jason.Babcock@stmarysmd.com
+- Julie.Yingling@stmarysmd.com
+- marvin.butler@stmarysmd.com
+- tim.cameron@stmarysmd.com
+- michael.merican@stmarysmd.com
+- Rebecca.Bridgett@stmarysmd.com
+- finance@stmarysmd.com
+- sheriff@stmarysmd.com
 body: |-
   Dear St. Mary’s County Officials,
 
@@ -35,6 +35,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
