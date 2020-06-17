@@ -1,9 +1,9 @@
 ---
-title: "Saint Louis County, MO"
+title: Saint Louis County, MO
 permalink: "/saintlouis-county"
-name: "Letter to Elected Officials and County Council"
-city: "Saint Louis County"
-state: "MO"
+name: Letter to Elected Officials and County Council
+city: Saint Louis County
+state: MO
 layout: email
 recipients:
 - rdays@stlouisco.com
@@ -42,3 +42,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
