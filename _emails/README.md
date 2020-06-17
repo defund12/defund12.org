@@ -12,10 +12,9 @@ When adding templates, please ensure you are using UTF-8 encoding. Please do not
 | name            | yes      | String | Name of the email that will be displayed to users                                   |
 | city            | yes      | String | City the email template is for                                                      |
 | state           | yes      | String | State (abbreviated) the email template is for (e.g., NY)                            |
-| recipients      | yes      | Array  | Array of email addresses the email will be directly sent to                         |
+| recipients      | yes      | Array  | Array of email addresses the email will be directly sent to via bcc                 |
 | subject         | yes      | String | Subject body for the email, even though this is currently replaced by a default     |
 | body            | yes      | String | Body text for the email. Prefix with `|-` and indent underneath (e.g., see below)   |
-| cc              | no       | Array  | Array of email addresses the email will be cc-ed to                                 |
 | expiration_date | no       | String | YYYY-MM-DD format date that email should expire from the site                       |
 | organization    | no       | String | Name of the organization that curated the email template (if it exists)             |
 | redirect_from   | no       | Array  | Links that should redirect to the permalink above                                   |
@@ -44,9 +43,6 @@ recipients:
 - <recipient>
 body: |-
   <body>
-cc:
-- <recipient>
-- <recipient>  
 expiration_date: <YYYY-MM-DD>
 organization: <organization>  
 redirect_from:
