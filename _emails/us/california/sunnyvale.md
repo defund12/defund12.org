@@ -6,11 +6,11 @@ city: Sunnyvale
 state: CA
 layout: email
 recipients:
-  - mike.wasserman@bos.sccgov.org
-  - Cindy.Chavez@bos.sccgov.org
-  - dave.cortese@bos.sccgov.org
-  - supervisor.ellenberg@bos.sccgov.org
-  - supervisor.simitian@bos.sccgov.org
+- mike.wasserman@bos.sccgov.org
+- Cindy.Chavez@bos.sccgov.org
+- dave.cortese@bos.sccgov.org
+- supervisor.ellenberg@bos.sccgov.org
+- supervisor.simitian@bos.sccgov.org
 subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
   Hello,
@@ -28,3 +28,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
