@@ -4,7 +4,6 @@ permalink: "/middlesexcounty"
 name: Letter to County Representatives
 city: Middlesex County
 state: NJ
-layout: email
 recipients:
 - laura.cartwright@mail.house.gov
 - NJ12BWIMA@mail.house.gov
@@ -32,7 +31,7 @@ recipients:
 body: |-
   Dear Middlesex County Representatives,
 
-  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the Middlesex County adopt a budget that prioritizes community wellbeing, and redirects funding away from the police system, as it disproportionately violates the rights and lives of Black community members - like Qwason Campbell who was assaulted by Woodbridge PD while protesting police brutality on July 6.
+  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the Middlesex County adopt a budget that prioritizes community wellbeing, and redirects funding away from the police system, as it disproportionately violates the rights and lives of Black community members - like Qwason Campbell who was assaulted by Woodbridge PD on June 1.
 
   I demand that the Middlesex County Representatives begin meaningfully defunding all New Jersey Police Departments and re-allocate those funds to programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more. I demand a budget that reflects the actual needs of Central New Jersey residents.
 
@@ -43,5 +42,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
