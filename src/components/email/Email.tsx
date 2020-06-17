@@ -75,7 +75,7 @@ export default class Email extends React.Component<
     const bcc = recipients.concat(cc);
     window.location.href = `mailto:?bcc=${bcc.join(
       ","
-    )}?subject=${subject}&body=${body}`;
+    )}&subject=${subject}&body=${body}`;
   }
 
   /**
