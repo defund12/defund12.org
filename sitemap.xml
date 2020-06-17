@@ -52,9 +52,9 @@
 <url> <loc>https://defund12.org/monterey</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/mountainview</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/nevada-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/newark-ca</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/novato</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/oakland</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/newark-ca</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/orange-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/oxnard</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/paloalto</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -75,8 +75,8 @@
 <url> <loc>https://defund12.org/sanbernardinocounty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/sandiego</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/sanfrancisco</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/sanjose</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/sangabriel</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/sanjose</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/sanleandro</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/sanluisobispo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/sanbruno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -202,6 +202,7 @@
 <url> <loc>https://defund12.org/broome</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/buffalo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/canandaigua</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/dutchesscounty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/ithaca</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/nassau</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/nyc</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -278,6 +279,7 @@
 <url> <loc>https://defund12.org/blacksburg</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/charlottesville</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/fairfax</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/henrico-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/loudouncounty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/norfolk</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/princewilliamcounty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -305,8 +307,8 @@
 <url> <loc>https://defund12.org/lacrosse</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/madison</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/milwaukee</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/hartford</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/westminster</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/hartford</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/newhaven</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
