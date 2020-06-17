@@ -46,3 +46,4 @@ body: |-
   [3] "Fiscal Year 2020 Adopted Budget, A Message From Mayor Domenic Sarno": https://www.springfield-ma.gov/finance/index.php?id=omb#:~:text=Fiscal%20Year%202020%20Adopted%20Budget&text=To%20the%20beloved%20citizens%20of,over%20the%20FY19%20Adopted%20Budget.
 layout: email
 ---
+
