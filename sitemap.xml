@@ -85,10 +85,10 @@
 <url> <loc>https://defund12.org/san-luis-obispo-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/san-mateo-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/sanbruno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/santabarbara</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/santaclara</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/santaclaracounty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/santacruz</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/santabarbara</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/santamaria</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/santamonica</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/santarosa</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -161,6 +161,7 @@
 <url> <loc>https://defund12.org/princegeorges-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/stmarys</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/arlington-ma</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/billerica</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/boston</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/boston-councilors</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/cambridge</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -185,8 +186,8 @@
 <url> <loc>https://defund12.org/minneapolis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/stpaul</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/stpaul-schoolboard</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/saintlouis-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/columbiamo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/saintlouis-county</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/billings</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/bozeman</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/butte</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -196,9 +197,6 @@
 <url> <loc>https://defund12.org/missoula</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/lincoln</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/omaha</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/boulder</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/aurora</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/coloradosprings</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/lasvegas</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/reno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/concord</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -206,6 +204,9 @@
 <url> <loc>https://defund12.org/bergencounty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/englewood</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/franklintownship</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/boulder</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/aurora</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/coloradosprings</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/jerseycity</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/middlesexcounty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/newbrunswick</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -231,7 +232,7 @@
 <url> <loc>https://defund12.org/chapelhill</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/chapelhill-active</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/charlotte</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/durham</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/hendersonville</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/highpoint</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/holly-springs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/raleigh</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -322,8 +323,8 @@
 <url> <loc>https://defund12.org/lacrosse</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/madison</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/milwaukee</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://defund12.org/durham</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/greensboro</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/greensboro-rising</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://defund12.org/hendersonville</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://defund12.org/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
