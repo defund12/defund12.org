@@ -43,7 +43,7 @@ function Addresses({
   const officialAddresses: OfficialAddress[] =
     (addresses || []).length > 0
       ? addresses.map((address) => {
-          return { address };
+          return { address, levels: [], roles: [] };
         })
       : officials;
 
@@ -176,7 +176,6 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   // because we are listening onChange (vs onBlur) *because* chrome doesn't fire onBlur
   // for auto-filled addresses!
   const updateField = (key: string, value: string) => {
-    console.log("updateField", { key, value });
     const newMap = { ...variableMap };
     newMap[key] = value;
     setVariableMap(newMap);
@@ -191,7 +190,6 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
           value
         );
       });
-      console.log("setting text to", newBodyText);
       setBodyText(newBodyText);
     }
   };
