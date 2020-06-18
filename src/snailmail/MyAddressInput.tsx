@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { useState } from "react";
+import React, { useState, ReactElement } from "react";
 
 import Form from "react-bootstrap/Form";
 
@@ -13,7 +13,7 @@ export default function MyAddressInput({
   updateAddress,
 }: {
   updateAddress: (a: Address) => void;
-}) {
+}): ReactElement {
   const [myAddress, setMyAddress] = useState({} as Address);
 
   const setAddress = (address: Partial<Address>) => {

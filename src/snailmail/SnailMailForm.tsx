@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ReactElement } from "react";
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 
 import * as _ from "lodash";
@@ -307,7 +307,7 @@ interface Props {
  *
  * @return {React.ReactNode} the rendered component
  */
-function SnailMailForm({ mailId, adhocTemplate }: Props) {
+function SnailMailForm({ mailId, adhocTemplate }: Props): ReactElement {
   const [template, setTemplate] = useState({} as Template);
   const [bodyText, setBodyText] = useState("");
   const [bodyTextEdited, setBodyTextEdited] = useState(false);

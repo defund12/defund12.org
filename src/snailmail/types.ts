@@ -1,5 +1,6 @@
+/* eslint-disable camelcase */
 export const POSTCARD_COST = 0.7;
-export const LETTER_COST = 1.00;
+export const LETTER_COST = 1.0;
 
 export interface Address {
   name: string;
