@@ -21,20 +21,20 @@
 11. Avoid referring to the email sender as a "citizen" or "voter". Not all senders may be citizens or voters.
 12. Avoid lists of specific demands, unless you are a local organizer or otherwise accurately (and with permission) representing the demands of local activists/organizers working on abolition/defunding. If you represent an organization and want us to include a template tagged to your group, please email us at contact@defund12.org.
 
-#### Tips
+### Tips
 To determine what emails to include, in the U.S., typically the Mayor and City Council determine the budget for the following year (source: [National League of Cities](https://www.nlc.org/public-budgets)). However we recommend looking up the budget process for your local government. If your locale uses both city- and county-level policing (i.e. city police and county sheriffs) be careful to include recipients and language consistent with the department you would like to target.
 
-#### 🌟 Shining Star Examples 🌟
-https://defund12.org/santabarbara
+### 🌟 Shining Star examples 🌟
+* https://defund12.org/santabarbara?browse
 
-#### Examples from other sources
-[People's Budget LA](https://peoplesbudgetla.com/actions/) \
-[New York City Anti-Violence Project](https://avp.org/avp-demands-divestment-from-policing-and-investment-in-services-for-lgbtq-and-hiv-affected-survivors/) \
-[NYC Budget Justice](https://www.changethenypd.org/nycbudgetjustice) \
-[Black Visions Collective and Reclaim the Block](https://secure.everyaction.com/eR7GA7oz70GL8doBq19LrA2) \
-[Philly We Rise](http://phillywerise.com/defundpolice/) \
-[Unite Oregon](https://www.uniteoregon.org/defund_ppb_special_units) \
-[8toAbolition](https://www.8toabolition.com/)
+### Examples from other sources
+* [People's Budget LA](https://peoplesbudgetla.com/actions/)
+* [New York City Anti-Violence Project](https://avp.org/avp-demands-divestment-from-policing-and-investment-in-services-for-lgbtq-and-hiv-affected-survivors/)
+* [NYC Budget Justice](https://www.changethenypd.org/nycbudgetjustice)
+* [Black Visions Collective and Reclaim the Block](https://secure.everyaction.com/eR7GA7oz70GL8doBq19LrA2)
+* [Philly We Rise](http://phillywerise.com/defundpolice/)
+* [Unite Oregon](https://www.uniteoregon.org/defund_ppb_special_units)
+* [8toAbolition](https://www.8toabolition.com/)
 
 NOTE: We are doing our best to keep submitted content as-is, though some submissions may undergo minor editing/cleanups to fix typos, grammatical errors, and content that violates our style guide. If the published content does not accurately reflect your original intent/voice, please let us know and open an issue/PR.
 
