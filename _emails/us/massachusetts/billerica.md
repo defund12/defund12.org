@@ -6,22 +6,22 @@ city: Billerica
 state: MA
 layout: email
 recipients:
-- "mikerosaselectman@att.net"
-- "dan.burns177@gmail.com"
-- "saker@town.billerica.ma.us"
-- "egiroux@town.billerica.ma.us"
-- "anewton77@hotmail.com"
-- "kim.conway@town.billerica.ma.us"
-- "kbennett@town.billerica.ma.us"
-- "jcurran@town.billerica.ma.us"
-- "codea@town.billerica.ma.us"
-- "kbernard@town.billerica.ma.us"
-- "cmain@town.billerica.ma.us"
-- "smichelini@town.billerica.ma.us"
-- "sschult@town.billerica.ma.us"
-- "mryan@town.billerica.ma.us"
-- "sodell@town.billerica.ma.us"
-- "ksmith@town.billerica.ma.us"
+- mikerosaselectman@att.net
+- dan.burns177@gmail.com
+- saker@town.billerica.ma.us
+- egiroux@town.billerica.ma.us
+- anewton77@hotmail.com
+- kim.conway@town.billerica.ma.us
+- kbennett@town.billerica.ma.us
+- jcurran@town.billerica.ma.us
+- codea@town.billerica.ma.us
+- kbernard@town.billerica.ma.us
+- cmain@town.billerica.ma.us
+- smichelini@town.billerica.ma.us
+- sschult@town.billerica.ma.us
+- mryan@town.billerica.ma.us
+- sodell@town.billerica.ma.us
+- ksmith@town.billerica.ma.us
 body: |-
   Message: (Don't forget to replace the [x]'s with your information! Also consider adding a couple of sentences of your own to encourage officials to read the message.)
 
