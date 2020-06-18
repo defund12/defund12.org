@@ -1,20 +1,14 @@
 import React, { useState, useEffect, ReactElement, ChangeEvent } from "react";
-import { getGeocode, getLatLng } from "use-places-autocomplete";
 
 import * as _ from "lodash";
 
 import "purecss/build/pure-min.css";
 
-import {
-  Template,
-  Address,
-  GoogleCivicRepsResponse,
-  BlackmadCityCountilResponse,
-  OfficialRestrict,
-} from "./types";
+import { Template, Address, OfficialRestrict, OfficialAddress } from "./types";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
 import { isTestMode } from "./utils";
+import { fetchReps } from "./representative-apis";
 
 const SpecialVars = ["YOUR NAME", "YOUR DISTRICT"];
 
@@ -48,151 +42,6 @@ const addressToSingleLine = (address: Address): string => {
   return formattedAddress;
 };
 
-type OfficialAddress = {
-  officeName?: string;
-  address: Address;
-  link?: string;
-};
-
-const makeAddressLine = (parts: string[]): string | undefined => {
-  const partsToUse = parts.filter((p) => Boolean(p));
-  if (partsToUse.length > 0) {
-    return partsToUse.join(", ");
-  } else {
-    return undefined;
-  }
-};
-
-const mungeCityCouncil = (
-  cityCouncilMembers: BlackmadCityCountilResponse,
-  restricts: OfficialRestrict[]
-): OfficialAddress[] => {
-  if (
-    !cityCouncilMembers ||
-    !cityCouncilMembers.data ||
-    cityCouncilMembers.data.length === 0
-  ) {
-    return [];
-  }
-
-  return _.flatMap(cityCouncilMembers.data, (cityCouncilMember) => {
-    if (
-      restricts?.length > 0 &&
-      !_.some(
-        restricts,
-        (restrict) =>
-          restrict.level === cityCouncilMember.office.level &&
-          restrict.role === cityCouncilMember.office.role
-      )
-    ) {
-      return [];
-    }
-
-    let link: string;
-    if (cityCouncilMember.body === "New York City Council") {
-      link = `https://defund-nypd-reps.glitch.me/district/${cityCouncilMember.district}`;
-    }
-
-    return cityCouncilMember.addresses.map((address) => {
-      const officeName = address.name
-        ? cityCouncilMember.office.name + " - " + address.name
-        : cityCouncilMember.office.name;
-      return {
-        address: {
-          name: cityCouncilMember.name,
-          address_line1: address.address.line1,
-          address_line2: makeAddressLine([
-            address.address.line2,
-            address.address.line3,
-          ]),
-          address_city: address.address.city,
-          address_state: address.address.state,
-          address_zip: address.address.zip,
-          address_country: "US",
-        },
-        officeName,
-        link,
-      };
-    });
-  });
-};
-
-const mungeReps = (
-  reps: GoogleCivicRepsResponse,
-  restricts: OfficialRestrict[]
-): OfficialAddress[] => {
-  if (!reps.offices) {
-    return [];
-  }
-
-  const offices = reps.offices.filter((office) => {
-    if (
-      !office.roles &&
-      office.levels.includes("locality") &&
-      office.name.includes("Council")
-    ) {
-      office.roles = ["legislatorUpperBody"];
-    }
-
-    const isPresidenty =
-      office.levels.includes("country") &&
-      (office.roles.includes("headOfState") ||
-        office.roles.includes("headOfGovernment") ||
-        office.roles.includes("deputyHeadOfGovernment"));
-
-    const isJudgy =
-      office.roles?.includes("highestCourtJudge") ||
-      office.roles?.includes("judge") ||
-      office.name.includes("Justice") ||
-      office.name.includes("Judge");
-    return !isPresidenty && !isJudgy;
-  });
-
-  return _.flatMap(offices, (office) => {
-    if (
-      restricts?.length > 0 &&
-      !_.some(
-        restricts,
-        (restrict) =>
-          (office.levels || []).includes(restrict.level) &&
-          (office.roles || []).includes(restrict.role)
-      )
-    ) {
-      return [];
-    }
-
-    return office.officialIndices
-      .map((officialIndex) => {
-        // divisionId: "ocd-division/country:us/state:pa/place:philadelphia/council_district:1",
-        const districtPattern = /:(\d+)$/;
-        let district: string | undefined;
-        if (districtPattern.test(office.divisionId)) {
-          district = office.divisionId.match(districtPattern)?.[1];
-        }
-
-        const official = reps.officials[officialIndex];
-        if (!official.address || official.address.length === 0) {
-          return undefined;
-        }
-        const address = official.address[0];
-        return {
-          address: {
-            name: official.name,
-            address_line1: address.line1,
-            address_line2: makeAddressLine([address.line2, address.line3]),
-            address_city: address.city,
-            address_state: address.state,
-            address_zip: address.zip,
-            address_country: "US",
-          },
-          officeName: office.name,
-          district,
-        };
-      })
-      .filter((a) => a !== undefined) as OfficialAddress[];
-  });
-};
-
 /** Renders block of addresses with checkboxes from google & citycouncil API responses
  *
  * @return {React.ReactNode} the rendered component
@@ -200,14 +49,11 @@ const mungeReps = (
 function Addresses({
   addresses,
   onAddressSelected,
-  reps,
-  cityCouncilMembers,
-  restricts,
+  officials,
   myAddress,
 }: {
   addresses: Address[];
-  reps: GoogleCivicRepsResponse;
-  cityCouncilMembers: BlackmadCityCountilResponse;
+  officials: OfficialAddress[];
   onAddressSelected: (b: boolean, c: Address) => void;
   restricts?: OfficialRestrict[];
   myAddress: Address;
@@ -217,10 +63,7 @@ function Addresses({
       ? addresses.map((address) => {
           return { address };
         })
-      : [
-          ...mungeCityCouncil(cityCouncilMembers, restricts || []),
-          ...mungeReps(reps, restricts || []).reverse(),
-        ];
+      : officials;
 
   if (myAddress.address_line1 && officialAddresses.length === 0) {
     return <div>No representatives found, sorry</div>;
@@ -299,10 +142,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   const [myAddress, setMyAddress] = useState({} as Address);
   const [variableMap, setVariableMap] = useState({} as Record<string, string>);
   const [checkedAddresses, setCheckedAddresses] = useState([] as Address[]);
-  const [reps, setReps] = useState({} as GoogleCivicRepsResponse);
-  const [cityCouncilMembers, setCityCouncilMembers] = useState(
-    {} as BlackmadCityCountilResponse
-  );
+  const [officials, setOfficials] = useState([] as OfficialAddress[]);
   const [isSearching, setIsSearching] = useState(false);
 
   let variables = parseVars(template.template) || [];
@@ -326,44 +166,13 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
 
     if (!template.addresses || template.addresses.length === 0) {
       const singleLineAddress = addressToSingleLine(myAddress);
-
-      const params = new URLSearchParams({
+      fetchReps({
         address: singleLineAddress,
-        key: googleApiKey,
-      }).toString();
-
-      if (!template.cityCouncilOnly) {
-        setIsSearching(true);
-        fetch(
-          "https://www.googleapis.com/civicinfo/v2/representatives?" + params
-        ).then((res) => {
-          res.json().then((data) => {
-            setReps(data as GoogleCivicRepsResponse);
-            setIsSearching(false);
-          });
-        });
-      }
-
-      setIsSearching(true);
-      getGeocode({ address: singleLineAddress })
-        .then((results) => getLatLng(results[0]))
-        .then((latLng) => {
-          const { lat, lng } = latLng;
-
-          fetch(
-            `https://city-council-api.herokuapp.com/lookup?lat=${lat}&lng=${lng}`
-          ).then((res) => {
-            res.json().then((data: BlackmadCityCountilResponse) => {
-              setIsSearching(false);
-              const districtEntry = data.data.find((o) => Boolean(o.district));
-              if (districtEntry) {
-                updateField("YOUR DISTRICT", districtEntry.district);
-              }
-
-              setCityCouncilMembers(data);
-            });
-          });
-        });
+        googleApiKey: googleApiKey,
+        cityCouncilOnly: true, // TODO(blackmad) change this
+        setIsSearching,
+        restricts: [], // TODO(blackmad) change this
+      }).then((officialAddress) => setOfficials(officialAddress));
     }
   }, [myAddress]);
 
@@ -446,8 +255,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
             <div>Searching for representatives ...</div>
           ) : (
             <Addresses
-              reps={reps}
-              cityCouncilMembers={cityCouncilMembers}
+              officials={officials}
               addresses={template.addresses || []}
               onAddressSelected={onAddressSelected}
               restricts={template.officialRestricts}
