@@ -2,6 +2,8 @@ import * as React from "react";
 import { v1 as uuid } from "uuid";
 import { StaticQuery, graphql } from "gatsby";
 import { EmailListItem } from "./EmailPageLink";
+import { LetterListItem } from "./LetterListItem";
+
 import Select from "react-select";
 import { ReactSelectOption } from "../../types/ReactSelectOption";
 import {
@@ -61,7 +63,13 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
    * @return {Array<React.ReactNode>}
    */
   renderEmailLinks(data: Array<EmailMetadata>): Array<React.ReactNode> {
-    return data.map((email) => <EmailListItem key={uuid()} {...email} />);
+    return data.map((email) => {
+      if (email.layout === "email") {
+        return <EmailListItem key={uuid()} {...email} />;
+      } else if (email.layout === "letter") {
+        return <LetterListItem key={uuid()} {...email} />;
+      }
+    });
   }
 
   /**
@@ -180,6 +188,7 @@ export default function EmailList(): JSX.Element {
                 name
                 city
                 state
+                layout
               }
             }
           }

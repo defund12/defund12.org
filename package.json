@@ -34,6 +34,7 @@
     },
     "dependencies": {
         "@stripe/stripe-js": "^1.7.0",
+        "bootstrap": "^4.5.0",
         "gatsby": "^2.23.3",
         "gatsby-plugin-client-side-redirect": "^1.1.0",
         "gatsby-plugin-google-analytics": "^2.3.4",
@@ -47,6 +48,7 @@
         "lint-staged": "^10.2.11",
         "lodash": "^4.17.15",
         "node-sass": "^4.14.1",
+        "purecss": "^2.0.3",
         "query-string": "^6.13.1",
         "react": "^16.13.1",
         "react-bootstrap": "^1.0.1",

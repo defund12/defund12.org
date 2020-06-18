@@ -23,4 +23,6 @@ export interface SiteConfig {
   footerTextInstructions: string;
   /** Contact information for the community. */
   contactEmailFooter: string;
+  /** A message that appears before the physical letter mailing form */
+  letterMessage: string;
 }

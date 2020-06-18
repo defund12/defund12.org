@@ -19,5 +19,5 @@ export const addressToSingleLine = (address: Address): string => {
 };
 
 export const isTestMode = (): boolean => {
-  return window.location.host === "localhost";
+  return window.location.host !== "mail-your-rep.web.app";
 };
