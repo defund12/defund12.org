@@ -127,17 +127,17 @@ function groupEmailMetadataByState(
   // map group the emails with all others in the same state
   const emailGroups = Object.values(
     metadata
-    // sort cities alphabetically before grouping into states
-    .sort((first, second) => (first.city > second.city ? 1 : -1))
-    .reduce(
-      (prev: { [key: string]: EmailMetadataGroup }, current: EmailMetadata) => {
-        const stateName = current.state;
-
-        // if the state has not been added yet,
-        // add a new email group for it
-        if (!prev[stateName]) {
-          prev[stateName] = new EmailMetadataGroup(stateName);
-        }
+      // sort cities alphabetically before grouping into states
+      .sort((first, second) => (first.city > second.city ? 1 : -1))
+      .reduce(
+        (prev: { [key: string]: EmailMetadataGroup }, current: EmailMetadata) => {
+          const stateName = current.state;
+  
+          // if the state has not been added yet,
+          // add a new email group for it
+          if (!prev[stateName]) {
+            prev[stateName] = new EmailMetadataGroup(stateName);
+          }
 
         // add the current email metadata to the group for its state
         prev[stateName].emails.push(current);
