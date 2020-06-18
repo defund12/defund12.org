@@ -3,8 +3,6 @@ import { getGeocode, getLatLng } from "use-places-autocomplete";
 
 import * as _ from "lodash";
 
-import Form from "react-bootstrap/Form";
-
 import "purecss/build/pure-min.css";
 
 import {
@@ -229,7 +227,7 @@ function Addresses({
   }
 
   return (
-    <div>
+    <div class="pure-controls">
       {officialAddresses?.map((officialAddress) => {
         const address = officialAddress.address;
         const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -237,27 +235,19 @@ function Addresses({
         };
         const key = `${address.name}:${officialAddress.officeName}`;
         return (
-          <div className="row" key={key}>
-            <Form.Group controlId={key}>
-              <Form.Check
-                type="checkbox"
-                label={
-                  <>
-                    <b>{address.name}</b>
-                    {officialAddress.officeName &&
-                      ` (${officialAddress.officeName})`}
-                    , {addressToSingleLine(address)}{" "}
-                    {officialAddress.link && (
-                      <a target="_blank" href={officialAddress.link}>
-                        Read about their positions
-                      </a>
-                    )}
-                  </>
-                }
-                onChange={onChange}
-              />
-            </Form.Group>
-          </div>
+          <label className="pure-checkbox" key={key}>
+            <input type="checkbox" onChange={onChange} />
+            <>
+              <b>{address.name}</b>
+              {officialAddress.officeName && ` (${officialAddress.officeName})`}
+              , {addressToSingleLine(address)}{" "}
+              {officialAddress.link && (
+                <a target="_blank" href={officialAddress.link}>
+                  Read about their positions
+                </a>
+              )}
+            </>
+          </label>
         );
       })}
     </div>
@@ -276,7 +266,7 @@ function Inputs({
   updateField: (key: string, value: string) => void;
 }) {
   return (
-    <>
+    <fieldset className="pure-form-aligned ">
       {inputs.map((input) => {
         const onChange = (
           event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
@@ -290,7 +280,7 @@ function Inputs({
           </div>
         );
       })}
-    </>
+    </fieldset>
   );
 }
 
@@ -426,7 +416,7 @@ function LetterForm({ template }: Props): ReactElement {
   const email = variableMap[emailKey!];
 
   return (
-    <form className="pure-form pure-form-aligned letter-form">
+    <form className="pure-form letter-form">
       <fieldset>
         {isTestMode() && <div className="alert-test">TEST MODE</div>}
         <MyAddressInput updateAddress={updateAddress} />
@@ -445,12 +435,7 @@ function LetterForm({ template }: Props): ReactElement {
               flexDirection: "column",
             }}
           >
-            <Form.Control
-              as="textarea"
-              value={bodyText}
-              style={{ width: "100%", height: "100%" }}
-              onChange={onBodyTextKeyPress}
-            />
+            <textarea onChange={onBodyTextKeyPress}>{bodyText}</textarea>
 
             {template.notes && (
               <div
