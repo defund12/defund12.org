@@ -61,6 +61,7 @@ export const mungeCityCouncil = (
         link,
         levels: [cityCouncilMember.office.level],
         roles: [cityCouncilMember.office.role],
+        link: cityCouncilMember.urls?.[0],
       };
     });
   });
@@ -152,6 +153,7 @@ export const mungeReps = (
           district,
           levels: office.levels,
           roles: office.roles,
+          link: official.urls?.[0],
         };
       })
       .filter((a) => a !== undefined) as OfficialAddress[];
