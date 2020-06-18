@@ -31,7 +31,7 @@ export default class NotFound extends React.Component<PageProps<SiteProps>> {
 export const data = graphql`
   query NotFoundQuery {
     siteConfig {
-      title
+      siteTitle
       meta
       faviconUrl
       logoUrl

@@ -12835,6 +12835,11 @@ relay-runtime@9.1.0:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
 
+remark-breaks@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/remark-breaks/-/remark-breaks-1.0.5.tgz#e9785f8b174f45c05af542fbeb18354b766e1139"
+  integrity sha512-lr8+TlJI273NjEqL27eUthPYPTCgXEj4NaLbnazS3bQaQL2FySlsbtgo52gE36fE1gWeQgkn1VdmWsoT+uA7FA==
+
 remark-footnotes@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/remark-footnotes/-/remark-footnotes-1.0.0.tgz#9c7a97f9a89397858a50033373020b1ea2aad011"

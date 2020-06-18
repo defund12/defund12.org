@@ -28,7 +28,7 @@ body: |-
 
   Please do not vote to increase police funding by 5.1%. Do not be complicit in the disproportionate targeting and continuous oppression of people of color. Propose and vote to expand on Mountain View’s current efforts like the Below Market Rate housing program and funding of nonprofits like the Community Health Awareness Council. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
 
-  It is your duty to represent your constituents. I am urging you to revise the Mountain View city budget for the next fiscal year, and to fund the police. We can be a beacon for other cities to follow if only we have the courage to change.
+  It is your duty to represent your constituents. I am urging you to revise the Mountain View city budget for the next fiscal year, and to defund the police. We can be a beacon for other cities to follow if only we have the courage to change.
 
   Thank you for your time,
 

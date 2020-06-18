@@ -25,6 +25,8 @@ export default class Email extends React.Component<
 > {
   siteConfig: EmailConfig;
   emailData: EmailData;
+  title: string;
+  meta: string;
   autoOpen = false;
 
   /**
@@ -35,6 +37,8 @@ export default class Email extends React.Component<
     super(props);
     this.siteConfig = this.props.data.siteConfig;
     this.emailData = this.props.data.markdownRemark.frontmatter;
+    this.title = `Defund 12 in ${this.emailData.city}, ${this.emailData.state}`;
+    this.meta = `Send a pre-written email directly to ${this.emailData.city}, ${this.emailData.state} officials`;
     this.state = new EmailState();
   }
 
@@ -93,7 +97,7 @@ export default class Email extends React.Component<
    */
   render(): React.ReactNode {
     return (
-      <Layout {...this.siteConfig}>
+      <Layout pageTitle={this.title} meta={this.meta}>
         <section className="emailPageHeader">
           <h2>{this.emailData.name}</h2>
           <b>
@@ -202,10 +206,6 @@ export const pageQuery = graphql`
       }
     }
     siteConfig {
-      title
-      meta
-      logoUrl
-      faviconUrl
       autoOpenMessage
       badMailtoMessage
       defaultSubjectLine

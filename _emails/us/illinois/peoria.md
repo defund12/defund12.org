@@ -18,6 +18,8 @@ recipients:
 - "triggenbach@peoriagov.org"
 - "zoyler@peoriagov.org"
 body: |-
+  [MAKE SURE YOU FILL IN BRACKETS. ALSO ADD A LINE OR TWO SO THEY HAVE TO READ EACH MESSAGE]
+
   Dear Peoria City Council members,
   
   My name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I am extremely concerned with the City of Peoria’s inordinate investment in the Peoria Police Department (PPD) at the expense of critical youth, education, and health services. As demonstrated by ongoing peaceful protests, many Peoria residents are dismayed by the current conduct of the Peoria police.

@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, PageProps } from "gatsby";
+import { PageProps } from "gatsby";
 import Layout from "../components/common/Layout";
 import EmailList from "../components/email-list/EmailList";
 import { SiteProps } from "../types/PropTypes";
@@ -22,20 +22,9 @@ export default class Index extends React.Component<PageProps<SiteProps>> {
    */
   render(): React.ReactNode {
     return (
-      <Layout {...this.props.data.siteConfig}>
+      <Layout>
         <EmailList />
       </Layout>
     );
   }
 }
-
-export const data = graphql`
-  query SiteQuery {
-    siteConfig {
-      title
-      meta
-      logoUrl
-      faviconUrl
-    }
-  }
-`;

@@ -1,6 +1,6 @@
 export interface SiteConfig {
   /** Title that appears at the top of the header. */
-  title: string;
+  siteTitle: string;
   /** Introduction that appears under the title. */
   subtitle: string;
   /** Name that appears as the tab or window title. */

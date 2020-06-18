@@ -17,9 +17,7 @@ class _Header extends React.Component<HeaderProps> {
     return (
       <header className="header">
         <Link to="/">
-          <h1 aria-label="Defund Twelve .org" className="pagetitle">
-            {this.props.title}
-          </h1>
+          <h1 aria-label="Defund Twelve .org">{this.props.siteTitle}</h1>
         </Link>
         <p className="divider">{this.props.subtitle}</p>
         <p aria-label="12 = Police">
@@ -40,14 +38,14 @@ export default function Header(): JSX.Element {
       query={graphql`
         query HeaderQuery {
           siteConfig {
-            title
+            siteTitle
             subtitle
           }
         }
       `}
       render={(data: { siteConfig: HeaderProps }) => (
         <_Header
-          title={data.siteConfig.title}
+          siteTitle={data.siteConfig.siteTitle}
           subtitle={data.siteConfig.subtitle}
         />
       )}

@@ -98,6 +98,13 @@ p.divider {
   margin-bottom: $x_2;
 }
 
+ul, ol {
+  list-style: inherit;
+  max-width: 580px;
+  margin-left: $x_3;
+  margin-bottom: $x_2;
+}
+
 .copyToClipboard {
   cursor: pointer;
   opacity: 0.7;
