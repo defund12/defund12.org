@@ -1,5 +1,24 @@
 import { Address } from "./types";
 
+/** Joins parts with commas, filtering out undefineds and empties
+ *
+ * @param {string[]} parts strings to concatenate
+ * @return {string} comma joined version of parts
+ */
+export const makeAddressLine = (parts: string[]): string | undefined => {
+  const partsToUse = parts.filter((p) => Boolean(p));
+  if (partsToUse.length > 0) {
+    return partsToUse.join(", ");
+  } else {
+    return undefined;
+  }
+};
+
+/** Formats a structured address to a single line, suitable for geocoding or display
+ *
+ * @param {Address} address
+ * @return {string} address formatted as single line
+ */
 export const addressToSingleLine = (address: Address): string => {
   const cityStateLine = [
     address.address_city,
@@ -18,15 +37,10 @@ export const addressToSingleLine = (address: Address): string => {
   return formattedAddress;
 };
 
+/** Returns if the frontend app is in test mode (and therefore should be talking to test stripe checkout flow)
+ *
+ * @return {boolean} is in test mode
+ */
 export const isTestMode = (): boolean => {
   return window.location.host !== "mail-your-rep.web.app";
-};
-
-export const makeAddressLine = (parts: string[]): string | undefined => {
-  const partsToUse = parts.filter((p) => Boolean(p));
-  if (partsToUse.length > 0) {
-    return partsToUse.join(", ");
-  } else {
-    return undefined;
-  }
 };

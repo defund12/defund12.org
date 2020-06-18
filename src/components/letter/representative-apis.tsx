@@ -197,7 +197,7 @@ export const fetchReps = async ({
   address: string;
   googleApiKey: string;
   cityCouncilOnly: boolean;
-  setIsSearching: (boolean) => void;
+  setIsSearching: (isSearching: boolean) => void;
   restricts: OfficialRestrict[];
 }): Promise<OfficialAddress[]> => {
   const officialsPromises: Promise<OfficialAddress[]>[] = [];
