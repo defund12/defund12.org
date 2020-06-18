@@ -2,6 +2,11 @@
 export const POSTCARD_COST = 0.7;
 export const LETTER_COST = 1.0;
 
+export interface LevelsAndRoles {
+  levels: GoogleCivicRepsResponseLevel[];
+  roles: GoogleCivicRepsResponseRole[];
+}
+
 export interface Address {
   name: string;
   address_line1: string;
@@ -65,11 +70,9 @@ export type GoogleCivicRepsResponseRole =
   | "schoolBoard"
   | "specialPurposeOfficer";
 
-export interface GoogleCivicRepsResponseOffice {
+export interface GoogleCivicRepsResponseOffice extends LevelsAndRoles {
   name: string;
   divisionId: string;
-  levels: GoogleCivicRepsResponseLevel[];
-  roles: GoogleCivicRepsResponseRole[];
   officialIndices: number[];
 }
 
@@ -102,8 +105,8 @@ export interface BlackmadCityCountilResponse {
   data: BlackmadCityCountilResponseOfficial[];
 }
 
-export type OfficialAddress = {
+export interface OfficialAddress extends LevelsAndRoles {
   officeName?: string;
   address: Address;
   link?: string;
-};
+}

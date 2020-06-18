@@ -4,13 +4,14 @@ import {
   OfficialRestrict,
   GoogleCivicRepsResponse,
   OfficialAddress,
+  LevelsAndRoles,
 } from "./types";
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 import _ from "lodash";
 
 export const mungeCityCouncil = (
   cityCouncilMembers: BlackmadCityCountilResponse,
-  restricts: OfficialRestrict[]
+  restricts?: OfficialRestrict[]
 ): OfficialAddress[] => {
   if (
     !cityCouncilMembers ||
@@ -21,10 +22,10 @@ export const mungeCityCouncil = (
   }
 
   return _.flatMap(cityCouncilMembers.data, (cityCouncilMember) => {
+    // only use restricts if present, otherwise let everything through
     if (
-      restricts?.length > 0 &&
       !_.some(
-        restricts,
+        restricts || [],
         (restrict) =>
           restrict.level === cityCouncilMember.office.level &&
           restrict.role === cityCouncilMember.office.role
@@ -57,6 +58,8 @@ export const mungeCityCouncil = (
         },
         officeName,
         link,
+        levels: [cityCouncilMember.office.level],
+        roles: [cityCouncilMember.office.role],
       };
     });
   });
@@ -64,7 +67,7 @@ export const mungeCityCouncil = (
 
 export const mungeReps = (
   reps: GoogleCivicRepsResponse,
-  restricts: OfficialRestrict[]
+  restricts?: OfficialRestrict[]
 ): OfficialAddress[] => {
   if (!reps.offices) {
     return [];
@@ -109,9 +112,8 @@ export const mungeReps = (
 
   return _.flatMap(offices, (office) => {
     if (
-      restricts?.length > 0 &&
       !_.some(
-        restricts,
+        restricts || [],
         (restrict) =>
           (office.levels || []).includes(restrict.level) &&
           (office.roles || []).includes(restrict.role)
@@ -146,6 +148,8 @@ export const mungeReps = (
           },
           officeName: office.name,
           district,
+          levels: office.levels,
+          roles: office.roles,
         };
       })
       .filter((a) => a !== undefined) as OfficialAddress[];
@@ -159,19 +163,17 @@ export const fetchRepsFromGoogle = async ({
 }: {
   address: string;
   googleApiKey: string;
-  restricts: OfficialRestrict[];
+  restricts?: OfficialRestrict[];
 }): Promise<OfficialAddress[]> => {
   const params = new URLSearchParams({
     address,
     key: googleApiKey,
   }).toString();
 
-  console.log("calling google", params);
   const res = await fetch(
     "https://www.googleapis.com/civicinfo/v2/representatives?" + params
   );
   const json = await res.json();
-  console.log(json);
 
   return mungeReps(json as GoogleCivicRepsResponse, restricts);
 };
@@ -181,7 +183,7 @@ export const fetchRepsFromBlackmad = async ({
   restricts,
 }: {
   address: string;
-  restricts: OfficialRestrict[];
+  restricts?: OfficialRestrict[];
 }): Promise<OfficialAddress[]> => {
   const latLng = await getGeocode({ address }).then((results) =>
     getLatLng(results[0])
@@ -202,6 +204,18 @@ export const fetchRepsFromBlackmad = async ({
   return mungeCityCouncil(json, restricts);
 };
 
+/** Is this offical a city council person
+ *
+ * @param {LevelsAndRoles} official offical to check
+ * @return {boolean} is this offical a city council person
+ */
+const isCityCouncilOffical = (official: LevelsAndRoles) => {
+  return (
+    official.roles.includes("legislatorUpperBody") &&
+    official.levels.includes("locality")
+  );
+};
+
 export const fetchReps = async ({
   address,
   googleApiKey,
@@ -213,7 +227,6 @@ export const fetchReps = async ({
   setIsSearching: (isSearching: boolean) => void;
   restricts?: OfficialRestrict[];
 }): Promise<OfficialAddress[]> => {
-  const officialsPromises: Promise<OfficialAddress[]>[] = [];
   setIsSearching(true);
 
   const cityCouncilOnly =
@@ -221,15 +234,37 @@ export const fetchReps = async ({
     restricts?.[0]?.level === "locality" &&
     restricts?.[0]?.role === "legislatorUpperBody";
 
+  // Make two calls
+  // One to google, which has perfect information as far as I can tell for mayorial level and up everywhere
+  // Second to blackmad's city council API which tries to fill holes in major cities where google's city council coverage is lacking (SF, NYC)
+  let googlePromise: Promise<OfficialAddress[]> = Promise.resolve([]);
   if (!cityCouncilOnly) {
-    officialsPromises.push(
-      fetchRepsFromGoogle({ address, googleApiKey, restricts })
-    );
+    googlePromise = fetchRepsFromGoogle({ address, googleApiKey, restricts });
   }
 
-  officialsPromises.push(fetchRepsFromBlackmad({ address, restricts }));
+  const blackmadPromise = fetchRepsFromBlackmad({ address, restricts });
 
-  const officials = _.flatten(await Promise.all(officialsPromises));
+  const googleResponse = await googlePromise;
+  const blackmadResponse = await blackmadPromise;
+
+  // combine google response and blackmad API response
+  // If we got a response from blackmad, which for now is all city councils
+  // filter out city councils from google so we don't have dupes.
+  let officials = [...blackmadResponse];
+
+  const blackmadHasCityCouncilMembers = _.some(
+    blackmadResponse,
+    isCityCouncilOffical
+  );
+
+  if (blackmadHasCityCouncilMembers) {
+    officials = [
+      ...officials,
+      ...googleResponse.filter((a) => !isCityCouncilOffical(a)),
+    ];
+  } else {
+    officials = [...officials, ...googleResponse];
+  }
   setIsSearching(false);
   return officials;
 };

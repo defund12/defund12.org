@@ -45,8 +45,6 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
       }
     );
 
-    console.log(officialRestricts);
-
     const template = {
       template: this.letterData.body,
       officialRestricts,
