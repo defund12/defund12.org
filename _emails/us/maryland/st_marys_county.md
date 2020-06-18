@@ -22,7 +22,7 @@ recipients:
 body: |-
   Dear St. Mary’s County Officials,
 
-  My name is [YOUR NAME], and I am a St. Mary’s County resident. I am writing to ask that you reverse the recent increases to the budget of the St. Mary's County Sheriff's Office, and begin to defund it and shift money towards non-police resources that keep residents safe.
+  My name is \[YOUR NAME\], and I am a St. Mary’s County resident. I am writing to ask that you reverse the recent increases to the budget of the St. Mary's County Sheriff's Office and begin to defund it, shifting money towards non-police resources that keep residents safe.
 
   In the midst of this pandemic and public outcry against police brutality, it feels especially inappropriate to increase the St. Mary's County Sheriff's Office budget by $5,019,990 or 11.4%. Jeannett Cudmore, Chief Financial Officer for the county, stated when approving the budget that she could go back and make adjustments to the county’s budget for FY2021 if any major changes take place. The rising movements around the world and even locally are a clear testament to major change being required. I urge you to ethically reallocate this increase, as well as a meaningful portion of the remaining Sheriff Office’s budget, towards social services and education.
 
@@ -31,10 +31,10 @@ body: |-
   It’s time to reallocate the funding of the Sheriff’s Office and begin the gradual process of strategically diverting resources, funding, and responsibility away from an armed police force and towards community-based models of safety, support, and prevention. It’s time to protect investments in human services, the social safety net, and racial and economic justice. I am writing to insist that the St. Mary’s County budget for FY 2021 be adjusted and that the upcoming FY 2022 budget development better reflect the voices and needs of our local citizens. I am asking that county officials give intense care, attention and effort towards sustainable, long-term change.
 
   Sincerely,
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
+  \[YOUR NAME\]
+  \[YOUR ADDRESS\]
+  \[YOUR EMAIL\]
+  \[YOUR PHONE NUMBER\]
 layout: email
 ---
 
