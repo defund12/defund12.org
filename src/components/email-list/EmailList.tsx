@@ -126,7 +126,11 @@ function groupEmailMetadataByState(
 ): Array<EmailMetadataGroup> {
   // map group the emails with all others in the same state
   const emailGroups = Object.values(
-    metadata.reduce(
+
+    metadata
+    // alphabetize cities before grouping into states
+    .sort((first, second) => (first.city > second.city ? 1 : -1))
+    .reduce(
       (prev: { [key: string]: EmailMetadataGroup }, current: EmailMetadata) => {
         const stateName = current.state;
 
@@ -138,13 +142,13 @@ function groupEmailMetadataByState(
 
         // add the current email metadata to the group for its state
         prev[stateName].emails.push(current);
-
         return prev;
       },
       {}
     )
   )
     // and sort the groups alphabetically by state
+
     .sort((first, second) => (first.name > second.name ? 1 : -1));
 
   // assign each state an ID based on its index
