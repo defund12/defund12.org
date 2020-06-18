@@ -1,7 +1,7 @@
 # Defund12.org Team Organization
 
 ## 1. User that submits issue
-Anyone who would like to add an email for their locale creates an issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/master/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Anyone who would like to add an email for their locale creates an issue in adherence to the [email guidelines](EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
 ## 2. Triage Team
 First to review newly created issues. Look over all issues with <kbd>new-request</kbd> label.
@@ -18,11 +18,11 @@ First to review newly created issues. Look over all issues with <kbd>new-request
   - Does it meet basic data requirements?
     - Recipients (CC addresses)
     - Body text
-  - If not, **close issue** and reply with the contents of the [email request template](https://raw.githubusercontent.com/defund12/defund12.org/master/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)<br>(copy the text between the `<!--` and `-->` characters)
+  - If not, **close issue** and reply with the body of the [email request template](https://raw.githubusercontent.com/defund12/defund12.org/master/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)
   - If yes, add <kbd>content-ready-for-review</kbd> label and remove all other labels
 
 ## 3. Review, Editing, and Approval Team [Needs people!]
-Ensure the email roughly adheres to [email guidelines](https://github.com/defund12/defund12.org/blob/master/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Ensure the email roughly adheres to [email guidelines](/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
 ### Responsibilities
 
@@ -46,7 +46,7 @@ Pick up issues with the <kbd>ready-for-pr</kbd> label. Issues should only be ass
 
 ### Conventions to follow
 
-- Please refer to the emails [README](_emails/README.md) with more information about email template conventions.
+- Please refer to the [Emails README](_emails/README.md) with more information about email template conventions.
 
 ## Join the conversation
 
