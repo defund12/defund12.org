@@ -158,9 +158,8 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
       fetchReps({
         address: singleLineAddress,
         googleApiKey: googleApiKey,
-        cityCouncilOnly: true, // TODO(blackmad) change this
         setIsSearching,
-        restricts: [], // TODO(blackmad) change this
+        restricts: template.officialRestricts,
       }).then((officialAddress) => setOfficials(officialAddress));
     }
   }, [myAddress]);

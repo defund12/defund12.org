@@ -6,7 +6,8 @@ state: NY
 city: New York
 layout: letter
 officials:
-- citycouncil
+- locality:legislatorUpperBody
+- locality:headOfState
 body: "My name is [YOUR NAME] and I am a resident
   of [BOROUGH]. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for
   the Fiscal Year 2021, especially to education and youth programs, while refusing

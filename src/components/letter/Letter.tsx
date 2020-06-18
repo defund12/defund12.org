@@ -5,6 +5,7 @@ import { LetterProps, LetterConfig } from "../../types/PropTypes";
 import Layout from "../common/Layout";
 import EmailList from "../email-list/EmailList";
 import LetterForm from "./LetterForm";
+import { OfficialRestrict } from "./types";
 
 /**
  * A rendered email, containing links to send or copy.
@@ -32,14 +33,23 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
    * @return {React.ReactNode} the rendered component
    */
   render(): React.ReactNode {
+    // parse the offical restricts from the template markdown that look like
+    // locality:legislatorUpperBody into structured restricts for our APIs
+    const officialRestricts = this.letterData.officials?.map(
+      (officialString) => {
+        const parts = officialString.split(":");
+        return {
+          level: parts[0],
+          role: parts[1],
+        } as OfficialRestrict;
+      }
+    );
+
+    console.log(officialRestricts);
+
     const template = {
       template: this.letterData.body,
-      // addresses?: Address[];
-      // name: string;
-      // id: string;
-      // notes?: string;
-      // officialRestricts?: OfficialRestrict[];
-      cityCouncilOnly: true,
+      officialRestricts,
     };
 
     return (

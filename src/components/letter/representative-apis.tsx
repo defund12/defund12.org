@@ -70,7 +70,10 @@ export const mungeReps = (
     return [];
   }
 
-  const offices = reps.offices.filter((office) => {
+  // Google does a bad job with their own schema, often they are missing "roles"
+  // So try to infer them
+
+  reps.offices.forEach((office) => {
     if (
       !office.roles &&
       office.levels.includes("locality") &&
@@ -79,6 +82,17 @@ export const mungeReps = (
       office.roles = ["legislatorUpperBody"];
     }
 
+    if (
+      !office.roles &&
+      office.levels.includes("locality") &&
+      office.name.includes("Mayor")
+    ) {
+      office.roles = ["headOfState"];
+    }
+  });
+
+  // Filter out judges and VP/pres at least for now
+  const offices = reps.offices.filter((office) => {
     const isPresidenty =
       office.levels.includes("country") &&
       (office.roles.includes("headOfState") ||
@@ -152,13 +166,14 @@ export const fetchRepsFromGoogle = async ({
     key: googleApiKey,
   }).toString();
 
-  return fetch(
+  console.log("calling google", params);
+  const res = await fetch(
     "https://www.googleapis.com/civicinfo/v2/representatives?" + params
-  ).then((res) => {
-    return res.json().then((data) => {
-      return mungeReps(data as GoogleCivicRepsResponse, restricts);
-    });
-  });
+  );
+  const json = await res.json();
+  console.log(json);
+
+  return mungeReps(json as GoogleCivicRepsResponse, restricts);
 };
 
 export const fetchRepsFromBlackmad = async ({
@@ -190,18 +205,21 @@ export const fetchRepsFromBlackmad = async ({
 export const fetchReps = async ({
   address,
   googleApiKey,
-  cityCouncilOnly,
   setIsSearching,
   restricts,
 }: {
   address: string;
   googleApiKey: string;
-  cityCouncilOnly: boolean;
   setIsSearching: (isSearching: boolean) => void;
-  restricts: OfficialRestrict[];
+  restricts?: OfficialRestrict[];
 }): Promise<OfficialAddress[]> => {
   const officialsPromises: Promise<OfficialAddress[]>[] = [];
   setIsSearching(true);
+
+  const cityCouncilOnly =
+    restricts?.length === 1 &&
+    restricts?.[0]?.level === "locality" &&
+    restricts?.[0]?.role === "legislatorUpperBody";
 
   if (!cityCouncilOnly) {
     officialsPromises.push(
