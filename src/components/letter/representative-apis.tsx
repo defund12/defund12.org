@@ -211,5 +211,7 @@ export const fetchReps = async ({
 
   officialsPromises.push(fetchRepsFromBlackmad({ address, restricts }));
 
-  return _.flatten(await Promise.all(officialsPromises));
+  const officials = _.flatten(await Promise.all(officialsPromises));
+  setIsSearching(false);
+  return officials;
 };

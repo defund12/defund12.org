@@ -10,7 +10,7 @@ import MyAddressInput from "./MyAddressInput";
 import { isTestMode, addressToSingleLine } from "./utils";
 import { fetchReps } from "./representative-apis";
 
-const SpecialVars = ["YOUR NAME", "YOUR DISTRICT"];
+const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 
 /** parses out the [SOME VARIABLE] names from template, minus the ones mentioned in SpecialVars
  *
@@ -128,12 +128,13 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   const [isSearching, setIsSearching] = useState(false);
 
   let variables = parseVars(template.template) || [];
-  const emailKey = _.find(variables, (v) =>
+  let emailKey = _.find(variables, (v) =>
     v.toLocaleLowerCase().includes("email")
   );
 
   if (!emailKey) {
     variables = [...variables, "YOUR EMAIL"];
+    emailKey = "YOUR EMAIL";
   }
 
   useEffect(() => {
@@ -208,6 +209,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
     0;
 
   const email = variableMap[emailKey!];
+  console.log({ emailKey, email });
 
   return (
     <div className="pure-form letter-form">
