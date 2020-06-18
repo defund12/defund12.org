@@ -227,7 +227,7 @@ function Addresses({
   }
 
   return (
-    <div class="pure-controls">
+    <div className="pure-controls">
       {officialAddresses?.map((officialAddress) => {
         const address = officialAddress.address;
         const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -285,14 +285,15 @@ function Inputs({
 }
 
 interface Props {
-  template?: Template;
+  template: Template;
+  googleApiKey: string;
 }
 
 /** Renders the overall letter sending form
  *
  * @return {React.ReactNode} the rendered component
  */
-function LetterForm({ template }: Props): ReactElement {
+function LetterForm({ template, googleApiKey }: Props): ReactElement {
   const [bodyText, setBodyText] = useState(template.template);
   const [bodyTextEdited, setBodyTextEdited] = useState(false);
   const [myAddress, setMyAddress] = useState({} as Address);
@@ -328,13 +329,13 @@ function LetterForm({ template }: Props): ReactElement {
 
       const params = new URLSearchParams({
         address: singleLineAddress,
+        key: googleApiKey,
       }).toString();
 
       if (!template.cityCouncilOnly) {
         setIsSearching(true);
         fetch(
-          "https://us-central1-political-postcards.cloudfunctions.net/api/findReps?" +
-            params
+          "https://www.googleapis.com/civicinfo/v2/representatives?" + params
         ).then((res) => {
           res.json().then((data) => {
             setReps(data as GoogleCivicRepsResponse);
@@ -423,18 +424,7 @@ function LetterForm({ template }: Props): ReactElement {
 
         <Inputs inputs={variables} updateField={updateField} />
         <div className="row">
-          <div
-            style={{
-              background: "cornsilk",
-              margin: "10px",
-              padding: "10px",
-              // whiteSpace: "pre-wrap",
-              width: "100%",
-              height: "60vh",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
+          <div className="bodyWrapper">
             <textarea onChange={onBodyTextKeyPress}>{bodyText}</textarea>
 
             {template.notes && (

@@ -25,4 +25,6 @@ export interface SiteConfig {
   contactEmailFooter: string;
   /** A message that appears before the physical letter mailing form */
   letterMessage: string;
+  /** Google API key with Maps and Civic Info perms */
+  googleApiKey: string;
 }

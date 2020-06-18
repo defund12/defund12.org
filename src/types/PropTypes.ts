@@ -31,7 +31,12 @@ export interface EmailProps {
 
 export type LetterConfig = Pick<
   SiteConfig,
-  "siteTitle" | "meta" | "logoUrl" | "faviconUrl" | "letterMessage"
+  | "siteTitle"
+  | "meta"
+  | "logoUrl"
+  | "faviconUrl"
+  | "letterMessage"
+  | "googleApiKey"
 >;
 
 export interface LetterProps {
