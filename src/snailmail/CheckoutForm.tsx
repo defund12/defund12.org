@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { useState, ReactElement } from "react";
 import { Address, LETTER_COST } from "./types";
 
 import Alert from "react-bootstrap/Alert";
@@ -29,7 +30,7 @@ const CheckoutForm = ({
   formValid: boolean;
   email: string;
   variables: Record<string, string>;
-}) => {
+}): ReactElement => {
   const [error, setError] = useState("");
   const [inSubmit, setInSubmit] = useState(false);
 
@@ -42,7 +43,7 @@ const CheckoutForm = ({
     // which would refresh the page.
     event.preventDefault();
 
-    var response = await fetch(
+    const response = await fetch(
       "https://us-central1-political-postcards.cloudfunctions.net/api/startPayment",
       {
         method: "POST",
@@ -57,7 +58,7 @@ const CheckoutForm = ({
           email,
         }),
       }
-    ).then(function (response) {
+    ).then((response) => {
       return response.json();
     });
 
@@ -83,14 +84,20 @@ const CheckoutForm = ({
   let buttonText = "";
   if (inSubmit) {
     buttonText = "Submitting ...";
-  } else if (myAddress.address_line1 && checkedAddresses.length === 0 && !formValid) {
+  } else if (
+    myAddress.address_line1 &&
+    checkedAddresses.length === 0 &&
+    !formValid
+  ) {
     buttonText = "Select some addresses and fill in all fields";
   } else if (myAddress.address_line1 && checkedAddresses.length === 0) {
     buttonText = "Select some addresses";
   } else if (!formValid) {
     buttonText = "Please fill in all fields";
   } else {
-    buttonText = `Mail ${checkedAddresses.length} letters for $${totalAmount.toFixed(2)}`;
+    buttonText = `Mail ${
+      checkedAddresses.length
+    } letters for $${totalAmount.toFixed(2)}`;
   }
 
   return (
