@@ -127,7 +127,11 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   const [officials, setOfficials] = useState([] as OfficialAddress[]);
   const [isSearching, setIsSearching] = useState(false);
 
+  // Pull all the variables out of our template
   let variables = parseVars(template.template) || [];
+
+  // If there isn't one that includes "email", add it
+  // because we need an email to send people verification their letter went through
   let emailKey = _.find(variables, (v) =>
     v.toLocaleLowerCase().includes("email")
   );
@@ -137,6 +141,8 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
     emailKey = "YOUR EMAIL";
   }
 
+  // When the inputted address changes, if it is fully specified
+  // geocode it and search for representatives' addresses
   useEffect(() => {
     if (
       !myAddress.address_city ||
@@ -159,6 +165,17 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
     }
   }, [myAddress]);
 
+  // When user-inputted fields change, update them in our variable map,
+  // and (try) to update the body text
+  //
+  // If the user has edited the template, then just try our best to replace
+  // the variable in there, if not, replace it from the original template.
+  //
+  // We do this because if the variable is [YOUR BOROUGH] and the user
+  // starts typing "B" and we replace [YOUR BOROUGH] with B, it's very hard
+  // to replace the right part of the letter with the new value. This is especially
+  // because we are listening onChange (vs onBlur) *because* chrome doesn't fire onBlur
+  // for auto-filled addresses!
   const updateField = (key: string, value: string) => {
     console.log("updateField", { key, value });
     const newMap = { ...variableMap };
@@ -180,11 +197,13 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
     }
   };
 
+  // If the user edits the textarea, mark it dirty (see comment above)
   const onBodyTextKeyPress = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setBodyTextEdited(true);
     setBodyText(event.target.value);
   };
 
+  // Address selection logic
   const onAddressSelected = (isChecked: boolean, address: Address) => {
     if (isChecked) {
       setCheckedAddresses(_.uniq([...checkedAddresses, address]));
@@ -197,19 +216,20 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
     }
   };
 
+  // This is the handler we pass to the user address MyAddressInput sub-component
   const updateAddress = (address: Address) => {
-    // console.log("updating address);
     setMyAddress(address);
 
     updateField("YOUR NAME", address.name);
   };
 
+  // Has the user filled out all the fields?
   const hasAllKeys =
     _.difference([...variables, ...SpecialVars], _.keys(variableMap)).length ===
     0;
 
+  // Grab email
   const email = variableMap[emailKey!];
-  console.log({ emailKey, email });
 
   return (
     <div className="pure-form letter-form">
