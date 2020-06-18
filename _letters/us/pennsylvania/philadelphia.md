@@ -9,7 +9,7 @@ officials:
 - locality:legislatorUpperBody
 - locality:headOfState
 body: "My name is [YOUR NAME], and I am a resident
-  of the [DISTRICT NUMBER] district. I am emailing to demand the restructuring of
+  of the [DISTRICT NUMBER] district. I am writing you to demand the restructuring of
   the Philadelphia city budget in a way that prioritizes social services for communities
   and drastically minimizes spending on police. \n\nWe are in the midst of widespread
   upheaval over the systemic violence of policing, embodied by the PPD's well documented
