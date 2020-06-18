@@ -177,6 +177,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   }, [myAddress]);
 
   const updateField = (key: string, value: string) => {
+    console.log("updateField", { key, value });
     const newMap = { ...variableMap };
     newMap[key] = value;
     setVariableMap(newMap);
@@ -191,6 +192,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
           value
         );
       });
+      console.log("setting text to", newBodyText);
       setBodyText(newBodyText);
     }
   };
@@ -226,7 +228,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   const email = variableMap[emailKey!];
 
   return (
-    <form className="pure-form letter-form">
+    <div className="pure-form letter-form">
       <fieldset>
         {isTestMode() && <div className="alert-test">TEST MODE</div>}
         <MyAddressInput updateAddress={updateAddress} />
@@ -234,7 +236,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
         <Inputs inputs={variables} updateField={updateField} />
         <div className="row">
           <div className="bodyWrapper">
-            <textarea onChange={onBodyTextKeyPress}>{bodyText}</textarea>
+            <textarea onChange={onBodyTextKeyPress} value={bodyText} />
 
             {template.notes && (
               <div
@@ -273,7 +275,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
           />
         </div>
       </fieldset>
-    </form>
+    </div>
   );
 }
 
