@@ -44,6 +44,10 @@ export interface BasicAddress {
 export interface GoogleCivicRepsResponseOfficial {
   name: string;
   address: BasicAddress[];
+  urls?: string[];
+  phones?: string[];
+  emails?: string[];
+  party?: string;
 }
 
 export type GoogleCivicRepsResponseLevel =
