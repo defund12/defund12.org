@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: "gatsby-transformer-yaml",
       options: {
-        typeName: ({ node, object, isArray }) => {
+        typeName: ({node, object, isArray}) => {
           if (node.base === "_config.yml") {
             return "siteConfig";
           } else {
@@ -37,6 +37,14 @@ module.exports = {
       options: {
         name: "emails",
         path: `${__dirname}/_emails/`,
+        ignore: ["README.md"],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "letters",
+        path: `${__dirname}/_letters/`,
         ignore: ["README.md"],
       },
     },

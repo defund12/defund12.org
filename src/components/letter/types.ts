@@ -20,8 +20,8 @@ export interface OfficialRestrict {
 export interface Template {
   template: string;
   addresses?: Address[];
-  name: string;
-  id: string;
+  name?: string;
+  id?: string;
   notes?: string;
   officialRestricts?: OfficialRestrict[];
   cityCouncilOnly?: boolean;

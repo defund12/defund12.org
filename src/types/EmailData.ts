@@ -18,21 +18,17 @@ export interface EmailMetadata {
    * The state that the email's city is in.
    */
   state: string;
+  /**
+   * The layout of the template - email or letter
+   */
+  layout: "email" | "letter";
 }
 
-export interface EmailData extends EmailMetadata {
+export interface BasicTemplateData extends EmailMetadata {
   /**
    * The email body as defined in markdown.
    */
   body: string;
-  /**
-   * An array of recipients to send the email to.
-   */
-  recipients: Array<string>;
-  /**
-   * An array of recipients to cc on the email when sent.
-   */
-  cc: Array<string>;
   /**
    * The country the email's region is in.
    *
@@ -45,6 +41,24 @@ export interface EmailData extends EmailMetadata {
    * _(Reserved for future use.)_
    */
   date: never & Date;
+}
+
+export interface EmailData extends BasicTemplateData {
+  /**
+   * An array of recipients to send the email to.
+   */
+  recipients: Array<string>;
+  /**
+   * An array of recipients to cc on the email when sent.
+   */
+  cc: Array<string>;
+}
+
+export interface LetterData extends BasicTemplateData {
+  /**
+   * An array of offcials types to look up addresses for
+   */
+  officials: Array<string>;
 }
 
 type EmailDataType = EmailMetadata & EmailData;

@@ -1,0 +1,90 @@
+import { graphql, PageProps } from "gatsby";
+import React from "react";
+import { LetterData } from "../../types/EmailData";
+import { LetterProps, LetterConfig } from "../../types/PropTypes";
+import Layout from "../common/Layout";
+import EmailList from "../email-list/EmailList";
+import LetterForm from "./LetterForm";
+
+/**
+ * A rendered email, containing links to send or copy.
+ */
+export default class Letter extends React.Component<PageProps<LetterProps>> {
+  letterData: LetterData;
+  title: string;
+  meta: string;
+  autoOpen: boolean;
+  siteConfig: LetterConfig;
+
+  /**
+   * Initialize the component and its state.
+   * @param {PageProps<EmailProps>} props
+   */
+  constructor(props: PageProps<LetterProps>) {
+    super(props);
+    this.siteConfig = this.props.data.siteConfig;
+    this.letterData = this.props.data.markdownRemark.frontmatter;
+    this.title = `Defund 12 in ${this.letterData.city}, ${this.letterData.state}`;
+    this.meta = `Send a pre-written letter directly to ${this.letterData.city}, ${this.letterData.state} officials`;
+  }
+
+  /**
+   * React render method.
+   * @return {React.ReactNode} the rendered component
+   */
+  render(): React.ReactNode {
+    const template = {
+      template: this.letterData.body,
+      // addresses?: Address[];
+      // name: string;
+      // id: string;
+      // notes?: string;
+      // officialRestricts?: OfficialRestrict[];
+      cityCouncilOnly: true,
+    };
+
+    return (
+      <Layout pageTitle={this.title} meta={this.meta}>
+        <section className="emailPageHeader">
+          <h2>{this.letterData.name}</h2>
+          <b>
+            {this.letterData.city}, {this.letterData.state}
+          </b>
+          <p>{this.siteConfig.letterMessage}</p>
+        </section>
+
+        <article className="emailContentSection">
+          <div className="container">
+            <div className="emailContent">
+              <LetterForm template={template}></LetterForm>
+            </div>
+          </div>
+        </article>
+        <EmailList />
+      </Layout>
+    );
+  }
+}
+
+export const pageQuery = graphql`
+  query($permalink: String!) {
+    markdownRemark(
+      frontmatter: { permalink: { eq: $permalink }, layout: { eq: "letter" } }
+    ) {
+      frontmatter {
+        body
+        cc
+        city
+        country
+        date
+        name
+        state
+        permalink
+        officials
+      }
+    }
+    siteConfig {
+      letterMessage
+    }
+  }
+`;

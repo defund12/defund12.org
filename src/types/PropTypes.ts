@@ -1,5 +1,10 @@
 import { SiteConfig } from "./SiteConfig";
-import { EmailMetadataGroup, EmailData, EmailMetadata } from "./EmailData";
+import {
+  EmailMetadataGroup,
+  EmailData,
+  EmailMetadata,
+  LetterData,
+} from "./EmailData";
 
 // {Page query result properties}
 export interface SiteProps {
@@ -22,6 +27,18 @@ export interface EmailProps {
     frontmatter: EmailData;
   };
   siteConfig: EmailConfig;
+}
+
+export type LetterConfig = Pick<
+  SiteConfig,
+  "siteTitle" | "meta" | "logoUrl" | "faviconUrl" | "letterMessage"
+>;
+
+export interface LetterProps {
+  markdownRemark: {
+    frontmatter: LetterData;
+  };
+  siteConfig: LetterConfig;
 }
 
 export interface OptionalLayoutProps {

@@ -3,12 +3,9 @@ import { getGeocode, getLatLng } from "use-places-autocomplete";
 
 import * as _ from "lodash";
 
-import Alert from "react-bootstrap/Alert";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 
-import "./App.css";
+import "purecss/build/pure-min.css";
 
 import {
   Template,
@@ -232,7 +229,7 @@ function Addresses({
   }
 
   return (
-    <>
+    <div>
       {officialAddresses?.map((officialAddress) => {
         const address = officialAddress.address;
         const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -240,7 +237,7 @@ function Addresses({
         };
         const key = `${address.name}:${officialAddress.officeName}`;
         return (
-          <Row key={key}>
+          <div className="row" key={key}>
             <Form.Group controlId={key}>
               <Form.Check
                 type="checkbox"
@@ -260,10 +257,10 @@ function Addresses({
                 onChange={onChange}
               />
             </Form.Group>
-          </Row>
+          </div>
         );
       })}
-    </>
+    </div>
   );
 }
 
@@ -287,10 +284,10 @@ function Inputs({
           updateField(input, event.target.value);
         };
         return (
-          <Form.Group className="row" key={input}>
-            <Form.Label>{_.startCase(_.toLower(input))}</Form.Label>
-            <Form.Control type="text" onChange={onChange} />
-          </Form.Group>
+          <div className="pure-control-group" key={input}>
+            <label>{_.startCase(_.toLower(input))}</label>
+            <input type="text" onChange={onChange} />
+          </div>
         );
       })}
     </>
@@ -305,8 +302,8 @@ interface Props {
  *
  * @return {React.ReactNode} the rendered component
  */
-function SnailMailForm({ template }: Props): ReactElement {
-  const [bodyText, setBodyText] = useState("");
+function LetterForm({ template }: Props): ReactElement {
+  const [bodyText, setBodyText] = useState(template.template);
   const [bodyTextEdited, setBodyTextEdited] = useState(false);
   const [myAddress, setMyAddress] = useState({} as Address);
   const [variableMap, setVariableMap] = useState({} as Record<string, string>);
@@ -316,8 +313,6 @@ function SnailMailForm({ template }: Props): ReactElement {
     {} as BlackmadCityCountilResponse
   );
   const [isSearching, setIsSearching] = useState(false);
-
-  setBodyText(template.template);
 
   let variables = parseVars(template.template) || [];
   const emailKey = _.find(variables, (v) =>
@@ -379,7 +374,7 @@ function SnailMailForm({ template }: Props): ReactElement {
           });
         });
     }
-  }, [myAddress, template]);
+  }, [myAddress]);
 
   const updateField = (key: string, value: string) => {
     const newMap = { ...variableMap };
@@ -431,70 +426,72 @@ function SnailMailForm({ template }: Props): ReactElement {
   const email = variableMap[emailKey!];
 
   return (
-    <Container className="pt-5">
-      {isTestMode() && <Alert variant="danger">TEST MODE</Alert>}
-      <MyAddressInput updateAddress={updateAddress} />
+    <form className="pure-form pure-form-aligned letter-form">
+      <fieldset>
+        {isTestMode() && <div className="alert-test">TEST MODE</div>}
+        <MyAddressInput updateAddress={updateAddress} />
 
-      <Inputs inputs={variables} updateField={updateField} />
-      <Row>
-        <div
-          style={{
-            background: "cornsilk",
-            margin: "10px",
-            padding: "10px",
-            // whiteSpace: "pre-wrap",
-            width: "100%",
-            height: "60vh",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Form.Control
-            as="textarea"
-            value={bodyText}
-            style={{ width: "100%", height: "100%" }}
-            onChange={onBodyTextKeyPress}
-          />
+        <Inputs inputs={variables} updateField={updateField} />
+        <div className="row">
+          <div
+            style={{
+              background: "cornsilk",
+              margin: "10px",
+              padding: "10px",
+              // whiteSpace: "pre-wrap",
+              width: "100%",
+              height: "60vh",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Form.Control
+              as="textarea"
+              value={bodyText}
+              style={{ width: "100%", height: "100%" }}
+              onChange={onBodyTextKeyPress}
+            />
 
-          {template.notes && (
-            <div
-              style={{
-                fontStyle: "italic",
-                textAlign: "right",
-              }}
-              className="p-1"
-            >
-              {template.notes}
-            </div>
-          )}
+            {template.notes && (
+              <div
+                style={{
+                  fontStyle: "italic",
+                  textAlign: "right",
+                }}
+                className="p-1"
+              >
+                {template.notes}
+              </div>
+            )}
+          </div>
         </div>
-      </Row>
 
-      <div className="pt-2 pb-2">
-        {isSearching ? (
-          <div>Searching for representatives ...</div>
-        ) : (
-          <Addresses
-            reps={reps}
-            cityCouncilMembers={cityCouncilMembers}
-            addresses={template.addresses || []}
-            onAddressSelected={onAddressSelected}
-            restricts={template.officialRestricts}
+        <div className="pt-2 pb-2">
+          {isSearching ? (
+            <div>Searching for representatives ...</div>
+          ) : (
+            <Addresses
+              reps={reps}
+              cityCouncilMembers={cityCouncilMembers}
+              addresses={template.addresses || []}
+              onAddressSelected={onAddressSelected}
+              restricts={template.officialRestricts}
+              myAddress={myAddress}
+            />
+          )}
+
+          <CheckoutForm
+            checkedAddresses={checkedAddresses}
             myAddress={myAddress}
+            body={bodyText}
+            formValid={hasAllKeys}
+            email={email}
+            variables={variableMap}
           />
-        )}
-
-        <CheckoutForm
-          checkedAddresses={checkedAddresses}
-          myAddress={myAddress}
-          body={bodyText}
-          formValid={hasAllKeys}
-          email={email}
-          variables={variableMap}
-        />
-      </div>
-    </Container>
+        </div>
+      </fieldset>
+    </form>
   );
 }
 
-export default SnailMailForm;
+export default LetterForm;

@@ -202,7 +202,9 @@ export default class Email extends React.Component<
 
 export const pageQuery = graphql`
   query($permalink: String!) {
-    markdownRemark(frontmatter: { permalink: { eq: $permalink } }) {
+    markdownRemark(
+      frontmatter: { permalink: { eq: $permalink }, layout: { eq: "email" } }
+    ) {
       frontmatter {
         body
         cc
