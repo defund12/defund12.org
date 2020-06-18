@@ -27,7 +27,7 @@ body: |-
 
   With the rise of COVID-19 and the ongoing problems of access to much needed resources around mental health, healthcare, housing and violence prevention, support for communities in need is necessary now, more than ever.
 
-  Thus, I call on you to meaningfully defund the Henrico County Police Department's budget. In the FY 20-21 proposed budget, the proposed general fund expenditures for police, sheriff, and juvenile detention are 82.5 million, 43.5 million, and 2.5 million respectively. This allocation on police and incarceration is a misallocation of resources that could go to programs proven to be more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more.
+  Thus, I call on you to meaningfully defund the Henrico County Police Department's budget. In the FY 20-21 proposed budget, the proposed expenditures for police, sheriff, and juvenile detention are 84 million, 43.5 million, and 5.6 million respectively. This allocation on police and incarceration is a misallocation of resources that could go to programs proven to be more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more.
 
   I demand a budget that adequately meets the needs of at-risk county residents during this trying and uncertain time, when livelihoods are on the line. I demand a budget that supports community wellbeing, rather than empowers the police.
 
