@@ -21,3 +21,12 @@ export const addressToSingleLine = (address: Address): string => {
 export const isTestMode = (): boolean => {
   return window.location.host !== "mail-your-rep.web.app";
 };
+
+export const makeAddressLine = (parts: string[]): string | undefined => {
+  const partsToUse = parts.filter((p) => Boolean(p));
+  if (partsToUse.length > 0) {
+    return partsToUse.join(", ");
+  } else {
+    return undefined;
+  }
+};

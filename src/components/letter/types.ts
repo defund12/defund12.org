@@ -101,3 +101,9 @@ export interface BlackmadCityCountilResponseOfficial {
 export interface BlackmadCityCountilResponse {
   data: BlackmadCityCountilResponseOfficial[];
 }
+
+export type OfficialAddress = {
+  officeName?: string;
+  address: Address;
+  link?: string;
+};
