@@ -38,6 +38,8 @@ export const mungeCityCouncil = (
     let link: string;
     if (cityCouncilMember.body === "New York City Council") {
       link = `https://defund-nypd-reps.glitch.me/district/${cityCouncilMember.district}`;
+    } else {
+      link = cityCouncilMember.urls?.[0];
     }
 
     return cityCouncilMember.addresses.map((address) => {
@@ -61,7 +63,6 @@ export const mungeCityCouncil = (
         link,
         levels: [cityCouncilMember.office.level],
         roles: [cityCouncilMember.office.role],
-        link: cityCouncilMember.urls?.[0],
       };
     });
   });
