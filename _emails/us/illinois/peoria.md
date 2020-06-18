@@ -4,6 +4,7 @@ permalink: "/peoria"
 name: Letter to City Council
 city: Peoria
 state: IL
+layout: email
 recipients:
 - rali@peoriagov.org
 - bjensen@peoriagov.org
@@ -21,9 +22,9 @@ body: |-
 
   Dear Peoria City Council members,
 
-  My name is [NAME], and I am a resident of [NEIGHBORHOOD/CITY]. I am extremely concerned with the City of Peoria’s inordinate investment in the Peoria Police Department (PPD) at the expense of critical youth, education, and health services. As demonstrated by ongoing peaceful protests, many Peoria residents are dismayed by the current conduct of the Peoria police.
+  My name is [NAME] and I am a resident of [NEIGHBORHOOD/CITY]. I am extremely concerned with the City of Peoria’s inordinate investment in the Peoria Police Department (PPD) at the expense of critical youth, education, and health services. As demonstrated by ongoing peaceful protests, many Peoria residents are dismayed by the current conduct of the Peoria police.
 
-  I am therefore writing to demand that the City Council vote to defund the PPD and reapportion those funds to support evidence-based programs and services that, unlike increased police presence, promote the well-being of residents. It is concerning that the PPD on its website promotes "broken windows" policing, which has been used to target Black Americans and has been shown to be ineffective at keeping our communities safe. The City of Peoria 2020 Budget dedicates 44% of the budget towards “Public Safety,” with 22% of the budget going to policing alone, while funding for the arts (9% of total budget), neighborhood livability (8%), and environmental health (17%) have been neglected. This is morally reprehensible.
+  I am therefore writing to demand that the City Council vote to defund the PPD and reapportion those funds to support evidence-based programs and services that, unlike increased police presence, promote the well-being of citizens. It is concerning that the PPD on their website promotes "broken window" policing, which has been used to target Black Americans and has been shown to be ineffective at keeping our communities safe. The City of Peoria 2020 Budget dedicates 44% of the budget towards “Public Safety,” with 22% of the budget going to policing alone, while funding for the arts (9% of total budget), neighborhood livability (8%), and environmental health (17%) have been neglected. This is morally reprehensible.
 
   I also urge the City Council to enact legislation that holds police accountable and ensures they can no longer use lethal force against the residents of Peoria without consequence.
 
@@ -35,6 +36,5 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: email
 ---
 

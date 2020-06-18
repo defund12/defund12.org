@@ -1,11 +1,11 @@
-import React from "react";
 import { graphql, PageProps } from "gatsby";
+import * as queryString from "query-string";
+import React from "react";
+import { DefundUtils } from "../../DefundUtils";
+import { EmailData } from "../../types/EmailData";
+import { EmailConfig, EmailProps } from "../../types/PropTypes";
 import Layout from "../common/Layout";
 import EmailList from "../email-list/EmailList";
-import { DefundUtils } from "../../DefundUtils";
-import { EmailProps, EmailConfig } from "../../types/PropTypes";
-import { EmailData } from "../../types/EmailData";
-import * as queryString from "query-string";
 
 /**
  * The @link {Email} component state.
@@ -70,11 +70,12 @@ export default class Email extends React.Component<
       this.siteConfig.defaultSubjectLine.trim()
     );
     const body = encodeURIComponent(this.emailData.body.trim());
-    const recipients = this.emailData.recipients.join(", ");
-    const cc = this.emailData.cc?.join(", ");
-    const ccText =
-      cc !== undefined && cc !== null && cc.length > 0 ? `cc=${cc}&` : "";
-    window.location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+    const recipients = this.emailData.recipients;
+    const cc = this.emailData.cc || [];
+    const bcc = recipients.concat(cc);
+    window.location.href = `mailto:?bcc=${bcc.join(
+      ","
+    )}&subject=${subject}&body=${body}`;
   }
 
   /**
