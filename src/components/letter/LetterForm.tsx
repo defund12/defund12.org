@@ -7,7 +7,7 @@ import "purecss/build/pure-min.css";
 import { Template, Address, OfficialRestrict, OfficialAddress } from "./types";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
-import { isTestMode } from "./utils";
+import { isTestMode, addressToSingleLine } from "./utils";
 import { fetchReps } from "./representative-apis";
 
 const SpecialVars = ["YOUR NAME", "YOUR DISTRICT"];
@@ -23,24 +23,6 @@ function parseVars(template: string): string[] {
     (v) => !SpecialVars.includes(v)
   );
 }
-
-const addressToSingleLine = (address: Address): string => {
-  const cityStateLine = [
-    address.address_city,
-    address.address_state,
-    address.address_zip,
-  ]
-    .filter((a) => Boolean(a))
-    .join(" ");
-  const formattedAddress = [
-    address.address_line1,
-    address.address_line2,
-    cityStateLine,
-  ]
-    .filter((l) => Boolean(l) && l !== "" && l !== " ")
-    .join(", ");
-  return formattedAddress;
-};
 
 /** Renders block of addresses with checkboxes from google & citycouncil API responses
  *
