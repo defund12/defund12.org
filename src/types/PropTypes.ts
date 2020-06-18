@@ -55,7 +55,12 @@ export interface OptionalLayoutProps {
 // {Static query result properties}
 export type LayoutProps = Pick<
   SiteConfig,
-  "siteTitle" | "meta" | "faviconUrl" | "logoUrl" | "metaPreviewUrl"
+  | "siteTitle"
+  | "meta"
+  | "faviconUrl"
+  | "logoUrl"
+  | "metaPreviewUrl"
+  | "googleApiKey"
 > &
   OptionalLayoutProps;
 

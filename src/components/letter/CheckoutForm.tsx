@@ -36,7 +36,7 @@ const CheckoutForm = ({
 
   const totalAmount = checkedAddresses.length * LETTER_COST;
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: React.SyntheticEvent) => {
     setInSubmit(true);
 
     // We don't want to let default form submission happen here,
@@ -63,7 +63,9 @@ const CheckoutForm = ({
     });
 
     if (response.errors) {
-      setError(response.errors.map((e: any) => e.message).join(", "));
+      setError(
+        response.errors.map((e: { message: string }) => e.message).join(", ")
+      );
       return;
     } else {
       setError("");
