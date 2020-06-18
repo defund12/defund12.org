@@ -1,12 +1,10 @@
 # Defund12.org Team Organization
 
 ## 1. User that submits issue
-
-Anyone who would like to add an email for their locale creates issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Anyone who would like to add an email for their locale creates an issue in adherence to the [email guidelines](https://github.com/teddywilson/defund12.org/blob/master/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
 ## 2. Triage Team
-
-A person on the triage team is the first to review newly created issues. Look over all issues with <kbd>new-request</kbd> label.
+First to review newly created issues. Look over all issues with <kbd>new-request</kbd> label.
 
 ### Responsibilities
 
@@ -20,12 +18,11 @@ A person on the triage team is the first to review newly created issues. Look ov
   - Does it meet basic data requirements?
     - Recipients (CC addresses)
     - Body text
-  - If not, **close issue** and reply with the contents of the [email request template](https://raw.githubusercontent.com/defund12/defund12.org/gh-pages/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)<br>(copy the text between the `<!--` and `-->` characters)
+  - If not, **close issue** and reply with the contents of the [email request template](https://raw.githubusercontent.com/defund12/defund12.org/master/.github/ISSUE_TEMPLATE/EMAIL_REQUEST.md)<br>(copy the text between the `<!--` and `-->` characters)
   - If yes, add <kbd>content-ready-for-review</kbd> label and remove all other labels
 
 ## 3. Review, Editing, and Approval Team [Needs people!]
-
-Ensure the email roughly adheres to [email guidelines](https://github.com/teddywilson/defund12.org/blob/gh-pages/EMAIL_TEMPLATE_STYLE_GUIDE.md).
+Ensure the email roughly adheres to [email guidelines](https://github.com/defund12/defund12.org/blob/master/EMAIL_TEMPLATE_STYLE_GUIDE.md).
 
 ### Responsibilities
 
@@ -35,11 +32,10 @@ Ensure the email roughly adheres to [email guidelines](https://github.com/teddyw
   - Is the core statement in regards to defunding local police departments
   - Add <kbd>ready-for-pr</kbd> label and remove all other labels
 - Even though the issue is _good enough_ and you added the <kbd>ready-for-pr</kbd> label, do you still think the email template needs work or editing?
-  - Add <kbd>email-needs-work</kbd> label and leave comment on what the outstanding tasks are.
+  - Add <kbd>email-needs-work</kbd> label and leave comment with the outstanding tasks.
 
 ## 4. Email Addition Development Team
-
-This team will pick up issues that have the <kbd>ready-for-pr</kbd> label. Issues should only be assigned to a developer for less 24 hrs to ensure emails get added to the site quickly.
+Pick up issues with the <kbd>ready-for-pr</kbd> label. Issues should only be assigned to a developer for ≤24 hours to ensure emails get added to the site quickly.
 
 ### Responsibilities
 
@@ -54,6 +50,6 @@ This team will pick up issues that have the <kbd>ready-for-pr</kbd> label. Issue
 
 ## Join the conversation
 
-If you'd like to help out, please join our Discord [here](https://discord.gg/YMxndzd) and say hello. We'd love your help!
+If you'd like to help out, please [join our Discord](https://discord.gg/YMxndzd) server. We’d love your help!
 
-We have created channels in the Discord channel that correspond to each team. These will be used for team specific communication and organization. Whichever team you'd like to join, please join the Discord appropriate channel and say hello.
+We have created channels in the Discord channel that correspond to each team. These will be used for team-specific communication and organization. Whichever team you'd like to join, please join the Discord appropriate channel and say hello.
