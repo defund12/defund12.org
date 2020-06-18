@@ -28,7 +28,8 @@ export const mungeCityCouncil = (
         restricts || [],
         (restrict) =>
           restrict.level === cityCouncilMember.office.level &&
-          restrict.role === cityCouncilMember.office.role
+          (restrict.role === cityCouncilMember.office.role ||
+            (restrict.role as string) === "*")
       )
     ) {
       return [];
@@ -116,7 +117,8 @@ export const mungeReps = (
         restricts || [],
         (restrict) =>
           (office.levels || []).includes(restrict.level) &&
-          (office.roles || []).includes(restrict.role)
+          ((restrict.role as string) === "*" ||
+            (office.roles || []).includes(restrict.role))
       )
     ) {
       return [];
@@ -211,8 +213,8 @@ export const fetchRepsFromBlackmad = async ({
  */
 const isCityCouncilOffical = (official: LevelsAndRoles) => {
   return (
-    official.roles.includes("legislatorUpperBody") &&
-    official.levels.includes("locality")
+    official.roles?.includes("legislatorUpperBody") &&
+    official.levels?.includes("locality")
   );
 };
 
