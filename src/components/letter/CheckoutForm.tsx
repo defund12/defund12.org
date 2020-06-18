@@ -56,6 +56,7 @@ const CheckoutForm = ({
           body,
           variables: variables,
           email,
+          test: isTestMode(),
         }),
       }
     ).then((response) => {
