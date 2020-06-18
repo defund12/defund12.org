@@ -13,7 +13,6 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
   letterData: LetterData;
   title: string;
   meta: string;
-  autoOpen: boolean;
   siteConfig: LetterConfig;
 
   /**

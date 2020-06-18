@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactElement } from "react";
+import React, { useState, useEffect, ReactElement, ChangeEvent } from "react";
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 
 import * as _ from "lodash";
@@ -386,7 +386,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
     }
   };
 
-  const onBodyTextKeyPress = (event: any) => {
+  const onBodyTextKeyPress = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setBodyTextEdited(true);
     setBodyText(event.target.value);
   };
