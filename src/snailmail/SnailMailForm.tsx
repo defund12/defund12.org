@@ -19,7 +19,6 @@ import {
 } from "./types";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
-import { templatesCollection } from "./firebase";
 import { isTestMode } from "./utils";
 
 const SpecialVars = ["YOUR NAME", "YOUR DISTRICT"];
@@ -299,20 +298,17 @@ function Inputs({
 }
 
 interface Props {
-  mailId?: string;
-  adhocTemplate?: Template;
+  template?: Template;
 }
 
 /** Renders the overall letter sending form
  *
  * @return {React.ReactNode} the rendered component
  */
-function SnailMailForm({ mailId, adhocTemplate }: Props): ReactElement {
-  const [template, setTemplate] = useState({} as Template);
+function SnailMailForm({ template }: Props): ReactElement {
   const [bodyText, setBodyText] = useState("");
   const [bodyTextEdited, setBodyTextEdited] = useState(false);
   const [myAddress, setMyAddress] = useState({} as Address);
-  const [variables, setVariables] = useState([] as string[]);
   const [variableMap, setVariableMap] = useState({} as Record<string, string>);
   const [checkedAddresses, setCheckedAddresses] = useState([] as Address[]);
   const [reps, setReps] = useState({} as GoogleCivicRepsResponse);
@@ -321,39 +317,16 @@ function SnailMailForm({ mailId, adhocTemplate }: Props): ReactElement {
   );
   const [isSearching, setIsSearching] = useState(false);
 
-  const setTemplateAndVars = (template: Template) => {
-    setTemplate(template);
-    setBodyText(template.template);
+  setBodyText(template.template);
 
-    let variableKeys = parseVars(template.template) || [];
-    const emailKey = _.find(variableKeys, (v) =>
-      v.toLocaleLowerCase().includes("email")
-    );
+  let variables = parseVars(template.template) || [];
+  const emailKey = _.find(variables, (v) =>
+    v.toLocaleLowerCase().includes("email")
+  );
 
-    if (!emailKey) {
-      variableKeys = [...variableKeys, "YOUR EMAIL"];
-    }
-
-    setVariables(variableKeys);
-  };
-
-  useEffect(() => {
-    if (mailId) {
-      templatesCollection
-        .doc(mailId)
-        .get()
-        .then((value) => {
-          const template = (value.data() as unknown) as Template;
-          setTemplateAndVars(template);
-        });
-    }
-  }, [mailId]);
-
-  useEffect(() => {
-    if (adhocTemplate) {
-      setTemplateAndVars(adhocTemplate);
-    }
-  }, [adhocTemplate]);
+  if (!emailKey) {
+    variables = [...variables, "YOUR EMAIL"];
+  }
 
   useEffect(() => {
     if (
@@ -455,13 +428,6 @@ function SnailMailForm({ mailId, adhocTemplate }: Props): ReactElement {
     _.difference([...variables, ...SpecialVars], _.keys(variableMap)).length ===
     0;
 
-  if (!template) {
-    return <Container className="pt-5">Loading ...</Container>;
-  }
-
-  const emailKey = _.find(variables, (v) =>
-    v.toLocaleLowerCase().includes("email")
-  );
   const email = variableMap[emailKey!];
 
   return (
