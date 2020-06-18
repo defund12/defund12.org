@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+  defund12:
+    build: ./
+    image: defund12.org/defund12:latest
+    container_name: defund12
+    stdin_open: true
+    ports:
+      - 8000:8000
+    restart: always
+    volumes:
+      - ./:/usr/defund12
+      - /usr/defund12/node_modules

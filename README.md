@@ -8,6 +8,20 @@ We are dealing with a high volume of requests, but we are doing our best to stay
 
 ## Development
 
+### With Docker
+
+1. Clone the repo:
+
+   ```bash
+   git clone git@github.com:defund12/defund12.org.git
+   ```
+
+2. Install [Docker](https://docs.docker.com/get-docker/)
+
+3. Run `docker-compose up`
+
+### Without Docker
+
 1. Clone the repo:
 
    ```bash
