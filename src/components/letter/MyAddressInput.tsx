@@ -1,8 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState, ReactElement } from "react";
 
-import Form from "react-bootstrap/Form";
-
 import { Address } from "./types";
 
 /** Renders input fields for the user's address
@@ -24,72 +22,71 @@ export default function MyAddressInput({
 
   return (
     <>
-      <Form.Group className="row">
-        <Form.Label>Your Name</Form.Label>
-        <Form.Control
-          placeholder="Your Name"
-          type="text"
-          name="name"
-          onChange={(e) =>
-            setAddress({
-              name: e.target.value,
-            })
-          }
-        />
-      </Form.Group>
+      <fieldset className="pure-form-aligned">
+        <div className="pure-control-group">
+          <label>Your Name</label>
+          <input
+            placeholder="Your Name"
+            type="text"
+            name="name"
+            onChange={(e) =>
+              setAddress({
+                name: e.target.value,
+              })
+            }
+          />
+        </div>
+      </fieldset>
 
-      <Form.Group className="row">
-        <Form.Label>Your Address</Form.Label>
-        <Form.Control
-          placeholder="123 Main St"
-          type="text"
-          name="address"
-          onChange={(e) =>
-            setAddress({
-              address_line1: e.target.value,
-            })
-          }
-        />
-      </Form.Group>
+      <fieldset className="pure-form-aligned">
+        <div className="pure-control-group">
+          <label>Your Address</label>
+          <fieldset className="pure-group pure-form-message-inline">
+            <input
+              placeholder="123 Main St"
+              type="text"
+              name="address"
+              onChange={(e) =>
+                setAddress({
+                  address_line1: e.target.value,
+                })
+              }
+            />
 
-      <Form.Group className="row">
-        {/* <Form.Label>Your City</Form.Label> */}
-        <Form.Control
-          className="col-5"
-          placeholder="City"
-          type="text"
-          name="city"
-          onChange={(e) =>
-            setAddress({
-              address_city: e.target.value,
-            })
-          }
-        />
+            <input
+              placeholder="City"
+              name="city"
+              onChange={(e) =>
+                setAddress({
+                  address_city: e.target.value,
+                })
+              }
+            />
 
-        <Form.Control
-          className="col-2"
-          placeholder="State"
-          type="text"
-          name="state"
-          onChange={(e) =>
-            setAddress({
-              address_state: e.target.value,
-            })
-          }
-        />
+            <input
+              placeholder="State"
+              type="text"
+              name="state"
+              onChange={(e) =>
+                setAddress({
+                  address_state: e.target.value,
+                })
+              }
+            />
 
-        <Form.Control
-          className="col-5"
-          placeholder="Zipcode"
-          type="text"
-          name="zip"
-          onChange={(e) =>
-            setAddress({
-              address_zip: e.target.value,
-            })
-          }
-        />
-      </Form.Group>
+            <input
+              placeholder="Zipcode"
+              type="text"
+              name="zip"
+              onChange={(e) =>
+                setAddress({
+                  address_zip: e.target.value,
+                })
+              }
+            />
+          </fieldset>
+        </div>
+      </fieldset>
     </>
   );
 }
