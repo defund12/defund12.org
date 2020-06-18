@@ -56,7 +56,10 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
         <article className="emailContentSection">
           <div className="container">
             <div className="emailContent">
-              <LetterForm template={template}></LetterForm>
+              <LetterForm
+                template={template}
+                googleApiKey={this.siteConfig.googleApiKey}
+              ></LetterForm>
             </div>
           </div>
         </article>
@@ -85,6 +88,7 @@ export const pageQuery = graphql`
     }
     siteConfig {
       letterMessage
+      googleApiKey
     }
   }
 `;
