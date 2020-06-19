@@ -9,7 +9,7 @@ officials:
 body: "Hi, my name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to
   redirect money away from the Atlanta PD and into the following social services:
   [Where you would like to see police budget redirected, like Community Development, COVID Relief, Education, Parks & Recreation, targeted
-  support for marginalized communities]. \n\nI have noticed that in the 2021 budget
+  support for marginalized communities?]. \n\nI have noticed that in the 2021 budget
   proposal, from the general fund, the police department is receiving a 5.90% increase
   from 2020. Meanwhile, many other services are receiving cuts to their budgets. In
   light of recent events, I believe it is critical that policing be deprioritized
