@@ -6,6 +6,8 @@ import {
   OfficialAddress,
   LevelsAndRoles,
   BlackmadCityCouncilResponseOfficial,
+  GoogleCivicRepsResponseOffice,
+  GoogleCivicRepsResponseOfficial,
 } from "./LetterTypes";
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 import _ from "lodash";
@@ -108,6 +110,43 @@ function blackmadCityCouncilResponseToOfficialAddresses(
   });
 }
 
+/** convert one official from google's civic info API to OfficialAddresses
+ *
+ * @param {GoogleCivicRepsResponseOffice} office the office of the official
+ * @param {GoogleCivicRepsResponseOfficial} official the official
+ * @return {OfficialAddress[]} one or more addresses extracted from the response
+ */
+function googleCivicRepsOfficialToOfficialAddresses(
+  office: GoogleCivicRepsResponseOffice,
+  official: GoogleCivicRepsResponseOfficial
+): OfficialAddress[] {
+  // divisionId: "ocd-division/country:us/state:pa/place:philadelphia/council_district:1",
+  const districtPattern = /:(\d+)$/;
+  let district: string | undefined;
+  if (districtPattern.test(office.divisionId)) {
+    district = office.divisionId.match(districtPattern)?.[1];
+  }
+
+  return (official.address || []).map((address) => {
+    return {
+      address: {
+        name: official.name,
+        address_line1: address.line1,
+        address_line2: makeAddressLine([address.line2, address.line3]),
+        address_city: address.city,
+        address_state: address.state,
+        address_zip: address.zip,
+        address_country: "US",
+      },
+      officeName: office.name,
+      district,
+      levels: office.levels,
+      roles: office.roles,
+      link: official.urls?.[0],
+    };
+  });
+}
+
 /** convert an entire response from google's civic info API to OfficialAddresses
  *
  * @param {GoogleCivicRepsResponse} reps the API response to convert
@@ -165,35 +204,9 @@ function googleCivicRepsResponseToOfficialAddresses(
 
   return _.flatMap(offices, (office) => {
     return office.officialIndices
-      .map((officialIndex) => {
-        // divisionId: "ocd-division/country:us/state:pa/place:philadelphia/council_district:1",
-        const districtPattern = /:(\d+)$/;
-        let district: string | undefined;
-        if (districtPattern.test(office.divisionId)) {
-          district = office.divisionId.match(districtPattern)?.[1];
-        }
-
+      .flatMap((officialIndex) => {
         const official = reps.officials[officialIndex];
-        if (!official.address || official.address.length === 0) {
-          return undefined;
-        }
-        const address = official.address[0];
-        return {
-          address: {
-            name: official.name,
-            address_line1: address.line1,
-            address_line2: makeAddressLine([address.line2, address.line3]),
-            address_city: address.city,
-            address_state: address.state,
-            address_zip: address.zip,
-            address_country: "US",
-          },
-          officeName: office.name,
-          district,
-          levels: office.levels,
-          roles: office.roles,
-          link: official.urls?.[0],
-        };
+        return googleCivicRepsOfficialToOfficialAddresses(office, official);
       })
       .filter((a) => a !== undefined) as OfficialAddress[];
   });
