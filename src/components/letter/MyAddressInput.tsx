@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState, ReactElement } from "react";
 
-import { Address } from "./types";
+import { Address } from "./LetterTypes";
 
 type MyAddressInputProps = {
   /** callback function for every time the address is updated */

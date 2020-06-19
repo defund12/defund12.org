@@ -9,7 +9,7 @@ import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
 import { addressToSingleLine } from "./AddressUtils";
 import { isTestMode } from "./LetterUtils";
-import { fetchReps } from "./RepresentativeApis";
+import { fetchOfficials } from "./OfficialsApis";
 import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
 import { TemplateInputs } from "./TemplateInputs";
 
@@ -79,7 +79,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
 
     if (!template.addresses || template.addresses.length === 0) {
       const singleLineAddress = addressToSingleLine(myAddress);
-      fetchReps({
+      fetchOfficials({
         address: singleLineAddress,
         googleApiKey: googleApiKey,
         setIsSearching,
