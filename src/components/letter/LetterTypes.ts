@@ -1,5 +1,8 @@
 /* eslint-disable camelcase */
-import { OfficialRestrict } from "../../services/OfficialTypes";
+import {
+  OfficialRestrict,
+  OfficialAddress,
+} from "../../services/OfficialTypes";
 
 export const POSTCARD_COST = 0.7;
 export const LETTER_COST = 1.0;
@@ -16,7 +19,7 @@ export interface LobAddress {
 
 export interface Template {
   template: string;
-  addresses?: LobAddress[];
+  addresses?: OfficialAddress[];
   name?: string;
   id?: string;
   notes?: string;

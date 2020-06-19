@@ -62,9 +62,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
   const [bodyTextEdited, setBodyTextEdited] = useState(false);
   const [myAddress, setMyAddress] = useState({} as LobAddress);
   const [variableMap, setVariableMap] = useState({} as Record<string, string>);
-  const [checkedAddresses, setCheckedAddresses] = useState(
-    [] as OfficialAddress[]
-  );
+  const [checkedAddresses, setCheckedAddresses] = useState([] as LobAddress[]);
   const [officials, setOfficials] = useState([] as OfficialAddress[]);
   const [isSearching, setIsSearching] = useState(false);
 
@@ -145,7 +143,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
    * @param {boolean} isChecked was the address checked or unchecked
    * @param {Address} address the address in question
    */
-  function onAddressSelected(isChecked: boolean, address: OfficialAddress) {
+  function onAddressSelected(isChecked: boolean, address: LobAddress) {
     if (isChecked) {
       setCheckedAddresses(_.uniq([...checkedAddresses, address]));
     } else {

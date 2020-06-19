@@ -5,7 +5,7 @@ import { LetterProps, LetterConfig } from "../../types/PropTypes";
 import Layout from "../common/Layout";
 import EmailList from "../email-list/EmailList";
 import LetterForm from "./LetterForm";
-import { OfficialRestrict } from "./LetterTypes";
+import { OfficialRestrict } from "../../services/OfficialTypes";
 
 /**
  * A rendered email, containing links to send or copy.

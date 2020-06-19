@@ -1,12 +1,16 @@
 import React, { ReactElement } from "react";
 import { OfficialAddress } from "../../services/OfficialTypes";
-import { officialAddressToSingleLine } from "./LobAddressUtils";
+import {
+  officialAddressToSingleLine,
+  officialAddressToLobAddress,
+} from "./LobAddressUtils";
+import { LobAddress } from "./LetterTypes";
 
 type OfficialAddressCheckboxProps = {
   /** the address to render */
   officialAddress: OfficialAddress;
   /** callback for when the checkbox is checked or unchecked */
-  onAddressSelected: (checked: boolean, address: OfficialAddress) => void;
+  onAddressSelected: (checked: boolean, address: LobAddress) => void;
 };
 
 /** Renders an OfficialAddress with a checkbox
@@ -19,7 +23,10 @@ export function OfficalAddressCheckbox({
   onAddressSelected,
 }: OfficialAddressCheckboxProps): ReactElement {
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onAddressSelected(event.target.checked, officialAddress);
+    onAddressSelected(
+      event.target.checked,
+      officialAddressToLobAddress(officialAddress)
+    );
   };
 
   const key = `${officialAddress.name}:${officialAddress.officeName}`;

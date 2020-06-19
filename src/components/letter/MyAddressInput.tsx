@@ -1,11 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState, ReactElement } from "react";
 
-import { Address } from "./LetterTypes";
+import { LobAddress } from "./LetterTypes";
 
 type MyAddressInputProps = {
   /** callback function for every time the address is updated */
-  updateAddress: (a: Address) => void;
+  updateAddress: (a: LobAddress) => void;
 };
 
 /** Renders input fields for the user's address
@@ -15,7 +15,7 @@ type MyAddressInputProps = {
 export default function MyAddressInput({
   updateAddress,
 }: MyAddressInputProps): ReactElement {
-  const [myAddress, setMyAddress] = useState({} as Address);
+  const [myAddress, setMyAddress] = useState({} as LobAddress);
 
   /** Callback for when part of user's address is updated.
    * adds it to the full address in our internal state and
@@ -23,7 +23,7 @@ export default function MyAddressInput({
    *
    * @param {Address} address the updated address
    */
-  function setAddress(address: Partial<Address>) {
+  function setAddress(address: Partial<LobAddress>) {
     const updatedAddress = { ...myAddress, ...address };
     setMyAddress(updatedAddress);
     updateAddress(updatedAddress);
