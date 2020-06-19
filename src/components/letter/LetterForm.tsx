@@ -4,14 +4,15 @@ import * as _ from "lodash";
 
 import "purecss/build/pure-min.css";
 
-import { Template, Address, OfficialAddress } from "./LetterTypes";
+import { Template } from "./LetterTypes";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
-import { addressToSingleLine } from "./AddressUtils";
+import { addressToSingleLine } from "../../services/AddressUtils";
 import { isTestMode } from "./LetterUtils";
-import { fetchOfficials } from "./OfficialsApis";
+import { CombinedOfficialFetchingService } from "../../services/CombinedOfficialFetchingService";
 import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
 import { TemplateInputs } from "./TemplateInputs";
+import { Address, OfficialAddress } from "../../services/OfficialTypes";
 
 const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 
@@ -79,12 +80,19 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
 
     if (!template.addresses || template.addresses.length === 0) {
       const singleLineAddress = addressToSingleLine(myAddress);
-      fetchOfficials({
-        address: singleLineAddress,
-        googleApiKey: googleApiKey,
-        setIsSearching,
-        restricts: template.officialRestricts,
-      }).then((officialAddress) => setOfficials(officialAddress));
+      const officialsFetcher = new CombinedOfficialFetchingService(
+        googleApiKey
+      );
+      setIsSearching(true);
+      officialsFetcher
+        .fetch({
+          address: singleLineAddress,
+          restricts: template.officialRestricts,
+        })
+        .then((officialAddress) => {
+          setOfficials(officialAddress);
+          setIsSearching(false);
+        });
     }
   }, [myAddress]);
 
