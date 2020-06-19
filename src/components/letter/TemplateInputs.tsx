@@ -1,20 +1,24 @@
 import React, { ReactElement } from "react";
 import * as _ from "lodash";
 
+type TemplateInputProps = {
+  /** A list of variable names to render input elements for */
+  variables: string[];
+  /** called when a variable input is updated (onChange) with the variable name and new value */
+  updateField: (key: string, value: string) => void;
+};
+
 /** Renders all the input fields to fill in the letter and complete the transaction
  *
  * @return {ReactElement} the rendered component
  */
 export function TemplateInputs({
-  inputs,
+  variables,
   updateField,
-}: {
-  inputs: string[];
-  updateField: (key: string, value: string) => void;
-}): ReactElement {
+}: TemplateInputProps): ReactElement {
   return (
     <fieldset className="pure-form-aligned ">
-      {inputs.map((input) => {
+      {variables.map((input) => {
         const onChange = (
           event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
         ) => {

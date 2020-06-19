@@ -1,4 +1,4 @@
-import { Address } from "./types";
+import { Address } from "./LetterTypes";
 
 /** Joins parts with commas, filtering out undefineds and empties
  *
@@ -35,12 +35,4 @@ export const addressToSingleLine = (address: Address): string => {
     .filter((l) => Boolean(l) && l !== "" && l !== " ")
     .join(", ");
   return formattedAddress;
-};
-
-/** Returns if the frontend app is in test mode (and therefore should be talking to test stripe checkout flow)
- *
- * @return {boolean} is in test mode
- */
-export const isTestMode = (): boolean => {
-  return window.location.host !== "mail-your-rep.web.app";
 };
