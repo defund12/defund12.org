@@ -1,12 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState, ReactElement } from "react";
-import { Address, LETTER_COST } from "./LetterTypes";
+import { LobAddress, LETTER_COST } from "./LetterTypes";
 
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 
 import { loadStripe } from "@stripe/stripe-js";
 import { isTestMode } from "./LetterUtils";
+import { OfficialAddress } from "../../services/OfficialTypes";
+import { officialAddressToLobAddress } from "./AddressUtils";
 
 const stripePk = isTestMode()
   ? "pk_test_51GqpRpGLGlm5kFVxzwruVzMZ2Bc07pqosMzyiZd6ixInJHEq6MgFE9v1kRVJZUUhuOT3X2XdfHj31oknZEmKK6KT004CUm09hp"
@@ -18,9 +20,9 @@ const stripePromise = loadStripe(stripePk);
 
 type CheckoutFormProps = {
   /** a list of addresses the user has selected to send letters to */
-  checkedAddresses: Address[];
+  checkedAddresses: OfficialAddress[];
   /** the user's address (the return address for the letter) */
-  myAddress: Address;
+  myAddress: LobAddress;
   /** the body of the letter with all variables substituted */
   body: string;
   /** has the user filled out all the fields? */
@@ -64,7 +66,7 @@ export function CheckoutForm({
         },
         body: JSON.stringify({
           fromAddress: myAddress,
-          toAddresses: checkedAddresses,
+          toAddresses: checkedAddresses.map(officialAddressToLobAddress),
           body,
           email,
           test: isTestMode(),

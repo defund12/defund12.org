@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-export interface BasicAddress {
+export interface GoogleCivicRepsAddress {
   line1: string;
   line2: string;
   line3: string;
@@ -11,7 +11,7 @@ export interface BasicAddress {
 
 export interface GoogleCivicRepsResponseOfficial {
   name: string;
-  address: BasicAddress[];
+  address: GoogleCivicRepsAddress[];
   urls?: string[];
   phones?: string[];
   emails?: string[];
@@ -58,18 +58,40 @@ export interface OfficialRestrict {
   role: GoogleCivicRepsResponseRole;
 }
 
-export interface Address {
+export interface OfficialAddressParams {
+  levels: GoogleCivicRepsResponseLevel[];
+  roles: GoogleCivicRepsResponseRole[];
+  address: GoogleCivicRepsAddress;
+  link?: string;
+  officeName: string;
   name: string;
-  address_line1: string;
-  address_line2?: string;
-  address_city: string;
-  address_state: string;
-  address_zip: string;
-  address_country: string;
 }
 
-export interface OfficialAddress extends LevelsAndRoles {
+/**
+ * A unfied wrapper around officials that combines google & blackmad responses
+ */
+export class OfficialAddress implements LevelsAndRoles {
   officeName?: string;
-  address: Address;
+  address: GoogleCivicRepsAddress;
   link?: string;
+  levels: GoogleCivicRepsResponseLevel[];
+  roles: GoogleCivicRepsResponseRole[];
+  name: string;
+
+  // eslint-disable-next-line require-jsdoc
+  constructor({
+    levels,
+    roles,
+    address,
+    link,
+    officeName,
+    name,
+  }: OfficialAddressParams) {
+    this.officeName = officeName;
+    this.address = address;
+    this.link = link;
+    this.roles = roles;
+    this.levels = levels;
+    this.name = name;
+  }
 }
