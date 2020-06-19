@@ -4,7 +4,6 @@ permalink: "/arroyo-grande"
 name: Letter to Mayor Russom and City Council
 city: Arroyo Grande
 state: CA
-layout: email
 recipients:
 - lgeorge@arroyogrande.org
 - kstorton@arroyogrande.org
@@ -14,9 +13,9 @@ recipients:
 body: |-
   Dear Mayor Caren Russom and Arroyo Grande City Council
 
-  My name is [YOUR NAME] and I am a resident of Arroyo Grande. I am writing to demand that the Arroyo Grande City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
+  My name is \[YOUR NAME\] and I am a resident of Arroyo Grande. I am writing to demand that the Arroyo Grande City Council adopt a city budget that prioritizes community well-being, and redirects funding away from the police.
 
-  In 2019, the City of Arroyo Grande allocated $6,950,000 dollars to our police system, an inordinate 39% of our total budget. This is compared much higher than the amount of money allocated towards community development, with only no money towards affordable housing development. Next year, the city estimates that there will be deficits as a result of the pandemic. The city may recoup these funds by decreasing the police budget.
+  In 2019, the City of Arroyo Grande allocated $6,950,000 dollars to our police system, an inordinate 39% of our total budget. This is much higher than the amount of money allocated towards community development ($1,926,900) and affordable housing development ($0). Next year, the city estimates that there will be deficits as a result of the pandemic. The city may recoup these funds by decreasing the police budget.
 
   I demand that the City Council begin meaningfully defunding the Arroyo Grande Police Department and re-allocate those funds to programs proven to more effectively promote a safe and equitable community. We need funding for community-based mental health services, substance abuse treatment services, affordable housing programs, not police. I demand a budget that reflects the actual needs of Arroyo Grande residents.
 
@@ -26,9 +25,10 @@ body: |-
 
   Thank you for your time,
 
-  [YOUR NAME]
-  [YOUR ADDRESS]
-  [YOUR EMAIL]
-  [YOUR PHONE NUMBER]
+  \[YOUR NAME\]
+  \[YOUR ADDRESS\]
+  \[YOUR EMAIL\]
+  \[YOUR PHONE NUMBER\]
+layout: email
 ---
 
