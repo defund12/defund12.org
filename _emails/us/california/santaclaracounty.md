@@ -1,8 +1,8 @@
 ---
-title: Sunnyvale, CA
+title: Santa Clara County, CA
 permalink: "/sunnyvale"
 name: Letter to County Board of Supervisors
-city: Sunnyvale
+city: 'Santa Clara County '
 state: CA
 recipients:
 - mike.wasserman@bos.sccgov.org
@@ -10,15 +10,9 @@ recipients:
 - dave.cortese@bos.sccgov.org
 - supervisor.ellenberg@bos.sccgov.org
 - supervisor.simitian@bos.sccgov.org
-- larssoncouncil@sunnyvale.ca.gov
-- hendrickscouncil@sunnyvale.ca.gov
-- MeltonCouncil@sunnyvale.ca.gov
-- goldmancouncil@sunnyvale.ca.gov
-- kleincouncil@sunnyvale.ca.gov
-- smithcouncil@sunnyvale.ca.gov
 subject: "[*** INSERT UNIQUE SUBJECT LINE***]"
 body: |-
-  To Sunnyvale City Council and County of Santa Clara Board of Supervisors,
+  To Santa Clara Board of Supervisors,
 
   My name is \[YOUR NAME\] and I am a resident of Santa Clara County. I am writing to demand that funding is reallocated from the Santa Clara Sheriff's Department to social and public programming that takes place in our communities. It is an outrage that 22% of non medical county funding goes towards the Sheriff's Department. The Santa Clara Sheriff's Department has had a track record of poor conditions in jails and officers involved shootings. Additionally the money spent on the annual "Best in the West" SWAT competition would be better spent elsewhere in the community.
 
