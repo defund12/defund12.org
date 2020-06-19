@@ -3,22 +3,31 @@ import React, { useState, ReactElement } from "react";
 
 import { Address } from "./types";
 
+type MyAddressInputProps = {
+  /** callback function for every time the address is updated */
+  updateAddress: (a: Address) => void;
+};
+
 /** Renders input fields for the user's address
  *
- * @return {React.ReactNode} the rendered component
+ * @return {ReactElement} the rendered component
  */
 export default function MyAddressInput({
   updateAddress,
-}: {
-  updateAddress: (a: Address) => void;
-}): ReactElement {
+}: MyAddressInputProps): ReactElement {
   const [myAddress, setMyAddress] = useState({} as Address);
 
-  const setAddress = (address: Partial<Address>) => {
+  /** Callback for when part of user's address is updated.
+   * adds it to the full address in our internal state and
+   * calls the parent's callback
+   *
+   * @param {Address} address the updated address
+   */
+  function setAddress(address: Partial<Address>) {
     const updatedAddress = { ...myAddress, ...address };
     setMyAddress(updatedAddress);
     updateAddress(updatedAddress);
-  };
+  }
 
   return (
     <>

@@ -196,7 +196,6 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
               officials={officials}
               addresses={template.addresses || []}
               onAddressSelected={onAddressSelected}
-              restricts={template.officialRestricts}
               myAddress={myAddress}
             />
           )}

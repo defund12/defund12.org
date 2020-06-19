@@ -2,15 +2,22 @@ import React, { ReactElement } from "react";
 import { OfficialAddress, Address } from "./types";
 import { addressToSingleLine } from "./utils";
 
-// eslint-disable-next-line valid-jsdoc
-/** Renders an OfficialAddress with a checkbox */
+type OfficialAddressCheckboxProps = {
+  /** the address to render */
+  officialAddress: OfficialAddress;
+  /** callback for when the checkbox is checked or unchecked */
+  onAddressSelected: (checked: boolean, address: Address) => void;
+};
+
+/** Renders an OfficialAddress with a checkbox
+ *
+ * @param {OfficialAddressCheckboxProps} the component props
+ * @return {ReactElement} the rendered component
+ */
 export function OfficalAddressCheckbox({
   officialAddress,
   onAddressSelected,
-}: {
-  officialAddress: OfficialAddress;
-  onAddressSelected: (checked: boolean, address: Address) => void;
-}): ReactElement {
+}: OfficialAddressCheckboxProps): ReactElement {
   const address = officialAddress.address;
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     onAddressSelected(event.target.checked, address);
