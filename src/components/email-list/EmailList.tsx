@@ -2,7 +2,6 @@ import * as React from "react";
 import { v1 as uuid } from "uuid";
 import { StaticQuery, graphql } from "gatsby";
 import { EmailListItem } from "./EmailPageLink";
-import { LetterListItem } from "./LetterListItem";
 
 import Select from "react-select";
 import { ReactSelectOption } from "../../types/ReactSelectOption";
