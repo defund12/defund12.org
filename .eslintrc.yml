@@ -29,6 +29,7 @@ overrides: [
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "error",
       "react/jsx-uses-vars": "error",
+      "react/jsx-uses-react": 1,
     }
   }
 ]
