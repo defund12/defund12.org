@@ -13,6 +13,10 @@
   input[type=checkbox] {
     margin: 0.5em;
   }
+
+  div.pure-control-group {
+    margin-top: unset;
+  }
 }
 
 .bodyWrapper {

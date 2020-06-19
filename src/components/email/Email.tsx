@@ -194,7 +194,7 @@ export default class Email extends React.Component<
             </div>
           </div>
         </article>
-        <EmailList />
+        <EmailList layout="email" />
       </Layout>
     );
   }

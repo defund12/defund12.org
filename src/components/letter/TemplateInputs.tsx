@@ -17,7 +17,7 @@ export function TemplateInputs({
   updateField,
 }: TemplateInputProps): ReactElement {
   return (
-    <fieldset className="pure-form-aligned ">
+    <fieldset>
       {variables.map((input) => {
         const onChange = (
           event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
@@ -27,7 +27,7 @@ export function TemplateInputs({
         return (
           <div className="pure-control-group" key={input}>
             <label>{_.startCase(_.toLower(input))}</label>
-            <input type="text" onChange={onChange} />
+            <input className="pure-u-1" type="text" onChange={onChange} />
           </div>
         );
       })}

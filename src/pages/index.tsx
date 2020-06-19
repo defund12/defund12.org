@@ -23,7 +23,7 @@ export default class Index extends React.Component<PageProps<SiteProps>> {
   render(): React.ReactNode {
     return (
       <Layout>
-        <EmailList />
+        <EmailList layout="email" />
       </Layout>
     );
   }
