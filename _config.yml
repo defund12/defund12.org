@@ -43,6 +43,7 @@ badMailtoMessage: Email link not working correctly? You can copy and paste the r
 url: https://defund12.org
 logoUrl: "/images/defund12.org.png"
 faviconUrl: "/favicon.svg"
+metaPreviewUrl: "https://defund12-image-api.now.sh/api/preview?"
 sass:
   sass_dir: _sass
   style: compressed
