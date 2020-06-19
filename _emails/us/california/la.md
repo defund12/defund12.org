@@ -6,7 +6,7 @@ city: Los Angeles
 state: CA
 recipients:
 - mayor.helpdesk@lacity.org
-- councilmember.cedillo@lacity.org
+- 'Gilbert.Cedillo@lacity.org '
 - councilmember.Krekorian@lacity.org
 - councilmember.blumenfield@lacity.org
 - david.ryu@lacity.org
