@@ -8,12 +8,12 @@ import Button from "react-bootstrap/Button";
 import { loadStripe } from "@stripe/stripe-js";
 import { isTestMode } from "./utils";
 
-// Make sure to call `loadStripe` outside of a component’s render to avoid
-// recreating the `Stripe` object on every render.
 const stripePk = isTestMode()
   ? "pk_test_51GqpRpGLGlm5kFVxzwruVzMZ2Bc07pqosMzyiZd6ixInJHEq6MgFE9v1kRVJZUUhuOT3X2XdfHj31oknZEmKK6KT004CUm09hp"
   : "pk_live_51v9NZmT3TbTBBYultfXFkXO00Ohhh09jN";
 
+// Make sure to call `loadStripe` outside of a component’s render to avoid
+// recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(stripePk);
 
 type CheckoutFormProps = {
@@ -24,7 +24,7 @@ type CheckoutFormProps = {
   /** the body of the letter with all variables substituted */
   body: string;
   /** has the user filled out all the fields? */
-  formValid: boolean;
+  allVariablesFilledIn: boolean;
   /** the user's email - for sending them a send confirmation letter */
   email: string;
 };
@@ -38,7 +38,7 @@ export function CheckoutForm({
   checkedAddresses,
   myAddress,
   body,
-  formValid,
+  allVariablesFilledIn,
   email,
 }: CheckoutFormProps): ReactElement {
   const [error, setError] = useState("");
@@ -106,12 +106,12 @@ export function CheckoutForm({
     } else if (
       myAddress.address_line1 &&
       checkedAddresses.length === 0 &&
-      !formValid
+      !allVariablesFilledIn
     ) {
       return "Select some addresses and fill in all fields";
     } else if (myAddress.address_line1 && checkedAddresses.length === 0) {
       return "Select some addresses";
-    } else if (!formValid) {
+    } else if (!allVariablesFilledIn) {
       return "Please fill in all fields";
     } else {
       return `Mail ${
@@ -120,7 +120,8 @@ export function CheckoutForm({
     }
   }
 
-  const isDisabled = checkedAddresses.length === 0 || !formValid || inSubmit;
+  const isDisabled =
+    checkedAddresses.length === 0 || !allVariablesFilledIn || inSubmit;
 
   return (
     <>
