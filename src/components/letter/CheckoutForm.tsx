@@ -16,25 +16,39 @@ const stripePk = isTestMode()
 
 const stripePromise = loadStripe(stripePk);
 
-const CheckoutForm = ({
+type CheckoutFormProps = {
+  /** a list of addresses the user has selected to send letters to */
+  checkedAddresses: Address[];
+  /** the user's address (the return address for the letter) */
+  myAddress: Address;
+  /** the body of the letter with all variables substituted */
+  body: string;
+  /** has the user filled out all the fields? */
+  formValid: boolean;
+  /** the user's email - for sending them a send confirmation letter */
+  email: string;
+};
+
+/** The part of the Letter flow that is responsible for the checkout button
+ *
+ * @param {CheckoutFormProps} props the component props
+ * @return {ReactElement} the checkout form
+ */
+export function CheckoutForm({
   checkedAddresses,
   myAddress,
   body,
   formValid,
   email,
-  variables,
-}: {
-  checkedAddresses: Address[];
-  myAddress: Address;
-  body: string;
-  formValid: boolean;
-  email: string;
-  variables: Record<string, string>;
-}): ReactElement => {
+}: CheckoutFormProps): ReactElement {
   const [error, setError] = useState("");
   const [inSubmit, setInSubmit] = useState(false);
 
-  const handleSubmit = async (event: React.SyntheticEvent) => {
+  /** Handles checkout submit click
+   *
+   * @param {React.SyntheticEvent} event the click even
+   */
+  async function handleSubmit(event: React.SyntheticEvent) {
     setInSubmit(true);
 
     // We don't want to let default form submission happen here,
@@ -52,7 +66,6 @@ const CheckoutForm = ({
           fromAddress: myAddress,
           toAddresses: checkedAddresses,
           body,
-          variables: variables,
           email,
           test: isTestMode(),
         }),
@@ -78,9 +91,14 @@ const CheckoutForm = ({
       sessionId: stripeSessionId,
     });
     console.error(error);
-  };
+  }
 
-  const makeButtonText = () => {
+  /** Generates the text in the checkout button to reflect what the user needs to do to get it enabled
+   * or what the total cost is
+   *
+   * @return {string} the text of the checkout button
+   */
+  function makeButtonText() {
     const totalAmount = checkedAddresses.length * LETTER_COST;
 
     if (inSubmit) {
@@ -100,7 +118,7 @@ const CheckoutForm = ({
         checkedAddresses.length
       } letters for $${totalAmount.toFixed(2)}`;
     }
-  };
+  }
 
   const isDisabled = checkedAddresses.length === 0 || !formValid || inSubmit;
 
@@ -114,6 +132,6 @@ const CheckoutForm = ({
       </form>
     </>
   );
-};
+}
 
 export default CheckoutForm;

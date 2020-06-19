@@ -15,6 +15,7 @@ import { TemplateInputs } from "./TemplateInputs";
 const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 
 /** parses out the [SOME VARIABLE] names from template, minus the ones mentioned in SpecialVars
+ * ensure there is a key that a user can enter their email into
  *
  * @param {string} template the defund12 template to parse
  * @return {Object} variables: a list of parameter names without brackets minus SpecialVars,
