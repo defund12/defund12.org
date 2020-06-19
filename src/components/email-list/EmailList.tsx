@@ -27,8 +27,7 @@ export interface EmailListState {
 class _EmailList extends React.Component<EmailListProps, EmailListState> {
   stateOptions: Array<ReactSelectOption>;
   selectStyles = {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    option: (provided: any) => ({
+    option: (provided: React.CSSProperties) => ({
       ...provided,
       color: "black",
     }),
