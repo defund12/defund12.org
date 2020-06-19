@@ -2,11 +2,6 @@
 export const POSTCARD_COST = 0.7;
 export const LETTER_COST = 1.0;
 
-export interface LevelsAndRoles {
-  levels: GoogleCivicRepsResponseLevel[];
-  roles: GoogleCivicRepsResponseRole[];
-}
-
 export interface Address {
   name: string;
   address_line1: string;
@@ -25,8 +20,8 @@ export interface OfficialRestrict {
 export interface Template {
   template: string;
   addresses?: Address[];
-  name?: string;
-  id?: string;
+  name: string;
+  id: string;
   notes?: string;
   officialRestricts?: OfficialRestrict[];
   cityCouncilOnly?: boolean;
@@ -44,10 +39,6 @@ export interface BasicAddress {
 export interface GoogleCivicRepsResponseOfficial {
   name: string;
   address: BasicAddress[];
-  urls?: string[];
-  phones?: string[];
-  emails?: string[];
-  party?: string;
 }
 
 export type GoogleCivicRepsResponseLevel =
@@ -74,9 +65,11 @@ export type GoogleCivicRepsResponseRole =
   | "schoolBoard"
   | "specialPurposeOfficer";
 
-export interface GoogleCivicRepsResponseOffice extends LevelsAndRoles {
+export interface GoogleCivicRepsResponseOffice {
   name: string;
   divisionId: string;
+  levels: GoogleCivicRepsResponseLevel[];
+  roles: GoogleCivicRepsResponseRole[];
   officialIndices: number[];
 }
 
@@ -107,10 +100,4 @@ export interface BlackmadCityCouncilResponseOfficial {
 
 export interface BlackmadCityCouncilResponse {
   data: BlackmadCityCouncilResponseOfficial[];
-}
-
-export interface OfficialAddress extends LevelsAndRoles {
-  officeName?: string;
-  address: Address;
-  link?: string;
 }

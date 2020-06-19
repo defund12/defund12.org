@@ -4,11 +4,13 @@ import * as _ from "lodash";
 
 import "purecss/build/pure-min.css";
 
-import { Template, Address, OfficialRestrict, OfficialAddress } from "./types";
+import { Template, Address, OfficialAddress } from "./types";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
 import { isTestMode, addressToSingleLine } from "./utils";
 import { fetchReps } from "./representative-apis";
+import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
+import { TemplateInputs } from "./TemplateInputs";
 
 const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 
@@ -24,101 +26,17 @@ function parseVars(template: string): string[] {
   );
 }
 
-/** Renders block of addresses with checkboxes from google & citycouncil API responses
- *
- * @return {React.ReactNode} the rendered component
- */
-function Addresses({
-  addresses,
-  onAddressSelected,
-  officials,
-  myAddress,
-}: {
-  addresses: Address[];
-  officials: OfficialAddress[];
-  onAddressSelected: (b: boolean, c: Address) => void;
-  restricts?: OfficialRestrict[];
-  myAddress: Address;
-}) {
-  const officialAddresses: OfficialAddress[] =
-    (addresses || []).length > 0
-      ? addresses.map((address) => {
-          return { address, levels: [], roles: [] };
-        })
-      : officials;
-
-  if (myAddress.address_line1 && officialAddresses.length === 0) {
-    return <div>No representatives found, sorry</div>;
-  }
-
-  return (
-    <div className="pure-controls">
-      {officialAddresses?.map((officialAddress) => {
-        const address = officialAddress.address;
-        const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-          onAddressSelected(event.target.checked, address);
-        };
-        const key = `${address.name}:${officialAddress.officeName}`;
-        return (
-          <label className="pure-checkbox" key={key}>
-            <input type="checkbox" onChange={onChange} />
-            <>
-              <b>{address.name}</b>
-              {officialAddress.officeName && ` (${officialAddress.officeName})`}
-              , {addressToSingleLine(address)}{" "}
-              {officialAddress.link && (
-                <a target="_blank" href={officialAddress.link}>
-                  Read about their positions
-                </a>
-              )}
-            </>
-          </label>
-        );
-      })}
-    </div>
-  );
-}
-
-/** Renders all the input fields to fill in the letter and complete the transaction
- *
- * @return {React.ReactNode} the rendered component
- */
-function Inputs({
-  inputs,
-  updateField,
-}: {
-  inputs: string[];
-  updateField: (key: string, value: string) => void;
-}) {
-  return (
-    <fieldset className="pure-form-aligned ">
-      {inputs.map((input) => {
-        const onChange = (
-          event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
-        ) => {
-          updateField(input, event.target.value);
-        };
-        return (
-          <div className="pure-control-group" key={input}>
-            <label>{_.startCase(_.toLower(input))}</label>
-            <input type="text" onChange={onChange} />
-          </div>
-        );
-      })}
-    </fieldset>
-  );
-}
-
-interface Props {
-  template: Template;
-  googleApiKey: string;
-}
-
 /** Renders the overall letter sending form
  *
  * @return {React.ReactNode} the rendered component
  */
-function LetterForm({ template, googleApiKey }: Props): ReactElement {
+function LetterForm({
+  template,
+  googleApiKey,
+}: {
+  template: Template;
+  googleApiKey: string;
+}): ReactElement {
   const [bodyText, setBodyText] = useState(template.template);
   const [bodyTextEdited, setBodyTextEdited] = useState(false);
   const [myAddress, setMyAddress] = useState({} as Address);
@@ -128,7 +46,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   const [isSearching, setIsSearching] = useState(false);
 
   // Pull all the variables out of our template
-  let variables = parseVars(template.template) || [];
+  const variables = parseVars(template.template) || [];
 
   // If there isn't one that includes "email", add it
   // because we need an email to send people verification their letter went through
@@ -137,7 +55,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
   );
 
   if (!emailKey) {
-    variables = [...variables, "YOUR EMAIL"];
+    variables.push("YOUR EMAIL");
     emailKey = "YOUR EMAIL";
   }
 
@@ -234,7 +152,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
         {isTestMode() && <div className="alert-test">TEST MODE</div>}
         <MyAddressInput updateAddress={updateAddress} />
 
-        <Inputs inputs={variables} updateField={updateField} />
+        <TemplateInputs inputs={variables} updateField={updateField} />
         <div className="row">
           <div className="bodyWrapper">
             <textarea onChange={onBodyTextKeyPress} value={bodyText} />
@@ -257,7 +175,7 @@ function LetterForm({ template, googleApiKey }: Props): ReactElement {
           {isSearching ? (
             <div>Searching for representatives ...</div>
           ) : (
-            <Addresses
+            <OfficialAddressCheckboxList
               officials={officials}
               addresses={template.addresses || []}
               onAddressSelected={onAddressSelected}

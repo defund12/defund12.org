@@ -34,8 +34,6 @@ const CheckoutForm = ({
   const [error, setError] = useState("");
   const [inSubmit, setInSubmit] = useState(false);
 
-  const totalAmount = checkedAddresses.length * LETTER_COST;
-
   const handleSubmit = async (event: React.SyntheticEvent) => {
     setInSubmit(true);
 
@@ -82,33 +80,36 @@ const CheckoutForm = ({
     console.error(error);
   };
 
-  const isDisabled = checkedAddresses.length === 0 || !formValid || inSubmit;
+  const makeButtonText = () => {
+    const totalAmount = checkedAddresses.length * LETTER_COST;
 
-  let buttonText = "";
-  if (inSubmit) {
-    buttonText = "Submitting ...";
-  } else if (
-    myAddress.address_line1 &&
-    checkedAddresses.length === 0 &&
-    !formValid
-  ) {
-    buttonText = "Select some addresses and fill in all fields";
-  } else if (myAddress.address_line1 && checkedAddresses.length === 0) {
-    buttonText = "Select some addresses";
-  } else if (!formValid) {
-    buttonText = "Please fill in all fields";
-  } else {
-    buttonText = `Mail ${
-      checkedAddresses.length
-    } letters for $${totalAmount.toFixed(2)}`;
-  }
+    if (inSubmit) {
+      return "Submitting ...";
+    } else if (
+      myAddress.address_line1 &&
+      checkedAddresses.length === 0 &&
+      !formValid
+    ) {
+      return "Select some addresses and fill in all fields";
+    } else if (myAddress.address_line1 && checkedAddresses.length === 0) {
+      return "Select some addresses";
+    } else if (!formValid) {
+      return "Please fill in all fields";
+    } else {
+      return `Mail ${
+        checkedAddresses.length
+      } letters for $${totalAmount.toFixed(2)}`;
+    }
+  };
+
+  const isDisabled = checkedAddresses.length === 0 || !formValid || inSubmit;
 
   return (
     <>
       {error && <Alert variant="danger">{error}</Alert>}
       <form onSubmit={handleSubmit} className="text-center">
         <Button variant="primary" type="submit" disabled={isDisabled}>
-          {buttonText}
+          {makeButtonText()}
         </Button>
       </form>
     </>

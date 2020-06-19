@@ -1,74 +1,101 @@
 import { makeAddressLine } from "./utils";
 import {
-  BlackmadCityCountilResponse,
+  BlackmadCityCouncilResponse,
   OfficialRestrict,
   GoogleCivicRepsResponse,
   OfficialAddress,
   LevelsAndRoles,
+  BlackmadCityCouncilResponseOfficial,
 } from "./types";
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 import _ from "lodash";
 
-export const mungeCityCouncil = (
-  cityCouncilMembers: BlackmadCityCountilResponse,
-  restricts?: OfficialRestrict[]
+export const blackmadCityCouncilEntryToOfficialAddresses = (
+  cityCouncilMember: BlackmadCityCouncilResponseOfficial
 ): OfficialAddress[] => {
-  if (
-    !cityCouncilMembers ||
-    !cityCouncilMembers.data ||
-    cityCouncilMembers.data.length === 0
-  ) {
-    return [];
+  let link: string;
+  if (cityCouncilMember.body === "New York City Council") {
+    link = `https://defund-nypd-reps.glitch.me/district/${cityCouncilMember.district}`;
+  } else {
+    link = cityCouncilMember.urls?.[0];
   }
 
-  return _.flatMap(cityCouncilMembers.data, (cityCouncilMember) => {
-    // only use restricts if present, otherwise let everything through
-    if (
-      !_.some(
-        restricts || [],
-        (restrict) =>
-          restrict.level === cityCouncilMember.office.level &&
-          (restrict.role === cityCouncilMember.office.role ||
-            (restrict.role as string) === "*")
-      )
-    ) {
-      return [];
-    }
-
-    let link: string;
-    if (cityCouncilMember.body === "New York City Council") {
-      link = `https://defund-nypd-reps.glitch.me/district/${cityCouncilMember.district}`;
-    } else {
-      link = cityCouncilMember.urls?.[0];
-    }
-
-    return cityCouncilMember.addresses.map((address) => {
-      const officeName = address.name
-        ? cityCouncilMember.office.name + " - " + address.name
-        : cityCouncilMember.office.name;
-      return {
-        address: {
-          name: cityCouncilMember.name,
-          address_line1: address.address.line1,
-          address_line2: makeAddressLine([
-            address.address.line2,
-            address.address.line3,
-          ]),
-          address_city: address.address.city,
-          address_state: address.address.state,
-          address_zip: address.address.zip,
-          address_country: "US",
-        },
-        officeName,
-        link,
-        levels: [cityCouncilMember.office.level],
-        roles: [cityCouncilMember.office.role],
-      };
-    });
+  return cityCouncilMember.addresses.map((address) => {
+    const officeName = address.name
+      ? cityCouncilMember.office.name + " - " + address.name
+      : cityCouncilMember.office.name;
+    return {
+      address: {
+        name: cityCouncilMember.name,
+        address_line1: address.address.line1,
+        address_line2: makeAddressLine([
+          address.address.line2,
+          address.address.line3,
+        ]),
+        address_city: address.address.city,
+        address_state: address.address.state,
+        address_zip: address.address.zip,
+        address_country: "US",
+      },
+      officeName,
+      link,
+      levels: [cityCouncilMember.office.level],
+      roles: [cityCouncilMember.office.role],
+    };
   });
 };
 
-export const mungeReps = (
+/** Whether or not an official should be included based on resticts
+ *
+ * @param {OfficialRestrict[]} restricts restricts to obey
+ * @param {GoogleCivicRepsResponseLevel[]} levels levels of official
+ * @param {GoogleCivicRepsResponseRole[]} roles roles of official
+ *
+ * @return {boolean} should use
+ */
+function shouldUseOfficial({
+  restricts,
+  levels,
+  roles,
+}: {
+  restricts?: OfficialRestrict[];
+} & LevelsAndRoles): boolean {
+  // if restricts is empty let everything through
+  if (!restricts) {
+    return true;
+  }
+
+  return _.some(
+    restricts || [],
+    (restrict) =>
+      (levels || []).includes(restrict.level) &&
+      ((restrict.role as string) === "*" ||
+        (roles || []).includes(restrict.role))
+  );
+}
+
+export const blackmadCityCouncilResponseToOfficialAddresses = (
+  cityCouncilMembers: BlackmadCityCouncilResponse,
+  restricts?: OfficialRestrict[]
+): OfficialAddress[] => {
+  if (!cityCouncilMembers?.data) {
+    return [];
+  }
+
+  const filteredMembers = cityCouncilMembers.data.filter((cityCouncilMember) =>
+    shouldUseOfficial({
+      restricts,
+      levels: [cityCouncilMember.office.level],
+      roles: [cityCouncilMember.office.role],
+    })
+  );
+
+  return _.flatMap(filteredMembers, (cityCouncilMember) => {
+    return blackmadCityCouncilEntryToOfficialAddresses(cityCouncilMember);
+  });
+};
+
+const googleCivicRepsResponseToOfficialAddresses = (
   reps: GoogleCivicRepsResponse,
   restricts?: OfficialRestrict[]
 ): OfficialAddress[] => {
@@ -78,7 +105,6 @@ export const mungeReps = (
 
   // Google does a bad job with their own schema, often they are missing "roles"
   // So try to infer them
-
   reps.offices.forEach((office) => {
     if (
       !office.roles &&
@@ -97,7 +123,7 @@ export const mungeReps = (
     }
   });
 
-  // Filter out judges and VP/pres at least for now
+  // Filter out judges and VP/pres and obey other restrictions
   const offices = reps.offices.filter((office) => {
     const isPresidenty =
       office.levels.includes("country") &&
@@ -110,22 +136,15 @@ export const mungeReps = (
       office.roles?.includes("judge") ||
       office.name.includes("Justice") ||
       office.name.includes("Judge");
-    return !isPresidenty && !isJudgy;
+
+    const shouldUse = shouldUseOfficial({
+      restricts,
+      ...office,
+    });
+    return !isPresidenty && !isJudgy && shouldUse;
   });
 
   return _.flatMap(offices, (office) => {
-    if (
-      !_.some(
-        restricts || [],
-        (restrict) =>
-          (office.levels || []).includes(restrict.level) &&
-          ((restrict.role as string) === "*" ||
-            (office.roles || []).includes(restrict.role))
-      )
-    ) {
-      return [];
-    }
-
     return office.officialIndices
       .map((officialIndex) => {
         // divisionId: "ocd-division/country:us/state:pa/place:philadelphia/council_district:1",
@@ -180,7 +199,10 @@ export const fetchRepsFromGoogle = async ({
   );
   const json = await res.json();
 
-  return mungeReps(json as GoogleCivicRepsResponse, restricts);
+  return googleCivicRepsResponseToOfficialAddresses(
+    json as GoogleCivicRepsResponse,
+    restricts
+  );
 };
 
 export const fetchRepsFromBlackmad = async ({
@@ -200,13 +222,9 @@ export const fetchRepsFromBlackmad = async ({
     `https://city-council-api.herokuapp.com/lookup?lat=${lat}&lng=${lng}`
   );
 
-  const json = (await res.json()) as BlackmadCityCountilResponse;
+  const json = (await res.json()) as BlackmadCityCouncilResponse;
 
-  // const districtEntry = data.data.find((o) => Boolean(o.district));
-  // if (districtEntry) {
-  //   updateField("YOUR DISTRICT", districtEntry.district);
-  // }
-  return mungeCityCouncil(json, restricts);
+  return blackmadCityCouncilResponseToOfficialAddresses(json, restricts);
 };
 
 /** Is this offical a city council person
@@ -255,7 +273,7 @@ export const fetchReps = async ({
   // combine google response and blackmad API response
   // If we got a response from blackmad, which for now is all city councils
   // filter out city councils from google so we don't have dupes.
-  let officials = [...blackmadResponse];
+  let officials = blackmadResponse;
 
   const blackmadHasCityCouncilMembers = _.some(
     blackmadResponse,
