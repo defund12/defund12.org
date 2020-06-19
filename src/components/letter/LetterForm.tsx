@@ -17,13 +17,29 @@ const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 /** parses out the [SOME VARIABLE] names from template, minus the ones mentioned in SpecialVars
  *
  * @param {string} template the defund12 template to parse
- * @return {string[]} list of parameter names without brackets minus SpecialVars
+ * @return {Object} variables: a list of parameter names without brackets minus SpecialVars,
+ *                  emailKey:  a key in the variables where a user's email address will go
  */
-function parseVars(template: string): string[] {
+function parseVars(
+  template: string
+): { variables: string[]; emailKey: string } {
   const match = template.match(/\[[^\]]+\]/g);
-  return _.uniq(match?.map((s) => s.replace("[", "").replace("]", ""))).filter(
-    (v) => !SpecialVars.includes(v)
+  const variables = _.uniq(
+    match?.map((s) => s.replace("[", "").replace("]", ""))
+  ).filter((v) => !SpecialVars.includes(v));
+
+  // If there isn't one that includes "email", add it
+  // because we need an email to send people verification their letter went through
+  let emailKey = _.find(variables, (v) =>
+    v.toLocaleLowerCase().includes("email")
   );
+
+  if (!emailKey) {
+    variables.push("YOUR EMAIL");
+    emailKey = "YOUR EMAIL";
+  }
+
+  return { variables, emailKey };
 }
 
 /** Renders the overall letter sending form
@@ -44,20 +60,6 @@ function LetterForm({
   const [checkedAddresses, setCheckedAddresses] = useState([] as Address[]);
   const [officials, setOfficials] = useState([] as OfficialAddress[]);
   const [isSearching, setIsSearching] = useState(false);
-
-  // Pull all the variables out of our template
-  const variables = parseVars(template.template) || [];
-
-  // If there isn't one that includes "email", add it
-  // because we need an email to send people verification their letter went through
-  let emailKey = _.find(variables, (v) =>
-    v.toLocaleLowerCase().includes("email")
-  );
-
-  if (!emailKey) {
-    variables.push("YOUR EMAIL");
-    emailKey = "YOUR EMAIL";
-  }
 
   // When the inputted address changes, if it is fully specified
   // geocode it and search for representatives' addresses
@@ -138,13 +140,13 @@ function LetterForm({
     updateField("YOUR NAME", address.name);
   };
 
+  // Pull all the variables out of our template
+  const { variables, emailKey } = parseVars(template.template);
+
   // Has the user filled out all the fields?
   const hasAllKeys =
     _.difference([...variables, ...SpecialVars], _.keys(variableMap)).length ===
     0;
-
-  // Grab email
-  const email = variableMap[emailKey!];
 
   return (
     <div className="pure-form letter-form">
@@ -189,7 +191,7 @@ function LetterForm({
             myAddress={myAddress}
             body={bodyText}
             formValid={hasAllKeys}
-            email={email}
+            email={variableMap[emailKey!]}
             variables={variableMap}
           />
         </div>
