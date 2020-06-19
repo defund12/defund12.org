@@ -4,7 +4,7 @@ import { OfficalAddressCheckbox } from "./OfficalAddressCheckbox";
 
 /** Renders block of addresses with checkboxes from google & citycouncil API responses
  *
- * @return {React.ReactNode} the rendered component
+ * @return {ReactElement} the rendered component
  */
 export function OfficialAddressCheckboxList({
   addresses,
