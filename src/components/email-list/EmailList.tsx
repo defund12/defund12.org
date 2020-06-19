@@ -65,6 +65,8 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
     return data.map((email) => {
       if (email.layout === "email") {
         return <EmailListItem key={uuid()} {...email} />;
+      } else if (email.layout === "letter") {
+        return <LetterListItem key={uuid()} {...email} />;
       }
     });
   }
