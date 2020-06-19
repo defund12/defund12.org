@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { Address, OfficialAddress } from "./types";
+import { Address, OfficialAddress } from "./LetterTypes";
 import { OfficalAddressCheckbox } from "./OfficalAddressCheckbox";
 
 type OfficialAddressCheckboxListProps = {

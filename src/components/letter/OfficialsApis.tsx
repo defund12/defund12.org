@@ -10,9 +10,16 @@ import {
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 import _ from "lodash";
 
-export const blackmadCityCouncilEntryToOfficialAddresses = (
+/** convert an entry from blackmad's city council api into unifed OfficialAddress structure
+ *
+ * officials sometimes have multiple offices, like in their home district and in the capital / near city hall etc
+ *
+ * @param {BlackmadCityCouncilResponseOfficial} cityCouncilMember the entry to convert
+ * @return {OfficialAddress[]} one or more addresses representing that cityCouncilMember
+ */
+function blackmadCityCouncilEntryToOfficialAddresses(
   cityCouncilMember: BlackmadCityCouncilResponseOfficial
-): OfficialAddress[] => {
+): OfficialAddress[] {
   let link: string;
   if (cityCouncilMember.body === "New York City Council") {
     link = `https://defund-nypd-reps.glitch.me/district/${cityCouncilMember.district}`;
@@ -43,23 +50,23 @@ export const blackmadCityCouncilEntryToOfficialAddresses = (
       roles: [cityCouncilMember.office.role],
     };
   });
-};
+}
+
+type ShouldUseOfficialParams = {
+  /** restricts restricts to obey */
+  restricts?: OfficialRestrict[];
+} & LevelsAndRoles;
 
 /** Whether or not an official should be included based on resticts
  *
- * @param {OfficialRestrict[]} restricts restricts to obey
- * @param {GoogleCivicRepsResponseLevel[]} levels levels of official
- * @param {GoogleCivicRepsResponseRole[]} roles roles of official
- *
+ * @param {ShouldUseOfficialParams} restricts, roles and levels
  * @return {boolean} should use
  */
 function shouldUseOfficial({
   restricts,
   levels,
   roles,
-}: {
-  restricts?: OfficialRestrict[];
-} & LevelsAndRoles): boolean {
+}: ShouldUseOfficialParams): boolean {
   // if restricts is empty let everything through
   if (!restricts) {
     return true;
@@ -74,10 +81,16 @@ function shouldUseOfficial({
   );
 }
 
-export const blackmadCityCouncilResponseToOfficialAddresses = (
+/** convert an entire response from blackmad's city council API to OfficialAddresses
+ *
+ * @param {BlackmadCityCouncilResponse} cityCouncilMembers the API response to convert
+ * @param {OfficialRestrict[]} restricts restrictions on what levels/roles of official to return
+ * @return {OfficialAddress[]} one or more addresses extracted from the response
+ */
+function blackmadCityCouncilResponseToOfficialAddresses(
   cityCouncilMembers: BlackmadCityCouncilResponse,
   restricts?: OfficialRestrict[]
-): OfficialAddress[] => {
+): OfficialAddress[] {
   if (!cityCouncilMembers?.data) {
     return [];
   }
@@ -93,12 +106,18 @@ export const blackmadCityCouncilResponseToOfficialAddresses = (
   return _.flatMap(filteredMembers, (cityCouncilMember) => {
     return blackmadCityCouncilEntryToOfficialAddresses(cityCouncilMember);
   });
-};
+}
 
-const googleCivicRepsResponseToOfficialAddresses = (
+/** convert an entire response from google's civic info API to OfficialAddresses
+ *
+ * @param {GoogleCivicRepsResponse} reps the API response to convert
+ * @param {OfficialRestrict[]} restricts restrictions on what levels/roles of official to return
+ * @return {OfficialAddress[]} one or more addresses extracted from the response
+ */
+function googleCivicRepsResponseToOfficialAddresses(
   reps: GoogleCivicRepsResponse,
   restricts?: OfficialRestrict[]
-): OfficialAddress[] => {
+): OfficialAddress[] {
   if (!reps.offices) {
     return [];
   }
@@ -178,17 +197,25 @@ const googleCivicRepsResponseToOfficialAddresses = (
       })
       .filter((a) => a !== undefined) as OfficialAddress[];
   });
-};
+}
 
-export const fetchRepsFromGoogle = async ({
+type BaseOfficialApiParams = Pick<
+  FetchOfficialsParams,
+  "address" | "restricts"
+>;
+
+type GoogleCivicRepsParams = Pick<FetchOfficialsParams, "googleApiKey"> &
+  BaseOfficialApiParams;
+
+/** fetch officials from google civic info API
+ * @param {GoogleCivicRepsParams} input params
+ * @return {Promise<OfficialAddress[]>} addresses of officials corresponding to address, filtered by restricts
+ */
+async function fetchOfficialsFromGoogle({
   address,
   googleApiKey,
   restricts,
-}: {
-  address: string;
-  googleApiKey: string;
-  restricts?: OfficialRestrict[];
-}): Promise<OfficialAddress[]> => {
+}: GoogleCivicRepsParams): Promise<OfficialAddress[]> {
   const params = new URLSearchParams({
     address,
     key: googleApiKey,
@@ -203,15 +230,17 @@ export const fetchRepsFromGoogle = async ({
     json as GoogleCivicRepsResponse,
     restricts
   );
-};
+}
 
+/** fetch officials from blackmad's city council API
+ *
+ * @param {BaseOfficialApiParams} input params
+ * @return {Promise<OfficialAddress[]>} addresses of officials corresponding to address, filtered by restricts
+ */
 export const fetchRepsFromBlackmad = async ({
   address,
   restricts,
-}: {
-  address: string;
-  restricts?: OfficialRestrict[];
-}): Promise<OfficialAddress[]> => {
+}: BaseOfficialApiParams): Promise<OfficialAddress[]> => {
   const latLng = await getGeocode({ address }).then((results) =>
     getLatLng(results[0])
   );
@@ -232,24 +261,34 @@ export const fetchRepsFromBlackmad = async ({
  * @param {LevelsAndRoles} official offical to check
  * @return {boolean} is this offical a city council person
  */
-const isCityCouncilOffical = (official: LevelsAndRoles) => {
+function isCityCouncilOffical(official: LevelsAndRoles) {
   return (
     official.roles?.includes("legislatorUpperBody") &&
     official.levels?.includes("locality")
   );
+}
+
+type FetchOfficialsParams = {
+  /** address to look up officials for */
+  address: string;
+  /** google API key for civic info API */
+  googleApiKey: string;
+  /** restricts on what levels/roles of officials to return */
+  restricts?: OfficialRestrict[];
+  setIsSearching: (isSearching: boolean) => void;
 };
 
-export const fetchReps = async ({
+/** fetch officials from google & blackmad APIs based on user address
+ *
+ * @param {FetchOfficialsParams} input params
+ * @return {Promise<OfficialAddress[]>} A list of officials and their addresses
+ */
+export async function fetchOfficials({
   address,
   googleApiKey,
   setIsSearching,
   restricts,
-}: {
-  address: string;
-  googleApiKey: string;
-  setIsSearching: (isSearching: boolean) => void;
-  restricts?: OfficialRestrict[];
-}): Promise<OfficialAddress[]> => {
+}: FetchOfficialsParams): Promise<OfficialAddress[]> {
   setIsSearching(true);
 
   const cityCouncilOnly =
@@ -262,7 +301,11 @@ export const fetchReps = async ({
   // Second to blackmad's city council API which tries to fill holes in major cities where google's city council coverage is lacking (SF, NYC)
   let googlePromise: Promise<OfficialAddress[]> = Promise.resolve([]);
   if (!cityCouncilOnly) {
-    googlePromise = fetchRepsFromGoogle({ address, googleApiKey, restricts });
+    googlePromise = fetchOfficialsFromGoogle({
+      address,
+      googleApiKey,
+      restricts,
+    });
   }
 
   const blackmadPromise = fetchRepsFromBlackmad({ address, restricts });
@@ -290,4 +333,4 @@ export const fetchReps = async ({
   }
   setIsSearching(false);
   return officials;
-};
+}

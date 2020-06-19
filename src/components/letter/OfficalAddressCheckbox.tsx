@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
-import { OfficialAddress, Address } from "./types";
-import { addressToSingleLine } from "./utils";
+import { OfficialAddress, Address } from "./LetterTypes";
+import { addressToSingleLine } from "./AddressUtils";
 
 type OfficialAddressCheckboxProps = {
   /** the address to render */
