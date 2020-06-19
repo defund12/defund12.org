@@ -24,7 +24,7 @@ body: |-
 
   Please do not vote to increase police funding. Do not be complicit in the disproportionate targeting of people of color. Propose and vote to expand on its current efforts in healthcare, affordable housing, and restorative justice. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
 
-  It is your duty to represent your constituents. I am urging you to revise the Santa Clara County budget for the next fiscal year, and to fund the police. We can be a beacon for other cities to follow if only we have the courage to change.
+  It is your duty to represent your constituents. I am urging you to revise the Santa Clara County budget for the next fiscal year, and to defund the police. We can be a beacon for other cities to follow if only we have the courage to change.
 
   Thank you for your time,
 
