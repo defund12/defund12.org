@@ -7,8 +7,6 @@ import Button from "react-bootstrap/Button";
 
 import { loadStripe } from "@stripe/stripe-js";
 import { isTestMode } from "./LetterUtils";
-import { OfficialAddress } from "../../services/OfficialTypes";
-import { officialAddressToLobAddress } from "./LobAddressUtils";
 
 const stripePk = isTestMode()
   ? "pk_test_51GqpRpGLGlm5kFVxzwruVzMZ2Bc07pqosMzyiZd6ixInJHEq6MgFE9v1kRVJZUUhuOT3X2XdfHj31oknZEmKK6KT004CUm09hp"
@@ -20,7 +18,7 @@ const stripePromise = loadStripe(stripePk);
 
 type CheckoutFormProps = {
   /** a list of addresses the user has selected to send letters to */
-  checkedAddresses: OfficialAddress[];
+  checkedAddresses: LobAddress[];
   /** the user's address (the return address for the letter) */
   myAddress: LobAddress;
   /** the body of the letter with all variables substituted */
@@ -66,7 +64,7 @@ export function CheckoutForm({
         },
         body: JSON.stringify({
           fromAddress: myAddress,
-          toAddresses: checkedAddresses.map(officialAddressToLobAddress),
+          toAddresses: checkedAddresses,
           body,
           email,
           test: isTestMode(),

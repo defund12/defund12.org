@@ -1,17 +1,18 @@
 import React, { ReactElement } from "react";
-import { Address, OfficialAddress } from "./LetterTypes";
-import { OfficalAddressCheckbox } from "./OfficalAddressCheckbox";
+import { OfficalAddressCheckbox } from "./OfficialAddressCheckbox";
+import { LobAddress } from "./LetterTypes";
+import { OfficialAddress } from "../../services/OfficialTypes";
 
 type OfficialAddressCheckboxListProps = {
   /** list of addresses to render, currently not used by callers */
-  addresses: Address[];
+  addresses: OfficialAddress[];
   /** list of official addresses to render from google & blackmad APIs */
   officials: OfficialAddress[];
   /** the user's address, only used for showing a status message based on how filled out it is,
    * could be refactored */
-  myAddress: Address;
+  myAddress: LobAddress;
   /** callback when an address is chekced or unchecked */
-  onAddressSelected: (b: boolean, c: Address) => void;
+  onAddressSelected: (b: boolean, c: LobAddress) => void;
 };
 
 /** Renders block of addresses with checkboxes from google & citycouncil API responses
@@ -25,12 +26,7 @@ export function OfficialAddressCheckboxList({
   officials,
   myAddress,
 }: OfficialAddressCheckboxListProps): ReactElement {
-  const officialAddresses: OfficialAddress[] =
-    (addresses || []).length > 0
-      ? addresses.map((address) => {
-          return { address, levels: [], roles: [] };
-        })
-      : officials;
+  const officialAddresses: OfficialAddress[] = [...addresses, ...officials];
 
   if (myAddress.address_line1 && officialAddresses.length === 0) {
     return <div>No representatives found, sorry</div>;
