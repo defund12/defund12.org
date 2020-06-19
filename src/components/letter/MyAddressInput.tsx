@@ -31,10 +31,11 @@ export default function MyAddressInput({
 
   return (
     <>
-      <fieldset className="pure-form-aligned">
+      <fieldset className="pure-form-stacked">
         <div className="pure-control-group">
           <label>Your Name</label>
           <input
+            className="pure-u-1"
             placeholder="Your Name"
             type="text"
             name="name"
@@ -47,53 +48,56 @@ export default function MyAddressInput({
         </div>
       </fieldset>
 
-      <fieldset className="pure-form-aligned">
+      <fieldset>
         <div className="pure-control-group">
           <label>Your Address</label>
-          <fieldset className="pure-group pure-form-message-inline">
-            <input
-              placeholder="123 Main St"
-              type="text"
-              name="address"
-              onChange={(e) =>
-                setAddress({
-                  address_line1: e.target.value,
-                })
-              }
-            />
 
-            <input
-              placeholder="City"
-              name="city"
-              onChange={(e) =>
-                setAddress({
-                  address_city: e.target.value,
-                })
-              }
-            />
+          <input
+            className="pure-u-1"
+            placeholder="123 Main St"
+            type="text"
+            name="address"
+            onChange={(e) =>
+              setAddress({
+                address_line1: e.target.value,
+              })
+            }
+          />
 
-            <input
-              placeholder="State"
-              type="text"
-              name="state"
-              onChange={(e) =>
-                setAddress({
-                  address_state: e.target.value,
-                })
-              }
-            />
+          <input
+            className="pure-u-1"
+            placeholder="City"
+            name="city"
+            onChange={(e) =>
+              setAddress({
+                address_city: e.target.value,
+              })
+            }
+          />
 
-            <input
-              placeholder="Zipcode"
-              type="text"
-              name="zip"
-              onChange={(e) =>
-                setAddress({
-                  address_zip: e.target.value,
-                })
-              }
-            />
-          </fieldset>
+          <input
+            className="pure-u-1"
+            placeholder="State"
+            type="text"
+            name="state"
+            onChange={(e) =>
+              setAddress({
+                address_state: e.target.value,
+              })
+            }
+          />
+
+          <input
+            className="pure-u-1"
+            placeholder="Zipcode"
+            type="text"
+            name="zip"
+            onChange={(e) =>
+              setAddress({
+                address_zip: e.target.value,
+              })
+            }
+          />
         </div>
       </fieldset>
     </>

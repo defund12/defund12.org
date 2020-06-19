@@ -1,3 +1,4 @@
+export type LayoutType = "email" | "letter";
 /**
  * The top-level data of an email.
  */
@@ -21,7 +22,7 @@ export interface EmailMetadata {
   /**
    * The layout of the template - email or letter
    */
-  layout: "email" | "letter";
+  layout: LayoutType;
 }
 
 export interface BasicTemplateData extends EmailMetadata {

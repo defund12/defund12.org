@@ -70,7 +70,7 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
             </div>
           </div>
         </article>
-        <EmailList />
+        <EmailList layout="letter" />
       </Layout>
     );
   }

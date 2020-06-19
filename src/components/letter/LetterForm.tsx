@@ -7,7 +7,6 @@ import "purecss/build/pure-min.css";
 import { Template, LobAddress } from "./LetterTypes";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
-import { isTestMode } from "./LetterUtils";
 import { CombinedOfficialFetchingService } from "../../services/CombinedOfficialFetchingService";
 import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
 import { TemplateInputs } from "./TemplateInputs";
@@ -173,9 +172,8 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
     0;
 
   return (
-    <div className="pure-form letter-form">
+    <div className="pure-form pure-form-stacked letter-form">
       <fieldset>
-        {isTestMode() && <div className="alert-test">TEST MODE</div>}
         <MyAddressInput updateAddress={updateMyAddress} />
 
         <TemplateInputs variables={variables} updateField={updateField} />

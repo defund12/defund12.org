@@ -2,6 +2,7 @@ import * as React from "react";
 import { v1 as uuid } from "uuid";
 import { StaticQuery, graphql } from "gatsby";
 import { EmailListItem } from "./EmailPageLink";
+import { LetterListItem } from "./LetterListItem";
 
 import Select from "react-select";
 import { ReactSelectOption } from "../../types/ReactSelectOption";
@@ -9,6 +10,7 @@ import {
   EmailMetadata,
   RemarkNode,
   EmailMetadataGroup,
+  LayoutType,
 } from "../../types/EmailData";
 import { EmailListProps } from "../../types/PropTypes";
 
@@ -168,10 +170,15 @@ function groupEmailMetadataByState(
 
 /**
  * The main container for email links, including filtering.
+ * @param {string} layout the kinds of templates to show - email or letter
  * @return {React.ReactNode} The rendered email component,
  * with data from GraphQL.
  */
-export default function EmailList(): JSX.Element {
+export default function EmailList({
+  layout,
+}: {
+  layout: LayoutType;
+}): JSX.Element {
   return (
     <StaticQuery
       query={graphql`
@@ -196,9 +203,9 @@ export default function EmailList(): JSX.Element {
       render={(data: { allMarkdownRemark: { nodes: Array<RemarkNode> } }) => {
         // extract the email metadata from the nodes collected from markdown
         const allNodes = data.allMarkdownRemark.nodes;
-        const allEmailMetadata = allNodes.map(
-          (node: RemarkNode) => node.frontmatter
-        );
+        const allEmailMetadata = allNodes
+          .map((node: RemarkNode) => node.frontmatter)
+          .filter((v) => v.layout === layout);
 
         const stateGroupedEmails = groupEmailMetadataByState(allEmailMetadata);
 
