@@ -8,6 +8,8 @@ type TemplateInputProps = {
   updateField: (key: string, value: string) => void;
 };
 
+const allUpperCaseLabelRegex = new RegExp(/^[A-Z ]+$/);
+
 /** Renders all the input fields to fill in the letter and complete the transaction
  *
  * @return {ReactElement} the rendered component
@@ -17,20 +19,29 @@ export function TemplateInputs({
   updateField,
 }: TemplateInputProps): ReactElement {
   return (
-    <fieldset>
-      {variables.map((input) => {
+    <>
+      {variables.map((variable) => {
         const onChange = (
           event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
         ) => {
-          updateField(input, event.target.value);
+          updateField(variable, event.target.value);
         };
+
+        // If the variable is something like YOUR NAME, turn it into "Your Name"
+        // If it's anything else like "What is your favorite color?" leave it alone
+        const label = allUpperCaseLabelRegex.test(variable)
+          ? _.startCase(_.toLower(variable))
+          : variable;
+
         return (
-          <div className="pure-control-group" key={input}>
-            <label>{_.startCase(_.toLower(input))}</label>
-            <input className="pure-u-1" type="text" onChange={onChange} />
-          </div>
+          <fieldset>
+            <div className="pure-control-group" key={variable}>
+              <label>{label}</label>
+              <input className="pure-u-1" type="text" onChange={onChange} />
+            </div>
+          </fieldset>
         );
       })}
-    </fieldset>
+    </>
   );
 }
