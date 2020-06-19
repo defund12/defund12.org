@@ -12,7 +12,7 @@ import { CombinedOfficialFetchingService } from "../../services/CombinedOfficial
 import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
 import { TemplateInputs } from "./TemplateInputs";
 import { OfficialAddress } from "../../services/OfficialTypes";
-import { lobAddressToSingleLine } from "./AddressUtils";
+import { lobAddressToSingleLine } from "./LobAddressUtils";
 
 const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 
