@@ -1,12 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState, ReactElement } from "react";
-import { Address, LETTER_COST } from "./types";
+import { Address, LETTER_COST } from "./LetterTypes";
 
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 
 import { loadStripe } from "@stripe/stripe-js";
-import { isTestMode } from "./utils";
+import { isTestMode } from "./LetterUtils";
 
 const stripePk = isTestMode()
   ? "pk_test_51GqpRpGLGlm5kFVxzwruVzMZ2Bc07pqosMzyiZd6ixInJHEq6MgFE9v1kRVJZUUhuOT3X2XdfHj31oknZEmKK6KT004CUm09hp"

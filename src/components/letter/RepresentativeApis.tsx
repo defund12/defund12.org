@@ -1,4 +1,4 @@
-import { makeAddressLine } from "./utils";
+import { makeAddressLine } from "./AddressUtils";
 import {
   BlackmadCityCouncilResponse,
   OfficialRestrict,
@@ -6,7 +6,7 @@ import {
   OfficialAddress,
   LevelsAndRoles,
   BlackmadCityCouncilResponseOfficial,
-} from "./types";
+} from "./LetterTypes";
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 import _ from "lodash";
 

@@ -4,11 +4,12 @@ import * as _ from "lodash";
 
 import "purecss/build/pure-min.css";
 
-import { Template, Address, OfficialAddress } from "./types";
+import { Template, Address, OfficialAddress } from "./LetterTypes";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
-import { isTestMode, addressToSingleLine } from "./utils";
-import { fetchReps } from "./representative-apis";
+import { addressToSingleLine } from "./AddressUtils";
+import { isTestMode } from "./LetterUtils";
+import { fetchReps } from "./RepresentativeApis";
 import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
 import { TemplateInputs } from "./TemplateInputs";
 
@@ -169,7 +170,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
         {isTestMode() && <div className="alert-test">TEST MODE</div>}
         <MyAddressInput updateAddress={updateAddress} />
 
-        <TemplateInputs inputs={variables} updateField={updateField} />
+        <TemplateInputs variables={variables} updateField={updateField} />
         <div className="row">
           <div className="bodyWrapper">
             <textarea onChange={onBodyTextKeyPress} value={bodyText} />
