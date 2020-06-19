@@ -6,17 +6,16 @@ import {
 import {
   OfficialAddress,
   OfficialRestrict,
-  BasicAddress,
+  GoogleCivicRepsAddress,
   GoogleCivicRepsResponseLevel,
   GoogleCivicRepsResponseRole,
 } from "./OfficialTypes";
-import { makeAddressLine } from "./AddressUtils";
 import { getGeocode, getLatLng } from "use-places-autocomplete";
 import _ from "lodash";
 
 export interface BlackmadCityCouncilResponseOfficial {
   addresses: {
-    address: BasicAddress;
+    address: GoogleCivicRepsAddress;
     fax: string;
     name: string;
     phone: string;
@@ -59,24 +58,14 @@ function blackmadCityCouncilEntryToOfficialAddresses(
     const officeName = address.name
       ? cityCouncilMember.office.name + " - " + address.name
       : cityCouncilMember.office.name;
-    return {
-      address: {
-        name: cityCouncilMember.name,
-        address_line1: address.address.line1,
-        address_line2: makeAddressLine([
-          address.address.line2,
-          address.address.line3,
-        ]),
-        address_city: address.address.city,
-        address_state: address.address.state,
-        address_zip: address.address.zip,
-        address_country: "US",
-      },
+    return new OfficialAddress({
+      name: cityCouncilMember.name,
+      address: address.address,
       officeName,
       link,
       levels: [cityCouncilMember.office.level],
       roles: [cityCouncilMember.office.role],
-    };
+    });
   });
 }
 

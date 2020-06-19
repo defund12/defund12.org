@@ -9,7 +9,6 @@ import {
   GoogleCivicRepsResponseOffice,
   OfficialRestrict,
 } from "./OfficialTypes";
-import { makeAddressLine } from "./AddressUtils";
 import _ from "lodash";
 
 export interface GoogleCivicRepsResponse {
@@ -27,30 +26,23 @@ function googleCivicRepsOfficialToOfficialAddresses(
   office: GoogleCivicRepsResponseOffice,
   official: GoogleCivicRepsResponseOfficial
 ): OfficialAddress[] {
+  // unused for now
   // divisionId: "ocd-division/country:us/state:pa/place:philadelphia/council_district:1",
-  const districtPattern = /:(\d+)$/;
-  let district: string | undefined;
-  if (districtPattern.test(office.divisionId)) {
-    district = office.divisionId.match(districtPattern)?.[1];
-  }
+  // const districtPattern = /:(\d+)$/;
+  // let district: string | undefined;
+  // if (districtPattern.test(office.divisionId)) {
+  //   district = office.divisionId.match(districtPattern)?.[1];
+  // }
 
   return (official.address || []).map((address) => {
-    return {
-      address: {
-        name: official.name,
-        address_line1: address.line1,
-        address_line2: makeAddressLine([address.line2, address.line3]),
-        address_city: address.city,
-        address_state: address.state,
-        address_zip: address.zip,
-        address_country: "US",
-      },
+    return new OfficialAddress({
+      name: official.name,
+      address: address,
       officeName: office.name,
-      district,
       levels: office.levels,
       roles: office.roles,
       link: official.urls?.[0],
-    };
+    });
   });
 }
 

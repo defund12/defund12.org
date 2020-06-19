@@ -1,12 +1,12 @@
 import React, { ReactElement } from "react";
-import { OfficialAddress, Address } from "./LetterTypes";
-import { addressToSingleLine } from "./AddressUtils";
+import { OfficialAddress } from "../../services/OfficialTypes";
+import { officialAddressToSingleLine } from "./AddressUtils";
 
 type OfficialAddressCheckboxProps = {
   /** the address to render */
   officialAddress: OfficialAddress;
   /** callback for when the checkbox is checked or unchecked */
-  onAddressSelected: (checked: boolean, address: Address) => void;
+  onAddressSelected: (checked: boolean, address: OfficialAddress) => void;
 };
 
 /** Renders an OfficialAddress with a checkbox
@@ -18,18 +18,18 @@ export function OfficalAddressCheckbox({
   officialAddress,
   onAddressSelected,
 }: OfficialAddressCheckboxProps): ReactElement {
-  const address = officialAddress.address;
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onAddressSelected(event.target.checked, address);
+    onAddressSelected(event.target.checked, officialAddress);
   };
-  const key = `${address.name}:${officialAddress.officeName}`;
+
+  const key = `${officialAddress.name}:${officialAddress.officeName}`;
   return (
     <label className="pure-checkbox" key={key}>
       <input type="checkbox" onChange={onChange} />
       <>
-        <b>{address.name}</b>
+        <b>{officialAddress.name}</b>
         {officialAddress.officeName && ` (${officialAddress.officeName})`},{" "}
-        {addressToSingleLine(address)}{" "}
+        {officialAddressToSingleLine(officialAddress)}{" "}
         {officialAddress.link && (
           <a target="_blank" href={officialAddress.link}>
             Read about their positions

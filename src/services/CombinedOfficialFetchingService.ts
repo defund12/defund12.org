@@ -20,7 +20,7 @@ function isCityCouncilOffical(official: LevelsAndRoles) {
   );
 }
 
-/** fetches representative information from Google Civic Information Api */
+/** fetches representative information from both Google Civic Information Api and blackmad's City Council API*/
 export class CombinedOfficialFetchingService
   implements AbstractRepresentativeFetchingService {
   /** constructor

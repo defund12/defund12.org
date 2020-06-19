@@ -4,15 +4,15 @@ import * as _ from "lodash";
 
 import "purecss/build/pure-min.css";
 
-import { Template } from "./LetterTypes";
+import { Template, LobAddress } from "./LetterTypes";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
-import { addressToSingleLine } from "../../services/AddressUtils";
 import { isTestMode } from "./LetterUtils";
 import { CombinedOfficialFetchingService } from "../../services/CombinedOfficialFetchingService";
 import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
 import { TemplateInputs } from "./TemplateInputs";
-import { Address, OfficialAddress } from "../../services/OfficialTypes";
+import { OfficialAddress } from "../../services/OfficialTypes";
+import { lobAddressToSingleLine } from "./AddressUtils";
 
 const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 
@@ -60,9 +60,11 @@ type LetterFormProps = {
 function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
   const [bodyText, setBodyText] = useState(template.template);
   const [bodyTextEdited, setBodyTextEdited] = useState(false);
-  const [myAddress, setMyAddress] = useState({} as Address);
+  const [myAddress, setMyAddress] = useState({} as LobAddress);
   const [variableMap, setVariableMap] = useState({} as Record<string, string>);
-  const [checkedAddresses, setCheckedAddresses] = useState([] as Address[]);
+  const [checkedAddresses, setCheckedAddresses] = useState(
+    [] as OfficialAddress[]
+  );
   const [officials, setOfficials] = useState([] as OfficialAddress[]);
   const [isSearching, setIsSearching] = useState(false);
 
@@ -79,7 +81,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
     }
 
     if (!template.addresses || template.addresses.length === 0) {
-      const singleLineAddress = addressToSingleLine(myAddress);
+      const singleLineAddress = lobAddressToSingleLine(myAddress);
       const officialsFetcher = new CombinedOfficialFetchingService(
         googleApiKey
       );
@@ -143,7 +145,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
    * @param {boolean} isChecked was the address checked or unchecked
    * @param {Address} address the address in question
    */
-  function onAddressSelected(isChecked: boolean, address: Address) {
+  function onAddressSelected(isChecked: boolean, address: OfficialAddress) {
     if (isChecked) {
       setCheckedAddresses(_.uniq([...checkedAddresses, address]));
     } else {
@@ -158,7 +160,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
   /** This is the handler we pass to the user address MyAddressInput sub-component
    * @param {Address} address the user inputted address
    */
-  function updateAddress(address: Address) {
+  function updateMyAddress(address: LobAddress) {
     setMyAddress(address);
 
     updateField("YOUR NAME", address.name);
@@ -176,7 +178,7 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
     <div className="pure-form letter-form">
       <fieldset>
         {isTestMode() && <div className="alert-test">TEST MODE</div>}
-        <MyAddressInput updateAddress={updateAddress} />
+        <MyAddressInput updateAddress={updateMyAddress} />
 
         <TemplateInputs variables={variables} updateField={updateField} />
         <div className="row">
