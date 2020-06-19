@@ -1,9 +1,22 @@
 import React, { ReactElement } from "react";
-import { Address, OfficialAddress, OfficialRestrict } from "./types";
+import { Address, OfficialAddress } from "./types";
 import { OfficalAddressCheckbox } from "./OfficalAddressCheckbox";
+
+type OfficialAddressCheckboxListProps = {
+  /** list of addresses to render, currently not used by callers */
+  addresses: Address[];
+  /** list of official addresses to render from google & blackmad APIs */
+  officials: OfficialAddress[];
+  /** the user's address, only used for showing a status message based on how filled out it is,
+   * could be refactored */
+  myAddress: Address;
+  /** callback when an address is chekced or unchecked */
+  onAddressSelected: (b: boolean, c: Address) => void;
+};
 
 /** Renders block of addresses with checkboxes from google & citycouncil API responses
  *
+ * @param {OfficialAddressCheckboxListProps} the component props
  * @return {ReactElement} the rendered component
  */
 export function OfficialAddressCheckboxList({
@@ -11,13 +24,7 @@ export function OfficialAddressCheckboxList({
   onAddressSelected,
   officials,
   myAddress,
-}: {
-  addresses: Address[];
-  officials: OfficialAddress[];
-  onAddressSelected: (b: boolean, c: Address) => void;
-  restricts?: OfficialRestrict[];
-  myAddress: Address;
-}): ReactElement {
+}: OfficialAddressCheckboxListProps): ReactElement {
   const officialAddresses: OfficialAddress[] =
     (addresses || []).length > 0
       ? addresses.map((address) => {
