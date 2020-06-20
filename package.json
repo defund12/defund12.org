@@ -21,8 +21,8 @@
         "ts-jest": "^26.1.0"
     },
     "scripts": {
-        "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
         "lint-fix": "eslint 'src/**/*.{ts?(x),js?(x)}' --fix",
+        "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
         "test": "jest",
         "verify": "yarn lint && yarn test",
         "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; jest # run all checks no matter the results",
@@ -42,6 +42,8 @@
         "gatsby-source-filesystem": "^2.3.11",
         "gatsby-transformer-remark": "^2.8.15",
         "gatsby-transformer-yaml": "^2.4.4",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
         "node-sass": "^4.14.1",
         "query-string": "^6.13.1",
         "react": "^16.13.1",
@@ -57,5 +59,13 @@
         "unified": "^9.0.0",
         "uuid": "^8.1.0",
         "webpack": "^4.43.0"
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx}": "npm run verify"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
     }
 }
