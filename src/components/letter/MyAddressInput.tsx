@@ -91,7 +91,7 @@ export default function MyAddressInput({
 
             <div className="pure-u-1 pure-u-md-1-3">
               <input
-                className="fullWidth"
+                className="full-width"
                 placeholder="Zipcode"
                 type="text"
                 name="zip"
