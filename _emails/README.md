@@ -21,7 +21,7 @@ When adding templates, please ensure you are using UTF-8 encoding. Please do not
 
 ## File naming conventions
 
-Please use spaces when creating new markdown files and directories. For example:
+Please use underscores for spaces when creating new markdown files and directories. For example:
 
 ```
 _emails/us/california/san_francisco.md
@@ -34,7 +34,7 @@ _emails/us/new_york/hudson_valley.md
 ---
 title: <city, state_initials>
 layout: email
-permalink: "/<link_address>"
+permalink: /<link_address>
 name: <name>
 city: <city>
 state: <state_initials>
@@ -46,6 +46,6 @@ body: |-
 expiration_date: <YYYY-MM-DD>
 organization: <organization>  
 redirect_from:
-- "/<redirect_link_address>"  
+- /<redirect_link_address>
 ---
 ```
