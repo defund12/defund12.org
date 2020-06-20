@@ -15,7 +15,7 @@ export interface LobAddress {
   address_state: string;
   address_zip: string;
   address_country: string;
-  email: string;
+  email?: string;
 }
 
 export interface Template {

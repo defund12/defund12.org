@@ -33,6 +33,7 @@ export function officialAddressToLobAddress(
     address_state: officialAddress.address.state,
     address_zip: officialAddress.address.zip,
     address_country: "US",
+    email: officialAddress.email,
   };
 }
 
