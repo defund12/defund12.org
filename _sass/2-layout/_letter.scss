@@ -1,4 +1,8 @@
 .letter-form {
+  * {
+    font-family: inherit !important;
+  }
+
   .alert {
     padding: 20px;
     background-color: #f44336; /* Red */
@@ -15,10 +19,6 @@
     margin: 0.5em;
   }
 
-  .pure-g, input {
-    font-family: inherit !important;
-  }
-
   div.pure-control-group {
     margin-top: unset;
   }
@@ -30,6 +30,16 @@
     border-width: 1px;
     padding: 8px 12px;
     margin-top: 12px;
+  }
+
+  .right-pad-input {
+    input {
+      width: calc(100% - 5px);
+    }
+  }
+
+  .full-width {
+    width: 100%;
   }
 
   .pure-form fieldset {
