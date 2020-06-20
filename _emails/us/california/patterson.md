@@ -1,15 +1,15 @@
 ---
-title: "Patterson, CA"
+title: Patterson, CA
 permalink: "/patterson"
-name: "Letter to Mayor and City Council"
-city: "Patterson"
-state: "CA"
+name: Letter to Mayor and City Council
+city: Patterson
+state: CA
 recipients:
-- "dnovelli@ci.patterson.ca.us"
-- "jnaranjo@ci.patterson.ca.us"
-- "dmccord@ci.patterson.ca.us"
-- "dfarinha@ci.patterson.ca.us"
-- "aparham@ci.patterson.ca.us"
+- dnovelli@ci.patterson.ca.us
+- jnaranjo@ci.patterson.ca.us
+- dmccord@ci.patterson.ca.us
+- dfarinha@ci.patterson.ca.us
+- aparham@ci.patterson.ca.us
 body: |-
   Message: [Don't forget to replace the [x]'s with your information, and consider adding a couple of sentences in your own words to ensure this message gets past email filters.]
 
@@ -31,6 +31,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
