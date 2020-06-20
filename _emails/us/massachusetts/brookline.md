@@ -1,17 +1,17 @@
 ---
-title: "Brookline, MA"
+title: Brookline, MA
 permalink: "/brookline"
-name: "Letter to Select Board"
-city: "Brookline"
-state: "MA"
-layout: "email"
+name: Letter to Select Board
+city: Brookline
+state: MA
+layout: email
 recipients:
-- "mkleckner@brooklinema.gov"
-- "bgreene@brooklinema.gov"
-- "nheller@brooklinema.gov"
-- "hhamilton@brooklinema.gov"
-- "rfernandez@brooklinema.gov"
-- "jvanscoyoc0@gmail.com"
+- mkleckner@brooklinema.gov
+- bgreene@brooklinema.gov
+- nheller@brooklinema.gov
+- hhamilton@brooklinema.gov
+- rfernandez@brooklinema.gov
+- jvanscoyoc0@gmail.com
 body: |-
   Dear Select Board,
 
