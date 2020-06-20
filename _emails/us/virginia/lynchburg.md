@@ -1,20 +1,20 @@
 ---
-title: "Lynchburg, VA"
+title: Lynchburg, VA
 permalink: "/lynchburg"
 name: Letter to the City Council and OMB
-city: "Lynchburg"
-state: "VA"
+city: Lynchburg
+state: VA
 recipients:
-- "Beau.wright@lynchburgva.gov"
-- "Sterling.wilder@lynchburgva.gov"
-- "Turner.perrow@lynchburgva.gov"
-- "Randy.nelson@lynchburgva.gov"
-- "Jeff@jeffhelgeson.com"
-- "Maryjane.dolan@lynchburgva.gov"
-- "Treney.tweedy@lynchburgva.gov"
-- "Donna.witt@lynchburgva.gov"
-- "Starlette.early@lynchburgva.gov"
-- "Megan.palmer@lynchburgva.gov"
+- Beau.wright@lynchburgva.gov
+- Sterling.wilder@lynchburgva.gov
+- Turner.perrow@lynchburgva.gov
+- Randy.nelson@lynchburgva.gov
+- Jeff@jeffhelgeson.com
+- Maryjane.dolan@lynchburgva.gov
+- Treney.tweedy@lynchburgva.gov
+- Donna.witt@lynchburgva.gov
+- Starlette.early@lynchburgva.gov
+- Megan.palmer@lynchburgva.gov
 body: |-
   Dear Members of City Council & Office of Management and Budget,
 
@@ -33,6 +33,6 @@ body: |-
   [YOUR PHONE NUMBER]
 
   [1] https://www.lynchburgva.gov/sites/default/files/COLFILES/Financial-Services/Budget/FY2021/PROPOSED%20FY%202021.pdf
-layout: "email"
+layout: email
 ---
 
