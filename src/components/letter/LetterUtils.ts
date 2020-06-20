@@ -3,5 +3,5 @@
  * @return {boolean} is in test mode
  */
 export const isTestMode = (): boolean => {
-  return window.location.host !== "mail-your-rep.web.app";
+  return process.env.NODE_ENV === 'development'
 };
