@@ -1,8 +1,39 @@
 import * as asyncHandler from "express-async-handler";
 
-import { startPaymentRequestSchema, StartPaymentRequestType } from "../types";
 import { orderCollection } from "../database";
 import { testStripe, prodStripe, TestConfig, ProdConfig } from "../apis";
+import Joi = require("@hapi/joi");
+
+import "joi-extract-type";
+
+export const addressSchema = Joi.object({
+  name: Joi.string().required(),
+  address_line1: Joi.string().required(),
+  address_line2: Joi.string().optional(),
+  address_city: Joi.string().required(),
+  address_state: Joi.string().required(),
+  address_zip: Joi.string().required(),
+  address_country: Joi.string().default("US"),
+  email: Joi.string().email(),
+});
+
+export type Address = Joi.extractType<typeof addressSchema>;
+
+export const startPaymentRequestSchema = Joi.object({
+  fromAddress: addressSchema.required(),
+  toAddresses: Joi.array().items(addressSchema).min(1),
+  body: Joi.string().required(),
+  email: Joi.string().email().required(),
+  test: Joi.bool().default(false),
+});
+
+export type Order = Joi.extractType<typeof startPaymentRequestSchema> & {
+  orderId: string;
+  isTest: boolean;
+};
+export type StartPaymentRequestType = Joi.extractType<
+  typeof startPaymentRequestSchema
+>;
 
 const StartPayment = asyncHandler(async (req, res) => {
   const host = req.get("Origin") || req.get("origin");
