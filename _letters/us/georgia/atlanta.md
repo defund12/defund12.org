@@ -6,7 +6,7 @@ city: Atlanta
 state: GA
 officials:
 - locality:*
-body: "Hi, my name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I am asking to
+body: "Hi, my name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD]. I am asking to
   redirect money away from the Atlanta PD and into the following social services:
   [Where you would like to see police budget redirected, like Community Development, COVID Relief, Education, Parks & Recreation, targeted
   support for marginalized communities?]. \n\nI have noticed that in the 2021 budget

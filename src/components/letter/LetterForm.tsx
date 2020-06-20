@@ -37,8 +37,9 @@ function parseVars(
   );
 
   if (!emailKey) {
-    variables.push("YOUR EMAIL");
-    emailKey = "YOUR EMAIL";
+    const DEFAULT_EMAIL_ADDRESS_VARIABLE = "YOUR EMAIL ADDRESS";
+    variables.push(DEFAULT_EMAIL_ADDRESS_VARIABLE);
+    emailKey = DEFAULT_EMAIL_ADDRESS_VARIABLE;
   }
 
   return { variables, emailKey };
