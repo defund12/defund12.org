@@ -3,7 +3,11 @@ import * as queryString from "query-string";
 import React from "react";
 import { DefundUtils } from "../../DefundUtils";
 import { EmailData } from "../../types/EmailData";
-import { EmailConfig, EmailProps } from "../../types/PropTypes";
+import {
+  EmailConfig,
+  EmailProps,
+  OptionalLayoutProps,
+} from "../../types/PropTypes";
 import Layout from "../common/Layout";
 import EmailList from "../email-list/EmailList";
 
@@ -25,8 +29,7 @@ export default class Email extends React.Component<
 > {
   siteConfig: EmailConfig;
   emailData: EmailData;
-  title: string;
-  meta: string;
+  layoutProps: OptionalLayoutProps;
   autoOpen = false;
 
   /**
@@ -37,8 +40,14 @@ export default class Email extends React.Component<
     super(props);
     this.siteConfig = this.props.data.siteConfig;
     this.emailData = this.props.data.markdownRemark.frontmatter;
-    this.title = `Defund 12 in ${this.emailData.city}, ${this.emailData.state}`;
-    this.meta = `Send a pre-written email directly to ${this.emailData.city}, ${this.emailData.state} officials`;
+    this.layoutProps = {
+      pageTitle: `Defund12 in ${this.emailData.city}, ${this.emailData.state}`,
+      meta: `Send a pre-written email directly to ${this.emailData.city}, ${this.emailData.state} officials`,
+      metaQueryString: queryString.stringify({
+        state: this.emailData.state,
+        city: this.emailData.city,
+      }),
+    };
     this.state = new EmailState();
   }
 
@@ -98,7 +107,7 @@ export default class Email extends React.Component<
    */
   render(): React.ReactNode {
     return (
-      <Layout pageTitle={this.title} meta={this.meta}>
+      <Layout {...this.layoutProps}>
         <section className="emailPageHeader">
           <h2>{this.emailData.name}</h2>
           <b>

@@ -9,6 +9,8 @@ export interface SiteConfig {
   logoUrl: string;
   /** A URL pointing to a favicon logo. */
   faviconUrl: string;
+  /** A URL pointing to the meta preview image generation API. */
+  metaPreviewUrl: string;
   /** A message that appears when an email is opened through a shared link. */
   autoOpenMessage: string;
   /**  */
