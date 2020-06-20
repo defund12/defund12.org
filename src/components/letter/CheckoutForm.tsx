@@ -2,9 +2,6 @@
 import React, { useState, ReactElement } from "react";
 import { LobAddress, LETTER_COST } from "./LetterTypes";
 
-import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
-
 import { loadStripe } from "@stripe/stripe-js";
 import { isTestMode } from "./LetterUtils";
 
@@ -125,11 +122,11 @@ export function CheckoutForm({
 
   return (
     <>
-      {error && <Alert variant="danger">{error}</Alert>}
+      {error && <div className="alert">{error}</div>}
       <form onSubmit={handleSubmit} className="text-center">
-        <Button variant="primary" type="submit" disabled={isDisabled}>
+        <button type="submit" disabled={isDisabled}>
           {makeButtonText()}
-        </Button>
+        </button>
       </form>
     </>
   );
