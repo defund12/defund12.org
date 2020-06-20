@@ -1,21 +1,21 @@
 ---
-title: "Vallejo, CA"
+title: Vallejo, CA
 permalink: "/vallejo-ca"
-name: "Letter to City Manager, City Council, and County Officials"
-city: "Vallejo"
-state: "CA"
-layout: "email"
+name: Letter to City Manager, City Council, and County Officials
+city: Vallejo
+state: CA
+layout: email
 recipients:
-- "michelle.straub@cityofvallejo.net"
-- "Bob.Sampayan@cityofvallejo.net"
-- "Hermie.Sunga@cityofvallejo.net"
-- "hakeem.brown@cityofvallejo.net"
-- "Pippin.Dew@cityofvallejo.net"
-- "Robert.McConnell@cityofvallejo.net"
-- "Katy.Miessner@cityofvallejo.net"
-- "Rozzana.Verder-Aliga@cityofvallejo.net"
-- "ehannigan@solanocounty.com"
-- "mebrown@solanocounty.com"
+- michelle.straub@cityofvallejo.net
+- Bob.Sampayan@cityofvallejo.net
+- Hermie.Sunga@cityofvallejo.net
+- hakeem.brown@cityofvallejo.net
+- Pippin.Dew@cityofvallejo.net
+- Robert.McConnell@cityofvallejo.net
+- Katy.Miessner@cityofvallejo.net
+- Rozzana.Verder-Aliga@cityofvallejo.net
+- ehannigan@solanocounty.com
+- mebrown@solanocounty.com
 body: |-
   To City Manager Greg Nyhoff, the Vallejo City Council, and Solano County Elected Officials,
 
