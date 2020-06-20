@@ -63,6 +63,7 @@ class _Layout extends React.Component<LayoutProps> {
   }
 }
 
+// todo: add separate template for email and for index/404 so prop types are more clearly defined
 /**
  * The site layout, which contains elements to
  * place in <head> through React Helmet.
@@ -82,6 +83,7 @@ export default function Layout(
             meta
             logoUrl
             faviconUrl
+            metaPreviewUrl
           }
         }
       `}
@@ -92,6 +94,11 @@ export default function Layout(
             props.pageTitle ? props.pageTitle : data.siteConfig.siteTitle
           }
           meta={props.meta ? props.meta : data.siteConfig.meta}
+          logoUrl={
+            props.metaQueryString
+              ? data.siteConfig.metaPreviewUrl + props.metaQueryString
+              : data.siteConfig.logoUrl
+          }
         >
           {props.children}
         </_Layout>
