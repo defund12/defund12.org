@@ -1,14 +1,14 @@
 ---
-title: "Jefferson County, CO"
+title: Jefferson County, CO
 permalink: "/jeffersoncounty"
-name: "Letter to Board of County Commissioners"
-city: "Jefferson County"
-state: "CO"
-layout: "email"
+name: Letter to Board of County Commissioners
+city: Jefferson County
+state: CO
+layout: email
 recipients:
-- "ldahlkem@jeffco.us"
-- "commish1@jeffco.us"
-- "commish2@jeffco.us"
+- ldahlkem@jeffco.us
+- commish1@jeffco.us
+- commish2@jeffco.us
 body: |-
   Dear Jefferson County Board of County Commissioners:
 
