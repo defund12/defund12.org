@@ -9,7 +9,7 @@ officials:
 - locality:legislatorUpperBody
 - locality:headOfState
 body: "My name is [YOUR NAME] and I am a resident
-  of [BOROUGH]. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for
+  of [YOUR BOROUGH]. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for
   the Fiscal Year 2021, especially to education and youth programs, while refusing
   to slash the NYPD budget by any significant margin. \n\nI am sending this letter
   today to demand

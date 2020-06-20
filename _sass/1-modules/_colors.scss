@@ -10,6 +10,7 @@
   --bg_: #f5f5f5;
   --bg__: #fff;
   --transparent: #ffffff00;
+  --highlight_block: #e3e3f1;
 
   @media (prefers-color-scheme: dark) {
     --text: #ddd;
@@ -22,5 +23,6 @@
     --bg_: #181818;
     --bg__: #222222;
     --transparent: #00000000;
+    --highlight_block: #435472;
   }
 }

@@ -1,11 +1,15 @@
-.alert-test {
-  padding: 20px;
-  background-color: #f44336; /* Red */
-  color: white;
-  margin-bottom: 15px;
+.emailContent div.letter-form {
+  margin-top: unset;
 }
 
 .letter-form {
+  .alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+
   textarea {
     width: 100%;
     height: 100%;
@@ -17,10 +21,28 @@
   div.pure-control-group {
     margin-top: unset;
   }
+
+  button {
+    border-color: hsl(0,0%,80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 12px;
+  }
+
+  .pure-form fieldset {
+    padding: .25em 0 .25em;
+  }
+
+  .text-center {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .bodyWrapper {
-  background: cornsilk;
+  background: var(--highlight_block);
+  border-radius: 4px;
   margin: 10px;
   padding: 10px;
   height: 60vh;
