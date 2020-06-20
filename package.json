@@ -18,15 +18,11 @@
         "eslint-plugin-react": "^7.20.0",
         "gts": "^2.0.2",
         "jest": "25.5.4",
-        "markdownlint": "^0.20.3",
-        "markdownlint-cli": "^0.23.1",
         "ts-jest": "^26.1.0"
     },
     "scripts": {
-        "lint": "npm run lint-ts && npm run lint-markdown",
         "lint-fix": "eslint 'src/**/*.{ts?(x),js?(x)}' --fix",
-        "lint-ts": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
-        "lint-markdown": "markdownlint --ignore jekyll-vue-template --ignore .github --ignore node_modules --ignore test --ignore _emails/README.md _emails/**/*.md",
+        "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
         "test": "jest",
         "verify": "yarn lint && yarn test",
         "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; jest # run all checks no matter the results",
@@ -65,8 +61,7 @@
         "webpack": "^4.43.0"
     },
     "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx}": "npm run verify",
-        "**/*.md": "npm run verify"
+        "src/**/*.{js,jsx,ts,tsx}": "npm run verify"
     },
     "husky": {
         "hooks": {
