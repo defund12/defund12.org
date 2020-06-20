@@ -39,3 +39,12 @@ $x_8: 64px;
     }
   }
 }
+
+@mixin highlightedSection {
+  padding: $x_4 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg_);
+}
