@@ -1,105 +1,32 @@
-import { prodStripe, testStripe, GoogleApiKey, ProdConfig, TestConfig } from "./apis";
-
 import * as express from "express";
-import * as asyncHandler from "express-async-handler";
-import axios from "axios";
 
 import cors = require("cors");
-
 import bodyParser = require("body-parser");
+
+import LobWebhookHandler from "./handlers/LobWebhook";
+import StripPaymentWebhookHandler from "./handlers/StripPaymentWebhook";
+import StartPaymentHandler from "./handlers/LobWebhook";
+
 const app = express();
 
+// allow json requests from anywhere for ease of use
+// these are hosted on cloudfunctions.net but our frontend is on defund12.org
 app.use(cors({ origin: true }));
 
-import { startPaymentRequestSchema, StartPaymentRequestType } from "./types";
-import { orderCollection } from "./database";
-import { markOrderPaid, notifyUserAboutAlmostDelivered } from "./orders";
-
+// automatically parse json POST bodies
 app.use(bodyParser.json());
 
-app.get(
-  "/findReps",
-  asyncHandler(async (req, res) => {
-    // Optionally the request above could also be done as
-    const response = await axios.get("https://www.googleapis.com/civicinfo/v2/representatives", {
-      params: {
-        address: req.query.address,
-        key: GoogleApiKey,
-      },
-    });
-  
-    res.json(response.data);
-  })
-);
+// Called from the frontend to start the stripe->webhook->lob flow
+// Saves the order in the database and redirects to stripe checkout flow
+app.post("/startPayment", StartPaymentHandler);
 
-app.post(
-  "/startPayment",
-  asyncHandler(async (req, res) => {
-    const host = req.get("Origin") || req.get("origin");
+// Callback from stripe when a payment is successful
+// This kicks off actually sending the order to lob
+app.post("/paymentWebhook", StripPaymentWebhookHandler);
 
-    const validation = startPaymentRequestSchema.validate(req.body);
-    if (validation.error) {
-      res.status(500).json({ errors: validation.error.details });
-      return;
-    }
-
-    const body = req.body as StartPaymentRequestType;
-    
-    const isTest = body.test;
-
-    const toAddresses = body.toAddresses;
-
-    const orderRef = orderCollection.doc();
-    const orderId = orderRef.id;
-
-    const stripe = isTest ? testStripe : prodStripe;
-    const productId = isTest ? TestConfig.stripe.product_id : ProdConfig.stripe.product_id;
-
-    const stripeSession = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"],
-      line_items: [
-        {
-          price: productId,
-          quantity: (toAddresses || []).length,
-        },
-      ],
-      customer_email: body.email,
-      client_reference_id: orderId,
-      mode: "payment",
-      success_url: `${host}/letterSuccess?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${host}/cancel`,
-    });
-
-    orderRef.set({ ...body, orderId, isTest: isTest || false }).then(() => {
-      res.json({ sessionId: stripeSession.id });
-    });
-  })
-);
-
-// Match the raw body to content type application/json
-app.post(
-  "/paymentWebhook",
-  asyncHandler(async (req, res) => {
-    const event = req.body;
-
-    // Handle the event
-    switch (event.type) {
-      case "checkout.session.completed":
-        await markOrderPaid(event.data.object.client_reference_id);
-        return res.json({ received: true });
-      default:
-        // Unexpected event type
-        return res.status(400).end();
-    }
-  })
-);
-
-app.post(
-  "/lob/webhook",
-  asyncHandler(async (req, res) => {
-    notifyUserAboutAlmostDelivered(req.body);
-    return res.json({});
-  })
-)
+// called by Lob.com on various events in the lifecycle of sending
+// a letter. On our plan, we only get one event, so we use the
+// "almost delivered" event.
+app.post("/lob/webhook", LobWebhookHandler);
 
 export default app;

@@ -3,7 +3,7 @@ import * as functions from "firebase-functions";
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
 
-import app from "./api";
+import app from "./app";
 import { executeOrder } from "./orders";
 import { Order } from "./types";
 
@@ -11,7 +11,7 @@ exports.api = functions.https.onRequest(app);
 
 exports.executeOrder = functions.firestore
   .document("orders/{orderId}")
-  .onUpdate((change, _context) => {
+  .onUpdate((change) => {
     // Get an object representing the document
     // e.g. {'name': 'Marie', 'age': 66}
     const newValue = change.after.data();
