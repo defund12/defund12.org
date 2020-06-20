@@ -1,17 +1,17 @@
 ---
-title: "Oxford, OH"
+title: Oxford, OH
 permalink: "/oxford"
-name: "Letter to City Council"
-city: "Oxford"
-state: "OH"
+name: Letter to City Council
+city: Oxford
+state: OH
 recipients:
-- "mikesmith@cityofoxford.org"
-- "wsnavely@cityofoxford.org"
-- "jbracken@cityofoxford.org"
-- "gellerbe@cityofoxford.org"
-- "dprytherch@cityofoxford.org"
-- "craghu@cityofoxford.org"
-- "esouthard@cityofoxford.org"
+- mikesmith@cityofoxford.org
+- wsnavely@cityofoxford.org
+- jbracken@cityofoxford.org
+- gellerbe@cityofoxford.org
+- dprytherch@cityofoxford.org
+- craghu@cityofoxford.org
+- esouthard@cityofoxford.org
 body: |-
   Message: (Don't forget to replace the [X]'s with your information!)
 
@@ -36,6 +36,6 @@ body: |-
   [YOUR PHONE NUMBER]
 
   [1] https://www.cityofoxford.org/sites/default/files/finance/2020%20Budget%20Final.pdf
-layout: "email"
+layout: email
 ---
 
