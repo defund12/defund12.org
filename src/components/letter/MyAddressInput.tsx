@@ -65,40 +65,43 @@ export default function MyAddressInput({
           />
 
           <div className="pure-g">
-            <input
-              className="pure-u-1 pure-u-md-1-3"
-              placeholder="City"
-              name="city"
-              onChange={(e) =>
-                setAddress({
-                  address_city: e.target.value,
-                })
-              }
-            />
+            <div className="right-pad-input pure-u-1 pure-u-md-1-3">
+              <input
+                placeholder="City"
+                name="city"
+                onChange={(e) =>
+                  setAddress({
+                    address_city: e.target.value,
+                  })
+                }
+              />
+            </div>
+            <div className="right-pad-input pure-u-1 pure-u-md-1-3">
+              <input
+                placeholder="State"
+                type="text"
+                name="state"
+                onChange={(e) =>
+                  setAddress({
+                    address_state: e.target.value,
+                  })
+                }
+              />
+            </div>
 
-            <input
-              className="pure-u-1 pure-u-md-1-3"
-              placeholder="State"
-              type="text"
-              name="state"
-              onChange={(e) =>
-                setAddress({
-                  address_state: e.target.value,
-                })
-              }
-            />
-
-            <input
-              className="pure-u-1 pure-u-md-1-3"
-              placeholder="Zipcode"
-              type="text"
-              name="zip"
-              onChange={(e) =>
-                setAddress({
-                  address_zip: e.target.value,
-                })
-              }
-            />
+            <div className="pure-u-1 pure-u-md-1-3">
+              <input
+                className="fullWidth"
+                placeholder="Zipcode"
+                type="text"
+                name="zip"
+                onChange={(e) =>
+                  setAddress({
+                    address_zip: e.target.value,
+                  })
+                }
+              />
+            </div>
           </div>
         </div>
       </fieldset>
