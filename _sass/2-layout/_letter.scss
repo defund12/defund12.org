@@ -35,6 +35,11 @@
   .right-pad-input {
     input {
       width: calc(100% - 5px);
+
+      @include breakpoint(s) {
+        width: 100%;
+
+      }
     }
   }
 

@@ -14,22 +14,28 @@ export default class LetterSuccess extends React.Component<
   render(): React.ReactNode {
     return (
       <Layout {...this.props.data.siteConfig}>
-        <main className="content letter-success">
-          <div>
-            <h1 className="pagetitle">Letters Sent!</h1>
-            <br />
-            <p>
-              Thanks, you should get an email in a bit confirming your postcards
-              have been sent
-            </p>
-            <p className="italic">
-              If you don't in like ... 15 minutes or so, email us at{" "}
-              <a href="mailto:defund12@blackmad.com">defund12@blackmad.com</a>
-            </p>
-            <br />
-            <br />
+        <article className="letterContentSection">
+          <div className="container">
+            <div className="letterContent">
+              <div>
+                <h1 className="pagetitle">Letters Sent!</h1>
+                <br />
+                <p>
+                  Thanks, you should get an email in a bit confirming your
+                  postcards have been sent
+                </p>
+                <p className="italic">
+                  If you don't in like ... 15 minutes or so, email us at{" "}
+                  <a href="mailto:defund12@blackmad.com">
+                    defund12@blackmad.com
+                  </a>
+                </p>
+                <br />
+                <br />
+              </div>
+            </div>
           </div>
-        </main>
+        </article>
       </Layout>
     );
   }
