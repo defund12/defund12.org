@@ -42,6 +42,7 @@ function googleCivicRepsOfficialToOfficialAddresses(
       levels: office.levels,
       roles: office.roles,
       link: official.urls?.[0],
+      email: official.emails?.[0],
     });
   });
 }

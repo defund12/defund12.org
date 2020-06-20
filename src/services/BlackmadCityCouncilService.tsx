@@ -65,6 +65,7 @@ function blackmadCityCouncilEntryToOfficialAddresses(
       link,
       levels: [cityCouncilMember.office.level],
       roles: [cityCouncilMember.office.role],
+      email: cityCouncilMember.email,
     });
   });
 }

@@ -65,6 +65,7 @@ export interface OfficialAddressParams {
   link?: string;
   officeName: string;
   name: string;
+  email?: string;
 }
 
 /**
@@ -77,6 +78,7 @@ export class OfficialAddress implements LevelsAndRoles {
   levels: GoogleCivicRepsResponseLevel[];
   roles: GoogleCivicRepsResponseRole[];
   name: string;
+  email?: string;
 
   // eslint-disable-next-line require-jsdoc
   constructor({
@@ -86,6 +88,7 @@ export class OfficialAddress implements LevelsAndRoles {
     link,
     officeName,
     name,
+    email,
   }: OfficialAddressParams) {
     this.officeName = officeName;
     this.address = address;
@@ -93,5 +96,6 @@ export class OfficialAddress implements LevelsAndRoles {
     this.roles = roles;
     this.levels = levels;
     this.name = name;
+    this.email = email;
   }
 }
