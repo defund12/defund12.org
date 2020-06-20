@@ -1,6 +1,6 @@
 ---
 title: Philadelphia, PA
-permalink: "/philadelphia/letter"
+permalink: "/letter/philadelphia"
 name: Letter to Mayor and Council Members
 state: PA
 city: Philadelphia
