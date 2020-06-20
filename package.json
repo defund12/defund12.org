@@ -52,6 +52,7 @@
         "purecss": "^2.0.3",
         "query-string": "^6.13.1",
         "react": "^16.13.1",
+        "react-autosize-textarea": "^7.0.0",
         "react-bootstrap": "^1.0.1",
         "react-dom": "^16.13.1",
         "react-helmet": "^6.1.0",
