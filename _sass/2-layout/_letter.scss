@@ -51,13 +51,9 @@
 }
 
 .letter-success {
-  @include highlightedSection
+  @include highlightedSection;
 
-  .big {
-
-  }
-
-  .medium {
+  .italic {
     font-style: italic;
   }
 }

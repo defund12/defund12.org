@@ -18,11 +18,11 @@ export default class LetterSuccess extends React.Component<
           <div>
             <h1 className="pagetitle">Letters Sent!</h1>
             <br />
-            <p className="big">
+            <p>
               Thanks, you should get an email in a bit confirming your postcards
               have been sent
             </p>
-            <p className="medium">
+            <p className="italic">
               If you don't in like ... 15 minutes or so, email us at{" "}
               <a href="mailto:defund12@blackmad.com">defund12@blackmad.com</a>
             </p>
