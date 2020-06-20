@@ -1,11 +1,11 @@
 ---
-title: "Fayetteville, NC"
+title: Fayetteville, NC
 permalink: "/fayetteville"
-name: "Letter to the Mayor"
-city: "Fayetteville"
-state: "NC"
+name: Letter to the Mayor
+city: Fayetteville
+state: NC
 recipients:
-- "Mitch.Colvin@ci.fay.nc.us"
+- Mitch.Colvin@ci.fay.nc.us
 body: |-
   Dear Mayor Colvin,
 
@@ -25,6 +25,6 @@ body: |-
   [YOUR PHONE NUMBER]
 
   [1] https://fayettevillenc.gov/Home/ShowDocument?id=14504
-layout: "email"
+layout: email
 ---
 
