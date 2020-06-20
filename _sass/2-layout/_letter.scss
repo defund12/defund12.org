@@ -50,3 +50,14 @@
   flex-direction: column;
 }
 
+.letter-success {
+  @include highlightedSection
+
+  .big {
+
+  }
+
+  .medium {
+    font-style: italic;
+  }
+}
