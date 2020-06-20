@@ -1,17 +1,17 @@
 ---
-title: "Novi, MI"
+title: Novi, MI
 permalink: "/novi"
-name: "Letter to City Council"
-city: "Novi"
-state: "MI"
+name: Letter to City Council
+city: Novi
+state: MI
 recipients:
-- "bgatt@cityofnovi.org"
-- "dstaudt@cityofnovi.org"
-- "amutch@cityofnovi.org"
-- "lcasey@cityofnovi.org"
-- "kbreen@cityofnovi.org"
-- "hcrawford@cityofnovi.org"
-- "jfischer@cityofnovi.org"
+- bgatt@cityofnovi.org
+- dstaudt@cityofnovi.org
+- amutch@cityofnovi.org
+- lcasey@cityofnovi.org
+- kbreen@cityofnovi.org
+- hcrawford@cityofnovi.org
+- jfischer@cityofnovi.org
 body: |-
   Dear Novi City Council:
 
@@ -35,6 +35,6 @@ body: |-
   [YOUR PHONE NUMBER]
 
   [1] https://www.cityofnovi.org/Government/City-Services/City-Manager/Budget-and-Multi-Year-Financial-Plan-(Current-and/Budget2020-2021Recommended.aspx
-layout: "email"
+layout: email
 ---
 
