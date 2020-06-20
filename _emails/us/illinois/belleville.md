@@ -1,28 +1,28 @@
 ---
-title: "Belleville, IL"
+title: Belleville, IL
 permalink: "/belleville"
-name: "Letter to Mayor, City Council and City Officials"
-city: "Belleville"
-state: "IL"
+name: Letter to Mayor, City Council and City Officials
+city: Belleville
+state: IL
 recipients:
-- "meckert@belleville.net"
-- "jmeyer@belleville.net"
-- "treasurer@belleville.net"
-- "Ward1kinsella@belleville.net"
-- "Ward1hazel@belleville.net"
-- "Ward2pusa@belleville.net"
-- "Ward2duco@belleville.net"
-- "Ward3randle@belleville.net"
-- "Ward3ferguson@belleville.net"
-- "Ward4anthony@belleville.net"
-- "Ward4ovian@belleville.net"
-- "Ward5dintelman@belleville.net"
-- "Ward5schaefer@belleville.net"
-- "Ward6stiehl@belleville.net"
-- "Ward6rothweiler@belleville.net"
-- "Ward7elmore@belleville.net"
-- "Ward8wigginton@belleville.net"
-- "Ward8barfield@belleville.net"
+- meckert@belleville.net
+- jmeyer@belleville.net
+- treasurer@belleville.net
+- Ward1kinsella@belleville.net
+- Ward1hazel@belleville.net
+- Ward2pusa@belleville.net
+- Ward2duco@belleville.net
+- Ward3randle@belleville.net
+- Ward3ferguson@belleville.net
+- Ward4anthony@belleville.net
+- Ward4ovian@belleville.net
+- Ward5dintelman@belleville.net
+- Ward5schaefer@belleville.net
+- Ward6stiehl@belleville.net
+- Ward6rothweiler@belleville.net
+- Ward7elmore@belleville.net
+- Ward8wigginton@belleville.net
+- Ward8barfield@belleville.net
 body: |-
   Message: (Don't forget to replace the [x]'s with your information!)
 
@@ -41,6 +41,6 @@ body: |-
   [YOUR PHONE NUMBER]
 
   [1] https://www.belleville.net/ArchiveCenter/ViewFile/Item/2267
-layout: "email"
+layout: email
 ---
 
