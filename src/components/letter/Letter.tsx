@@ -60,9 +60,9 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
           <p>{this.siteConfig.letterMessage}</p>
         </section>
 
-        <article className="emailContentSection">
+        <article className="letterContentSection">
           <div className="container">
-            <div className="emailContent">
+            <div className="letterContent">
               <LetterForm
                 template={template}
                 googleApiKey={this.siteConfig.googleApiKey}

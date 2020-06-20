@@ -64,40 +64,42 @@ export default function MyAddressInput({
             }
           />
 
-          <input
-            className="pure-u-1"
-            placeholder="City"
-            name="city"
-            onChange={(e) =>
-              setAddress({
-                address_city: e.target.value,
-              })
-            }
-          />
+          <div className="pure-g">
+            <input
+              className="pure-u-1 pure-u-md-1-3"
+              placeholder="City"
+              name="city"
+              onChange={(e) =>
+                setAddress({
+                  address_city: e.target.value,
+                })
+              }
+            />
 
-          <input
-            className="pure-u-1"
-            placeholder="State"
-            type="text"
-            name="state"
-            onChange={(e) =>
-              setAddress({
-                address_state: e.target.value,
-              })
-            }
-          />
+            <input
+              className="pure-u-1 pure-u-md-1-3"
+              placeholder="State"
+              type="text"
+              name="state"
+              onChange={(e) =>
+                setAddress({
+                  address_state: e.target.value,
+                })
+              }
+            />
 
-          <input
-            className="pure-u-1"
-            placeholder="Zipcode"
-            type="text"
-            name="zip"
-            onChange={(e) =>
-              setAddress({
-                address_zip: e.target.value,
-              })
-            }
-          />
+            <input
+              className="pure-u-1 pure-u-md-1-3"
+              placeholder="Zipcode"
+              type="text"
+              name="zip"
+              onChange={(e) =>
+                setAddress({
+                  address_zip: e.target.value,
+                })
+              }
+            />
+          </div>
         </div>
       </fieldset>
     </>

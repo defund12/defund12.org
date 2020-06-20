@@ -1,8 +1,10 @@
 import React, { useState, useEffect, ReactElement, ChangeEvent } from "react";
+import TextareaAutosize from "react-autosize-textarea";
 
 import * as _ from "lodash";
 
 import "purecss/build/pure-min.css";
+import "purecss/build/grids-responsive-min.css";
 
 import { Template, LobAddress } from "./LetterTypes";
 import CheckoutForm from "./CheckoutForm";
@@ -178,22 +180,22 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
         <MyAddressInput updateAddress={updateMyAddress} />
 
         <TemplateInputs variables={variables} updateField={updateField} />
-        <div className="row">
-          <div className="bodyWrapper">
-            <textarea onChange={onBodyTextKeyPress} value={bodyText} />
+        <div className="pure-control-group">
+          <label>Letter Body</label>
 
-            {template.notes && (
-              <div
-                style={{
-                  fontStyle: "italic",
-                  textAlign: "right",
-                }}
-                className="p-1"
-              >
-                {template.notes}
-              </div>
-            )}
-          </div>
+          <TextareaAutosize onChange={onBodyTextKeyPress} value={bodyText} />
+
+          {template.notes && (
+            <div
+              style={{
+                fontStyle: "italic",
+                textAlign: "right",
+              }}
+              className="p-1"
+            >
+              {template.notes}
+            </div>
+          )}
         </div>
 
         <div className="pt-2 pb-2">
