@@ -1,23 +1,23 @@
 ---
-title: "Worcester, MA"
+title: Worcester, MA
 permalink: "/worcester"
-name: "Letter to Mayor Petty and City Officials"
-city: "Worcester"
-state: "MA"
-layout: "email"
+name: Letter to Mayor Petty and City Officials
+city: Worcester
+state: MA
+layout: email
 recipients:
-- "mayor@worcesterma.gov"
-- "BergmanM@worcesterma.gov"
-- "ColorioD@worcesterma.gov"
-- "KingK@worcesterma.gov"
-- "RosenG@worcesterma.gov"
-- "ToomeyK@worcesterma.gov"
-- "RoseS@worcesterma.gov"
-- "Mero-CarlsonC@worcesterma.gov"
-- "RussellG@worcesterma.gov"
-- "RiveraSA@worcesterma.gov"
-- "WallyM@worcesterma.gov"
-- "CityManager@worcesterma.gov"
+- mayor@worcesterma.gov
+- BergmanM@worcesterma.gov
+- ColorioD@worcesterma.gov
+- KingK@worcesterma.gov
+- RosenG@worcesterma.gov
+- ToomeyK@worcesterma.gov
+- RoseS@worcesterma.gov
+- Mero-CarlsonC@worcesterma.gov
+- RussellG@worcesterma.gov
+- RiveraSA@worcesterma.gov
+- WallyM@worcesterma.gov
+- CityManager@worcesterma.gov
 body: |-
   Dear [CITY OFFICIAL'S NAME],
 
