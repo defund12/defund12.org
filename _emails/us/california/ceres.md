@@ -1,16 +1,16 @@
 ---
-title: "Ceres, CA"
+title: Ceres, CA
 permalink: "/ceres"
-name: "Letter to Mayor and City Council"
-city: "Ceres"
-state: "CA"
+name: Letter to Mayor and City Council
+city: Ceres
+state: CA
 recipients:
-- "cvierra@ci.ceres.ca.us"
-- "ken.lane@ci.ceres.ca.us"
-- "bret.durossette@ci.ceres.ca.us"
-- "mike.kline@ci.ceres.ca.us"
-- "linda.ryno@ci.ceres.ca.us"
-- "channce.condit@ci.ceres.ca.us"
+- cvierra@ci.ceres.ca.us
+- ken.lane@ci.ceres.ca.us
+- bret.durossette@ci.ceres.ca.us
+- mike.kline@ci.ceres.ca.us
+- linda.ryno@ci.ceres.ca.us
+- channce.condit@ci.ceres.ca.us
 body: |-
   Message: [Don't forget to replace the [x]'s with your information, and consider adding a couple of sentences in your own words to ensure this message gets past email filters.]
 
@@ -32,6 +32,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
