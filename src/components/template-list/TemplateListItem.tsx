@@ -3,23 +3,23 @@ import { TemplateListItemProps } from "../../types/PropTypes";
 import { DefundUtils } from "../../DefundUtils";
 import { Link } from "gatsby";
 
-interface EmailListItemState {
+interface TemplateListItemState {
   /** A boolean indicating whether the copy button was recently clicked,
    * to change to the "✅(copied)" label. */
   clickActive: boolean;
 }
 
 /**
- * An individual email link, including copy button.
+ * An individual Template link, including copy button.
  */
-export class EmailListItem extends React.Component<
+export class TemplateListItem extends React.Component<
   TemplateListItemProps,
-  EmailListItemState
+  TemplateListItemState
 > {
   copyButtonText = "🔗";
   /**
    * Initialize the component and its state.
-   * @param {EmailListItemProps} props
+   * @param {TemplateListItemProps} props
    */
   constructor(props: TemplateListItemProps) {
     super(props);
