@@ -34,8 +34,8 @@ export function TemplateInputs({
           : variable;
 
         return (
-          <fieldset>
-            <div className="pure-control-group" key={variable}>
+          <fieldset key={variable}>
+            <div className="pure-control-group">
               <label>{label}</label>
               <input className="pure-u-1" type="text" onChange={onChange} />
             </div>

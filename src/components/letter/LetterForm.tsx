@@ -115,7 +115,11 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
     */
   function updateField(key: string, value: string) {
     const newMap = { ...variableMap };
-    newMap[key] = value;
+    if (!value) {
+      delete newMap[key];
+    } else {
+      newMap[key] = value;
+    }
     setVariableMap(newMap);
 
     if (bodyTextEdited) {
