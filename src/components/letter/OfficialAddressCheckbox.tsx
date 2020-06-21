@@ -31,9 +31,11 @@ export function OfficalAddressCheckbox({
 
   const key = `${officialAddress.name}:${officialAddress.officeName}`;
   return (
-    <label className="pure-checkbox" key={key}>
-      <input type="checkbox" onChange={onChange} />
-      <>
+    <label className="pure-checkbox official-checkbox" key={key}>
+      <div>
+        <input type="checkbox" onChange={onChange} />
+      </div>
+      <div>
         <b>{officialAddress.name}</b>
         {officialAddress.officeName && ` (${officialAddress.officeName})`},{" "}
         {officialAddressToSingleLine(officialAddress)}{" "}
@@ -42,7 +44,7 @@ export function OfficalAddressCheckbox({
             Read about their positions
           </a>
         )}
-      </>
+      </div>
     </label>
   );
 }
