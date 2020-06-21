@@ -1,17 +1,19 @@
 import * as React from "react";
 import { v1 as uuid } from "uuid";
 import { StaticQuery, graphql } from "gatsby";
-import { EmailListItem } from "./EmailPageLink";
+import { TemplateListItem } from "./TemplateListItem";
+
 import Select from "react-select";
 import { ReactSelectOption } from "../../types/ReactSelectOption";
 import {
-  EmailMetadata,
+  SharedTemplateMetadata,
   RemarkNode,
-  EmailMetadataGroup,
-} from "../../types/EmailData";
-import { EmailListProps } from "../../types/PropTypes";
+  TemplateMetadataGroup,
+  LayoutType,
+} from "../../types/TemplateData";
+import { TemplateListProps } from "../../types/PropTypes";
 
-export interface EmailListState {
+export interface TemplateListState {
   /**
    * The currently selected state option.
    */
@@ -24,7 +26,10 @@ export interface EmailListState {
  * _This is meant to be internal to this file and should probably not be
  * exported._
  */
-class _EmailList extends React.Component<EmailListProps, EmailListState> {
+class _TemplateList extends React.Component<
+  TemplateListProps,
+  TemplateListState
+> {
   stateOptions: Array<ReactSelectOption>;
   selectStyles = {
     option: (provided: React.CSSProperties) => ({
@@ -34,14 +39,14 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
   };
   /**
    * Initialize the list component along with its filter options.
-   * @param {EmailListProps} props
+   * @param {TemplateListProps} props
    */
-  constructor(props: EmailListProps) {
+  constructor(props: TemplateListProps) {
     super(props);
-    const emails = this.props.stateGroupedEmails;
+    const templates = this.props.stateGroupedTemplates;
 
     // generate the state selection options
-    this.stateOptions = emails.map((stateGroup) => ({
+    this.stateOptions = templates.map((stateGroup) => ({
       label: stateGroup.name,
       value: stateGroup.id,
     }));
@@ -56,12 +61,16 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
 
   /**
    * Renders each email definition it is passed into an email page link.
-   * @param {Array<EmailMetadata>} data
+   * @param {Array<SharedTemplateMetadata>} data
    *   An array of objects containing the email's top-level information.
    * @return {Array<React.ReactNode>}
    */
-  renderEmailLinks(data: Array<EmailMetadata>): Array<React.ReactNode> {
-    return data.map((email) => <EmailListItem key={uuid()} {...email} />);
+  renderEmailLinks(
+    data: Array<SharedTemplateMetadata>
+  ): Array<React.ReactNode> {
+    return data.map((email) => {
+      return <TemplateListItem key={uuid()} {...email} />;
+    });
   }
 
   /**
@@ -92,7 +101,7 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
         </div>
         <section className="cityList" id="emailLinks">
           <article>
-            {this.props.stateGroupedEmails
+            {this.props.stateGroupedTemplates
               .filter(
                 (stateGroup) =>
                   this.state.selectedState.value === 0 /* 'Choose state' */ ||
@@ -102,7 +111,7 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
                 return (
                   <ul key={uuid()} className="state">
                     <h2>{stateGroup.name}</h2>
-                    {this.renderEmailLinks(stateGroup.emails)}
+                    {this.renderEmailLinks(stateGroup.templates)}
                   </ul>
                 );
               })}
@@ -117,13 +126,13 @@ class _EmailList extends React.Component<EmailListProps, EmailListState> {
 /**
  * Groups the array of email metadata passed to it by state
  * and assigns each state an ID number.
- * @param {Array<EmailMetadata>} metadata
+ * @param {Array<SharedTemplateMetadata>} metadata
  *   Email metadata collected from markdown.
- * @return {Array<EmailMetadataGroup>}
+ * @return {Array<TemplateMetadataGroup>}
  */
-function groupEmailMetadataByState(
-  metadata: Array<EmailMetadata>
-): Array<EmailMetadataGroup> {
+function groupTemplateMetadataByState(
+  metadata: Array<SharedTemplateMetadata>
+): Array<TemplateMetadataGroup> {
   // map group the emails with all others in the same state
   const emailGroups = Object.values(
     metadata
@@ -131,19 +140,19 @@ function groupEmailMetadataByState(
       .sort((first, second) => (first.city > second.city ? 1 : -1))
       .reduce(
         (
-          prev: { [key: string]: EmailMetadataGroup },
-          current: EmailMetadata
+          prev: { [key: string]: TemplateMetadataGroup },
+          current: SharedTemplateMetadata
         ) => {
           const stateName = current.state;
 
           // if the state has not been added yet,
           // add a new email group for it
           if (!prev[stateName]) {
-            prev[stateName] = new EmailMetadataGroup(stateName);
+            prev[stateName] = new TemplateMetadataGroup(stateName);
           }
 
           // add the current email metadata to the group for its state
-          prev[stateName].emails.push(current);
+          prev[stateName].templates.push(current);
 
           return prev;
         },
@@ -159,16 +168,27 @@ function groupEmailMetadataByState(
   return emailGroups;
 }
 
+type TemplateListParams = {
+  /** filters the rendered entries to "email" or "letter" */
+  layout: LayoutType;
+  /** extra info displayed above the list */
+  header?: React.ReactElement;
+};
+
 /**
  * The main container for email links, including filtering.
+ * @param {string} layout the kinds of templates to show - email or letter
  * @return {React.ReactNode} The rendered email component,
  * with data from GraphQL.
  */
-export default function EmailList(): JSX.Element {
+export default function TemplateList({
+  layout,
+  header,
+}: TemplateListParams): JSX.Element {
   return (
     <StaticQuery
       query={graphql`
-        query EmailListQuery {
+        query TemplateListQuery {
           allMarkdownRemark(
             filter: {
               frontmatter: { permalink: { ne: null }, name: { ne: null } }
@@ -180,6 +200,7 @@ export default function EmailList(): JSX.Element {
                 name
                 city
                 state
+                layout
               }
             }
           }
@@ -188,13 +209,20 @@ export default function EmailList(): JSX.Element {
       render={(data: { allMarkdownRemark: { nodes: Array<RemarkNode> } }) => {
         // extract the email metadata from the nodes collected from markdown
         const allNodes = data.allMarkdownRemark.nodes;
-        const allEmailMetadata = allNodes.map(
-          (node: RemarkNode) => node.frontmatter
+        const allTemplateMetadata = allNodes
+          .map((node: RemarkNode) => node.frontmatter)
+          .filter((v) => v.layout === layout);
+
+        const stateGroupedTemplates = groupTemplateMetadataByState(
+          allTemplateMetadata
         );
 
-        const stateGroupedEmails = groupEmailMetadataByState(allEmailMetadata);
-
-        return <_EmailList stateGroupedEmails={stateGroupedEmails} />;
+        return (
+          <>
+            {header && <header>{header}</header>}
+            <_TemplateList stateGroupedTemplates={stateGroupedTemplates} />
+          </>
+        );
       }}
     />
   );

@@ -2,14 +2,14 @@ import { graphql, PageProps } from "gatsby";
 import * as queryString from "query-string";
 import React from "react";
 import { DefundUtils } from "../../DefundUtils";
-import { EmailData } from "../../types/EmailData";
+import { EmailData } from "../../types/TemplateData";
 import {
   EmailConfig,
   EmailProps,
   OptionalLayoutProps,
 } from "../../types/PropTypes";
 import Layout from "../common/Layout";
-import EmailList from "../email-list/EmailList";
+import EmailList from "../template-list/EmailList";
 
 /**
  * The @link {Email} component state.
@@ -202,7 +202,9 @@ export default class Email extends React.Component<
 
 export const pageQuery = graphql`
   query($permalink: String!) {
-    markdownRemark(frontmatter: { permalink: { eq: $permalink } }) {
+    markdownRemark(
+      frontmatter: { permalink: { eq: $permalink }, layout: { eq: "email" } }
+    ) {
       frontmatter {
         body
         cc

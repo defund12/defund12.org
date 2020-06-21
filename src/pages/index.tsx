@@ -1,7 +1,7 @@
 import React from "react";
 import { PageProps } from "gatsby";
 import Layout from "../components/common/Layout";
-import EmailList from "../components/email-list/EmailList";
+import EmailList from "../components/template-list/EmailList";
 import { SiteProps } from "../types/PropTypes";
 
 /**

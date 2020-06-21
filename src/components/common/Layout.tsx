@@ -54,6 +54,11 @@ class _Layout extends React.Component<LayoutProps> {
 
           {/* JS Includes */}
           {/* eslint-disable-next-line max-len*/}
+
+          {/* Google Maps - for geocoding letter addresses */}
+          <script
+            src={`https://maps.googleapis.com/maps/api/js?key=${this.props.googleApiKey}&libraries=places`}
+          ></script>
         </Helmet>
         <Header />
         {this.props.children}
@@ -84,6 +89,7 @@ export default function Layout(
             logoUrl
             faviconUrl
             metaPreviewUrl
+            googleApiKey
           }
         }
       `}

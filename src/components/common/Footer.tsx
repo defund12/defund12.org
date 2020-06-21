@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import { DefundUtils } from "../../DefundUtils";
 import { FooterProps } from "../../types/PropTypes";
 
@@ -23,25 +23,48 @@ class _Footer extends React.Component<FooterProps> {
    * @return {React.ReactNode} the rendered component
    */
   render() {
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    const isLetterPage = url.includes("/letters");
+
     return (
       <>
         <aside className="sticky">
-          <span
-            dangerouslySetInnerHTML={{
-              __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
-            }}
-          ></span>
+          <div>
+            <span className="city-request-link">
+              <span className="emojicon emojicon-city"></span>
+              <span
+                className="react-inserted"
+                dangerouslySetInnerHTML={{
+                  __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
+                }}
+              ></span>
+            </span>
+            {isLetterPage ? (
+              <span className="email-link">
+                <span className="emojicon">📧</span>
+                <Link to="/">Send an email</Link>
+              </span>
+            ) : (
+              <span className="snail-mail-link">
+                <span className="emojicon">📬</span>
+                <Link to="/letters">Send a letter</Link>
+                <span className="beta-bubble">BETA</span>
+              </span>
+            )}
+          </div>
         </aside>
         <footer className="footerMain">
-          <span
+          {/* TODO: determine if this is something we want to keep around
+            <span
+            className="react-inserted"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(
                 this.props.footerTextInstructions
               ),
             }}
-          ></span>
+          ></span> */}
           <span
-            className="divider footer"
+            className="divider footer react-inserted"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(this.props.contactEmailFooter),
             }}

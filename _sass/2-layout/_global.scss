@@ -1,12 +1,14 @@
 @import "../0-base/reset";
 @import "../1-modules/mixins";
 @import "../1-modules/colors";
+@import "../1-modules/content";
 @import "../1-modules/header";
 @import "../1-modules/stickyAside";
 @import "../1-modules/footer";
 
 @import "./_list";
 @import "./_email";
+@import "./_letter";
 
 body {
   text-rendering: optimizeLegibility;
@@ -118,4 +120,29 @@ ul, ol {
 #___gatsby,
 #gatsby-focus-wrapper {
   display: contents;
+}
+
+.beta-bubble {
+    background: var(--beta);
+    border-radius: 8px;
+    padding: 2px 5px;
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--beta-text)
+}
+
+.emojicon {
+    padding: 0 8px 0 0;
+    font-size: 20px;
+    &-city::after {
+      content: var(--emojicon-city)
+    }
+}
+
+.react-inserted {
+  display: inline-block;
+  p {
+    margin-bottom: 0;
+  }
 }

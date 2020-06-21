@@ -1,5 +1,10 @@
 import { SiteConfig } from "./SiteConfig";
-import { EmailMetadataGroup, EmailData, EmailMetadata } from "./EmailData";
+import {
+  TemplateMetadataGroup,
+  EmailData,
+  SharedTemplateMetadata,
+  LetterData,
+} from "./TemplateData";
 
 // {Page query result properties}
 export interface SiteProps {
@@ -24,6 +29,25 @@ export interface EmailProps {
   siteConfig: EmailConfig;
 }
 
+export type LetterConfig = Pick<
+  SiteConfig,
+  | "siteTitle"
+  | "meta"
+  | "logoUrl"
+  | "faviconUrl"
+  | "letterPageHeader"
+  | "googleApiKey"
+>;
+
+export type LettersPageConfig = Pick<SiteConfig, "letterPageHeader">;
+
+export interface LetterProps {
+  markdownRemark: {
+    frontmatter: LetterData;
+  };
+  siteConfig: LetterConfig;
+}
+
 export interface OptionalLayoutProps {
   pageTitle?: string;
   meta?: string;
@@ -33,7 +57,13 @@ export interface OptionalLayoutProps {
 // {Static query result properties}
 export type LayoutProps = Pick<
   SiteConfig,
-  "siteTitle" | "meta" | "faviconUrl" | "logoUrl" | "metaPreviewUrl"
+  | "siteTitle"
+  | "meta"
+  | "faviconUrl"
+  | "logoUrl"
+  | "metaPreviewUrl"
+  | "googleApiKey"
+  | "letterPageHeader"
 > &
   OptionalLayoutProps;
 
@@ -45,12 +75,12 @@ export type FooterProps = Pick<
 >;
 
 // {Component-provided properties}
-export interface EmailListProps {
+export interface TemplateListProps {
   /**
    * An array of tuples containing [state name,
-   * generated state ID, an array of emails].
+   * generated state ID, an array of email/letter templates].
    */
-  stateGroupedEmails: Array<EmailMetadataGroup>;
+  stateGroupedTemplates: Array<TemplateMetadataGroup>;
 }
 
-export type EmailListItemProps = EmailMetadata;
+export type TemplateListItemProps = SharedTemplateMetadata;
