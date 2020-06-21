@@ -36,6 +36,7 @@ export function OfficialAddressCheckboxList({
     <div className="pure-controls">
       {officialAddresses?.map((officialAddress) => (
         <OfficalAddressCheckbox
+          key={JSON.stringify(officialAddress)}
           officialAddress={officialAddress}
           onAddressSelected={onAddressSelected}
         />
