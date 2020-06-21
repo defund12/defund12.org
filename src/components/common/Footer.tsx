@@ -38,7 +38,7 @@ class _Footer extends React.Component<FooterProps> {
             </span>
             <span className="snail-mail-link">
               <span className="emojicon">&#x1F4EC;</span>
-              <Link to="/nyc/letter">Send a letter</Link>
+              <Link to="/letters">Send a letter</Link>
               <span className="beta-bubble">BETA</span>
             </span>
           </div>
