@@ -28,11 +28,12 @@ class _Footer extends React.Component<FooterProps> {
         <aside className="sticky">
           <span className="city-request-link">
             <span className="emojicon emojicon-city"></span>
-            <span className="react-inserted"
-            dangerouslySetInnerHTML={{
-              __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
-            }}>
-            </span>
+            <span
+              className="react-inserted"
+              dangerouslySetInnerHTML={{
+                __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
+              }}
+            ></span>
           </span>
           <span className="snail-mail-link">
             <span className="emojicon">&#x1F4EC;</span>
@@ -41,7 +42,8 @@ class _Footer extends React.Component<FooterProps> {
           </span>
         </aside>
         <footer className="footerMain">
-          <span className="react-inserted"
+          <span
+            className="react-inserted"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(
                 this.props.footerTextInstructions
