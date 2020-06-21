@@ -6,6 +6,7 @@ import Layout from "../common/Layout";
 import LetterList from "../template-list/LetterList";
 import LetterForm from "./LetterForm";
 import { OfficialRestrict } from "../../services/OfficialTypes";
+import { DefundUtils } from "../../DefundUtils";
 
 /**
  * A rendered email, containing links to send or copy.
@@ -57,6 +58,15 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
           <b>
             {this.letterData.city}, {this.letterData.state}
           </b>
+          <div className="buttons">
+            <a
+              onClick={() =>
+                DefundUtils.copyToClipboard(this.letterData.permalink, true)
+              }
+            >
+              Copy link
+            </a>
+          </div>
           <p>{this.siteConfig.letterMessage}</p>
         </section>
 

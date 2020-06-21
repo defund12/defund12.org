@@ -23,6 +23,9 @@ class _Footer extends React.Component<FooterProps> {
    * @return {React.ReactNode} the rendered component
    */
   render() {
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    const isLetterPage = url.includes("/letters");
+
     return (
       <>
         <aside className="sticky">
@@ -36,15 +39,22 @@ class _Footer extends React.Component<FooterProps> {
                 }}
               ></span>
             </span>
-            <span className="snail-mail-link">
-              <span className="emojicon">&#x1F4EC;</span>
-              <Link to="/letters">Send a letter</Link>
-              <span className="beta-bubble">BETA</span>
-            </span>
+            {isLetterPage ? (
+              <span className="email-link">
+                <span className="emojicon">📧</span>
+                <Link to="/">Send an email</Link>
+              </span>
+            ) : (
+              <span className="snail-mail-link">
+                <span className="emojicon">📬</span>
+                <Link to="/letters">Send a letter</Link>
+                <span className="beta-bubble">BETA</span>
+              </span>
+            )}
           </div>
         </aside>
         <footer className="footerMain">
-          {/* TODO: determin if this is something we want to keep around
+          {/* TODO: determine if this is something we want to keep around
             <span
             className="react-inserted"
             dangerouslySetInnerHTML={{
