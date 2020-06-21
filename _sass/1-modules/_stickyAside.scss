@@ -9,21 +9,17 @@
   background-color: var(--bg);
   @include siteWidth;
 
-  div {
+  .city-request-link {
     display: flex;
+  }
 
-    .snail-mail-link {
-      margin-left: 22px;
-    }
+  p {
+    max-width: none;
+    margin-bottom: 0;
 
-    p {
-      max-width: none;
-      margin-bottom: 0;
-  
-      &:first-of-type,
-      &:last-of-type {
-        margin: 0;
-      }
+    &:first-of-type,
+    &:last-of-type {
+      margin: 0;
     }
   }
 }
