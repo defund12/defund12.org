@@ -3,7 +3,7 @@ import React from "react";
 import { LetterData } from "../../types/TemplateData";
 import { LetterProps, LetterConfig } from "../../types/PropTypes";
 import Layout from "../common/Layout";
-import EmailList from "../template-list/TemplateList";
+import LetterList from "../template-list/LetterList";
 import LetterForm from "./LetterForm";
 import { OfficialRestrict } from "../../services/OfficialTypes";
 
@@ -70,7 +70,7 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
             </div>
           </div>
         </article>
-        <EmailList layout="letter" />
+        <LetterList />
       </Layout>
     );
   }

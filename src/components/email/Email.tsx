@@ -9,7 +9,7 @@ import {
   OptionalLayoutProps,
 } from "../../types/PropTypes";
 import Layout from "../common/Layout";
-import EmailList from "../template-list/TemplateList";
+import EmailList from "../template-list/EmailList";
 
 /**
  * The @link {Email} component state.
@@ -194,7 +194,7 @@ export default class Email extends React.Component<
             </div>
           </div>
         </article>
-        <EmailList layout="email" />
+        <EmailList />
       </Layout>
     );
   }

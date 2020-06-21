@@ -1,7 +1,7 @@
 import React from "react";
 import { PageProps } from "gatsby";
 import Layout from "../components/common/Layout";
-import TemplateList from "../components/template-list/TemplateList";
+import EmailList from "../components/template-list/EmailList";
 import { SiteProps } from "../types/PropTypes";
 
 /**
@@ -23,7 +23,7 @@ export default class Index extends React.Component<PageProps<SiteProps>> {
   render(): React.ReactNode {
     return (
       <Layout>
-        <TemplateList layout="email" />
+        <EmailList />
       </Layout>
     );
   }
