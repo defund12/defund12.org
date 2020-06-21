@@ -5,9 +5,9 @@ import TemplateList from "../components/template-list/TemplateList";
 import { SiteProps } from "../types/PropTypes";
 
 /**
- * The landing/home/root page. Defund 12!
+ * Contains a list just like the homepage, but with letters.
  */
-export default class Index extends React.Component<PageProps<SiteProps>> {
+export default class Letters extends React.Component<PageProps<SiteProps>> {
   /**
    * Initialize the component.
    * @param {PageProps<SiteProps>} props
