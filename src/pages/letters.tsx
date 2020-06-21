@@ -1,8 +1,9 @@
 import React from "react";
-import { PageProps } from "gatsby";
+import { PageProps, StaticQuery, graphql } from "gatsby";
 import Layout from "../components/common/Layout";
 import TemplateList from "../components/template-list/TemplateList";
-import { SiteProps } from "../types/PropTypes";
+import { SiteProps, LettersPageConfig } from "../types/PropTypes";
+import { DefundUtils } from "../DefundUtils";
 
 /**
  * Contains a list just like the homepage, but with letters.
@@ -22,9 +23,32 @@ export default class Letters extends React.Component<PageProps<SiteProps>> {
    */
   render(): React.ReactNode {
     return (
-      <Layout>
-        <TemplateList layout="letter" />
-      </Layout>
+      <StaticQuery
+        query={graphql`
+          query LetterPageQuery {
+            siteConfig {
+              letterPageHeader
+            }
+          }
+        `}
+        render={(data: { siteConfig: LettersPageConfig }) => {
+          const header = (
+            <span
+              dangerouslySetInnerHTML={{
+                __html: DefundUtils.markdownToHTML(
+                  data.siteConfig.letterPageHeader
+                ),
+              }}
+            ></span>
+          );
+
+          return (
+            <Layout>
+              <TemplateList layout="letter" header={header} />
+            </Layout>
+          );
+        }}
+      />
     );
   }
 }
