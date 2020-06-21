@@ -1,10 +1,10 @@
 import { SiteConfig } from "./SiteConfig";
 import {
-  EmailMetadataGroup,
+  TemplateMetadataGroup,
   EmailData,
-  EmailMetadata,
+  SharedTemplateMetadata,
   LetterData,
-} from "./EmailData";
+} from "./TemplateData";
 
 // {Page query result properties}
 export interface SiteProps {
@@ -72,12 +72,12 @@ export type FooterProps = Pick<
 >;
 
 // {Component-provided properties}
-export interface EmailListProps {
+export interface TemplateListProps {
   /**
    * An array of tuples containing [state name,
    * generated state ID, an array of emails].
    */
-  stateGroupedEmails: Array<EmailMetadataGroup>;
+  stateGroupedEmails: Array<TemplateMetadataGroup>;
 }
 
-export type EmailListItemProps = EmailMetadata;
+export type TemplateListItemProps = SharedTemplateMetadata;

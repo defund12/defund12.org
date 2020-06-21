@@ -2,14 +2,14 @@ import { graphql, PageProps } from "gatsby";
 import * as queryString from "query-string";
 import React from "react";
 import { DefundUtils } from "../../DefundUtils";
-import { EmailData } from "../../types/EmailData";
+import { EmailData } from "../../types/TemplateData";
 import {
   EmailConfig,
   EmailProps,
   OptionalLayoutProps,
 } from "../../types/PropTypes";
 import Layout from "../common/Layout";
-import EmailList from "../email-list/EmailList";
+import EmailList from "../template-list/TemplateList";
 
 /**
  * The @link {Email} component state.

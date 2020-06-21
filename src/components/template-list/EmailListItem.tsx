@@ -1,5 +1,5 @@
 ﻿import * as React from "react";
-import { EmailListItemProps } from "../../types/PropTypes";
+import { TemplateListItemProps } from "../../types/PropTypes";
 import { DefundUtils } from "../../DefundUtils";
 import { Link } from "gatsby";
 
@@ -13,7 +13,7 @@ interface EmailListItemState {
  * An individual email link, including copy button.
  */
 export class EmailListItem extends React.Component<
-  EmailListItemProps,
+  TemplateListItemProps,
   EmailListItemState
 > {
   copyButtonText = "🔗";
@@ -21,7 +21,7 @@ export class EmailListItem extends React.Component<
    * Initialize the component and its state.
    * @param {EmailListItemProps} props
    */
-  constructor(props: EmailListItemProps) {
+  constructor(props: TemplateListItemProps) {
     super(props);
     this.state = {
       clickActive: false,
