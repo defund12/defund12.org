@@ -1,50 +1,40 @@
 .content {
-  margin-top: 0px;
-  min-height: 25vh;
-
-  #filters {
-    width: 200px;
-    margin-bottom: 40px;
-  }
-
-  .cityList {
-    @include siteWidth;
-
-    .state {
-      margin-top: 8px;
+    margin-top: $x_2;
+    min-height: 25vh;
+    #filters {
+        width: 200px;
+        margin-bottom: 40px;
     }
-
-    h2 {
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    a:visited {
-      color: var(--text);
-    }
-
-    ul {
-      list-style: disc;
-
-      li {
-        list-style-position: inside;
-        text-indent: -1em;
-        margin-left: 1em;
-        margin-top: 2px;
-        margin-bottom: 2px;
-
-        @include breakpoint(s) {
-          margin-top: $x_2;
-          margin-bottom: $x_2;
+    .cityList {
+        @include siteWidth;
+        .state {
+            margin-top: 8px;
         }
-      }
+        h2 {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--link);
+        }
+        a:visited {
+            color: var(--text);
+        }
+        ul {
+            list-style: disc;
+            li {
+                list-style-position: inside;
+                text-indent: -1em;
+                margin-left: 1em;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                @include breakpoint(s) {
+                    margin-top: $x_2;
+                    margin-bottom: $x_2;
+                }
+            }
+        }
+        &+.divider {
+            margin-top: $x_5;
+        }
     }
-
-    &+.divider {
-      margin-top: $x_5;
-    }
-  }
 }
