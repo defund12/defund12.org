@@ -1,6 +1,6 @@
 ---
 title: NYC
-permalink: "/letter/nyc"
+permalink: "/letters/nyc"
 name: Letter to Council Members
 state: NY
 city: New York

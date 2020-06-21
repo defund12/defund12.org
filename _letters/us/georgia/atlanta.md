@@ -1,6 +1,6 @@
 ---
 title: Atlanta, GA
-permalink: "/letter/atlanta"
+permalink: "/letters/atlanta"
 name: Letter to Atlanta Financial Division
 city: Atlanta
 state: GA

@@ -1,6 +1,6 @@
 ---
 title: Seattle, Washington
-permalink: "/letter/seattle"
+permalink: "/letters/seattle"
 name: Letter to the Mayor, Board of Supervisors, and Elected Officers
 city: Seattle
 state: WA
