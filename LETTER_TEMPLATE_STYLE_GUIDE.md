@@ -1,6 +1,6 @@
 # Letter template style guide
 
-Please refer to the [EMAIL_TEMPLATE_STYLE_GUIDE.md], the only differences from that are
+Please refer to the [EMAIL_TEMPLATE_STYLE_GUIDE.md](EMAIL_TEMPLATE_STYLE_GUIDE.md), the only differences from that are
 
 1. Letters should *NOT* include a salutation (e.g., “Dear X,”) - this will be added automatically
 2. Letters *NOT* end with a sign-off, these will be automatically added
