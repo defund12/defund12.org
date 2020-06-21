@@ -223,6 +223,12 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
           />
         </div>
       </fieldset>
+      <br></br>
+      <h6>
+        Powered by <a href="https://lob.com">Lob</a> and{" "}
+        <a href="https://stripe.com">Stripe</a>.
+      </h6>
+      <br></br>
     </div>
   );
 }
