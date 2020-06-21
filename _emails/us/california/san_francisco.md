@@ -30,7 +30,7 @@ recipients:
 - JennyLam@sfusd.edu
 - FaauugaMoliga@sfusd.edu
 - RachelNorton@sfusd.edu
-body:
+body: |-
   To Mayor Breed, the San Francisco Board of Supervisors, and San Francisco Elected Officers
 
   My name is [YOUR NAME], and I am a resident of San Francisco. This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-Blackness, and immediate reform in how Black people are treated in America. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
