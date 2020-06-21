@@ -2,7 +2,7 @@
 title: Howard County, MD
 permalink: "/howardcounty"
 name: Letter to County Officials
-city: 'Howard County'
+city: Howard County
 state: MD
 layout: email
 recipients:
