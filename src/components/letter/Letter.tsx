@@ -23,6 +23,7 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
    */
   constructor(props: PageProps<LetterProps>) {
     super(props);
+    console.log(this.props);
     this.siteConfig = this.props.data.siteConfig;
     this.letterData = this.props.data.markdownRemark.frontmatter;
     this.title = `Defund 12 in ${this.letterData.city}, ${this.letterData.state}`;
@@ -67,7 +68,13 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
               Copy link
             </a>
           </div>
-          <p>{this.siteConfig.letterMessage}</p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: DefundUtils.markdownToHTML(
+                this.siteConfig.letterPageHeader
+              ),
+            }}
+          ></p>
         </section>
 
         <article className="letterContentSection">
@@ -104,7 +111,7 @@ export const pageQuery = graphql`
       }
     }
     siteConfig {
-      letterMessage
+      letterPageHeader
       googleApiKey
     }
   }

@@ -35,9 +35,11 @@ export type LetterConfig = Pick<
   | "meta"
   | "logoUrl"
   | "faviconUrl"
-  | "letterMessage"
+  | "letterPageHeader"
   | "googleApiKey"
 >;
+
+export type LettersPageConfig = Pick<SiteConfig, "letterPageHeader">;
 
 export interface LetterProps {
   markdownRemark: {
@@ -61,6 +63,7 @@ export type LayoutProps = Pick<
   | "logoUrl"
   | "metaPreviewUrl"
   | "googleApiKey"
+  | "letterPageHeader"
 > &
   OptionalLayoutProps;
 
@@ -75,9 +78,9 @@ export type FooterProps = Pick<
 export interface TemplateListProps {
   /**
    * An array of tuples containing [state name,
-   * generated state ID, an array of emails].
+   * generated state ID, an array of email/letter templates].
    */
-  stateGroupedEmails: Array<TemplateMetadataGroup>;
+  stateGroupedTemplates: Array<TemplateMetadataGroup>;
 }
 
 export type TemplateListItemProps = SharedTemplateMetadata;

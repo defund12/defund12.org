@@ -43,10 +43,10 @@ class _TemplateList extends React.Component<
    */
   constructor(props: TemplateListProps) {
     super(props);
-    const emails = this.props.stateGroupedEmails;
+    const templates = this.props.stateGroupedTemplates;
 
     // generate the state selection options
-    this.stateOptions = emails.map((stateGroup) => ({
+    this.stateOptions = templates.map((stateGroup) => ({
       label: stateGroup.name,
       value: stateGroup.id,
     }));
@@ -101,7 +101,7 @@ class _TemplateList extends React.Component<
         </div>
         <section className="cityList" id="emailLinks">
           <article>
-            {this.props.stateGroupedEmails
+            {this.props.stateGroupedTemplates
               .filter(
                 (stateGroup) =>
                   this.state.selectedState.value === 0 /* 'Choose state' */ ||
@@ -130,7 +130,7 @@ class _TemplateList extends React.Component<
  *   Email metadata collected from markdown.
  * @return {Array<TemplateMetadataGroup>}
  */
-function groupEmailMetadataByState(
+function groupTemplateMetadataByState(
   metadata: Array<SharedTemplateMetadata>
 ): Array<TemplateMetadataGroup> {
   // map group the emails with all others in the same state
@@ -168,6 +168,13 @@ function groupEmailMetadataByState(
   return emailGroups;
 }
 
+type TemplateListParams = {
+  /** filters the rendered entries to "email" or "letter" */
+  layout: LayoutType;
+  /** extra info displayed above the list */
+  header?: React.ReactElement;
+};
+
 /**
  * The main container for email links, including filtering.
  * @param {string} layout the kinds of templates to show - email or letter
@@ -176,9 +183,8 @@ function groupEmailMetadataByState(
  */
 export default function TemplateList({
   layout,
-}: {
-  layout: LayoutType;
-}): JSX.Element {
+  header,
+}: TemplateListParams): JSX.Element {
   return (
     <StaticQuery
       query={graphql`
@@ -203,13 +209,20 @@ export default function TemplateList({
       render={(data: { allMarkdownRemark: { nodes: Array<RemarkNode> } }) => {
         // extract the email metadata from the nodes collected from markdown
         const allNodes = data.allMarkdownRemark.nodes;
-        const allEmailMetadata = allNodes
+        const allTemplateMetadata = allNodes
           .map((node: RemarkNode) => node.frontmatter)
           .filter((v) => v.layout === layout);
 
-        const stateGroupedEmails = groupEmailMetadataByState(allEmailMetadata);
+        const stateGroupedTemplates = groupTemplateMetadataByState(
+          allTemplateMetadata
+        );
 
-        return <_TemplateList stateGroupedEmails={stateGroupedEmails} />;
+        return (
+          <>
+            {header && <header>{header}</header>}
+            <_TemplateList stateGroupedTemplates={stateGroupedTemplates} />;
+          </>
+        );
       }}
     />
   );
