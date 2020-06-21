@@ -44,14 +44,15 @@ class _Footer extends React.Component<FooterProps> {
           </div>
         </aside>
         <footer className="footerMain">
-          <span
+          {/* TODO: determin if this is something we want to keep around
+            <span
             className="react-inserted"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(
                 this.props.footerTextInstructions
               ),
             }}
-          ></span>
+          ></span> */}
           <span
             className="divider footer react-inserted"
             dangerouslySetInnerHTML={{
