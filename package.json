@@ -26,7 +26,7 @@
         "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
         "test": "jest --passWithNoTests",
         "verify": "yarn lint && yarn test",
-        "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; npm run test # run all checks no matter the results",
+        "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; yarn test # run all checks no matter the results",
         "build": "gatsby clean && gatsby build",
         "clean": "gatsby clean",
         "start": "gatsby build && gatsby serve",
@@ -69,7 +69,7 @@
         "webpack": "^4.43.0"
     },
     "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx}": "npm run verify"
+        "src/**/*.{js,jsx,ts,tsx}": "yarn verify"
     },
     "husky": {
         "hooks": {
