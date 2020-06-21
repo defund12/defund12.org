@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import { DefundUtils } from "../../DefundUtils";
 import { FooterProps } from "../../types/PropTypes";
 
@@ -26,14 +26,22 @@ class _Footer extends React.Component<FooterProps> {
     return (
       <>
         <aside className="sticky">
-          <span
+          <span>
+            <span className="emojicon emojicon-city"></span>
+            <span className="react-inserted"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
-            }}
-          ></span>
+            }}>
+          </span>
+          </span>
+          <span className="snail-mail-link">
+            <span className="emojicon">&#x1F4EC;</span>
+            <Link to="/nyc/letter">Send a letter</Link>
+            <span className="beta-bubble">BETA</span>
+          </span>
         </aside>
         <footer className="footerMain">
-          <span
+          <span className="react-inserted"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(
                 this.props.footerTextInstructions
@@ -41,7 +49,7 @@ class _Footer extends React.Component<FooterProps> {
             }}
           ></span>
           <span
-            className="divider footer"
+            className="divider footer react-inserted"
             dangerouslySetInnerHTML={{
               __html: DefundUtils.markdownToHTML(this.props.contactEmailFooter),
             }}
