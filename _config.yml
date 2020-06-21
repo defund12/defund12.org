@@ -12,36 +12,32 @@ collections:
     title: Uploads
     output: true
 defaults:
-  - scope:
-      path: ""
-      type: emails
-    values:
-      layout: email
-      permalink: "/desired-path"
-      name: Title of letter (e.g. Letter to City Council)
-      city: City
-      state: State intials
-      recipients:
-        -
-      subject: Email subject (mention defunding police dept.)
-      body: Email message (remember to include placeholders for name)
+- scope:
+    path: ''
+    type: emails
+  values:
+    layout: email
+    permalink: "/desired-path"
+    name: Title of letter (e.g. Letter to City Council)
+    city: City
+    state: State intials
+    recipients:
+    - 
+    subject: Email subject (mention defunding police dept.)
+    body: Email message (remember to include placeholders for name)
 siteTitle: Defund12.org
 permalink: pretty
-subtitle:
-  Email and mail government officials and council members to reallocate egregious
+subtitle: Email and mail government officials and council members to reallocate egregious
   police budgets towards education, social services, and dismantling racial injustice.
-meta:
-  Email government officials and council members to reallocate police budgets
+meta: Email government officials and council members to reallocate police budgets
   towards education, social services, and dismantling racial injustice.
 footerTextPr: Want to add your city? [Open a request.](https://github.com/defund12/defund12.org/issues)
-footerTextInstructions:
-  Have the emails of your city government officials and a drafted
+footerTextInstructions: Have the emails of your city government officials and a drafted
   template ready.
 contactEmailFooter: "[contact@defund12.org](mailto:contact@defund12.org)"
 defaultSubjectLine: "[*** INSERT UNIQUE SUBJECT LINE ***]"
 autoOpenMessage: This page automatically opens a drafted email for you.
-badMailtoMessage:
-  Email link not working correctly? You can copy and paste the recipients,
+badMailtoMessage: Email link not working correctly? You can copy and paste the recipients,
   subject and message individually below.
 url: https://defund12.org
 logoUrl: "/images/defund12.org.png"
@@ -50,7 +46,6 @@ metaPreviewUrl: https://defund12-image-api.now.sh/api/preview?
 sass:
   sass_dir: _sass
   style: compressed
-letterPageHeader:
-  NOTE sending physical mail incurs a small fee of $1/letter. Read
+letterPageHeader: NOTE sending physical mail incurs a small fee of $1/letter. Read
   more about how it works [here](https://github.com/defund12/defund12-api/blob/master/README.md).
 googleApiKey: AIzaSyAiQLnfziASZ6GGByNDLV3E7WkhtOtfi9s
