@@ -1,8 +1,7 @@
 import * as React from "react";
 import { v1 as uuid } from "uuid";
 import { StaticQuery, graphql } from "gatsby";
-import { EmailListItem } from "./EmailListItem";
-import { LetterListItem } from "./LetterListItem";
+import { TemplateListItem } from "./TemplateListItem";
 
 import Select from "react-select";
 import { ReactSelectOption } from "../../types/ReactSelectOption";
@@ -70,11 +69,7 @@ class _TemplateList extends React.Component<
     data: Array<SharedTemplateMetadata>
   ): Array<React.ReactNode> {
     return data.map((email) => {
-      if (email.layout === "email") {
-        return <EmailListItem key={uuid()} {...email} />;
-      } else if (email.layout === "letter") {
-        return <LetterListItem key={uuid()} {...email} />;
-      }
+      return <TemplateListItem key={uuid()} {...email} />;
     });
   }
 
