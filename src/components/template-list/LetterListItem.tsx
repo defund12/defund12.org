@@ -1,11 +1,11 @@
 import * as React from "react";
-import { EmailListItemProps } from "../../types/PropTypes";
+import { TemplateListItemProps } from "../../types/PropTypes";
 import { Link } from "gatsby";
 
 /**
  * An individual mail link
  */
-export class LetterListItem extends React.Component<EmailListItemProps> {
+export class LetterListItem extends React.Component<TemplateListItemProps> {
   /**
    * React render method.
    * @return {React.ReactNode} the rendered component

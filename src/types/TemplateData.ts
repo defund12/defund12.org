@@ -1,8 +1,8 @@
 export type LayoutType = "email" | "letter";
 /**
- * The top-level data of an email.
+ * The top-level data of a template (email or letter).
  */
-export interface EmailMetadata {
+export interface SharedTemplateMetadata {
   /**
    * The link to the email page (e.g. "/anchorage")
    */
@@ -25,7 +25,8 @@ export interface EmailMetadata {
   layout: LayoutType;
 }
 
-export interface BasicTemplateData extends EmailMetadata {
+/** The full data used to render a template */
+export interface SharedTemplateData extends SharedTemplateMetadata {
   /**
    * The email body as defined in markdown.
    */
@@ -44,7 +45,8 @@ export interface BasicTemplateData extends EmailMetadata {
   date: never & Date;
 }
 
-export interface EmailData extends BasicTemplateData {
+/** The full type of an email template from markdown */
+export interface EmailData extends SharedTemplateData {
   /**
    * An array of recipients to send the email to.
    */
@@ -53,22 +55,29 @@ export interface EmailData extends BasicTemplateData {
    * An array of recipients to cc on the email when sent.
    */
   cc: Array<string>;
+
+  /* an email! */
+  layout: "email";
 }
 
-export interface LetterData extends BasicTemplateData {
+/** The full type of a letter template from markdown */
+export interface LetterData extends SharedTemplateData {
   /**
    * An array of offcials types to look up addresses for
    */
   officials: Array<string>;
+
+  /** a letter! */
+  layout: "letter";
 }
 
-type EmailDataType = EmailMetadata & EmailData;
+// type EmailDataType = TemplateMetadata & EmailData;
 
 /**
  * A node from remark containing either partial or full email data.
  */
 export interface RemarkNode {
-  frontmatter: EmailDataType;
+  frontmatter: EmailData;
 }
 
 /**
@@ -78,7 +87,7 @@ export interface RemarkNode {
  * @return {boolean}
  */
 export function isEmailData(
-  emailDataOrMetadata: EmailMetadata & EmailData
+  emailDataOrMetadata: SharedTemplateMetadata & EmailData
 ): emailDataOrMetadata is EmailData {
   if (Object.hasOwnProperty.call(emailDataOrMetadata, "body")) return true;
   return false;
@@ -87,7 +96,7 @@ export function isEmailData(
 /**
  * A group of email metadata for a specific state.
  */
-export class EmailMetadataGroup {
+export class TemplateMetadataGroup {
   /**
    * Create an empty group.
    * @param name the state name.
@@ -96,16 +105,16 @@ export class EmailMetadataGroup {
   /**
    * Create a group containing emails.
    * @param {string} name the state name.
-   * @param {Array<EmailMetadata>} emails the state's emails.
+   * @param {Array<SharedTemplateMetadata>} templates the state's emails.
    */
-  constructor(name: string, emails: Array<EmailMetadata> = []) {
+  constructor(name: string, templates: Array<SharedTemplateMetadata> = []) {
     this.name = name;
-    this.emails = emails;
+    this.templates = templates;
   }
   /** The state name. */
   name: string;
   /** An unambiguous identifier for the state, generated at render-time. */
   id?: number;
-  /** An array of email metadata belonging to the state. */
-  emails: Array<EmailMetadata>;
+  /** An array of template metadata belonging to the state. */
+  templates: Array<SharedTemplateMetadata>;
 }

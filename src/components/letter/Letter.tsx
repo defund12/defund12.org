@@ -1,9 +1,9 @@
 import { graphql, PageProps } from "gatsby";
 import React from "react";
-import { LetterData } from "../../types/EmailData";
+import { LetterData } from "../../types/TemplateData";
 import { LetterProps, LetterConfig } from "../../types/PropTypes";
 import Layout from "../common/Layout";
-import EmailList from "../email-list/EmailList";
+import EmailList from "../template-list/TemplateList";
 import LetterForm from "./LetterForm";
 import { OfficialRestrict } from "../../services/OfficialTypes";
 

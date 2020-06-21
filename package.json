@@ -24,9 +24,9 @@
     "scripts": {
         "lint-fix": "eslint 'src/**/*.{ts?(x),js?(x)}' --fix",
         "lint": "eslint 'src/**/*.{ts?(x),js?(x)}' && tsc --noEmit",
-        "test": "jest",
+        "test": "jest --passWithNoTests",
         "verify": "yarn lint && yarn test",
-        "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; jest # run all checks no matter the results",
+        "verify-dev": "eslint 'src/**/*.{ts?(x),js?(x)}'; tsc --noEmit; npm run test # run all checks no matter the results",
         "build": "gatsby clean && gatsby build",
         "clean": "gatsby clean",
         "start": "gatsby build && gatsby serve",
