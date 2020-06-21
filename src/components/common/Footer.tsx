@@ -26,20 +26,22 @@ class _Footer extends React.Component<FooterProps> {
     return (
       <>
         <aside className="sticky">
-          <span className="city-request-link">
-            <span className="emojicon emojicon-city"></span>
-            <span
-              className="react-inserted"
-              dangerouslySetInnerHTML={{
-                __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
-              }}
-            ></span>
-          </span>
-          <span className="snail-mail-link">
-            <span className="emojicon">&#x1F4EC;</span>
-            <Link to="/nyc/letter">Send a letter</Link>
-            <span className="beta-bubble">BETA</span>
-          </span>
+          <div>
+            <span className="city-request-link">
+              <span className="emojicon emojicon-city"></span>
+              <span
+                className="react-inserted"
+                dangerouslySetInnerHTML={{
+                  __html: DefundUtils.markdownToHTML(this.props.footerTextPr),
+                }}
+              ></span>
+            </span>
+            <span className="snail-mail-link">
+              <span className="emojicon">&#x1F4EC;</span>
+              <Link to="/nyc/letter">Send a letter</Link>
+              <span className="beta-bubble">BETA</span>
+            </span>
+          </div>
         </aside>
         <footer className="footerMain">
           <span
