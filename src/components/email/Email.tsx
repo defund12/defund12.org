@@ -47,6 +47,7 @@ export default class Email extends React.Component<
         state: this.emailData.state,
         city: this.emailData.city,
       }),
+      layout: "email",
     };
     this.state = new EmailState();
   }

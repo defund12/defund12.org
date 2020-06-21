@@ -52,6 +52,7 @@ export interface OptionalLayoutProps {
   pageTitle?: string;
   meta?: string;
   metaQueryString?: string;
+  layout?: string;
 }
 
 // {Static query result properties}
