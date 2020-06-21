@@ -1,6 +1,6 @@
 ---
 title: San Francisco, California
-permalink: "/letter/sanfrancisco"
+permalink: "/letters/sanfrancisco"
 name: Letter to the Mayor, Board of Supervisors, and Elected Officers
 city: San Francisco
 state: CA
