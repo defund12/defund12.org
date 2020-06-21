@@ -220,7 +220,7 @@ export default function TemplateList({
         return (
           <>
             {header && <header>{header}</header>}
-            <_TemplateList stateGroupedTemplates={stateGroupedTemplates} />;
+            <_TemplateList stateGroupedTemplates={stateGroupedTemplates} />
           </>
         );
       }}
