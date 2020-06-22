@@ -43,7 +43,7 @@ export default class Letters extends React.Component<PageProps<SiteProps>> {
           );
 
           return (
-            <Layout>
+            <Layout layout="letter">
               <TemplateList layout="letter" header={header} />
             </Layout>
           );

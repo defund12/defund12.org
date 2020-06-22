@@ -93,25 +93,27 @@ export default function Layout(
           }
         }
       `}
-      render={(data: { siteConfig: LayoutProps }) => (
-        <_Layout
-          {...data.siteConfig}
-          pageTitle={
-            props.pageTitle ? props.pageTitle : data.siteConfig.siteTitle
-          }
-          meta={props.meta ? props.meta : data.siteConfig.meta}
-          logoUrl={
-            props.metaQueryString
-              ? data.siteConfig.metaPreviewUrl +
-                props.layout +
-                "?" +
-                props.metaQueryString
-              : data.siteConfig.logoUrl
-          }
-        >
-          {props.children}
-        </_Layout>
-      )}
+      render={(data: { siteConfig: LayoutProps }) => {
+        let previewUrl = data.siteConfig.metaPreviewUrl;
+        if (props.layout) {
+          previewUrl = previewUrl + props.layout;
+        }
+        if (props.metaQueryString) {
+          previewUrl = previewUrl + "?" + props.metaQueryString;
+        }
+        return (
+          <_Layout
+            {...data.siteConfig}
+            pageTitle={
+              props.pageTitle ? props.pageTitle : data.siteConfig.siteTitle
+            }
+            meta={props.meta ? props.meta : data.siteConfig.meta}
+            logoUrl={previewUrl}
+          >
+            {props.children}
+          </_Layout>
+        );
+      }}
     />
   );
 }
