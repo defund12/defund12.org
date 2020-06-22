@@ -1,21 +1,25 @@
 import { graphql, PageProps } from "gatsby";
 import React from "react";
 import { LetterData } from "../../types/TemplateData";
-import { LetterProps, LetterConfig } from "../../types/PropTypes";
+import {
+  LetterConfig,
+  LetterProps,
+  OptionalLayoutProps,
+} from "../../types/PropTypes";
 import Layout from "../common/Layout";
 import LetterList from "../template-list/LetterList";
 import LetterForm from "./LetterForm";
 import { OfficialRestrict } from "../../services/OfficialTypes";
 import { DefundUtils } from "../../DefundUtils";
+import * as queryString from "query-string";
 
 /**
  * A rendered email, containing links to send or copy.
  */
 export default class Letter extends React.Component<PageProps<LetterProps>> {
   letterData: LetterData;
-  title: string;
-  meta: string;
   siteConfig: LetterConfig;
+  layoutProps: OptionalLayoutProps;
 
   /**
    * Initialize the component and its state.
@@ -26,8 +30,15 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
     console.log(this.props);
     this.siteConfig = this.props.data.siteConfig;
     this.letterData = this.props.data.markdownRemark.frontmatter;
-    this.title = `Defund 12 in ${this.letterData.city}, ${this.letterData.state}`;
-    this.meta = `Send a pre-written letter directly to ${this.letterData.city}, ${this.letterData.state} officials`;
+    this.layoutProps = {
+      pageTitle: `Defund12 in ${this.letterData.city}, ${this.letterData.state}`,
+      meta: `Send a pre-written letter directly to ${this.letterData.city}, ${this.letterData.state} officials`,
+      metaQueryString: queryString.stringify({
+        state: this.letterData.state,
+        city: this.letterData.city,
+      }),
+      layout: "letter",
+    };
   }
 
   /**
@@ -53,7 +64,7 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
     };
 
     return (
-      <Layout pageTitle={this.title} meta={this.meta}>
+      <Layout {...this.layoutProps}>
         <section className="emailPageHeader">
           <h2>{this.letterData.name}</h2>
           <b>

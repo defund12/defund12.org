@@ -102,7 +102,10 @@ export default function Layout(
           meta={props.meta ? props.meta : data.siteConfig.meta}
           logoUrl={
             props.metaQueryString
-              ? data.siteConfig.metaPreviewUrl + props.metaQueryString
+              ? data.siteConfig.metaPreviewUrl +
+                props.layout +
+                "?" +
+                props.metaQueryString
               : data.siteConfig.logoUrl
           }
         >
