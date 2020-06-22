@@ -5,8 +5,22 @@ name: Letter to Mayor and City Council
 city: Minneapolis
 state: MN
 recipients:
-- jacob.frey@minneapolismn.gov
-body: "Dear Mayor Frey and City Council Members,\n\nMy name is [YOUR NAME]. I am a
+  - jacob.frey@minneapolismn.gov
+  - kevin.reich@minneapolismn.gov
+  - cam.gordon@minneapolismn.gov
+  - steve.fletcher@minneapolismn.gov
+  - phillipe.cunningham@minneapolismn.gov
+  - jeremiah.ellison@minneapolismn.gov
+  - abdi.warsame@minneapolismn.gov
+  - lisa.goodman@minneapolismn.gov
+  - andrea.jenkins@minneapolismn.gov
+  - alondra.cano@minneapolismn.gov
+  - lisa.bender@minneapolismn.gov
+  - jeremy.schroeder@minneapolismn.gov
+  - andrew.johnson@minneapolismn.gov
+  - linea.palmisano@minneapolismn.gov
+body:
+  "Dear Mayor Frey and City Council Members,\n\nMy name is [YOUR NAME]. I am a
   resident of [YOUR CITY, STATE] and I am emailing today to demand the defunding of
   the Minneapolis Police Department and the funding of new, community-led and integrated
   health and safety strategies.\n\nWe are in the midst of widespread upheaval over
@@ -24,20 +38,5 @@ body: "Dear Mayor Frey and City Council Members,\n\nMy name is [YOUR NAME]. I am
   City Council to adopt a budget that defunds the police and funds non-violent, community-led,
   health and safety strategies.\n\nSincerely,\\\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR
   EMAIL]\n[YOUR PHONE NUMBER]"
-cc:
-- kevin.reich@minneapolismn.gov
-- cam.gordon@minneapolismn.gov
-- steve.fletcher@minneapolismn.gov
-- phillipe.cunningham@minneapolismn.gov
-- jeremiah.ellison@minneapolismn.gov
-- abdi.warsame@minneapolismn.gov
-- lisa.goodman@minneapolismn.gov
-- andrea.jenkins@minneapolismn.gov
-- alondra.cano@minneapolismn.gov
-- lisa.bender@minneapolismn.gov
-- jeremy.schroeder@minneapolismn.gov
-- andrew.johnson@minneapolismn.gov
-- linea.palmisano@minneapolismn.gov
 layout: email
 ---
-
