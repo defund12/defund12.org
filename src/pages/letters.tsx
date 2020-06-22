@@ -4,6 +4,7 @@ import Layout from "../components/common/Layout";
 import TemplateList from "../components/template-list/TemplateList";
 import { SiteProps, LettersPageConfig } from "../types/PropTypes";
 import { DefundUtils } from "../DefundUtils";
+import * as queryString from "query-string";
 
 /**
  * Contains a list just like the homepage, but with letters.
@@ -28,6 +29,8 @@ export default class Letters extends React.Component<PageProps<SiteProps>> {
           query LetterPageQuery {
             siteConfig {
               letterPageHeader
+              letterMetaPreviewSubtitle
+              letterMeta
             }
           }
         `}
@@ -42,8 +45,16 @@ export default class Letters extends React.Component<PageProps<SiteProps>> {
             ></span>
           );
 
+          const layoutProps = {
+            pageTitle: "Letters by Defund12.org",
+            meta: data.siteConfig.letterMeta,
+            metaQueryString: queryString.stringify({
+              subtitle1: data.siteConfig.letterMetaPreviewSubtitle,
+            }),
+          };
+
           return (
-            <Layout>
+            <Layout {...layoutProps}>
               <TemplateList layout="letter" header={header} />
             </Layout>
           );

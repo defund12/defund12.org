@@ -31,11 +31,11 @@ export default class Letter extends React.Component<PageProps<LetterProps>> {
     this.siteConfig = this.props.data.siteConfig;
     this.letterData = this.props.data.markdownRemark.frontmatter;
     this.layoutProps = {
-      pageTitle: `Defund12 in ${this.letterData.city}, ${this.letterData.state}`,
-      meta: `Send a pre-written letter directly to ${this.letterData.city}, ${this.letterData.state} officials`,
+      pageTitle: `Defund12.org in ${this.letterData.city}, ${this.letterData.state}`,
+      meta: `Send a pre-written letter directly to ${this.letterData.city}, ${this.letterData.state} officials.`,
       metaQueryString: queryString.stringify({
-        state: this.letterData.state,
-        city: this.letterData.city,
+        subheader: `in ${this.letterData.city}, ${this.letterData.state}`,
+        subtitle1: `Order physical letters to be printed and mailed to ${this.letterData.city} government officials.`,
       }),
       layout: "letter",
     };

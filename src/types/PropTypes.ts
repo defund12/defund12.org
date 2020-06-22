@@ -39,7 +39,10 @@ export type LetterConfig = Pick<
   | "googleApiKey"
 >;
 
-export type LettersPageConfig = Pick<SiteConfig, "letterPageHeader">;
+export type LettersPageConfig = Pick<
+  SiteConfig,
+  "letterPageHeader" | "letterMetaPreviewSubtitle" | "letterMeta"
+>;
 
 export interface LetterProps {
   markdownRemark: {

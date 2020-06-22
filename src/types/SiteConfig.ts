@@ -6,6 +6,8 @@ export interface SiteConfig {
   /** Name that appears as the tab or window title. */
   meta: string;
   /** A URL pointing to the site logo. */
+  letterMeta: string;
+  /** A URL pointing to the site logo. */
   logoUrl: string;
   /** A URL pointing to a favicon logo. */
   faviconUrl: string;
@@ -25,6 +27,8 @@ export interface SiteConfig {
   contactEmailFooter: string;
   /** A message that appears before the physical letter list index page */
   letterPageHeader: string;
+  /** Subtitle string for the image preview generation API */
+  letterMetaPreviewSubtitle: string;
   /** Google API key with Maps and Civic Info perms */
   googleApiKey: string;
 }

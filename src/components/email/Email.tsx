@@ -41,11 +41,11 @@ export default class Email extends React.Component<
     this.siteConfig = this.props.data.siteConfig;
     this.emailData = this.props.data.markdownRemark.frontmatter;
     this.layoutProps = {
-      pageTitle: `Defund12 in ${this.emailData.city}, ${this.emailData.state}`,
-      meta: `Send a pre-written email directly to ${this.emailData.city}, ${this.emailData.state} officials`,
+      pageTitle: `Defund12.org in ${this.emailData.city}, ${this.emailData.state}`,
+      meta: `Send a pre-written email directly to ${this.emailData.city}, ${this.emailData.state} officials.`,
       metaQueryString: queryString.stringify({
-        state: this.emailData.state,
-        city: this.emailData.city,
+        subheader: `in ${this.emailData.city}, ${this.emailData.state}`,
+        subtitle1: `Send pre-scripted emails to ${this.emailData.city} government officials.`,
       }),
       layout: "email",
     };

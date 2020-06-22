@@ -29,8 +29,11 @@ siteTitle: Defund12.org
 permalink: pretty
 subtitle: Email and mail government officials and council members to reallocate egregious
   police budgets towards education, social services, and dismantling racial injustice.
-meta: Email government officials and council members to reallocate police budgets
-  towards education, social services, and dismantling racial injustice.
+meta: Send pre-written emails and letters to government officials and council members 
+  to reallocate police budgets towards education, social services, and dismantling racial injustice.
+letterMeta: Send pre-written letters to government officials and council members 
+  to reallocate police budgets towards education, social services, and dismantling racial injustice.
+letterMetaPreviewSubtitle: "Order physical letters to be printed and mailed to government officials and council members."
 footerTextPr: Want to add your city? [Open a request.](https://github.com/defund12/defund12.org/issues)
 footerTextInstructions: Have the emails of your city government officials and a drafted
   template ready.
@@ -42,7 +45,7 @@ badMailtoMessage: Email link not working correctly? You can copy and paste the r
 url: https://defund12.org
 logoUrl: "/images/defund12.org.png"
 faviconUrl: "/favicon.svg"
-metaPreviewUrl: https://defund12-image-api.now.sh/api/preview/
+metaPreviewUrl: https://defund12.rpal.vercel.app/api/preview?
 sass:
   sass_dir: _sass
   style: compressed
