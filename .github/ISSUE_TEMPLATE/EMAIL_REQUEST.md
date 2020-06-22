@@ -1,8 +1,8 @@
 ---
 title: ''
-name: Add an email for your city ⭐️
-about: "\U0001F44B \U0001F4EC Update defund12.org with a message for your community.
-  This is probably what you’re looking for!"
+name: "\U0001F4E7 Add an email for your city ⭐️"
+about: "\U0001F44B Update defund12.org with a message for your community. This is
+  probably what you’re looking for!"
 labels: new-request
 assignees: ''
 ---
