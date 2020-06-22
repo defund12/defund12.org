@@ -3,6 +3,7 @@ title: Arlington for Justice
 date: 2020-06-22 01:05:00 Z
 permalink: "/arlingtonforjustice"
 name: Letter to County Board -- Arlington for Justice
+layout: email
 city: Arlington County
 state: VA
 recipients:
