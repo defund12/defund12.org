@@ -87,9 +87,6 @@ jobs:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: "2.6"
       - uses: actions/checkout@v2
       - name: Read .nvmrc
         run: echo ::set-output name=NVMRC::$(cat .nvmrc)
