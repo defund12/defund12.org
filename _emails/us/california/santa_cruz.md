@@ -12,6 +12,7 @@ recipients:
 - rgolder@cityofsantacruz.com
 - cmathews@cityofsantacruz.com
 - mwatkins@cityofsantacruz.com
+- citycouncil@cityofsantacruz.com
 body: |-
   To Mayor Cummings and the Santa Cruz City Council:
 
