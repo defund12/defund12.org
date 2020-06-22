@@ -7,14 +7,6 @@ on:
   pull_request:
 
 jobs:
-  github-context:
-    if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
   js-lint-and-test:
     runs-on: ubuntu-latest
     steps:
