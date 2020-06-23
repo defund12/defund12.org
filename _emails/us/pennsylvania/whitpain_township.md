@@ -1,11 +1,11 @@
 ---
-title: "Whitpain Township, PA"
+title: Whitpain Township, PA
 permalink: "/whitpain"
-name: "Letter to the Board of Supervisors"
-city: "Whitpain Township"
-state: "PA"
+name: Letter to the Board of Supervisors
+city: Whitpain Township
+state: PA
 recipients:
-- "supervisors@whitpaintownship.org"
+- supervisors@whitpaintownship.org
 body: |-
   My name is [NAME], and I am a resident of [NEIGHBORHOOD/TOWN]. I am writing to demand that the Whitpain Township Board of Supervisors implement a new budget that prioritizes our community's well-being and redirects funding away from police.
 
@@ -20,6 +20,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
