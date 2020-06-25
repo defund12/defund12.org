@@ -81,6 +81,14 @@ function googleCivicRepsResponseToOfficialAddresses(
     }
   });
 
+  // at least one address comes back from google as "CA 91110", which
+  // makes lob reject that. So clean it up.
+  reps.officials.forEach((official) => {
+    official.address.forEach((address) => {
+      address.zip = address.zip.replace(/[^0-9-]/g, "");
+    });
+  });
+
   // Filter out judges and VP/pres and obey other restrictions
   const offices = reps.offices.filter((office) => {
     const isPresidenty =
