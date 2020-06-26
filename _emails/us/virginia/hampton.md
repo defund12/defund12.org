@@ -1,10 +1,10 @@
 ---
-title: "Hampton, VA"
+title: Hampton, VA
 permalink: "/hampton"
-name: "Letter to the City Council and Mayor"
-city: "Hampton"
-state: "VA"
-layout: "email"
+name: Letter to the City Council and Mayor
+city: Hampton
+state: VA
+layout: email
 recipients:
 - dtuck@hampton.gov
 - eleanor.brown@hampton.gov
@@ -29,3 +29,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
