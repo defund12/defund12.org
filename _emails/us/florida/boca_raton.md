@@ -1,17 +1,17 @@
 ---
-title: "Boca Raton, FL"
+title: Boca Raton, FL
 permalink: "/bocaraton"
-name: "Letter to Mayor, City Council, and Financial Advisory Board"
-city: "Boca Raton"
-state: "FL"
+name: Letter to Mayor, City Council, and Financial Advisory Board
+city: Boca Raton
+state: FL
 recipients:
-- "BRCityClerk@myboca.us"
-- "mcc@myboca.us"
-- "ssinger@ci.boca-raton.fl.us"
-- "athomson@myboca.us"
-- "MMayotte@ci.boca-raton.fl.us"
-- "AORourke@ci.boca-raton.fl.us"
-- "jrodgers@ci.boca-raton.fl.us"
+- BRCityClerk@myboca.us
+- mcc@myboca.us
+- ssinger@ci.boca-raton.fl.us
+- athomson@myboca.us
+- MMayotte@ci.boca-raton.fl.us
+- AORourke@ci.boca-raton.fl.us
+- jrodgers@ci.boca-raton.fl.us
 body: |-
   Dear Mayor Singer, Boca Raton City Council, and Boca Raton Financial Advisory Board,
 
@@ -36,6 +36,6 @@ body: |-
   [YOUR PHONE]
 
   [1] https://myboca.us/1588/Fiscal-Year-2018-2019
-layout: "email"
+layout: email
 ---
 
