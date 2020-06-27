@@ -1,23 +1,23 @@
 ---
-title: "Lafayette, LA"
+title: Lafayette, LA
 permalink: "/lafayette-la"
-name: "Letter to Mayor-President and City Council"
-city: "Lafayette"
-state: "LA"
+name: Letter to Mayor-President and City Council
+city: Lafayette
+state: LA
 recipients:
-- "MayorPresidentsOffice@LafayetteLA.gov"
-- "cwingerter@lafayettela.gov"
-- "nanettecook@lafayettela.gov"
-- "andynaquin@lafayettela.gov"
-- "patricklewis@lafayettela.gov"
-- "lizhebert@lafayettela.gov"
-- "glennlazard@lafayettela.gov"
-- "hconway@LafayetteLA.gov"
-- "bryantabor@lafayettela.gov"
-- "kevinnaquin@lafayettela.gov"
-- "joshcarlson@lafayettela.gov"
-- "johnguilbeau@lafayettela.gov"
-- "abrubin@lafayettela.gov"
+- MayorPresidentsOffice@LafayetteLA.gov
+- cwingerter@lafayettela.gov
+- nanettecook@lafayettela.gov
+- andynaquin@lafayettela.gov
+- patricklewis@lafayettela.gov
+- lizhebert@lafayettela.gov
+- glennlazard@lafayettela.gov
+- hconway@LafayetteLA.gov
+- bryantabor@lafayettela.gov
+- kevinnaquin@lafayettela.gov
+- joshcarlson@lafayettela.gov
+- johnguilbeau@lafayettela.gov
+- abrubin@lafayettela.gov
 body: |-
   (Please add a couple of sentences in your own words to avoid filters. )
 
@@ -42,6 +42,6 @@ body: |-
   [1] http://www.lafayettela.gov/Budget/SiteAssets/Files/Archive/2019-ADOPTED-BUDGET-Document.pdf
   [2] http://www.lafayettela.gov/ComprehensivePlan/Pages/Vision-Statement
   [3] https://www.census.gov/quickfacts/lafayetteparishlouisiana
-layout: "email"
+layout: email
 ---
 
