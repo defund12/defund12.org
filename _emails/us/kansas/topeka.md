@@ -1,21 +1,21 @@
 ---
-title: "Topeka, KS"
+title: Topeka, KS
 permalink: "/topeka"
-name: "Letter to the Mayor, City Council, and City Manager"
-city: "Topeka"
-state: "KS"
+name: Letter to the Mayor, City Council, and City Manager
+city: Topeka
+state: KS
 recipients:
-- "btrout@topeka.org"
-- "khiller@topeka.org"
-- "cvaldivia-alcala@topeka.org"
-- "sortiz@topeka.org"
-- "temerson@topeka.org"
-- "mpadilla@topeka.org"
-- "hnaeger@topeka.org"
-- "ndobler@topeka.org"
-- "sduncan@topeka.org"
-- "mlesser@topeka.org"
-- "council@topeka.org"
+- btrout@topeka.org
+- khiller@topeka.org
+- cvaldivia-alcala@topeka.org
+- sortiz@topeka.org
+- temerson@topeka.org
+- mpadilla@topeka.org
+- hnaeger@topeka.org
+- ndobler@topeka.org
+- sduncan@topeka.org
+- mlesser@topeka.org
+- council@topeka.org
 body: |-
   Dear Mayor De La Isla, Topeka City Councilors, and City Manager Brent Trout,
 
@@ -36,6 +36,6 @@ body: |-
   [PHONE ]
 
   [1] https://cot-wp-uploads.s3.amazonaws.com/wp-content/uploads/finance/Budget/2020+Adopted+Budget+Book.pdf
-layout: "email"
+layout: email
 ---
 
