@@ -1,19 +1,19 @@
 ---
-title: "Dover, NH"
+title: Dover, NH
 permalink: "/dover-nh"
-name: "Letter to City Government Officials"
-city: "Dover"
-state: "NH"
+name: Letter to City Government Officials
+city: Dover
+state: NH
 recipients:
-- "r.carrier@dover.nh.gov"
-- "d.ciotti@dover.nh.gov"
-- "l.williams@dover.nh.gov"
-- "j.oconnor@dover.nh.gov"
-- "m.muffett-lipinski@dover.nh.gov"
-- "d.thibodeaux@dover.nh.govm"
-- "j.manley@dover.nh.gov"
-- "d.shanahan@dover.nh.gov"
-- "f.cullen@dover.nh.gov"
+- r.carrier@dover.nh.gov
+- d.ciotti@dover.nh.gov
+- l.williams@dover.nh.gov
+- j.oconnor@dover.nh.gov
+- m.muffett-lipinski@dover.nh.gov
+- d.thibodeaux@dover.nh.govm
+- j.manley@dover.nh.gov
+- d.shanahan@dover.nh.gov
+- f.cullen@dover.nh.gov
 body: |-
   Dear Dover Officials,
 
@@ -33,6 +33,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
