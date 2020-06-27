@@ -1,15 +1,15 @@
 ---
-title: "Riverbank, CA"
+title: Riverbank, CA
 permalink: "/riverbank"
-name: "Letter to Mayor and City Council"
-city: "Riverbank"
-state: "CA"
+name: Letter to Mayor and City Council
+city: Riverbank
+state: CA
 recipients:
-- "robrien@riverbank.org"
-- "dbmartinez@riverbank.org"
-- "luribe@riverbank.org"
-- "cfosi@riverbank.org"
-- "ccampbell@riverbank.org"
+- robrien@riverbank.org
+- dbmartinez@riverbank.org
+- luribe@riverbank.org
+- cfosi@riverbank.org
+- ccampbell@riverbank.org
 body: |-
   Dear Mayor O’Brien and Riverbank City Council Members,
 
@@ -28,6 +28,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
