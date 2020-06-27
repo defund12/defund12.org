@@ -1,10 +1,10 @@
 ---
-title: "Thousand Oaks, CA"
+title: Thousand Oaks, CA
 permalink: "/thousandoaks"
-name: "Letter to City Council"
-city: "Thousand Oaks"
-state: "CA"
-layout: "email"
+name: Letter to City Council
+city: Thousand Oaks
+state: CA
+layout: email
 recipients:
 - AAdam@toaks.org
 - claudia4slowgrowth@roadrunner.com
@@ -27,3 +27,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
