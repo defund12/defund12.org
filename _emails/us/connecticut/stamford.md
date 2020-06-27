@@ -1,10 +1,10 @@
 ---
-title: "Stamford, CT"
+title: Stamford, CT
 permalink: "/stamford"
-name: "Letter to the Board of Representatives, Board of Finance, and Mayor"
-city: "Stamford"
-state: "CT"
-layout: "email"
+name: Letter to the Board of Representatives, Board of Finance, and Mayor
+city: Stamford
+state: CT
+layout: email
 recipients:
 - cwinterle@stamfordct.gov
 - MLRinaldi@stamfordct.gov
@@ -67,3 +67,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
