@@ -1,16 +1,16 @@
 ---
-title: "Fairfax, CA"
+title: Fairfax, CA
 permalink: "/fairfax-ca"
-name: "Letter to Town Council"
-city: "Fairfax"
-state: "CA"
+name: Letter to Town Council
+city: Fairfax
+state: CA
 recipients:
-- "rgoddard@townoffairfax.org"
-- "backerman@townoffairfax.org"
-- "bcoler@townoffairfax.org"
-- "shellman@townoffairfax.org"
-- "jreed@townoffairfax.org"
-- "mgardner@townoffairfax.org"
+- rgoddard@townoffairfax.org
+- backerman@townoffairfax.org
+- bcoler@townoffairfax.org
+- shellman@townoffairfax.org
+- jreed@townoffairfax.org
+- mgardner@townoffairfax.org
 body: |-
   Dear Town Council Members,
 
@@ -30,6 +30,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
