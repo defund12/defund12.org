@@ -6,12 +6,12 @@ state: CA
 city: Contra Costa
 layout: email
 recipients:
-- "David.Twa@cao.cccounty.us"
-- "john_gioia@bos.cccounty.us"
-- "supervisorandersen@bos.cccounty.us"
-- "supervisor_burgis@bos.cccounty.us"
-- "supervisormitchoff@bos.cccounty.us"
-- "district5@bos.cccounty.us"
+- David.Twa@cao.cccounty.us
+- john_gioia@bos.cccounty.us
+- supervisorandersen@bos.cccounty.us
+- supervisor_burgis@bos.cccounty.us
+- supervisormitchoff@bos.cccounty.us
+- district5@bos.cccounty.us
 body: |-
   To the Contra Costa County Administrator and Board of Supervisors,
 
@@ -30,4 +30,3 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-
