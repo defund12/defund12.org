@@ -18,7 +18,7 @@ recipients:
 - fbrown@lexingtonky.gov
 - jmossotti@lexingtonky.gov
 - abledsoe@lexingtonky.gov,
-- reynolds@lexingtonky.gov
+- jreynolds@lexingtonky.gov
 - kplomin@lexingtonky.gov
 - CouncilCoreStaff@lexingtonky.gov
 - mayor@lexingtonky.gov
