@@ -15,8 +15,8 @@ recipients:
 - dguhin@srcity.org
 - jnutt@srcity.org
 - sgallagher@srcity.org
-- cMcBride@srcity.org
 - swilliams@srcity.org
+- aalton@srcity.org
 body: |-
   Dear Santa Rosa City Leaders,
 
