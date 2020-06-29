@@ -9,7 +9,7 @@ recipients:
 body: |-
   Dear Mayor Colvin,
 
-  My name is [NAME] and I am a resident of Fayetteville. I am writing to urge you and the rest of the City Council to amend the proposed budget for 2021 in order to reallocate funding from the police to social services. I would like to redirect money away from the Fayetteville Police Department and into social service programs that will benefit the public health and our communities, especially communities of color.
+  My name is [NAME] and I am a resident of Fayetteville. I am writing to urge you and the rest of the City Council to amend the proposed budget for 2021 in order to re-allocate funding from the police to social programs proven to more effectively promote a safe and equitable community: community-based mental health services, substance abuse treatment services, affordable housing programs, and more.
 
   The proposed budget for 2021 proposes that 30% of the city’s general fund go to policing; meanwhile, only 0.8% of the city's operating budget is being proposed for economic and community development. This means the city of Fayetteville prioritizes police 30X more than community development. This is unconscionable. Particularly in this unprecedented COVID-19 pandemic, with many of our community members facing unemployment and housing and food insecurity, it is vital that we reallocate funds to social and community services that will develop our communities and support our residents.
 
