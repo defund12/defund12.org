@@ -13,7 +13,6 @@ recipients:
 - hjtibbetts@srcity.org
 - rdowd@srcity.org
 - dguhin@srcity.org
-- cmcbride@srcity.org
 - jnutt@srcity.org
 - sgallagher@srcity.org
 - cMcBride@srcity.org
