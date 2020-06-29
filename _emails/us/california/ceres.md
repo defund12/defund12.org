@@ -16,7 +16,7 @@ body: |-
 
   Dear Mayor Vierra and Ceres City Council Members,
 
-  My name is [YOUR NAME] and I’m a resident of Ceres. I am writing to demand that the Patterson City Council adopt a budget that prioritizes community wellbeing, and redirects funding away from the police.
+  My name is [YOUR NAME] and I’m a resident of Ceres. I am writing to demand that the Ceres City Council adopt a budget that prioritizes community wellbeing, and redirects funding away from the police.
 
   I am asking the Ceres City Council to commit to racial justice and to not be complicit in further promoting a system of policing that reinforces systemic oppression. To do so, I demand funding for the police department be redirected elsewhere. In 2019, this fiscal year, police services were allocated over $14 million in funding. This means a single department received one-fifth of the total city budget. This subsidy promotes, rather than dismantles, a system based in racial and class inequality.
 
