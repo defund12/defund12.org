@@ -27,11 +27,11 @@ body: |-
 
   To ensure your dedication to our city and citizens, I demand that you defund the Truth or Consequences Police Department and start providing more support and funding towards community-based safety and social programs. This reprioritization will be necessary to prevent further police brutality and violence in the future, and finally mark a turn from overpolicing and incarceration.
 
-  Black, Latinx, and Indigenous communities are living in persistent fear of being killed by state authorities like police, immigration agents, and even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977 state and local governments spent $60 billion on police and corrections. In 2017, they spent $194 billion—a 220 percent increase. Despite continued police profiling, harassment, terror, and killing in Black, Latinx, and Indigenous communities, local and federal decision-makers continue to invest in the police, which leaves these communities vulnerable and our communities no safer.
+  Black, Latinx, and Indigenous communities are living in persistent fear of being killed by state authorities like police, immigration agents, and even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections. In 2017, they spent $194 billion—a 220 percent increase. Despite continued police profiling, harassment, terror, and killing in Black, Latinx, and Indigenous communities, local and federal decision-makers continue to invest in the police, which leaves these communities vulnerable and our communities no safer.
 
   Where could reallocated money go? It could go towards building healthy communities, to the health of our elders and children, to neighborhood infrastructure, to education, to childcare, to support vibrant Black, Latinx, and Indigenous futures. The possibilities are incredibly exciting.
 
-  We join in solidarity with the freedom fighters in Albuquerque, Las Cruces, Santa Fe, Minneapolis, Louisville, and across the United States. And we call for the end to police terror.
+  I join in solidarity with the freedom fighters in Albuquerque, Las Cruces, Santa Fe, Minneapolis, Louisville, and across the United States. I call for the end to police terror.
 
   Sincerely,
 
