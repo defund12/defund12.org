@@ -4,7 +4,6 @@ permalink: "/palmdale"
 name: Letter to City Council
 city: Palmdale
 state: CA
-layout: email
 recipients:
 - shofbauer@cityofpalmdale.org
 - rloa@cityofpalmdale.org
@@ -26,7 +25,7 @@ body: "Message: (Don't forget to replace the [x]'s with your information!)\U0001
   on a national and perhaps even global stage.\n\nResidents want answers to Robert
   Fuller’s death and to feel safe, regardless of race. According to NPR, Neo-Nazi
   groups have been reported in the area and the Justice Department has investigated
-  discriminatory housing and policing practices Palmdale and our neighbor Lancaster.
+  discriminatory housing and policing practices in Palmdale and our neighbor, Lancaster.
   Is this what we want to be known for as a city?\n\nAs a result of these events,
   I ask that the City Council review the 2020-2021 budget. I ask you to reallocate
   funds from the police department to other areas that desperately need it. These
@@ -49,5 +48,6 @@ body: "Message: (Don't forget to replace the [x]'s with your information!)\U0001
   keep our community safe.\n\nThank you for all you do for the City of Palmdale, and
   for your consideration.\n\nSincerely,\n\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR
   PHONE NUMBER]"
+layout: email
 ---
 
