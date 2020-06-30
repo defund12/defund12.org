@@ -1,19 +1,19 @@
 ---
-title: "Trenton, NJ"
+title: Trenton, NJ
 permalink: "/trenton"
-name: "Letter to the Mayor and City Council"
-state: "NJ"
-city: "Trenton"
-layout: "email"
+name: Letter to the Mayor and City Council
+state: NJ
+city: Trenton
+layout: email
 recipients:
-- "mayorsoffice@trentonnj.org"
-- "kmcbride@trentonnj.org"
-- "mcaldwell-wilson@trentonnj.org"
-- "jblakeley@trentonnj.org"
-- "jharrison@trentonnj.org"
-- "georgemuschal@aol.org"
-- "srodriguez@trentonnj.org"
-- "rvaughn@trentonnj.org"
+- mayorsoffice@trentonnj.org
+- kmcbride@trentonnj.org
+- mcaldwell-wilson@trentonnj.org
+- jblakeley@trentonnj.org
+- jharrison@trentonnj.org
+- georgemuschal@aol.org
+- srodriguez@trentonnj.org
+- rvaughn@trentonnj.org
 body: |-
   Dear Mayor Gusciora and City Council Members,
 
