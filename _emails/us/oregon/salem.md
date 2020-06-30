@@ -1,6 +1,6 @@
 ---
 title: "Salem, OR"
-permalink: "/salem"
+permalink: "/salem-or"
 name: "Letter to Mayor and City Council"
 city: "Salem"
 state: "OR"
