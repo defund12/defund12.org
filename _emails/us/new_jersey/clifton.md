@@ -1,18 +1,18 @@
 ---
-title: "Clifton, NJ"
+title: Clifton, NJ
 permalink: "/clifton"
-name: "Letter to the Mayor and City Council"
-state: "NJ"
-city: "Clifton"
-layout: "email"
+name: Letter to the Mayor and City Council
+state: NJ
+city: Clifton
+layout: email
 recipients:
-- "msadrakula@cliftonnj.org"
-- "rpino@cliftonnj.org"
-- "lmurphy@cliftonnj.org"
-- "rgrabowski@cliftonnj.org"
-- "wgibson@cliftonnj.org"
-- "peagler@cliftonnj.org"
-- "janzaldi@cliftonnj.org"
+- msadrakula@cliftonnj.org
+- rpino@cliftonnj.org
+- lmurphy@cliftonnj.org
+- rgrabowski@cliftonnj.org
+- wgibson@cliftonnj.org
+- peagler@cliftonnj.org
+- janzaldi@cliftonnj.org
 body: |-
   Dear Mayor Anzaldi and Councilmembers:
 
