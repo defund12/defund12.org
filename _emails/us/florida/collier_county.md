@@ -1,16 +1,16 @@
 ---
-title: "Collier County, Florida"
+title: Collier County, Florida
 permalink: "/colliercounty"
-name: "Letter to County Commissioners"
-state: "FL"
-city: "Collier County"
-layout: "email"
+name: Letter to County Commissioners
+state: FL
+city: Collier County
+layout: email
 recipients:
-- "Donna.Fiala@CollierCountyFL.Gov"
-- "Andy.Solis@CollierCountyFL.Gov"
-- "Burt.Saunders@CollierCountyFL.Gov"
-- "Penny.Taylor@CollierCountyFL.Gov"
-- "Bill.McDaniel@colliercountyfl.gov"
+- Donna.Fiala@CollierCountyFL.Gov
+- Andy.Solis@CollierCountyFL.Gov
+- Burt.Saunders@CollierCountyFL.Gov
+- Penny.Taylor@CollierCountyFL.Gov
+- Bill.McDaniel@colliercountyfl.gov
 body: |-
   Dear County Commissioners,
 
