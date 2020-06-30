@@ -5,14 +5,14 @@ name: Letter to Mayor, City Commission and County Commission
 city: Truth or Consequences
 state: NM
 recipients:
-- "sandra.whitehead@torcnm.org"
-- "brendan.tolley@torcnm.org"
-- "randall.aragon@torcnm.org"
-- "paul.baca@torcnm.org"
-- "amanda.forrister@torcnm.org"
-- "fluna@sierraco.org"
-- "tday@sierraco.org"
-- "jpaxon@sierraco.org"
+- sandra.whitehead@torcnm.org
+- brendan.tolley@torcnm.org
+- randall.aragon@torcnm.org
+- paul.baca@torcnm.org
+- amanda.forrister@torcnm.org
+- fluna@sierraco.org
+- tday@sierraco.org
+- jpaxon@sierraco.org
 body: |-
   Dear Mayor Whitehead, the Truth or Consequences City Commission, and the Sierra County Commission,
 
@@ -39,6 +39,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR NUMBER]
   [YOUR EMAIL]
-layout: "email"
+layout: email
 ---
 
