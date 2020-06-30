@@ -4,7 +4,6 @@ permalink: "/corona"
 name: Letter to City Council
 city: Corona
 state: CA
-layout: email
 recipients:
 - Jim.Steiner@CoronaCA.gov
 - Jacque.Casillas@CoronaCA.gov
@@ -20,7 +19,7 @@ body: |-
 
   The city’s proposed budget for Fiscal Year 2021 increases the CPD budget by over $2M, reinforcing a historically disproportionate allocation of funds towards this department (32.86% of the general fund went towards the CPD in FY2020). Also, the proposed budgets for Community Development, Public Works, and Library & Recreation are either cut or marginally increased.
 
-  The proposed CPD budget for FY21 is larger than Community Development, Library & Recreation, and Public Works combined. I am asking that city officials strategically reallocate funds and responsibility away from police and towards community-based models of safety, support, and prevention.
+  The proposed CPD budget for FY21 is larger than Community Development, Library & Recreation, and Public Works combined. I am asking that city officials strategically re-allocate funds and responsibility away from police and towards community-based models of safety, support, and prevention.
 
   Thank you,
 
@@ -28,5 +27,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
