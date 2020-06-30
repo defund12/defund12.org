@@ -1,18 +1,18 @@
 ---
-title: "Corona, CA"
+title: Corona, CA
 permalink: "/corona"
-name: "Letter to City Council"
-city: "Corona"
-state: "CA"
-layout: "email"
+name: Letter to City Council
+city: Corona
+state: CA
+layout: email
 recipients:
-- "Jim.Steiner@CoronaCA.gov"
-- "Jacque.Casillas@CoronaCA.gov"
-- "Yolanda.Carrillo@CoronaCA.gov"
-- "Jason.Scott@CoronaCA.gov"
-- "Wes.Speake@CoronaCA.gov"
-- "Chad.Willardson@CoronaCA.gov"
-- "CityClerk@CoronaCA.gov"
+- Jim.Steiner@CoronaCA.gov
+- Jacque.Casillas@CoronaCA.gov
+- Yolanda.Carrillo@CoronaCA.gov
+- Jason.Scott@CoronaCA.gov
+- Wes.Speake@CoronaCA.gov
+- Chad.Willardson@CoronaCA.gov
+- CityClerk@CoronaCA.gov
 body: |-
   Dear Corona City Council Members,
 
