@@ -2,9 +2,8 @@
 title: Trenton, NJ
 permalink: "/trenton"
 name: Letter to the Mayor and City Council
-state: NJ
 city: Trenton
-layout: email
+state: NJ
 recipients:
 - mayorsoffice@trentonnj.org
 - kmcbride@trentonnj.org
@@ -23,7 +22,7 @@ body: |-
 
   Economic security must be a central consideration in any strategy aimed at increasing community safety. This is particularly relevant now, during a pandemic which has disproportionately affected communities of color and low-income people both in its public health impacts and in the economic impacts of the resulting recession. In the coming months and years, investments in social programs will be critical in helping communities recover.
 
-  I urge you to revise the FY 2020 budget to redistribute funding away from police and toward the needs of Trenton residents, ideally with participation of those residents in the creation of the budget, and show that the City of Trenton is committed to a vision of true public safety, one that reduces and eliminates harm for everyone.
+  I urge you to revise the FY 2020 budget to redistribute funding away from police and toward the needs of Trenton residents, ideally with participation of those residents in the creation of the budget. I urge you to show that the City of Trenton is committed to a vision of true public safety, one that reduces and eliminates harm for everyone.
 
   Sincerely,
 
@@ -31,5 +30,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR PHONE]
   [YOUR EMAIL]
+layout: email
 ---
 
