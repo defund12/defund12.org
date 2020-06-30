@@ -1,21 +1,21 @@
 ---
-title: "Broward County, Florida"
+title: Broward County, Florida
 permalink: "/browardcounty"
-name: "Letter to the Board of County Commissioners and County Administrator"
-state: "FL"
-city: "Broward County"
-layout: "email"
+name: Letter to the Board of County Commissioners and County Administrator
+state: FL
+city: Broward County
+layout: email
 recipients:
-- "nrich@broward.org"
-- "mbogen@broward.org"
-- "mudine@broward.org"
-- "lfisher@broward.org"
-- "bfurr@broward.org"
-- "tryan@broward.org"
-- "sgeller@broward.org"
-- "bsharief@broward.org"
-- "dholness@broward.org"
-- "bhenry@broward.org"
+- nrich@broward.org
+- mbogen@broward.org
+- mudine@broward.org
+- lfisher@broward.org
+- bfurr@broward.org
+- tryan@broward.org
+- sgeller@broward.org
+- bsharief@broward.org
+- dholness@broward.org
+- bhenry@broward.org
 body: |-
   To the Board of Broward County Commissioners and County Administrator Henry,
 
