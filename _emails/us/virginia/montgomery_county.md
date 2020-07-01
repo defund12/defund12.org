@@ -5,13 +5,13 @@ name: Letter to the County Board of Supervisors
 city: Montgomery County
 state: VA
 recipients:
-- "bohnsr@montgomerycountyva.gov"
-- "blevinssm@montgomerycountyva.gov"
-- "fijalkowskisr@montgomerycountyva.gov"
-- "kingmt@montgomerycountyva.gov"
-- "shepparddo@montgomerycountyva.gov"
-- "biggsmw@montgomerycountyva.gov"
-- "demottsan@montgomerycountyva.gov"
+- bohnsr@montgomerycountyva.gov
+- blevinssm@montgomerycountyva.gov
+- fijalkowskisr@montgomerycountyva.gov
+- kingmt@montgomerycountyva.gov
+- shepparddo@montgomerycountyva.gov
+- biggsmw@montgomerycountyva.gov
+- demottsan@montgomerycountyva.gov
 body: |-
   Dear Montgomery County Board of Supervisors,
 
@@ -30,6 +30,6 @@ body: |-
   [YOUR PHONE NUMBER]
 
   [1] https://www.montgomerycountyva.gov/departments/finance-intro/budget
-layout: "email"
+layout: email
 ---
 
