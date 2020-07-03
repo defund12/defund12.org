@@ -29,5 +29,8 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+
+  [1] https://www.kirklandwa.gov/Assets/City+Council/Council+PDFs/Council+Goals+2019.pdf
+  [2] https://www.kirklandwa.gov/Assets/Finance+Admin/2019-2020+Budget/2019-2020+Final+Budget+Document.pdf
 ---
 
