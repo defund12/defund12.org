@@ -1,10 +1,10 @@
 ---
-title: "Anne Arundel County, MD"
+title: Anne Arundel County, MD
 permalink: "/anne-arundel"
-name: "Letter to County Executive and County Council"
-city: "Anne Arundel County"
-state: "MD"
-layout: "email"
+name: Letter to County Executive and County Council
+city: Anne Arundel County
+state: MD
+layout: email
 recipients:
 - expitt99@aacounty.org
 - slacey@aacounty.org
@@ -37,3 +37,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
