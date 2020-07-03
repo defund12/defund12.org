@@ -1,10 +1,10 @@
 ---
-title: "Edgewood Borough, PA"
+title: Edgewood Borough, PA
 permalink: "/edgewood-borough"
-name: "Letter to Mayor and City Council"
-city: "Edgewood Borough"
-state: "PA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Edgewood Borough
+state: PA
+layout: email
 recipients:
 - jwilson@edgewoodboro.com
 - jwainright1@edgewoodboro.com
@@ -31,3 +31,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
