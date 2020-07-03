@@ -1,23 +1,23 @@
 ---
-title: "Fort Lauderdale, FL"
+title: Fort Lauderdale, FL
 permalink: "/fortlauderdale"
-name: "Letter to Board of City Commissioners and Mayor"
-city: "Fort Lauderdale"
-state: "FL"
+name: Letter to Board of City Commissioners and Mayor
+city: Fort Lauderdale
+state: FL
 recipients:
-- "dtrantalis@fortlauderdale.gov"
-- "swyman@fortlauderdale.gov"
-- "zdurand@fortlauderdale.gov"
-- "RMcKinzie@fortlauderdale.gov"
-- "mconingsby@fortlauderdale.gov"
-- "SGlassman@fortlauderdale.gov"
-- "BSorensen@fortlauderdale.gov"
-- "VHoward@fortlauderdale.gov"
-- "TRoach@fortlauderdale.gov"
-- "cgisleson@fortlauderdale.gov"
-- "praju@fortlauderdale.gov"
-- "Jusaavedra@fortlauderdale.gov"
-- "aheathcock@fortlauderdale.gov"
+- dtrantalis@fortlauderdale.gov
+- swyman@fortlauderdale.gov
+- zdurand@fortlauderdale.gov
+- RMcKinzie@fortlauderdale.gov
+- mconingsby@fortlauderdale.gov
+- SGlassman@fortlauderdale.gov
+- BSorensen@fortlauderdale.gov
+- VHoward@fortlauderdale.gov
+- TRoach@fortlauderdale.gov
+- cgisleson@fortlauderdale.gov
+- praju@fortlauderdale.gov
+- Jusaavedra@fortlauderdale.gov
+- aheathcock@fortlauderdale.gov
 body: |-
   Dear Mayor Trantalis and Board of Fort Lauderdale City Commissioners,
 
@@ -46,6 +46,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE ]
-layout: "email"
+layout: email
 ---
 
