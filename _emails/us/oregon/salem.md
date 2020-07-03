@@ -1,10 +1,10 @@
 ---
-title: "Salem, OR"
+title: Salem, OR
 permalink: "/salem-or"
-name: "Letter to Mayor and City Council"
-city: "Salem"
-state: "OR"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Salem
+state: OR
+layout: email
 recipients:
 - budgetoffice@cityofsalem.net
 - citycouncil@cityofsalem.net
@@ -37,3 +37,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
