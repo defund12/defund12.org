@@ -1,10 +1,10 @@
 ---
-title: "Lynnwood, WA"
+title: Lynnwood, WA
 permalink: "/lynnwood"
-name: "Letter to Mayor and City Council"
-city: "Lynnwood"
-state: "WA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Lynnwood
+state: WA
+layout: email
 recipients:
 - mayor@LynnwoodWA.gov
 - cfrizzell@LynnwoodWA.gov
@@ -33,3 +33,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
