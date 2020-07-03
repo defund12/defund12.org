@@ -1,10 +1,10 @@
 ---
-title: "Covington, WA"
+title: Covington, WA
 permalink: "/covington"
-name: "Letter to Mayor and City Council"
-city: "Covington"
-state: "WA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Covington
+state: WA
+layout: email
 recipients:
 - jwagner@covingtonwa.gov
 - fhollums@covingtonwa.gov
@@ -28,3 +28,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
