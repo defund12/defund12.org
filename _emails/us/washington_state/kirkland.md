@@ -1,10 +1,10 @@
 ---
-title: "Kirkland, WA"
+title: Kirkland, WA
 permalink: "/kirkland"
-name: "Letter to Mayor and City Council"
-city: "Kirkland"
-state: "WA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Kirkland
+state: WA
+layout: email
 recipients:
 - psweet@kirklandwa.gov
 - jarnold@kirklandwa.gov
@@ -30,3 +30,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
