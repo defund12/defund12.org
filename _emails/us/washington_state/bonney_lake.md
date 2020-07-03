@@ -1,10 +1,10 @@
 ---
-title: "Bonney Lake, WA"
+title: Bonney Lake, WA
 permalink: "/bonneylake"
-name: "Letter to Mayor and City Council"
-city: "Bonney Lake"
-state: "WA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Bonney Lake
+state: WA
+layout: email
 recipients:
 - Mayor@cobl.us
 - vodopichj@cobl.us
@@ -31,3 +31,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
