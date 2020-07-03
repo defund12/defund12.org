@@ -1,10 +1,10 @@
 ---
-title: "Elgin, IL"
+title: Elgin, IL
 permalink: "/elgin"
-name: "Letter to Mayor and City Council"
-city: "Elgin"
-state: "IL"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Elgin
+state: IL
+layout: email
 recipients:
 - mayor@cityofelgin.org
 - steffen_j@cityofelgin.org
@@ -30,7 +30,7 @@ body: |-
   Therefore, I propose the following demands:
 
   1. Reallocate taxpayer dollars from the police to community-based mental health services, substance abuse treatment services, affordable housing programs, and education.
-  
+
   2. The formation of a Citizens Advisory Council to provide oversight for police discipline, internal investigation, hiring, and police union contracts. This authority will hold law enforcement accountable for misconduct and abuse and will have the authority to review any and all information relevant to related cases. This authority will be held by elected citizens who are not former law enforcement nor have relatives in law enforcement.
 
   3. The forced retirement/resignation of Lieutenant Chris Jensen, to help the community move forward and heal after the murder of DeCynthia Clements. Any settlement or retirement paid to Jenson must come from the Elgin Police Department budget. In addition, all future settlements will come from the Elgin Police Department budget, and officer names will not be redacted from settlements. I urge the City Council to enact legislation that holds police accountable and ensures they can no longer use lethal force against the residents of Elgin without consequence.
@@ -51,3 +51,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
