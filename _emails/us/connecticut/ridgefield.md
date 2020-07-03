@@ -1,10 +1,10 @@
 ---
-title: "Ridgefield, CT"
+title: Ridgefield, CT
 permalink: "/ridgefield"
-name: "Letter to the Boards of Finance and Selectmen"
-city: "Ridgefield"
-state: "CT"
-layout: "email"
+name: Letter to the Boards of Finance and Selectmen
+city: Ridgefield
+state: CT
+layout: email
 recipients:
 - selectman@ridgefieldct.org
 - Bob@HebertPartners.com
@@ -26,3 +26,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
