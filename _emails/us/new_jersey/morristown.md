@@ -1,10 +1,10 @@
 ---
-title: "Morristown, NJ"
+title: Morristown, NJ
 permalink: "/morristown"
-name: "Letter to the Mayor and City Council"
-city: "Morristown"
-state: "NJ"
-layout: "email"
+name: Letter to the Mayor and City Council
+city: Morristown
+state: NJ
+layout: email
 recipients:
 - mayor@townofmorristown.org
 - s-armington@townofmorristown.org
@@ -32,3 +32,4 @@ body: |-
   [YOUR PHONE]
   [YOUR EMAIL]
 ---
+
