@@ -1,10 +1,10 @@
 ---
-title: "Tiburon, CA"
+title: Tiburon, CA
 permalink: "/tiburon"
-name: "Letter to Mayor and City Council"
-city: "Tiburon"
-state: "CA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Tiburon
+state: CA
+layout: email
 recipients:
 - town@townoftiburon.org
 - afredericks@townoftiburon.org
@@ -29,3 +29,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
