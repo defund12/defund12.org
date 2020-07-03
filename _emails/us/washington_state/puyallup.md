@@ -1,10 +1,10 @@
 ---
-title: "Puyallup, WA"
+title: Puyallup, WA
 permalink: "/puyallup"
-name: "Letter to Mayor and City Council"
-city: "Puyallup"
-state: "WA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Puyallup
+state: WA
+layout: email
 recipients:
 - jdoor@ci.puyallup.wa.us
 - jpalmer@ci.puyallup.wa.us
@@ -34,3 +34,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
