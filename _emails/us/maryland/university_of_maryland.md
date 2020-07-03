@@ -1,13 +1,13 @@
 ---
-title: "University of Maryland"
+title: University of Maryland
 permalink: "/umd"
-name: "Letter to UMD President and Provost"
-city: "University of Maryland"
-state: "MD"
-layout: "email"
+name: Letter to UMD President and Provost
+city: University of Maryland
+state: MD
+layout: email
 recipients:
-- "pines@umd.edu"
-- "mrankin@umd.edu"
+- pines@umd.edu
+- mrankin@umd.edu
 body: |-
   Dear President Pines and Provost Rankin,
 
