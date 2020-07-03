@@ -1,10 +1,10 @@
 ---
-title: "Brentwood, CA"
+title: Brentwood, CA
 permalink: "/brentwood"
-name: "Letter to Mayor and City Council"
-city: "Brentwood"
-state: "CA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Brentwood
+state: CA
+layout: email
 recipients:
 - CityAttorney@brentwoodca.gov
 - CityClerk@brentwoodca.gov
@@ -29,3 +29,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
