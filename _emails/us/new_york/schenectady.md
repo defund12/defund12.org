@@ -1,10 +1,10 @@
 ---
-title: "Schenectady, NY"
+title: Schenectady, NY
 permalink: "/schenectady"
-name: "Letter to the City Council"
-city: "Schenectady"
-state: "NY"
-layout: "email"
+name: Letter to the City Council
+city: Schenectady
+state: NY
+layout: email
 recipients:
 - smykoo@schenectadyny.gov
 - kZalewskiWildzunas@schenectadyny.gov
@@ -29,3 +29,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
