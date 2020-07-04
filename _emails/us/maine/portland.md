@@ -17,8 +17,6 @@ recipients:
 - jduson@portlandmaine.gov
 - nmm@portlandmaine.gov
 - fclark@portlandmaine.org
-- Richard.Farnsworth@legislature.maine.gov
-- pali@portlandmaine.org
 body: "Civil Servants,\n\nMy name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD/BOROUGH/CITY].\n\nI
   am writing to ask that you provide no new funding for the Portland Police Department
   (PPD) and that you halt all funding that has already been approved in order to begin
