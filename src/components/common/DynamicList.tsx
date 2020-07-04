@@ -4,7 +4,11 @@ import { v1 as uuid } from "uuid";
 import { isFunction } from "lodash";
 
 interface DynamicListState<TModel> {
+  /** An array of objects that represent the state of the child components. */
   listItems: Array<TModel>;
+  /** An array of UUID keys mapped 1:1 with listItems, used to indicate
+   * when React should re-render.
+   */
   keys: Array<string>;
 }
 
