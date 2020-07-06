@@ -4,7 +4,6 @@ permalink: "/tiburon"
 name: Letter to Mayor and City Council
 city: Tiburon
 state: CA
-layout: email
 recipients:
 - town@townoftiburon.org
 - afredericks@townoftiburon.org
@@ -28,5 +27,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
