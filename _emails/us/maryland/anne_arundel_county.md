@@ -4,7 +4,6 @@ permalink: "/anne-arundel"
 name: Letter to County Executive and County Council
 city: Anne Arundel County
 state: MD
-layout: email
 recipients:
 - expitt99@aacounty.org
 - slacey@aacounty.org
@@ -19,7 +18,7 @@ body: |-
 
   My name is [YOUR NAME] and I am a resident of [NEIGHBORHOOD]. I write this letter to urge you to defund the Anne Arundel County Police Department and reallocate funds into projects that prioritize community services such as health, rehabilitation, housing, employment.
 
-  Maryland has the highest number of Black men incarcerated per capita. It is crucial we address the policies in which systematic racism has become a norm. Why should the police be funded given their history of violence within our community? Every member of our community deserves a quality of life that promotes safety, justice and the ability to live without fear from the government/police.
+  Maryland has the highest number of Black men incarcerated per capita. It is crucial that we address the policies in which systematic racism has become a norm. Why should the police be funded given their history of violence within our community? Every member of our community deserves a quality of life that promotes safety, justice and the ability to live without fear from the government/police.
 
   The Anne Arundel County Police Department is to be allocated 11% of the 2021 budget. $88 million of the allocated $156 million will be going to Patrol Services. This includes School Resource Officers, who "partner with County Board of Education to assist with identifying students at risk for academic failure, truancy, and/or involvement in criminal activities," directly linking students to the school to prison pipeline. Meanwhile, the entire department Social Services is allocated 3.2% of the total 2021 budget (Source: Anne Arundel County FY2021 Proposed Budget Message and Current Expense Budget).
 
@@ -36,5 +35,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+layout: email
 ---
 
