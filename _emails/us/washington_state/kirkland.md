@@ -4,7 +4,6 @@ permalink: "/kirkland"
 name: Letter to Mayor and City Council
 city: Kirkland
 state: WA
-layout: email
 recipients:
 - psweet@kirklandwa.gov
 - jarnold@kirklandwa.gov
@@ -16,7 +15,7 @@ recipients:
 body: |-
   Dear City of Kirkland Mayor, Deputy Mayor, and Councilmembers,
 
-  My name is [YOUR NAME] and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the City Council adopt a 2021-2022 Budget for the people that satisfies the council's public safety goal of "[Providing] for public safety through a community-based approach that focuses on prevention of problems..." [1] and redirects funding away from the police.
+  My name is [YOUR NAME], and I am a resident of [YOUR NEIGHBORHOOD/DISTRICT]. I am writing to demand that the City Council adopts a 2021-2022 budget for the people that satisfies the council's public safety goal of "[Providing] for public safety through a community-based approach that focuses on prevention of problems..." [1] and redirects funding away from the police.
 
   I am asking this City Council to show your commitment to this community by making meaningful changes to the city's priorities as reflected in the budget. In the 2019-2020 Budget, the City of Kirkland allocated 21% of its 245 million dollars in expenses to the Kirkland Police Department [2]. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
 
@@ -29,5 +28,9 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
+
+  [1] https://www.kirklandwa.gov/Assets/City+Council/Council+PDFs/Council+Goals+2019.pdf
+  [2] https://www.kirklandwa.gov/Assets/Finance+Admin/2019-2020+Budget/2019-2020+Final+Budget+Document.pdf
+layout: email
 ---
 
