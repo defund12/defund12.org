@@ -30,7 +30,7 @@ body: |-
 
   As the City of Fort Lauderdale creates the budget for Fiscal Year 2021, I urge you to listen to your constituents and defund the police department. According to the FY 2020 Proposed Budget, $130.4 million is proposed to be allocated to the police department while only $50.5 million goes to Parks and Recreation, $14 million to Sustainable Development, $5.4 million to Public Works, and $2.8 million to Transportation and Mobility.
 
-  It is unacceptable that a third of our city budget, $130 million, goes to the police, while critical departments such as Sustainable Development only receive $14 million. This is an unacceptable disparity in funding. I ask you to take a stand and support Black people, Indigenous people, and people of color in your community by allocating funds to other critical social services.
+  It is unacceptable that a third of our city budget, $130 million, goes to the police, while critical departments such as Sustainable Development only receive $14 million. This is an unacceptable disparity in funding. I ask you to take a stand and support Black people, Indigenous people, and people of color in your community by allocating funds to other essential social services.
 
   Moreover, I ask that you implement constructive and necessary reforms within the police department to keep our community safe. Tear gas is a chemical weapon banned in war, yet our own officers employed tear gas on peaceful protestors on Sunday, May 31st at the Black Lives Matter gathering. Tear gas should not be used under any circumstance. Police budgets should be used on effective training (including anti-racism coaching), not on chemical weapons, military-style equipment, or new infrastructure.
 
