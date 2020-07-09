@@ -4,7 +4,6 @@ permalink: "/morristown"
 name: Letter to the Mayor and City Council
 city: Morristown
 state: NJ
-layout: email
 recipients:
 - mayor@townofmorristown.org
 - s-armington@townofmorristown.org
@@ -18,7 +17,7 @@ recipients:
 body: |-
   Dear Mayor Dougherty, Council Members, and Mr. Corcoran:
 
-  My name is [YOUR NAME HERE], and I am a resident of Morristown. In light of the urgent movement for Black lives happening across our nation and a unified call for justice reform, I am writing to urge you to advocate for a meaningful reallocation of the city's expenditures away from policing and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
+  My name is [YOUR NAME HERE], and I am a resident of Morristown. In light of the urgent movement for Black lives happening across our nation and a unified call for justice, I am writing to urge you to advocate for a meaningful reallocation of the city's expenditures away from policing and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs.
 
   Accordingly, it has come to my attention that the 2020 budget allocated $7,285,252.04 to the police, an increase from 2019, outshining the city's other appropriations. For example, the allocation for the public health department does not even reach $200,000. This is egregious, particularly in light of the global pandemic. The policing budget is more than 35 times the entire budget for public health. New Jersey has been one of the hardest-hit states in the country, and while we open up more and more and expect people to come to Morristown for the bars, food, trails, etc., how can we justify this egregious disparity in funding?
 
@@ -31,5 +30,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR PHONE]
   [YOUR EMAIL]
+layout: email
 ---
 
