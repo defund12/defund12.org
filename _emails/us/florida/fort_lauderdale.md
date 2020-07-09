@@ -21,7 +21,7 @@ recipients:
 body: |-
   Dear Mayor Trantalis and Board of Fort Lauderdale City Commissioners,
 
-  My name is [YOUR NAME] and I am a resident of [YOUR CITY], Florida. I request that the Mayor and City Commission support our community and hear my call to:
+  My name is [YOUR NAME], and I am a resident of [YOUR CITY], Florida. I request that the Mayor and City Commission support our community and hear my call to:
 
   * Defund the police department.
   * Reallocate money to programs and city-led initiatives that support education, rehabilitation, public health, and community-oriented activities.
@@ -32,9 +32,9 @@ body: |-
 
   It is unacceptable that a third of our city budget, $130 million, goes to the police, while critical departments such as Sustainable Development only receive $14 million. This is an unacceptable disparity in funding. I ask you to take a stand and support Black people, Indigenous people, and people of color in your community by allocating funds to other essential social services.
 
-  Moreover, I ask that you implement constructive and necessary reforms within the police department to keep our community safe. Tear gas is a chemical weapon banned in war, yet our own officers employed tear gas on peaceful protestors on Sunday, May 31st at the Black Lives Matter gathering. Tear gas should not be used under any circumstance. Police budgets should be used on effective training (including anti-racism coaching), not on chemical weapons, military-style equipment, or new infrastructure.
+  Moreover, I ask that you implement constructive and necessary changes to demilitarize the police department and keep our community safe. Tear gas is a chemical weapon banned in war, yet our own officers employed tear gas on peaceful protestors on Sunday, May 31st at the Black Lives Matter gathering. Tear gas should not be used under any circumstance. City funds should go towards social programs and resources that support critical community needs--not chemical weapons, military-style equipment, and new infrastructure for police.
 
-  Since the 1970s, U.S. spending on police has nearly tripled, reaching $114.5 billion in 2017, much of that funding going towards detention centers. This is an unnecessary use of our resources. Lawmakers in at least 16 U.S. cities have proposed or made pledges that would divest resources from the police. As a country, we are hurting and demand change from our elected officials.
+  Since the 1970s, U.S. spending on police has nearly tripled, reaching $114.5 billion in 2017, with much of that funding going towards detention centers. This is an unnecessary use of our resources. Lawmakers in at least 16 U.S. cities have proposed or made pledges that would divest resources from the police. As a country, we are hurting and demand change from our elected officials.
 
   I urge you to reimagine the way the justice system works in Fort Lauderdale. This means investing in our community’s long-term health and prosperity and, in doing so, decreasing the demand for such an expensive police force. Until the city of Fort Lauderdale and Broward County do this, we are failing to serve communities of color.
 
