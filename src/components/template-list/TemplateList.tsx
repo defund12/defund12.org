@@ -12,6 +12,7 @@ import {
   LayoutType,
 } from "../../types/TemplateData";
 import { TemplateListProps } from "../../types/PropTypes";
+import styled from "@emotion/styled";
 
 export interface TemplateListState {
   /**
@@ -88,7 +89,7 @@ class _TemplateList extends React.Component<
    */
   render(): React.ReactNode {
     return (
-      <main className="content">
+      <StyledMain>
         <div id="filters">
           <Select
             aria-label="Select State"
@@ -109,16 +110,18 @@ class _TemplateList extends React.Component<
               )
               .map((stateGroup) => {
                 return (
-                  <ul key={uuid()} className="state">
+                  <>
                     <h2>{stateGroup.name}</h2>
-                    {this.renderEmailLinks(stateGroup.templates)}
-                  </ul>
+                    <ul key={uuid()} className="state">
+                      {this.renderEmailLinks(stateGroup.templates)}
+                    </ul>
+                  </>
                 );
               })}
           </article>
         </section>
         <p className="divider footer"></p>
-      </main>
+      </StyledMain>
     );
   }
 }
@@ -227,3 +230,43 @@ export default function TemplateList({
     />
   );
 }
+
+const StyledMain = styled.main`
+  margin-top: var(--x6);
+  min-height: 25vh;
+  #filters {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+  .cityList {
+    width: calc(100vw - var(--x8));
+    max-width: var(--m);
+    .state {
+      margin-top: var(--x1);
+    }
+    h2 {
+      margin-bottom: var(--x1);
+    }
+    a {
+      color: var(--link);
+    }
+    a:visited {
+      color: var(--text);
+    }
+    ul {
+      margin-left: var(--x1);
+      li {
+        text-indent: 0.65em;
+        margin-top: var(--x2);
+        margin-bottom: var(--x2);
+        @media screen and (min-width: 48rem) {
+          margin-top: var(--x1);
+          margin-bottom: var(--x1);
+        }
+      }
+    }
+    & + .divider {
+      margin-top: var(--x5);
+    }
+  }
+`;

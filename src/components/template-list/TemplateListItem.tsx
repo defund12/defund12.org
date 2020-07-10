@@ -2,6 +2,7 @@
 import { TemplateListItemProps } from "../../types/PropTypes";
 import { DefundUtils } from "../../DefundUtils";
 import { Link } from "gatsby";
+import styled from "@emotion/styled";
 
 interface TemplateListItemState {
   /** A boolean indicating whether the copy button was recently clicked,
@@ -43,7 +44,7 @@ export class TemplateListItem extends React.Component<
    */
   render(): React.ReactNode {
     return (
-      <li data-state={this.props.state}>
+      <StyledList data-state={this.props.state}>
         <Link to={`${this.props.permalink}?browse`}>
           {this.props.city} - <i>{this.props.name}</i>
         </Link>
@@ -56,7 +57,14 @@ export class TemplateListItem extends React.Component<
         >
           {this.state.clickActive ? "✅(copied)" : "🔗"}
         </span>
-      </li>
+      </StyledList>
     );
   }
 }
+
+const StyledList = styled.li`
+  .copyToClipboard {
+    margin-left: var(--x1);
+    cursor: copy;
+  }
+`;

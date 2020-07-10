@@ -10,6 +10,7 @@ import {
 } from "../../types/PropTypes";
 import Layout from "../common/Layout";
 import EmailList from "../template-list/EmailList";
+import styled from "@emotion/styled";
 
 /**
  * The @link {Email} component state.
@@ -109,14 +110,14 @@ export default class Email extends React.Component<
   render(): React.ReactNode {
     return (
       <Layout {...this.layoutProps}>
-        <section className="emailPageHeader">
+        <StyledSection>
           <h2>{this.emailData.name}</h2>
           <b>
             {this.emailData.city}, {this.emailData.state}
           </b>
           <p hidden={!this.autoOpen}>{this.siteConfig.autoOpenMessage}</p>
           <div className="buttons">
-            <a onClick={this.openEmail.bind(this)}>Send email</a>&nbsp;
+            <a onClick={this.openEmail.bind(this)}>Send email</a>
             <a
               onClick={() =>
                 DefundUtils.copyToClipboard(this.emailData.permalink, true)
@@ -126,9 +127,9 @@ export default class Email extends React.Component<
             </a>
           </div>
           <p>{this.siteConfig.badMailtoMessage}</p>
-        </section>
+        </StyledSection>
 
-        <article className="emailContentSection">
+        <StyledArticle>
           <div className="container">
             <div className="emailContent">
               <div className="recipients">
@@ -194,8 +195,7 @@ export default class Email extends React.Component<
               </div>
             </div>
           </div>
-        </article>
-        <br></br>
+        </StyledArticle>
         <EmailList />
       </Layout>
     );
@@ -223,6 +223,54 @@ export const pageQuery = graphql`
       autoOpenMessage
       badMailtoMessage
       defaultSubjectLine
+    }
+  }
+`;
+
+const StyledSection = styled.section`
+  width: calc(100vw - var(--x8));
+  max-width: var(--m);
+  padding-bottom: var(--x4);
+
+  b {
+    display: block;
+    margin-bottom: var(--x2);
+  }
+
+  .buttons {
+    margin: var(--x3) 0;
+
+    a {
+      display: inline-block;
+      color: var(--link);
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: var(--x2);
+      }
+    }
+  }
+`;
+
+const StyledArticle = styled.article`
+  padding: var(--x4) 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg_);
+
+  .container {
+    width: calc(100vw - var(--x8));
+    max-width: var(--m);
+    .emailContent {
+      div {
+        margin-top: var(--x3);
+      }
+
+      .recipients {
+        overflow-wrap: break-word;
+      }
     }
   }
 `;

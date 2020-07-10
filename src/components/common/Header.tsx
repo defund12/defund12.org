@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import { graphql, StaticQuery, Link } from "gatsby";
 import { HeaderProps } from "../../types/PropTypes";
+import styled from "@emotion/styled";
 
 /**
  * The site header, containing the banner and introduction.
@@ -15,13 +16,13 @@ class _Header extends React.Component<HeaderProps> {
    */
   render() {
     return (
-      <header className="header">
+      <StyledHeader>
         <Link to="/">
           <h1 aria-label="Defund Twelve .org">{this.props.siteTitle}</h1>
         </Link>
         <p className="divider">{this.props.subtitle}</p>
         <p aria-label="12 = Police">"12" = 🚓</p>
-      </header>
+      </StyledHeader>
     );
   }
 }
@@ -50,3 +51,7 @@ export default function Header(): JSX.Element {
     />
   );
 }
+
+const StyledHeader = styled.header`
+  margin-top: var(--x4);
+`;

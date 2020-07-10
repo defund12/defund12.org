@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState, ReactElement } from "react";
-
 import { LobAddress } from "./LetterTypes";
+import styled from "@emotion/styled";
 
 type MyAddressInputProps = {
   /** callback function for every time the address is updated */
@@ -64,7 +64,7 @@ export default function MyAddressInput({
             }
           />
 
-          <div className="pure-g">
+          <Div>
             <div className="right-pad-input pure-u-1 pure-u-md-1-3">
               <input
                 placeholder="City"
@@ -102,9 +102,21 @@ export default function MyAddressInput({
                 }
               />
             </div>
-          </div>
+          </Div>
         </div>
       </fieldset>
     </>
   );
 }
+
+const Div = styled.div`
+  display: grid;
+  grid-template-columns: 100%;
+  @media screen and (min-width: 48rem) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0.5em;
+  }
+  .pure-u-1 {
+    width: 100%;
+  }
+`;
