@@ -1,18 +1,18 @@
 ---
-title: "Avon, CO"
+title: Avon, CO
 permalink: "/avon"
-name: "Letter to Town Council"
-city: "Avon"
-state: "CO"
-layout: "email"
+name: Letter to Town Council
+city: Avon
+state: CO
+layout: email
 recipients:
-- "jfancher@avon.org"
-- "shymes@avon.org"
-- "jwolf@avon.org"
-- "sprince@avon.org"
-- "aphillips@avon.org"
-- "cthuon@avon.org"
-- "tunderwood@avon.org"
+- jfancher@avon.org
+- shymes@avon.org
+- jwolf@avon.org
+- sprince@avon.org
+- aphillips@avon.org
+- cthuon@avon.org
+- tunderwood@avon.org
 body: |-
   Dear Avon Town Council,
 
@@ -23,7 +23,7 @@ body: |-
   I demand a budget that adequately and effectively meets the needs of at-risk Avon residents. I call on you to meaningfully restrict the Avon Police Department budget and instead meaningfully reallocate funds towards social programs and resources that support health care, child care, education, affordable housing, and other critical community needs. We demand a budget that supports community well-being, rather than empowering the police forces that tear us apart.
 
   Sincerely,
-  
+
   [YOUR NAME]
   [YOUR ADDRESS]
   [YOUR EMAIL]
