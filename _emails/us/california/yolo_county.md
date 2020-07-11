@@ -1,10 +1,10 @@
 ---
-title: "Yolo County, CA"
+title: Yolo County, CA
 permalink: "/yolo-county"
-name: "Letter to County Board of Supervisors"
-city: "Yolo County"
-state: "CA"
-layout: "email"
+name: Letter to County Board of Supervisors
+city: Yolo County
+state: CA
+layout: email
 recipients:
 - gary.sandy@yolocounty.org
 - oscar.villegas@yolocounty.org
@@ -29,3 +29,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
