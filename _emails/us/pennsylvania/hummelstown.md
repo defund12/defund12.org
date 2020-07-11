@@ -1,5 +1,5 @@
 ---
-title: "Hummelstown, Pennsylvania"
+title: Hummelstown, Pennsylvania
 permalink: "/hummelstown"
 name: Letter to Borough Administration
 city: Hummelstown
