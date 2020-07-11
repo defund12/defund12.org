@@ -56,6 +56,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "phoneScripts",
+        path: `${__dirname}/_phoneScripts/`,
+        ignore: ["README.md"],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         typeName: "config",
         name: "config",
         path: `${__dirname}/_config.yml`,

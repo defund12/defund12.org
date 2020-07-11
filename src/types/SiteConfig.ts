@@ -25,6 +25,8 @@ export interface SiteConfig {
   contactEmailFooter: string;
   /** A message that appears before the physical letter list index page */
   letterPageHeader: string;
+  /** A message that appears in the header of the call scripts list page */
+  phonePageHeader: string;
   /** Google API key with Maps and Civic Info perms */
   googleApiKey: string;
 }

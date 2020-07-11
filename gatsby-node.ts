@@ -9,7 +9,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
   const { createPage, createRedirect } = actions;
 
   /** Shared logic between creating email and letter pages */
-  async function createEmailOrLetterTemplatePage({
+  async function createTemplatePages({
     layout,
     component,
   }: {
@@ -57,13 +57,18 @@ export const createPages: GatsbyNode["createPages"] = async ({
     );
   }
 
-  await createEmailOrLetterTemplatePage({
+  await createTemplatePages({
     layout: "email",
     component: require.resolve("./src/components/email/Email.tsx"),
   });
 
-  await createEmailOrLetterTemplatePage({
+  await createTemplatePages({
     layout: "letter",
     component: require.resolve("./src/components/letter/Letter.tsx"),
+  });
+
+  await createTemplatePages({
+    layout: "phone",
+    component: require.resolve("./src/components/phone/Phone.tsx"),
   });
 };

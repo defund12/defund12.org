@@ -1,0 +1,15 @@
+
+.phoneScriptContentSection {
+    @include highlightedSection;
+    padding: 8px 0px;
+    
+    .phoneScriptContent {
+        div {
+            margin-top: $x_3;
+        }
+    }
+
+    >.container {
+        @include siteWidth;
+    }
+}
