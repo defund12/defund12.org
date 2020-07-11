@@ -1,16 +1,16 @@
 ---
-title: "Decatur, AL"
+title: Decatur, AL
 permalink: "/decatur-al"
-name: "Letter to Mayor Bowling and City Council"
-city: "Decatur"
-state: "AL"
+name: Letter to Mayor Bowling and City Council
+city: Decatur
+state: AL
 recipients:
-- "tbowling@decatur-al.gov"
-- "wejackson@decatur-al.gov"
-- "khill@decatur-al.gov"
-- "pbibbee@decatur-al.gov"
-- "ckirby@decatur-al.gov"
-- "card@decatur-al.gov"
+- tbowling@decatur-al.gov
+- wejackson@decatur-al.gov
+- khill@decatur-al.gov
+- pbibbee@decatur-al.gov
+- ckirby@decatur-al.gov
+- card@decatur-al.gov
 body: |-
   Dear Honorable Mayor Tab Bowling and Decatur City Council Members,
 
@@ -28,6 +28,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
