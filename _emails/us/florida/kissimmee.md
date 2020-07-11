@@ -1,15 +1,15 @@
 ---
-title: "Kissimmee, FL"
+title: Kissimmee, FL
 permalink: "/kissimmee"
-name: "Letter to City Commission"
-city: "Kissimmee"
-state: "FL"
+name: Letter to City Commission
+city: Kissimmee
+state: FL
 recipients:
-- "jaalvarez@kissimmee.org"
-- "ogonzalez@kissimmee.org"
-- "fortiz@kissimmee.org"
-- "aeady@kissimmee.org"
-- "jfisher@kissimmee.org"
+- jaalvarez@kissimmee.org
+- ogonzalez@kissimmee.org
+- fortiz@kissimmee.org
+- aeady@kissimmee.org
+- jfisher@kissimmee.org
 body: |-
   Dear Kissimmee City Commissioners,
 
@@ -29,6 +29,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
-layout: "email"
+layout: email
 ---
 
