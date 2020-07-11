@@ -1,10 +1,10 @@
 ---
-title: "Elmhurst, IL"
+title: Elmhurst, IL
 permalink: "/elmhurst"
-name: "Letter to Mayor and City Council"
-city: "Elmhurst"
-state: "IL"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Elmhurst
+state: IL
+layout: email
 recipients:
 - jackie.haddad-tamer@elmhurst.org
 - econdev@elmhurst.org
@@ -41,3 +41,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
