@@ -6,6 +6,15 @@ city: "Frederick County"
 state: "VA"
 layout: "email"
 recipients:
+- mayor@middletownva.gov
+- council@middletownva.gov
+- mdiaz@stephenscityva.us
+- rbowers@stephenscityva.us
+- lfravel@stephenscityva.us
+- jhollis@stephenscityva.us
+- jnauman@stephenscityva.us
+- rswygertsmith@stephenscityva.us
+- tstevens@stephenscityva.us
 body: |-
   Dear Chairman Chuck DeHaven, the Frederick County Board of Supervisors, and Frederick County Elected Officers,
 
