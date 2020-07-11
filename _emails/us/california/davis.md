@@ -1,10 +1,10 @@
 ---
-title: "Davis, CA"
+title: Davis, CA
 permalink: "/davis"
-name: "Letter to Mayor and City Council"
-city: "Davis"
-state: "CA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Davis
+state: CA
+layout: email
 recipients:
 - blee@cityofdavis.org
 - gpartida@cityofdavis.org
