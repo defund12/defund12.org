@@ -4,6 +4,7 @@ import {
   EmailData,
   SharedTemplateMetadata,
   LetterData,
+  PhoneScriptData,
 } from "./TemplateData";
 
 // {Page query result properties}
@@ -46,6 +47,25 @@ export interface LetterProps {
     frontmatter: LetterData;
   };
   siteConfig: LetterConfig;
+}
+
+export type PhoneScriptConfig = Pick<
+  SiteConfig,
+  | "siteTitle"
+  | "meta"
+  | "logoUrl"
+  | "faviconUrl"
+  | "phonePageHeader"
+  | "googleApiKey"
+>;
+
+export type PhonePageConfig = Pick<SiteConfig, "phonePageHeader">;
+
+export interface PhoneScriptProps {
+  markdownRemark: {
+    frontmatter: PhoneScriptData;
+  };
+  siteConfig: PhoneScriptConfig;
 }
 
 export interface OptionalLayoutProps {
