@@ -1,10 +1,10 @@
 ---
-title: "Bellingham, WA"
+title: Bellingham, WA
 permalink: "/bellingham"
-name: "Letter to Mayor and City Council"
-city: "Bellingham"
-state: "WA"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Bellingham
+state: WA
+layout: email
 recipients:
 - hestone@cob.org
 - dchammill@cob.org​
