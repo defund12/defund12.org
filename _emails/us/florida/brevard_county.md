@@ -1,16 +1,16 @@
 ---
-title: "Brevard County, Florida"
+title: Brevard County, Florida
 permalink: "/brevardcounty"
-name: "Letter to the Board of County Commissioners"
-state: "FL"
-city: "Brevard County"
-layout: "email"
+name: Letter to the Board of County Commissioners
+state: FL
+city: Brevard County
+layout: email
 recipients:
-- "D1.Commissioner@BrevardFL.gov"
-- "D2.Commissioner@BrevardFL.gov"
-- "D3.Commissioner@BrevardFL.gov"
-- "D4.Commissioner@BrevardFL.gov"
-- "D5.Commissioner@BrevardFL.gov"
+- D1.Commissioner@BrevardFL.gov
+- D2.Commissioner@BrevardFL.gov
+- D3.Commissioner@BrevardFL.gov
+- D4.Commissioner@BrevardFL.gov
+- D5.Commissioner@BrevardFL.gov
 body: |-
   Dear Brevard County Commissioners,
 
