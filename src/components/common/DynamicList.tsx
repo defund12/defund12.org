@@ -44,7 +44,7 @@ export default class DynamicList<TModel> extends React.Component<
     updatedKeys.splice(index, 1);
 
     this.setState({ listItems: updatedListItems, keys: updatedKeys });
-    this.props.updateModel(this.state.listItems);
+    this.props.onListItemsUpdated(this.state.listItems);
   }
 
   /**
@@ -58,7 +58,7 @@ export default class DynamicList<TModel> extends React.Component<
     const updatedKeys = [...this.state.keys, uuid()];
 
     this.setState({ listItems: updatedListItems, keys: updatedKeys });
-    this.props.updateModel(this.state.listItems);
+    this.props.onListItemsUpdated(this.state.listItems);
   }
 
   /**
@@ -71,7 +71,7 @@ export default class DynamicList<TModel> extends React.Component<
     const updatedModel = [...this.state.listItems];
     updatedModel[index] = value;
     this.setState({ listItems: updatedModel });
-    this.props.updateModel(this.state.listItems);
+    this.props.onListItemsUpdated(this.state.listItems);
   }
 
   /**
@@ -83,7 +83,7 @@ export default class DynamicList<TModel> extends React.Component<
       return (
         <div key={this.state.keys[index]}>
           <button onClick={() => this.deleteItem(index)}>Delete</button>
-          {this.props.eachRender((value: TModel) =>
+          {this.props.renderListItem((value: TModel) =>
             this.updateItem(index, value)
           )}
         </div>

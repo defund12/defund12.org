@@ -225,10 +225,10 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
                 ? "Add Missing Representative"
                 : "Add Another"
             }
-            updateModel={setAdditionalAddresses}
+            onListItemsUpdated={setAdditionalAddresses}
             modelFactory={() => ({} as LobAddress)}
-            eachRender={(setEachAddress: (a: LobAddress) => void) => (
-              <AddressInput updateParent={setEachAddress} />
+            renderListItem={(onListItemUpdated: (a: LobAddress) => void) => (
+              <AddressInput onAddressUpdated={onListItemUpdated} />
             )}
           />
 

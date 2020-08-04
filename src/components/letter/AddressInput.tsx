@@ -5,7 +5,7 @@ import { LobAddress } from "./LetterTypes";
 
 type AddressInputProps = {
   /** callback function for every time the address is updated */
-  updateParent: (a: LobAddress) => void;
+  onAddressUpdated: (a: LobAddress) => void;
 };
 
 /** Renders input fields for the user's address
@@ -13,7 +13,7 @@ type AddressInputProps = {
  * @return {ReactElement} the rendered component
  */
 export default function AddressInput({
-  updateParent,
+  onAddressUpdated: onAddressUpdated,
 }: AddressInputProps): ReactElement {
   const [address, setAddress] = useState({} as LobAddress);
 
@@ -26,7 +26,7 @@ export default function AddressInput({
   function updateAddress(addressPatch: Partial<LobAddress>) {
     const updatedAddress = { ...address, ...addressPatch };
     setAddress(updatedAddress);
-    updateParent(updatedAddress);
+    onAddressUpdated(updatedAddress);
   }
 
   return (
