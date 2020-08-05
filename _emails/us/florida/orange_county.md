@@ -1,18 +1,18 @@
 ---
-title: "Orange County, Florida"
+title: Orange County, Florida
 permalink: "/orange-county-fl"
-name: "Letter to the Orlando Mayor and County Commissioners"
-state: "FL"
-city: "Orange County"
-layout: "email"
+name: Letter to the Orlando Mayor and County Commissioners
+state: FL
+city: Orange County
+layout: email
 recipients:
-- "mayor@ocfl.net"
-- "District1@ocfl.net"
-- "District2@ocfl.net"
-- "District3@ocfl.net"
-- "District4@ocfl.net"
-- "District5@ocfl.net"
-- "District6@ocfl.net"
+- mayor@ocfl.net
+- District1@ocfl.net
+- District2@ocfl.net
+- District3@ocfl.net
+- District4@ocfl.net
+- District5@ocfl.net
+- District6@ocfl.net
 body: |-
   Dear Mayor Demings and County Commissioners,
 
