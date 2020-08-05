@@ -1,10 +1,10 @@
 ---
-title: "Frederick County, VA"
+title: Frederick County, VA
 permalink: "/frederick-county"
-name: "Letter to the Chairman and County Board of Supervisors"
-city: "Frederick County"
-state: "VA"
-layout: "email"
+name: Letter to the Chairman and County Board of Supervisors
+city: Frederick County
+state: VA
+layout: email
 recipients:
 - mayor@middletownva.gov
 - council@middletownva.gov
