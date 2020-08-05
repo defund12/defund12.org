@@ -1,28 +1,28 @@
 ---
-title: "Cook County, IL"
+title: Cook County, IL
 permalink: "/cookcounty"
-name: "Letter to County Board"
-city: "Cook County"
-state: "IL"
+name: Letter to County Board
+city: Cook County
+state: IL
 recipients:
-- "cookcountyboard@cookcountyil.gov"
-- "Brandon.johnson@cookcountyil.gov"
-- "Dennis.Deer@cookcountyil.gov"
-- "bill.lowry@cookcountyil.gov"
-- "stanley.moore2@cookcountyil.gov"
-- "deborah.sims@cookcountyil.gov"
-- "donna.miller@cookcountyil.gov"
-- "alma.anaya@cookcountyil.gov"
-- "cookcty9@aol.com"
-- "luis.arroyojr@cookcountyil.gov"
-- "district10@cookcountyil.gov"
-- "john.daley@cookcountyil.gov"
-- "bridget.degnen@cookcountyil.gov"
-- "lsuffredin@aol.com"
-- "Scott.Britton@cookcountyil.gov"
-- "kevin.morrison@cookcountyil.gov"
-- "Frank.Aguilar@cookcountyil.gov"
-- "sean.morrison@cookcountyil.gov"
+- cookcountyboard@cookcountyil.gov
+- Brandon.johnson@cookcountyil.gov
+- Dennis.Deer@cookcountyil.gov
+- bill.lowry@cookcountyil.gov
+- stanley.moore2@cookcountyil.gov
+- deborah.sims@cookcountyil.gov
+- donna.miller@cookcountyil.gov
+- alma.anaya@cookcountyil.gov
+- cookcty9@aol.com
+- luis.arroyojr@cookcountyil.gov
+- district10@cookcountyil.gov
+- john.daley@cookcountyil.gov
+- bridget.degnen@cookcountyil.gov
+- lsuffredin@aol.com
+- Scott.Britton@cookcountyil.gov
+- kevin.morrison@cookcountyil.gov
+- Frank.Aguilar@cookcountyil.gov
+- sean.morrison@cookcountyil.gov
 body: |-
   Dear President Toni Preckwinkle and Cook County Board of Commissioners,
 
@@ -38,6 +38,6 @@ body: |-
   [YOUR ADDRESS]
   [YOUR EMAIL]
   [YOUR PHONE]
-layout: "email"
+layout: email
 ---
 
