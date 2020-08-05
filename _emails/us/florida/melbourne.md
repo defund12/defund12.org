@@ -1,10 +1,10 @@
 ---
-title: "Melbourne, FL"
+title: Melbourne, FL
 permalink: "/melbourne"
-name: "Letter to Mayor and City Council"
-city: "Melbourne"
-state: "FL"
-layout: "email"
+name: Letter to Mayor and City Council
+city: Melbourne
+state: FL
+layout: email
 recipients:
 - Kathy.Meehan@mlbfl.org
 - Paul.Alfrey@mlbfl.org
@@ -30,3 +30,4 @@ body: |-
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
+
