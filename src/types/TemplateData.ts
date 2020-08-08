@@ -1,4 +1,4 @@
-export type LayoutType = "email" | "letter";
+export type LayoutType = "email" | "letter" | "phone";
 /**
  * The top-level data of a template (email or letter).
  */
@@ -56,7 +56,7 @@ export interface EmailData extends SharedTemplateData {
    */
   cc: Array<string>;
 
-  /* an email! */
+  /** an email! */
   layout: "email";
 }
 
@@ -69,6 +69,26 @@ export interface LetterData extends SharedTemplateData {
 
   /** a letter! */
   layout: "letter";
+}
+
+/**
+ * Contact information for a call script
+ */
+export interface PhoneScriptContact {
+  /** The contact's name */
+  name: string;
+  /** The contact's phone number */
+  number: string;
+}
+
+/**
+ * The full type of a phone script from markdown
+ */
+export interface PhoneScriptData extends SharedTemplateData {
+  /** An array of officials' names and phone numbers to call using this script */
+  contacts: Array<PhoneScriptContact>;
+  /** a phone script! */
+  layout: "phone";
 }
 
 // type EmailDataType = TemplateMetadata & EmailData;

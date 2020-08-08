@@ -8,7 +8,7 @@ When adding templates, please ensure you are using UTF-8 encoding. Please do not
 | --------------- | -------- | ------ | ----------------------------------------------------------------------------------- |
 | title           | yes      | String | City, State (for CMS tracking purposes)                                             |
 | layout          | yes      | String | Layout for markdown file (must be `email`)                                          |
-| permalink       | yes      | String | Path to url on the site (e.g., /nyc                                                 |
+| permalink       | yes      | String | Path to url on the site (e.g., /nyc)                                                |
 | name            | yes      | String | Name of the email that will be displayed to users                                   |
 | city            | yes      | String | City the email template is for                                                      |
 | state           | yes      | String | State (abbreviated) the email template is for (e.g., NY)                            |
