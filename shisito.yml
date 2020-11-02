@@ -19,6 +19,7 @@ collections:
         - type: str
       - subject:
         - type: str
+        - required: false
       - body:
         - type: str
       - expiration_date:
