@@ -1,7 +1,7 @@
 collections:
   -
     filepattern: _emails/*/*/*
-    filename_regex: ^[a-z-]*\.md$
+    filename_regex: ^[a-z_]*\.md$
     schema:
       - title:
         - type: str
