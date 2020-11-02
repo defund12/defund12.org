@@ -64,7 +64,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: teddywilson/shisito-markdown-validation@v1.1.5
+      - uses: teddywilson/shisito-markdown-validation@v1.1.6
       - name: Notify deploy failed (#general)
         if: failure() && github.ref == 'refs/heads/master'
         uses: pullreminders/slack-action@v1.0.9
