@@ -1,0 +1,32 @@
+collections:
+  -
+    filepattern: _emails/*
+    filename_regex: ^[a-z-]*\.md$
+    schema:
+      - title:
+        - type: str
+      - layout:
+        - type: str
+        - value: email
+      - permalink:
+        - type: str
+        - unique: true
+      - name:
+        - type: str
+      - city:
+        - type: str
+      - state:
+        - type: list
+      - subject:
+        - type: str
+      - body:
+        - type: str
+      - expiration_date:
+        - type: str
+        - required: false
+      - organization:
+        - type: str
+        - required: false
+      - redirect_from:
+        - type: str
+        - required: false

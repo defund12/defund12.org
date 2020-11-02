@@ -64,14 +64,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build
-        uses: docker://docker
-        with:
-          args: docker build ./test/markdown/ --tag=markdown-tests:latest
-      - name: Test
-        uses: docker://docker
-        with:
-          args: docker run -v /home/runner/work/defund12.org/defund12.org/_emails:/email_markdown_files markdown-tests:latest
+      - uses: teddywilson/shisito-markdown-validation@v1.1.6
       - name: Notify deploy failed (#general)
         if: failure() && github.ref == 'refs/heads/master'
         uses: pullreminders/slack-action@v1.0.9
