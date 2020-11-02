@@ -1,6 +1,6 @@
 collections:
   -
-    filepattern: _emails/*
+    filepattern: _emails/*/*/*
     filename_regex: ^[a-z-]*\.md$
     schema:
       - title:
