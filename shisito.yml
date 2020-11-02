@@ -16,7 +16,7 @@ collections:
       - city:
         - type: str
       - state:
-        - type: list
+        - type: str
       - subject:
         - type: str
       - body:
