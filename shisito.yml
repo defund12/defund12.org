@@ -29,5 +29,5 @@ collections:
         - type: str
         - required: false
       - redirect_from:
-        - type: str
+        - type: list
         - required: false
