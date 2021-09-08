@@ -6,15 +6,14 @@ state: NC
 city: Raleigh
 layout: email
 recipients:
-- mary-ann.baldwin@raleighnc.gov
-cc:
-- jonathan.melton@raleighnc.gov
-- nicole.stewart@raleighnc.gov
-- patrick.buffkin@raleighnc.gov
-- david.cox@raleighnc.gov
-- corey.branch@raleighnc.gov
-- saige.martin@raleighnc.gov
-- david.knight@raleighnc.gov
+  - mary-ann.baldwin@raleighnc.gov
+  - jonathan.melton@raleighnc.gov
+  - nicole.stewart@raleighnc.gov
+  - patrick.buffkin@raleighnc.gov
+  - david.cox@raleighnc.gov
+  - corey.branch@raleighnc.gov
+  - saige.martin@raleighnc.gov
+  - david.knight@raleighnc.gov
 body: |
   Dear Mayor Baldwin,
 
@@ -31,4 +30,3 @@ body: |
   [YOUR EMAIL]
   [YOUR PHONE NUMBER]
 ---
-

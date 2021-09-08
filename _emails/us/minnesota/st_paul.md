@@ -6,17 +6,17 @@ state: MN
 city: St. Paul
 layout: email
 recipients:
-- mayor@ci.stpaul.mn.us
-- joan.phillips@ci.stpaul.mn.us
-cc:
-- ward2@ci.stpaul.mn.us
-- ward4@ci.stpaul.mn.us
-- ward3@ci.stpaul.mn.us
-- ward1@ci.stpaul.mn.us
-- ward5@ci.stpaul.mn.us
-- ward6@ci.stpaul.mn.us
-- ward7@ci.stpaul.mn.us
-body: "Dear Mayor Carter and St. Paul City Council,\n\nMy name is [YOUR NAME], and
+  - mayor@ci.stpaul.mn.us
+  - joan.phillips@ci.stpaul.mn.us
+  - ward2@ci.stpaul.mn.us
+  - ward4@ci.stpaul.mn.us
+  - ward3@ci.stpaul.mn.us
+  - ward1@ci.stpaul.mn.us
+  - ward5@ci.stpaul.mn.us
+  - ward6@ci.stpaul.mn.us
+  - ward7@ci.stpaul.mn.us
+body:
+  "Dear Mayor Carter and St. Paul City Council,\n\nMy name is [YOUR NAME], and
   I am a resident of [YOUR CITY, STATE]. I stand in solidarity with protesters across
   the country who are out in the streets in response to the horrific murders of George
   Floyd, a Black man, by the Minneapolis police, and are appalled by the recent murders
@@ -41,4 +41,3 @@ body: "Dear Mayor Carter and St. Paul City Council,\n\nMy name is [YOUR NAME], a
   that defunds the police and funds non-violent, community-led, health and safety
   strategies.\n\nSincerely,\n[YOUR NAME]\n[YOUR ADDRESS]\n[YOUR PHONE NUMBER]\n"
 ---
-

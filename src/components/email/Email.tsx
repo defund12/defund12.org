@@ -1,15 +1,11 @@
+import Layout from "components/common/Layout";
+import EmailList from "components/template-list/EmailList";
+import { DefundUtils } from "DefundUtils";
 import { graphql, PageProps } from "gatsby";
 import * as queryString from "query-string";
 import React from "react";
-import { DefundUtils } from "../../DefundUtils";
-import { EmailData } from "../../types/TemplateData";
-import {
-  EmailConfig,
-  EmailProps,
-  OptionalLayoutProps,
-} from "../../types/PropTypes";
-import Layout from "../common/Layout";
-import EmailList from "../template-list/EmailList";
+import { EmailConfig, EmailProps, OptionalLayoutProps } from "types/PropTypes";
+import { EmailData } from "types/TemplateData";
 
 /**
  * The @link {Email} component state.
@@ -80,12 +76,8 @@ export default class Email extends React.Component<
       this.siteConfig.defaultSubjectLine.trim()
     );
     const body = encodeURIComponent(this.emailData.body.trim());
-    const recipients = this.emailData.recipients;
-    const cc = this.emailData.cc || [];
-    const bcc = recipients.concat(cc);
-    window.location.href = `mailto:?bcc=${bcc.join(
-      ","
-    )}&subject=${subject}&body=${body}`;
+    const bcc = this.emailData.recipients.join(",");
+    window.location.href = `mailto:?bcc=${bcc}&subject=${subject}&body=${body}`;
   }
 
   /**
@@ -147,25 +139,6 @@ export default class Email extends React.Component<
                 &nbsp;
                 {this.emailData.recipients.join(", ")}
               </div>
-
-              {this.emailData.cc ? (
-                <div className="recipients">
-                  <b>CC:</b>
-                  <span
-                    className="copyToClipboard"
-                    onClick={() =>
-                      this.handleClipboardCopy(
-                        { ccCopied: true },
-                        this.emailData.cc.join(", ")
-                      )
-                    }
-                  >
-                    {this.state.ccCopied ? "✅(copied)" : "🔗"}
-                  </span>
-                  &nbsp;
-                  {this.emailData.cc.join(", ")}
-                </div>
-              ) : undefined}
 
               <div className="recipients">
                 <b>Subject:</b> {this.siteConfig.defaultSubjectLine}

@@ -51,10 +51,6 @@ export interface EmailData extends SharedTemplateData {
    * An array of recipients to send the email to.
    */
   recipients: Array<string>;
-  /**
-   * An array of recipients to cc on the email when sent.
-   */
-  cc: Array<string>;
 
   /* an email! */
   layout: "email";
