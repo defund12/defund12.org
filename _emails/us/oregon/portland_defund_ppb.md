@@ -17,34 +17,44 @@ recipients:
 - sonia.schmanski@portlandoregon.gov
 - Toni.Anderson@portlandoregon.gov
 - Andrew.Bryans@portlandoregon.gov
-body: "I am a resident of Portland.\n\nIn May, Mayor Ted Wheeler released his proposed
-  budget for the City of Portland. This included a policing budget of $245,169,804,
-  which is over $5 million more than budgeted last year—even amongst city-wide cuts
-  to other departments due to Covid-19. The Portland Police Bureau (PPB), with Wheeler
-  at its helm as Commissioner, has been mired in controversy over the last year with
-  collusion with prominent white nationalist groups, shootings of Black people and
-  people perceived to be in mental health crisis, data uncovered on their racist gang
-  enforcement traffic stops, and the fact that a shameful 52% of people arrested are
-  houseless.\n\nI oppose any increases to the PPB budget. Mayor Wheeler's 2019-20
-  proposed budget was increased by an additional half million dollars before adoption,
-  and even then the PPB has overspent the increased budget by 1.4 million to date.
-  We anticipate that PPB will attempt a similar increase this year, pushing their
-  budget even higher than the proposed $245 million, thus we stand even more firmly
-  against this increase. \n\nAdditionally and critically, Wheeler's budget ELIMINATES
-  $1.8 million to fund the police body camera program. More money for policing but
-  less money for police accountability is completely unacceptable.\n\nThe police budget
-  increases regularly while other services are cut. I can see the ways in which policing
-  continues to perpetuate violence against Black, brown, houseless people, and against
-  people in mental health crisis. While Wheeler's proposal represents a slight decrease
-  from the PPB proposal, the PPB is a department whose reach into Portland communities
-  needs to be curtailed through reducing the budget, not by increasing it.\n\nMore
-  money for policing but less money for police accountability is completely unacceptable
-  at this moment in history. The city, the state, and country are all watching. And
-  so am I. I call on the Mayor, the Commissioners, and all other City Council Members
-  to use their powers to continue to reduce the budget and pledge to increase Police
-  accountability and transparency. I promise that you will lose my support and my
-  vote if you aren't willing to make a public and vocal stand to help defund the PPB
-  and increase their accountability and transparency.\n\nThank you for your time,\n[YOUR
-  NAME]\n[YOUR ADDRESS]\n[YOUR EMAIL]\n[YOUR PHONE NUMBER]"
+body: "Hello,
+
+My name is [YOUR NAME] and I am a resident of Portland. I would like to see us as a city committed to disbanding the Portland Police Bureau (PPB) immediately. We must get over this hurdle so that we can start to make real change.
+
+I am happy to see the proposed cuts in over $15 million to PPB championed by Commissioner Hardesty, and at this time I need to see more. I see the collective call for $50 million in reductions and believe this is insufficient- I want to see an immediate $100 million reduction to the PPB in the 20-21 FY budget cycle. Now is the time to take decisive action, not next year or the next, when public scrutiny will perhaps be less intense. Set a course for the full disbandment of the Portland Police Bureau NOW, or I fear it will never happen.
+
+I am skeptical of Wheeler's ability to steer us clearly as city mayor with his position at the helm of the PPB as Commissioner. The truth is, we need cuts and a commitment to disband, like the cities we see before us setting the stage for such change at this moment in time.
+
+We need to know that we are being taken seriously and that we mean for the PPB to be dismantled in support of building Black futures and community care. The PPB does not protect us equally and we can do better.
+
+Specifically, in accordance with the design to defund and reallocate, I ask for:
+
+1) Immediate elimination of all vacant positions within the PPB, and to fold this funding back into the general and special appropriations funds.\n\n2) Implementation of an immediate hiring freeze, and a commitment to ending any new hires of Portland Police Bureau sworn officers.
+
+3) Immediately eliminate all funds for the following specialty units (those already included in the proposed item are not listed here): Neighborhood Response, Service Coordination Team, Behavioral Health Unit, Air Support Unit and Rapid Response Team (Riot Control)
+  3.a) Redirection of these funds towards anti-violence programs unaffiliated with law enforcement, reparations for Black Portlanders targeted by gang policing, and other investment in Black people to be determined by impacted communities and grassroots groups such as Don’t Shoot Portland & Freedom to Thrive.
+  3.b) Eliminate these positions entirely by reducing the total number of officers, not just by folding them back into general sworn officer positions.
+
+4) Immediately stop expansion of the Portland Police Bureau budget by ending all budget increases. The City Council must commit to never vote for PPB Budget increases again.
+
+5) End PPB relationship to the Federal 1033 program, which supplies militarized weapons, gear, and vehicles to local police departments across the country.
+
+6) Divest City of Portland Cannabis Tax funds from the PPB budget AND invest them instead into reparations for those harmed by the War on Drugs, which disproportionately targeted Black communities for activities that are now legal.
+
+7) Immediately end the use of police responders to health or mental health calls and wellness checks, and implement alternative responses that are not led by or contingent on interaction with the police.
+
+8) Immediately terminate contract between the Portland Police Bureau and Portland Business Alliance for the Clean & Safe Enhanced Services District.
+
+9) Immediately eliminate police presence in historically Black neighborhoods, communities of color, and areas with high houseless populations in order to reduce the fear, ongoing trauma, violence, and oppressive conditions which impede people’s daily survival.
+
+The PPB has been caught in collusion with prominent white nationalist groups, shootings of Black people and people perceived to be in mental health crisis, and this violence and terrorism against our citizens needs to stop NOW.
+
+I call on the Mayor, the Commissioners, and all other City Council Members to use their powers to continue to further reduce the budget and pledge to increase Police accountability and transparency. I promise that you will lose my support and my vote if you aren’t willing to make a public and vocal stand to truly defund the PPB, increase their accountability and transparency, and do due diligence to ensure that nobody needs to use the Black Lives Matter hashtag anymore because it will be evident in our practices.
+
+Thank you for your time and consideration in this matter,
+[YOUR NAME]
+[YOUR ADDRESS]
+[YOUR EMAIL]
+[YOUR PHONE NUMBER]"
 ---
 
