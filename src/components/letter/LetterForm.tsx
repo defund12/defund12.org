@@ -9,11 +9,13 @@ import "purecss/build/grids-responsive-min.css";
 import { Template, LobAddress } from "./LetterTypes";
 import CheckoutForm from "./CheckoutForm";
 import MyAddressInput from "./MyAddressInput";
+import AddressInput from "./AddressInput";
 import { CombinedOfficialFetchingService } from "../../services/CombinedOfficialFetchingService";
 import { OfficialAddressCheckboxList } from "./OfficialAddressCheckboxList";
 import { TemplateInputs } from "./TemplateInputs";
 import { OfficialAddress } from "../../services/OfficialTypes";
 import { lobAddressToSingleLine } from "./LobAddressUtils";
+import { DynamicList } from "../common";
 
 const SpecialVars = ["YOUR NAME"]; // , "YOUR DISTRICT"];
 
@@ -65,6 +67,9 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
   const [myAddress, setMyAddress] = useState({} as LobAddress);
   const [variableMap, setVariableMap] = useState({} as Record<string, string>);
   const [checkedAddresses, setCheckedAddresses] = useState([] as LobAddress[]);
+  const [additionalAddresses, setAdditionalAddresses] = useState(
+    [] as LobAddress[]
+  );
   const [officials, setOfficials] = useState([] as OfficialAddress[]);
   const [isSearching, setIsSearching] = useState(false);
 
@@ -214,8 +219,21 @@ function LetterForm({ template, googleApiKey }: LetterFormProps): ReactElement {
             />
           )}
 
+          <DynamicList
+            addText={(addresses) =>
+              addresses.length === 0
+                ? "Add Missing Representative"
+                : "Add Another"
+            }
+            onListItemsUpdated={setAdditionalAddresses}
+            modelFactory={() => ({} as LobAddress)}
+            renderListItem={(onListItemUpdated: (a: LobAddress) => void) => (
+              <AddressInput onAddressUpdated={onListItemUpdated} />
+            )}
+          />
+
           <CheckoutForm
-            checkedAddresses={checkedAddresses}
+            checkedAddresses={[...checkedAddresses, ...additionalAddresses]}
             myAddress={myAddress}
             body={bodyText}
             allVariablesFilledIn={allVariablesFilledIn}
