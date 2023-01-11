@@ -43,7 +43,7 @@
         "gatsby-plugin-sass": "^2.3.4",
         "gatsby-plugin-sitemap": "^2.4.5",
         "gatsby-source-filesystem": "^2.3.11",
-        "gatsby-transformer-remark": "^2.8.15",
+        "gatsby-transformer-remark": "^5.25.1",
         "gatsby-transformer-yaml": "^2.4.4",
         "husky": "^4.2.5",
         "lint-staged": "^10.2.11",
